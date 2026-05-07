@@ -5,55 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>合同会社ゼク | ZEC Inc.</title>
   <style>
+    :root {
+      --bg: #f9f9f9;
+      --surface: #ffffff;
+      --surface-soft: #f4f7fa;
+      --text: #333333;
+      --muted: #5f6b76;
+      --line: #e7edf2;
+      --header: #2c3e50;
+      --link: #355c7d;
+    }
+
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.7;
-      background: #f9f9f9;
-      color: #333;
+      background: var(--bg);
+      color: var(--text);
     }
+
     header {
-      background-color: #2c3e50;
+      background-color: var(--header);
       color: #fff;
       padding: 2em 1em;
       text-align: center;
     }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
     header h1 {
       margin: 0;
       font-size: 2em;
     }
+
+    .site-nav {
+      margin-top: 1.25em;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-wrap: wrap;
+      font-size: 0.95em;
+    }
+
+    .site-nav a,
+    .section-link,
+    .footer-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-nav a:hover,
+    .section-link:hover,
+    .footer-link:hover {
+      text-decoration: underline;
+    }
+
     main {
       max-width: 900px;
       margin: 2em auto;
       padding: 0 1em;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      background: var(--surface);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
       border-radius: 6px;
     }
+
     section {
       padding: 2em 1em;
       border-bottom: 1px solid #eee;
     }
+
     section:last-child {
       border-bottom: none;
     }
+
     h2 {
-      color: #2c3e50;
+      color: var(--header);
       margin-top: 0;
     }
+
     ul {
       padding-left: 1.2em;
     }
+
+    .apps-callout {
+      background: var(--surface-soft);
+    }
+
+    .apps-link {
+      display: inline-block;
+      margin-top: 0.75em;
+      color: var(--link);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .apps-link:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
       font-size: 0.9em;
       color: #888;
-      padding: 1em 0 2em;
+      padding: 1em 1em 2em;
     }
+
+    .footer-links {
+      margin-top: 0.5em;
+    }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.5em;
+      }
+
+      .site-nav {
+        gap: 0.75em;
+        font-size: 0.9em;
       }
     }
   </style>
@@ -61,24 +133,34 @@
 <body>
 
   <header>
-    <h1>合同会社ゼク</h1>
-    <p>ZEC Inc. - 流通と意思決定に、情報の力を。</p>
+    <div class="header-inner">
+      <h1>合同会社ゼク</h1>
+      <p>ZEC Inc. - 流通と意思決定に、情報の力を。</p>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#vision">ビジョン</a>
+        <a href="#mission">ミッション</a>
+        <a href="#services">事業内容</a>
+        <a href="/apps/">Apps</a>
+        <a href="#company">会社情報</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
   </header>
 
   <main>
 
-    <section>
+    <section id="vision">
       <h2>ビジョン</h2>
       <p>流通と意思決定に、情報の力を。</p>
     </section>
 
-    <section>
+    <section id="mission">
       <h2>ミッション</h2>
       <p>誰もが情報に基づいた選択を行える社会を支え、<br>
       スモールビジネスの意思決定と成長を支える仕組みを創出する。</p>
     </section>
 
-    <section>
+    <section id="services">
       <h2>事業内容</h2>
       <p>合同会社ゼクは、デジタル領域における意思決定を支援する情報ソリューション企業です。<br>
       データの収集・分析・可視化を通じて、商品流通、販売戦略、業務効率化に関わる課題を整理し、<br>
@@ -96,8 +178,14 @@
       各種商材・デジタルプロダクト・エンタメ領域を対象に、<br>
       情報取得、運用検証、販売導線分析、マーケティング効果測定を継続的に実施しています。</p>
     </section>
-   
-    <section>
+
+    <section class="apps-callout" id="apps">
+      <h2>自社アプリ</h2>
+      <p>合同会社ゼクでは、日常の記録・確認・共有をかんたんにするシンプルなiOSアプリを開発・公開しています。</p>
+      <a class="apps-link" href="/apps/">アプリ一覧を見る</a>
+    </section>
+
+    <section id="company">
       <h2>会社情報</h2>
       <ul>
         <li><strong>会社名：</strong>合同会社ゼク（ZEC Inc.）</li>
@@ -106,7 +194,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>お問い合わせ</h2>
       <p>お問い合わせは以下のメールアドレスまでお願いいたします。</p>
       <p><strong>info@（アットマーク）zec-inc.jp</strong></p>
@@ -114,7 +202,10 @@
   </main>
 
   <footer>
-    &copy; 2025 ZEC Inc. All rights reserved.
+    <div>&copy; 2025 ZEC Inc. All rights reserved.</div>
+    <div class="footer-links">
+      <a class="footer-link" href="/apps/">Apps</a>
+    </div>
   </footer>
 
 </body>
