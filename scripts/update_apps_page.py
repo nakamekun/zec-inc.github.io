@@ -60,6 +60,8 @@ def fetch_apps() -> list[dict]:
                 "trackName": track_name,
                 "primaryGenreName": str(item.get("primaryGenreName", "")).strip(),
                 "trackViewUrl": track_url,
+                "artworkUrl100": str(item.get("artworkUrl100", "")).strip(),
+                "artworkUrl512": str(item.get("artworkUrl512", "")).strip(),
                 "description": str(item.get("description", "")).strip(),
                 "releaseNotes": str(item.get("releaseNotes", "")).strip(),
             }
@@ -103,13 +105,26 @@ def render_cards(apps: list[dict]) -> str:
     lines = [START_MARKER]
     for app in apps:
         name = html.escape(app["trackName"])
+        alt = html.escape(f'{app["trackName"]} app icon', quote=True)
         desc = html.escape(short_description(app))
         url = html.escape(app["trackViewUrl"], quote=True)
+        icon_url = html.escape(app.get("artworkUrl100") or app.get("artworkUrl512") or "", quote=True)
+        icon_html = ""
+        if icon_url:
+            icon_html = (
+                f'            <img class="app-icon" src="{icon_url}" alt="{alt}" '
+                'width="64" height="64" loading="lazy">'
+            )
         lines.extend(
             [
                 '        <article class="app-card">',
-                f"          <h2>{name}</h2>",
-                f"          <p>{desc}</p>",
+                '          <div class="app-card-main">',
+                icon_html,
+                '            <div class="app-copy">',
+                f"              <h2>{name}</h2>",
+                f"              <p>{desc}</p>",
+                "            </div>",
+                "          </div>",
                 f'          <a class="app-link" href="{url}">App Store で見る</a>',
                 "        </article>",
                 "",
