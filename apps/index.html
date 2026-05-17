@@ -97,7 +97,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 16px;
     }
 
@@ -108,13 +108,14 @@
       padding: 20px 18px;
       display: flex;
       flex-direction: column;
-      min-height: 180px;
+      min-height: 260px;
     }
 
     .app-card-main {
       display: flex;
+      flex-direction: column;
       align-items: flex-start;
-      gap: 14px;
+      gap: 16px;
       flex: 1;
     }
 
@@ -128,28 +129,42 @@
     }
 
     .app-copy {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
       min-width: 0;
     }
 
     .app-card h2 {
-      margin: 0 0 10px;
-      font-size: 20px;
+      display: -webkit-box;
+      min-height: 48px;
+      margin: 0 0 8px;
+      overflow: hidden;
+      font-size: 19px;
       line-height: 1.25;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
     }
 
     .app-card p {
+      display: -webkit-box;
       margin: 0;
+      overflow: hidden;
       color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
     }
 
     .app-link {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      margin-top: 16px;
-      min-height: 38px;
-      padding: 0 14px;
-      border-radius: 10px;
+      margin-top: 18px;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 8px;
       font-size: 14px;
       font-weight: 500;
       text-decoration: none;
@@ -164,6 +179,29 @@
 
     .app-link:hover {
       text-decoration: underline;
+    }
+
+    .store-download {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    .store-download p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .store-badge-link {
+      display: inline-block;
+      line-height: 0;
+    }
+
+    .store-badge {
+      width: 160px;
+      height: auto;
+      display: block;
     }
 
     footer {
@@ -200,6 +238,10 @@
       .app-card {
         min-height: 0;
       }
+
+      .app-card h2 {
+        min-height: 0;
+      }
     }
   </style>
 </head>
@@ -231,7 +273,7 @@
               <p>PhotoDay helps you capture what mattered most — in a simple, beautiful way.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/photoday-one-photo-a-day/id6761641437?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/photoday-one-photo-a-day/id6761641437?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -242,7 +284,7 @@
               <p>DoneToday helps you focus on what you actually did today.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/donetoday-daily-log/id6761447413?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/donetoday-daily-log/id6761447413?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -253,7 +295,7 @@
               <p>Track your medication in seconds.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/pilltap/id6762545903?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/pilltap/id6762545903?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -264,7 +306,7 @@
               <p>A simple hydration tracker designed for speed.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/waterdone/id6763200921?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/waterdone/id6763200921?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -275,7 +317,7 @@
               <p>Never wonder “Did I do the laundry?” again.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/laundrytap/id6762600691?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/laundrytap/id6762600691?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -286,7 +328,7 @@
               <p>PinLog is not a note app.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/pinlog/id6763267903?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/pinlog/id6763267903?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -297,7 +339,7 @@
               <p>Packed is a simple app to make sure you never forget your essentials.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/packed/id6762812333?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/packed/id6762812333?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -308,7 +350,7 @@
               <p>PoopTap is a simple and playful poop logging app.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/pooptap-daily-tracker/id6762576578?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/pooptap-daily-tracker/id6762576578?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -319,7 +361,7 @@
               <p>Track your day in one tap.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/taplog-mood-tracker/id6761535550?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/taplog-mood-tracker/id6761535550?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -327,10 +369,10 @@
             <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/c8/1c/e9c81ccf-1500-e02e-8ec3-1ecb5643a2d3/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.jpg" alt="AccessLens app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
               <h2>AccessLens</h2>
-              <p>Access Lens helps you view everyday scenes and photos through simplified visual awareness filters.</p>
+              <p>Access Lens helps you view everyday scenes and photos through simplified visual...</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/accesslens/id6767727517?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/accesslens/id6767727517?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -341,7 +383,7 @@
               <p>Today Ready helps you quickly decide what to do today based on the weather.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/todayready/id6766366722?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/todayready/id6766366722?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -352,7 +394,7 @@
               <p>Study Buddy is a simple stopwatch for recording study time.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/study-buddy-timer/id6764601072?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/study-buddy-timer/id6764601072?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -363,7 +405,7 @@
               <p>UndoCam turns short videos into simple rewind clips.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/undocam/id6765842391?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/undocam/id6765842391?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -374,7 +416,7 @@
               <p>Sheep to Sleep is a tiny bedtime app that gently counts sheep for you.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/sheep-to-sleep/id6765796575?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/sheep-to-sleep/id6765796575?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -385,7 +427,7 @@
               <p>Body Rhythm Log is a simple and private way to track your personal patterns.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/body-rhythm-log/id6762504100?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/body-rhythm-log/id6762504100?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -396,7 +438,7 @@
               <p>BaroNote is a simple barometer and personal log.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/baronote/id6767775689?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/baronote/id6767775689?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -407,7 +449,7 @@
               <p>Caffeine Tap is a simple caffeine tracker built for quick daily logging.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/caffeinetap/id6769219576?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/caffeinetap/id6769219576?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -418,7 +460,7 @@
               <p>Pick three simple English words and hear a silly rhythmic combo.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/sillycombovoice/id6765821915?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/sillycombovoice/id6765821915?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -426,10 +468,10 @@
             <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/99/19/ef/9919ef05-8e3c-68bb-dcc8-252958461171/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="CleanURL Tap app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
               <h2>CleanURL Tap</h2>
-              <p>CleanURL Tap is a simple local utility for cleaning links before you open, save, or share them.</p>
+              <p>CleanURL Tap is a simple local utility for cleaning links before you open, save, or...</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/cleanurl-tap/id6767538573?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/cleanurl-tap/id6767538573?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -440,7 +482,7 @@
               <p>Big Text Note is a simple note app for writing large, easy-to-read text.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/bigtextnote/id6767796126?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/bigtextnote/id6767796126?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
@@ -448,12 +490,20 @@
             <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/50/95/51509524-f5be-b45a-9d7a-eaa659296f7a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="Asset Curve app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
               <h2>Asset Curve</h2>
-              <p>AssetCurve is a local, simple compound-growth simulator for creating rough estimates from your own inputs.</p>
+              <p>AssetCurve is a local, simple compound-growth simulator for creating rough...</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/asset-curve/id6768640767?uo=4">App Store で見る</a>
+          <a class="app-link" href="https://apps.apple.com/us/app/asset-curve/id6768640767?uo=4">App Store →</a>
         </article>
       <!-- APPS_LIST_END -->
+      </div>
+
+      <div class="store-download">
+        <p>Download our apps on the App Store.</p>
+        <!-- Official Apple Marketing Tools badge. Do not replace with self-made or modified artwork. -->
+        <a class="store-badge-link" href="https://apps.apple.com/us/developer/zec-inc/id1889726396" aria-label="Download ZEC Inc. apps on the App Store">
+          <img class="store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" loading="lazy">
+        </a>
       </div>
     </section>
   </main>
