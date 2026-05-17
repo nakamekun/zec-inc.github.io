@@ -94,11 +94,19 @@ def short_description(app: dict) -> str:
             sentence = sentences[0] if sentences else text
         if stripped_title_prefix and sentence and sentence[:1].islower():
             sentence = f"{track_name} {sentence}"
-        if len(sentence) > 110:
-            sentence = sentence[:107].rstrip() + "..."
+        if len(sentence) > 88:
+            sentence = truncate_text(sentence, 88)
         return sentence
     genre = app.get("primaryGenreName", "").strip()
     return genre or "App Store app"
+
+
+def truncate_text(text: str, max_length: int) -> str:
+    clipped = text[: max_length - 3].rstrip()
+    boundary = max(clipped.rfind(" "), clipped.rfind("、"))
+    if boundary >= max_length // 2:
+        clipped = clipped[:boundary].rstrip(" ,;:-")
+    return clipped + "..."
 
 
 def render_cards(apps: list[dict]) -> str:
@@ -125,7 +133,7 @@ def render_cards(apps: list[dict]) -> str:
                 f"              <p>{desc}</p>",
                 "            </div>",
                 "          </div>",
-                f'          <a class="app-link" href="{url}">App Store で見る</a>',
+                f'          <a class="app-link" href="{url}">App Store →</a>',
                 "        </article>",
                 "",
             ]
