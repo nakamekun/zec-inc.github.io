@@ -1,9 +1,9 @@
 {
   "source": {
-    "name": "Kickoff Bell group standings",
-    "updatedAt": "2026-06-07T00:00:00Z",
-    "generatedAt": "2026-06-07T00:00:00Z",
-    "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings"
+    "name": "ZEC curated group standings",
+    "updatedAt": "2026-06-11T21:54:15Z",
+    "generatedAt": "2026-06-11T21:54:15Z",
+    "url": null
   },
   "groups": [
     {
@@ -12,17 +12,17 @@
         {
           "teamId": "mexico",
           "rank": 1,
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 0,
+          "goalsFor": 2,
           "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0
+          "goalDifference": 2,
+          "points": 3
         },
         {
-          "teamId": "south-africa",
+          "teamId": "south-korea",
           "rank": 2,
           "played": 0,
           "won": 0,
@@ -34,7 +34,7 @@
           "points": 0
         },
         {
-          "teamId": "south-korea",
+          "teamId": "czech-republic",
           "rank": 3,
           "played": 0,
           "won": 0,
@@ -46,15 +46,15 @@
           "points": 0
         },
         {
-          "teamId": "czech-republic",
+          "teamId": "south-africa",
           "rank": 4,
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
+          "goalsAgainst": 2,
+          "goalDifference": -2,
           "points": 0
         }
       ]
