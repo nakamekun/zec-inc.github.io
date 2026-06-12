@@ -1,3 +1,16 @@
 {
-  "matches": {}
+  "matches": {
+    "match-002": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-12T04:18:42Z",
+      "lastAttemptAt": "2026-06-12T04:18:42Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "trusted feed result accepted",
+      "lastSuccessfulUpdateAt": "2026-06-12T04:18:42Z",
+      "finalResultCaptured": true
+    }
+  }
 }
