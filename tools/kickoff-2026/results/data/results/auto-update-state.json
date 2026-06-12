@@ -11,6 +11,18 @@
       "lastMessage": "trusted feed result accepted",
       "lastSuccessfulUpdateAt": "2026-06-12T04:18:42Z",
       "finalResultCaptured": true
+    },
+    "match-003": {
+      "finalCheckAttempted": true,
+      "finalCheckAt": "2026-06-12T22:29:26Z",
+      "lastAttemptAt": "2026-06-12T22:29:26Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed",
+      "lastSuccessfulUpdateAt": "2026-06-12T22:29:26Z",
+      "finalResultCaptured": true
     }
   }
 }

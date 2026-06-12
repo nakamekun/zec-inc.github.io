@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-12T04:18:43Z",
-    "generatedAt": "2026-06-12T04:18:43Z",
+    "updatedAt": "2026-06-12T22:29:27Z",
+    "generatedAt": "2026-06-12T22:29:27Z",
     "url": null
   },
   "groups": [
@@ -65,26 +65,26 @@
         {
           "teamId": "canada",
           "rank": 1,
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "bosnia-and-herzegovina",
           "rank": 2,
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "qatar",
