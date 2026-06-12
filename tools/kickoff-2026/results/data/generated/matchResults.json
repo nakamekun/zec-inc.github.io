@@ -1,0 +1,21 @@
+{
+  "source": {
+    "name": "ZEC curated match results",
+    "updatedAt": "2026-06-11T21:30:13Z",
+    "generatedAt": "2026-06-11T21:30:13Z",
+    "url": null
+  },
+  "results": [
+    {
+      "matchId": "match-001",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "mexico",
+      "resultUpdatedAt": "2026-06-11T21:30:03Z",
+      "source": "zec-curated"
+    }
+  ]
+}
