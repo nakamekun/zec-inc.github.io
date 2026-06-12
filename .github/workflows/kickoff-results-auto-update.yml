@@ -1,0 +1,83 @@
+name: Kickoff Results Auto Update
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force result checks even for finished matches"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  update-results:
+    runs-on: ubuntu-latest
+    env:
+      AUTO_UPDATE_ENABLED: ${{ vars.KICKOFF_AUTO_UPDATE_ENABLED || 'false' }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check auto update switch
+        if: env.AUTO_UPDATE_ENABLED != 'true'
+        run: |
+          echo "KICKOFF_AUTO_UPDATE_ENABLED is not true; skipping scheduled update." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Run scheduled updater
+        if: env.AUTO_UPDATE_ENABLED == 'true'
+        working-directory: tools/kickoff-2026/results
+        run: |
+          FORCE_ARG=""
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            FORCE_ARG="--force"
+          fi
+          python3 scripts/results/auto_update_results.py ${FORCE_ARG}
+
+      - name: Test generated JSON and tools
+        if: env.AUTO_UPDATE_ENABLED == 'true'
+        working-directory: tools/kickoff-2026/results
+        run: |
+          python3 -m json.tool data/generated/matchResults.json >/dev/null
+          python3 -m json.tool data/generated/groupStandings.json >/dev/null
+          python3 -m json.tool ../../..//data/kickoff-2026/matchResults.json >/dev/null
+          python3 -m json.tool ../../..//data/kickoff-2026/groupStandings.json >/dev/null
+          python3 -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Deploy public JSON
+        if: env.AUTO_UPDATE_ENABLED == 'true'
+        working-directory: tools/kickoff-2026/results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 scripts/results/deploy_generated_results.py --no-push --no-curl
+
+      - name: Commit tool state and generated data
+        if: env.AUTO_UPDATE_ENABLED == 'true'
+        run: |
+          git add tools/kickoff-2026/results/data/results/manual-match-results.json \
+            tools/kickoff-2026/results/data/results/auto-update-state.json \
+            tools/kickoff-2026/results/data/generated/matchResults.json \
+            tools/kickoff-2026/results/data/generated/groupStandings.json
+          if git diff --cached --quiet; then
+            echo "No tool state changes to commit."
+          else
+            git commit -m "Update Kickoff 2026 auto result state"
+          fi
+
+      - name: Push changes
+        if: env.AUTO_UPDATE_ENABLED == 'true'
+        run: |
+          if git log --branches --not --remotes --quiet; then
+            echo "No commits to push."
+          else
+            git push
+          fi

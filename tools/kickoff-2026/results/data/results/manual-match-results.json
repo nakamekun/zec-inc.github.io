@@ -1,0 +1,16 @@
+{
+  "matches": [
+    {
+      "matchId": "match-001",
+      "status": "fullTime",
+      "homeScore": 2,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "mexico",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-11T21:30:03Z",
+      "source": "zec-curated"
+    }
+  ]
+}

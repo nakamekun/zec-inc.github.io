@@ -1,0 +1,86 @@
+# Kickoff Results Auto Update
+
+The `zec-inc.github.io` repository owns both the automation and the public JSON files for Kickoff Bell 2026. GitHub Actions runs in this same repository and updates these published files directly:
+
+- `https://zec-inc.jp/data/kickoff-2026/matchResults.json`
+- `https://zec-inc.jp/data/kickoff-2026/groupStandings.json`
+
+The iOS app is unchanged. It continues to read the two remote JSON files above.
+
+## Layout
+
+Automation lives in:
+
+`tools/kickoff-2026/results/`
+
+Important files:
+
+- `scripts/results/auto_update_results.py`
+- `scripts/results/generate_match_results.py`
+- `scripts/results/generate_group_standings.py`
+- `scripts/results/deploy_generated_results.py`
+- `scripts/results/providers/fifa_match_centre_provider.py`
+- `data/results/match-id-map.json`
+- `data/results/manual-match-results.json`
+- `data/results/auto-update-state.json`
+
+Generated intermediate files stay under `tools/kickoff-2026/results/data/generated/`. The public files are always:
+
+- `data/kickoff-2026/matchResults.json`
+- `data/kickoff-2026/groupStandings.json`
+
+## Schedule
+
+Workflow:
+
+`.github/workflows/kickoff-results-auto-update.yml`
+
+It runs every 10 minutes and also supports manual `workflow_dispatch`. The updater checks matches from `match-id-map.json` and attempts result capture at:
+
+- `kickoffUTC + 2h10m`: first check for normal full-time results
+- `kickoffUTC + 3h`: final check for delays, stoppage time, extra time in unusual cases, or provider lag
+
+## Enable / Disable
+
+Repository variable:
+
+`KICKOFF_AUTO_UPDATE_ENABLED=true`
+
+This workflow is intentionally gated. It runs only when the variable is exactly `true`. Set it to `false` to pause the automation. After the tournament, either set the variable to `false` or remove/comment out the `schedule` block in the workflow.
+
+GitHub repository settings must allow Actions to write commits:
+
+`Settings > Actions > General > Workflow permissions > Read and write permissions`
+
+`ZEC_PAGES_DEPLOY_TOKEN` is not required for same-repository updates. The workflow uses `GITHUB_TOKEN`.
+
+## Provider Safety
+
+The FIFA Match Centre provider reads page embedded JSON or stable structured data. It updates only when confidence is at least `0.90` and all of these are true:
+
+- home and away teams match the app schedule
+- match number or kickoff date supports the identity
+- both scores are present
+- final/full-time/penalty state is present
+- winner can be derived from score or penalties
+- the provider result does not conflict with an existing final result
+
+If the provider returns `not_found`, `not_final_yet`, `provider_error`, `low_confidence`, or `conflict`, existing JSON is preserved and the next cron run retries.
+
+## Local Commands
+
+Run from the repository root:
+
+```sh
+cd /Users/kt/zec-inc.github.io
+python3 tools/kickoff-2026/results/scripts/results/auto_update_results.py --dry-run
+python3 tools/kickoff-2026/results/scripts/results/auto_update_results.py
+python3 tools/kickoff-2026/results/scripts/results/generate_match_results.py
+python3 tools/kickoff-2026/results/scripts/results/generate_group_standings.py
+python3 tools/kickoff-2026/results/scripts/results/deploy_generated_results.py --no-push --no-curl
+python3 -m unittest discover -s tools/kickoff-2026/results/tests -p 'test_*.py'
+```
+
+## Fallback
+
+Manual input is an emergency override only. If the provider breaks because the source page structure changes, update `tools/kickoff-2026/results/data/results/manual-match-results.json`, regenerate both JSON files, run the deploy script, and commit the result. Store only factual values: match IDs, scores, penalty scores, winner team IDs, statuses, and timestamps. Do not store official copy, images, logos, or page text.
