@@ -38,7 +38,7 @@ def run_git(repo: Path, args: list[str], check: bool = True) -> subprocess.Compl
 
 
 def status_entries(repo: Path) -> list[tuple[str, str]]:
-    output = run_git(repo, ["status", "--porcelain"], check=True).stdout.splitlines()
+    output = run_git(repo, ["status", "--porcelain", "--ignored=no"], check=True).stdout.splitlines()
     entries: list[tuple[str, str]] = []
     for line in output:
         if line:

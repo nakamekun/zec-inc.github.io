@@ -18,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       AUTO_UPDATE_ENABLED: ${{ vars.KICKOFF_AUTO_UPDATE_ENABLED || 'false' }}
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -51,6 +52,11 @@ jobs:
           python3 -m json.tool ../../..//data/kickoff-2026/matchResults.json >/dev/null
           python3 -m json.tool ../../..//data/kickoff-2026/groupStandings.json >/dev/null
           python3 -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Clean Python bytecode caches
+        if: env.AUTO_UPDATE_ENABLED == 'true'
+        run: |
+          find tools/kickoff-2026/results -type d -name "__pycache__" -prune -exec rm -rf {} +
 
       - name: Deploy public JSON
         if: env.AUTO_UPDATE_ENABLED == 'true'
