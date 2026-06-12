@@ -11,6 +11,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-11T21:30:03Z",
       "source": "zec-curated"
+    },
+    {
+      "matchId": "match-002",
+      "status": "fullTime",
+      "homeScore": 2,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "south-korea",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-12T04:20:00Z",
+      "source": "zec-auto"
     }
   ]
 }
