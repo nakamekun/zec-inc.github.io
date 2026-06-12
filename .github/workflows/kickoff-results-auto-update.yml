@@ -82,7 +82,9 @@ jobs:
       - name: Push changes
         if: env.AUTO_UPDATE_ENABLED == 'true'
         run: |
-          if git log --branches --not --remotes --quiet; then
+          LOCAL_HEAD="$(git rev-parse HEAD)"
+          UPSTREAM_HEAD="$(git rev-parse @{u})"
+          if [ "$LOCAL_HEAD" = "$UPSTREAM_HEAD" ]; then
             echo "No commits to push."
           else
             git push
