@@ -56,12 +56,13 @@ GitHub repository settings must allow Actions to write commits:
 
 ## Provider Safety
 
-The FIFA Match Centre provider reads page embedded JSON or stable structured data. It updates only when confidence is at least `0.90` and all of these are true:
+The FIFA Match Centre provider first reads the public FIFA calendar JSON endpoint used by the site, then falls back to page embedded JSON if that endpoint is unavailable. It updates only when confidence is at least `0.90` and all of these are true:
 
 - home and away teams match the app schedule
-- match number or kickoff date supports the identity
+- competition and season match the 2026 tournament
+- match number and kickoff date support the identity
 - both scores are present
-- final/full-time/penalty state is present
+- the source marks the match final
 - winner can be derived from score or penalties
 - the provider result does not conflict with an existing final result
 
