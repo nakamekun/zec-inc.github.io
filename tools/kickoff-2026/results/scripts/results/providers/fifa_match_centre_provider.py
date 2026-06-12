@@ -4,8 +4,9 @@ import html
 import json
 import re
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import Any
+from urllib.parse import urlencode
 
 from .base import MatchContext, ResultFetchOutcome, ResultProvider
 from .static_result_feed_provider import winner_for
@@ -22,16 +23,27 @@ FINAL_STATUS_HINTS = {
     "result",
 }
 LIVE_STATUS_HINTS = {"live", "inprogress", "in_progress", "half_time", "half time", "ht", "scheduled"}
+FIFA_CALENDAR_API_URL = "https://api.fifa.com/api/v3/calendar/matches"
+FIFA_WORLD_CUP_COMPETITION_ID = "17"
+FIFA_WORLD_CUP_2026_SEASON_ID = "285023"
+FINAL_MATCH_STATUS = 0
+SCHEDULED_MATCH_STATUS = 1
+TIME_MATCH_TOLERANCE = timedelta(hours=2)
 
 
 class FifaMatchCentreProvider(ResultProvider):
     """Best-effort FIFA Match Centre provider that only updates high-confidence final results."""
 
-    def __init__(self, timeout: int = 20, page_loader=None) -> None:
+    def __init__(self, timeout: int = 20, page_loader=None, json_loader=None) -> None:
         self.timeout = timeout
         self.page_loader = page_loader or self.load_page
+        self.json_loader = json_loader or self.load_json
 
     def fetch_result(self, match_context: MatchContext) -> ResultFetchOutcome:
+        api_outcome = self.fetch_calendar_result(match_context)
+        if api_outcome.status != "provider_error":
+            return api_outcome
+
         try:
             page = self.page_loader(match_context.match_centre_url)
         except Exception as error:  # noqa: BLE001
@@ -55,6 +67,34 @@ class FifaMatchCentreProvider(ResultProvider):
             )
         return candidate_to_outcome(match_context, best)
 
+    def fetch_calendar_result(self, match_context: MatchContext) -> ResultFetchOutcome:
+        try:
+            payload = self.json_loader(calendar_url_for(match_context))
+        except Exception as error:  # noqa: BLE001
+            return ResultFetchOutcome(
+                status="provider_error",
+                match_id=match_context.match_id,
+                raw_source_name="fifa-calendar-api",
+                notes=f"calendar fetch failed: {error.__class__.__name__}",
+            )
+        matches = payload.get("Results") if isinstance(payload, dict) else None
+        if not isinstance(matches, list):
+            return ResultFetchOutcome(
+                status="provider_error",
+                match_id=match_context.match_id,
+                raw_source_name="fifa-calendar-api",
+                notes="calendar response missing Results array",
+            )
+        best = choose_best_calendar_candidate(match_context, matches)
+        if best is None:
+            return ResultFetchOutcome(
+                status="not_found",
+                match_id=match_context.match_id,
+                raw_source_name="fifa-calendar-api",
+                notes="no calendar match candidate matched number, teams, and kickoff",
+            )
+        return calendar_candidate_to_outcome(match_context, best)
+
     def load_page(self, url: str) -> str:
         request = urllib.request.Request(
             url,
@@ -65,6 +105,24 @@ class FifaMatchCentreProvider(ResultProvider):
             if status >= 400:
                 raise RuntimeError(f"HTTP {status}")
             return response.read().decode("utf-8", errors="replace")
+
+    def load_json(self, url: str) -> Any:
+        request = urllib.request.Request(
+            url,
+            headers={"User-Agent": "ZEC Kickoff Bell result updater; contact: https://zec-inc.jp/support/"},
+        )
+        with urllib.request.urlopen(request, timeout=self.timeout) as response:
+            status = getattr(response, "status", 200)
+            if status >= 400:
+                raise RuntimeError(f"HTTP {status}")
+            return json.loads(response.read().decode("utf-8", errors="replace"))
+
+
+def calendar_url_for(match_context: MatchContext) -> str:
+    start = (match_context.kickoff_utc - timedelta(hours=3)).date().isoformat()
+    end = (match_context.kickoff_utc + timedelta(days=1)).date().isoformat()
+    query = urlencode({"language": "en", "from": start, "to": end})
+    return f"{FIFA_CALENDAR_API_URL}?{query}"
 
 
 def extract_json_payloads(page: str) -> list[Any]:
@@ -129,6 +187,99 @@ def choose_best_candidate(match_context: MatchContext, candidates: list[dict[str
     return copy
 
 
+def choose_best_calendar_candidate(match_context: MatchContext, candidates: list[Any]) -> dict[str, Any] | None:
+    scored: list[tuple[float, dict[str, Any]]] = []
+    for candidate in candidates:
+        if not isinstance(candidate, dict):
+            continue
+        confidence = calendar_candidate_confidence(match_context, candidate)
+        if confidence > 0:
+            scored.append((confidence, candidate))
+    if not scored:
+        return None
+    scored.sort(key=lambda item: item[0], reverse=True)
+    best_confidence, best = scored[0]
+    copy = dict(best)
+    copy["_zecConfidence"] = best_confidence
+    return copy
+
+
+def calendar_candidate_confidence(match_context: MatchContext, candidate: dict[str, Any]) -> float:
+    if str(candidate.get("IdCompetition")) != FIFA_WORLD_CUP_COMPETITION_ID:
+        return 0.0
+    if str(candidate.get("IdSeason")) != FIFA_WORLD_CUP_2026_SEASON_ID:
+        return 0.0
+    if match_context.match_number is not None and candidate.get("MatchNumber") != match_context.match_number:
+        return 0.0
+    kickoff = parse_fifa_datetime(candidate.get("Date"))
+    if kickoff is None:
+        return 0.0
+    if abs(kickoff - match_context.kickoff_utc) > TIME_MATCH_TOLERANCE:
+        return 0.0
+    home_name = team_name(candidate.get("Home"))
+    away_name = team_name(candidate.get("Away"))
+    if not team_names_match(match_context.home_team_name, home_name):
+        return 0.0
+    if not team_names_match(match_context.away_team_name, away_name):
+        return 0.0
+
+    confidence = 0.75
+    if match_context.match_number is not None:
+        confidence += 0.10
+    if kickoff == match_context.kickoff_utc:
+        confidence += 0.05
+    if calendar_score_pair(candidate) is not None:
+        confidence += 0.05
+    if candidate.get("MatchStatus") == FINAL_MATCH_STATUS:
+        confidence += 0.10
+    return min(confidence, 1.0)
+
+
+def calendar_candidate_to_outcome(match_context: MatchContext, candidate: dict[str, Any]) -> ResultFetchOutcome:
+    confidence = float(candidate.get("_zecConfidence", 0.0))
+    status = candidate.get("MatchStatus")
+    if status != FINAL_MATCH_STATUS:
+        return ResultFetchOutcome(
+            status="not_final_yet" if status == SCHEDULED_MATCH_STATUS else "low_confidence",
+            match_id=match_context.match_id,
+            confidence=min(confidence, 0.80),
+            raw_source_name="fifa-calendar-api",
+            notes=f"calendar candidate is not final: MatchStatus={status}",
+        )
+    scores = calendar_score_pair(candidate)
+    if scores is None:
+        return ResultFetchOutcome(
+            status="low_confidence",
+            match_id=match_context.match_id,
+            confidence=min(confidence, 0.75),
+            raw_source_name="fifa-calendar-api",
+            notes="calendar candidate is missing complete score",
+        )
+    home_score, away_score = scores
+    penalties = calendar_penalty_pair(candidate)
+    winner = winner_for(
+        match_context,
+        "penalties" if penalties else "finished",
+        home_score,
+        away_score,
+        penalties[0] if penalties else None,
+        penalties[1] if penalties else None,
+    )
+    return ResultFetchOutcome(
+        status="found" if confidence >= 0.9 else "low_confidence",
+        match_id=match_context.match_id,
+        home_score=home_score,
+        away_score=away_score,
+        home_penalty_score=penalties[0] if penalties else None,
+        away_penalty_score=penalties[1] if penalties else None,
+        winner_team_id=winner,
+        result_updated_at=utc_now(),
+        confidence=confidence,
+        raw_source_name="fifa-calendar-api",
+        notes="calendar API candidate parsed",
+    )
+
+
 def candidate_confidence(match_context: MatchContext, candidate: dict[str, Any]) -> float:
     text = normalize_text(json.dumps(candidate, ensure_ascii=False))
     confidence = 0.0
@@ -152,6 +303,82 @@ def candidate_confidence(match_context: MatchContext, candidate: dict[str, Any])
 
 def normalize_text(value: str) -> str:
     return re.sub(r"\s+", " ", value.lower())
+
+
+def parse_fifa_datetime(value: Any) -> datetime | None:
+    if not isinstance(value, str):
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc)
+    except ValueError:
+        return None
+
+
+def team_name(value: Any) -> str:
+    if not isinstance(value, dict):
+        return ""
+    names = value.get("TeamName")
+    if isinstance(names, list):
+        for item in names:
+            if isinstance(item, dict) and isinstance(item.get("Description"), str):
+                return item["Description"]
+    for key in ["ShortClubName", "Abbreviation", "IdCountry"]:
+        item = value.get(key)
+        if isinstance(item, str):
+            return item
+    return ""
+
+
+def team_names_match(expected: str, actual: str) -> bool:
+    expected_normalized = normalize_team_name(expected)
+    actual_normalized = normalize_team_name(actual)
+    aliases = {
+        "south korea": {"korea republic"},
+        "czech republic": {"czechia"},
+        "bosnia herzegovina": {"bosnia and herzegovina"},
+        "usa": {"united states"},
+        "ivory coast": {"cote divoire", "cotedivoire"},
+        "dr congo": {"congo dr", "congo democratic republic"},
+    }
+    return actual_normalized == expected_normalized or actual_normalized in aliases.get(expected_normalized, set())
+
+
+def normalize_team_name(value: str) -> str:
+    value = html.unescape(value).lower()
+    value = value.replace("&", " and ")
+    value = re.sub(r"[^a-z0-9]+", " ", value)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def calendar_score_pair(candidate: dict[str, Any]) -> tuple[int, int] | None:
+    home = candidate.get("HomeTeamScore")
+    away = candidate.get("AwayTeamScore")
+    if valid_score(home) and valid_score(away):
+        return int(home), int(away)
+    home_team = candidate.get("Home")
+    away_team = candidate.get("Away")
+    if isinstance(home_team, dict) and isinstance(away_team, dict):
+        home = home_team.get("Score")
+        away = away_team.get("Score")
+        if valid_score(home) and valid_score(away):
+            return int(home), int(away)
+    return None
+
+
+def calendar_penalty_pair(candidate: dict[str, Any]) -> tuple[int, int] | None:
+    home = candidate.get("HomeTeamPenaltyScore")
+    away = candidate.get("AwayTeamPenaltyScore")
+    if not valid_score(home) or not valid_score(away):
+        return None
+    home_int = int(home)
+    away_int = int(away)
+    if home_int == 0 and away_int == 0:
+        return None
+    return home_int, away_int
+
+
+def valid_score(value: Any) -> bool:
+    return isinstance(value, int) and not isinstance(value, bool) and value >= 0
 
 
 def candidate_to_outcome(match_context: MatchContext, candidate: dict[str, Any]) -> ResultFetchOutcome:
