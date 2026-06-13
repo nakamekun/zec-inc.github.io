@@ -1,0 +1,29 @@
+name: ZEC Apps pages
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Compile scripts
+        run: python3 -m py_compile scripts/update_apps_page.py scripts/validate_apps_pages.py
+
+      - name: Regenerate ZEC Apps pages
+        run: python3 scripts/update_apps_page.py --strict
+
+      - name: Validate generated pages
+        run: python3 scripts/validate_apps_pages.py
+
+      - name: Detect uncommitted generated changes
+        run: git diff --exit-code

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Apps | ZEC Apps</title>
+  <meta name="description" content="Apps for household routines, family records, shared preparation, and simple daily checks.">
+  <link rel="canonical" href="https://zec-inc.jp/apps/family/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ZEC Apps">
+  <meta property="og:title" content="Family Apps | ZEC Apps">
+  <meta property="og:description" content="Apps for household routines, family records, shared preparation, and simple daily checks.">
+  <meta property="og:url" content="https://zec-inc.jp/apps/family/">
+  <style>
+
+    :root {
+      --bg: #f5f8ff;
+      --surface: #ffffff;
+      --soft: #f8fbff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+      --header: #2c3e50;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header { background: var(--header); color: #ffffff; padding: 20px; }
+    .topbar, main, footer { max-width: 920px; margin: 0 auto; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .brand { font-weight: 600; }
+    a { color: var(--accent); }
+    .topbar a { color: #ffffff; text-decoration: none; }
+    .topbar a:hover, a:hover { text-decoration: underline; }
+    main { padding: 44px 20px; }
+    .hero, .section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.06); }
+    .hero { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; }
+    .app-icon { width: 96px; height: 96px; border-radius: 22px; border: 1px solid rgba(226, 232, 240, 0.9); box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1); }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.2; letter-spacing: 0; }
+    .tagline { margin: 0 0 18px; color: var(--muted); font-size: 17px; }
+    .actions, .app-actions, .category-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .button, .app-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line); background: #ffffff; text-decoration: none; font-weight: 600; }
+    .button.primary, .app-link.primary { background: var(--accent); border-color: var(--accent); color: #ffffff; }
+    .section { margin-top: 18px; }
+    h2 { margin: 0 0 14px; font-size: 22px; color: var(--header); }
+    p { margin: 0 0 12px; }
+    ul, ol { margin: 0; padding-left: 1.25em; }
+    .app-grid, .screenshots { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+    .app-mini-card, .screenshot { margin: 0; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .app-mini-card h2, .app-mini-card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.3; }
+    .app-mini-card p { color: var(--muted); font-size: 14px; }
+    .mini-icon { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 10px; }
+    .screenshot img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    details { border-top: 1px solid var(--line); padding: 14px 0; }
+    details:first-child { border-top: 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    .meta { color: var(--muted); font-size: 14px; }
+    footer { padding: 0 20px 40px; color: var(--muted); font-size: 14px; }
+    .footer { border-top: 1px solid var(--line); padding-top: 16px; }
+    @media (max-width: 640px) {
+      main { padding-top: 28px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      .section { padding: 22px; }
+      h1 { font-size: 30px; }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">ZEC Inc.</div>
+      <nav aria-label="Secondary">
+        <a href="/apps/">Apps</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Family Apps</h1>
+        <p class="tagline">Apps for household routines, family records, shared preparation, and simple daily checks.</p>
+        <div class="actions">
+          <a class="button" href="/apps/">All ZEC Apps</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Apps</h2>
+      <div class="app-grid">
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/09/99/da0999e5-7230-9e62-d11a-c91e9b2806fb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PhotoDay – One Photo a Day app icon" loading="lazy">
+          <h2><a href="/apps/photo-day/">PhotoDay – One Photo a Day</a></h2>
+          <p>Keep a simple one-photo-a-day memory habit for family life, trips, projects, and everyday moments.</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/photo-day/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/photoday-one-photo-a-day/id6761641437?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/26/25/ae/2625ae14-8af5-34b2-0c6d-630a10ba152a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Big Text Note app icon" loading="lazy">
+          <h2><a href="/apps/big-text-note/">Big Text Note</a></h2>
+          <p>Write one large, easy-to-read note for quick display, reminders, labels, and simple communication.</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/big-text-note/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/big-text-note/id6767796126?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ef/cb/00/efcb00bb-2e61-edc2-9fe9-5c3f6ca8e1e8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="LaundryTap app icon" loading="lazy">
+          <h2><a href="/apps/laundrytap/">LaundryTap</a></h2>
+          <p>A quick tap-based laundry record for remembering whether the laundry was done, moved, or checked.</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/laundrytap/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/laundrytap/id6762600691?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/0b/fb/320bfbe0-a413-828f-debb-a6d69ece01ee/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PillTap app icon" loading="lazy">
+          <h2><a href="/apps/pilltap/">PillTap</a></h2>
+          <p>Record medication checks quickly without turning the task into a complex health tracking workflow.</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/pilltap/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/pilltap/id6762545903?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/fd/40/c2fd4004-a759-89a6-2abd-e39e4121cdeb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Packed by ZEC app icon" loading="lazy">
+          <h2><a href="/apps/packed/">Packed by ZEC</a></h2>
+          <p>Prepare for trips and daily outings with a focused packing checklist and widget-friendly checking flow.</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/packed/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/packed-by-zec/id6762812333?uo=4">App Store →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">&copy; ZEC Inc.</div>
+  </footer>
+</body>
+</html>

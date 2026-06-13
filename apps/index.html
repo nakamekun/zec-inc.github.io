@@ -95,6 +95,45 @@
       color: var(--text);
     }
 
+    .category-nav {
+      margin: 0 0 24px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #f8fbff;
+    }
+
+    .category-nav h2 {
+      margin: 0 0 10px;
+      color: var(--header);
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    .category-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .category-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .category-link:hover {
+      text-decoration: underline;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -146,6 +185,15 @@
       -webkit-line-clamp: 2;
     }
 
+    .app-card h2 a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .app-card h2 a:hover {
+      text-decoration: underline;
+    }
+
     .app-card p {
       display: -webkit-box;
       margin: 0;
@@ -157,11 +205,17 @@
       -webkit-line-clamp: 3;
     }
 
+    .app-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
     .app-link {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      margin-top: 18px;
       min-height: 34px;
       padding: 0 12px;
       border-radius: 8px;
@@ -175,6 +229,12 @@
       color: var(--accent);
       background: #ffffff;
       width: fit-content;
+    }
+
+    .app-link.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #ffffff;
     }
 
     .app-link:hover {
@@ -261,272 +321,355 @@
       <h1>ZEC Apps</h1>
       <p class="lead">Small iOS apps for everyday tasks, travel, records, checks, and timers.</p>
       <p class="lead-ja">合同会社ゼクでは、旅行、記録、確認、タイマーなど、日常のちょっとした場面で使えるシンプルなiPhoneアプリを開発・公開しています。</p>
+      <nav class="category-nav" aria-label="App categories">
+        <h2>Browse by Category</h2>
+        <div class="category-links">
+          <a class="category-link" href="photo-memory/">Photo & Memory</a>
+          <a class="category-link" href="travel/">Travel</a>
+          <a class="category-link" href="tap-tools/">Tap Tools</a>
+          <a class="category-link" href="widgets/">Widgets</a>
+          <a class="category-link" href="family/">Family</a>
+          <a class="category-link" href="productivity/">Productivity</a>
+        </div>
+      </nav>
       <!-- To refresh this list from the App Store Lookup API, run: python scripts/update_apps_page.py -->
 
       <div class="grid">
       <!-- APPS_LIST_START -->
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/80/6f/33806fd0-23c3-f409-d5e9-a0448c329054/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="PhotoDay – One Photo a Day app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/09/99/da0999e5-7230-9e62-d11a-c91e9b2806fb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PhotoDay – One Photo a Day app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>PhotoDay – One Photo a Day</h2>
-              <p>PhotoDay helps you capture what mattered most — in a simple, beautiful way.</p>
+              <h2><a href="photo-day/">PhotoDay – One Photo a Day</a></h2>
+              <p>Keep a simple one-photo-a-day memory habit for family life, trips, projects, and everyday moments.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/photoday-one-photo-a-day/id6761641437?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="photo-day/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/photoday-one-photo-a-day/id6761641437?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/0b/fb/320bfbe0-a413-828f-debb-a6d69ece01ee/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="PillTap app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/66/d7/ff/66d7ff12-d2d6-083a-5e57-d0902a8c2f3a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Kickoff Bell 2026 app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>PillTap</h2>
-              <p>Track your medication in seconds.</p>
+              <h2><a href="kickoff-bell-2026/">Kickoff Bell 2026</a></h2>
+              <p>A lightweight, unofficial match schedule and reminder app for following 2026 football kickoff times.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/pilltap/id6762545903?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="kickoff-bell-2026/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/kickoff-bell-2026/id6771279362?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/72/e7/a8/72e7a8e6-68f5-e3d7-f846-daa98dd12759/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="WaterDone app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/26/25/ae/2625ae14-8af5-34b2-0c6d-630a10ba152a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Big Text Note app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>WaterDone</h2>
+              <h2><a href="big-text-note/">Big Text Note</a></h2>
+              <p>Write one large, easy-to-read note for quick display, reminders, labels, and simple communication.</p>
+            </div>
+          </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="big-text-note/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/big-text-note/id6767796126?uo=4">App Store →</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <div class="app-card-main">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ef/cb/00/efcb00bb-2e61-edc2-9fe9-5c3f6ca8e1e8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="LaundryTap app icon" width="64" height="64" loading="lazy">
+            <div class="app-copy">
+              <h2><a href="laundrytap/">LaundryTap</a></h2>
+              <p>A quick tap-based laundry record for remembering whether the laundry was done, moved, or checked.</p>
+            </div>
+          </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="laundrytap/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/laundrytap/id6762600691?uo=4">App Store →</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <div class="app-card-main">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/7c/1e/be7c1e49-96a0-e11e-7ff5-738714163cb6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Study Buddy Timer app icon" width="64" height="64" loading="lazy">
+            <div class="app-copy">
+              <h2><a href="study-buddy-timer/">Study Buddy Timer</a></h2>
+              <p>Study Buddy Timer is a simple focus timer for tracking your study time.</p>
+            </div>
+          </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="study-buddy-timer/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/study-buddy-timer/id6764601072?uo=4">App Store →</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <div class="app-card-main">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/0b/fb/320bfbe0-a413-828f-debb-a6d69ece01ee/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PillTap app icon" width="64" height="64" loading="lazy">
+            <div class="app-copy">
+              <h2><a href="pilltap/">PillTap</a></h2>
+              <p>Record medication checks quickly without turning the task into a complex health tracking workflow.</p>
+            </div>
+          </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="pilltap/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/pilltap/id6762545903?uo=4">App Store →</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <div class="app-card-main">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/a7/bf/20a7bffb-4cf1-3b70-4b7a-c8a4f721a958/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="CleanURL Tap app icon" width="64" height="64" loading="lazy">
+            <div class="app-copy">
+              <h2><a href="cleanurl-tap/">CleanURL Tap</a></h2>
+              <p>Clean copied links by removing common tracking clutter before saving, opening, or sharing them.</p>
+            </div>
+          </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="cleanurl-tap/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/cleanurl-tap/id6767538573?uo=4">App Store →</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <div class="app-card-main">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/72/e7/a8/72e7a8e6-68f5-e3d7-f846-daa98dd12759/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="WaterDone app icon" width="64" height="64" loading="lazy">
+            <div class="app-copy">
+              <h2><a href="waterdone/">WaterDone</a></h2>
               <p>A simple hydration tracker designed for speed.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/waterdone/id6763200921?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="waterdone/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/waterdone/id6763200921?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ba/d0/bc/bad0bcc4-8a7e-a955-3f14-a2fde4d1475f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="DoneToday: Daily Log app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ba/d0/bc/bad0bcc4-8a7e-a955-3f14-a2fde4d1475f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="DoneToday: Daily Log app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>DoneToday: Daily Log</h2>
+              <h2><a href="donetoday-daily-log/">DoneToday: Daily Log</a></h2>
               <p>DoneToday helps you focus on what you actually did today.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/donetoday-daily-log/id6761447413?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="donetoday-daily-log/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/donetoday-daily-log/id6761447413?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ef/cb/00/efcb00bb-2e61-edc2-9fe9-5c3f6ca8e1e8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="LaundryTap app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/fd/40/c2fd4004-a759-89a6-2abd-e39e4121cdeb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Packed by ZEC app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>LaundryTap</h2>
-              <p>Never wonder “Did I do the laundry?” again.</p>
+              <h2><a href="packed/">Packed by ZEC</a></h2>
+              <p>Prepare for trips and daily outings with a focused packing checklist and widget-friendly checking flow.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/laundrytap/id6762600691?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="packed/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/packed-by-zec/id6762812333?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/15/9f/86159f2c-b34f-7478-0e5b-bdadc81ec536/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="PinLog app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/eb/e1/86/ebe18684-d112-0184-5384-8563c547a7f7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PinLog Text Notes app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>PinLog</h2>
-              <p>PinLog is not a note app.</p>
+              <h2><a href="pinlog-text-notes/">PinLog Text Notes</a></h2>
+              <p>PinLog is a simple place to save text and links you do not want to lose.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/pinlog/id6763267903?uo=4">App Store →</a>
-        </article>
-
-        <article class="app-card">
-          <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/52/6c/c9526c56-1671-8b42-ab3f-c1670697937d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="Packed app icon" width="64" height="64" loading="lazy">
-            <div class="app-copy">
-              <h2>Packed</h2>
-              <p>Packed is a simple app to make sure you never forget your essentials.</p>
-            </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="pinlog-text-notes/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/pinlog-text-notes/id6763267903?uo=4">App Store →</a>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/packed/id6762812333?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b5/03/ae/b503ae74-2d4e-d83a-9fe3-823980045fc7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="TapLog - Mood Tracker app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/58/83/ee5883e8-20bb-1fe2-3831-5473d2909c1c/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="Body Rhythm Log app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>TapLog - Mood Tracker</h2>
-              <p>Track your day in one tap.</p>
-            </div>
-          </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/taplog-mood-tracker/id6761535550?uo=4">App Store →</a>
-        </article>
-
-        <article class="app-card">
-          <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/75/ba/5f75ba06-7533-496c-590e-6bc0866f8a9b/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.jpg" alt="PoopTap – Daily Tracker app icon" width="64" height="64" loading="lazy">
-            <div class="app-copy">
-              <h2>PoopTap – Daily Tracker</h2>
-              <p>PoopTap is a simple and playful poop logging app.</p>
-            </div>
-          </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/pooptap-daily-tracker/id6762576578?uo=4">App Store →</a>
-        </article>
-
-        <article class="app-card">
-          <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/58/83/ee5883e8-20bb-1fe2-3831-5473d2909c1c/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.jpg" alt="Body Rhythm Log app icon" width="64" height="64" loading="lazy">
-            <div class="app-copy">
-              <h2>Body Rhythm Log</h2>
+              <h2><a href="body-rhythm-log/">Body Rhythm Log</a></h2>
               <p>Body Rhythm Log is a simple and private way to track your personal patterns.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/body-rhythm-log/id6762504100?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="body-rhythm-log/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/body-rhythm-log/id6762504100?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/c8/1c/e9c81ccf-1500-e02e-8ec3-1ecb5643a2d3/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.jpg" alt="AccessLens app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b5/03/ae/b503ae74-2d4e-d83a-9fe3-823980045fc7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="TapLog - Mood Tracker app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>AccessLens</h2>
-              <p>Access Lens helps you view everyday scenes and photos through simplified visual...</p>
+              <h2><a href="taplog-mood-tracker/">TapLog - Mood Tracker</a></h2>
+              <p>Track your day in one tap.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/accesslens/id6767727517?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="taplog-mood-tracker/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/taplog-mood-tracker/id6761535550?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/59/8c/99/598c9927-574b-ded2-ee27-d7a20ede12ea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="TodayReady app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/75/ba/5f75ba06-7533-496c-590e-6bc0866f8a9b/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="PoopTap – Daily Tracker app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>TodayReady</h2>
+              <h2><a href="pooptap-daily-tracker/">PoopTap – Daily Tracker</a></h2>
+              <p>PoopTap is a simple and playful poop logging app.</p>
+            </div>
+          </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="pooptap-daily-tracker/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/pooptap-daily-tracker/id6762576578?uo=4">App Store →</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <div class="app-card-main">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/59/8c/99/598c9927-574b-ded2-ee27-d7a20ede12ea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="TodayReady app icon" width="64" height="64" loading="lazy">
+            <div class="app-copy">
+              <h2><a href="todayready/">TodayReady</a></h2>
               <p>Today Ready helps you quickly decide what to do today based on the weather.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/todayready/id6766366722?uo=4">App Store →</a>
-        </article>
-
-        <article class="app-card">
-          <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0c/a1/ed/0ca1ed61-cb4c-148d-2795-21b2436183cf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg" alt="Study Buddy Timer app icon" width="64" height="64" loading="lazy">
-            <div class="app-copy">
-              <h2>Study Buddy Timer</h2>
-              <p>Study Buddy is a simple stopwatch for recording study time.</p>
-            </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="todayready/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/todayready/id6766366722?uo=4">App Store →</a>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/study-buddy-timer/id6764601072?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/78/ce/67/78ce673e-de44-a6ff-fbec-d1af6013e11f/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.jpg" alt="UndoCam app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/69/19/36/69193614-a1b7-ee9a-43ab-1d64cc839e1b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Sheep to Sleep app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>UndoCam</h2>
-              <p>UndoCam turns short videos into simple rewind clips.</p>
-            </div>
-          </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/undocam/id6765842391?uo=4">App Store →</a>
-        </article>
-
-        <article class="app-card">
-          <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/69/19/36/69193614-a1b7-ee9a-43ab-1d64cc839e1b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="Sheep to Sleep app icon" width="64" height="64" loading="lazy">
-            <div class="app-copy">
-              <h2>Sheep to Sleep</h2>
+              <h2><a href="sheep-to-sleep/">Sheep to Sleep</a></h2>
               <p>Sheep to Sleep is a tiny bedtime app that gently counts sheep for you.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/sheep-to-sleep/id6765796575?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="sheep-to-sleep/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/sheep-to-sleep/id6765796575?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/56/03/4e5603ad-1be0-d75c-6100-7b5235c3fb44/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="BaroNote app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/78/ce/67/78ce673e-de44-a6ff-fbec-d1af6013e11f/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="UndoCam app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>BaroNote</h2>
+              <h2><a href="undocam/">UndoCam</a></h2>
+              <p>UndoCam turns short videos into simple rewind clips.</p>
+            </div>
+          </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="undocam/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/undocam/id6765842391?uo=4">App Store →</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <div class="app-card-main">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/c8/1c/e9c81ccf-1500-e02e-8ec3-1ecb5643a2d3/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="AccessLens app icon" width="64" height="64" loading="lazy">
+            <div class="app-copy">
+              <h2><a href="accesslens/">AccessLens</a></h2>
+              <p>Access Lens helps you view everyday scenes and photos through simplified visual awareness filters.</p>
+            </div>
+          </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="accesslens/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/accesslens/id6767727517?uo=4">App Store →</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <div class="app-card-main">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/56/03/4e5603ad-1be0-d75c-6100-7b5235c3fb44/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="BaroNote app icon" width="64" height="64" loading="lazy">
+            <div class="app-copy">
+              <h2><a href="baronote/">BaroNote</a></h2>
               <p>BaroNote is a simple barometer and personal log.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/baronote/id6767775689?uo=4">App Store →</a>
-        </article>
-
-        <article class="app-card">
-          <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/32/db/bd32dbb9-097e-7c4e-9074-d8a353deae40/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="Hong Kong Phrase Card app icon" width="64" height="64" loading="lazy">
-            <div class="app-copy">
-              <h2>Hong Kong Phrase Card</h2>
-              <p>Hong Kong Phrase Card is a practical travel phrase card app for Japanese travelers...</p>
-            </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="baronote/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/baronote/id6767775689?uo=4">App Store →</a>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/hong-kong-phrase-card/id6772096993?uo=4">App Store →</a>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b7/5e/37/b75e3741-b204-25a7-842e-b941085d2909/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="CaffeineTap app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/d8/d2/58d8d29d-727e-ca39-a7d3-bdebb1574af6/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="SillyComboVoice app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>CaffeineTap</h2>
-              <p>Caffeine Tap is a simple caffeine tracker built for quick daily logging.</p>
-            </div>
-          </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/caffeinetap/id6769219576?uo=4">App Store →</a>
-        </article>
-
-        <article class="app-card">
-          <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/d8/d2/58d8d29d-727e-ca39-a7d3-bdebb1574af6/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/100x100bb.jpg" alt="SillyComboVoice app icon" width="64" height="64" loading="lazy">
-            <div class="app-copy">
-              <h2>SillyComboVoice</h2>
+              <h2><a href="sillycombovoice/">SillyComboVoice</a></h2>
               <p>Pick three simple English words and hear a silly rhythmic combo.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/sillycombovoice/id6765821915?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="sillycombovoice/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/sillycombovoice/id6765821915?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/a7/bf/20a7bffb-4cf1-3b70-4b7a-c8a4f721a958/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="CleanURL Tap app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b7/5e/37/b75e3741-b204-25a7-842e-b941085d2909/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="CaffeineTap app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>CleanURL Tap</h2>
-              <p>CleanURL Tap is a simple URL cleaner for links you copy, save, open, or share.</p>
+              <h2><a href="caffeinetap/">CaffeineTap</a></h2>
+              <p>Caffeine Tap is a simple caffeine tracker built for quick daily logging.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/cleanurl-tap/id6767538573?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="caffeinetap/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/caffeinetap/id6769219576?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/15/ae/cf/15aecfe6-a06f-4faa-e93d-e64afa2376b6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="BigTextNote app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/32/db/bd32dbb9-097e-7c4e-9074-d8a353deae40/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Hong Kong Phrase Card app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>BigTextNote</h2>
-              <p>Big Text Note is a simple note app for writing large, easy-to-read text.</p>
+              <h2><a href="hong-kong-phrase-card/">Hong Kong Phrase Card</a></h2>
+              <p>Hong Kong Phrase Card is a practical travel phrase card app for Japanese travelers visiting Hong Kong.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/bigtextnote/id6767796126?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="hong-kong-phrase-card/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/hong-kong-phrase-card/id6772096993?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cf/6f/8b/cf6f8b67-08ea-c723-0d59-aefc83b0b0bd/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="Kickoff Bell 2026 app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fa/3d/42/fa3d42d0-f363-93d0-a9d9-936e5750516f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="年齢プロフィール app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>Kickoff Bell 2026</h2>
-              <p>Kickoff Bell 2026 is a lightweight match-time planner for fans following the 2026...</p>
+              <h2><a href="warekiyakudoshichecker/">年齢プロフィール</a></h2>
+              <p>年齢プロフィールは、家族や親族の生年月日をまとめて管理できる日本向けのプロフィール帳アプリです。 父母、祖父母、子ども、親族などのプロフィールを保存して、満年齢、数え年、生年月日の和暦、今年の和暦、干支、星座...</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/kickoff-bell-2026/id6771279362?uo=4">App Store →</a>
+          <div class="app-actions">
+            <a class="app-link primary" href="warekiyakudoshichecker/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/%E5%B9%B4%E9%BD%A2%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB/id6770047182?uo=4">App Store →</a>
+          </div>
         </article>
 
         <article class="app-card">
           <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fa/3d/42/fa3d42d0-f363-93d0-a9d9-936e5750516f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="年齢プロフィール app icon" width="64" height="64" loading="lazy">
+            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/50/95/51509524-f5be-b45a-9d7a-eaa659296f7a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Asset Curve app icon" width="64" height="64" loading="lazy">
             <div class="app-copy">
-              <h2>年齢プロフィール</h2>
-              <p>年齢プロフィールは、家族や親族の生年月日をまとめて管理できる日本向けのプロフィール帳アプリです。 父母、祖父母、子ども、親族などのプロフィールを保存して、満年齢、数え年...</p>
+              <h2><a href="asset-curve/">Asset Curve</a></h2>
+              <p>AssetCurve is a local, simple compound-growth simulator for creating rough estimates from your own inputs.</p>
             </div>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/%E5%B9%B4%E9%BD%A2%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB/id6770047182?uo=4">App Store →</a>
-        </article>
-
-        <article class="app-card">
-          <div class="app-card-main">
-            <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/50/95/51509524-f5be-b45a-9d7a-eaa659296f7a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="Asset Curve app icon" width="64" height="64" loading="lazy">
-            <div class="app-copy">
-              <h2>Asset Curve</h2>
-              <p>AssetCurve is a local, simple compound-growth simulator for creating rough...</p>
-            </div>
+          <div class="app-actions">
+            <a class="app-link primary" href="asset-curve/">Details</a>
+            <a class="app-link" href="https://apps.apple.com/us/app/asset-curve/id6768640767?uo=4">App Store →</a>
           </div>
-          <a class="app-link" href="https://apps.apple.com/us/app/asset-curve/id6768640767?uo=4">App Store →</a>
         </article>
       <!-- APPS_LIST_END -->
       </div>

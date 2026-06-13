@@ -1,0 +1,408 @@
+{
+  "6761641437": {
+    "slug": "photo-day",
+    "short_description": "Keep a simple one-photo-a-day memory habit for family life, trips, projects, and everyday moments.",
+    "meta_description": "PhotoDay is a simple one-photo-a-day iPhone app for family memories, daily photo records, and widget-friendly reflection.",
+    "categories": ["photo-memory", "widgets", "family"],
+    "overview": [
+      "PhotoDay is for keeping a small, steady photo record without turning it into a large photo management task. The idea is simple: choose one photo for the day and let that daily choice become a memory timeline.",
+      "It fits family life, children growing up, trips, hobbies, work projects, or any season where one daily image says more than a long note. The page is the official ZEC Inc. source for what the app is meant to do and how to think about it."
+    ],
+    "target_users": [
+      "Parents and families who want a gentle daily photo habit",
+      "People who want to remember ordinary days without posting publicly",
+      "Travelers who want one representative photo per day",
+      "Users who like widget-friendly apps for quick daily reflection"
+    ],
+    "features": [
+      "One-photo-a-day record keeping",
+      "Simple memory timeline for daily photos",
+      "A lightweight flow that avoids complex album management",
+      "Useful for family, travel, project, and personal memory contexts",
+      "Designed as a private first-party app page with a direct App Store link"
+    ],
+    "how_to_use": [
+      "Install PhotoDay from the App Store.",
+      "Open the app when you want to save the day’s representative photo.",
+      "Choose a photo that captures the day, even if it is ordinary.",
+      "Return over time to see the daily sequence grow.",
+      "Use widgets or quick entry points where available to keep the habit visible."
+    ],
+    "pricing": "See the App Store for the current price and regional availability.",
+    "privacy": "PhotoDay is intended for personal photo records. Check the App Store product page for Apple's current privacy label and permission details before installing.",
+    "faq": [
+      {
+        "question": "What is PhotoDay for?",
+        "answer": "PhotoDay is for keeping a simple one-photo-a-day record of everyday life, family moments, travel, hobbies, or projects."
+      },
+      {
+        "question": "Is PhotoDay a full photo library manager?",
+        "answer": "No. PhotoDay is intentionally focused on selecting and remembering one photo per day rather than replacing the Photos app or a full album system."
+      },
+      {
+        "question": "Who is PhotoDay useful for?",
+        "answer": "It is useful for families, parents, travelers, hobbyists, and anyone who wants a small daily memory habit without maintaining a long diary."
+      },
+      {
+        "question": "Does PhotoDay post my photos publicly?",
+        "answer": "PhotoDay is presented as a personal memory app. Check the App Store page and in-app permission prompts for the current privacy and sharing behavior."
+      },
+      {
+        "question": "Can I use PhotoDay for family memories?",
+        "answer": "Yes. A one-photo-a-day format works well for children growing up, family routines, trips, and ordinary moments that are easy to forget."
+      },
+      {
+        "question": "Does PhotoDay support widgets?",
+        "answer": "PhotoDay is positioned around a widget-friendly daily memory habit where available. The App Store page has the current feature list for the released version."
+      }
+    ]
+  },
+  "6762812333": {
+    "slug": "packed",
+    "short_description": "Prepare for trips and daily outings with a focused packing checklist and widget-friendly checking flow.",
+    "meta_description": "Packed is a simple iPhone packing checklist app for travel, daily bags, family outings, and widget-friendly item checks.",
+    "categories": ["travel", "widgets", "family", "productivity"],
+    "overview": [
+      "Packed is a focused checklist app for the moment before you leave: travel packing, daily bags, school items, event gear, or anything you do not want to forget.",
+      "Instead of acting like a general task manager, Packed stays close to the packing workflow: prepare a list, check items, and use the app as a quick final confirmation before leaving home."
+    ],
+    "target_users": [
+      "Travelers who want a reusable packing checklist",
+      "Families preparing bags for school, trips, or outings",
+      "People who often ask themselves whether essentials are packed",
+      "Users who prefer a simple dedicated checklist over a large productivity app"
+    ],
+    "features": [
+      "Packing-focused checklist structure",
+      "Reusable item lists for travel and daily bags",
+      "Quick final checks before leaving",
+      "Widget-friendly use case for seeing packing status where supported",
+      "Direct App Store link from this official app page"
+    ],
+    "how_to_use": [
+      "Install Packed from the App Store.",
+      "Create or edit a packing list for your trip, bag, or routine.",
+      "Check items as you pack them.",
+      "Use the final checked state before leaving.",
+      "Reuse and adjust the list for the next similar outing."
+    ],
+    "pricing": "See the App Store for the current price and regional availability.",
+    "privacy": "Packed is intended for personal checklist use. Check the App Store product page for Apple's current privacy label and data disclosure information.",
+    "faq": [
+      {
+        "question": "What is Packed for?",
+        "answer": "Packed is for checking travel bags, daily bags, event items, and other essentials before leaving."
+      },
+      {
+        "question": "Is Packed a general to-do app?",
+        "answer": "No. Packed is designed around packing and preparation rather than broad project management."
+      },
+      {
+        "question": "Can families use Packed?",
+        "answer": "Yes. It is useful for family outings, school bags, children’s items, shared trip preparation, and repeating routines."
+      },
+      {
+        "question": "Can I reuse a packing list?",
+        "answer": "Packed is intended for repeatable packing workflows, so the same list concept can be useful across similar trips or daily routines."
+      },
+      {
+        "question": "Does Packed support widgets?",
+        "answer": "Packed is positioned for widget-friendly packing checks where supported. The App Store page has the current released feature list."
+      },
+      {
+        "question": "Where is the official download link?",
+        "answer": "Use the App Store link on this page to open the official Packed product page."
+      }
+    ]
+  },
+  "6771279362": {
+    "slug": "kickoff-bell-2026",
+    "short_description": "A lightweight, unofficial match schedule and reminder app for following 2026 football kickoff times.",
+    "meta_description": "Kickoff Bell 2026 is an unofficial iPhone schedule and reminder app for checking 2026 football match kickoff times.",
+    "categories": ["travel", "widgets", "productivity"],
+    "overview": [
+      "Kickoff Bell 2026 is an unofficial schedule and reminder app for people following football matches in 2026. It focuses on kickoff times, quick checks, and reminders rather than news, streaming, or official tournament coverage.",
+      "The app is intended as a lightweight companion for fans who want to know when a match starts in their local context. It is not affiliated with, endorsed by, or presented as an official event app."
+    ],
+    "target_users": [
+      "Fans who want a quick way to check kickoff times",
+      "People following matches across time zones",
+      "Users who want reminders without a heavy sports news app",
+      "Travelers or busy viewers who need schedule checks at a glance"
+    ],
+    "features": [
+      "Match schedule reference focused on kickoff times",
+      "Reminder-oriented workflow for upcoming games",
+      "Lightweight app structure for quick checks",
+      "Useful across time zones and daily routines",
+      "Unofficial positioning with a direct App Store link"
+    ],
+    "how_to_use": [
+      "Install Kickoff Bell 2026 from the App Store.",
+      "Open the app to check match schedules and kickoff times.",
+      "Use reminders or quick checks for matches you care about.",
+      "Confirm important details against official sources when needed.",
+      "Return to the app as the tournament schedule progresses."
+    ],
+    "pricing": "See the App Store for the current price, in-app purchase availability, and regional availability.",
+    "privacy": "Kickoff Bell 2026 is a schedule utility. Check the App Store product page for Apple's current privacy label and data disclosure information.",
+    "faq": [
+      {
+        "question": "Is Kickoff Bell 2026 an official tournament app?",
+        "answer": "No. Kickoff Bell 2026 is an unofficial schedule and reminder app from ZEC Inc. It is not affiliated with or endorsed by any tournament organizer."
+      },
+      {
+        "question": "What is the app for?",
+        "answer": "It helps users check football match kickoff times and keep track of matches they want to follow in 2026."
+      },
+      {
+        "question": "Does the app stream matches?",
+        "answer": "No. Kickoff Bell 2026 is not a streaming app. It is focused on schedules, kickoff times, and reminder-style use."
+      },
+      {
+        "question": "Should I rely on it for official match information?",
+        "answer": "Use the app as a convenient schedule aid. For critical or official details, confirm against official sources."
+      },
+      {
+        "question": "Is it useful across time zones?",
+        "answer": "The app is designed for quick kickoff checks, which is especially useful when match times are hard to track manually."
+      },
+      {
+        "question": "Where can I download it?",
+        "answer": "Use the App Store link on this page to open the official Kickoff Bell 2026 product page."
+      }
+    ]
+  },
+  "6762545903": {
+    "slug": "pilltap",
+    "short_description": "Record medication checks quickly without turning the task into a complex health tracking workflow.",
+    "meta_description": "PillTap is a simple iPhone medication record app for quick personal checks. It is not medical advice or a compliance guarantee.",
+    "categories": ["tap-tools", "widgets", "family"],
+    "overview": [
+      "PillTap is a small personal record app for quickly noting medication-related checks. It is designed for the everyday moment when you want to record whether you handled a medicine task.",
+      "The app is not a medical device, does not provide medical advice, and does not guarantee medication adherence. It should be used only as a personal record aid alongside advice from qualified healthcare professionals."
+    ],
+    "target_users": [
+      "People who want a lightweight personal medication check record",
+      "Caregivers or family members who need a simple reminder-adjacent log",
+      "Users who do not want a complex health tracking system",
+      "People who understand that the app is not medical advice"
+    ],
+    "features": [
+      "Quick medication check recording",
+      "Simple personal record workflow",
+      "Focused screens for repeated daily use",
+      "Clear separation from medical advice or treatment decisions",
+      "Direct official App Store link"
+    ],
+    "how_to_use": [
+      "Install PillTap from the App Store.",
+      "Open the app when you need to record a medication-related check.",
+      "Use the app as a personal log, not as a medical decision tool.",
+      "Confirm any medication questions with a qualified healthcare professional.",
+      "Check the App Store page for the current released feature set."
+    ],
+    "pricing": "Free. App Store pricing and availability may vary by country and can change over time.",
+    "privacy": "PillTap is intended for personal record keeping. Check the App Store product page for Apple's current privacy label. Do not use the app as a substitute for medical records maintained by a healthcare provider.",
+    "faq": [
+      {
+        "question": "Is PillTap medical advice?",
+        "answer": "No. PillTap does not provide medical advice, diagnosis, treatment recommendations, or medication instructions."
+      },
+      {
+        "question": "Does PillTap guarantee that I take medicine correctly?",
+        "answer": "No. PillTap is only a personal record aid and cannot guarantee medication adherence or safety."
+      },
+      {
+        "question": "Who is PillTap for?",
+        "answer": "It is for people who want a simple way to record medication-related checks for personal reference."
+      },
+      {
+        "question": "Should I use PillTap instead of talking to a doctor or pharmacist?",
+        "answer": "No. Always follow guidance from qualified healthcare professionals for medication questions."
+      },
+      {
+        "question": "Can caregivers use PillTap?",
+        "answer": "Caregivers may find the simple log useful, but it should not replace professional care plans or required medical documentation."
+      },
+      {
+        "question": "Where can I check the privacy details?",
+        "answer": "Use the linked App Store product page to review Apple's current privacy label and disclosure information."
+      }
+    ]
+  },
+  "6762600691": {
+    "slug": "laundrytap",
+    "short_description": "A quick tap-based laundry record for remembering whether the laundry was done, moved, or checked.",
+    "meta_description": "LaundryTap is a simple iPhone app for recording laundry status and avoiding small household memory gaps.",
+    "categories": ["tap-tools", "family", "productivity"],
+    "overview": [
+      "LaundryTap is for a common household question: did I do the laundry, move it, or check it? The app keeps the workflow small so recording the status takes less effort than trying to remember it later.",
+      "It is useful for people sharing household routines, doing laundry between other tasks, or wanting a lightweight record rather than a full chore management system."
+    ],
+    "target_users": [
+      "People who forget whether they started or finished laundry",
+      "Households that want a small status record",
+      "Users who prefer a dedicated tap tool over a full chore app",
+      "Busy users doing laundry between work, errands, or family routines"
+    ],
+    "features": [
+      "Quick laundry status recording",
+      "Simple repeated-use workflow",
+      "Focused household utility rather than broad task management",
+      "Useful for shared routines and everyday checks",
+      "Official App Store link from the ZEC app page"
+    ],
+    "how_to_use": [
+      "Install LaundryTap from the App Store.",
+      "Open it when you start, move, finish, or check laundry.",
+      "Record the status in the app.",
+      "Return later when you are unsure what happened.",
+      "Use it as a lightweight memory aid for the household routine."
+    ],
+    "pricing": "See the App Store for the current price and regional availability.",
+    "privacy": "LaundryTap is intended for simple household record keeping. Check the App Store page for Apple's current privacy label.",
+    "faq": [
+      {
+        "question": "What is LaundryTap for?",
+        "answer": "LaundryTap helps you record laundry status so you can quickly check whether the task was done or still needs attention."
+      },
+      {
+        "question": "Is LaundryTap a chore management app?",
+        "answer": "No. It is intentionally smaller and focused on laundry status rather than managing every household task."
+      },
+      {
+        "question": "Who should use LaundryTap?",
+        "answer": "It is useful for individuals, families, and shared households that often need to remember laundry status."
+      },
+      {
+        "question": "Does LaundryTap replace reminders?",
+        "answer": "LaundryTap is mainly a record and check tool. Check the App Store page for the current reminder-related features."
+      },
+      {
+        "question": "Why use a dedicated laundry app?",
+        "answer": "A focused app can make a repeated household check faster than opening a large notes or task system."
+      },
+      {
+        "question": "Where can I download it?",
+        "answer": "Use the App Store link on this page to open the official LaundryTap product page."
+      }
+    ]
+  },
+  "6767796126": {
+    "slug": "big-text-note",
+    "short_description": "Write one large, easy-to-read note for quick display, reminders, labels, and simple communication.",
+    "meta_description": "Big Text Note is a simple iPhone note app for showing large readable text in everyday situations.",
+    "categories": ["productivity", "family"],
+    "overview": [
+      "Big Text Note is a small note app built around readability. Instead of managing many documents, it helps you write and show large text when normal note text is too small or too slow to read.",
+      "It can be useful for quick reminders, temporary labels, simple communication, family notes, travel messages, or any situation where the note itself needs to be visible at a glance."
+    ],
+    "target_users": [
+      "People who want one large readable note on screen",
+      "Users who need quick temporary messages or labels",
+      "Families using a phone as a simple display note",
+      "Travelers or event users who need readable text in the moment"
+    ],
+    "features": [
+      "Large text note display",
+      "Simple writing flow without document complexity",
+      "Useful for temporary reminders and visible messages",
+      "Focused local note-style utility",
+      "Official App Store link from ZEC Inc."
+    ],
+    "how_to_use": [
+      "Install Big Text Note from the App Store.",
+      "Open the app and write the text you want to show.",
+      "Use the large display when readability matters.",
+      "Update the note whenever the message changes.",
+      "Check the App Store page for the current released feature list."
+    ],
+    "pricing": "See the App Store for the current price and regional availability.",
+    "privacy": "Big Text Note is intended for simple note display. Check the App Store page for Apple's current privacy label and data disclosure information.",
+    "faq": [
+      {
+        "question": "What is Big Text Note for?",
+        "answer": "It is for writing a short note and showing it in large, easy-to-read text."
+      },
+      {
+        "question": "Is it a full notes app replacement?",
+        "answer": "No. Big Text Note is focused on visible large text rather than managing many notes or notebooks."
+      },
+      {
+        "question": "When is large text useful?",
+        "answer": "It can help with temporary signs, reminders, simple communication, travel messages, labels, and situations where someone needs to read the screen quickly."
+      },
+      {
+        "question": "Can families use it?",
+        "answer": "Yes. A large visible note can work for household reminders or simple messages."
+      },
+      {
+        "question": "Does it require an account?",
+        "answer": "Check the App Store product page for the current app details, but the app is positioned as a simple focused utility."
+      },
+      {
+        "question": "Where is the official download?",
+        "answer": "Use the App Store link on this page to open the official Big Text Note product page."
+      }
+    ]
+  },
+  "6767538573": {
+    "slug": "cleanurl-tap",
+    "short_description": "Clean copied links by removing common tracking clutter before saving, opening, or sharing them.",
+    "meta_description": "CleanURL Tap is a privacy-oriented iPhone utility for cleaning copied URLs before sharing or saving links.",
+    "categories": ["tap-tools", "productivity"],
+    "overview": [
+      "CleanURL Tap is a focused link-cleaning utility for moments when a copied URL contains tracking parameters, campaign tags, or other clutter you do not want to keep.",
+      "The app is privacy-oriented in purpose: it helps users share or save cleaner links. It does not promise perfect removal of every possible parameter, and users should still review sensitive links before sending them."
+    ],
+    "target_users": [
+      "People who copy and share links often",
+      "Users who prefer cleaner URLs with less tracking clutter",
+      "Writers, researchers, and shoppers who save links for later",
+      "Privacy-conscious users who want a small dedicated utility"
+    ],
+    "features": [
+      "Cleans common tracking parameters from copied links",
+      "Focused workflow for copy, clean, open, save, or share",
+      "Privacy-oriented utility positioning",
+      "Simple tap-based use without a large browser workflow",
+      "Direct official App Store link"
+    ],
+    "how_to_use": [
+      "Install CleanURL Tap from the App Store.",
+      "Copy a link from Safari or another app.",
+      "Open CleanURL Tap to clean the copied URL.",
+      "Review the cleaned link before sharing or saving it.",
+      "Use the App Store page to check the current supported behavior."
+    ],
+    "pricing": "See the App Store for the current price and regional availability.",
+    "privacy": "CleanURL Tap is positioned as a privacy-oriented URL utility. Check the App Store product page for Apple's current privacy label and confirm how clipboard access is handled in the released version.",
+    "faq": [
+      {
+        "question": "What does CleanURL Tap do?",
+        "answer": "It helps clean copied URLs by removing common tracking clutter before you open, save, or share the link."
+      },
+      {
+        "question": "Does it remove every possible tracking parameter?",
+        "answer": "No app can guarantee removal of every possible tracking mechanism. CleanURL Tap focuses on common URL clutter and users should still review sensitive links."
+      },
+      {
+        "question": "Who is it for?",
+        "answer": "It is for people who copy links often and want a quick utility for cleaner sharing or saving."
+      },
+      {
+        "question": "Does CleanURL Tap replace a browser?",
+        "answer": "No. It is a small URL utility, not a full browser replacement."
+      },
+      {
+        "question": "Why is privacy mentioned?",
+        "answer": "Cleaner URLs can reduce unnecessary tracking parameters in links. The App Store privacy label remains the source for current data disclosure details."
+      },
+      {
+        "question": "Where can I download it?",
+        "answer": "Use the App Store link on this page to open the official CleanURL Tap product page."
+      }
+    ]
+  }
+}

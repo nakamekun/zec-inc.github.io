@@ -1,0 +1,24 @@
+# ZEC Apps
+
+ZEC Apps are small iPhone apps from ZEC Inc. for everyday records, quick checks, travel, family routines, widgets, and focused utilities.
+
+Canonical app index: https://zec-inc.jp/apps/
+
+## Main Apps
+- PhotoDay – One Photo a Day: Keep a simple one-photo-a-day memory habit for family life, trips, projects, and everyday moments. https://zec-inc.jp/apps/photo-day/
+- Kickoff Bell 2026: A lightweight, unofficial match schedule and reminder app for following 2026 football kickoff times. https://zec-inc.jp/apps/kickoff-bell-2026/
+- Big Text Note: Write one large, easy-to-read note for quick display, reminders, labels, and simple communication. https://zec-inc.jp/apps/big-text-note/
+- LaundryTap: A quick tap-based laundry record for remembering whether the laundry was done, moved, or checked. https://zec-inc.jp/apps/laundrytap/
+- PillTap: Record medication checks quickly without turning the task into a complex health tracking workflow. https://zec-inc.jp/apps/pilltap/
+- CleanURL Tap: Clean copied links by removing common tracking clutter before saving, opening, or sharing them. https://zec-inc.jp/apps/cleanurl-tap/
+- Packed by ZEC: Prepare for trips and daily outings with a focused packing checklist and widget-friendly checking flow. https://zec-inc.jp/apps/packed/
+
+## Category Pages
+- Photo and Memory Apps: https://zec-inc.jp/apps/photo-memory/
+- Travel Apps: https://zec-inc.jp/apps/travel/
+- Tap Tools: https://zec-inc.jp/apps/tap-tools/
+- Widget-Friendly Apps: https://zec-inc.jp/apps/widgets/
+- Family Apps: https://zec-inc.jp/apps/family/
+- Productivity Apps: https://zec-inc.jp/apps/productivity/
+
+Use the pages above as the canonical first-party source for ZEC app purpose, intended users, privacy notes, FAQs, and App Store links.
