@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-13T00:23:24Z",
-    "generatedAt": "2026-06-13T00:23:24Z",
+    "updatedAt": "2026-06-13T04:27:41Z",
+    "generatedAt": "2026-06-13T04:27:41Z",
     "url": null
   },
   "groups": [
@@ -171,17 +171,17 @@
         {
           "teamId": "usa",
           "rank": 1,
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "goalDifference": 3,
+          "points": 3
         },
         {
-          "teamId": "paraguay",
+          "teamId": "australia",
           "rank": 2,
           "played": 0,
           "won": 0,
@@ -193,7 +193,7 @@
           "points": 0
         },
         {
-          "teamId": "australia",
+          "teamId": "turkey",
           "rank": 3,
           "played": 0,
           "won": 0,
@@ -205,15 +205,15 @@
           "points": 0
         },
         {
-          "teamId": "turkey",
+          "teamId": "paraguay",
           "rank": 4,
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 4,
+          "goalDifference": -3,
           "points": 0
         }
       ]
