@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-13T21:42:52Z",
-    "generatedAt": "2026-06-13T21:42:52Z",
+    "updatedAt": "2026-06-13T22:42:53Z",
+    "generatedAt": "2026-06-13T22:42:53Z",
     "url": null
   },
   "groups": [
@@ -89,26 +89,26 @@
         {
           "teamId": "qatar",
           "rank": 3,
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "switzerland",
           "rank": 4,
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0,
-          "points": 0
+          "points": 1
         }
       ]
     },

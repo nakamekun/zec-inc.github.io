@@ -121,7 +121,13 @@ class FifaMatchCentreProvider(ResultProvider):
 def calendar_url_for(match_context: MatchContext) -> str:
     start = (match_context.kickoff_utc - timedelta(hours=3)).date().isoformat()
     end = (match_context.kickoff_utc + timedelta(days=1)).date().isoformat()
-    query = urlencode({"language": "en", "from": start, "to": end})
+    query = urlencode({
+        "language": "en",
+        "from": start,
+        "to": end,
+        "idCompetition": FIFA_WORLD_CUP_COMPETITION_ID,
+        "idSeason": FIFA_WORLD_CUP_2026_SEASON_ID,
+    })
     return f"{FIFA_CALENDAR_API_URL}?{query}"
 
 
@@ -189,14 +195,17 @@ def choose_best_candidate(match_context: MatchContext, candidates: list[dict[str
 
 def choose_best_calendar_candidate(match_context: MatchContext, candidates: list[Any]) -> dict[str, Any] | None:
     scored: list[tuple[float, dict[str, Any]]] = []
+    rejected: list[dict[str, Any]] = []
     for candidate in candidates:
         if not isinstance(candidate, dict):
             continue
-        confidence = calendar_candidate_confidence(match_context, candidate)
+        confidence, reject_reason = calendar_candidate_confidence(match_context, candidate)
         if confidence > 0:
             scored.append((confidence, candidate))
+        elif reject_reason:
+            rejected.append(calendar_diagnostics(match_context, candidate, reject_reason, confidence))
     if not scored:
-        return None
+        return {"_zecNoMatch": True, "_zecRejected": rejected[:8]}
     scored.sort(key=lambda item: item[0], reverse=True)
     best_confidence, best = scored[0]
     copy = dict(best)
@@ -204,27 +213,25 @@ def choose_best_calendar_candidate(match_context: MatchContext, candidates: list
     return copy
 
 
-def calendar_candidate_confidence(match_context: MatchContext, candidate: dict[str, Any]) -> float:
+def calendar_candidate_confidence(match_context: MatchContext, candidate: dict[str, Any]) -> tuple[float, str | None]:
     if str(candidate.get("IdCompetition")) != FIFA_WORLD_CUP_COMPETITION_ID:
-        return 0.0
+        return 0.0, "competition mismatch"
     if str(candidate.get("IdSeason")) != FIFA_WORLD_CUP_2026_SEASON_ID:
-        return 0.0
-    if match_context.match_number is not None and candidate.get("MatchNumber") != match_context.match_number:
-        return 0.0
+        return 0.0, "season mismatch"
     kickoff = parse_fifa_datetime(candidate.get("Date"))
     if kickoff is None:
-        return 0.0
+        return 0.0, "missing kickoff"
     if abs(kickoff - match_context.kickoff_utc) > TIME_MATCH_TOLERANCE:
-        return 0.0
+        return 0.0, "kickoff mismatch"
     home_name = team_name(candidate.get("Home"))
     away_name = team_name(candidate.get("Away"))
     if not team_names_match(match_context.home_team_name, home_name):
-        return 0.0
+        return 0.0, "home team mismatch"
     if not team_names_match(match_context.away_team_name, away_name):
-        return 0.0
+        return 0.0, "away team mismatch"
 
-    confidence = 0.75
-    if match_context.match_number is not None:
+    confidence = 0.80
+    if match_context.match_number is not None and candidate.get("MatchNumber") == match_context.match_number:
         confidence += 0.10
     if kickoff == match_context.kickoff_utc:
         confidence += 0.05
@@ -232,10 +239,18 @@ def calendar_candidate_confidence(match_context: MatchContext, candidate: dict[s
         confidence += 0.05
     if candidate.get("MatchStatus") == FINAL_MATCH_STATUS:
         confidence += 0.10
-    return min(confidence, 1.0)
+    return min(confidence, 1.0), None
 
 
 def calendar_candidate_to_outcome(match_context: MatchContext, candidate: dict[str, Any]) -> ResultFetchOutcome:
+    if candidate.get("_zecNoMatch") is True:
+        rejected = candidate.get("_zecRejected")
+        return ResultFetchOutcome(
+            status="not_found",
+            match_id=match_context.match_id,
+            raw_source_name="fifa-calendar-api",
+            notes=f"no calendar match candidate matched team and kickoff; rejected={json.dumps(rejected, ensure_ascii=False)}",
+        )
     confidence = float(candidate.get("_zecConfidence", 0.0))
     status = candidate.get("MatchStatus")
     if status != FINAL_MATCH_STATUS:
@@ -276,8 +291,39 @@ def calendar_candidate_to_outcome(match_context: MatchContext, candidate: dict[s
         result_updated_at=utc_now(),
         confidence=confidence,
         raw_source_name="fifa-calendar-api",
-        notes="calendar API candidate parsed",
+        notes=f"calendar API candidate parsed; {format_calendar_diagnostics(match_context, candidate, 'accepted', confidence)}",
     )
+
+
+def calendar_diagnostics(
+    match_context: MatchContext,
+    candidate: dict[str, Any],
+    reason: str,
+    confidence: float,
+) -> dict[str, Any]:
+    kickoff = parse_fifa_datetime(candidate.get("Date"))
+    return {
+        "appMatchId": match_context.match_id,
+        "appMatchNumber": match_context.match_number,
+        "providerMatchNumber": candidate.get("MatchNumber"),
+        "appKickoffUTC": match_context.kickoff_utc.isoformat().replace("+00:00", "Z"),
+        "providerKickoffUTC": kickoff.isoformat().replace("+00:00", "Z") if kickoff else candidate.get("Date"),
+        "appHome": match_context.home_team_name,
+        "appAway": match_context.away_team_name,
+        "providerHome": team_name(candidate.get("Home")),
+        "providerAway": team_name(candidate.get("Away")),
+        "rejectReason": reason,
+        "confidence": confidence,
+    }
+
+
+def format_calendar_diagnostics(
+    match_context: MatchContext,
+    candidate: dict[str, Any],
+    reason: str,
+    confidence: float,
+) -> str:
+    return json.dumps(calendar_diagnostics(match_context, candidate, reason, confidence), ensure_ascii=False)
 
 
 def candidate_confidence(match_context: MatchContext, candidate: dict[str, Any]) -> float:

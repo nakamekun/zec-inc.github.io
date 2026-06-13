@@ -39,14 +39,16 @@
     "match-005": {
       "firstCheckAttempted": true,
       "firstCheckAt": "2026-06-13T21:42:52Z",
-      "lastAttemptAt": "2026-06-13T21:42:52Z",
-      "lastProviderStatus": "not_found",
-      "lastStatus": "not_found",
-      "lastConfidence": 0.0,
-      "attemptCount": 1,
-      "lastMessage": "no calendar match candidate matched number, teams, and kickoff",
-      "finalResultCaptured": false,
-      "nextRetryAfter": "2026-06-13T21:52:52Z"
+      "lastAttemptAt": "2026-06-13T22:42:53Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 2,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-005\", \"appMatchNumber\": 5, \"providerMatchNumber\": 8, \"appKickoffUTC\": \"2026-06-13T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-13T19:00:00Z\", \"appHome\": \"Qatar\", \"appAway\": \"Switzerland\", \"providerHome\": \"Qatar\", \"providerAway\": \"Switzerland\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "finalResultCaptured": true,
+      "finalCheckAttempted": true,
+      "finalCheckAt": "2026-06-13T22:42:53Z",
+      "lastSuccessfulUpdateAt": "2026-06-13T22:42:53Z"
     }
   }
 }

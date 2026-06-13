@@ -54,6 +54,16 @@ If `gh` is installed elsewhere, replace `/opt/homebrew/bin/gh` with the output o
 
 Cloudflare Workers Cron or another hosted scheduler can also call GitHub's `workflow_dispatch` API for this workflow. Use a fine-scoped GitHub token with workflow dispatch permission, store it as a scheduler secret, and call the dispatch endpoint for branch `main`. Do not put tokens in this repository.
 
+### External Cron Auth Troubleshooting
+
+If `/tmp/kickoff-results-auto-update.log` contains `HTTP 401: Requires authentication`, the local cron environment cannot read the interactive `gh` authentication state. Confirm the cron-like environment with:
+
+```sh
+env -i HOME=/Users/kt PATH=/opt/homebrew/bin:/usr/bin:/bin /opt/homebrew/bin/gh auth status
+```
+
+If it fails, either reconfigure `gh` so the user crontab can access its auth state, or move the second trigger to a hosted scheduler that stores its GitHub token as a scheduler secret. Never write a GitHub token into this repository or into the crontab command itself.
+
 ## Enable / Disable
 
 Repository variable:
