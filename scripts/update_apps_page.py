@@ -117,8 +117,9 @@ def fetch_lookup_payload() -> dict[str, Any]:
     try:
         with urllib.request.urlopen(request, timeout=30) as response:
             payload = json.load(response)
-        LOOKUP_CACHE.parent.mkdir(parents=True, exist_ok=True)
-        LOOKUP_CACHE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        if not LOOKUP_CACHE.exists():
+            LOOKUP_CACHE.parent.mkdir(parents=True, exist_ok=True)
+            LOOKUP_CACHE.write_text(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         return payload
     except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
         if LOOKUP_CACHE.exists():
