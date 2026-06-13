@@ -47,7 +47,7 @@ GitHub Actions schedule is a best-effort trigger, not a guaranteed timer. During
 Local Mac or server cron example:
 
 ```cron
-3,13,23,33,43,53 * * * * cd /Users/kt/zec-inc.github.io && /opt/homebrew/bin/gh workflow run kickoff-results-auto-update.yml --ref main >/tmp/kickoff-results-auto-update.log 2>&1
+8,18,28,38,48,58 * * * * cd /Users/kt/zec-inc.github.io && /opt/homebrew/bin/gh workflow run kickoff-results-auto-update.yml --ref main >/tmp/kickoff-results-auto-update.log 2>&1
 ```
 
 If `gh` is installed elsewhere, replace `/opt/homebrew/bin/gh` with the output of `which gh`. The GitHub account used by `gh` needs permission to run workflows in `nakamekun/zec-inc.github.io`.
