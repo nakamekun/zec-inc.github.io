@@ -35,10 +35,24 @@ Workflow:
 
 `.github/workflows/kickoff-results-auto-update.yml`
 
-It runs every 10 minutes and also supports manual `workflow_dispatch`. The updater checks matches from `match-id-map.json` and attempts result capture at:
+It runs every 10 minutes and also supports manual `workflow_dispatch`. The GitHub Actions schedule is intentionally staggered to minutes `3,13,23,33,43,53` instead of minute `0`, because GitHub scheduled workflows can be delayed or dropped during high-load periods.
+
+The updater checks matches from `match-id-map.json` and attempts result capture at:
 
 - `kickoffUTC + 2h10m`: first check for normal full-time results
 - `kickoffUTC + 3h`: final check for delays, stoppage time, extra time in unusual cases, or provider lag
+
+GitHub Actions schedule is a best-effort trigger, not a guaranteed timer. During the tournament, run an external cron as a second trigger source. The external cron should dispatch the same workflow; the workflow remains idempotent and commits only when JSON changes.
+
+Local Mac or server cron example:
+
+```cron
+3,13,23,33,43,53 * * * * cd /Users/kt/zec-inc.github.io && /opt/homebrew/bin/gh workflow run kickoff-results-auto-update.yml --ref main >/tmp/kickoff-results-auto-update.log 2>&1
+```
+
+If `gh` is installed elsewhere, replace `/opt/homebrew/bin/gh` with the output of `which gh`. The GitHub account used by `gh` needs permission to run workflows in `nakamekun/zec-inc.github.io`.
+
+Cloudflare Workers Cron or another hosted scheduler can also call GitHub's `workflow_dispatch` API for this workflow. Use a fine-scoped GitHub token with workflow dispatch permission, store it as a scheduler secret, and call the dispatch endpoint for branch `main`. Do not put tokens in this repository.
 
 ## Enable / Disable
 
@@ -53,6 +67,8 @@ GitHub repository settings must allow Actions to write commits:
 `Settings > Actions > General > Workflow permissions > Read and write permissions`
 
 `ZEC_PAGES_DEPLOY_TOKEN` is not required for same-repository updates. The workflow uses `GITHUB_TOKEN`.
+
+The external cron can be stopped after the tournament by removing the crontab entry or disabling the hosted scheduler. Keep `KICKOFF_AUTO_UPDATE_ENABLED=false` as the global kill switch; both scheduled and externally dispatched runs will exit without updating when that variable is not exactly `true`.
 
 ## Provider Safety
 

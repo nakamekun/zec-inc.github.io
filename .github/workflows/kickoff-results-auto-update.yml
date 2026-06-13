@@ -2,7 +2,8 @@ name: Kickoff Results Auto Update
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    # Stagger away from minute 0, where GitHub Actions scheduled workflows are most likely to be delayed or dropped.
+    - cron: "3,13,23,33,43,53 * * * *"
   workflow_dispatch:
     inputs:
       force:
