@@ -1026,6 +1026,7 @@ def write_llms(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> None:
         "LaundryTap",
         "Big Text Note",
         "CleanURL Tap",
+        "PoopTap – Daily Tracker",
     }
     priority_apps = [app for app in apps if app_name(app) in priority_names]
     if len(priority_apps) < 7:
