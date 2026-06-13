@@ -173,6 +173,64 @@
       }
     ]
   },
+  "6762576578": {
+    "slug": "pooptap-daily-tracker",
+    "short_description": "A simple daily bowel movement tracker and stool log for private poop records, digestion notes, and constipation notes.",
+    "meta_description": "PoopTap is a simple poop tracker and bowel movement log for stool notes, digestion notes, gut health notes, and constipation notes.",
+    "categories": ["tap-tools"],
+    "overview": [
+      "PoopTap is a simple poop tracker and bowel movement log for private everyday tracking. It is designed for quick personal records rather than a clinical workflow.",
+      "Use it to log bowel movements, stool notes, digestion notes, gut health notes, and constipation notes on a lightweight calendar. PoopTap keeps the experience playful with achievements and app-based progress while staying clear of medical advice."
+    ],
+    "target_users": [
+      "People who want a simple daily bowel movement tracker",
+      "Users who want a private stool log or poop tracker",
+      "People who want lightweight digestion notes, gut health notes, or constipation notes",
+      "Users who prefer playful personal tracking over a medical-style app"
+    ],
+    "features": [
+      "Quick bowel movement logging",
+      "Stool notes with optional shape and color context",
+      "Digestion notes, gut health notes, and constipation notes for personal reference",
+      "Calendar history for reviewing everyday toilet habits",
+      "PoopTap Plus optional iCloud Backup & Restore, customization, sharing, and collection features"
+    ],
+    "how_to_use": [
+      "Install PoopTap from the App Store.",
+      "Tap after a bowel movement to add a quick log.",
+      "Add optional stool notes, digestion notes, gut health notes, or constipation notes when useful.",
+      "Review your history on the calendar.",
+      "Use PoopTap as a personal log, not as medical advice or analysis."
+    ],
+    "pricing": "Free with optional PoopTap Plus in-app purchase. App Store pricing and availability may vary by country and can change over time.",
+    "privacy": "PoopTap is designed for lightweight personal tracking. Logs are handled by the app for the user's own records; check the App Store product page for Apple's current privacy label and feature details. Do not enter information you are not comfortable storing in the app.",
+    "faq": [
+      {
+        "question": "What is PoopTap?",
+        "answer": "PoopTap is a simple poop tracker and bowel movement log for private everyday tracking."
+      },
+      {
+        "question": "Is PoopTap a medical app?",
+        "answer": "No. PoopTap is a simple tracking app for personal notes. It does not provide medical advice, diagnosis, treatment, analysis, or recommendations."
+      },
+      {
+        "question": "What can I track with PoopTap?",
+        "answer": "You can log bowel movements, stool notes, digestion notes, gut health notes, constipation notes, and basic toilet habit history for personal reference."
+      },
+      {
+        "question": "Is PoopTap private?",
+        "answer": "PoopTap is designed for lightweight personal tracking. Check the App Store product page for Apple's current privacy label and disclosure details before installing."
+      },
+      {
+        "question": "Does PoopTap analyze stool or give recommendations?",
+        "answer": "No. PoopTap is for logging and reviewing your own notes. It does not analyze stool, score health, or recommend medical actions."
+      },
+      {
+        "question": "What is PoopTap Plus?",
+        "answer": "PoopTap Plus is an optional in-app purchase for features such as iCloud Backup & Restore, extra customization, premium share cards, additional collection features, and more achievements."
+      }
+    ]
+  },
   "6762545903": {
     "slug": "pilltap",
     "short_description": "Record medication checks quickly without turning the task into a complex health tracking workflow.",
