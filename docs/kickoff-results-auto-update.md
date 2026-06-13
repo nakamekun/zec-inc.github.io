@@ -42,17 +42,19 @@ The updater checks matches from `match-id-map.json` and attempts result capture 
 - `kickoffUTC + 2h10m`: first check for normal full-time results
 - `kickoffUTC + 3h`: final check for delays, stoppage time, extra time in unusual cases, or provider lag
 
-GitHub Actions schedule is a best-effort trigger, not a guaranteed timer. During the tournament, run an external cron as a second trigger source. The external cron should dispatch the same workflow; the workflow remains idempotent and commits only when JSON changes.
+GitHub Actions schedule is a best-effort trigger, not a guaranteed timer. It is currently the primary update path. The updater is idempotent and commits only when JSON changes.
 
-Local Mac or server cron example:
+Local Mac `crontab` dispatch was tested as a secondary trigger and then disabled because cron could not read the interactive `gh` keyring authentication state. Do not restore local cron by placing a GitHub token directly in a crontab entry or repository file.
+
+If a second trigger is needed again, prefer a hosted scheduler such as Cloudflare Workers Cron that stores a fine-scoped GitHub token as a scheduler secret and calls GitHub's `workflow_dispatch` API for branch `main`. Do not put tokens in this repository.
+
+Reference local cron command, only for environments where `gh auth status` succeeds from cron:
 
 ```cron
 8,18,28,38,48,58 * * * * cd /Users/kt/zec-inc.github.io && /opt/homebrew/bin/gh workflow run kickoff-results-auto-update.yml --ref main >/tmp/kickoff-results-auto-update.log 2>&1
 ```
 
 If `gh` is installed elsewhere, replace `/opt/homebrew/bin/gh` with the output of `which gh`. The GitHub account used by `gh` needs permission to run workflows in `nakamekun/zec-inc.github.io`.
-
-Cloudflare Workers Cron or another hosted scheduler can also call GitHub's `workflow_dispatch` API for this workflow. Use a fine-scoped GitHub token with workflow dispatch permission, store it as a scheduler secret, and call the dispatch endpoint for branch `main`. Do not put tokens in this repository.
 
 ### External Cron Auth Troubleshooting
 
@@ -78,7 +80,7 @@ GitHub repository settings must allow Actions to write commits:
 
 `ZEC_PAGES_DEPLOY_TOKEN` is not required for same-repository updates. The workflow uses `GITHUB_TOKEN`.
 
-The external cron can be stopped after the tournament by removing the crontab entry or disabling the hosted scheduler. Keep `KICKOFF_AUTO_UPDATE_ENABLED=false` as the global kill switch; both scheduled and externally dispatched runs will exit without updating when that variable is not exactly `true`.
+Keep `KICKOFF_AUTO_UPDATE_ENABLED=false` as the global kill switch. Scheduled and externally dispatched runs will exit without updating when that variable is not exactly `true`.
 
 ## Provider Safety
 
@@ -86,7 +88,8 @@ The FIFA Match Centre provider first reads the public FIFA calendar JSON endpoin
 
 - home and away teams match the app schedule
 - competition and season match the 2026 tournament
-- match number and kickoff date support the identity
+- kickoff date supports the identity
+- match number is used only as a confidence signal, not as a required identity field
 - both scores are present
 - the source marks the match final
 - winner can be derived from score or penalties
