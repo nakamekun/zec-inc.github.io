@@ -1,0 +1,115 @@
+app:
+  slug: packed-ios
+  base_locale: en-US
+
+defaults:
+  avoid_terms:
+    - term: "#1"
+      level: error
+      reason: ranking claims are not allowed in App Store metadata
+    - term: guarantee
+      level: warning
+      reason: unsupported outcome claim
+    - term: best
+      level: warning
+      reason: superlative claims invite App Review pushback
+
+locales:
+  en-US:
+    seed_keywords:
+      - packing list
+      - travel checklist
+      - trip planner
+      - suitcase list
+      - vacation packing
+    search_intents:
+      - plan what to pack before a trip
+      - reuse a checklist for travel
+      - avoid forgetting travel essentials
+    research:
+      search_intent: |
+        English-speaking users tend to search for category terms such as
+        "packing list" and "travel checklist". The metadata should cover
+        checklist, packing, trip, and reminder intent without claiming that
+        the app guarantees a perfect trip.
+      keyword_candidates:
+        - term: packing list
+          priority: 1
+        - term: travel checklist
+          priority: 1
+        - term: trip planner
+          priority: 2
+        - term: suitcase
+          priority: 3
+        - term: vacation
+          priority: 3
+        - term: reminder
+          priority: 4
+      competitors:
+        - PackPoint
+        - Packr
+    metadata:
+      name: Packed
+      subtitle: Packing checklist
+      promotional_text: Build reusable packing lists for trips and check off what is ready before you leave.
+      description: |
+        Packed helps you prepare for trips with a simple packing checklist.
+
+        Create a list, check off what is ready, and reuse your packing plan for future travel.
+        It is designed for lightweight travel preparation without accounts or complex planning.
+      release_notes: |
+        Initial release.
+
+  ja:
+    seed_keywords:
+      - 持ち物リスト
+      - パッキングリスト
+      - 旅行準備
+      - 旅行チェックリスト
+      - 出張 持ち物
+      - 子連れ旅行 持ち物
+    search_intents:
+      - 旅行前に忘れ物を防ぎたい
+      - 出張の持ち物を確認したい
+      - 子連れ旅行の準備をリスト化したい
+    avoid_terms:
+      - term: 保証
+        level: warning
+        reason: unsupported outcome guarantee
+      - term: 絶対
+        level: warning
+        reason: absolute claims are risky
+    research:
+      search_intent: |
+        日本語では「持ち物リスト」「旅行準備」「旅行チェックリスト」のように、
+        旅行前の不安や忘れ物防止の意図で検索されやすい。en-USの直訳ではなく、
+        出張や子連れ旅行など日本語で自然な検索語をkeywordsで広く拾う。
+      keyword_candidates:
+        - term: 持ち物リスト
+          priority: 1
+        - term: パッキングリスト
+          priority: 1
+        - term: 旅行準備
+          priority: 2
+        - term: 旅行チェックリスト
+          priority: 2
+        - term: 出張
+          priority: 3
+        - term: 子連れ旅行
+          priority: 3
+        - term: 忘れ物防止
+          priority: 4
+      competitors:
+        - PackPoint
+        - Packr
+    metadata:
+      name: Packed
+      subtitle: 旅行の持ち物リスト
+      promotional_text: 旅行や出張の持ち物をリスト化。出発前に準備できたものをすばやく確認できます。
+      description: |
+        Packedは、旅行や出張の持ち物を整理するためのシンプルなチェックリストアプリです。
+
+        持ち物をリストにして、準備できたものをチェック。次の旅行でも同じリストを見直せます。
+        子連れ旅行、出張、短い外出など、出発前の確認を軽くしたいときに使えます。
+      release_notes: |
+        初回リリース。

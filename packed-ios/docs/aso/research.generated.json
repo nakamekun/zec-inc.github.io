@@ -1,0 +1,892 @@
+{
+  "schema": 1,
+  "generated_at": "2026-06-13T10:04:30+00:00",
+  "app": {
+    "slug": "packed-ios",
+    "base_locale": "en-US"
+  },
+  "source": "/Users/kt/zec-inc.github.io/packed-ios/docs/aso/aso-source.yaml",
+  "offline": true,
+  "providers": [
+    "static"
+  ],
+  "cache": {
+    "use_cache": true,
+    "refresh_cache": false
+  },
+  "locales": {
+    "en-US": {
+      "country": "us",
+      "current_metadata": {
+        "name": "Packed",
+        "subtitle": "Packing checklist",
+        "keywords": "",
+        "promotional_text": "Build reusable packing lists for trips and check off what is ready before you leave.",
+        "description": "Packed helps you prepare for trips with a simple packing checklist.\n\nCreate a list, check off what is ready, and reuse your packing plan for future travel.\nIt is designed for lightweight travel preparation without accounts or complex planning.",
+        "release_notes": "Initial release."
+      },
+      "locale_context": {
+        "seed_keywords": [
+          "packing list",
+          "travel checklist",
+          "trip planner",
+          "suitcase list",
+          "vacation packing"
+        ],
+        "search_intents": [
+          "plan what to pack before a trip",
+          "reuse a checklist for travel",
+          "avoid forgetting travel essentials",
+          "English-speaking users tend to search for category terms such as\n\"packing list\" and \"travel checklist\". The metadata should cover\nchecklist, packing, trip, and reminder intent without claiming that\nthe app guarantees a perfect trip."
+        ]
+      },
+      "research": {
+        "search_terms": [
+          "packing list",
+          "travel checklist",
+          "trip planner",
+          "suitcase list",
+          "vacation packing",
+          "suitcase",
+          "vacation",
+          "reminder",
+          "Packed",
+          "Packing",
+          "checklist"
+        ],
+        "provider_results": [
+          {
+            "provider": "static",
+            "locale": "en-US",
+            "country": "us",
+            "keyword_candidates": [
+              {
+                "term": "packing list",
+                "priority": 40,
+                "source": "locale-seed"
+              },
+              {
+                "term": "travel checklist",
+                "priority": 40,
+                "source": "locale-seed"
+              },
+              {
+                "term": "trip planner",
+                "priority": 40,
+                "source": "locale-seed"
+              },
+              {
+                "term": "suitcase list",
+                "priority": 40,
+                "source": "locale-seed"
+              },
+              {
+                "term": "vacation packing",
+                "priority": 40,
+                "source": "locale-seed"
+              },
+              {
+                "term": "packing list",
+                "priority": 1,
+                "source": "aso-source",
+                "note": ""
+              },
+              {
+                "term": "travel checklist",
+                "priority": 1,
+                "source": "aso-source",
+                "note": ""
+              },
+              {
+                "term": "trip planner",
+                "priority": 2,
+                "source": "aso-source",
+                "note": ""
+              },
+              {
+                "term": "suitcase",
+                "priority": 3,
+                "source": "aso-source",
+                "note": ""
+              },
+              {
+                "term": "vacation",
+                "priority": 3,
+                "source": "aso-source",
+                "note": ""
+              },
+              {
+                "term": "reminder",
+                "priority": 4,
+                "source": "aso-source",
+                "note": ""
+              }
+            ],
+            "competitors": [
+              {
+                "name": "PackPoint",
+                "source": "aso-source"
+              },
+              {
+                "name": "Packr",
+                "source": "aso-source"
+              }
+            ],
+            "search_results": [],
+            "warnings": []
+          }
+        ],
+        "search_results": []
+      },
+      "competitors": [
+        {
+          "name": "PackPoint",
+          "source": "aso-source"
+        },
+        {
+          "name": "Packr",
+          "source": "aso-source"
+        }
+      ],
+      "scored_keywords": [
+        {
+          "term": "packing list",
+          "score": 0.737,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 1.0,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "reminder",
+          "score": 0.725,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.9,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 4,
+          "note": ""
+        },
+        {
+          "term": "travel checklist",
+          "score": 0.712,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 1.0,
+            "character_efficiency": 0.75,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "suitcase list",
+          "score": 0.5593,
+          "components": {
+            "search_intent_fit": 0.5,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.5,
+            "character_efficiency": 0.9231,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "trip planner",
+          "score": 0.549,
+          "components": {
+            "search_intent_fit": 0.5,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "vacation packing",
+          "score": 0.542,
+          "components": {
+            "search_intent_fit": 0.5,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.5,
+            "character_efficiency": 0.75,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "suitcase",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 3,
+          "note": ""
+        },
+        {
+          "term": "vacation",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 3,
+          "note": ""
+        }
+      ],
+      "proposals": [
+        {
+          "id": "A",
+          "strategy": "Search-first",
+          "fields": {
+            "name": "Packed",
+            "subtitle": "packing list reminder",
+            "keywords": "packing list,travel checklist,suitcase list,trip planner,vacation packing,suitcase,vacation",
+            "promotional_text": "Build reusable packing lists for trips and check off what is ready before you leave.",
+            "description": "Packed locale-specific ASO proposal.\n\nHighlights:\n- Title, subtitle, and keywords designed for this locale's search behavior\n- Natural wording balanced with relevant search terms\n- Product meaning and compliance constraints preserved without direct translation\n\nReview final description wording against actual features, screenshots, and App Review-safe claims.\n\nProduct context used for this proposal:\n# Product Spec\n\n## One-line Description\n\nPacked helps users manage reusable packing groups and check items for the day.\n\n## Core Value\n\n- Reduce forgotten items through repeatable daily checklists.\n- Keep packing setup lightweight.\n\n## Target Users\n\n- People preparing for school, work, travel, gym, or daily routines.\n\n## Core Operation\n\n- Create a group, add items, check today's packed state, and optionally get reminders.\n\n## Free Features\n\n- Packing groups and items.\n- Daily check state.\n- Settings and local reminders.\n\n## Paid Feature Candidates\n\n- Unknown. Possible candidates: unlimited groups, templates, themes.\n\n## Non-goals\n\n- Inventory management.\n- Shared household/team packing.\n- Server sync in v1.",
+            "release_notes": "Initial release."
+          },
+          "rationale": "Prioritizes high-fit category and intent keywords for discoverability.",
+          "adopted_keywords": [
+            "packing list",
+            "travel checklist",
+            "suitcase list",
+            "trip planner",
+            "vacation packing",
+            "suitcase",
+            "vacation"
+          ],
+          "excluded_keywords": [
+            {
+              "term": "reminder",
+              "reason": "already in name/subtitle"
+            }
+          ],
+          "search_intent": "Users searching broad category and use-case terms for this locale.",
+          "risks": [
+            "Broader category terms may be more competitive."
+          ],
+          "issues": [],
+          "description_outline": [
+            "Target user and search intent",
+            "Core features",
+            "Use cases",
+            "Compliance-safe wording"
+          ]
+        },
+        {
+          "id": "B",
+          "strategy": "Conversion-first",
+          "fields": {
+            "name": "Packed",
+            "subtitle": "Packing checklist",
+            "keywords": "packing list,travel checklist,reminder,suitcase list,vacation packing,trip planner,suitcase,vacation",
+            "promotional_text": "Build reusable packing lists for trips and check off what is ready before you leave.",
+            "description": "Packed locale-specific ASO proposal.\n\nHighlights:\n- Title, subtitle, and keywords designed for this locale's search behavior\n- Natural wording balanced with relevant search terms\n- Product meaning and compliance constraints preserved without direct translation\n\nReview final description wording against actual features, screenshots, and App Review-safe claims.\n\nProduct context used for this proposal:\n# Product Spec\n\n## One-line Description\n\nPacked helps users manage reusable packing groups and check items for the day.\n\n## Core Value\n\n- Reduce forgotten items through repeatable daily checklists.\n- Keep packing setup lightweight.\n\n## Target Users\n\n- People preparing for school, work, travel, gym, or daily routines.\n\n## Core Operation\n\n- Create a group, add items, check today's packed state, and optionally get reminders.\n\n## Free Features\n\n- Packing groups and items.\n- Daily check state.\n- Settings and local reminders.\n\n## Paid Feature Candidates\n\n- Unknown. Possible candidates: unlimited groups, templates, themes.\n\n## Non-goals\n\n- Inventory management.\n- Shared household/team packing.\n- Server sync in v1.",
+            "release_notes": "Initial release."
+          },
+          "rationale": "Keeps clearer benefit language in subtitle and promo copy for product-page conversion.",
+          "adopted_keywords": [
+            "packing list",
+            "travel checklist",
+            "reminder",
+            "suitcase list",
+            "vacation packing",
+            "trip planner",
+            "suitcase",
+            "vacation"
+          ],
+          "excluded_keywords": [],
+          "search_intent": "Users comparing product-page clarity, benefits, and fit.",
+          "risks": [
+            "Conversion-friendly copy may sacrifice some keyword coverage."
+          ],
+          "issues": [],
+          "description_outline": [
+            "Target user and search intent",
+            "Core features",
+            "Use cases",
+            "Compliance-safe wording"
+          ]
+        },
+        {
+          "id": "C",
+          "strategy": "Long-tail / niche",
+          "fields": {
+            "name": "Packed",
+            "subtitle": "packing list reminder",
+            "keywords": "packing list,trip planner,suitcase,vacation,suitcase list,travel checklist,vacation packing",
+            "promotional_text": "Build reusable packing lists for trips and check off what is ready before you leave.",
+            "description": "Packed locale-specific ASO proposal.\n\nHighlights:\n- Title, subtitle, and keywords designed for this locale's search behavior\n- Natural wording balanced with relevant search terms\n- Product meaning and compliance constraints preserved without direct translation\n\nReview final description wording against actual features, screenshots, and App Review-safe claims.\n\nProduct context used for this proposal:\n# Product Spec\n\n## One-line Description\n\nPacked helps users manage reusable packing groups and check items for the day.\n\n## Core Value\n\n- Reduce forgotten items through repeatable daily checklists.\n- Keep packing setup lightweight.\n\n## Target Users\n\n- People preparing for school, work, travel, gym, or daily routines.\n\n## Core Operation\n\n- Create a group, add items, check today's packed state, and optionally get reminders.\n\n## Free Features\n\n- Packing groups and items.\n- Daily check state.\n- Settings and local reminders.\n\n## Paid Feature Candidates\n\n- Unknown. Possible candidates: unlimited groups, templates, themes.\n\n## Non-goals\n\n- Inventory management.\n- Shared household/team packing.\n- Server sync in v1.",
+            "release_notes": "Initial release."
+          },
+          "rationale": "Uses efficient and less crowded terms to cover narrower search intent.",
+          "adopted_keywords": [
+            "packing list",
+            "trip planner",
+            "suitcase",
+            "vacation",
+            "suitcase list",
+            "travel checklist",
+            "vacation packing"
+          ],
+          "excluded_keywords": [
+            {
+              "term": "reminder",
+              "reason": "already in name/subtitle"
+            }
+          ],
+          "search_intent": "Users searching narrower long-tail use cases and specific workflows.",
+          "risks": [
+            "Long-tail terms can have lower demand."
+          ],
+          "issues": [],
+          "description_outline": [
+            "Target user and search intent",
+            "Core features",
+            "Use cases",
+            "Compliance-safe wording"
+          ]
+        }
+      ],
+      "avoid_terms": [
+        {
+          "term": "#1",
+          "level": "error",
+          "reason": "ranking claims are not allowed in App Store metadata"
+        },
+        {
+          "term": "guarantee",
+          "level": "warning",
+          "reason": "unsupported outcome claim"
+        },
+        {
+          "term": "best",
+          "level": "warning",
+          "reason": "superlative claims invite App Review pushback"
+        }
+      ]
+    },
+    "ja": {
+      "country": "jp",
+      "current_metadata": {
+        "name": "Packed",
+        "subtitle": "旅行の持ち物リスト",
+        "keywords": "",
+        "promotional_text": "旅行や出張の持ち物をリスト化。出発前に準備できたものをすばやく確認できます。",
+        "description": "Packedは、旅行や出張の持ち物を整理するためのシンプルなチェックリストアプリです。\n\n持ち物をリストにして、準備できたものをチェック。次の旅行でも同じリストを見直せます。\n子連れ旅行、出張、短い外出など、出発前の確認を軽くしたいときに使えます。",
+        "release_notes": "初回リリース。"
+      },
+      "locale_context": {
+        "seed_keywords": [
+          "持ち物リスト",
+          "パッキングリスト",
+          "旅行準備",
+          "旅行チェックリスト",
+          "出張 持ち物",
+          "子連れ旅行 持ち物"
+        ],
+        "search_intents": [
+          "旅行前に忘れ物を防ぎたい",
+          "出張の持ち物を確認したい",
+          "子連れ旅行の準備をリスト化したい",
+          "日本語では「持ち物リスト」「旅行準備」「旅行チェックリスト」のように、\n旅行前の不安や忘れ物防止の意図で検索されやすい。en-USの直訳ではなく、\n出張や子連れ旅行など日本語で自然な検索語をkeywordsで広く拾う。"
+        ]
+      },
+      "research": {
+        "search_terms": [
+          "持ち物リスト",
+          "パッキングリスト",
+          "旅行準備",
+          "旅行チェックリスト",
+          "出張 持ち物",
+          "子連れ旅行 持ち物",
+          "出張",
+          "子連れ旅行",
+          "忘れ物防止",
+          "Packed",
+          "旅行の持ち物リスト"
+        ],
+        "provider_results": [
+          {
+            "provider": "static",
+            "locale": "ja",
+            "country": "jp",
+            "keyword_candidates": [
+              {
+                "term": "持ち物リスト",
+                "priority": 40,
+                "source": "locale-seed"
+              },
+              {
+                "term": "パッキングリスト",
+                "priority": 40,
+                "source": "locale-seed"
+              },
+              {
+                "term": "旅行準備",
+                "priority": 40,
+                "source": "locale-seed"
+              },
+              {
+                "term": "旅行チェックリスト",
+                "priority": 40,
+                "source": "locale-seed"
+              },
+              {
+                "term": "出張 持ち物",
+                "priority": 40,
+                "source": "locale-seed"
+              },
+              {
+                "term": "子連れ旅行 持ち物",
+                "priority": 40,
+                "source": "locale-seed"
+              },
+              {
+                "term": "持ち物リスト",
+                "priority": 1,
+                "source": "aso-source",
+                "note": ""
+              },
+              {
+                "term": "パッキングリスト",
+                "priority": 1,
+                "source": "aso-source",
+                "note": ""
+              },
+              {
+                "term": "旅行準備",
+                "priority": 2,
+                "source": "aso-source",
+                "note": ""
+              },
+              {
+                "term": "旅行チェックリスト",
+                "priority": 2,
+                "source": "aso-source",
+                "note": ""
+              },
+              {
+                "term": "出張",
+                "priority": 3,
+                "source": "aso-source",
+                "note": ""
+              },
+              {
+                "term": "子連れ旅行",
+                "priority": 3,
+                "source": "aso-source",
+                "note": ""
+              },
+              {
+                "term": "忘れ物防止",
+                "priority": 4,
+                "source": "aso-source",
+                "note": ""
+              }
+            ],
+            "competitors": [
+              {
+                "name": "PackPoint",
+                "source": "aso-source"
+              },
+              {
+                "name": "Packr",
+                "source": "aso-source"
+              }
+            ],
+            "search_results": [],
+            "warnings": []
+          }
+        ],
+        "search_results": []
+      },
+      "competitors": [
+        {
+          "name": "PackPoint",
+          "source": "aso-source"
+        },
+        {
+          "name": "Packr",
+          "source": "aso-source"
+        }
+      ],
+      "scored_keywords": [
+        {
+          "term": "出張",
+          "score": 0.715,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.9,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 3,
+          "note": ""
+        },
+        {
+          "term": "子連れ旅行",
+          "score": 0.715,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.9,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 3,
+          "note": ""
+        },
+        {
+          "term": "持ち物リスト",
+          "score": 0.715,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.9,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "忘れ物防止",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 4,
+          "note": ""
+        },
+        {
+          "term": "パッキングリスト",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "出張 持ち物",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "旅行準備",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "子連れ旅行 持ち物",
+          "score": 0.5049,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 0.8889,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "旅行チェックリスト",
+          "score": 0.5049,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 0.8889,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        }
+      ],
+      "proposals": [
+        {
+          "id": "A",
+          "strategy": "Search-first",
+          "fields": {
+            "name": "Packed",
+            "subtitle": "出張・子連れ旅行・持ち物リスト",
+            "keywords": "忘れ物防止,パッキングリスト,出張 持ち物,旅行準備,子連れ旅行 持ち物,旅行チェックリスト",
+            "promotional_text": "旅行や出張の持ち物をリスト化。出発前に準備できたものをすばやく確認できます。",
+            "description": "Packedのlocale別ASO提案です。\n\n主な内容:\n- このlocaleの検索意図に合わせたtitle/subtitle/keywords\n- 自然な表現と検索語の両立\n- base localeの直訳ではなく、機能意味と禁止表現を保った再設計\n\n説明文は、実際の機能、スクリーンショット、App Review上の安全な表現に合わせて人間が最終確認してください。\n\nProduct context used for this proposal:\n# Product Spec\n\n## One-line Description\n\nPacked helps users manage reusable packing groups and check items for the day.\n\n## Core Value\n\n- Reduce forgotten items through repeatable daily checklists.\n- Keep packing setup lightweight.\n\n## Target Users\n\n- People preparing for school, work, travel, gym, or daily routines.\n\n## Core Operation\n\n- Create a group, add items, check today's packed state, and optionally get reminders.\n\n## Free Features\n\n- Packing groups and items.\n- Daily check state.\n- Settings and local reminders.\n\n## Paid Feature Candidates\n\n- Unknown. Possible candidates: unlimited groups, templates, themes.\n\n## Non-goals\n\n- Inventory management.\n- Shared household/team packing.\n- Server sync in v1.",
+            "release_notes": "初回リリース。"
+          },
+          "rationale": "Prioritizes high-fit category and intent keywords for discoverability.",
+          "adopted_keywords": [
+            "忘れ物防止",
+            "パッキングリスト",
+            "出張 持ち物",
+            "旅行準備",
+            "子連れ旅行 持ち物",
+            "旅行チェックリスト"
+          ],
+          "excluded_keywords": [
+            {
+              "term": "出張",
+              "reason": "already in name/subtitle"
+            },
+            {
+              "term": "子連れ旅行",
+              "reason": "already in name/subtitle"
+            },
+            {
+              "term": "持ち物リスト",
+              "reason": "already in name/subtitle"
+            }
+          ],
+          "search_intent": "このlocaleの主要カテゴリ語と用途語で探すユーザー。",
+          "risks": [
+            "Broader category terms may be more competitive."
+          ],
+          "issues": [],
+          "description_outline": [
+            "対象ユーザーと検索意図",
+            "主要機能",
+            "利用シーン",
+            "禁止表現を避けた安全な説明"
+          ]
+        },
+        {
+          "id": "B",
+          "strategy": "Conversion-first",
+          "fields": {
+            "name": "Packed",
+            "subtitle": "旅行の持ち物リスト",
+            "keywords": "出張,子連れ旅行,忘れ物防止,パッキングリスト,出張 持ち物,旅行準備,子連れ旅行 持ち物,旅行チェックリスト",
+            "promotional_text": "旅行や出張の持ち物をリスト化。出発前に準備できたものをすばやく確認できます。",
+            "description": "Packedのlocale別ASO提案です。\n\n主な内容:\n- このlocaleの検索意図に合わせたtitle/subtitle/keywords\n- 自然な表現と検索語の両立\n- base localeの直訳ではなく、機能意味と禁止表現を保った再設計\n\n説明文は、実際の機能、スクリーンショット、App Review上の安全な表現に合わせて人間が最終確認してください。\n\nProduct context used for this proposal:\n# Product Spec\n\n## One-line Description\n\nPacked helps users manage reusable packing groups and check items for the day.\n\n## Core Value\n\n- Reduce forgotten items through repeatable daily checklists.\n- Keep packing setup lightweight.\n\n## Target Users\n\n- People preparing for school, work, travel, gym, or daily routines.\n\n## Core Operation\n\n- Create a group, add items, check today's packed state, and optionally get reminders.\n\n## Free Features\n\n- Packing groups and items.\n- Daily check state.\n- Settings and local reminders.\n\n## Paid Feature Candidates\n\n- Unknown. Possible candidates: unlimited groups, templates, themes.\n\n## Non-goals\n\n- Inventory management.\n- Shared household/team packing.\n- Server sync in v1.",
+            "release_notes": "初回リリース。"
+          },
+          "rationale": "Keeps clearer benefit language in subtitle and promo copy for product-page conversion.",
+          "adopted_keywords": [
+            "出張",
+            "子連れ旅行",
+            "忘れ物防止",
+            "パッキングリスト",
+            "出張 持ち物",
+            "旅行準備",
+            "子連れ旅行 持ち物",
+            "旅行チェックリスト"
+          ],
+          "excluded_keywords": [
+            {
+              "term": "持ち物リスト",
+              "reason": "already in name/subtitle"
+            }
+          ],
+          "search_intent": "機能の分かりやすさと自然な説明で比較検討するユーザー。",
+          "risks": [
+            "Conversion-friendly copy may sacrifice some keyword coverage."
+          ],
+          "issues": [],
+          "description_outline": [
+            "対象ユーザーと検索意図",
+            "主要機能",
+            "利用シーン",
+            "禁止表現を避けた安全な説明"
+          ]
+        },
+        {
+          "id": "C",
+          "strategy": "Long-tail / niche",
+          "fields": {
+            "name": "Packed",
+            "subtitle": "出張・子連れ旅行・持ち物リスト",
+            "keywords": "忘れ物防止,パッキングリスト,出張 持ち物,旅行準備,子連れ旅行 持ち物,旅行チェックリスト",
+            "promotional_text": "旅行や出張の持ち物をリスト化。出発前に準備できたものをすばやく確認できます。",
+            "description": "Packedのlocale別ASO提案です。\n\n主な内容:\n- このlocaleの検索意図に合わせたtitle/subtitle/keywords\n- 自然な表現と検索語の両立\n- base localeの直訳ではなく、機能意味と禁止表現を保った再設計\n\n説明文は、実際の機能、スクリーンショット、App Review上の安全な表現に合わせて人間が最終確認してください。\n\nProduct context used for this proposal:\n# Product Spec\n\n## One-line Description\n\nPacked helps users manage reusable packing groups and check items for the day.\n\n## Core Value\n\n- Reduce forgotten items through repeatable daily checklists.\n- Keep packing setup lightweight.\n\n## Target Users\n\n- People preparing for school, work, travel, gym, or daily routines.\n\n## Core Operation\n\n- Create a group, add items, check today's packed state, and optionally get reminders.\n\n## Free Features\n\n- Packing groups and items.\n- Daily check state.\n- Settings and local reminders.\n\n## Paid Feature Candidates\n\n- Unknown. Possible candidates: unlimited groups, templates, themes.\n\n## Non-goals\n\n- Inventory management.\n- Shared household/team packing.\n- Server sync in v1.",
+            "release_notes": "初回リリース。"
+          },
+          "rationale": "Uses efficient and less crowded terms to cover narrower search intent.",
+          "adopted_keywords": [
+            "忘れ物防止",
+            "パッキングリスト",
+            "出張 持ち物",
+            "旅行準備",
+            "子連れ旅行 持ち物",
+            "旅行チェックリスト"
+          ],
+          "excluded_keywords": [
+            {
+              "term": "出張",
+              "reason": "already in name/subtitle"
+            },
+            {
+              "term": "子連れ旅行",
+              "reason": "already in name/subtitle"
+            },
+            {
+              "term": "持ち物リスト",
+              "reason": "already in name/subtitle"
+            }
+          ],
+          "search_intent": "より具体的な利用シーンやロングテール語で探すユーザー。",
+          "risks": [
+            "Long-tail terms can have lower demand."
+          ],
+          "issues": [],
+          "description_outline": [
+            "対象ユーザーと検索意図",
+            "主要機能",
+            "利用シーン",
+            "禁止表現を避けた安全な説明"
+          ]
+        }
+      ],
+      "avoid_terms": [
+        {
+          "term": "#1",
+          "level": "error",
+          "reason": "ranking claims are not allowed in App Store metadata"
+        },
+        {
+          "term": "guarantee",
+          "level": "warning",
+          "reason": "unsupported outcome claim"
+        },
+        {
+          "term": "best",
+          "level": "warning",
+          "reason": "superlative claims invite App Review pushback"
+        },
+        {
+          "term": "保証",
+          "level": "warning",
+          "reason": "unsupported outcome guarantee"
+        },
+        {
+          "term": "絶対",
+          "level": "warning",
+          "reason": "absolute claims are risky"
+        }
+      ]
+    }
+  },
+  "future_provider_notes": {
+    "apple_ads_provider": [
+      "keyword reports",
+      "search term reports",
+      "bid recommendation",
+      "impressions / taps / installs / CPT / CPA"
+    ],
+    "app_store_connect_analytics_provider": [
+      "impressions",
+      "product page views",
+      "downloads",
+      "conversion rate",
+      "source type",
+      "territory"
+    ],
+    "ranking_tracker": "Store country / locale / keyword rank history.",
+    "metadata_experiment_log": [
+      "metadata change date",
+      "version/build",
+      "keywords",
+      "change rationale",
+      "post-change CTR/CVR/download trend"
+    ]
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "schema": 1,
+  "generated_at": "2026-06-13T10:04:30+00:00",
+  "app": {
+    "slug": "packed-ios",
+    "base_locale": "en-US"
+  },
+  "locales": {
+    "en-US": {
+      "country": "us",
+      "candidates": [
+        {
+          "term": "packing list",
+          "score": 0.737,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 1.0,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "reminder",
+          "score": 0.725,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.9,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 4,
+          "note": ""
+        },
+        {
+          "term": "travel checklist",
+          "score": 0.712,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 1.0,
+            "character_efficiency": 0.75,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "suitcase list",
+          "score": 0.5593,
+          "components": {
+            "search_intent_fit": 0.5,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.5,
+            "character_efficiency": 0.9231,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "trip planner",
+          "score": 0.549,
+          "components": {
+            "search_intent_fit": 0.5,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "vacation packing",
+          "score": 0.542,
+          "components": {
+            "search_intent_fit": 0.5,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.5,
+            "character_efficiency": 0.75,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "suitcase",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 3,
+          "note": ""
+        },
+        {
+          "term": "vacation",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 3,
+          "note": ""
+        }
+      ],
+      "top_terms": [
+        "packing list",
+        "reminder",
+        "travel checklist",
+        "suitcase list",
+        "trip planner",
+        "vacation packing",
+        "suitcase",
+        "vacation"
+      ]
+    },
+    "ja": {
+      "country": "jp",
+      "candidates": [
+        {
+          "term": "出張",
+          "score": 0.715,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.9,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 3,
+          "note": ""
+        },
+        {
+          "term": "子連れ旅行",
+          "score": 0.715,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.9,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 3,
+          "note": ""
+        },
+        {
+          "term": "持ち物リスト",
+          "score": 0.715,
+          "components": {
+            "search_intent_fit": 1.0,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.9,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "忘れ物防止",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "aso-source",
+          "priority": 4,
+          "note": ""
+        },
+        {
+          "term": "パッキングリスト",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "出張 持ち物",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "旅行準備",
+          "score": 0.516,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 1.0,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "子連れ旅行 持ち物",
+          "score": 0.5049,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 0.8889,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        },
+        {
+          "term": "旅行チェックリスト",
+          "score": 0.5049,
+          "components": {
+            "search_intent_fit": 0.35,
+            "demand_proxy": 0.45,
+            "competition_inverse": 0.8,
+            "metadata_fit": 0.55,
+            "conversion_fit": 0.35,
+            "character_efficiency": 0.8889,
+            "risk_penalty": 0.0
+          },
+          "source": "locale-seed",
+          "priority": 40,
+          "note": ""
+        }
+      ],
+      "top_terms": [
+        "出張",
+        "子連れ旅行",
+        "持ち物リスト",
+        "忘れ物防止",
+        "パッキングリスト",
+        "出張 持ち物",
+        "旅行準備",
+        "子連れ旅行 持ち物",
+        "旅行チェックリスト"
+      ]
+    }
+  }
+}

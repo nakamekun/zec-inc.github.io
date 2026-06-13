@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "generated_at": "2026-06-13T10:04:37+00:00",
+  "app": {
+    "slug": "packed-ios",
+    "base_locale": "en-US"
+  },
+  "source": "packed-ios/docs/aso/aso-source.suggested.yaml",
+  "locales": {
+    "en-US": {
+      "fields": {
+        "name": "Packed",
+        "subtitle": "packing list reminder",
+        "promotional_text": "Build reusable packing lists for trips and check off what is ready before you leave.",
+        "description": "Packed locale-specific ASO proposal.\n\nHighlights:\n- Title, subtitle, and keywords designed for this locale's search behavior\n- Natural wording balanced with relevant search terms\n- Product meaning and compliance constraints preserved without direct translation\n\nReview final description wording against actual features, screenshots, and App Review-safe claims.\n\nProduct context used for this proposal:\n# Product Spec\n\n## One-line Description\n\nPacked helps users manage reusable packing groups and check items for the day.\n\n## Core Value\n\n- Reduce forgotten items through repeatable daily checklists.\n- Keep packing setup lightweight.\n\n## Target Users\n\n- People preparing for school, work, travel, gym, or daily routines.\n\n## Core Operation\n\n- Create a group, add items, check today's packed state, and optionally get reminders.\n\n## Free Features\n\n- Packing groups and items.\n- Daily check state.\n- Settings and local reminders.\n\n## Paid Feature Candidates\n\n- Unknown. Possible candidates: unlimited groups, templates, themes.\n\n## Non-goals\n\n- Inventory management.\n- Shared household/team packing.\n- Server sync in v1.",
+        "release_notes": "Initial release.",
+        "keywords": "packing list,travel checklist,suitcase list,trip planner,vacation packing,suitcase,vacation"
+      },
+      "keyword_report": {
+        "mode": "assembled",
+        "used": [
+          "packing list",
+          "travel checklist",
+          "suitcase list",
+          "trip planner",
+          "vacation packing",
+          "suitcase",
+          "vacation"
+        ],
+        "dropped": [
+          {
+            "term": "reminder",
+            "reason": "already in name/subtitle"
+          }
+        ]
+      },
+      "fallbacks": [],
+      "avoid_terms": [
+        {
+          "term": "#1",
+          "level": "error",
+          "reason": "ranking claims are not allowed in App Store metadata"
+        },
+        {
+          "term": "best",
+          "level": "warning",
+          "reason": "superlative claims invite App Review pushback"
+        }
+      ],
+      "search_intent": "Users searching broad category and use-case terms for this locale.",
+      "issues": []
+    },
+    "ja": {
+      "fields": {
+        "name": "Packed",
+        "subtitle": "出張・子連れ旅行・持ち物リスト",
+        "promotional_text": "旅行や出張の持ち物をリスト化。出発前に準備できたものをすばやく確認できます。",
+        "description": "Packedのlocale別ASO提案です。\n\n主な内容:\n- このlocaleの検索意図に合わせたtitle/subtitle/keywords\n- 自然な表現と検索語の両立\n- base localeの直訳ではなく、機能意味と禁止表現を保った再設計\n\n説明文は、実際の機能、スクリーンショット、App Review上の安全な表現に合わせて人間が最終確認してください。\n\nProduct context used for this proposal:\n# Product Spec\n\n## One-line Description\n\nPacked helps users manage reusable packing groups and check items for the day.\n\n## Core Value\n\n- Reduce forgotten items through repeatable daily checklists.\n- Keep packing setup lightweight.\n\n## Target Users\n\n- People preparing for school, work, travel, gym, or daily routines.\n\n## Core Operation\n\n- Create a group, add items, check today's packed state, and optionally get reminders.\n\n## Free Features\n\n- Packing groups and items.\n- Daily check state.\n- Settings and local reminders.\n\n## Paid Feature Candidates\n\n- Unknown. Possible candidates: unlimited groups, templates, themes.\n\n## Non-goals\n\n- Inventory management.\n- Shared household/team packing.\n- Server sync in v1.",
+        "release_notes": "初回リリース。",
+        "keywords": "忘れ物防止,パッキングリスト,出張 持ち物,旅行準備,子連れ旅行 持ち物,旅行チェックリスト"
+      },
+      "keyword_report": {
+        "mode": "assembled",
+        "used": [
+          "忘れ物防止",
+          "パッキングリスト",
+          "出張 持ち物",
+          "旅行準備",
+          "子連れ旅行 持ち物",
+          "旅行チェックリスト"
+        ],
+        "dropped": [
+          {
+            "term": "出張",
+            "reason": "already in name/subtitle"
+          },
+          {
+            "term": "子連れ旅行",
+            "reason": "already in name/subtitle"
+          },
+          {
+            "term": "持ち物リスト",
+            "reason": "already in name/subtitle"
+          }
+        ]
+      },
+      "fallbacks": [],
+      "avoid_terms": [
+        {
+          "term": "#1",
+          "level": "error",
+          "reason": "ranking claims are not allowed in App Store metadata"
+        },
+        {
+          "term": "best",
+          "level": "warning",
+          "reason": "superlative claims invite App Review pushback"
+        }
+      ],
+      "search_intent": "このlocaleの主要カテゴリ語と用途語で探すユーザー。",
+      "issues": []
+    }
+  }
+}

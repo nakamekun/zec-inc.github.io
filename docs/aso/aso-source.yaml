@@ -1,0 +1,172 @@
+# ASO source template — ZEC App Factory
+#
+# 使い方:
+#   1. このファイルを <app>/docs/aso/aso-source.yaml にコピーする
+#   2. product-spec.md を元に、localeごとの research と metadata を埋める
+#      (LLMに書かせてよいが、必ず generate/validate の機械チェックを通す)
+#   3. python scripts/aso/generate_metadata.py --app <app> --dry-run でレビュー
+#   4. docs/aso/metadata-review.md を確認してから --write で fastlane に出力
+#
+# keywords は明示指定 (metadata.keywords) か、research.keyword_candidates
+# からの自動組み立て (priority順・name/subtitle重複除外・100文字以内) を選べる。
+# 値の例は架空のサンプルアプリ (Sample Tap: 1タップ水分記録) のもの。
+
+app:
+  slug: sample-tap-ios
+  base_locale: en-US
+  marketing_url: https://zec-inc.jp/apps/
+  privacy_url: https://zec-inc.jp/privacy/
+  support_url: https://zec-inc.jp/support/
+
+defaults:
+  # 全localeのname/subtitle/keywords/description等に出たら検出する語。
+  # level: error は生成を fastlane 出力前に止める。warning はレビュー用。
+  avoid_terms:
+    - term: "#1"
+      level: error
+      reason: ranking claims are not allowed in App Store metadata
+    - term: cure
+      level: error
+      reason: medical outcome claim
+    - term: diagnosis
+      level: error
+      reason: medical claim outside app scope
+    - term: best
+      level: warning
+      reason: superlative claims invite App Review pushback
+    - term: guarantee
+      level: warning
+      reason: outcome guarantees are risky wording
+
+locales:
+  en-US:
+    # Translation-firstではなくASO-first。base_localeは意味と制約の参照元で、
+    # title/subtitle/keywordsはlocaleごとに再設計する。
+    seed_keywords:
+      - water tracker
+      - hydration
+      - water reminder
+    search_intents:
+      - track daily water intake
+      - get reminded to drink water
+    research:
+      # 単なる翻訳ではなく、このlocaleの検索意図を書く。
+      search_intent: |
+        English-speaking users search by problem ("drink more water") and by
+        category ("water reminder", "hydration tracker"). Category terms are
+        crowded, so the subtitle carries the differentiator (one-tap logging)
+        while keywords cover category and intent terms not already in the
+        name/subtitle.
+      keyword_candidates:
+        # priority が小さいほど先に採用。name/subtitle と重複する語は自動で落ちる。
+        - term: water
+          priority: 1
+        - term: reminder
+          priority: 1
+        - term: hydration
+          priority: 1
+        - term: tracker
+          priority: 2
+        - term: drink
+          priority: 2
+        - term: daily
+          priority: 3
+        - term: habit
+          priority: 3
+        - term: intake
+          priority: 3
+        - term: log
+          priority: 4
+        - term: bottle
+          priority: 4
+        - term: hydrate
+          priority: 4
+        - term: goal
+          priority: 5
+        - term: thirst
+          priority: 5
+      competitors:
+        - WaterMinder
+        - Waterllama
+      # research_metadata.py はこのresearchセクションをStaticResearchProvider
+      # として読み、App Store公開検索結果やCLI seedと統合してproposalを作る。
+    metadata:
+      name: Sample Tap
+      subtitle: One-tap daily water log
+      promotional_text: Log every glass with one tap and see today's hydration at a glance.
+      description: |
+        Sample Tap is a simple one-tap water log.
+
+        Tap once to record a glass, and see today's total at a glance.
+        Optional reminders help you keep a steady hydration habit.
+
+        No account required. Your data stays on your device.
+      release_notes: |
+        Initial release.
+
+  ja:
+    seed_keywords:
+      - 水分補給
+      - 水分記録
+      - 水飲みリマインダー
+    search_intents:
+      - 毎日の水分補給を記録したい
+      - 飲み忘れを防ぎたい
+    avoid_terms:
+      - term: 治療
+        level: error
+        reason: medical treatment claim
+      - term: 改善
+        level: warning
+        reason: outcome improvement claim may need proof
+      - term: 予防
+        level: warning
+        reason: prevention claim may be medical
+    research:
+      search_intent: |
+        日本語ユーザーは「水分補給 アプリ」「水 リマインダー」「水分 記録」の
+        ように用途語+機能語で検索する。カタカナ語(リマインダー、トラッカー)
+        と漢字語(記録、習慣)の両方を keywords でカバーする。
+      keyword_candidates:
+        - term: 水分補給
+          priority: 1
+        - term: リマインダー
+          priority: 1
+        - term: 水
+          priority: 2
+        - term: 記録
+          priority: 2
+        - term: 習慣
+          priority: 3
+        - term: 健康
+          priority: 3
+        - term: 通知
+          priority: 4
+        - term: 毎日
+          priority: 4
+        - term: トラッカー
+          priority: 4
+        - term: シンプル
+          priority: 5
+      competitors:
+        - WaterMinder
+      # CJK localeは短い語でも有効なことが多い。keywords-underused警告が
+      # 過剰な場合は、将来 aso_core 側でlocale別閾値に分ける。
+    metadata:
+      name: サンプルタップ
+      subtitle: 1タップ水分記録
+      promotional_text: 1タップでコップ1杯を記録。今日の水分量がひと目で分かります。
+      description: |
+        サンプルタップは、1タップで水分補給を記録するシンプルなアプリです。
+
+        コップ1杯をタップで記録して、今日の合計をひと目で確認できます。
+        リマインダー通知で、水分補給の習慣づくりをサポートします。
+
+        アカウント登録は不要。データは端末内にのみ保存されます。
+      release_notes: |
+        初回リリース。
+
+  # 他のlocaleも同じ構成で追加する (ZEC標準: ar-SA, de-DE, en-GB, en-US,
+  # es-ES, fr-FR, it, ja, ko, nl-NL, pt-BR, zh-Hans, zh-Hant)。
+  # metadata を書かないlocaleは base_locale の値にフォールバックし、
+  # 警告が出る (検索意図に合わせたローカライズを促すため)。

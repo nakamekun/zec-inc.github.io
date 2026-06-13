@@ -1,0 +1,209 @@
+# Suggested ASO source generated for human review.
+# Copy selected values into aso-source.yaml only after reviewing validator issues.
+app:
+  slug: "packed-ios"
+  base_locale: "en-US"
+
+defaults:
+  avoid_terms:
+    - term: "#1"
+      level: error
+      reason: ranking claims are not allowed in App Store metadata
+    - term: best
+      level: warning
+      reason: superlative claims invite App Review pushback
+
+locales:
+  en-US:
+    seed_keywords:
+      - "packing list"
+      - "travel checklist"
+      - "trip planner"
+      - "suitcase list"
+      - "vacation packing"
+    search_intents:
+      - "plan what to pack before a trip"
+      - "reuse a checklist for travel"
+      - "avoid forgetting travel essentials"
+      - "English-speaking users tend to search for category terms such as \"packing list\" and \"travel checklist\". The metadata should cover checklist, packing, trip, and reminder intent without claiming that the app guarantees a perfect trip."
+    research:
+      search_intent: |
+        Users searching broad category and use-case terms for this locale.
+      keyword_candidates:
+        - term: "packing list"
+          priority: 27
+          source: "locale-seed"
+        - term: "reminder"
+          priority: 28
+          source: "aso-source"
+        - term: "travel checklist"
+          priority: 29
+          source: "locale-seed"
+        - term: "suitcase list"
+          priority: 45
+          source: "locale-seed"
+        - term: "trip planner"
+          priority: 46
+          source: "locale-seed"
+        - term: "vacation packing"
+          priority: 46
+          source: "locale-seed"
+        - term: "suitcase"
+          priority: 49
+          source: "aso-source"
+        - term: "vacation"
+          priority: 49
+          source: "aso-source"
+      competitors:
+        - "PackPoint"
+        - "Packr"
+    metadata:
+      name: "Packed"
+      subtitle: "packing list reminder"
+      promotional_text: "Build reusable packing lists for trips and check off what is ready before you leave."
+      description: |
+        Packed locale-specific ASO proposal.
+        
+        Highlights:
+        - Title, subtitle, and keywords designed for this locale's search behavior
+        - Natural wording balanced with relevant search terms
+        - Product meaning and compliance constraints preserved without direct translation
+        
+        Review final description wording against actual features, screenshots, and App Review-safe claims.
+        
+        Product context used for this proposal:
+        # Product Spec
+        
+        ## One-line Description
+        
+        Packed helps users manage reusable packing groups and check items for the day.
+        
+        ## Core Value
+        
+        - Reduce forgotten items through repeatable daily checklists.
+        - Keep packing setup lightweight.
+        
+        ## Target Users
+        
+        - People preparing for school, work, travel, gym, or daily routines.
+        
+        ## Core Operation
+        
+        - Create a group, add items, check today's packed state, and optionally get reminders.
+        
+        ## Free Features
+        
+        - Packing groups and items.
+        - Daily check state.
+        - Settings and local reminders.
+        
+        ## Paid Feature Candidates
+        
+        - Unknown. Possible candidates: unlimited groups, templates, themes.
+        
+        ## Non-goals
+        
+        - Inventory management.
+        - Shared household/team packing.
+        - Server sync in v1.
+      release_notes: |
+        Initial release.
+
+  ja:
+    seed_keywords:
+      - "持ち物リスト"
+      - "パッキングリスト"
+      - "旅行準備"
+      - "旅行チェックリスト"
+      - "出張 持ち物"
+      - "子連れ旅行 持ち物"
+    search_intents:
+      - "旅行前に忘れ物を防ぎたい"
+      - "出張の持ち物を確認したい"
+      - "子連れ旅行の準備をリスト化したい"
+      - "日本語では「持ち物リスト」「旅行準備」「旅行チェックリスト」のように、 旅行前の不安や忘れ物防止の意図で検索されやすい。en-USの直訳ではなく、 出張や子連れ旅行など日本語で自然な検索語をkeywordsで広く拾う。"
+    research:
+      search_intent: |
+        このlocaleの主要カテゴリ語と用途語で探すユーザー。
+      keyword_candidates:
+        - term: "出張"
+          priority: 29
+          source: "aso-source"
+        - term: "子連れ旅行"
+          priority: 29
+          source: "aso-source"
+        - term: "持ち物リスト"
+          priority: 29
+          source: "locale-seed"
+        - term: "忘れ物防止"
+          priority: 49
+          source: "aso-source"
+        - term: "パッキングリスト"
+          priority: 49
+          source: "locale-seed"
+        - term: "出張 持ち物"
+          priority: 49
+          source: "locale-seed"
+        - term: "旅行準備"
+          priority: 49
+          source: "locale-seed"
+        - term: "子連れ旅行 持ち物"
+          priority: 50
+          source: "locale-seed"
+        - term: "旅行チェックリスト"
+          priority: 50
+          source: "locale-seed"
+      competitors:
+        - "PackPoint"
+        - "Packr"
+    metadata:
+      name: "Packed"
+      subtitle: "出張・子連れ旅行・持ち物リスト"
+      promotional_text: "旅行や出張の持ち物をリスト化。出発前に準備できたものをすばやく確認できます。"
+      description: |
+        Packedのlocale別ASO提案です。
+        
+        主な内容:
+        - このlocaleの検索意図に合わせたtitle/subtitle/keywords
+        - 自然な表現と検索語の両立
+        - base localeの直訳ではなく、機能意味と禁止表現を保った再設計
+        
+        説明文は、実際の機能、スクリーンショット、App Review上の安全な表現に合わせて人間が最終確認してください。
+        
+        Product context used for this proposal:
+        # Product Spec
+        
+        ## One-line Description
+        
+        Packed helps users manage reusable packing groups and check items for the day.
+        
+        ## Core Value
+        
+        - Reduce forgotten items through repeatable daily checklists.
+        - Keep packing setup lightweight.
+        
+        ## Target Users
+        
+        - People preparing for school, work, travel, gym, or daily routines.
+        
+        ## Core Operation
+        
+        - Create a group, add items, check today's packed state, and optionally get reminders.
+        
+        ## Free Features
+        
+        - Packing groups and items.
+        - Daily check state.
+        - Settings and local reminders.
+        
+        ## Paid Feature Candidates
+        
+        - Unknown. Possible candidates: unlimited groups, templates, themes.
+        
+        ## Non-goals
+        
+        - Inventory management.
+        - Shared household/team packing.
+        - Server sync in v1.
+      release_notes: |
+        初回リリース。
