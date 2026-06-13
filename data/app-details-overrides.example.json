@@ -1,0 +1,40 @@
+{
+  "6762545903": {
+    "slug": "pilltap",
+    "locales": {
+      "en": {
+        "tagline": "Track medication in seconds.",
+        "overview": [
+          "PillTap is a small iOS app for quickly recording medication status."
+        ],
+        "audience": [
+          "People who want a simple medication check record",
+          "Users who prefer a lightweight app over a complex health tracker"
+        ],
+        "features": [
+          "Quick medication logging",
+          "Simple daily status review"
+        ],
+        "usage": [
+          "Install PillTap from the App Store.",
+          "Open the app and record each medication event."
+        ],
+        "pricing": "Free",
+        "privacy": "Check the App Store product page for the current privacy label.",
+        "screenshots": [
+          "https://example.com/path/to/pilltap-screenshot.png"
+        ],
+        "faq": [
+          {
+            "question": "Is PillTap a medical device?",
+            "answer": "No. PillTap is a personal record app and does not provide medical advice."
+          }
+        ]
+      },
+      "ja": {
+        "name": "PillTap",
+        "tagline": "薬の記録をすばやく残せるiOSアプリです。"
+      }
+    }
+  }
+}
