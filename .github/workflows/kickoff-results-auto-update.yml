@@ -3,16 +3,24 @@ name: Kickoff Results Auto Update
 on:
   schedule:
     # Stagger away from minute 0, where GitHub Actions scheduled workflows are most likely to be delayed or dropped.
-    - cron: "3,13,23,33,43,53 * * * *"
+    - cron: "7,17,27,37,47,57 * * * *"
   workflow_dispatch:
     inputs:
       force:
         description: "Force result checks even for finished matches"
         required: false
         default: "false"
+      trigger_source:
+        description: "Caller identifier for monitoring"
+        required: false
+        default: "manual"
 
 permissions:
   contents: write
+
+concurrency:
+  group: kickoff-results-auto-update
+  cancel-in-progress: false
 
 jobs:
   update-results:
@@ -20,6 +28,8 @@ jobs:
     env:
       AUTO_UPDATE_ENABLED: ${{ vars.KICKOFF_AUTO_UPDATE_ENABLED || 'false' }}
       PYTHONDONTWRITEBYTECODE: "1"
+      SUMMARY_JSON: /tmp/kickoff-auto-update-summary.json
+      TRIGGER_SOURCE: ${{ github.event_name == 'schedule' && 'github-schedule' || github.event.inputs.trigger_source || 'manual' }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -42,7 +52,7 @@ jobs:
           if [ "${{ github.event.inputs.force }}" = "true" ]; then
             FORCE_ARG="--force"
           fi
-          python3 scripts/results/auto_update_results.py ${FORCE_ARG}
+          python3 scripts/results/auto_update_results.py ${FORCE_ARG} --summary-json "$SUMMARY_JSON"
 
       - name: Test generated JSON and tools
         if: env.AUTO_UPDATE_ENABLED == 'true'
@@ -65,19 +75,38 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          python3 scripts/results/deploy_generated_results.py --no-push --no-curl
+          python3 scripts/results/deploy_generated_results.py --copy-only --no-curl
 
-      - name: Commit tool state and generated data
+      - name: Commit public JSON and tool state
         if: env.AUTO_UPDATE_ENABLED == 'true'
         run: |
-          git add tools/kickoff-2026/results/data/results/manual-match-results.json \
+          git add data/kickoff-2026/matchResults.json \
+            data/kickoff-2026/groupStandings.json \
+            tools/kickoff-2026/results/data/results/manual-match-results.json \
             tools/kickoff-2026/results/data/results/auto-update-state.json \
             tools/kickoff-2026/results/data/generated/matchResults.json \
             tools/kickoff-2026/results/data/generated/groupStandings.json
           if git diff --cached --quiet; then
-            echo "No tool state changes to commit."
+            echo "No JSON or tool state changes to commit."
           else
-            git commit -m "Update Kickoff 2026 auto result state"
+            if git diff --cached --name-only | grep -q '^data/kickoff-2026/'; then
+              git commit -m "Update Kickoff 2026 results and group standings"
+            else
+              git commit -m "Update Kickoff 2026 auto result state"
+            fi
+          fi
+
+      - name: Notify monitoring events
+        if: env.AUTO_UPDATE_ENABLED == 'true' && always()
+        continue-on-error: true
+        working-directory: tools/kickoff-2026/results
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.KICKOFF_DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -f "$SUMMARY_JSON" ]; then
+            python3 scripts/results/notify_auto_update.py --summary-json "$SUMMARY_JSON" --trigger-source "$TRIGGER_SOURCE"
+          else
+            echo "No summary JSON available; notification skipped."
           fi
 
       - name: Push changes

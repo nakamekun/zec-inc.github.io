@@ -8,6 +8,14 @@ WORKFLOW_PATH = Path(__file__).resolve().parents[5] / ".github" / "workflows" / 
 
 
 class WorkflowPushTests(unittest.TestCase):
+    def test_workflow_has_concurrency_and_staggered_schedule(self):
+        workflow = WORKFLOW_PATH.read_text(encoding="utf-8")
+        self.assertIn('cron: "7,17,27,37,47,57 * * * *"', workflow)
+        self.assertIn("concurrency:", workflow)
+        self.assertIn("group: kickoff-results-auto-update", workflow)
+        self.assertIn("trigger_source:", workflow)
+        self.assertIn("--summary-json \"$SUMMARY_JSON\"", workflow)
+
     def test_push_step_compares_local_head_to_upstream(self):
         workflow = WORKFLOW_PATH.read_text(encoding="utf-8")
         self.assertNotIn("git log --branches --not --remotes --quiet", workflow)

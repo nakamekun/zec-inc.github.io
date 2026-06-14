@@ -101,6 +101,7 @@ def curl_check(url: str) -> None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Deploy generated Kickoff JSON inside zec-inc.github.io.")
     parser.add_argument("--repo", type=Path, default=REPO_ROOT)
+    parser.add_argument("--copy-only", action="store_true", help="Only copy and validate public JSON; do not commit or push.")
     parser.add_argument("--no-push", action="store_true")
     parser.add_argument("--no-curl", action="store_true")
     return parser.parse_args()
@@ -109,6 +110,9 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     deploy_files(args.repo)
+    if args.copy_only:
+        print("Copied public JSON; commit skipped by --copy-only.")
+        return
     commit_hash = commit_and_push(args.repo, push=not args.no_push)
     if commit_hash:
         print(f"Committed {commit_hash}")
