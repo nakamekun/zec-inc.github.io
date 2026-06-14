@@ -41,6 +41,19 @@ def qatar_switzerland_context() -> MatchContext:
     )
 
 
+def australia_turkey_context() -> MatchContext:
+    return MatchContext(
+        match_id="match-008",
+        match_number=8,
+        kickoff_utc=datetime(2026, 6, 14, 4, 0, tzinfo=timezone.utc),
+        home_team_id="australia",
+        away_team_id="turkey",
+        home_team_name="Australia",
+        away_team_name="Turkey",
+        match_centre_url="https://www.fifa.com/en/match-centre",
+    )
+
+
 def page_for(match_payload: dict) -> str:
     payload = {"props": {"pageProps": {"matches": [match_payload]}}}
     return f'<html><script id="__NEXT_DATA__" type="application/json">{json.dumps(payload)}</script></html>'
@@ -212,6 +225,23 @@ class FifaMatchCentreProviderTests(unittest.TestCase):
         self.assertEqual(outcome.home_score, 2)
         self.assertEqual(outcome.away_score, 1)
         self.assertEqual(outcome.winner_team_id, "south-korea")
+
+    def test_calendar_api_accepts_turkiye_for_turkey(self):
+        provider = FifaMatchCentreProvider(json_loader=lambda _: calendar_payload(calendar_match(
+            MatchNumber=6,
+            Date="2026-06-14T04:00:00Z",
+            HomeTeamScore=1,
+            AwayTeamScore=2,
+            Home={"Score": 1, "TeamName": [{"Description": "Australia"}], "ShortClubName": "Australia"},
+            Away={"Score": 2, "TeamName": [{"Description": "Türkiye"}], "ShortClubName": "Türkiye"},
+        )))
+        outcome = provider.fetch_result(australia_turkey_context())
+        self.assertEqual(outcome.status, "found")
+        self.assertEqual(outcome.match_id, "match-008")
+        self.assertGreaterEqual(outcome.confidence, 0.90)
+        self.assertEqual(outcome.home_score, 1)
+        self.assertEqual(outcome.away_score, 2)
+        self.assertEqual(outcome.winner_team_id, "turkey")
 
     def test_calendar_api_scheduled_match_is_not_final_yet(self):
         provider = FifaMatchCentreProvider(json_loader=lambda _: calendar_payload(calendar_match(

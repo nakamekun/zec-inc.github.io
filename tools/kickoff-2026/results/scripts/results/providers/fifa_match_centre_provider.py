@@ -3,6 +3,7 @@ from __future__ import annotations
 import html
 import json
 import re
+import unicodedata
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from typing import Any
@@ -385,12 +386,14 @@ def team_names_match(expected: str, actual: str) -> bool:
         "usa": {"united states"},
         "ivory coast": {"cote divoire", "cotedivoire"},
         "dr congo": {"congo dr", "congo democratic republic"},
+        "turkey": {"turkiye"},
     }
     return actual_normalized == expected_normalized or actual_normalized in aliases.get(expected_normalized, set())
 
 
 def normalize_team_name(value: str) -> str:
     value = html.unescape(value).lower()
+    value = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
     value = value.replace("&", " and ")
     value = re.sub(r"[^a-z0-9]+", " ", value)
     return re.sub(r"\s+", " ", value).strip()
