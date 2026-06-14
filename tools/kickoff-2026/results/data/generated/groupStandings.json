@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-14T03:13:10Z",
-    "generatedAt": "2026-06-14T03:13:10Z",
+    "updatedAt": "2026-06-14T08:10:43Z",
+    "generatedAt": "2026-06-14T08:10:43Z",
     "url": null
   },
   "groups": [
@@ -183,25 +183,25 @@
         {
           "teamId": "australia",
           "rank": 2,
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 0,
+          "goalsFor": 2,
           "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0
+          "goalDifference": 2,
+          "points": 3
         },
         {
           "teamId": "turkey",
           "rank": 3,
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
+          "goalsAgainst": 2,
+          "goalDifference": -2,
           "points": 0
         },
         {
