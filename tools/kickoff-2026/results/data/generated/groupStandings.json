@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-13T23:53:07Z",
-    "generatedAt": "2026-06-13T23:53:07Z",
+    "updatedAt": "2026-06-14T01:56:19Z",
+    "generatedAt": "2026-06-14T01:56:19Z",
     "url": null
   },
   "groups": [
@@ -118,26 +118,26 @@
         {
           "teamId": "brazil",
           "rank": 1,
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "morocco",
           "rank": 2,
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "haiti",
