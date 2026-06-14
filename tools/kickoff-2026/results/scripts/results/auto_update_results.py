@@ -397,10 +397,12 @@ def run_update(
 
     if args.dry_run:
         return targets, outcomes, updates
+    if not targets:
+        return targets, outcomes, updates
     if updates:
         write_json(args.manual_results, merge_results(manual_payload, updates))
     write_json(args.state, state)
-    if not args.skip_generators:
+    if updates and not args.skip_generators:
         generator_runner()
     return targets, outcomes, updates
 

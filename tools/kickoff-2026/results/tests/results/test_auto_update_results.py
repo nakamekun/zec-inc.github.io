@@ -270,6 +270,20 @@ class AutoUpdateResultsTests(unittest.TestCase):
             self.assertEqual(summary["targetCount"], 1)
             self.assertEqual(summary["updatedCount"], 1)
 
+    def test_no_targets_does_not_rewrite_state_or_run_generators(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            match_map, manual, state, feed = write_basic_files(root, {"status": "finished", "homeScore": 2, "awayScore": 0})
+            before_state = state.read_text(encoding="utf-8")
+            calls = []
+            args = basic_args(match_map, manual, state, feed)
+            args.now = "2026-06-12T02:09:00Z"
+            targets, _, updates = auto_update_results.run_update(args, generator_runner=lambda: calls.append("ran"))
+            self.assertEqual(targets, [])
+            self.assertEqual(updates, [])
+            self.assertEqual(calls, [])
+            self.assertEqual(state.read_text(encoding="utf-8"), before_state)
+
 
 if __name__ == "__main__":
     unittest.main()
