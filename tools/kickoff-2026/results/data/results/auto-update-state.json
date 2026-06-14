@@ -61,6 +61,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-006\", \"appMatchNumber\": 6, \"providerMatchNumber\": 7, \"appKickoffUTC\": \"2026-06-13T22:00:00Z\", \"providerKickoffUTC\": \"2026-06-13T22:00:00Z\", \"appHome\": \"Brazil\", \"appAway\": \"Morocco\", \"providerHome\": \"Brazil\", \"providerAway\": \"Morocco\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-14T01:56:18Z",
       "finalResultCaptured": true
+    },
+    "match-007": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-14T03:13:10Z",
+      "lastAttemptAt": "2026-06-14T03:13:10Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-007\", \"appMatchNumber\": 7, \"providerMatchNumber\": 5, \"appKickoffUTC\": \"2026-06-14T01:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T01:00:00Z\", \"appHome\": \"Haiti\", \"appAway\": \"Scotland\", \"providerHome\": \"Haiti\", \"providerAway\": \"Scotland\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-14T03:13:10Z",
+      "finalResultCaptured": true
     }
   }
 }

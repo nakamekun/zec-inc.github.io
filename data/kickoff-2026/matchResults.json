@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-14T02:07:48Z",
-    "generatedAt": "2026-06-14T02:07:48Z",
+    "updatedAt": "2026-06-14T03:13:10Z",
+    "generatedAt": "2026-06-14T03:13:10Z",
     "url": null
   },
   "results": [
@@ -70,6 +70,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": null,
       "resultUpdatedAt": "2026-06-14T01:56:19Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-007",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "scotland",
+      "resultUpdatedAt": "2026-06-14T03:13:10Z",
       "source": "zec-auto"
     }
   ]
