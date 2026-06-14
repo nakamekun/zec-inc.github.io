@@ -83,6 +83,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-14T03:13:10Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-008",
+      "status": "fullTime",
+      "homeScore": 2,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "australia",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-14T08:10:43Z",
+      "source": "zec-auto"
     }
   ]
 }
