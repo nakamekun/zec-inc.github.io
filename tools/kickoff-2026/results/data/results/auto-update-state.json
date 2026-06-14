@@ -77,14 +77,14 @@
     "match-008": {
       "firstCheckAttempted": true,
       "firstCheckAt": "2026-06-14T06:13:11Z",
-      "lastAttemptAt": "2026-06-14T07:03:10Z",
+      "lastAttemptAt": "2026-06-14T07:23:15Z",
       "lastProviderStatus": "not_found",
       "lastStatus": "not_found",
       "lastConfidence": 0.0,
-      "attemptCount": 4,
+      "attemptCount": 5,
       "lastMessage": "no calendar match candidate matched team and kickoff; rejected=[{\"appMatchId\": \"match-008\", \"appMatchNumber\": 8, \"providerMatchNumber\": 5, \"appKickoffUTC\": \"2026-06-14T04:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T01:00:00Z\", \"appHome\": \"Australia\", \"appAway\": \"Turkey\", \"providerHome\": \"Haiti\", \"providerAway\": \"Scotland\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-008\", \"appMatchNumber\": 8, \"providerMatchNumber\": 6, \"appKickoffUTC\": \"2026-06-14T04:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T04:00:00Z\", \"appHome\": \"Australia\", \"appAway\": \"Turkey\", \"providerHome\": \"Australia\", \"providerAway\": \"Türkiye\", \"rejectReason\": \"away team mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-008\", \"appMatchNumber\": 8, \"providerMatchNumber\": 10, \"appKickoffUTC\": \"2026-06-14T04:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T17:00:00Z\", \"appHome\": \"Australia\", \"appAway\": \"Turkey\", \"providerHome\": \"Germany\", \"providerAway\": \"Curaçao\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-008\", \"appMatchNumber\": 8, \"providerMatchNumber\": 11, \"appKickoffUTC\": \"2026-06-14T04:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T20:00:00Z\", \"appHome\": \"Australia\", \"appAway\": \"Turkey\", \"providerHome\": \"Netherlands\", \"providerAway\": \"Japan\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-008\", \"appMatchNumber\": 8, \"providerMatchNumber\": 9, \"appKickoffUTC\": \"2026-06-14T04:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T23:00:00Z\", \"appHome\": \"Australia\", \"appAway\": \"Turkey\", \"providerHome\": \"Côte d'Ivoire\", \"providerAway\": \"Ecuador\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}]",
       "finalResultCaptured": false,
-      "nextRetryAfter": "2026-06-14T07:13:10Z",
+      "nextRetryAfter": "2026-06-14T07:33:15Z",
       "finalCheckAttempted": true,
       "finalCheckAt": "2026-06-14T07:03:10Z"
     }
