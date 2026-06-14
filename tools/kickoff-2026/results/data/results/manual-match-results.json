@@ -95,6 +95,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-14T08:10:43Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-009",
+      "status": "fullTime",
+      "homeScore": 7,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "germany",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-14T19:10:54Z",
+      "source": "zec-auto"
     }
   ]
 }
