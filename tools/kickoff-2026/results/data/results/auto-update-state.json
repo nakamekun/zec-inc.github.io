@@ -87,6 +87,18 @@
       "finalCheckAttempted": true,
       "finalCheckAt": "2026-06-14T07:03:10Z",
       "lastSuccessfulUpdateAt": "2026-06-14T08:14:00Z"
+    },
+    "match-009": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-14T19:10:54Z",
+      "lastAttemptAt": "2026-06-14T19:10:54Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-009\", \"appMatchNumber\": 9, \"providerMatchNumber\": 10, \"appKickoffUTC\": \"2026-06-14T17:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T17:00:00Z\", \"appHome\": \"Germany\", \"appAway\": \"Curaçao\", \"providerHome\": \"Germany\", \"providerAway\": \"Curaçao\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-14T19:10:54Z",
+      "finalResultCaptured": true
     }
   }
 }
