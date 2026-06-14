@@ -49,6 +49,18 @@
       "finalCheckAttempted": true,
       "finalCheckAt": "2026-06-13T22:42:53Z",
       "lastSuccessfulUpdateAt": "2026-06-13T22:42:53Z"
+    },
+    "match-006": {
+      "finalCheckAttempted": true,
+      "finalCheckAt": "2026-06-14T01:56:18Z",
+      "lastAttemptAt": "2026-06-14T01:56:18Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-006\", \"appMatchNumber\": 6, \"providerMatchNumber\": 7, \"appKickoffUTC\": \"2026-06-13T22:00:00Z\", \"providerKickoffUTC\": \"2026-06-13T22:00:00Z\", \"appHome\": \"Brazil\", \"appAway\": \"Morocco\", \"providerHome\": \"Brazil\", \"providerAway\": \"Morocco\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-14T01:56:18Z",
+      "finalResultCaptured": true
     }
   }
 }
