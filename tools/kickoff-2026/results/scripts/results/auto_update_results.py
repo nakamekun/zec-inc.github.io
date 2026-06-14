@@ -29,6 +29,7 @@ FIRST_CHECK_DELAY = timedelta(hours=2, minutes=10)
 FINAL_CHECK_DELAY = timedelta(hours=3)
 MIN_UPDATE_CONFIDENCE = 0.90
 ISO_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
+SCHEDULE_MISS_GRACE = timedelta(minutes=20)
 
 
 @dataclass(frozen=True)
@@ -149,6 +150,56 @@ def select_targets(
     return targets
 
 
+def monitoring_summary(
+    matches: list[MatchCandidate],
+    manual_results: dict[str, dict[str, Any]],
+    state: dict[str, Any],
+    targets: list[CheckTarget],
+    outcomes: list[tuple[CheckTarget, ResultFetchOutcome, str, str, dict[str, Any] | None]],
+    updates: list[dict[str, Any]],
+    now: datetime,
+) -> dict[str, Any]:
+    state_matches = state.get("matches", {})
+    if not isinstance(state_matches, dict):
+        state_matches = {}
+
+    skipped_already_finished = 0
+    schedule_miss_suspected = False
+    overdue_matches: list[str] = []
+    for match in matches:
+        current = manual_results.get(match.match_id)
+        match_state = state_matches.get(match.match_id, {})
+        if not isinstance(match_state, dict):
+            match_state = {}
+        if current and current.get("status") in {"fullTime", "penalties"}:
+            skipped_already_finished += 1
+            continue
+        if match_state.get("finalResultCaptured") is True:
+            skipped_already_finished += 1
+            continue
+        final_due = match.kickoff_utc + FINAL_CHECK_DELAY
+        first_due = match.kickoff_utc + FIRST_CHECK_DELAY
+        due = final_due if now >= final_due else first_due
+        if now >= due + SCHEDULE_MISS_GRACE and any(target.match.match_id == match.match_id for target in targets):
+            schedule_miss_suspected = True
+            overdue_matches.append(match.match_id)
+
+    provider_failure_statuses = {"not_found", "provider_error", "low_confidence", "conflict"}
+    provider_failure_count = sum(1 for _, _, accepted_status, _, _ in outcomes if accepted_status in provider_failure_statuses)
+    unchanged_count = sum(1 for _, _, accepted_status, _, _ in outcomes if accepted_status == "unchanged")
+    return {
+        "targetCount": len(targets),
+        "updatedCount": len(updates),
+        "skippedAlreadyFinishedCount": skipped_already_finished,
+        "providerFailureCount": provider_failure_count,
+        "unchangedCount": unchanged_count,
+        "dueMatchNoUpdateCount": len(targets) - len(updates) - unchanged_count,
+        "scheduleMissSuspected": schedule_miss_suspected,
+        "overdueMatches": overdue_matches,
+        "generatedAt": format_utc(now),
+    }
+
+
 def build_provider(args: argparse.Namespace) -> ResultProvider:
     if args.result_feed:
         return StaticResultFeedProvider(read_json(args.result_feed))
@@ -264,9 +315,16 @@ def print_summary(
     targets: list[CheckTarget],
     outcomes: list[tuple[CheckTarget, ResultFetchOutcome, str, str, dict[str, Any] | None]],
     dry_run: bool,
+    summary: dict[str, Any],
 ) -> None:
     print(f"dryRun: {dry_run}")
-    print(f"targetCount: {len(targets)}")
+    print(f"targetCount: {summary['targetCount']}")
+    print(f"updatedCount: {summary['updatedCount']}")
+    print(f"skippedAlreadyFinishedCount: {summary['skippedAlreadyFinishedCount']}")
+    print(f"providerFailureCount: {summary['providerFailureCount']}")
+    print(f"scheduleMissSuspected: {str(summary['scheduleMissSuspected']).lower()}")
+    if summary["overdueMatches"]:
+        print(f"overdueMatches: {', '.join(summary['overdueMatches'])}")
     for target in targets:
         current = target.current_result.get("status") if target.current_result else "none"
         print(
@@ -298,6 +356,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--skip-generators", action="store_true")
+    parser.add_argument("--summary-json", type=Path, help="Write machine-readable monitoring summary.")
     return parser.parse_args()
 
 
@@ -330,7 +389,11 @@ def run_update(
         if not args.dry_run:
             update_state(state, target, provider_outcome, accepted_status, accepted_message, now)
 
-    print_summary(targets, outcomes, args.dry_run)
+    summary = monitoring_summary(matches, manual_results, state, targets, outcomes, updates, now)
+    print_summary(targets, outcomes, args.dry_run, summary)
+    summary_json = getattr(args, "summary_json", None)
+    if summary_json:
+        write_json(summary_json, summary)
 
     if args.dry_run:
         return targets, outcomes, updates

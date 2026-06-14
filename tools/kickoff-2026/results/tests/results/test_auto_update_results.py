@@ -225,6 +225,51 @@ class AutoUpdateResultsTests(unittest.TestCase):
             self.assertEqual(updates, [])
             self.assertEqual(json.loads(manual.read_text(encoding="utf-8"))["matches"][0]["homeScore"], 1)
 
+    def test_monitoring_summary_counts_provider_failure(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            match_map, manual, state, feed = write_basic_files(root, {"status": "missing"})
+            args = basic_args(match_map, manual, state, feed)
+            _, outcomes, updates = auto_update_results.run_update(args)
+            summary = auto_update_results.monitoring_summary(
+                auto_update_results.load_match_candidates(match_map),
+                auto_update_results.manual_results_by_match_id(json.loads(manual.read_text(encoding="utf-8"))),
+                json.loads(state.read_text(encoding="utf-8")),
+                [outcomes[0][0]],
+                outcomes,
+                updates,
+                auto_update_results.parse_utc("2026-06-12T03:00:00Z"),
+            )
+            self.assertEqual(summary["providerFailureCount"], 1)
+            self.assertEqual(summary["updatedCount"], 0)
+
+    def test_monitoring_summary_flags_schedule_miss_suspected_for_overdue_target(self):
+        target_match = match()
+        target = auto_update_results.CheckTarget(match=target_match, check_type="final-check", current_result=None)
+        summary = auto_update_results.monitoring_summary(
+            [target_match],
+            {},
+            {"matches": {}},
+            [target],
+            [],
+            [],
+            auto_update_results.parse_utc("2026-06-12T03:25:00Z"),
+        )
+        self.assertTrue(summary["scheduleMissSuspected"])
+        self.assertEqual(summary["overdueMatches"], ["match-001"])
+
+    def test_summary_json_is_written(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            match_map, manual, state, feed = write_basic_files(root, {"status": "finished", "homeScore": 2, "awayScore": 0})
+            summary_path = root / "summary.json"
+            args = basic_args(match_map, manual, state, feed)
+            args.summary_json = summary_path
+            auto_update_results.run_update(args)
+            summary = json.loads(summary_path.read_text(encoding="utf-8"))
+            self.assertEqual(summary["targetCount"], 1)
+            self.assertEqual(summary["updatedCount"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()
@@ -260,4 +305,5 @@ def basic_args(match_map: Path, manual: Path, state: Path, feed: Path):
         dry_run=False,
         force=False,
         skip_generators=True,
+        summary_json=None,
     )
