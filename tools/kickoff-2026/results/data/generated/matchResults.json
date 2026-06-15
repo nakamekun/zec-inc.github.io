@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-15T21:13:17Z",
-    "generatedAt": "2026-06-15T21:13:17Z",
+    "updatedAt": "2026-06-15T23:41:58Z",
+    "generatedAt": "2026-06-15T23:41:58Z",
     "url": null
   },
   "results": [
@@ -136,6 +136,28 @@
       "awayPenaltyScore": null,
       "winnerTeamId": null,
       "resultUpdatedAt": "2026-06-15T21:13:17Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-011",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "ivory-coast",
+      "resultUpdatedAt": "2026-06-15T23:41:58Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-013",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "resultUpdatedAt": "2026-06-15T23:41:58Z",
       "source": "zec-auto"
     }
   ]

@@ -384,9 +384,10 @@ def team_names_match(expected: str, actual: str) -> bool:
         "czech republic": {"czechia"},
         "bosnia herzegovina": {"bosnia and herzegovina"},
         "usa": {"united states"},
-        "ivory coast": {"cote divoire", "cotedivoire"},
+        "ivory coast": {"cote d ivoire", "cote divoire", "cotedivoire"},
         "dr congo": {"congo dr", "congo democratic republic"},
         "turkey": {"turkiye"},
+        "cape verde": {"cabo verde"},
     }
     return actual_normalized == expected_normalized or actual_normalized in aliases.get(expected_normalized, set())
 
