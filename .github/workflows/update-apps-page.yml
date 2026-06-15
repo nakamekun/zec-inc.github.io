@@ -1,0 +1,87 @@
+name: Update Apps Page
+
+on:
+  schedule:
+    # Weekly on Monday 08:23 UTC. Staggered away from minute 0 to reduce schedule delays.
+    - cron: "23 8 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: update-apps-page
+  cancel-in-progress: false
+
+jobs:
+  update-apps-page:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile scripts
+        run: python3 -m py_compile scripts/update_apps_page.py scripts/validate_apps_pages.py
+
+      - name: Regenerate apps pages
+        run: python3 scripts/update_apps_page.py --strict
+
+      - name: Validate generated pages
+        run: python3 scripts/validate_apps_pages.py
+
+      - name: Commit generated changes
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps sitemap.xml robots.txt llms.txt data/app-store-lookup-cache.json
+          if git diff --cached --quiet; then
+            echo "No apps page changes to commit."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Update generated apps pages"
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Push changes
+        if: steps.commit.outputs.committed == 'true'
+        run: |
+          git push
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "Update Apps Page workflow failed";
+            const {owner, repo} = context.repo;
+            const existing = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: "open",
+              per_page: 100,
+            });
+            if (existing.data.some((issue) => issue.title === title)) {
+              core.info(`Open issue already exists: ${title}`);
+              return;
+            }
+            await github.rest.issues.create({
+              owner,
+              repo,
+              title,
+              body: [
+                "The scheduled apps page update failed.",
+                "",
+                `Workflow run: ${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`,
+                "",
+                "Check the App Store Lookup fetch, generated page validation, and git push steps.",
+              ].join("\n"),
+            });

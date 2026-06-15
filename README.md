@@ -22,6 +22,10 @@ The site is published as a static site on GitHub Pages.
 The apps page is generated locally and committed as static HTML.
 The live website does not call the App Store API at page-view time.
 
+The weekly GitHub Actions workflow `.github/workflows/update-apps-page.yml`
+runs the same generator, commits generated changes only when files changed, and
+opens a single failure issue if the scheduled update fails.
+
 ### API endpoint
 
 `https://itunes.apple.com/lookup?id=1889726396&entity=software&country=us&limit=200`
