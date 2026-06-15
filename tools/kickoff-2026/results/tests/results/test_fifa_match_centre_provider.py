@@ -243,6 +243,58 @@ class FifaMatchCentreProviderTests(unittest.TestCase):
         self.assertEqual(outcome.away_score, 2)
         self.assertEqual(outcome.winner_team_id, "turkey")
 
+    def test_calendar_api_accepts_cote_divoire_for_ivory_coast(self):
+        ivory_coast_context = MatchContext(
+            match_id="match-011",
+            match_number=11,
+            kickoff_utc=datetime(2026, 6, 14, 23, 0, tzinfo=timezone.utc),
+            home_team_id="ivory-coast",
+            away_team_id="ecuador",
+            home_team_name="Ivory Coast",
+            away_team_name="Ecuador",
+            match_centre_url="https://www.fifa.com/en/match-centre",
+        )
+        provider = FifaMatchCentreProvider(json_loader=lambda _: calendar_payload(calendar_match(
+            MatchNumber=9,
+            Date="2026-06-14T23:00:00Z",
+            HomeTeamScore=1,
+            AwayTeamScore=0,
+            Home={"Score": 1, "TeamName": [{"Description": "Côte d'Ivoire"}], "ShortClubName": "Côte d'Ivoire"},
+            Away={"Score": 0, "TeamName": [{"Description": "Ecuador"}], "ShortClubName": "Ecuador"},
+        )))
+        outcome = provider.fetch_result(ivory_coast_context)
+        self.assertEqual(outcome.status, "found")
+        self.assertEqual(outcome.match_id, "match-011")
+        self.assertEqual(outcome.home_score, 1)
+        self.assertEqual(outcome.away_score, 0)
+        self.assertEqual(outcome.winner_team_id, "ivory-coast")
+
+    def test_calendar_api_accepts_cabo_verde_for_cape_verde(self):
+        spain_context = MatchContext(
+            match_id="match-013",
+            match_number=13,
+            kickoff_utc=datetime(2026, 6, 15, 16, 0, tzinfo=timezone.utc),
+            home_team_id="spain",
+            away_team_id="cape-verde",
+            home_team_name="Spain",
+            away_team_name="Cape Verde",
+            match_centre_url="https://www.fifa.com/en/match-centre",
+        )
+        provider = FifaMatchCentreProvider(json_loader=lambda _: calendar_payload(calendar_match(
+            MatchNumber=14,
+            Date="2026-06-15T16:00:00Z",
+            HomeTeamScore=0,
+            AwayTeamScore=0,
+            Home={"Score": 0, "TeamName": [{"Description": "Spain"}], "ShortClubName": "Spain"},
+            Away={"Score": 0, "TeamName": [{"Description": "Cabo Verde"}], "ShortClubName": "Cabo Verde"},
+        )))
+        outcome = provider.fetch_result(spain_context)
+        self.assertEqual(outcome.status, "found")
+        self.assertEqual(outcome.match_id, "match-013")
+        self.assertEqual(outcome.home_score, 0)
+        self.assertEqual(outcome.away_score, 0)
+        self.assertIsNone(outcome.winner_team_id)
+
     def test_calendar_api_scheduled_match_is_not_final_yet(self):
         provider = FifaMatchCentreProvider(json_loader=lambda _: calendar_payload(calendar_match(
             MatchStatus=1,

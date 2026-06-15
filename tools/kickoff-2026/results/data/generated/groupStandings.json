@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-15T21:13:17Z",
-    "generatedAt": "2026-06-15T21:13:17Z",
+    "updatedAt": "2026-06-15T23:41:58Z",
+    "generatedAt": "2026-06-15T23:41:58Z",
     "url": null
   },
   "groups": [
@@ -236,25 +236,25 @@
         {
           "teamId": "ivory-coast",
           "rank": 2,
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 0,
+          "goalsFor": 1,
           "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0
+          "goalDifference": 1,
+          "points": 3
         },
         {
           "teamId": "ecuador",
           "rank": 3,
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
+          "goalsAgainst": 1,
+          "goalDifference": -1,
           "points": 0
         },
         {
@@ -383,26 +383,26 @@
         {
           "teamId": "spain",
           "rank": 1,
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "cape-verde",
           "rank": 2,
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "saudi-arabia",
