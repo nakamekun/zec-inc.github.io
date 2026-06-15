@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-14T22:13:09Z",
-    "generatedAt": "2026-06-14T22:13:09Z",
+    "updatedAt": "2026-06-15T04:13:09Z",
+    "generatedAt": "2026-06-15T04:13:09Z",
     "url": null
   },
   "results": [
@@ -114,6 +114,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": null,
       "resultUpdatedAt": "2026-06-14T22:13:09Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-012",
+      "status": "finished",
+      "homeScore": 5,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "sweden",
+      "resultUpdatedAt": "2026-06-15T04:13:09Z",
       "source": "zec-auto"
     }
   ]

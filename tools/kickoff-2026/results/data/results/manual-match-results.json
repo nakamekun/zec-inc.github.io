@@ -119,6 +119,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-14T22:13:09Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-012",
+      "status": "fullTime",
+      "homeScore": 5,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "sweden",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-15T04:13:09Z",
+      "source": "zec-auto"
     }
   ]
 }
