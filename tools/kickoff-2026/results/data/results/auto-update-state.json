@@ -137,6 +137,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-012\", \"appMatchNumber\": 12, \"providerMatchNumber\": 12, \"appKickoffUTC\": \"2026-06-15T02:00:00Z\", \"providerKickoffUTC\": \"2026-06-15T02:00:00Z\", \"appHome\": \"Sweden\", \"appAway\": \"Tunisia\", \"providerHome\": \"Sweden\", \"providerAway\": \"Tunisia\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-15T04:13:08Z",
       "finalResultCaptured": true
+    },
+    "match-013": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-15T18:13:15Z",
+      "lastAttemptAt": "2026-06-15T18:13:15Z",
+      "lastProviderStatus": "not_found",
+      "lastStatus": "not_found",
+      "lastConfidence": 0.0,
+      "attemptCount": 1,
+      "lastMessage": "no calendar match candidate matched team and kickoff; rejected=[{\"appMatchId\": \"match-013\", \"appMatchNumber\": 13, \"providerMatchNumber\": 12, \"appKickoffUTC\": \"2026-06-15T16:00:00Z\", \"providerKickoffUTC\": \"2026-06-15T02:00:00Z\", \"appHome\": \"Spain\", \"appAway\": \"Cape Verde\", \"providerHome\": \"Sweden\", \"providerAway\": \"Tunisia\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-013\", \"appMatchNumber\": 13, \"providerMatchNumber\": 14, \"appKickoffUTC\": \"2026-06-15T16:00:00Z\", \"providerKickoffUTC\": \"2026-06-15T16:00:00Z\", \"appHome\": \"Spain\", \"appAway\": \"Cape Verde\", \"providerHome\": \"Spain\", \"providerAway\": \"Cabo Verde\", \"rejectReason\": \"away team mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-013\", \"appMatchNumber\": 13, \"providerMatchNumber\": 16, \"appKickoffUTC\": \"2026-06-15T16:00:00Z\", \"providerKickoffUTC\": \"2026-06-15T19:00:00Z\", \"appHome\": \"Spain\", \"appAway\": \"Cape Verde\", \"providerHome\": \"Belgium\", \"providerAway\": \"Egypt\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-013\", \"appMatchNumber\": 13, \"providerMatchNumber\": 13, \"appKickoffUTC\": \"2026-06-15T16:00:00Z\", \"providerKickoffUTC\": \"2026-06-15T22:00:00Z\", \"appHome\": \"Spain\", \"appAway\": \"Cape Verde\", \"providerHome\": \"Saudi Arabia\", \"providerAway\": \"Uruguay\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}]",
+      "finalResultCaptured": false,
+      "nextRetryAfter": "2026-06-15T18:23:15Z"
     }
   }
 }
