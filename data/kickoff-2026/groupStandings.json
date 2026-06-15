@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-14T22:13:09Z",
-    "generatedAt": "2026-06-14T22:13:09Z",
+    "updatedAt": "2026-06-15T04:13:09Z",
+    "generatedAt": "2026-06-15T04:13:09Z",
     "url": null
   },
   "groups": [
@@ -275,19 +275,19 @@
       "group": "Group F",
       "teams": [
         {
-          "teamId": "netherlands",
+          "teamId": "sweden",
           "rank": 1,
           "played": 1,
-          "won": 0,
-          "drawn": 1,
+          "won": 1,
+          "drawn": 0,
           "lost": 0,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0,
-          "points": 1
+          "goalsFor": 5,
+          "goalsAgainst": 1,
+          "goalDifference": 4,
+          "points": 3
         },
         {
-          "teamId": "japan",
+          "teamId": "netherlands",
           "rank": 2,
           "played": 1,
           "won": 0,
@@ -299,27 +299,27 @@
           "points": 1
         },
         {
-          "teamId": "sweden",
+          "teamId": "japan",
           "rank": 3,
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
           "goalDifference": 0,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "tunisia",
           "rank": 4,
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 5,
+          "goalDifference": -4,
           "points": 0
         }
       ]
