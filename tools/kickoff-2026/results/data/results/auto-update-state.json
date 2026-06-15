@@ -115,14 +115,14 @@
     "match-011": {
       "firstCheckAttempted": true,
       "firstCheckAt": "2026-06-15T01:13:08Z",
-      "lastAttemptAt": "2026-06-15T07:53:17Z",
+      "lastAttemptAt": "2026-06-15T08:03:17Z",
       "lastProviderStatus": "not_found",
       "lastStatus": "not_found",
       "lastConfidence": 0.0,
-      "attemptCount": 25,
+      "attemptCount": 26,
       "lastMessage": "no calendar match candidate matched team and kickoff; rejected=[{\"appMatchId\": \"match-011\", \"appMatchNumber\": 11, \"providerMatchNumber\": 5, \"appKickoffUTC\": \"2026-06-14T23:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T01:00:00Z\", \"appHome\": \"Ivory Coast\", \"appAway\": \"Ecuador\", \"providerHome\": \"Haiti\", \"providerAway\": \"Scotland\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-011\", \"appMatchNumber\": 11, \"providerMatchNumber\": 6, \"appKickoffUTC\": \"2026-06-14T23:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T04:00:00Z\", \"appHome\": \"Ivory Coast\", \"appAway\": \"Ecuador\", \"providerHome\": \"Australia\", \"providerAway\": \"Türkiye\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-011\", \"appMatchNumber\": 11, \"providerMatchNumber\": 10, \"appKickoffUTC\": \"2026-06-14T23:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T17:00:00Z\", \"appHome\": \"Ivory Coast\", \"appAway\": \"Ecuador\", \"providerHome\": \"Germany\", \"providerAway\": \"Curaçao\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-011\", \"appMatchNumber\": 11, \"providerMatchNumber\": 11, \"appKickoffUTC\": \"2026-06-14T23:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T20:00:00Z\", \"appHome\": \"Ivory Coast\", \"appAway\": \"Ecuador\", \"providerHome\": \"Netherlands\", \"providerAway\": \"Japan\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-011\", \"appMatchNumber\": 11, \"providerMatchNumber\": 9, \"appKickoffUTC\": \"2026-06-14T23:00:00Z\", \"providerKickoffUTC\": \"2026-06-14T23:00:00Z\", \"appHome\": \"Ivory Coast\", \"appAway\": \"Ecuador\", \"providerHome\": \"Côte d'Ivoire\", \"providerAway\": \"Ecuador\", \"rejectReason\": \"home team mismatch\", \"confidence\": 0.0}]",
       "finalResultCaptured": false,
-      "nextRetryAfter": "2026-06-15T08:03:17Z",
+      "nextRetryAfter": "2026-06-15T08:13:17Z",
       "finalCheckAttempted": true,
       "finalCheckAt": "2026-06-15T02:03:09Z"
     },
