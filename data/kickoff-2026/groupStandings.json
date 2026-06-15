@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-15T04:13:09Z",
-    "generatedAt": "2026-06-15T04:13:09Z",
+    "updatedAt": "2026-06-15T21:13:17Z",
+    "generatedAt": "2026-06-15T21:13:17Z",
     "url": null
   },
   "groups": [
@@ -330,26 +330,26 @@
         {
           "teamId": "belgium",
           "rank": 1,
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "egypt",
           "rank": 2,
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "iran",
