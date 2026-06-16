@@ -295,6 +295,32 @@ class FifaMatchCentreProviderTests(unittest.TestCase):
         self.assertEqual(outcome.away_score, 0)
         self.assertIsNone(outcome.winner_team_id)
 
+    def test_calendar_api_accepts_ir_iran_for_iran(self):
+        iran_context = MatchContext(
+            match_id="match-016",
+            match_number=16,
+            kickoff_utc=datetime(2026, 6, 16, 1, 0, tzinfo=timezone.utc),
+            home_team_id="iran",
+            away_team_id="new-zealand",
+            home_team_name="Iran",
+            away_team_name="New Zealand",
+            match_centre_url="https://www.fifa.com/en/match-centre",
+        )
+        provider = FifaMatchCentreProvider(json_loader=lambda _: calendar_payload(calendar_match(
+            MatchNumber=15,
+            Date="2026-06-16T01:00:00Z",
+            HomeTeamScore=2,
+            AwayTeamScore=2,
+            Home={"Score": 2, "TeamName": [{"Description": "IR Iran"}], "ShortClubName": "IR Iran"},
+            Away={"Score": 2, "TeamName": [{"Description": "New Zealand"}], "ShortClubName": "New Zealand"},
+        )))
+        outcome = provider.fetch_result(iran_context)
+        self.assertEqual(outcome.status, "found")
+        self.assertEqual(outcome.match_id, "match-016")
+        self.assertEqual(outcome.home_score, 2)
+        self.assertEqual(outcome.away_score, 2)
+        self.assertIsNone(outcome.winner_team_id)
+
     def test_calendar_api_scheduled_match_is_not_final_yet(self):
         provider = FifaMatchCentreProvider(json_loader=lambda _: calendar_payload(calendar_match(
             MatchStatus=1,
