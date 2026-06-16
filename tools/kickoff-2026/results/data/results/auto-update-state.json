@@ -189,6 +189,18 @@
       "nextRetryAfter": "2026-06-16T11:53:15Z",
       "finalCheckAttempted": true,
       "finalCheckAt": "2026-06-16T04:03:10Z"
+    },
+    "match-017": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-16T21:13:19Z",
+      "lastAttemptAt": "2026-06-16T21:13:19Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-017\", \"appMatchNumber\": 17, \"providerMatchNumber\": 17, \"appKickoffUTC\": \"2026-06-16T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-16T19:00:00Z\", \"appHome\": \"France\", \"appAway\": \"Senegal\", \"providerHome\": \"France\", \"providerAway\": \"Senegal\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-16T21:13:19Z",
+      "finalResultCaptured": true
     }
   }
 }

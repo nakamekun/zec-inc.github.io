@@ -191,6 +191,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-16T04:22:18Z",
       "source": "zec-curated"
+    },
+    {
+      "matchId": "match-017",
+      "status": "fullTime",
+      "homeScore": 3,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "france",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-16T21:13:19Z",
+      "source": "zec-auto"
     }
   ]
 }
