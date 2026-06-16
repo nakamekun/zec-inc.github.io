@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-15T23:41:58Z",
-    "generatedAt": "2026-06-15T23:41:58Z",
+    "updatedAt": "2026-06-16T00:13:08Z",
+    "generatedAt": "2026-06-16T00:13:08Z",
     "url": null
   },
   "results": [
@@ -158,6 +158,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": null,
       "resultUpdatedAt": "2026-06-15T23:41:58Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-015",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "resultUpdatedAt": "2026-06-16T00:13:08Z",
       "source": "zec-auto"
     }
   ]
