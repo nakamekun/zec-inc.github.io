@@ -1,9 +1,9 @@
 {
   "source": {
-    "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-16T00:13:08Z",
-    "generatedAt": "2026-06-16T00:13:08Z",
-    "url": null
+    "name": "Kickoff Bell group standings",
+    "updatedAt": "2026-06-16T04:22:18Z",
+    "generatedAt": "2026-06-16T04:22:18Z",
+    "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings"
   },
   "groups": [
     {
@@ -328,8 +328,32 @@
       "group": "Group G",
       "teams": [
         {
-          "teamId": "belgium",
+          "teamId": "iran",
           "rank": 1,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
+          "points": 1
+        },
+        {
+          "teamId": "new-zealand",
+          "rank": 2,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
+          "points": 1
+        },
+        {
+          "teamId": "belgium",
+          "rank": 3,
           "played": 1,
           "won": 0,
           "drawn": 1,
@@ -341,7 +365,7 @@
         },
         {
           "teamId": "egypt",
-          "rank": 2,
+          "rank": 4,
           "played": 1,
           "won": 0,
           "drawn": 1,
@@ -350,30 +374,6 @@
           "goalsAgainst": 1,
           "goalDifference": 0,
           "points": 1
-        },
-        {
-          "teamId": "iran",
-          "rank": 3,
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0
-        },
-        {
-          "teamId": "new-zealand",
-          "rank": 4,
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0
         }
       ]
     },
@@ -381,7 +381,7 @@
       "group": "Group H",
       "teams": [
         {
-          "teamId": "saudi-arabia",
+          "teamId": "uruguay",
           "rank": 1,
           "played": 1,
           "won": 0,
@@ -393,7 +393,7 @@
           "points": 1
         },
         {
-          "teamId": "uruguay",
+          "teamId": "saudi-arabia",
           "rank": 2,
           "played": 1,
           "won": 0,

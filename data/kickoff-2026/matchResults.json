@@ -1,9 +1,9 @@
 {
   "source": {
-    "name": "ZEC curated match results",
-    "updatedAt": "2026-06-16T00:13:08Z",
-    "generatedAt": "2026-06-16T00:13:08Z",
-    "url": null
+    "name": "Kickoff Bell match results",
+    "updatedAt": "2026-06-16T04:22:18Z",
+    "generatedAt": "2026-06-16T04:22:18Z",
+    "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures"
   },
   "results": [
     {
@@ -14,8 +14,8 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": "mexico",
-      "resultUpdatedAt": "2026-06-11T21:30:03Z",
-      "source": "zec-curated"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-002",
@@ -25,8 +25,8 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": "south-korea",
-      "resultUpdatedAt": "2026-06-12T04:20:00Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-003",
@@ -36,8 +36,8 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": null,
-      "resultUpdatedAt": "2026-06-12T22:29:27Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-004",
@@ -47,8 +47,8 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": "usa",
-      "resultUpdatedAt": "2026-06-13T04:27:41Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-005",
@@ -58,8 +58,8 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": null,
-      "resultUpdatedAt": "2026-06-13T22:42:53Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-006",
@@ -69,8 +69,8 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": null,
-      "resultUpdatedAt": "2026-06-14T01:56:19Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-007",
@@ -80,8 +80,8 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": "scotland",
-      "resultUpdatedAt": "2026-06-14T03:13:10Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-008",
@@ -91,8 +91,8 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": "australia",
-      "resultUpdatedAt": "2026-06-14T08:10:43Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-009",
@@ -102,8 +102,8 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": "germany",
-      "resultUpdatedAt": "2026-06-14T19:10:54Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-010",
@@ -113,30 +113,8 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": null,
-      "resultUpdatedAt": "2026-06-14T22:13:09Z",
-      "source": "zec-auto"
-    },
-    {
-      "matchId": "match-012",
-      "status": "finished",
-      "homeScore": 5,
-      "awayScore": 1,
-      "homePenaltyScore": null,
-      "awayPenaltyScore": null,
-      "winnerTeamId": "sweden",
-      "resultUpdatedAt": "2026-06-15T04:13:09Z",
-      "source": "zec-auto"
-    },
-    {
-      "matchId": "match-014",
-      "status": "finished",
-      "homeScore": 1,
-      "awayScore": 1,
-      "homePenaltyScore": null,
-      "awayPenaltyScore": null,
-      "winnerTeamId": null,
-      "resultUpdatedAt": "2026-06-15T21:13:17Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-011",
@@ -146,8 +124,19 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": "ivory-coast",
-      "resultUpdatedAt": "2026-06-15T23:41:58Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
+    },
+    {
+      "matchId": "match-012",
+      "status": "finished",
+      "homeScore": 5,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "sweden",
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-013",
@@ -157,8 +146,19 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": null,
-      "resultUpdatedAt": "2026-06-15T23:41:58Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
+    },
+    {
+      "matchId": "match-014",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     },
     {
       "matchId": "match-015",
@@ -168,8 +168,19 @@
       "homePenaltyScore": null,
       "awayPenaltyScore": null,
       "winnerTeamId": null,
-      "resultUpdatedAt": "2026-06-16T00:13:08Z",
-      "source": "zec-auto"
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
+    },
+    {
+      "matchId": "match-016",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 2,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "resultUpdatedAt": "2026-06-16T04:22:18Z",
+      "source": "FIFA Scores & Fixtures manual check"
     }
   ]
 }
