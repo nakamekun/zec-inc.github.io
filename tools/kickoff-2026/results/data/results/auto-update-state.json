@@ -179,14 +179,14 @@
     "match-016": {
       "firstCheckAttempted": true,
       "firstCheckAt": "2026-06-16T03:13:14Z",
-      "lastAttemptAt": "2026-06-16T03:33:16Z",
+      "lastAttemptAt": "2026-06-16T03:53:09Z",
       "lastProviderStatus": "not_found",
       "lastStatus": "not_found",
       "lastConfidence": 0.0,
-      "attemptCount": 3,
+      "attemptCount": 4,
       "lastMessage": "no calendar match candidate matched team and kickoff; rejected=[{\"appMatchId\": \"match-016\", \"appMatchNumber\": 16, \"providerMatchNumber\": 12, \"appKickoffUTC\": \"2026-06-16T01:00:00Z\", \"providerKickoffUTC\": \"2026-06-15T02:00:00Z\", \"appHome\": \"Iran\", \"appAway\": \"New Zealand\", \"providerHome\": \"Sweden\", \"providerAway\": \"Tunisia\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-016\", \"appMatchNumber\": 16, \"providerMatchNumber\": 14, \"appKickoffUTC\": \"2026-06-16T01:00:00Z\", \"providerKickoffUTC\": \"2026-06-15T16:00:00Z\", \"appHome\": \"Iran\", \"appAway\": \"New Zealand\", \"providerHome\": \"Spain\", \"providerAway\": \"Cabo Verde\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-016\", \"appMatchNumber\": 16, \"providerMatchNumber\": 16, \"appKickoffUTC\": \"2026-06-16T01:00:00Z\", \"providerKickoffUTC\": \"2026-06-15T19:00:00Z\", \"appHome\": \"Iran\", \"appAway\": \"New Zealand\", \"providerHome\": \"Belgium\", \"providerAway\": \"Egypt\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-016\", \"appMatchNumber\": 16, \"providerMatchNumber\": 13, \"appKickoffUTC\": \"2026-06-16T01:00:00Z\", \"providerKickoffUTC\": \"2026-06-15T22:00:00Z\", \"appHome\": \"Iran\", \"appAway\": \"New Zealand\", \"providerHome\": \"Saudi Arabia\", \"providerAway\": \"Uruguay\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-016\", \"appMatchNumber\": 16, \"providerMatchNumber\": 15, \"appKickoffUTC\": \"2026-06-16T01:00:00Z\", \"providerKickoffUTC\": \"2026-06-16T01:00:00Z\", \"appHome\": \"Iran\", \"appAway\": \"New Zealand\", \"providerHome\": \"IR Iran\", \"providerAway\": \"New Zealand\", \"rejectReason\": \"home team mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-016\", \"appMatchNumber\": 16, \"providerMatchNumber\": 17, \"appKickoffUTC\": \"2026-06-16T01:00:00Z\", \"providerKickoffUTC\": \"2026-06-16T19:00:00Z\", \"appHome\": \"Iran\", \"appAway\": \"New Zealand\", \"providerHome\": \"France\", \"providerAway\": \"Senegal\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-016\", \"appMatchNumber\": 16, \"providerMatchNumber\": 18, \"appKickoffUTC\": \"2026-06-16T01:00:00Z\", \"providerKickoffUTC\": \"2026-06-16T22:00:00Z\", \"appHome\": \"Iran\", \"appAway\": \"New Zealand\", \"providerHome\": \"Iraq\", \"providerAway\": \"Norway\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}]",
       "finalResultCaptured": false,
-      "nextRetryAfter": "2026-06-16T03:43:16Z"
+      "nextRetryAfter": "2026-06-16T04:03:09Z"
     }
   }
 }
