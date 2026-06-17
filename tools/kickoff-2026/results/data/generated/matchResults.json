@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-17T03:13:11Z",
-    "generatedAt": "2026-06-17T03:13:11Z",
+    "updatedAt": "2026-06-17T06:13:11Z",
+    "generatedAt": "2026-06-17T06:13:11Z",
     "url": null
   },
   "results": [
@@ -213,6 +213,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "argentina",
       "resultUpdatedAt": "2026-06-17T03:13:11Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-020",
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "austria",
+      "resultUpdatedAt": "2026-06-17T06:13:11Z",
       "source": "zec-auto"
     }
   ]

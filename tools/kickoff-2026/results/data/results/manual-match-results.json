@@ -227,6 +227,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-17T03:13:11Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-020",
+      "status": "fullTime",
+      "homeScore": 3,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "austria",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-17T06:13:11Z",
+      "source": "zec-auto"
     }
   ]
 }
