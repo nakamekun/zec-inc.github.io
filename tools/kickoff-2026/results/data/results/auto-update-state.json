@@ -249,6 +249,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-021\", \"appMatchNumber\": 21, \"providerMatchNumber\": 23, \"appKickoffUTC\": \"2026-06-17T17:00:00Z\", \"providerKickoffUTC\": \"2026-06-17T17:00:00Z\", \"appHome\": \"Portugal\", \"appAway\": \"DR Congo\", \"providerHome\": \"Portugal\", \"providerAway\": \"Congo DR\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-17T19:13:16Z",
       "finalResultCaptured": true
+    },
+    "match-022": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-17T22:13:11Z",
+      "lastAttemptAt": "2026-06-17T22:13:11Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-022\", \"appMatchNumber\": 22, \"providerMatchNumber\": 22, \"appKickoffUTC\": \"2026-06-17T20:00:00Z\", \"providerKickoffUTC\": \"2026-06-17T20:00:00Z\", \"appHome\": \"England\", \"appAway\": \"Croatia\", \"providerHome\": \"England\", \"providerAway\": \"Croatia\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-17T22:13:11Z",
+      "finalResultCaptured": true
     }
   }
 }

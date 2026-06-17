@@ -251,6 +251,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-17T19:13:16Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-022",
+      "status": "fullTime",
+      "homeScore": 4,
+      "awayScore": 2,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "england",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-17T22:13:11Z",
+      "source": "zec-auto"
     }
   ]
 }
