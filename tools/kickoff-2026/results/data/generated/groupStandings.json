@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-17T00:13:09Z",
-    "generatedAt": "2026-06-17T00:13:09Z",
+    "updatedAt": "2026-06-17T03:13:11Z",
+    "generatedAt": "2026-06-17T03:13:11Z",
     "url": null
   },
   "groups": [
@@ -489,17 +489,17 @@
         {
           "teamId": "argentina",
           "rank": 1,
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 0,
+          "goalsFor": 3,
           "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0
+          "goalDifference": 3,
+          "points": 3
         },
         {
-          "teamId": "algeria",
+          "teamId": "austria",
           "rank": 2,
           "played": 0,
           "won": 0,
@@ -511,7 +511,7 @@
           "points": 0
         },
         {
-          "teamId": "austria",
+          "teamId": "jordan",
           "rank": 3,
           "played": 0,
           "won": 0,
@@ -523,15 +523,15 @@
           "points": 0
         },
         {
-          "teamId": "jordan",
+          "teamId": "algeria",
           "rank": 4,
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
+          "goalsAgainst": 3,
+          "goalDifference": -3,
           "points": 0
         }
       ]
