@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-18T04:13:09Z",
-    "generatedAt": "2026-06-18T04:13:09Z",
+    "updatedAt": "2026-06-18T18:13:11Z",
+    "generatedAt": "2026-06-18T18:13:11Z",
     "url": null
   },
   "results": [
@@ -268,6 +268,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "colombia",
       "resultUpdatedAt": "2026-06-18T04:13:09Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-025",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "resultUpdatedAt": "2026-06-18T18:13:11Z",
       "source": "zec-auto"
     }
   ]

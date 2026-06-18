@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-18T04:13:09Z",
-    "generatedAt": "2026-06-18T04:13:09Z",
+    "updatedAt": "2026-06-18T18:13:11Z",
+    "generatedAt": "2026-06-18T18:13:11Z",
     "url": null
   },
   "groups": [
@@ -36,26 +36,26 @@
         {
           "teamId": "czech-republic",
           "rank": 3,
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
           "goalDifference": -1,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "south-africa",
           "rank": 4,
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
           "goalDifference": -2,
-          "points": 0
+          "points": 1
         }
       ]
     },
