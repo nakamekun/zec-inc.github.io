@@ -297,6 +297,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-025\", \"appMatchNumber\": 25, \"providerMatchNumber\": 25, \"appKickoffUTC\": \"2026-06-18T16:00:00Z\", \"providerKickoffUTC\": \"2026-06-18T16:00:00Z\", \"appHome\": \"Czech Republic\", \"appAway\": \"South Africa\", \"providerHome\": \"Czechia\", \"providerAway\": \"South Africa\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-18T18:13:11Z",
       "finalResultCaptured": true
+    },
+    "match-026": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-18T21:14:02Z",
+      "lastAttemptAt": "2026-06-18T21:14:02Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-026\", \"appMatchNumber\": 26, \"providerMatchNumber\": 26, \"appKickoffUTC\": \"2026-06-18T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-18T19:00:00Z\", \"appHome\": \"Switzerland\", \"appAway\": \"Bosnia & Herzegovina\", \"providerHome\": \"Switzerland\", \"providerAway\": \"Bosnia and Herzegovina\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-18T21:14:02Z",
+      "finalResultCaptured": true
     }
   }
 }

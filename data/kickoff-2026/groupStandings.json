@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-18T18:13:11Z",
-    "generatedAt": "2026-06-18T18:13:11Z",
+    "updatedAt": "2026-06-18T21:14:02Z",
+    "generatedAt": "2026-06-18T21:14:02Z",
     "url": null
   },
   "groups": [
@@ -63,19 +63,19 @@
       "group": "Group B",
       "teams": [
         {
-          "teamId": "canada",
+          "teamId": "switzerland",
           "rank": 1,
-          "played": 1,
-          "won": 0,
+          "played": 2,
+          "won": 1,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
-          "points": 1
+          "goalsFor": 5,
+          "goalsAgainst": 2,
+          "goalDifference": 3,
+          "points": 4
         },
         {
-          "teamId": "bosnia-and-herzegovina",
+          "teamId": "canada",
           "rank": 2,
           "played": 1,
           "won": 0,
@@ -99,15 +99,15 @@
           "points": 1
         },
         {
-          "teamId": "switzerland",
+          "teamId": "bosnia-and-herzegovina",
           "rank": 4,
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 1,
-          "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "goalDifference": -3,
           "points": 1
         }
       ]
