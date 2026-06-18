@@ -287,6 +287,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-18T04:13:09Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-025",
+      "status": "fullTime",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-18T18:13:11Z",
+      "source": "zec-auto"
     }
   ]
 }
