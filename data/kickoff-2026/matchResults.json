@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-18T01:13:08Z",
-    "generatedAt": "2026-06-18T01:13:08Z",
+    "updatedAt": "2026-06-18T04:13:09Z",
+    "generatedAt": "2026-06-18T04:13:09Z",
     "url": null
   },
   "results": [
@@ -257,6 +257,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "ghana",
       "resultUpdatedAt": "2026-06-18T01:13:08Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-024",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 3,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "colombia",
+      "resultUpdatedAt": "2026-06-18T04:13:09Z",
       "source": "zec-auto"
     }
   ]

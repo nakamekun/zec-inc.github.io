@@ -275,6 +275,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-18T01:13:08Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-024",
+      "status": "fullTime",
+      "homeScore": 1,
+      "awayScore": 3,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "colombia",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-18T04:13:09Z",
+      "source": "zec-auto"
     }
   ]
 }
