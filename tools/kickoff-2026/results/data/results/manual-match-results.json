@@ -263,6 +263,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-17T22:13:11Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-023",
+      "status": "fullTime",
+      "homeScore": 1,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "ghana",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-18T01:13:08Z",
+      "source": "zec-auto"
     }
   ]
 }
