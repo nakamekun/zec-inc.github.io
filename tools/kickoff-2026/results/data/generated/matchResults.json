@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-17T22:13:12Z",
-    "generatedAt": "2026-06-17T22:13:12Z",
+    "updatedAt": "2026-06-18T01:13:08Z",
+    "generatedAt": "2026-06-18T01:13:08Z",
     "url": null
   },
   "results": [
@@ -246,6 +246,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "england",
       "resultUpdatedAt": "2026-06-17T22:13:11Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-023",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "ghana",
+      "resultUpdatedAt": "2026-06-18T01:13:08Z",
       "source": "zec-auto"
     }
   ]
