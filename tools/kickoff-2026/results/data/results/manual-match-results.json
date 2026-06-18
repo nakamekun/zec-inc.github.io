@@ -299,6 +299,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-18T18:13:11Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-026",
+      "status": "fullTime",
+      "homeScore": 4,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "switzerland",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-18T21:14:02Z",
+      "source": "zec-auto"
     }
   ]
 }
