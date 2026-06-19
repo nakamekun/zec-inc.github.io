@@ -309,6 +309,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-026\", \"appMatchNumber\": 26, \"providerMatchNumber\": 26, \"appKickoffUTC\": \"2026-06-18T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-18T19:00:00Z\", \"appHome\": \"Switzerland\", \"appAway\": \"Bosnia & Herzegovina\", \"providerHome\": \"Switzerland\", \"providerAway\": \"Bosnia and Herzegovina\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-18T21:14:02Z",
       "finalResultCaptured": true
+    },
+    "match-027": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-19T00:14:47Z",
+      "lastAttemptAt": "2026-06-19T00:14:47Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-027\", \"appMatchNumber\": 27, \"providerMatchNumber\": 27, \"appKickoffUTC\": \"2026-06-18T22:00:00Z\", \"providerKickoffUTC\": \"2026-06-18T22:00:00Z\", \"appHome\": \"Canada\", \"appAway\": \"Qatar\", \"providerHome\": \"Canada\", \"providerAway\": \"Qatar\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-19T00:14:47Z",
+      "finalResultCaptured": true
     }
   }
 }
