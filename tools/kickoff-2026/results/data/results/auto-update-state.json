@@ -321,6 +321,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-027\", \"appMatchNumber\": 27, \"providerMatchNumber\": 27, \"appKickoffUTC\": \"2026-06-18T22:00:00Z\", \"providerKickoffUTC\": \"2026-06-18T22:00:00Z\", \"appHome\": \"Canada\", \"appAway\": \"Qatar\", \"providerHome\": \"Canada\", \"providerAway\": \"Qatar\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-19T00:14:47Z",
       "finalResultCaptured": true
+    },
+    "match-028": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-19T03:13:10Z",
+      "lastAttemptAt": "2026-06-19T03:13:10Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-028\", \"appMatchNumber\": 28, \"providerMatchNumber\": 28, \"appKickoffUTC\": \"2026-06-19T01:00:00Z\", \"providerKickoffUTC\": \"2026-06-19T01:00:00Z\", \"appHome\": \"Mexico\", \"appAway\": \"South Korea\", \"providerHome\": \"Mexico\", \"providerAway\": \"Korea Republic\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-19T03:13:10Z",
+      "finalResultCaptured": true
     }
   }
 }
