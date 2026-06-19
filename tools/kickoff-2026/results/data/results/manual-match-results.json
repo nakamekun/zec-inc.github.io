@@ -311,6 +311,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-18T21:14:02Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-027",
+      "status": "fullTime",
+      "homeScore": 6,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "canada",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-19T00:14:47Z",
+      "source": "zec-auto"
     }
   ]
 }
