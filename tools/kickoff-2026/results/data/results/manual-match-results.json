@@ -323,6 +323,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-19T00:14:47Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-028",
+      "status": "fullTime",
+      "homeScore": 1,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "mexico",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-19T03:13:10Z",
+      "source": "zec-auto"
     }
   ]
 }
