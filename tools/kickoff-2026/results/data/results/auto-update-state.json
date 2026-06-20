@@ -345,6 +345,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-029\", \"appMatchNumber\": 29, \"providerMatchNumber\": 32, \"appKickoffUTC\": \"2026-06-19T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-19T19:00:00Z\", \"appHome\": \"USA\", \"appAway\": \"Australia\", \"providerHome\": \"USA\", \"providerAway\": \"Australia\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-19T21:13:08Z",
       "finalResultCaptured": true
+    },
+    "match-030": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-20T00:13:09Z",
+      "lastAttemptAt": "2026-06-20T00:13:09Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-030\", \"appMatchNumber\": 30, \"providerMatchNumber\": 30, \"appKickoffUTC\": \"2026-06-19T22:00:00Z\", \"providerKickoffUTC\": \"2026-06-19T22:00:00Z\", \"appHome\": \"Scotland\", \"appAway\": \"Morocco\", \"providerHome\": \"Scotland\", \"providerAway\": \"Morocco\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-20T00:13:09Z",
+      "finalResultCaptured": true
     }
   }
 }
