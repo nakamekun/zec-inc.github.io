@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-20T19:13:10Z",
-    "generatedAt": "2026-06-20T19:13:10Z",
+    "updatedAt": "2026-06-20T22:13:08Z",
+    "generatedAt": "2026-06-20T22:13:08Z",
     "url": null
   },
   "groups": [
@@ -224,25 +224,25 @@
         {
           "teamId": "germany",
           "rank": 1,
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 7,
-          "goalsAgainst": 1,
-          "goalDifference": 6,
-          "points": 3
+          "goalsFor": 9,
+          "goalsAgainst": 2,
+          "goalDifference": 7,
+          "points": 6
         },
         {
           "teamId": "ivory-coast",
           "rank": 2,
-          "played": 1,
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 0,
-          "goalDifference": 1,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
           "points": 3
         },
         {

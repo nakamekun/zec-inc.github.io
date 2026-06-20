@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-20T19:13:10Z",
-    "generatedAt": "2026-06-20T19:13:10Z",
+    "updatedAt": "2026-06-20T22:13:08Z",
+    "generatedAt": "2026-06-20T22:13:08Z",
     "url": null
   },
   "results": [
@@ -367,6 +367,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "netherlands",
       "resultUpdatedAt": "2026-06-20T19:13:09Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-034",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "germany",
+      "resultUpdatedAt": "2026-06-20T22:13:08Z",
       "source": "zec-auto"
     }
   ]
