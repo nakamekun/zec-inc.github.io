@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-19T21:13:09Z",
-    "generatedAt": "2026-06-19T21:13:09Z",
+    "updatedAt": "2026-06-20T00:13:09Z",
+    "generatedAt": "2026-06-20T00:13:09Z",
     "url": null
   },
   "groups": [
@@ -116,31 +116,31 @@
       "group": "Group C",
       "teams": [
         {
-          "teamId": "scotland",
+          "teamId": "morocco",
           "rank": 1,
-          "played": 1,
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDifference": 1,
+          "points": 4
+        },
+        {
+          "teamId": "scotland",
+          "rank": 2,
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "goalsFor": 1,
-          "goalsAgainst": 0,
-          "goalDifference": 1,
+          "goalsAgainst": 1,
+          "goalDifference": 0,
           "points": 3
         },
         {
           "teamId": "brazil",
-          "rank": 2,
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
-          "points": 1
-        },
-        {
-          "teamId": "morocco",
           "rank": 3,
           "played": 1,
           "won": 0,
