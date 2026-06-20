@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-20T02:43:08Z",
-    "generatedAt": "2026-06-20T02:43:08Z",
+    "updatedAt": "2026-06-20T05:13:08Z",
+    "generatedAt": "2026-06-20T05:13:08Z",
     "url": null
   },
   "results": [
@@ -345,6 +345,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "brazil",
       "resultUpdatedAt": "2026-06-20T02:43:08Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-032",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "paraguay",
+      "resultUpdatedAt": "2026-06-20T05:13:08Z",
       "source": "zec-auto"
     }
   ]

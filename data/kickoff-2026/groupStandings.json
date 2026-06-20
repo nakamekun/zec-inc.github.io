@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-20T02:43:08Z",
-    "generatedAt": "2026-06-20T02:43:08Z",
+    "updatedAt": "2026-06-20T05:13:08Z",
+    "generatedAt": "2026-06-20T05:13:08Z",
     "url": null
   },
   "groups": [
@@ -193,26 +193,26 @@
           "points": 3
         },
         {
-          "teamId": "turkey",
+          "teamId": "paraguay",
           "rank": 3,
-          "played": 1,
-          "won": 0,
+          "played": 2,
+          "won": 1,
           "drawn": 0,
           "lost": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
           "goalDifference": -2,
-          "points": 0
+          "points": 3
         },
         {
-          "teamId": "paraguay",
+          "teamId": "turkey",
           "rank": 4,
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 4,
+          "lost": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 3,
           "goalDifference": -3,
           "points": 0
         }

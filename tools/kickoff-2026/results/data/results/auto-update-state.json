@@ -369,6 +369,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-031\", \"appMatchNumber\": 31, \"providerMatchNumber\": 29, \"appKickoffUTC\": \"2026-06-20T00:30:00Z\", \"providerKickoffUTC\": \"2026-06-20T00:30:00Z\", \"appHome\": \"Brazil\", \"appAway\": \"Haiti\", \"providerHome\": \"Brazil\", \"providerAway\": \"Haiti\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-20T02:43:08Z",
       "finalResultCaptured": true
+    },
+    "match-032": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-20T05:13:07Z",
+      "lastAttemptAt": "2026-06-20T05:13:07Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-032\", \"appMatchNumber\": 32, \"providerMatchNumber\": 31, \"appKickoffUTC\": \"2026-06-20T03:00:00Z\", \"providerKickoffUTC\": \"2026-06-20T03:00:00Z\", \"appHome\": \"Turkey\", \"appAway\": \"Paraguay\", \"providerHome\": \"Türkiye\", \"providerAway\": \"Paraguay\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-20T05:13:07Z",
+      "finalResultCaptured": true
     }
   }
 }

@@ -371,6 +371,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-20T02:43:08Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-032",
+      "status": "fullTime",
+      "homeScore": 0,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "paraguay",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-20T05:13:08Z",
+      "source": "zec-auto"
     }
   ]
 }
