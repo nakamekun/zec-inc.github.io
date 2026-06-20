@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-20T05:13:08Z",
-    "generatedAt": "2026-06-20T05:13:08Z",
+    "updatedAt": "2026-06-20T19:13:10Z",
+    "generatedAt": "2026-06-20T19:13:10Z",
     "url": null
   },
   "groups": [
@@ -275,28 +275,28 @@
       "group": "Group F",
       "teams": [
         {
-          "teamId": "sweden",
-          "rank": 1,
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "goalsFor": 5,
-          "goalsAgainst": 1,
-          "goalDifference": 4,
-          "points": 3
-        },
-        {
           "teamId": "netherlands",
-          "rank": 2,
-          "played": 1,
-          "won": 0,
+          "rank": 1,
+          "played": 2,
+          "won": 1,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
+          "goalsFor": 7,
+          "goalsAgainst": 3,
+          "goalDifference": 4,
+          "points": 4
+        },
+        {
+          "teamId": "sweden",
+          "rank": 2,
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 6,
           "goalDifference": 0,
-          "points": 1
+          "points": 3
         },
         {
           "teamId": "japan",
