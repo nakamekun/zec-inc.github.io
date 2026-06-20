@@ -383,6 +383,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-20T05:13:08Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-033",
+      "status": "fullTime",
+      "homeScore": 5,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "netherlands",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-20T19:13:09Z",
+      "source": "zec-auto"
     }
   ]
 }
