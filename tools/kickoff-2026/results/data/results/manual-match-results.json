@@ -419,6 +419,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-21T02:13:08Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-036",
+      "status": "fullTime",
+      "homeScore": 0,
+      "awayScore": 4,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "japan",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-21T06:13:09Z",
+      "source": "zec-auto"
     }
   ]
 }
