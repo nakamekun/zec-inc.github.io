@@ -429,6 +429,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-036\", \"appMatchNumber\": 36, \"providerMatchNumber\": 36, \"appKickoffUTC\": \"2026-06-21T04:00:00Z\", \"providerKickoffUTC\": \"2026-06-21T04:00:00Z\", \"appHome\": \"Tunisia\", \"appAway\": \"Japan\", \"providerHome\": \"Tunisia\", \"providerAway\": \"Japan\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-21T06:13:08Z",
       "finalResultCaptured": true
+    },
+    "match-037": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-21T18:13:09Z",
+      "lastAttemptAt": "2026-06-21T18:13:09Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-037\", \"appMatchNumber\": 37, \"providerMatchNumber\": 38, \"appKickoffUTC\": \"2026-06-21T16:00:00Z\", \"providerKickoffUTC\": \"2026-06-21T16:00:00Z\", \"appHome\": \"Spain\", \"appAway\": \"Saudi Arabia\", \"providerHome\": \"Spain\", \"providerAway\": \"Saudi Arabia\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-21T18:13:09Z",
+      "finalResultCaptured": true
     }
   }
 }
