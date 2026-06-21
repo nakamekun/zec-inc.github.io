@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-20T22:13:08Z",
-    "generatedAt": "2026-06-20T22:13:08Z",
+    "updatedAt": "2026-06-21T02:13:09Z",
+    "generatedAt": "2026-06-21T02:13:09Z",
     "url": null
   },
   "groups": [
@@ -248,26 +248,26 @@
         {
           "teamId": "ecuador",
           "rank": 3,
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "goalsFor": 0,
           "goalsAgainst": 1,
           "goalDifference": -1,
-          "points": 0
+          "points": 1
         },
         {
           "teamId": "curacao",
           "rank": 4,
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "goalsFor": 1,
           "goalsAgainst": 7,
           "goalDifference": -6,
-          "points": 0
+          "points": 1
         }
       ]
     },

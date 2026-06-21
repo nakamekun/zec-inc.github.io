@@ -405,6 +405,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-034\", \"appMatchNumber\": 34, \"providerMatchNumber\": 33, \"appKickoffUTC\": \"2026-06-20T20:00:00Z\", \"providerKickoffUTC\": \"2026-06-20T20:00:00Z\", \"appHome\": \"Germany\", \"appAway\": \"Ivory Coast\", \"providerHome\": \"Germany\", \"providerAway\": \"Côte d'Ivoire\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-20T22:13:08Z",
       "finalResultCaptured": true
+    },
+    "match-035": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-21T02:13:08Z",
+      "lastAttemptAt": "2026-06-21T02:13:08Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-035\", \"appMatchNumber\": 35, \"providerMatchNumber\": 34, \"appKickoffUTC\": \"2026-06-21T00:00:00Z\", \"providerKickoffUTC\": \"2026-06-21T00:00:00Z\", \"appHome\": \"Ecuador\", \"appAway\": \"Curaçao\", \"providerHome\": \"Ecuador\", \"providerAway\": \"Curaçao\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-21T02:13:08Z",
+      "finalResultCaptured": true
     }
   }
 }
