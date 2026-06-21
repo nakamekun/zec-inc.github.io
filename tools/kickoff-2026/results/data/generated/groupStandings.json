@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-21T18:13:09Z",
-    "generatedAt": "2026-06-21T18:13:09Z",
+    "updatedAt": "2026-06-21T21:13:10Z",
+    "generatedAt": "2026-06-21T21:13:10Z",
     "url": null
   },
   "groups": [
@@ -330,36 +330,36 @@
         {
           "teamId": "iran",
           "rank": 1,
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
           "goalsFor": 2,
           "goalsAgainst": 2,
           "goalDifference": 0,
-          "points": 1
-        },
-        {
-          "teamId": "new-zealand",
-          "rank": 2,
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0,
-          "points": 1
+          "points": 2
         },
         {
           "teamId": "belgium",
+          "rank": 2,
+          "played": 2,
+          "won": 0,
+          "drawn": 2,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDifference": 0,
+          "points": 2
+        },
+        {
+          "teamId": "new-zealand",
           "rank": 3,
           "played": 1,
           "won": 0,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
           "goalDifference": 0,
           "points": 1
         },
