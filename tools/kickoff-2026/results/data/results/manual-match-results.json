@@ -467,6 +467,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-22T00:13:09Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-040",
+      "status": "fullTime",
+      "homeScore": 1,
+      "awayScore": 3,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "egypt",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-22T03:13:08Z",
+      "source": "zec-auto"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-22T00:13:09Z",
-    "generatedAt": "2026-06-22T00:13:09Z",
+    "updatedAt": "2026-06-22T03:13:08Z",
+    "generatedAt": "2026-06-22T03:13:08Z",
     "url": null
   },
   "groups": [
@@ -328,8 +328,20 @@
       "group": "Group G",
       "teams": [
         {
-          "teamId": "iran",
+          "teamId": "egypt",
           "rank": 1,
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "goalDifference": 2,
+          "points": 4
+        },
+        {
+          "teamId": "iran",
+          "rank": 2,
           "played": 2,
           "won": 0,
           "drawn": 2,
@@ -341,7 +353,7 @@
         },
         {
           "teamId": "belgium",
-          "rank": 2,
+          "rank": 3,
           "played": 2,
           "won": 0,
           "drawn": 2,
@@ -353,26 +365,14 @@
         },
         {
           "teamId": "new-zealand",
-          "rank": 3,
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0,
-          "points": 1
-        },
-        {
-          "teamId": "egypt",
           "rank": 4,
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 1,
-          "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
+          "lost": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
+          "goalDifference": -2,
           "points": 1
         }
       ]
