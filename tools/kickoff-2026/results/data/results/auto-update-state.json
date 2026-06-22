@@ -453,6 +453,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-038\", \"appMatchNumber\": 38, \"providerMatchNumber\": 39, \"appKickoffUTC\": \"2026-06-21T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-21T19:00:00Z\", \"appHome\": \"Belgium\", \"appAway\": \"Iran\", \"providerHome\": \"Belgium\", \"providerAway\": \"IR Iran\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-21T21:13:10Z",
       "finalResultCaptured": true
+    },
+    "match-039": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-22T00:13:09Z",
+      "lastAttemptAt": "2026-06-22T00:13:09Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-039\", \"appMatchNumber\": 39, \"providerMatchNumber\": 37, \"appKickoffUTC\": \"2026-06-21T22:00:00Z\", \"providerKickoffUTC\": \"2026-06-21T22:00:00Z\", \"appHome\": \"Uruguay\", \"appAway\": \"Cape Verde\", \"providerHome\": \"Uruguay\", \"providerAway\": \"Cabo Verde\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-22T00:13:09Z",
+      "finalResultCaptured": true
     }
   }
 }
