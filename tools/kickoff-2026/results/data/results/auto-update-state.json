@@ -477,6 +477,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-040\", \"appMatchNumber\": 40, \"providerMatchNumber\": 40, \"appKickoffUTC\": \"2026-06-22T01:00:00Z\", \"providerKickoffUTC\": \"2026-06-22T01:00:00Z\", \"appHome\": \"New Zealand\", \"appAway\": \"Egypt\", \"providerHome\": \"New Zealand\", \"providerAway\": \"Egypt\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-22T03:13:08Z",
       "finalResultCaptured": true
+    },
+    "match-041": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-22T19:13:14Z",
+      "lastAttemptAt": "2026-06-22T19:13:14Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-041\", \"appMatchNumber\": 41, \"providerMatchNumber\": 43, \"appKickoffUTC\": \"2026-06-22T17:00:00Z\", \"providerKickoffUTC\": \"2026-06-22T17:00:00Z\", \"appHome\": \"Argentina\", \"appAway\": \"Austria\", \"providerHome\": \"Argentina\", \"providerAway\": \"Austria\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-22T19:13:14Z",
+      "finalResultCaptured": true
     }
   }
 }

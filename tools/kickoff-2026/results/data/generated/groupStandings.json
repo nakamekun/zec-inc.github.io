@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-22T03:13:08Z",
-    "generatedAt": "2026-06-22T03:13:08Z",
+    "updatedAt": "2026-06-22T19:13:16Z",
+    "generatedAt": "2026-06-22T19:13:16Z",
     "url": null
   },
   "groups": [
@@ -489,25 +489,25 @@
         {
           "teamId": "argentina",
           "rank": 1,
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 3,
+          "goalsFor": 5,
           "goalsAgainst": 0,
-          "goalDifference": 3,
-          "points": 3
+          "goalDifference": 5,
+          "points": 6
         },
         {
           "teamId": "austria",
           "rank": 2,
-          "played": 1,
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "goalsFor": 3,
-          "goalsAgainst": 1,
-          "goalDifference": 2,
+          "goalsAgainst": 3,
+          "goalDifference": 0,
           "points": 3
         },
         {
