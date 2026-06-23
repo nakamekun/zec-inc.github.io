@@ -527,6 +527,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-23T05:13:12Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-045",
+      "status": "fullTime",
+      "homeScore": 5,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "portugal",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-23T19:13:09Z",
+      "source": "zec-auto"
     }
   ]
 }
