@@ -493,14 +493,14 @@
     "match-042": {
       "firstCheckAttempted": true,
       "firstCheckAt": "2026-06-22T23:13:08Z",
-      "lastAttemptAt": "2026-06-23T00:13:09Z",
+      "lastAttemptAt": "2026-06-23T00:23:10Z",
       "lastProviderStatus": "low_confidence",
       "lastStatus": "low_confidence",
       "lastConfidence": 0.8,
-      "attemptCount": 5,
+      "attemptCount": 6,
       "lastMessage": "calendar candidate is not final: MatchStatus=3",
       "finalResultCaptured": false,
-      "nextRetryAfter": "2026-06-23T00:23:09Z",
+      "nextRetryAfter": "2026-06-23T00:33:10Z",
       "finalCheckAttempted": true,
       "finalCheckAt": "2026-06-23T00:13:09Z"
     }
