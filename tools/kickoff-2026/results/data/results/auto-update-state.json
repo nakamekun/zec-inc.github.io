@@ -515,6 +515,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-043\", \"appMatchNumber\": 43, \"providerMatchNumber\": 41, \"appKickoffUTC\": \"2026-06-23T00:00:00Z\", \"providerKickoffUTC\": \"2026-06-23T00:00:00Z\", \"appHome\": \"Norway\", \"appAway\": \"Senegal\", \"providerHome\": \"Norway\", \"providerAway\": \"Senegal\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-23T02:13:10Z",
       "finalResultCaptured": true
+    },
+    "match-044": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-23T05:13:11Z",
+      "lastAttemptAt": "2026-06-23T05:13:11Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-044\", \"appMatchNumber\": 44, \"providerMatchNumber\": 44, \"appKickoffUTC\": \"2026-06-23T03:00:00Z\", \"providerKickoffUTC\": \"2026-06-23T03:00:00Z\", \"appHome\": \"Jordan\", \"appAway\": \"Algeria\", \"providerHome\": \"Jordan\", \"providerAway\": \"Algeria\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-23T05:13:11Z",
+      "finalResultCaptured": true
     }
   }
 }

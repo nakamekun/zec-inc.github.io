@@ -515,6 +515,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-23T02:13:11Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-044",
+      "status": "fullTime",
+      "homeScore": 1,
+      "awayScore": 2,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "algeria",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-23T05:13:12Z",
+      "source": "zec-auto"
     }
   ]
 }
