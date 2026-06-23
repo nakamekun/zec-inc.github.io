@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-23T00:53:10Z",
-    "generatedAt": "2026-06-23T00:53:10Z",
+    "updatedAt": "2026-06-23T02:13:11Z",
+    "generatedAt": "2026-06-23T02:13:11Z",
     "url": null
   },
   "groups": [
@@ -448,25 +448,25 @@
         {
           "teamId": "norway",
           "rank": 2,
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 4,
-          "goalsAgainst": 1,
-          "goalDifference": 3,
-          "points": 3
+          "goalsFor": 7,
+          "goalsAgainst": 3,
+          "goalDifference": 4,
+          "points": 6
         },
         {
           "teamId": "senegal",
           "rank": 3,
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 3,
-          "goalDifference": -2,
+          "lost": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 6,
+          "goalDifference": -3,
           "points": 0
         },
         {

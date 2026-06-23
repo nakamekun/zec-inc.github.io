@@ -503,6 +503,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-23T00:53:10Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-043",
+      "status": "fullTime",
+      "homeScore": 3,
+      "awayScore": 2,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "norway",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-23T02:13:11Z",
+      "source": "zec-auto"
     }
   ]
 }

@@ -503,6 +503,18 @@
       "finalCheckAttempted": true,
       "finalCheckAt": "2026-06-23T00:13:09Z",
       "lastSuccessfulUpdateAt": "2026-06-23T00:53:10Z"
+    },
+    "match-043": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-23T02:13:10Z",
+      "lastAttemptAt": "2026-06-23T02:13:10Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-043\", \"appMatchNumber\": 43, \"providerMatchNumber\": 41, \"appKickoffUTC\": \"2026-06-23T00:00:00Z\", \"providerKickoffUTC\": \"2026-06-23T00:00:00Z\", \"appHome\": \"Norway\", \"appAway\": \"Senegal\", \"providerHome\": \"Norway\", \"providerAway\": \"Senegal\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-23T02:13:10Z",
+      "finalResultCaptured": true
     }
   }
 }
