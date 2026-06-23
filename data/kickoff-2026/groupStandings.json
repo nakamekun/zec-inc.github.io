@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-23T02:13:11Z",
-    "generatedAt": "2026-06-23T02:13:11Z",
+    "updatedAt": "2026-06-23T05:13:12Z",
+    "generatedAt": "2026-06-23T05:13:12Z",
     "url": null
   },
   "groups": [
@@ -511,26 +511,26 @@
           "points": 3
         },
         {
-          "teamId": "jordan",
+          "teamId": "algeria",
           "rank": 3,
-          "played": 1,
-          "won": 0,
+          "played": 2,
+          "won": 1,
           "drawn": 0,
           "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 3,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
           "goalDifference": -2,
-          "points": 0
+          "points": 3
         },
         {
-          "teamId": "algeria",
+          "teamId": "jordan",
           "rank": 4,
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 3,
+          "lost": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
           "goalDifference": -3,
           "points": 0
         }
