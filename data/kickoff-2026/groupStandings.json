@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-23T19:13:09Z",
-    "generatedAt": "2026-06-23T19:13:09Z",
+    "updatedAt": "2026-06-23T22:43:57Z",
+    "generatedAt": "2026-06-23T22:43:57Z",
     "url": null
   },
   "groups": [
@@ -595,26 +595,26 @@
         {
           "teamId": "england",
           "rank": 1,
-          "played": 1,
+          "played": 2,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
           "goalsFor": 4,
           "goalsAgainst": 2,
           "goalDifference": 2,
-          "points": 3
+          "points": 4
         },
         {
           "teamId": "ghana",
           "rank": 2,
-          "played": 1,
+          "played": 2,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
           "goalsFor": 1,
           "goalsAgainst": 0,
           "goalDifference": 1,
-          "points": 3
+          "points": 4
         },
         {
           "teamId": "panama",
