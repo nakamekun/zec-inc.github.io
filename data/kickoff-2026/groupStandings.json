@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-23T05:13:12Z",
-    "generatedAt": "2026-06-23T05:13:12Z",
+    "updatedAt": "2026-06-23T19:13:09Z",
+    "generatedAt": "2026-06-23T19:13:09Z",
     "url": null
   },
   "groups": [
@@ -540,8 +540,20 @@
       "group": "Group K",
       "teams": [
         {
-          "teamId": "colombia",
+          "teamId": "portugal",
           "rank": 1,
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "goalDifference": 5,
+          "points": 4
+        },
+        {
+          "teamId": "colombia",
+          "rank": 2,
           "played": 1,
           "won": 1,
           "drawn": 0,
@@ -550,18 +562,6 @@
           "goalsAgainst": 1,
           "goalDifference": 2,
           "points": 3
-        },
-        {
-          "teamId": "portugal",
-          "rank": 2,
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
-          "points": 1
         },
         {
           "teamId": "dr-congo",
@@ -578,13 +578,13 @@
         {
           "teamId": "uzbekistan",
           "rank": 4,
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "goalsFor": 1,
-          "goalsAgainst": 3,
-          "goalDifference": -2,
+          "goalsAgainst": 8,
+          "goalDifference": -7,
           "points": 0
         }
       ]

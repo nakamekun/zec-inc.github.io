@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-23T05:13:12Z",
-    "generatedAt": "2026-06-23T05:13:12Z",
+    "updatedAt": "2026-06-23T19:13:09Z",
+    "generatedAt": "2026-06-23T19:13:09Z",
     "url": null
   },
   "results": [
@@ -488,6 +488,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "algeria",
       "resultUpdatedAt": "2026-06-23T05:13:12Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-045",
+      "status": "finished",
+      "homeScore": 5,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "portugal",
+      "resultUpdatedAt": "2026-06-23T19:13:09Z",
       "source": "zec-auto"
     }
   ]
