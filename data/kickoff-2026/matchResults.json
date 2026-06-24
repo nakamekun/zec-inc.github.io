@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-24T04:53:09Z",
-    "generatedAt": "2026-06-24T04:53:09Z",
+    "updatedAt": "2026-06-24T21:13:08Z",
+    "generatedAt": "2026-06-24T21:13:08Z",
     "url": null
   },
   "results": [
@@ -532,6 +532,28 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "colombia",
       "resultUpdatedAt": "2026-06-24T04:53:09Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-049",
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "bosnia-and-herzegovina",
+      "resultUpdatedAt": "2026-06-24T21:13:08Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-050",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "switzerland",
+      "resultUpdatedAt": "2026-06-24T21:13:08Z",
       "source": "zec-auto"
     }
   ]

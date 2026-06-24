@@ -575,6 +575,30 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-048\", \"appMatchNumber\": 48, \"providerMatchNumber\": 48, \"appKickoffUTC\": \"2026-06-24T02:00:00Z\", \"providerKickoffUTC\": \"2026-06-24T02:00:00Z\", \"appHome\": \"Colombia\", \"appAway\": \"DR Congo\", \"providerHome\": \"Colombia\", \"providerAway\": \"Congo DR\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-24T04:53:09Z",
       "finalResultCaptured": true
+    },
+    "match-049": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-24T21:13:08Z",
+      "lastAttemptAt": "2026-06-24T21:13:08Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-049\", \"appMatchNumber\": 49, \"providerMatchNumber\": 52, \"appKickoffUTC\": \"2026-06-24T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-24T19:00:00Z\", \"appHome\": \"Bosnia & Herzegovina\", \"appAway\": \"Qatar\", \"providerHome\": \"Bosnia and Herzegovina\", \"providerAway\": \"Qatar\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-24T21:13:08Z",
+      "finalResultCaptured": true
+    },
+    "match-050": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-24T21:13:08Z",
+      "lastAttemptAt": "2026-06-24T21:13:08Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-050\", \"appMatchNumber\": 50, \"providerMatchNumber\": 51, \"appKickoffUTC\": \"2026-06-24T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-24T19:00:00Z\", \"appHome\": \"Switzerland\", \"appAway\": \"Canada\", \"providerHome\": \"Switzerland\", \"providerAway\": \"Canada\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-24T21:13:08Z",
+      "finalResultCaptured": true
     }
   }
 }
