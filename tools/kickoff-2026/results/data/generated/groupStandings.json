@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-24T04:53:09Z",
-    "generatedAt": "2026-06-24T04:53:09Z",
+    "updatedAt": "2026-06-24T21:13:09Z",
+    "generatedAt": "2026-06-24T21:13:09Z",
     "url": null
   },
   "groups": [
@@ -63,51 +63,51 @@
       "group": "Group B",
       "teams": [
         {
-          "teamId": "canada",
+          "teamId": "switzerland",
           "rank": 1,
-          "played": 2,
-          "won": 1,
+          "played": 3,
+          "won": 2,
           "drawn": 1,
           "lost": 0,
           "goalsFor": 7,
-          "goalsAgainst": 1,
-          "goalDifference": 6,
-          "points": 4
+          "goalsAgainst": 3,
+          "goalDifference": 4,
+          "points": 7
         },
         {
-          "teamId": "switzerland",
+          "teamId": "canada",
           "rank": 2,
-          "played": 2,
+          "played": 3,
           "won": 1,
           "drawn": 1,
-          "lost": 0,
-          "goalsFor": 5,
-          "goalsAgainst": 2,
-          "goalDifference": 3,
+          "lost": 1,
+          "goalsFor": 8,
+          "goalsAgainst": 3,
+          "goalDifference": 5,
           "points": 4
         },
         {
           "teamId": "bosnia-and-herzegovina",
           "rank": 3,
-          "played": 2,
-          "won": 0,
+          "played": 3,
+          "won": 1,
           "drawn": 1,
           "lost": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 5,
-          "goalDifference": -3,
-          "points": 1
+          "goalsFor": 5,
+          "goalsAgainst": 6,
+          "goalDifference": -1,
+          "points": 4
         },
         {
           "teamId": "qatar",
           "rank": 4,
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 1,
-          "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 7,
-          "goalDifference": -6,
+          "lost": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 10,
+          "goalDifference": -8,
           "points": 1
         }
       ]

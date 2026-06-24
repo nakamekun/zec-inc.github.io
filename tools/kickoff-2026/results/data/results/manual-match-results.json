@@ -575,6 +575,30 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-24T04:53:09Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-049",
+      "status": "fullTime",
+      "homeScore": 3,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "bosnia-and-herzegovina",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-24T21:13:08Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-050",
+      "status": "fullTime",
+      "homeScore": 2,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "switzerland",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-24T21:13:08Z",
+      "source": "zec-auto"
     }
   ]
 }
