@@ -563,6 +563,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-047\", \"appMatchNumber\": 47, \"providerMatchNumber\": 46, \"appKickoffUTC\": \"2026-06-23T23:00:00Z\", \"providerKickoffUTC\": \"2026-06-23T23:00:00Z\", \"appHome\": \"Panama\", \"appAway\": \"Croatia\", \"providerHome\": \"Panama\", \"providerAway\": \"Croatia\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-24T01:33:16Z",
       "finalResultCaptured": true
+    },
+    "match-048": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-24T04:53:09Z",
+      "lastAttemptAt": "2026-06-24T04:53:09Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-048\", \"appMatchNumber\": 48, \"providerMatchNumber\": 48, \"appKickoffUTC\": \"2026-06-24T02:00:00Z\", \"providerKickoffUTC\": \"2026-06-24T02:00:00Z\", \"appHome\": \"Colombia\", \"appAway\": \"DR Congo\", \"providerHome\": \"Colombia\", \"providerAway\": \"Congo DR\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-24T04:53:09Z",
+      "finalResultCaptured": true
     }
   }
 }
