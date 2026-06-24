@@ -551,6 +551,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-23T22:43:57Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-047",
+      "status": "fullTime",
+      "homeScore": 0,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "croatia",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-24T01:33:17Z",
+      "source": "zec-auto"
     }
   ]
 }

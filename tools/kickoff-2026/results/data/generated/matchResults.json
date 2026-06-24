@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-23T22:43:57Z",
-    "generatedAt": "2026-06-23T22:43:57Z",
+    "updatedAt": "2026-06-24T01:33:17Z",
+    "generatedAt": "2026-06-24T01:33:17Z",
     "url": null
   },
   "results": [
@@ -510,6 +510,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": null,
       "resultUpdatedAt": "2026-06-23T22:43:57Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-047",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "croatia",
+      "resultUpdatedAt": "2026-06-24T01:33:17Z",
       "source": "zec-auto"
     }
   ]
