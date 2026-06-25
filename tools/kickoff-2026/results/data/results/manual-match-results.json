@@ -647,6 +647,30 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-25T03:13:09Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-055",
+      "status": "fullTime",
+      "homeScore": 2,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "ecuador",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-25T22:13:07Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-056",
+      "status": "fullTime",
+      "homeScore": 0,
+      "awayScore": 2,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "ivory-coast",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-25T22:13:07Z",
+      "source": "zec-auto"
     }
   ]
 }

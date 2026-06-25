@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-25T03:13:09Z",
-    "generatedAt": "2026-06-25T03:13:09Z",
+    "updatedAt": "2026-06-25T22:13:07Z",
+    "generatedAt": "2026-06-25T22:13:07Z",
     "url": null
   },
   "groups": [
@@ -224,49 +224,49 @@
         {
           "teamId": "germany",
           "rank": 1,
-          "played": 2,
+          "played": 3,
           "won": 2,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 9,
-          "goalsAgainst": 2,
-          "goalDifference": 7,
+          "lost": 1,
+          "goalsFor": 10,
+          "goalsAgainst": 4,
+          "goalDifference": 6,
           "points": 6
         },
         {
           "teamId": "ivory-coast",
           "rank": 2,
-          "played": 2,
-          "won": 1,
+          "played": 3,
+          "won": 2,
           "drawn": 0,
           "lost": 1,
-          "goalsFor": 2,
+          "goalsFor": 4,
           "goalsAgainst": 2,
-          "goalDifference": 0,
-          "points": 3
+          "goalDifference": 2,
+          "points": 6
         },
         {
           "teamId": "ecuador",
           "rank": 3,
-          "played": 2,
-          "won": 0,
+          "played": 3,
+          "won": 1,
           "drawn": 1,
           "lost": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 1,
-          "goalDifference": -1,
-          "points": 1
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
+          "points": 4
         },
         {
           "teamId": "curacao",
           "rank": 4,
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 1,
-          "lost": 1,
+          "lost": 2,
           "goalsFor": 1,
-          "goalsAgainst": 7,
-          "goalDifference": -6,
+          "goalsAgainst": 9,
+          "goalDifference": -8,
           "points": 1
         }
       ]
