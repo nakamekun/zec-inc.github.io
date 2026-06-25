@@ -15,6 +15,9 @@ class WorkflowPushTests(unittest.TestCase):
         self.assertIn("group: kickoff-results-auto-update", workflow)
         self.assertIn("trigger_source:", workflow)
         self.assertIn("--summary-json \"$SUMMARY_JSON\"", workflow)
+        self.assertIn("python3 scripts/results/generate_match_display_overrides.py", workflow)
+        self.assertIn("data/generated/matchDisplayOverrides.json", workflow)
+        self.assertIn("data/kickoff-2026/matchDisplayOverrides.json", workflow)
 
     def test_push_step_compares_local_head_to_upstream(self):
         workflow = WORKFLOW_PATH.read_text(encoding="utf-8")
