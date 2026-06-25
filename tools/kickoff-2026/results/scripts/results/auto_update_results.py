@@ -24,6 +24,7 @@ DEFAULT_STATE_PATH = APP_DIR / "data" / "results" / "auto-update-state.json"
 DEFAULT_RESULT_FEED_PATH: Path | None = None
 GENERATE_MATCH_RESULTS = APP_DIR / "scripts" / "results" / "generate_match_results.py"
 GENERATE_GROUP_STANDINGS = APP_DIR / "scripts" / "results" / "generate_group_standings.py"
+GENERATE_MATCH_DISPLAY_OVERRIDES = APP_DIR / "scripts" / "results" / "generate_match_display_overrides.py"
 MATCH_CENTRE_URL = "https://www.fifa.com/en/match-centre"
 FIRST_CHECK_DELAY = timedelta(hours=2, minutes=10)
 FINAL_CHECK_DELAY = timedelta(hours=3)
@@ -309,6 +310,7 @@ def update_state(
 def run_generators() -> None:
     subprocess.run([sys.executable, str(GENERATE_MATCH_RESULTS)], cwd=APP_DIR, check=True)
     subprocess.run([sys.executable, str(GENERATE_GROUP_STANDINGS)], cwd=APP_DIR, check=True)
+    subprocess.run([sys.executable, str(GENERATE_MATCH_DISPLAY_OVERRIDES)], cwd=APP_DIR, check=True)
 
 
 def print_summary(

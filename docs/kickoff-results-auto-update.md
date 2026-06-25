@@ -4,8 +4,9 @@ The `zec-inc.github.io` repository owns both the automation and the public JSON 
 
 - `https://zec-inc.jp/data/kickoff-2026/matchResults.json`
 - `https://zec-inc.jp/data/kickoff-2026/groupStandings.json`
+- `https://zec-inc.jp/data/kickoff-2026/matchDisplayOverrides.json`
 
-The iOS app is unchanged. It continues to read the two remote JSON files above.
+The iOS app reads the remote JSON files above. The base bundled schedule remains app-local; knockout matchup cards are reflected through `matchDisplayOverrides.json`.
 
 ## Layout
 
@@ -18,16 +19,19 @@ Important files:
 - `scripts/results/auto_update_results.py`
 - `scripts/results/generate_match_results.py`
 - `scripts/results/generate_group_standings.py`
+- `scripts/results/generate_match_display_overrides.py`
 - `scripts/results/deploy_generated_results.py`
 - `scripts/results/providers/fifa_match_centre_provider.py`
 - `data/results/match-id-map.json`
 - `data/results/manual-match-results.json`
+- `data/results/manual-match-display-overrides.json`
 - `data/results/auto-update-state.json`
 
 Generated intermediate files stay under `tools/kickoff-2026/results/data/generated/`. The public files are always:
 
 - `data/kickoff-2026/matchResults.json`
 - `data/kickoff-2026/groupStandings.json`
+- `data/kickoff-2026/matchDisplayOverrides.json`
 
 ## Schedule
 
@@ -45,6 +49,8 @@ The updater checks matches from `match-id-map.json` and attempts result capture 
 GitHub Actions schedule is a best-effort trigger, not a guaranteed timer. It remains enabled, but it is not the only trigger. A second external cron path should dispatch the same workflow through GitHub's REST API. The updater is idempotent and commits only when JSON or state changes.
 
 The workflow has a concurrency group (`kickoff-results-auto-update`) so scheduled and external dispatches can safely overlap. Already finished matches are skipped unless `force=true` is passed.
+
+After results and standings generation, the workflow also regenerates `matchDisplayOverrides.json`. It resolves knockout placeholders such as `winner-group-a` and `runner-up-group-b` from the current group standings and publishes only matchups whose placeholder sides are fully resolved. Third-place matchup slots can be added through `manual-match-display-overrides.json` once the assignment is confirmed.
 
 ## External Cron
 
@@ -165,6 +171,7 @@ python3 tools/kickoff-2026/results/scripts/results/auto_update_results.py --dry-
 python3 tools/kickoff-2026/results/scripts/results/auto_update_results.py
 python3 tools/kickoff-2026/results/scripts/results/generate_match_results.py
 python3 tools/kickoff-2026/results/scripts/results/generate_group_standings.py
+python3 tools/kickoff-2026/results/scripts/results/generate_match_display_overrides.py
 python3 tools/kickoff-2026/results/scripts/results/deploy_generated_results.py --no-push --no-curl
 KICKOFF_WORKFLOW_DISPATCH_TOKEN_FILE=/Users/kt/.config/zec/kickoff-workflow-dispatch-token python3 tools/kickoff-2026/results/scripts/results/dispatch_workflow.py --dry-run
 python3 -m unittest discover -s tools/kickoff-2026/results/tests -p 'test_*.py'
@@ -172,4 +179,6 @@ python3 -m unittest discover -s tools/kickoff-2026/results/tests -p 'test_*.py'
 
 ## Fallback
 
-Manual input is an emergency override only. If the provider breaks because the source page structure changes, update `tools/kickoff-2026/results/data/results/manual-match-results.json`, regenerate both JSON files, run the deploy script, and commit the result. Store only factual values: match IDs, scores, penalty scores, winner team IDs, statuses, and timestamps. Do not store official copy, images, logos, or page text.
+Manual input is an emergency override only. If the provider breaks because the source page structure changes, update `tools/kickoff-2026/results/data/results/manual-match-results.json`, regenerate the generated JSON files, run the deploy script, and commit the result. Store only factual values: match IDs, scores, penalty scores, winner team IDs, statuses, and timestamps. Do not store official copy, images, logos, or page text.
+
+For knockout matchup cards that cannot be inferred from group rank placeholders, update `tools/kickoff-2026/results/data/results/manual-match-display-overrides.json` with app team IDs and regenerate `matchDisplayOverrides.json`.

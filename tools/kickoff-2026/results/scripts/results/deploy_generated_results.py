@@ -16,16 +16,19 @@ APP_DIR = Path(__file__).resolve().parents[2]
 REPO_ROOT = APP_DIR.parents[2]
 GENERATED_MATCH_RESULTS = APP_DIR / "data" / "generated" / "matchResults.json"
 GENERATED_GROUP_STANDINGS = APP_DIR / "data" / "generated" / "groupStandings.json"
+GENERATED_MATCH_DISPLAY_OVERRIDES = APP_DIR / "data" / "generated" / "matchDisplayOverrides.json"
 PUBLIC_MATCH_RESULTS = Path("data/kickoff-2026/matchResults.json")
 PUBLIC_GROUP_STANDINGS = Path("data/kickoff-2026/groupStandings.json")
-ALLOWED_PUBLIC_PATHS = {str(PUBLIC_MATCH_RESULTS), str(PUBLIC_GROUP_STANDINGS)}
+PUBLIC_MATCH_DISPLAY_OVERRIDES = Path("data/kickoff-2026/matchDisplayOverrides.json")
+ALLOWED_PUBLIC_PATHS = {str(PUBLIC_MATCH_RESULTS), str(PUBLIC_GROUP_STANDINGS), str(PUBLIC_MATCH_DISPLAY_OVERRIDES)}
 ALLOWED_TOOL_PATH_PREFIXES = (
     "tools/kickoff-2026/results/data/results/",
     "tools/kickoff-2026/results/data/generated/",
 )
 MATCH_RESULTS_URL = "https://zec-inc.jp/data/kickoff-2026/matchResults.json"
 GROUP_STANDINGS_URL = "https://zec-inc.jp/data/kickoff-2026/groupStandings.json"
-COMMIT_MESSAGE = "Update Kickoff 2026 results and group standings"
+MATCH_DISPLAY_OVERRIDES_URL = "https://zec-inc.jp/data/kickoff-2026/matchDisplayOverrides.json"
+COMMIT_MESSAGE = "Update Kickoff 2026 remote data"
 
 
 def validate_json(path: Path) -> None:
@@ -65,19 +68,22 @@ def ensure_no_unexpected_changes(repo: Path) -> None:
 def deploy_files(repo: Path) -> None:
     validate_json(GENERATED_MATCH_RESULTS)
     validate_json(GENERATED_GROUP_STANDINGS)
+    validate_json(GENERATED_MATCH_DISPLAY_OVERRIDES)
     target_dir = repo / "data" / "kickoff-2026"
     if not target_dir.is_dir():
         raise FileNotFoundError(f"missing target directory: {target_dir}")
     ensure_no_unexpected_changes(repo)
     shutil.copyfile(GENERATED_MATCH_RESULTS, repo / PUBLIC_MATCH_RESULTS)
     shutil.copyfile(GENERATED_GROUP_STANDINGS, repo / PUBLIC_GROUP_STANDINGS)
+    shutil.copyfile(GENERATED_MATCH_DISPLAY_OVERRIDES, repo / PUBLIC_MATCH_DISPLAY_OVERRIDES)
     validate_json(repo / PUBLIC_MATCH_RESULTS)
     validate_json(repo / PUBLIC_GROUP_STANDINGS)
+    validate_json(repo / PUBLIC_MATCH_DISPLAY_OVERRIDES)
     ensure_no_unexpected_changes(repo)
 
 
 def commit_and_push(repo: Path, push: bool) -> str | None:
-    run_git(repo, ["add", str(PUBLIC_MATCH_RESULTS), str(PUBLIC_GROUP_STANDINGS)])
+    run_git(repo, ["add", str(PUBLIC_MATCH_RESULTS), str(PUBLIC_GROUP_STANDINGS), str(PUBLIC_MATCH_DISPLAY_OVERRIDES)])
     diff = run_git(repo, ["diff", "--cached", "--quiet"], check=False)
     if diff.returncode == 0:
         print("No public JSON diff; skipping deploy commit.")
@@ -119,6 +125,7 @@ def main() -> None:
     if not args.no_curl:
         curl_check(MATCH_RESULTS_URL)
         curl_check(GROUP_STANDINGS_URL)
+        curl_check(MATCH_DISPLAY_OVERRIDES_URL)
 
 
 if __name__ == "__main__":

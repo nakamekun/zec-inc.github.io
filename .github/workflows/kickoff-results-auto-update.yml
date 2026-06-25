@@ -53,6 +53,7 @@ jobs:
             FORCE_ARG="--force"
           fi
           python3 scripts/results/auto_update_results.py ${FORCE_ARG} --summary-json "$SUMMARY_JSON"
+          python3 scripts/results/generate_match_display_overrides.py
 
       - name: Test generated JSON and tools
         if: env.AUTO_UPDATE_ENABLED == 'true'
@@ -60,8 +61,10 @@ jobs:
         run: |
           python3 -m json.tool data/generated/matchResults.json >/dev/null
           python3 -m json.tool data/generated/groupStandings.json >/dev/null
+          python3 -m json.tool data/generated/matchDisplayOverrides.json >/dev/null
           python3 -m json.tool ../../..//data/kickoff-2026/matchResults.json >/dev/null
           python3 -m json.tool ../../..//data/kickoff-2026/groupStandings.json >/dev/null
+          python3 -m json.tool ../../..//data/kickoff-2026/matchDisplayOverrides.json >/dev/null
           python3 -m unittest discover -s tests -p 'test_*.py'
 
       - name: Clean Python bytecode caches
@@ -82,15 +85,18 @@ jobs:
         run: |
           git add data/kickoff-2026/matchResults.json \
             data/kickoff-2026/groupStandings.json \
+            data/kickoff-2026/matchDisplayOverrides.json \
             tools/kickoff-2026/results/data/results/manual-match-results.json \
+            tools/kickoff-2026/results/data/results/manual-match-display-overrides.json \
             tools/kickoff-2026/results/data/results/auto-update-state.json \
             tools/kickoff-2026/results/data/generated/matchResults.json \
-            tools/kickoff-2026/results/data/generated/groupStandings.json
+            tools/kickoff-2026/results/data/generated/groupStandings.json \
+            tools/kickoff-2026/results/data/generated/matchDisplayOverrides.json
           if git diff --cached --quiet; then
             echo "No JSON or tool state changes to commit."
           else
             if git diff --cached --name-only | grep -q '^data/kickoff-2026/'; then
-              git commit -m "Update Kickoff 2026 results and group standings"
+              git commit -m "Update Kickoff 2026 remote tournament data"
             else
               git commit -m "Update Kickoff 2026 auto result state"
             fi

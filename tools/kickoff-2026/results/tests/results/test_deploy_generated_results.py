@@ -31,7 +31,17 @@ class DeployGeneratedResultsTests(unittest.TestCase):
         git(git_root, "config", "user.name", "Test")
         (repo / "data" / "kickoff-2026" / "matchResults.json").write_text('{"source":{},"results":[]}\n', encoding="utf-8")
         (repo / "data" / "kickoff-2026" / "groupStandings.json").write_text('{"source":{},"groups":[]}\n', encoding="utf-8")
-        git(git_root, "add", "data/kickoff-2026/matchResults.json", "data/kickoff-2026/groupStandings.json")
+        (repo / "data" / "kickoff-2026" / "matchDisplayOverrides.json").write_text(
+            '{"source":{},"matchOverrides":{}}\n',
+            encoding="utf-8",
+        )
+        git(
+            git_root,
+            "add",
+            "data/kickoff-2026/matchResults.json",
+            "data/kickoff-2026/groupStandings.json",
+            "data/kickoff-2026/matchDisplayOverrides.json",
+        )
         git(git_root, "commit", "-m", "initial")
         return repo
 
@@ -45,14 +55,17 @@ class DeployGeneratedResultsTests(unittest.TestCase):
             bad.write_text('{"source":', encoding="utf-8")
             original_match = deploy_generated_results.GENERATED_MATCH_RESULTS
             original_group = deploy_generated_results.GENERATED_GROUP_STANDINGS
+            original_overrides = deploy_generated_results.GENERATED_MATCH_DISPLAY_OVERRIDES
             try:
                 deploy_generated_results.GENERATED_MATCH_RESULTS = good
                 deploy_generated_results.GENERATED_GROUP_STANDINGS = bad
+                deploy_generated_results.GENERATED_MATCH_DISPLAY_OVERRIDES = good
                 with self.assertRaises(json.JSONDecodeError):
                     deploy_generated_results.deploy_files(repo)
             finally:
                 deploy_generated_results.GENERATED_MATCH_RESULTS = original_match
                 deploy_generated_results.GENERATED_GROUP_STANDINGS = original_group
+                deploy_generated_results.GENERATED_MATCH_DISPLAY_OVERRIDES = original_overrides
 
     def test_deploy_stages_only_target_files(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -60,24 +73,33 @@ class DeployGeneratedResultsTests(unittest.TestCase):
             repo = self.make_repo(root)
             match = root / "matchResults.json"
             standings = root / "groupStandings.json"
+            overrides = root / "matchDisplayOverrides.json"
             match.write_text('{"source":{"name":"new"},"results":[]}\n', encoding="utf-8")
             standings.write_text('{"source":{"name":"new"},"groups":[]}\n', encoding="utf-8")
+            overrides.write_text('{"source":{"name":"new"},"matchOverrides":{}}\n', encoding="utf-8")
             (repo / ".DS_Store").write_text("ignored", encoding="utf-8")
             original_match = deploy_generated_results.GENERATED_MATCH_RESULTS
             original_group = deploy_generated_results.GENERATED_GROUP_STANDINGS
+            original_overrides = deploy_generated_results.GENERATED_MATCH_DISPLAY_OVERRIDES
             try:
                 deploy_generated_results.GENERATED_MATCH_RESULTS = match
                 deploy_generated_results.GENERATED_GROUP_STANDINGS = standings
+                deploy_generated_results.GENERATED_MATCH_DISPLAY_OVERRIDES = overrides
                 deploy_generated_results.deploy_files(repo)
                 deploy_generated_results.commit_and_push(repo, push=False)
                 changed = git(repo, "show", "--name-only", "--format=", "HEAD").splitlines()
                 self.assertEqual(
                     sorted(changed),
-                    ["data/kickoff-2026/groupStandings.json", "data/kickoff-2026/matchResults.json"],
+                    [
+                        "data/kickoff-2026/groupStandings.json",
+                        "data/kickoff-2026/matchDisplayOverrides.json",
+                        "data/kickoff-2026/matchResults.json",
+                    ],
                 )
             finally:
                 deploy_generated_results.GENERATED_MATCH_RESULTS = original_match
                 deploy_generated_results.GENERATED_GROUP_STANDINGS = original_group
+                deploy_generated_results.GENERATED_MATCH_DISPLAY_OVERRIDES = original_overrides
 
 
 if __name__ == "__main__":
