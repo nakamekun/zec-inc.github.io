@@ -50,7 +50,7 @@ GitHub Actions schedule is a best-effort trigger, not a guaranteed timer. It rem
 
 The workflow has a concurrency group (`kickoff-results-auto-update`) so scheduled and external dispatches can safely overlap. Already finished matches are skipped unless `force=true` is passed.
 
-After results and standings generation, the workflow also regenerates `matchDisplayOverrides.json`. It resolves knockout placeholders such as `winner-group-a` and `runner-up-group-b` from the current group standings and publishes only matchups whose placeholder sides are fully resolved. Third-place matchup slots can be added through `manual-match-display-overrides.json` once the assignment is confirmed.
+After results and standings generation, the workflow also regenerates `matchDisplayOverrides.json`. It first reads the FIFA calendar match API and matches knockout fixtures by match number and kickoff time, then maps FIFA Home/Away team names to the app team IDs. If a fixture is not present in the FIFA calendar response yet, it falls back to resolving simple placeholders such as `winner-group-a` and `runner-up-group-b` from the current group standings. Third-place matchup slots can still be added through `manual-match-display-overrides.json` if needed.
 
 ## External Cron
 
