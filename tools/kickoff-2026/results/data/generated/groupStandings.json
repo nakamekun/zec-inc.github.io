@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-24T21:13:09Z",
-    "generatedAt": "2026-06-24T21:13:09Z",
+    "updatedAt": "2026-06-25T00:13:09Z",
+    "generatedAt": "2026-06-25T00:13:09Z",
     "url": null
   },
   "groups": [
@@ -118,49 +118,49 @@
         {
           "teamId": "brazil",
           "rank": 1,
-          "played": 2,
-          "won": 1,
+          "played": 3,
+          "won": 2,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 4,
+          "goalsFor": 7,
           "goalsAgainst": 1,
-          "goalDifference": 3,
-          "points": 4
+          "goalDifference": 6,
+          "points": 7
         },
         {
           "teamId": "morocco",
           "rank": 2,
-          "played": 2,
-          "won": 1,
+          "played": 3,
+          "won": 2,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 2,
-          "goalsAgainst": 1,
-          "goalDifference": 1,
-          "points": 4
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "goalDifference": 3,
+          "points": 7
         },
         {
           "teamId": "scotland",
           "rank": 3,
-          "played": 2,
+          "played": 3,
           "won": 1,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
+          "goalsAgainst": 4,
+          "goalDifference": -3,
           "points": 3
         },
         {
           "teamId": "haiti",
           "rank": 4,
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 0,
-          "lost": 2,
-          "goalsFor": 0,
-          "goalsAgainst": 4,
-          "goalDifference": -4,
+          "lost": 3,
+          "goalsFor": 2,
+          "goalsAgainst": 8,
+          "goalDifference": -6,
           "points": 0
         }
       ]
