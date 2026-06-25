@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-25T00:13:09Z",
-    "generatedAt": "2026-06-25T00:13:09Z",
+    "updatedAt": "2026-06-25T03:13:09Z",
+    "generatedAt": "2026-06-25T03:13:09Z",
     "url": null
   },
   "groups": [
@@ -12,49 +12,49 @@
         {
           "teamId": "mexico",
           "rank": 1,
-          "played": 2,
-          "won": 2,
+          "played": 3,
+          "won": 3,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 3,
+          "goalsFor": 6,
           "goalsAgainst": 0,
-          "goalDifference": 3,
-          "points": 6
+          "goalDifference": 6,
+          "points": 9
         },
         {
-          "teamId": "south-korea",
+          "teamId": "south-africa",
           "rank": 2,
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "drawn": 0,
-          "lost": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0,
-          "points": 3
-        },
-        {
-          "teamId": "czech-republic",
-          "rank": 3,
-          "played": 2,
-          "won": 0,
           "drawn": 1,
           "lost": 1,
           "goalsFor": 2,
           "goalsAgainst": 3,
           "goalDifference": -1,
-          "points": 1
+          "points": 4
         },
         {
-          "teamId": "south-africa",
+          "teamId": "south-korea",
+          "rank": 3,
+          "played": 3,
+          "won": 1,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "goalDifference": -1,
+          "points": 3
+        },
+        {
+          "teamId": "czech-republic",
           "rank": 4,
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 1,
-          "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 3,
-          "goalDifference": -2,
+          "lost": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 6,
+          "goalDifference": -4,
           "points": 1
         }
       ]
