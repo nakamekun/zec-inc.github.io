@@ -1,9 +1,16 @@
 {
   "source": {
-    "name": "Manual match display overrides",
-    "updatedAt": "2026-06-15T00:00:00Z",
-    "generatedAt": "2026-06-15T00:00:00Z",
-    "url": null
+    "name": "Kickoff Bell match display overrides",
+    "updatedAt": "2026-06-25T22:16:03Z",
+    "generatedAt": "2026-06-25T22:16:03Z",
+    "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures"
   },
-  "matchOverrides": {}
+  "matchOverrides": {
+    "match-073": {
+      "homeTeamId": "south-africa",
+      "awayTeamId": "canada",
+      "isConfirmed": true,
+      "updatedAt": "2026-06-25T22:16:03Z"
+    }
+  }
 }
