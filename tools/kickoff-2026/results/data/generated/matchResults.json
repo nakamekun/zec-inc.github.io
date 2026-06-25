@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-25T00:13:08Z",
-    "generatedAt": "2026-06-25T00:13:08Z",
+    "updatedAt": "2026-06-25T03:13:09Z",
+    "generatedAt": "2026-06-25T03:13:09Z",
     "url": null
   },
   "results": [
@@ -576,6 +576,28 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "brazil",
       "resultUpdatedAt": "2026-06-25T00:13:08Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-053",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 3,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "mexico",
+      "resultUpdatedAt": "2026-06-25T03:13:09Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-054",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "south-africa",
+      "resultUpdatedAt": "2026-06-25T03:13:09Z",
       "source": "zec-auto"
     }
   ]
