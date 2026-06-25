@@ -647,6 +647,30 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-054\", \"appMatchNumber\": 54, \"providerMatchNumber\": 54, \"appKickoffUTC\": \"2026-06-25T01:00:00Z\", \"providerKickoffUTC\": \"2026-06-25T01:00:00Z\", \"appHome\": \"South Africa\", \"appAway\": \"South Korea\", \"providerHome\": \"South Africa\", \"providerAway\": \"Korea Republic\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-25T03:13:09Z",
       "finalResultCaptured": true
+    },
+    "match-055": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-25T22:13:07Z",
+      "lastAttemptAt": "2026-06-25T22:13:07Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-055\", \"appMatchNumber\": 55, \"providerMatchNumber\": 56, \"appKickoffUTC\": \"2026-06-25T20:00:00Z\", \"providerKickoffUTC\": \"2026-06-25T20:00:00Z\", \"appHome\": \"Ecuador\", \"appAway\": \"Germany\", \"providerHome\": \"Ecuador\", \"providerAway\": \"Germany\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-25T22:13:07Z",
+      "finalResultCaptured": true
+    },
+    "match-056": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-25T22:13:07Z",
+      "lastAttemptAt": "2026-06-25T22:13:07Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-056\", \"appMatchNumber\": 56, \"providerMatchNumber\": 55, \"appKickoffUTC\": \"2026-06-25T20:00:00Z\", \"providerKickoffUTC\": \"2026-06-25T20:00:00Z\", \"appHome\": \"Curaçao\", \"appAway\": \"Ivory Coast\", \"providerHome\": \"Curaçao\", \"providerAway\": \"Côte d'Ivoire\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-25T22:13:07Z",
+      "finalResultCaptured": true
     }
   }
 }
