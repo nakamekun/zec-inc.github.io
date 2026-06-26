@@ -719,6 +719,30 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-26T04:23:10Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-061",
+      "status": "fullTime",
+      "homeScore": 1,
+      "awayScore": 4,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "france",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-26T21:38:10Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-062",
+      "status": "fullTime",
+      "homeScore": 5,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "senegal",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-26T21:38:10Z",
+      "source": "zec-auto"
     }
   ]
 }
