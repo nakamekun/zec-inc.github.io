@@ -1,56 +1,56 @@
 {
   "source": {
     "name": "Kickoff Bell match display overrides",
-    "updatedAt": "2026-06-26T01:13:09Z",
-    "generatedAt": "2026-06-26T01:13:09Z",
+    "updatedAt": "2026-06-26T04:23:11Z",
+    "generatedAt": "2026-06-26T04:23:11Z",
     "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures"
   },
   "matchOverrides": {
     "match-073": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T01:13:09Z",
+      "updatedAt": "2026-06-26T04:23:11Z",
       "homeTeamId": "south-africa",
       "awayTeamId": "canada"
     },
     "match-075": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T01:13:09Z",
+      "updatedAt": "2026-06-26T04:23:11Z",
       "homeTeamId": "netherlands",
       "awayTeamId": "morocco"
     },
     "match-076": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T01:13:09Z",
+      "updatedAt": "2026-06-26T04:23:11Z",
       "homeTeamId": "brazil",
       "awayTeamId": "japan"
     },
     "match-078": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T01:13:09Z",
+      "updatedAt": "2026-06-26T04:23:11Z",
       "homeTeamId": "ivory-coast",
       "awayTeamId": "norway"
     },
     "match-083": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T01:13:09Z",
+      "updatedAt": "2026-06-26T04:23:11Z",
       "homeTeamId": "portugal",
       "awayTeamId": "ghana"
     },
     "match-084": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T01:13:09Z",
+      "updatedAt": "2026-06-26T04:23:11Z",
       "homeTeamId": "spain",
       "awayTeamId": "austria"
     },
     "match-086": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T01:13:09Z",
+      "updatedAt": "2026-06-26T04:23:11Z",
       "homeTeamId": "argentina",
       "awayTeamId": "uruguay"
     },
     "match-088": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T01:13:09Z",
+      "updatedAt": "2026-06-26T04:23:11Z",
       "homeTeamId": "australia",
       "awayTeamId": "iran"
     }
