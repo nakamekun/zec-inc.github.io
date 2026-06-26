@@ -24,35 +24,11 @@
       "homeTeamId": "brazil",
       "awayTeamId": "japan"
     },
-    "match-078": {
+    "match-081": {
       "isConfirmed": true,
       "updatedAt": "2026-06-26T04:23:11Z",
-      "homeTeamId": "ivory-coast",
-      "awayTeamId": "norway"
-    },
-    "match-083": {
-      "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
-      "homeTeamId": "portugal",
-      "awayTeamId": "ghana"
-    },
-    "match-084": {
-      "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
-      "homeTeamId": "spain",
-      "awayTeamId": "austria"
-    },
-    "match-086": {
-      "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
-      "homeTeamId": "argentina",
-      "awayTeamId": "uruguay"
-    },
-    "match-088": {
-      "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
-      "homeTeamId": "australia",
-      "awayTeamId": "iran"
+      "homeTeamId": "usa",
+      "awayTeamId": "bosnia-and-herzegovina"
     }
   }
 }

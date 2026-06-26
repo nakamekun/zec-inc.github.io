@@ -41,6 +41,13 @@ MATCH_MAP = {
             "awayTeamName": "Canada",
         },
         {
+            "matchId": "match-081",
+            "matchNumber": 81,
+            "kickoffUTC": "2026-07-02T00:00:00Z",
+            "homeTeamId": "winner-group-d",
+            "awayTeamId": "third-place-group-b-e-f-i-j",
+        },
+        {
             "matchId": "match-013",
             "matchNumber": 13,
             "kickoffUTC": "2026-06-15T16:00:00Z",
@@ -48,6 +55,24 @@ MATCH_MAP = {
             "homeTeamName": "Spain",
             "awayTeamId": "cape-verde",
             "awayTeamName": "Cape Verde",
+        },
+        {
+            "matchId": "match-014",
+            "matchNumber": 14,
+            "kickoffUTC": "2026-06-15T19:00:00Z",
+            "homeTeamId": "usa",
+            "homeTeamName": "USA",
+            "awayTeamId": "bosnia-and-herzegovina",
+            "awayTeamName": "Bosnia and Herzegovina",
+        },
+        {
+            "matchId": "match-015",
+            "matchNumber": 15,
+            "kickoffUTC": "2026-06-15T22:00:00Z",
+            "homeTeamId": "south-africa",
+            "homeTeamName": "South Africa",
+            "awayTeamId": "canada",
+            "awayTeamName": "Canada",
         },
     ]
 }
@@ -57,10 +82,10 @@ FIFA_CALENDAR = {
         {
             "IdCompetition": "17",
             "IdSeason": "285023",
-            "MatchNumber": 74,
-            "Date": "2026-06-29T20:30:00Z",
-            "Home": {"TeamName": [{"Description": "Spain"}], "ShortClubName": "Spain"},
-            "Away": {"TeamName": [{"Description": "Canada"}], "ShortClubName": "Canada"},
+            "MatchNumber": 81,
+            "Date": "2026-07-02T00:00:00Z",
+            "Home": {"TeamName": [{"Description": "USA"}], "ShortClubName": "USA"},
+            "Away": {"TeamName": [{"Description": "Bosnia and Herzegovina"}], "ShortClubName": "Bosnia and Herzegovina"},
         },
         {
             "IdCompetition": "17",
@@ -69,6 +94,14 @@ FIFA_CALENDAR = {
             "Date": "2026-06-28T19:00:00Z",
             "Home": {"TeamName": [{"Description": "South Africa"}], "ShortClubName": "South Africa"},
             "Away": {"TeamName": [{"Description": "Canada"}], "ShortClubName": "Canada"},
+        },
+        {
+            "IdCompetition": "17",
+            "IdSeason": "285023",
+            "MatchNumber": 74,
+            "Date": "2026-06-29T20:30:00Z",
+            "Home": {"TeamName": [{"Description": "Germany"}], "ShortClubName": "Germany"},
+            "Away": None,
         },
     ]
 }
@@ -119,24 +152,20 @@ class GenerateMatchDisplayOverridesTests(unittest.TestCase):
             FIFA_CALENDAR,
         )
 
-    def test_resolves_winner_and_runner_up_placeholders(self):
+    def test_standings_do_not_generate_knockout_overrides(self):
         payload = self.generate()
-        match_073 = payload["matchOverrides"]["match-073"]
-        self.assertEqual(match_073["homeTeamId"], "south-africa")
-        self.assertEqual(match_073["awayTeamId"], "canada")
-        self.assertTrue(match_073["isConfirmed"])
-        self.assertEqual(match_073["updatedAt"], "2026-06-25T22:13:07Z")
+        self.assertEqual(payload["matchOverrides"], {})
 
-    def test_skips_unresolved_third_place_placeholder_matchups(self):
-        payload = self.generate()
+    def test_skips_official_fixtures_without_both_teams(self):
+        payload = self.generate_with_fifa()
         self.assertNotIn("match-074", payload["matchOverrides"])
 
-    def test_fifa_calendar_direct_matchup_wins_over_standings_fallback(self):
+    def test_fifa_calendar_direct_matchup_generates_override(self):
         payload = self.generate_with_fifa()
-        match_074 = payload["matchOverrides"]["match-074"]
-        self.assertEqual(match_074["homeTeamId"], "spain")
-        self.assertEqual(match_074["awayTeamId"], "canada")
-        self.assertTrue(match_074["isConfirmed"])
+        match_081 = payload["matchOverrides"]["match-081"]
+        self.assertEqual(match_081["homeTeamId"], "usa")
+        self.assertEqual(match_081["awayTeamId"], "bosnia-and-herzegovina")
+        self.assertTrue(match_081["isConfirmed"])
 
     def test_fifa_calendar_can_confirm_runner_up_matchup_directly(self):
         payload = self.generate_with_fifa()
