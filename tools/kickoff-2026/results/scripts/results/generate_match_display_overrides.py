@@ -138,16 +138,19 @@ def fifa_calendar_overrides(
         candidate = choose_fifa_candidate(match, results)
         if candidate is None:
             continue
-        home_team_id = resolve_provider_team_id(candidate.get("Home"), teams_by_name)
-        away_team_id = resolve_provider_team_id(candidate.get("Away"), teams_by_name)
-        if not home_team_id or not away_team_id:
-            continue
-        overrides[match_id] = {
+        override: dict[str, Any] = {
             "isConfirmed": True,
             "updatedAt": updated_at,
-            "homeTeamId": home_team_id,
-            "awayTeamId": away_team_id,
         }
+        home_team_id = resolve_provider_team_id(candidate.get("Home"), teams_by_name)
+        if home_team_id:
+            override["homeTeamId"] = home_team_id
+        away_team_id = resolve_provider_team_id(candidate.get("Away"), teams_by_name)
+        if away_team_id:
+            override["awayTeamId"] = away_team_id
+        if "homeTeamId" not in override and "awayTeamId" not in override:
+            continue
+        overrides[match_id] = override
     return overrides
 
 
