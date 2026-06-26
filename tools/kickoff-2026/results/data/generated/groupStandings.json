@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-26T04:23:11Z",
-    "generatedAt": "2026-06-26T04:23:11Z",
+    "updatedAt": "2026-06-26T21:38:10Z",
+    "generatedAt": "2026-06-26T21:38:10Z",
     "url": null
   },
   "groups": [
@@ -436,49 +436,49 @@
         {
           "teamId": "france",
           "rank": 1,
-          "played": 2,
-          "won": 2,
+          "played": 3,
+          "won": 3,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 6,
-          "goalsAgainst": 1,
-          "goalDifference": 5,
-          "points": 6
+          "goalsFor": 10,
+          "goalsAgainst": 2,
+          "goalDifference": 8,
+          "points": 9
         },
         {
           "teamId": "norway",
           "rank": 2,
-          "played": 2,
+          "played": 3,
           "won": 2,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 7,
-          "goalsAgainst": 3,
-          "goalDifference": 4,
+          "lost": 1,
+          "goalsFor": 8,
+          "goalsAgainst": 7,
+          "goalDifference": 1,
           "points": 6
         },
         {
           "teamId": "senegal",
           "rank": 3,
-          "played": 2,
-          "won": 0,
+          "played": 3,
+          "won": 1,
           "drawn": 0,
           "lost": 2,
-          "goalsFor": 3,
+          "goalsFor": 8,
           "goalsAgainst": 6,
-          "goalDifference": -3,
-          "points": 0
+          "goalDifference": 2,
+          "points": 3
         },
         {
           "teamId": "iraq",
           "rank": 4,
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 0,
-          "lost": 2,
+          "lost": 3,
           "goalsFor": 1,
-          "goalsAgainst": 7,
-          "goalDifference": -6,
+          "goalsAgainst": 12,
+          "goalDifference": -11,
           "points": 0
         }
       ]

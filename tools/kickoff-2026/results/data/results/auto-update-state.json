@@ -719,6 +719,30 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-060\", \"appMatchNumber\": 60, \"providerMatchNumber\": 60, \"appKickoffUTC\": \"2026-06-26T02:00:00Z\", \"providerKickoffUTC\": \"2026-06-26T02:00:00Z\", \"appHome\": \"Paraguay\", \"appAway\": \"Australia\", \"providerHome\": \"Paraguay\", \"providerAway\": \"Australia\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-26T04:23:10Z",
       "finalResultCaptured": true
+    },
+    "match-061": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-26T21:38:10Z",
+      "lastAttemptAt": "2026-06-26T21:38:10Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-061\", \"appMatchNumber\": 61, \"providerMatchNumber\": 61, \"appKickoffUTC\": \"2026-06-26T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-26T19:00:00Z\", \"appHome\": \"Norway\", \"appAway\": \"France\", \"providerHome\": \"Norway\", \"providerAway\": \"France\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-26T21:38:10Z",
+      "finalResultCaptured": true
+    },
+    "match-062": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-26T21:38:10Z",
+      "lastAttemptAt": "2026-06-26T21:38:10Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-062\", \"appMatchNumber\": 62, \"providerMatchNumber\": 62, \"appKickoffUTC\": \"2026-06-26T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-26T19:00:00Z\", \"appHome\": \"Senegal\", \"appAway\": \"Iraq\", \"providerHome\": \"Senegal\", \"providerAway\": \"Iraq\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-26T21:38:10Z",
+      "finalResultCaptured": true
     }
   }
 }

@@ -1,63 +1,69 @@
 {
   "source": {
     "name": "Kickoff Bell match display overrides",
-    "updatedAt": "2026-06-26T04:23:11Z",
-    "generatedAt": "2026-06-26T04:23:11Z",
+    "updatedAt": "2026-06-26T21:38:10Z",
+    "generatedAt": "2026-06-26T21:38:10Z",
     "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures"
   },
   "matchOverrides": {
     "match-073": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
+      "updatedAt": "2026-06-26T21:38:10Z",
       "homeTeamId": "south-africa",
       "awayTeamId": "canada"
     },
     "match-074": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
+      "updatedAt": "2026-06-26T21:38:10Z",
       "homeTeamId": "germany"
     },
     "match-075": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
+      "updatedAt": "2026-06-26T21:38:10Z",
       "homeTeamId": "netherlands",
       "awayTeamId": "morocco"
     },
     "match-076": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
+      "updatedAt": "2026-06-26T21:38:10Z",
       "homeTeamId": "brazil",
       "awayTeamId": "japan"
     },
+    "match-077": {
+      "isConfirmed": true,
+      "updatedAt": "2026-06-26T21:38:10Z",
+      "homeTeamId": "france"
+    },
     "match-078": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
-      "homeTeamId": "ivory-coast"
+      "updatedAt": "2026-06-26T21:38:10Z",
+      "homeTeamId": "ivory-coast",
+      "awayTeamId": "norway"
     },
     "match-079": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
+      "updatedAt": "2026-06-26T21:38:10Z",
       "homeTeamId": "mexico"
     },
     "match-081": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
+      "updatedAt": "2026-06-26T21:38:10Z",
       "homeTeamId": "usa",
       "awayTeamId": "bosnia-and-herzegovina"
     },
     "match-085": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
+      "updatedAt": "2026-06-26T21:38:10Z",
       "homeTeamId": "switzerland"
     },
     "match-086": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
+      "updatedAt": "2026-06-26T21:38:10Z",
       "homeTeamId": "argentina"
     },
     "match-088": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-26T04:23:11Z",
+      "updatedAt": "2026-06-26T21:38:10Z",
       "homeTeamId": "australia"
     }
   }
