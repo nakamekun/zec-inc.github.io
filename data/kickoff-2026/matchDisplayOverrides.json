@@ -12,6 +12,11 @@
       "homeTeamId": "south-africa",
       "awayTeamId": "canada"
     },
+    "match-074": {
+      "isConfirmed": true,
+      "updatedAt": "2026-06-26T04:23:11Z",
+      "homeTeamId": "germany"
+    },
     "match-075": {
       "isConfirmed": true,
       "updatedAt": "2026-06-26T04:23:11Z",
@@ -24,11 +29,36 @@
       "homeTeamId": "brazil",
       "awayTeamId": "japan"
     },
+    "match-078": {
+      "isConfirmed": true,
+      "updatedAt": "2026-06-26T04:23:11Z",
+      "homeTeamId": "ivory-coast"
+    },
+    "match-079": {
+      "isConfirmed": true,
+      "updatedAt": "2026-06-26T04:23:11Z",
+      "homeTeamId": "mexico"
+    },
     "match-081": {
       "isConfirmed": true,
       "updatedAt": "2026-06-26T04:23:11Z",
       "homeTeamId": "usa",
       "awayTeamId": "bosnia-and-herzegovina"
+    },
+    "match-085": {
+      "isConfirmed": true,
+      "updatedAt": "2026-06-26T04:23:11Z",
+      "homeTeamId": "switzerland"
+    },
+    "match-086": {
+      "isConfirmed": true,
+      "updatedAt": "2026-06-26T04:23:11Z",
+      "homeTeamId": "argentina"
+    },
+    "match-088": {
+      "isConfirmed": true,
+      "updatedAt": "2026-06-26T04:23:11Z",
+      "homeTeamId": "australia"
     }
   }
 }

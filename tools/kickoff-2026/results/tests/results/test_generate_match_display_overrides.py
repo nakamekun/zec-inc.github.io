@@ -74,6 +74,15 @@ MATCH_MAP = {
             "awayTeamId": "canada",
             "awayTeamName": "Canada",
         },
+        {
+            "matchId": "match-016",
+            "matchNumber": 16,
+            "kickoffUTC": "2026-06-16T01:00:00Z",
+            "homeTeamId": "germany",
+            "homeTeamName": "Germany",
+            "awayTeamId": "curacao",
+            "awayTeamName": "Curaçao",
+        },
     ]
 }
 
@@ -156,9 +165,12 @@ class GenerateMatchDisplayOverridesTests(unittest.TestCase):
         payload = self.generate()
         self.assertEqual(payload["matchOverrides"], {})
 
-    def test_skips_official_fixtures_without_both_teams(self):
+    def test_fifa_calendar_partial_matchup_generates_known_side_only(self):
         payload = self.generate_with_fifa()
-        self.assertNotIn("match-074", payload["matchOverrides"])
+        match_074 = payload["matchOverrides"]["match-074"]
+        self.assertEqual(match_074["homeTeamId"], "germany")
+        self.assertNotIn("awayTeamId", match_074)
+        self.assertTrue(match_074["isConfirmed"])
 
     def test_fifa_calendar_direct_matchup_generates_override(self):
         payload = self.generate_with_fifa()
