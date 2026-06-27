@@ -767,6 +767,30 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-27T02:13:10Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-065",
+      "status": "fullTime",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-27T05:13:09Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-066",
+      "status": "fullTime",
+      "homeScore": 1,
+      "awayScore": 5,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "belgium",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-27T05:13:09Z",
+      "source": "zec-auto"
     }
   ]
 }
