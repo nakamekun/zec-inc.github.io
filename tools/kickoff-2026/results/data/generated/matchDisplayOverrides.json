@@ -1,98 +1,98 @@
 {
   "source": {
     "name": "Kickoff Bell match display overrides",
-    "updatedAt": "2026-06-27T05:13:09Z",
-    "generatedAt": "2026-06-27T05:13:09Z",
+    "updatedAt": "2026-06-27T23:13:08Z",
+    "generatedAt": "2026-06-27T23:13:08Z",
     "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures"
   },
   "matchOverrides": {
     "match-073": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "south-africa",
       "awayTeamId": "canada"
     },
     "match-074": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "germany",
       "awayTeamId": "paraguay"
     },
     "match-075": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "netherlands",
       "awayTeamId": "morocco"
     },
     "match-076": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "brazil",
       "awayTeamId": "japan"
     },
     "match-077": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "france",
       "awayTeamId": "sweden"
     },
     "match-078": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "ivory-coast",
       "awayTeamId": "norway"
     },
     "match-079": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "mexico",
       "awayTeamId": "ecuador"
     },
     "match-080": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "england"
     },
     "match-081": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "usa",
       "awayTeamId": "bosnia-and-herzegovina"
     },
     "match-082": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "belgium"
     },
     "match-083": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "awayTeamId": "croatia"
     },
     "match-084": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "spain"
     },
     "match-085": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "switzerland"
     },
     "match-086": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "argentina",
       "awayTeamId": "cape-verde"
     },
     "match-087": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "awayTeamId": "ghana"
     },
     "match-088": {
       "isConfirmed": true,
-      "updatedAt": "2026-06-27T05:13:09Z",
+      "updatedAt": "2026-06-27T23:13:08Z",
       "homeTeamId": "australia",
       "awayTeamId": "egypt"
     }
