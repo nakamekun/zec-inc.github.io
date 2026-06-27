@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-26T21:38:10Z",
-    "generatedAt": "2026-06-26T21:38:10Z",
+    "updatedAt": "2026-06-27T02:13:10Z",
+    "generatedAt": "2026-06-27T02:13:10Z",
     "url": null
   },
   "results": [
@@ -686,6 +686,28 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "senegal",
       "resultUpdatedAt": "2026-06-26T21:38:10Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-063",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "spain",
+      "resultUpdatedAt": "2026-06-27T02:13:10Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-064",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "resultUpdatedAt": "2026-06-27T02:13:10Z",
       "source": "zec-auto"
     }
   ]
