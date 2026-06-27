@@ -165,17 +165,25 @@ class GenerateMatchDisplayOverridesTests(unittest.TestCase):
         payload = self.generate()
         self.assertEqual(payload["matchOverrides"], {})
 
-    def test_fifa_calendar_partial_matchup_does_not_generate_override(self):
+    def test_fifa_calendar_partial_matchup_generates_known_side_only(self):
         payload = self.generate_with_fifa()
-        self.assertNotIn("match-074", payload["matchOverrides"])
+        match_074 = payload["matchOverrides"]["match-074"]
+        self.assertEqual(match_074["homeTeamId"], "germany")
+        self.assertNotIn("awayTeamId", match_074)
+        self.assertTrue(match_074["isConfirmed"])
 
-    def test_fifa_calendar_direct_matchup_does_not_generate_override(self):
+    def test_fifa_calendar_direct_matchup_generates_override(self):
         payload = self.generate_with_fifa()
-        self.assertNotIn("match-081", payload["matchOverrides"])
+        match_081 = payload["matchOverrides"]["match-081"]
+        self.assertEqual(match_081["homeTeamId"], "usa")
+        self.assertEqual(match_081["awayTeamId"], "bosnia-and-herzegovina")
+        self.assertTrue(match_081["isConfirmed"])
 
-    def test_fifa_calendar_runner_up_matchup_does_not_generate_override(self):
+    def test_fifa_calendar_can_confirm_runner_up_matchup_directly(self):
         payload = self.generate_with_fifa()
-        self.assertNotIn("match-073", payload["matchOverrides"])
+        match_073 = payload["matchOverrides"]["match-073"]
+        self.assertEqual(match_073["homeTeamId"], "south-africa")
+        self.assertEqual(match_073["awayTeamId"], "canada")
 
     def test_manual_override_wins(self):
         payload = self.generate({
