@@ -743,6 +743,30 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-26T21:38:10Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-063",
+      "status": "fullTime",
+      "homeScore": 0,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "spain",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-27T02:13:10Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-064",
+      "status": "fullTime",
+      "homeScore": 0,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-27T02:13:10Z",
+      "source": "zec-auto"
     }
   ]
 }

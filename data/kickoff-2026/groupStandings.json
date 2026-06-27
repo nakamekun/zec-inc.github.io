@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-26T21:38:10Z",
-    "generatedAt": "2026-06-26T21:38:10Z",
+    "updatedAt": "2026-06-27T02:13:10Z",
+    "generatedAt": "2026-06-27T02:13:10Z",
     "url": null
   },
   "groups": [
@@ -383,50 +383,50 @@
         {
           "teamId": "spain",
           "rank": 1,
-          "played": 2,
-          "won": 1,
+          "played": 3,
+          "won": 2,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 4,
+          "goalsFor": 5,
           "goalsAgainst": 0,
-          "goalDifference": 4,
-          "points": 4
-        },
-        {
-          "teamId": "uruguay",
-          "rank": 2,
-          "played": 2,
-          "won": 0,
-          "drawn": 2,
-          "lost": 0,
-          "goalsFor": 3,
-          "goalsAgainst": 3,
-          "goalDifference": 0,
-          "points": 2
+          "goalDifference": 5,
+          "points": 7
         },
         {
           "teamId": "cape-verde",
-          "rank": 3,
-          "played": 2,
+          "rank": 2,
+          "played": 3,
           "won": 0,
-          "drawn": 2,
+          "drawn": 3,
           "lost": 0,
           "goalsFor": 2,
           "goalsAgainst": 2,
           "goalDifference": 0,
+          "points": 3
+        },
+        {
+          "teamId": "uruguay",
+          "rank": 3,
+          "played": 3,
+          "won": 0,
+          "drawn": 2,
+          "lost": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 4,
+          "goalDifference": -1,
           "points": 2
         },
         {
           "teamId": "saudi-arabia",
           "rank": 4,
-          "played": 2,
+          "played": 3,
           "won": 0,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 1,
           "goalsFor": 1,
           "goalsAgainst": 5,
           "goalDifference": -4,
-          "points": 1
+          "points": 2
         }
       ]
     },
