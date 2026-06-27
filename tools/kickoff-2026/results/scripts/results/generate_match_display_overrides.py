@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Generate Kickoff Bell match display overrides from official fixtures.
+"""Generate Kickoff Bell match display overrides.
 
-The iOS app bundles the base schedule. This generator resolves knockout
-placeholders only when the official FIFA calendar payload contains both teams
-for the matching fixture, then emits the remote JSON used by the app and widget.
+The iOS app bundles the official base schedule, including knockout placeholders.
+This generator must not infer knockout matchups from standings or calendar
+payloads. Emit only explicit manual overrides so unconfirmed fixtures stay as
+the official schedule placeholders.
 """
 
 from __future__ import annotations
@@ -209,10 +210,7 @@ def generate_payload(
     updated_at = source.get("updatedAt") or source.get("generatedAt")
     if not isinstance(updated_at, str) or not updated_at:
         raise ValueError("group standings source.updatedAt must be a non-empty string")
-    overrides: dict[str, dict[str, Any]] = {}
-    if fifa_calendar_payload is not None:
-        overrides.update(fifa_calendar_overrides(match_map, fifa_calendar_payload, updated_at))
-    overrides = merge_manual_overrides(overrides, manual_payload)
+    overrides = merge_manual_overrides({}, manual_payload)
     return {
         "source": {
             "name": "Kickoff Bell match display overrides",
