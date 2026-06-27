@@ -45,7 +45,13 @@
     "match-079": {
       "isConfirmed": true,
       "updatedAt": "2026-06-27T05:13:09Z",
-      "homeTeamId": "mexico"
+      "homeTeamId": "mexico",
+      "awayTeamId": "ecuador"
+    },
+    "match-080": {
+      "isConfirmed": true,
+      "updatedAt": "2026-06-27T05:13:09Z",
+      "homeTeamId": "england"
     },
     "match-081": {
       "isConfirmed": true,
@@ -57,6 +63,11 @@
       "isConfirmed": true,
       "updatedAt": "2026-06-27T05:13:09Z",
       "homeTeamId": "belgium"
+    },
+    "match-083": {
+      "isConfirmed": true,
+      "updatedAt": "2026-06-27T05:13:09Z",
+      "awayTeamId": "croatia"
     },
     "match-084": {
       "isConfirmed": true,
@@ -73,6 +84,11 @@
       "updatedAt": "2026-06-27T05:13:09Z",
       "homeTeamId": "argentina",
       "awayTeamId": "cape-verde"
+    },
+    "match-087": {
+      "isConfirmed": true,
+      "updatedAt": "2026-06-27T05:13:09Z",
+      "awayTeamId": "ghana"
     },
     "match-088": {
       "isConfirmed": true,
