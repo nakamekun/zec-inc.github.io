@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated group standings",
-    "updatedAt": "2026-06-28T01:43:07Z",
-    "generatedAt": "2026-06-28T01:43:07Z",
+    "updatedAt": "2026-06-28T04:13:10Z",
+    "generatedAt": "2026-06-28T04:13:10Z",
     "url": null
   },
   "groups": [
@@ -489,49 +489,49 @@
         {
           "teamId": "argentina",
           "rank": 1,
-          "played": 2,
-          "won": 2,
+          "played": 3,
+          "won": 3,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 5,
-          "goalsAgainst": 0,
-          "goalDifference": 5,
-          "points": 6
+          "goalsFor": 8,
+          "goalsAgainst": 1,
+          "goalDifference": 7,
+          "points": 9
         },
         {
           "teamId": "austria",
           "rank": 2,
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
-          "goalsFor": 3,
-          "goalsAgainst": 3,
+          "goalsFor": 6,
+          "goalsAgainst": 6,
           "goalDifference": 0,
-          "points": 3
+          "points": 4
         },
         {
           "teamId": "algeria",
           "rank": 3,
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 4,
+          "goalsFor": 5,
+          "goalsAgainst": 7,
           "goalDifference": -2,
-          "points": 3
+          "points": 4
         },
         {
           "teamId": "jordan",
           "rank": 4,
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 0,
-          "lost": 2,
-          "goalsFor": 2,
-          "goalsAgainst": 5,
-          "goalDifference": -3,
+          "lost": 3,
+          "goalsFor": 3,
+          "goalsAgainst": 8,
+          "goalDifference": -5,
           "points": 0
         }
       ]

@@ -839,6 +839,30 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-28T01:43:07Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-071",
+      "status": "fullTime",
+      "homeScore": 1,
+      "awayScore": 3,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "argentina",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-28T04:13:10Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-072",
+      "status": "fullTime",
+      "homeScore": 3,
+      "awayScore": 3,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-28T04:13:10Z",
+      "source": "zec-auto"
     }
   ]
 }

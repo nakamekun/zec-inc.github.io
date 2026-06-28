@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-28T01:43:07Z",
-    "generatedAt": "2026-06-28T01:43:07Z",
+    "updatedAt": "2026-06-28T04:13:10Z",
+    "generatedAt": "2026-06-28T04:13:10Z",
     "url": null
   },
   "results": [
@@ -774,6 +774,28 @@
       "awayPenaltyScore": null,
       "winnerTeamId": null,
       "resultUpdatedAt": "2026-06-28T01:43:07Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-071",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 3,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "argentina",
+      "resultUpdatedAt": "2026-06-28T04:13:10Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-072",
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 3,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "resultUpdatedAt": "2026-06-28T04:13:10Z",
       "source": "zec-auto"
     }
   ]
