@@ -51,7 +51,8 @@
     "match-080": {
       "isConfirmed": true,
       "updatedAt": "2026-06-27T23:13:08Z",
-      "homeTeamId": "england"
+      "homeTeamId": "england",
+      "awayTeamId": "dr-congo"
     },
     "match-081": {
       "isConfirmed": true,
@@ -62,11 +63,13 @@
     "match-082": {
       "isConfirmed": true,
       "updatedAt": "2026-06-27T23:13:08Z",
-      "homeTeamId": "belgium"
+      "homeTeamId": "belgium",
+      "awayTeamId": "senegal"
     },
     "match-083": {
       "isConfirmed": true,
       "updatedAt": "2026-06-27T23:13:08Z",
+      "homeTeamId": "portugal",
       "awayTeamId": "croatia"
     },
     "match-084": {
@@ -88,6 +91,7 @@
     "match-087": {
       "isConfirmed": true,
       "updatedAt": "2026-06-27T23:13:08Z",
+      "homeTeamId": "colombia",
       "awayTeamId": "ghana"
     },
     "match-088": {
