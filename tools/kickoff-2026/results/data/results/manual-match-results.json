@@ -815,6 +815,30 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-06-27T23:13:08Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-069",
+      "status": "fullTime",
+      "homeScore": 3,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "dr-congo",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-28T01:43:07Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-070",
+      "status": "fullTime",
+      "homeScore": 0,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-06-28T01:43:07Z",
+      "source": "zec-auto"
     }
   ]
 }

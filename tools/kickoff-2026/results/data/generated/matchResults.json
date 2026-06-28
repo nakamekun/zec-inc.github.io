@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-27T23:13:08Z",
-    "generatedAt": "2026-06-27T23:13:08Z",
+    "updatedAt": "2026-06-28T01:43:07Z",
+    "generatedAt": "2026-06-28T01:43:07Z",
     "url": null
   },
   "results": [
@@ -752,6 +752,28 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "croatia",
       "resultUpdatedAt": "2026-06-27T23:13:08Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-069",
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "dr-congo",
+      "resultUpdatedAt": "2026-06-28T01:43:07Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-070",
+      "status": "finished",
+      "homeScore": 0,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": null,
+      "resultUpdatedAt": "2026-06-28T01:43:07Z",
       "source": "zec-auto"
     }
   ]
