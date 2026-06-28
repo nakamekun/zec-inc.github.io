@@ -75,12 +75,14 @@
     "match-084": {
       "isConfirmed": true,
       "updatedAt": "2026-06-28T01:43:07Z",
-      "homeTeamId": "spain"
+      "homeTeamId": "spain",
+      "awayTeamId": "austria"
     },
     "match-085": {
       "isConfirmed": true,
       "updatedAt": "2026-06-28T01:43:07Z",
-      "homeTeamId": "switzerland"
+      "homeTeamId": "switzerland",
+      "awayTeamId": "algeria"
     },
     "match-086": {
       "isConfirmed": true,
