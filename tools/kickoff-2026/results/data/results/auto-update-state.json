@@ -815,6 +815,30 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-068\", \"appMatchNumber\": 68, \"providerMatchNumber\": 68, \"appKickoffUTC\": \"2026-06-27T21:00:00Z\", \"providerKickoffUTC\": \"2026-06-27T21:00:00Z\", \"appHome\": \"Croatia\", \"appAway\": \"Ghana\", \"providerHome\": \"Croatia\", \"providerAway\": \"Ghana\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-06-27T23:13:08Z",
       "finalResultCaptured": true
+    },
+    "match-069": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-28T01:43:07Z",
+      "lastAttemptAt": "2026-06-28T01:43:07Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-069\", \"appMatchNumber\": 69, \"providerMatchNumber\": 72, \"appKickoffUTC\": \"2026-06-27T23:30:00Z\", \"providerKickoffUTC\": \"2026-06-27T23:30:00Z\", \"appHome\": \"DR Congo\", \"appAway\": \"Uzbekistan\", \"providerHome\": \"Congo DR\", \"providerAway\": \"Uzbekistan\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-28T01:43:07Z",
+      "finalResultCaptured": true
+    },
+    "match-070": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-28T01:43:07Z",
+      "lastAttemptAt": "2026-06-28T01:43:07Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-070\", \"appMatchNumber\": 70, \"providerMatchNumber\": 71, \"appKickoffUTC\": \"2026-06-27T23:30:00Z\", \"providerKickoffUTC\": \"2026-06-27T23:30:00Z\", \"appHome\": \"Colombia\", \"appAway\": \"Portugal\", \"providerHome\": \"Colombia\", \"providerAway\": \"Portugal\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-06-28T01:43:07Z",
+      "finalResultCaptured": true
     }
   }
 }
