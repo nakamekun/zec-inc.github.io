@@ -891,6 +891,18 @@
       "nextRetryAfter": "2026-06-29T22:43:07Z",
       "finalCheckAttempted": true,
       "finalCheckAt": "2026-06-29T20:11:00Z"
+    },
+    "match-074": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-06-29T22:42:12Z",
+      "lastAttemptAt": "2026-06-29T22:42:12Z",
+      "lastProviderStatus": "not_found",
+      "lastStatus": "not_found",
+      "lastConfidence": 0.0,
+      "attemptCount": 1,
+      "lastMessage": "no calendar match candidate matched team and kickoff; rejected=[{\"appMatchId\": \"match-074\", \"appMatchNumber\": 74, \"providerMatchNumber\": 76, \"appKickoffUTC\": \"2026-06-29T20:30:00Z\", \"providerKickoffUTC\": \"2026-06-29T17:00:00Z\", \"appHome\": \"Winner Group E\", \"appAway\": \"Third-place Group A/B/C/D/F\", \"providerHome\": \"Brazil\", \"providerAway\": \"Japan\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-074\", \"appMatchNumber\": 74, \"providerMatchNumber\": 74, \"appKickoffUTC\": \"2026-06-29T20:30:00Z\", \"providerKickoffUTC\": \"2026-06-29T20:30:00Z\", \"appHome\": \"Winner Group E\", \"appAway\": \"Third-place Group A/B/C/D/F\", \"providerHome\": \"Germany\", \"providerAway\": \"Paraguay\", \"rejectReason\": \"home team mismatch\", \"confidence\": 0.0}]",
+      "finalResultCaptured": false,
+      "nextRetryAfter": "2026-06-29T22:52:12Z"
     }
   }
 }
