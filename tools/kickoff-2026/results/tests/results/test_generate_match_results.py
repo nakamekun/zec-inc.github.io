@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -145,6 +146,43 @@ class GenerateMatchResultsTests(unittest.TestCase):
                     currentMinute=55,
                 )
             ])
+
+    def test_load_match_refs_applies_display_override_team_ids(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            match_map = root / "match-id-map.json"
+            overrides = root / "matchDisplayOverrides.json"
+            match_map.write_text(
+                """
+{
+  "matches": [
+    {
+      "matchId": "match-073",
+      "homeTeamId": "runner-up-group-a",
+      "awayTeamId": "runner-up-group-b"
+    }
+  ]
+}
+""".strip(),
+                encoding="utf-8",
+            )
+            overrides.write_text(
+                """
+{
+  "matchOverrides": {
+    "match-073": {
+      "homeTeamId": "south-africa",
+      "awayTeamId": "canada"
+    }
+  }
+}
+""".strip(),
+                encoding="utf-8",
+            )
+            refs = generate_match_results.load_match_refs(match_map, overrides)
+
+        self.assertEqual(refs["match-073"].home_team_id, "south-africa")
+        self.assertEqual(refs["match-073"].away_team_id, "canada")
 
 
 if __name__ == "__main__":
