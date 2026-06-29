@@ -20,6 +20,7 @@ from typing import Any
 
 APP_DIR = Path(__file__).resolve().parents[2]
 DEFAULT_MATCH_MAP_PATH = APP_DIR / "data" / "results" / "match-id-map.json"
+DEFAULT_MATCH_DISPLAY_OVERRIDES_PATH = APP_DIR / "data" / "generated" / "matchDisplayOverrides.json"
 DEFAULT_INPUT_PATH = APP_DIR / "data" / "results" / "manual-match-results.json"
 DEFAULT_OUTPUT_PATH = APP_DIR / "data" / "generated" / "matchResults.json"
 DEFAULT_V1_OUTPUT_PATH = APP_DIR / "data" / "generated" / "match-results.json"
@@ -71,17 +72,38 @@ def write_json(path: Path, payload: dict[str, Any]) -> None:
     print(f"wrote {path}")
 
 
-def load_match_refs(match_map_path: Path) -> dict[str, MatchRef]:
+def load_match_refs(match_map_path: Path, match_display_overrides_path: Path | None = None) -> dict[str, MatchRef]:
     match_map = read_json(match_map_path)
+    overrides = load_match_display_overrides(match_display_overrides_path)
     refs: dict[str, MatchRef] = {}
     for match in match_map.get("matches", []):
         match_id = require_string(match, "matchId", "match map")
+        override = overrides.get(match_id, {})
         refs[match_id] = MatchRef(
             match_id=match_id,
-            home_team_id=require_string(match, "homeTeamId", match_id),
-            away_team_id=require_string(match, "awayTeamId", match_id),
+            home_team_id=override.get("homeTeamId") or require_string(match, "homeTeamId", match_id),
+            away_team_id=override.get("awayTeamId") or require_string(match, "awayTeamId", match_id),
         )
     return refs
+
+
+def load_match_display_overrides(path: Path | None) -> dict[str, dict[str, Any]]:
+    if path is None or not path.exists():
+        return {}
+    payload = read_json(path)
+    overrides = payload.get("matchOverrides", {})
+    if not isinstance(overrides, dict):
+        raise ValueError("match display overrides must contain matchOverrides object")
+    result: dict[str, dict[str, Any]] = {}
+    for match_id, override in overrides.items():
+        if not isinstance(match_id, str) or not isinstance(override, dict):
+            continue
+        result[match_id] = {
+            key: value
+            for key, value in override.items()
+            if key in {"homeTeamId", "awayTeamId"} and isinstance(value, str) and value
+        }
+    return result
 
 
 def generate_payload(manual_payload: dict[str, Any], match_refs: dict[str, MatchRef], generated_at: str) -> dict[str, Any]:
@@ -288,6 +310,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT_PATH)
     parser.add_argument("--v1-output", type=Path, default=DEFAULT_V1_OUTPUT_PATH)
     parser.add_argument("--match-map", type=Path, default=DEFAULT_MATCH_MAP_PATH)
+    parser.add_argument("--match-display-overrides", type=Path, default=DEFAULT_MATCH_DISPLAY_OVERRIDES_PATH)
     parser.add_argument("--generated-at", default=utc_now())
     parser.add_argument(
         "--schema",
@@ -302,7 +325,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     manual_payload = read_json(args.input)
-    match_refs = load_match_refs(args.match_map)
+    match_refs = load_match_refs(args.match_map, args.match_display_overrides)
     v1_payload = generate_payload(manual_payload, match_refs, args.generated_at)
     app_payload = convert_v1_to_app_payload(v1_payload, args.generated_at)
     if args.dry_run:
