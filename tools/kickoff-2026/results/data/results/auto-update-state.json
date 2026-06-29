@@ -867,14 +867,14 @@
     "match-073": {
       "firstCheckAttempted": true,
       "firstCheckAt": "2026-06-28T21:13:09Z",
-      "lastAttemptAt": "2026-06-29T05:13:09Z",
+      "lastAttemptAt": "2026-06-29T05:33:08Z",
       "lastProviderStatus": "not_found",
       "lastStatus": "not_found",
       "lastConfidence": 0.0,
-      "attemptCount": 35,
+      "attemptCount": 36,
       "lastMessage": "no calendar match candidate matched team and kickoff; rejected=[{\"appMatchId\": \"match-073\", \"appMatchNumber\": 73, \"providerMatchNumber\": 69, \"appKickoffUTC\": \"2026-06-28T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-28T02:00:00Z\", \"appHome\": \"Runner-up Group A\", \"appAway\": \"Runner-up Group B\", \"providerHome\": \"Algeria\", \"providerAway\": \"Austria\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-073\", \"appMatchNumber\": 73, \"providerMatchNumber\": 70, \"appKickoffUTC\": \"2026-06-28T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-28T02:00:00Z\", \"appHome\": \"Runner-up Group A\", \"appAway\": \"Runner-up Group B\", \"providerHome\": \"Jordan\", \"providerAway\": \"Argentina\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-073\", \"appMatchNumber\": 73, \"providerMatchNumber\": 73, \"appKickoffUTC\": \"2026-06-28T19:00:00Z\", \"providerKickoffUTC\": \"2026-06-28T19:00:00Z\", \"appHome\": \"Runner-up Group A\", \"appAway\": \"Runner-up Group B\", \"providerHome\": \"South Africa\", \"providerAway\": \"Canada\", \"rejectReason\": \"home team mismatch\", \"confidence\": 0.0}]",
       "finalResultCaptured": false,
-      "nextRetryAfter": "2026-06-29T05:23:09Z",
+      "nextRetryAfter": "2026-06-29T05:43:08Z",
       "finalCheckAttempted": true,
       "finalCheckAt": "2026-06-28T22:03:08Z"
     }
