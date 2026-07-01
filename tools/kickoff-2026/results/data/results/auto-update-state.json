@@ -949,6 +949,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-079\", \"appMatchNumber\": 79, \"providerMatchNumber\": 79, \"appKickoffUTC\": \"2026-07-01T01:00:00Z\", \"providerKickoffUTC\": \"2026-07-01T02:00:00Z\", \"appHome\": \"Mexico\", \"appAway\": \"Ecuador\", \"providerHome\": \"Mexico\", \"providerAway\": \"Ecuador\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-07-01T04:43:18Z",
       "finalResultCaptured": true
+    },
+    "match-080": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-07-01T18:17:16Z",
+      "lastAttemptAt": "2026-07-01T18:17:16Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-080\", \"appMatchNumber\": 80, \"providerMatchNumber\": 80, \"appKickoffUTC\": \"2026-07-01T16:00:00Z\", \"providerKickoffUTC\": \"2026-07-01T16:00:00Z\", \"appHome\": \"England\", \"appAway\": \"DR Congo\", \"providerHome\": \"England\", \"providerAway\": \"Congo DR\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-07-01T18:17:16Z",
+      "finalResultCaptured": true
     }
   }
 }
