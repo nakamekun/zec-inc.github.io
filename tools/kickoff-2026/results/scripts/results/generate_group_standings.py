@@ -85,16 +85,18 @@ def write_json(path: Path, payload: dict[str, Any]) -> None:
     print(f"wrote {path}")
 
 
-def load_match_map(path: Path) -> tuple[dict[str, MatchRef], dict[str, list[str]]]:
+def load_match_map(path: Path) -> tuple[dict[str, MatchRef], dict[str, list[str]], set[str]]:
     match_map = read_json(path)
     match_refs: dict[str, MatchRef] = {}
     group_teams: dict[str, list[str]] = {}
+    known_match_ids: set[str] = set()
 
     for match in match_map.get("matches", []):
+        match_id = require_string(match, "matchId", "match map")
+        known_match_ids.add(match_id)
         group = match.get("groupName")
         if not isinstance(group, str) or not group:
             continue
-        match_id = require_string(match, "matchId", "match map")
         home_team_id = require_string(match, "homeTeamId", match_id)
         away_team_id = require_string(match, "awayTeamId", match_id)
         match_refs[match_id] = MatchRef(match_id, group, home_team_id, away_team_id)
@@ -104,7 +106,7 @@ def load_match_map(path: Path) -> tuple[dict[str, MatchRef], dict[str, list[str]
 
     if not group_teams:
         raise ValueError("match map does not contain group-stage teams")
-    return match_refs, dict(sorted(group_teams.items(), key=lambda item: group_sort_key(item[0])))
+    return match_refs, dict(sorted(group_teams.items(), key=lambda item: group_sort_key(item[0]))), known_match_ids
 
 
 def append_unique(values: list[str], value: str) -> None:
@@ -119,10 +121,11 @@ def generate_payload(
     group_teams: dict[str, list[str]],
     generated_at: str,
     reference_url: str | None = None,
+    known_match_ids: set[str] | None = None,
 ) -> dict[str, Any]:
     validate_iso8601_utc(generated_at, "generatedAt")
     standings = initial_standings(group_teams)
-    counted_results = apply_match_results(standings, match_results_payload, match_refs)
+    counted_results = apply_match_results(standings, match_results_payload, match_refs, known_match_ids)
     assign_ranks(standings)
     apply_overrides(standings, overrides_payload)
     payload = {
@@ -160,6 +163,7 @@ def apply_match_results(
     standings: dict[str, dict[str, TeamStanding]],
     match_results_payload: dict[str, Any],
     match_refs: dict[str, MatchRef],
+    known_match_ids: set[str] | None = None,
 ) -> int:
     results = match_results_payload.get("results")
     if not isinstance(results, list):
@@ -175,6 +179,8 @@ def apply_match_results(
             raise ValueError(f"Duplicate matchId: {match_id}")
         seen.add(match_id)
         if match_id not in match_refs:
+            if known_match_ids is not None and match_id in known_match_ids:
+                continue
             raise ValueError(f"Unknown matchId: {match_id}")
 
         status = require_string(result, "status", match_id)
@@ -377,7 +383,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    match_refs, group_teams = load_match_map(args.match_map)
+    match_refs, group_teams, known_match_ids = load_match_map(args.match_map)
     match_results_payload = read_json(args.match_results)
     overrides_payload = read_json(args.overrides)
     payload = generate_payload(
@@ -387,6 +393,7 @@ def main() -> None:
         group_teams,
         args.generated_at,
         reference_url=args.reference_url,
+        known_match_ids=known_match_ids,
     )
     if args.dry_run:
         print(json.dumps(payload, ensure_ascii=False, indent=2))

@@ -133,6 +133,17 @@ class GenerateGroupStandingsTests(unittest.TestCase):
         )
         self.assertEqual(self.team(payload, "south-africa")["rank"], 1)
 
+    def test_known_non_group_match_is_ignored(self):
+        payload = generate_group_standings.generate_payload(
+            {"source": {"name": "test"}, "results": [result(match_id="match-073", home_score=0, away_score=1)]},
+            {"groups": []},
+            MATCH_REFS,
+            GROUP_TEAMS,
+            "2026-06-12T06:00:00Z",
+            known_match_ids={"match-001", "match-002", "match-003", "match-073"},
+        )
+        self.assertEqual(sum(team["played"] for team in self.group_a(payload)), 0)
+
     def test_unknown_match_id_errors(self):
         with self.assertRaisesRegex(ValueError, "Unknown matchId"):
             self.generate([result(match_id="match-999")])

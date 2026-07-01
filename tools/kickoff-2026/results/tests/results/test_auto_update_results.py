@@ -85,6 +85,43 @@ class AutoUpdateResultsTests(unittest.TestCase):
         )
         self.assertEqual(len(targets), 1)
 
+    def test_match_display_overrides_are_applied_to_knockout_candidates(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            match_map = root / "match-id-map.json"
+            overrides = root / "matchDisplayOverrides.json"
+            match_map.write_text(json.dumps({"matches": [
+                {
+                    "matchId": "match-009",
+                    "matchNumber": 9,
+                    "kickoffUTC": "2026-06-14T19:00:00Z",
+                    "homeTeamId": "germany",
+                    "homeTeamName": "Germany",
+                    "awayTeamId": "curacao",
+                    "awayTeamName": "Curaçao",
+                },
+                {
+                    "matchId": "match-074",
+                    "matchNumber": 74,
+                    "kickoffUTC": "2026-06-29T20:30:00Z",
+                    "homeTeamId": "winner-group-e",
+                    "homeTeamName": "Winner Group E",
+                    "awayTeamId": "third-place-group-a-b-c-d-f",
+                    "awayTeamName": "Third-place Group A/B/C/D/F",
+                },
+            ]}), encoding="utf-8")
+            overrides.write_text(json.dumps({"matchOverrides": {
+                "match-074": {"homeTeamId": "germany", "awayTeamName": "Paraguay"}
+            }}) + "\n", encoding="utf-8")
+
+            candidates = auto_update_results.load_match_candidates(match_map, overrides)
+            knockout = next(candidate for candidate in candidates if candidate.match_id == "match-074")
+
+            self.assertEqual(knockout.home_team_id, "germany")
+            self.assertEqual(knockout.home_team_name, "Germany")
+            self.assertEqual(knockout.away_team_id, "third-place-group-a-b-c-d-f")
+            self.assertEqual(knockout.away_team_name, "Paraguay")
+
     def test_dry_run_does_not_modify_files(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
