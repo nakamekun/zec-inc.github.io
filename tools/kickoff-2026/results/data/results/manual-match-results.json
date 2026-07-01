@@ -959,6 +959,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-07-01T18:17:16Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-082",
+      "status": "fullTime",
+      "homeScore": 3,
+      "awayScore": 2,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "belgium",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-07-01T22:53:09Z",
+      "source": "zec-auto"
     }
   ]
 }
