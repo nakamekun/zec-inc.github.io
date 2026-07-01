@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-06-28T21:13:09Z",
-    "generatedAt": "2026-06-28T21:13:09Z",
+    "updatedAt": "2026-07-01T04:43:18Z",
+    "generatedAt": "2026-07-01T04:43:18Z",
     "url": null
   },
   "results": [
@@ -808,6 +808,72 @@
       "winnerTeamId": "canada",
       "resultUpdatedAt": "2026-06-28T21:13:09Z",
       "source": "zec-curated"
+    },
+    {
+      "matchId": "match-074",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homePenaltyScore": 3,
+      "awayPenaltyScore": 4,
+      "winnerTeamId": "paraguay",
+      "resultUpdatedAt": "2026-07-01T04:43:18Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-075",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homePenaltyScore": 2,
+      "awayPenaltyScore": 3,
+      "winnerTeamId": "morocco",
+      "resultUpdatedAt": "2026-07-01T04:43:18Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-076",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "brazil",
+      "resultUpdatedAt": "2026-07-01T04:43:18Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-077",
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "france",
+      "resultUpdatedAt": "2026-07-01T04:43:18Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-078",
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 2,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "norway",
+      "resultUpdatedAt": "2026-07-01T04:43:18Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-079",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "mexico",
+      "resultUpdatedAt": "2026-07-01T04:43:18Z",
+      "source": "zec-auto"
     }
   ]
 }

@@ -20,6 +20,7 @@ from providers.static_result_feed_provider import StaticResultFeedProvider
 APP_DIR = Path(__file__).resolve().parents[2]
 DEFAULT_MATCH_MAP_PATH = APP_DIR / "data" / "results" / "match-id-map.json"
 DEFAULT_MANUAL_RESULTS_PATH = APP_DIR / "data" / "results" / "manual-match-results.json"
+DEFAULT_MATCH_DISPLAY_OVERRIDES_PATH = APP_DIR / "data" / "generated" / "matchDisplayOverrides.json"
 DEFAULT_STATE_PATH = APP_DIR / "data" / "results" / "auto-update-state.json"
 DEFAULT_RESULT_FEED_PATH: Path | None = None
 GENERATE_MATCH_RESULTS = APP_DIR / "scripts" / "results" / "generate_match_results.py"
@@ -76,8 +77,10 @@ def write_json(path: Path, payload: dict[str, Any]) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def load_match_candidates(path: Path) -> list[MatchCandidate]:
+def load_match_candidates(path: Path, match_display_overrides_path: Path | None = DEFAULT_MATCH_DISPLAY_OVERRIDES_PATH) -> list[MatchCandidate]:
     payload = read_json(path)
+    overrides = load_match_display_overrides(match_display_overrides_path)
+    team_names = team_names_by_id(payload)
     matches = payload.get("matches")
     if not isinstance(matches, list):
         raise ValueError("match-id-map.json must contain matches array")
@@ -87,19 +90,56 @@ def load_match_candidates(path: Path) -> list[MatchCandidate]:
             raise ValueError("match-id-map matches must be objects")
         match_id = require_string(raw, "matchId", "match map")
         kickoff = parse_utc(require_string(raw, "kickoffUTC", match_id))
+        override = overrides.get(match_id, {})
+        home_team_id = override.get("homeTeamId") or require_string(raw, "homeTeamId", match_id)
+        away_team_id = override.get("awayTeamId") or require_string(raw, "awayTeamId", match_id)
         candidates.append(
             MatchCandidate(
                 match_id=match_id,
                 match_number=raw.get("matchNumber") if isinstance(raw.get("matchNumber"), int) else None,
                 kickoff_utc=kickoff,
-                home_team_id=require_string(raw, "homeTeamId", match_id),
-                away_team_id=require_string(raw, "awayTeamId", match_id),
-                home_team_name=require_string(raw, "homeTeamName", match_id),
-                away_team_name=require_string(raw, "awayTeamName", match_id),
+                home_team_id=home_team_id,
+                away_team_id=away_team_id,
+                home_team_name=override.get("homeTeamName") or team_names.get(home_team_id) or require_string(raw, "homeTeamName", match_id),
+                away_team_name=override.get("awayTeamName") or team_names.get(away_team_id) or require_string(raw, "awayTeamName", match_id),
                 match_centre_url=raw.get("matchCentreUrl") or MATCH_CENTRE_URL,
             )
         )
     return candidates
+
+
+def load_match_display_overrides(path: Path | None) -> dict[str, dict[str, str]]:
+    if path is None or not path.exists():
+        return {}
+    payload = read_json(path)
+    overrides = payload.get("matchOverrides", {})
+    if not isinstance(overrides, dict):
+        raise ValueError("match display overrides must contain matchOverrides object")
+    result: dict[str, dict[str, str]] = {}
+    for match_id, raw_override in overrides.items():
+        if not isinstance(match_id, str) or not isinstance(raw_override, dict):
+            continue
+        override = {
+            key: value
+            for key, value in raw_override.items()
+            if key in {"homeTeamId", "awayTeamId", "homeTeamName", "awayTeamName"} and isinstance(value, str) and value
+        }
+        if override:
+            result[match_id] = override
+    return result
+
+
+def team_names_by_id(match_map_payload: dict[str, Any]) -> dict[str, str]:
+    names: dict[str, str] = {}
+    for match in match_map_payload.get("matches", []):
+        if not isinstance(match, dict):
+            continue
+        for id_key, name_key in (("homeTeamId", "homeTeamName"), ("awayTeamId", "awayTeamName")):
+            team_id = match.get(id_key)
+            name = match.get(name_key)
+            if isinstance(team_id, str) and team_id and isinstance(name, str) and name:
+                names.setdefault(team_id, name)
+    return names
 
 
 def manual_results_by_match_id(payload: dict[str, Any]) -> dict[str, dict[str, Any]]:
@@ -352,6 +392,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Scheduled Kickoff result updater.")
     parser.add_argument("--match-map", type=Path, default=DEFAULT_MATCH_MAP_PATH)
     parser.add_argument("--manual-results", type=Path, default=DEFAULT_MANUAL_RESULTS_PATH)
+    parser.add_argument("--match-display-overrides", type=Path, default=DEFAULT_MATCH_DISPLAY_OVERRIDES_PATH)
     parser.add_argument("--state", type=Path, default=DEFAULT_STATE_PATH)
     parser.add_argument("--result-feed", type=Path, default=DEFAULT_RESULT_FEED_PATH)
     parser.add_argument("--now", help="Override current UTC time, e.g. 2026-06-12T06:10:00Z")
@@ -373,7 +414,7 @@ def run_update(
     provider: ResultProvider | None = None,
 ) -> tuple[list[CheckTarget], list[tuple[CheckTarget, ResultFetchOutcome, str, str, dict[str, Any] | None]], list[dict[str, Any]]]:
     now = parse_utc(args.now) if args.now else utc_now()
-    matches = load_match_candidates(args.match_map)
+    matches = load_match_candidates(args.match_map, getattr(args, "match_display_overrides", DEFAULT_MATCH_DISPLAY_OVERRIDES_PATH))
     manual_payload = read_json(args.manual_results, {"matches": []})
     manual_results = manual_results_by_match_id(manual_payload)
     state = read_json(args.state, {"matches": {}})
