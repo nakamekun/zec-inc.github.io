@@ -983,6 +983,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-07-02T02:13:09Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-084",
+      "status": "fullTime",
+      "homeScore": 3,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "spain",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-07-02T21:13:09Z",
+      "source": "zec-auto"
     }
   ]
 }
