@@ -971,6 +971,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-07-01T22:53:09Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-081",
+      "status": "fullTime",
+      "homeScore": 2,
+      "awayScore": 0,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "usa",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-07-02T02:13:09Z",
+      "source": "zec-auto"
     }
   ]
 }

@@ -973,6 +973,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-082\", \"appMatchNumber\": 82, \"providerMatchNumber\": 82, \"appKickoffUTC\": \"2026-07-01T20:00:00Z\", \"providerKickoffUTC\": \"2026-07-01T20:00:00Z\", \"appHome\": \"Belgium\", \"appAway\": \"Senegal\", \"providerHome\": \"Belgium\", \"providerAway\": \"Senegal\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "lastSuccessfulUpdateAt": "2026-07-01T22:53:09Z",
       "finalResultCaptured": true
+    },
+    "match-081": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-07-02T02:13:09Z",
+      "lastAttemptAt": "2026-07-02T02:13:09Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-081\", \"appMatchNumber\": 81, \"providerMatchNumber\": 81, \"appKickoffUTC\": \"2026-07-02T00:00:00Z\", \"providerKickoffUTC\": \"2026-07-02T00:00:00Z\", \"appHome\": \"USA\", \"appAway\": \"Bosnia & Herzegovina\", \"providerHome\": \"USA\", \"providerAway\": \"Bosnia and Herzegovina\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-07-02T02:13:09Z",
+      "finalResultCaptured": true
     }
   }
 }
