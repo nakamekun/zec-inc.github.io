@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - ZEC Inc.</title>
+  <title>プライバシーポリシー - ZEC Inc.</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
     :root {
       --bg: #f5f8ff;
@@ -12,11 +13,14 @@
       --muted: #64748b;
       --line: #e2e8f0;
       --accent: #2563eb;
+      --header: #2c3e50;
     }
+
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.7;
@@ -31,7 +35,7 @@
     .card {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 16px;
+      border-radius: 12px;
       padding: 40px 32px;
       box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
     }
@@ -46,26 +50,33 @@
     h1 {
       margin: 0 0 16px;
       font-size: 34px;
-    }
-
-    .lead {
-      color: var(--muted);
-      margin-bottom: 28px;
+      line-height: 1.25;
+      letter-spacing: 0;
     }
 
     h2 {
-      margin-top: 28px;
+      margin: 28px 0 10px;
+      color: var(--header);
       font-size: 20px;
     }
 
-    p {
+    p, ul {
+      margin-top: 0;
       margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 1.25em;
+    }
+
+    .lead, .en {
+      color: var(--muted);
     }
 
     .note {
       margin-top: 24px;
       padding: 16px;
-      border-radius: 12px;
+      border-radius: 10px;
       background: #f0f6ff;
       border: 1px solid #dbeafe;
       font-size: 15px;
@@ -94,38 +105,44 @@
   <main class="wrap">
     <section class="card">
       <div class="eyebrow">ZEC Inc.</div>
-      <h1>Privacy Policy</h1>
-      <p class="lead">
-        This page describes the general privacy policy for applications and tools provided by ZEC Inc.
-      </p>
+      <h1>プライバシーポリシー</h1>
+      <p class="lead">本ページは、合同会社ゼク（ZEC Inc.）が提供するWebサイト、アプリケーション、デジタルツールに関する基本的なプライバシーポリシーです。</p>
+      <p class="en">This page describes the general privacy policy for websites, applications, and digital tools provided by ZEC Inc.</p>
 
-      <h2>Overview</h2>
-      <p>
-        ZEC Inc. provides various applications and digital tools. We respect user privacy and aim to minimize data collection wherever possible.
-      </p>
+      <h2>基本方針</h2>
+      <p>当社は、利用者のプライバシーを尊重し、サービス提供に必要な範囲を超えて個人情報を取得しないよう努めます。</p>
+      <p class="en">We respect user privacy and aim to minimize data collection wherever possible.</p>
 
-      <h2>Data Collection</h2>
-      <p>
-        We do not collect, store, or share personal data unless it is explicitly stated within a specific application.
-      </p>
+      <h2>取得する情報</h2>
+      <p>当社のアプリケーションでは、利用者が入力した情報は原則として端末内に保存され、外部へ送信されません。アプリごとに外部送信や追加の取得が必要な機能がある場合は、当該アプリ内または関連ページで明示します。</p>
+      <ul>
+        <li>アプリ内で利用者が入力・保存する記録、設定、メモ等</li>
+        <li>お問い合わせ時に利用者から提供されるメールアドレス、本文等</li>
+      </ul>
+      <p class="en">In general, data entered into our applications remains on your device and is not transmitted externally unless a specific feature clearly states otherwise.</p>
 
-      <h2>Local Data</h2>
-      <p>
-        In general, data entered into our applications remains on your device and is not transmitted externally.
-      </p>
+      <h2>利用目的</h2>
+      <p>取得した情報は、お問い合わせへの対応、サービスの提供・保守、不具合調査、利用者への必要な連絡のために利用します。</p>
 
-      <h2>Application-Specific Features</h2>
-      <p>
-        If any application includes features that require data collection, details will be clearly disclosed within that application.
-      </p>
+      <h2>第三者提供</h2>
+      <p>法令に基づく場合を除き、利用者の同意なく個人情報を第三者に提供することはありません。</p>
+      <p class="en">We do not share personal data with third parties without user consent, except where required by law.</p>
+
+      <h2>お問い合わせ窓口</h2>
+      <p>本ポリシーに関するお問い合わせは、合同会社ゼク（ZEC Inc.）までご連絡ください。</p>
+      <p>Email: <a href="mailto:info@zec-inc.jp">info@zec-inc.jp</a></p>
+
+      <h2>制定日</h2>
+      <p>2026年7月</p>
 
       <div class="note">
-        If you have any questions, please visit our 
-        <a href="/support.html">support page</a>.
+        <a href="/">トップページへ戻る</a>
+        <span aria-hidden="true"> · </span>
+        <a href="/support.html">サポートページを見る</a>
       </div>
 
       <div class="footer">
-        © ZEC Inc.
+        &copy; 2026 ZEC Inc.
       </div>
     </section>
   </main>

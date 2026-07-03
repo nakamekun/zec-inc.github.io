@@ -646,7 +646,7 @@ def base_css() -> str:
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.7;
@@ -702,6 +702,7 @@ def render_head(title: str, description: str, canonical: str, og_image: str = ""
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(description, quote=True)}">
   <link rel="canonical" href="{html.escape(canonical, quote=True)}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
   <meta property="og:title" content="{html.escape(title, quote=True)}">
@@ -735,7 +736,7 @@ def render_shell(title: str, description: str, canonical: str, body: str, og_ima
   </header>
 {body}
   <footer>
-    <div class="footer">&copy; ZEC Inc.</div>
+    <div class="footer">&copy; 2026 ZEC Inc.</div>
   </footer>
 </body>
 </html>

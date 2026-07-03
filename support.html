@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support - ZEC Inc.</title>
+  <title>サポート - ZEC Inc.</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
     :root {
       --bg: #f5f8ff;
@@ -12,13 +13,17 @@
       --muted: #64748b;
       --line: #e2e8f0;
       --accent: #2563eb;
+      --header: #2c3e50;
     }
+
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
       background: var(--bg);
       color: var(--text);
+      line-height: 1.7;
     }
 
     .wrap {
@@ -29,8 +34,8 @@
 
     .card {
       background: var(--card);
-      border-radius: 16px;
-      padding: 40px;
+      border-radius: 12px;
+      padding: 40px 32px;
       border: 1px solid var(--line);
       box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
     }
@@ -43,20 +48,22 @@
     }
 
     h1 {
+      margin: 0 0 16px;
       font-size: 34px;
-      margin-bottom: 16px;
+      line-height: 1.25;
+      letter-spacing: 0;
     }
 
     .lead {
       color: var(--muted);
-      margin-bottom: 28px;
+      margin: 0 0 28px;
     }
 
     .box {
       background: #f0f6ff;
       border: 1px solid #dbeafe;
       padding: 18px;
-      border-radius: 12px;
+      border-radius: 10px;
     }
 
     a {
@@ -82,17 +89,19 @@
   <main class="wrap">
     <section class="card">
       <div class="eyebrow">ZEC Inc.</div>
-      <h1>Support</h1>
-      <p class="lead">
-        For questions or support regarding our applications and tools, please contact us below.
-      </p>
+      <h1>サポート</h1>
+      <p class="lead">当社のアプリケーションおよびツールに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+      <p class="lead">For questions or support regarding our applications and tools, please contact us below.</p>
 
       <div class="box">
         <p>Email: <a href="mailto:support@zec-inc.jp">support@zec-inc.jp</a></p>
       </div>
 
       <div class="footer">
-        © ZEC Inc.
+        <a href="/">トップページへ戻る</a>
+        <span aria-hidden="true"> · </span>
+        <a href="/privacy.html">プライバシーポリシー</a>
+        <div>&copy; 2026 ZEC Inc.</div>
       </div>
     </section>
   </main>
