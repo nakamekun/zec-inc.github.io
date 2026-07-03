@@ -1,8 +1,8 @@
 {
   "source": {
     "name": "ZEC curated match results",
-    "updatedAt": "2026-07-02T21:13:10Z",
-    "generatedAt": "2026-07-02T21:13:10Z",
+    "updatedAt": "2026-07-03T01:23:11Z",
+    "generatedAt": "2026-07-03T01:23:11Z",
     "url": null
   },
   "results": [
@@ -917,6 +917,17 @@
       "awayPenaltyScore": null,
       "winnerTeamId": "spain",
       "resultUpdatedAt": "2026-07-02T21:13:09Z",
+      "source": "zec-auto"
+    },
+    {
+      "matchId": "match-083",
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 1,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "portugal",
+      "resultUpdatedAt": "2026-07-03T01:23:11Z",
       "source": "zec-auto"
     }
   ]
