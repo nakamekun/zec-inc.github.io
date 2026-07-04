@@ -1047,6 +1047,18 @@
       "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-086\", \"appMatchNumber\": 86, \"providerMatchNumber\": 86, \"appKickoffUTC\": \"2026-07-03T22:00:00Z\", \"providerKickoffUTC\": \"2026-07-03T22:00:00Z\", \"appHome\": \"Argentina\", \"appAway\": \"Cape Verde\", \"providerHome\": \"Argentina\", \"providerAway\": \"Cabo Verde\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
       "finalResultCaptured": true,
       "lastSuccessfulUpdateAt": "2026-07-04T00:53:09Z"
+    },
+    "match-087": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-07-04T03:43:09Z",
+      "lastAttemptAt": "2026-07-04T03:43:09Z",
+      "lastProviderStatus": "found",
+      "lastStatus": "updated",
+      "lastConfidence": 1.0,
+      "attemptCount": 1,
+      "lastMessage": "calendar API candidate parsed; {\"appMatchId\": \"match-087\", \"appMatchNumber\": 87, \"providerMatchNumber\": 87, \"appKickoffUTC\": \"2026-07-04T01:30:00Z\", \"providerKickoffUTC\": \"2026-07-04T01:30:00Z\", \"appHome\": \"Colombia\", \"appAway\": \"Ghana\", \"providerHome\": \"Colombia\", \"providerAway\": \"Ghana\", \"rejectReason\": \"accepted\", \"confidence\": 1.0}",
+      "lastSuccessfulUpdateAt": "2026-07-04T03:43:09Z",
+      "finalResultCaptured": true
     }
   }
 }
