@@ -1031,6 +1031,18 @@
       "currentMinute": null,
       "resultUpdatedAt": "2026-07-03T21:03:10Z",
       "source": "zec-auto"
+    },
+    {
+      "matchId": "match-086",
+      "status": "fullTime",
+      "homeScore": 3,
+      "awayScore": 2,
+      "homePenaltyScore": null,
+      "awayPenaltyScore": null,
+      "winnerTeamId": "argentina",
+      "currentMinute": null,
+      "resultUpdatedAt": "2026-07-04T00:53:09Z",
+      "source": "zec-auto"
     }
   ]
 }
