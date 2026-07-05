@@ -1087,6 +1087,18 @@
       "nextRetryAfter": "2026-07-05T22:13:10Z",
       "finalCheckAttempted": true,
       "finalCheckAt": "2026-07-05T00:03:08Z"
+    },
+    "match-091": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-07-05T22:13:09Z",
+      "lastAttemptAt": "2026-07-05T22:13:09Z",
+      "lastProviderStatus": "not_found",
+      "lastStatus": "not_found",
+      "lastConfidence": 0.0,
+      "attemptCount": 1,
+      "lastMessage": "no calendar match candidate matched team and kickoff; rejected=[{\"appMatchId\": \"match-091\", \"appMatchNumber\": 91, \"providerMatchNumber\": 91, \"appKickoffUTC\": \"2026-07-05T20:00:00Z\", \"providerKickoffUTC\": \"2026-07-05T20:00:00Z\", \"appHome\": \"Winner Match 76\", \"appAway\": \"Winner Match 78\", \"providerHome\": \"Brazil\", \"providerAway\": \"Norway\", \"rejectReason\": \"home team mismatch\", \"confidence\": 0.0}, {\"appMatchId\": \"match-091\", \"appMatchNumber\": 91, \"providerMatchNumber\": 92, \"appKickoffUTC\": \"2026-07-05T20:00:00Z\", \"providerKickoffUTC\": \"2026-07-06T00:00:00Z\", \"appHome\": \"Winner Match 76\", \"appAway\": \"Winner Match 78\", \"providerHome\": \"Mexico\", \"providerAway\": \"England\", \"rejectReason\": \"kickoff mismatch\", \"confidence\": 0.0}]",
+      "finalResultCaptured": false,
+      "nextRetryAfter": "2026-07-05T22:23:09Z"
     }
   }
 }
