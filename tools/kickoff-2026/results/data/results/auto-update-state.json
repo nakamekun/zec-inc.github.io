@@ -1269,6 +1269,18 @@
       "nextRetryAfter": "2026-07-19T21:13:11Z",
       "finalCheckAttempted": true,
       "finalCheckAt": "2026-07-19T00:03:08Z"
+    },
+    "match-104": {
+      "firstCheckAttempted": true,
+      "firstCheckAt": "2026-07-19T21:13:10Z",
+      "lastAttemptAt": "2026-07-19T21:13:10Z",
+      "lastProviderStatus": "not_found",
+      "lastStatus": "not_found",
+      "lastConfidence": 0.0,
+      "attemptCount": 1,
+      "lastMessage": "no calendar match candidate matched team and kickoff; rejected=[{\"appMatchId\": \"match-104\", \"appMatchNumber\": 104, \"providerMatchNumber\": 104, \"appKickoffUTC\": \"2026-07-19T19:00:00Z\", \"providerKickoffUTC\": \"2026-07-19T19:00:00Z\", \"appHome\": \"Winner Match 101\", \"appAway\": \"Winner Match 102\", \"providerHome\": \"Spain\", \"providerAway\": \"Argentina\", \"rejectReason\": \"home team mismatch\", \"confidence\": 0.0}]",
+      "finalResultCaptured": false,
+      "nextRetryAfter": "2026-07-19T21:23:10Z"
     }
   }
 }
