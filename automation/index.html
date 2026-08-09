@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>業務自動化サービス | 合同会社ゼク</title>
+  <meta name="description" content="合同会社ゼクの業務自動化サービス。毎日の集計・転記・チェック作業をAIで自動化し、結果だけが届く仕組みを構築・運用します。">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --surface: #ffffff;
+      --text: #333333;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --header: #2c3e50;
+      --link: #2563eb;
+      --accent-soft: #eef4fb;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--header);
+      color: #fff;
+      padding: 2em 1em;
+      text-align: center;
+    }
+
+    .header-inner { max-width: 900px; margin: 0 auto; }
+    header h1 { margin: 0; font-size: 1.7em; }
+    header p { margin: 0.5em 0 0; opacity: 0.9; }
+
+    main {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 0 1em;
+      background: var(--surface);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+    }
+
+    section { padding: 2em 1em; border-bottom: 1px solid #eee; }
+    section:last-child { border-bottom: none; }
+    h2 { color: var(--header); margin-top: 0; }
+    .lede { color: var(--muted); font-size: 0.95em; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 12px;
+      margin-top: 1em;
+    }
+    .stat {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1em;
+      background: var(--bg);
+    }
+    .stat b { display: block; font-size: 1.5em; color: var(--header); }
+    .stat span { font-size: 0.82em; color: var(--muted); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.2em;
+      background: var(--bg);
+    }
+    .card h3 { margin: 0 0 0.4em; font-size: 1em; color: var(--header); }
+    .card p { margin: 0; font-size: 0.88em; color: var(--muted); }
+    .tag {
+      display: inline-block;
+      font-size: 0.72em;
+      color: var(--link);
+      background: var(--accent-soft);
+      border-radius: 4px;
+      padding: 1px 8px;
+      margin-bottom: 8px;
+      letter-spacing: 0.05em;
+    }
+
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+    }
+    .plan {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.4em;
+      background: var(--bg);
+    }
+    .plan.main { border-color: var(--link); background: var(--surface); }
+    .plan h3 { margin: 0; font-size: 1em; color: var(--header); }
+    .plan .price { font-size: 1.3em; font-weight: 700; color: var(--link); margin: 0.5em 0 0.1em; }
+    .plan .price small { font-size: 0.65em; font-weight: 400; color: var(--muted); }
+    .plan ul { list-style: none; padding: 0; margin: 0.8em 0 0; font-size: 0.88em; color: var(--muted); }
+    .plan li { padding: 4px 0 4px 1.3em; position: relative; }
+    .plan li::before { content: "✓"; position: absolute; left: 0; color: var(--link); }
+
+    .steps { counter-reset: step; }
+    .step {
+      display: flex;
+      gap: 16px;
+      padding: 1em 0;
+      border-bottom: 1px dashed var(--line);
+    }
+    .step:last-child { border-bottom: none; }
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      flex: 0 0 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--link);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+    .step div b { display: block; color: var(--header); }
+    .step div p { margin: 0.2em 0 0; font-size: 0.9em; color: var(--muted); }
+
+    .policy { padding-left: 1.2em; }
+    .policy li { margin: 0.6em 0; font-size: 0.95em; }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+      padding: 1em 1em 2em;
+    }
+    footer a { color: inherit; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>業務自動化サービス</h1>
+      <p>合同会社ゼク（ZEC Inc.）</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>毎朝、定型業務が「終わっている」状態をつくります</h2>
+      <p>集計、転記、価格チェック、レポート作成——毎日繰り返している手作業を、AIを活用した自動処理に置き換え、結果だけがメール・LINE・チャットに届く仕組みを構築・運用します。</p>
+      <p>ツールのご紹介や研修ではなく、<strong>「動き続ける仕組み」そのもの</strong>を納品するサービスです。</p>
+    </section>
+
+    <section>
+      <h2>自社で毎日使っているものを、そのまま提供します</h2>
+      <p class="lede">当社は自社の業務をすべてこの方式で運営しています。以下はすべて、いま現在毎日動いている実物です。</p>
+      <div class="stats">
+        <div class="stat"><b>40本超</b><span>毎日自動実行される処理の本数</span></div>
+        <div class="stat"><b>6,000品目超</b><span>毎日自動収集している価格データ</span></div>
+        <div class="stat"><b>4サイト</b><span>データ収集から記事公開まで自動運営中のメディア</span></div>
+        <div class="stat"><b>0人</b><span>これらの運用に毎日張り付いている人数</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>自社運用の実例</h2>
+      <p class="lede">ご商談の際に、実際に動いている画面をお見せします。</p>
+      <div class="grid">
+        <div class="card">
+          <span class="tag">価格監視</span>
+          <h3>仕入価格×売却価格の自動照合</h3>
+          <p>複数のECサイトの販売価格と買取価格を毎日自動収集し、条件を満たした商品だけをチャットに通知。人間は通知を見て判断するだけ。</p>
+        </div>
+        <div class="card">
+          <span class="tag">日次レポート</span>
+          <h3>毎朝の統合ブリーフ</h3>
+          <p>複数の情報源（ニュース・市況・社内データ）を毎朝自動で集約し、要点だけをまとめたレポートを配信。朝の情報収集時間をゼロに。</p>
+        </div>
+        <div class="card">
+          <span class="tag">コンテンツ</span>
+          <h3>ブログの自動運営</h3>
+          <p>公的統計データの取得から記事の執筆、図表の生成、サイトへの公開までを自動化。複数サイトを並行運営中。</p>
+        </div>
+        <div class="card">
+          <span class="tag">転記・集計</span>
+          <h3>管理画面からの週次自動集計</h3>
+          <p>複数サービスの管理画面から成果データを毎週自動取得し、集計してチャットに報告。ログインから転記まで人手ゼロ。</p>
+        </div>
+        <div class="card">
+          <span class="tag">公的データ</span>
+          <h3>補助金・入札情報の自動スクリーニング</h3>
+          <p>国の公開APIから補助金・入札の新着を毎日取得し、条件に合うものだけを通知。「知らなかった」をなくす。</p>
+        </div>
+        <div class="card">
+          <span class="tag">見える化</span>
+          <h3>統合ダッシュボード</h3>
+          <p>すべての自動処理の結果と状態を一画面に集約。スマートフォンからいつでも確認できる。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>サービスと料金</h2>
+      <p class="lede">範囲・価格・納期を最初に固定します。作業の途中で金額が膨らむことはありません。</p>
+      <div class="plans">
+        <div class="plan">
+          <h3>自動化診断</h3>
+          <div class="price">50,000円<small>（税別・1週間）</small></div>
+          <ul>
+            <li>業務の棚卸しヒアリング（半日）</li>
+            <li>自動化できる業務のリストアップ</li>
+            <li>削減時間と費用対効果の試算書</li>
+            <li>構築をご発注の場合は全額充当</li>
+          </ul>
+        </div>
+        <div class="plan main">
+          <h3>自動化構築パック</h3>
+          <div class="price">150,000円〜<small>（税別・約2週間）</small></div>
+          <ul>
+            <li>業務1つを完全自動化して納品</li>
+            <li>通知・帳票などの出力設定込み</li>
+            <li>手順書つき</li>
+            <li>納品後30日間の調整対応</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>運用サポート</h3>
+          <div class="price">月額 30,000円〜<small>（税別・構築後オプション）</small></div>
+          <ul>
+            <li>自動処理の死活監視</li>
+            <li>不具合時の対応（翌営業日）</li>
+            <li>月1件の改善・変更枠</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>進め方</h2>
+      <div class="steps">
+        <div class="step"><div><b>ヒアリング</b><p>いまの作業手順をそのまま教えてください。専門用語は不要です。「何を・どこから・どこへ・どの頻度で」が分かれば充分です。</p></div></div>
+        <div class="step"><div><b>ご提案・お見積り</b><p>自動化の方法、固定価格、納期をご提示します。この時点までは費用はかかりません。</p></div></div>
+        <div class="step"><div><b>構築・納品</b><p>約2週間で構築し、実際に動く状態でお引き渡しします。手順書つき。</p></div></div>
+        <div class="step"><div><b>調整期間</b><p>納品後30日間、通知条件の変更や動作の微修正に無償で対応します。</p></div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>方針</h2>
+      <ul class="policy">
+        <li><strong>作って終わりにしません。</strong>自動化は作ることより動かし続けることが難しい。当社は自社の仕組みを毎日運用している当事者です。</li>
+        <li><strong>規約を守ります。</strong>対象サービスの利用規約に反する自動化は、ご依頼でもお断りします。</li>
+        <li><strong>固定価格です。</strong>範囲を最初に定義し、超える場合は事前に追加見積りをご提示します。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>お問い合わせ</h2>
+      <p>本ページはご紹介・ご商談用のご案内です。お問い合わせは以下のメールアドレスまでお願いいたします。</p>
+      <p><strong>info [at] zec-inc.jp</strong></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>&copy; 2026 ZEC Inc.</div>
+    <div><a href="/">zec-inc.jp</a></div>
+  </footer>
+
+</body>
+</html>
