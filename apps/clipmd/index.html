@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClipMD | ZEC Apps</title>
+  <meta name="description" content="ClipMD turns web pages and copied text into clean Markdown clips you keep on your device.">
+  <link rel="canonical" href="https://zec-inc.jp/apps/clipmd/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ZEC Apps">
+  <meta property="og:title" content="ClipMD | ZEC Apps">
+  <meta property="og:description" content="ClipMD turns web pages and copied text into clean Markdown clips you keep on your device.">
+  <meta property="og:url" content="https://zec-inc.jp/apps/clipmd/">
+  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6b/e8/39/6be839d7-15f1-be36-c275-aef551b47328/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "ClipMD",
+      "description": "ClipMD turns web pages and copied text into clean Markdown clips you keep on your device.",
+      "operatingSystem": "iOS",
+      "applicationCategory": "Productivity",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "url": "https://apps.apple.com/us/app/clipmd/id6789844342?uo=4"
+      },
+      "url": "https://zec-inc.jp/apps/clipmd/",
+      "downloadUrl": "https://apps.apple.com/us/app/clipmd/id6789844342?uo=4",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ZEC Inc.",
+        "url": "https://zec-inc.jp"
+      },
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6b/e8/39/6be839d7-15f1-be36-c275-aef551b47328/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "softwareVersion": "1.0",
+      "contentRating": "4+"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is ClipMD for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ClipMD is a focused iPhone app from ZEC Inc. The page above summarizes its purpose, intended users, and basic usage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I download ClipMD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can download ClipMD from its official App Store page linked on this page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does ClipMD cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The App Store currently reports the price as Free. App Store pricing and availability may vary by country or change over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I check privacy information?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The App Store product page contains Apple's current privacy labels and related disclosure information for this app."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <style>
+
+    :root {
+      --bg: #f5f8ff;
+      --surface: #ffffff;
+      --soft: #f8fbff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+      --header: #2c3e50;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header { background: var(--header); color: #ffffff; padding: 20px; }
+    .topbar, main, footer { max-width: 920px; margin: 0 auto; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .brand { font-weight: 600; }
+    a { color: var(--accent); }
+    .topbar a { color: #ffffff; text-decoration: none; }
+    .topbar a:hover, a:hover { text-decoration: underline; }
+    main { padding: 44px 20px; }
+    .hero, .section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.06); }
+    .hero { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; }
+    .app-icon { width: 96px; height: 96px; border-radius: 22px; border: 1px solid rgba(226, 232, 240, 0.9); box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1); }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.2; letter-spacing: 0; }
+    .tagline { margin: 0 0 18px; color: var(--muted); font-size: 17px; }
+    .actions, .app-actions, .category-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .button, .app-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line); background: #ffffff; text-decoration: none; font-weight: 600; }
+    .button.primary, .app-link.primary { background: var(--accent); border-color: var(--accent); color: #ffffff; }
+    .section { margin-top: 18px; }
+    h2 { margin: 0 0 14px; font-size: 22px; color: var(--header); }
+    p { margin: 0 0 12px; }
+    ul, ol { margin: 0; padding-left: 1.25em; }
+    .app-grid, .screenshots { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+    .app-mini-card, .screenshot { margin: 0; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .app-mini-card h2, .app-mini-card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.3; }
+    .app-mini-card p { color: var(--muted); font-size: 14px; }
+    .mini-icon { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 10px; }
+    .screenshot img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    details { border-top: 1px solid var(--line); padding: 14px 0; }
+    details:first-child { border-top: 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    .meta { color: var(--muted); font-size: 14px; }
+    footer { padding: 0 20px 40px; color: var(--muted); font-size: 14px; }
+    .footer { border-top: 1px solid var(--line); padding-top: 16px; }
+    @media (max-width: 640px) {
+      main { padding-top: 28px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      .section { padding: 22px; }
+      h1 { font-size: 30px; }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">ZEC Inc.</div>
+      <nav aria-label="Secondary">
+        <a href="/apps/">Apps</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6b/e8/39/6be839d7-15f1-be36-c275-aef551b47328/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="ClipMD app icon" width="96" height="96">
+      <div>
+        <h1>ClipMD</h1>
+        <p class="tagline">ClipMD turns web pages and copied text into clean Markdown clips you keep on your device.</p>
+        <div class="actions">
+          <a class="button primary" href="https://apps.apple.com/us/app/clipmd/id6789844342?uo=4">View on the App Store</a>
+          <a class="button" href="/apps/">All ZEC Apps</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Overview</h2>
+          <p>ClipMD turns web pages and copied text into clean Markdown clips you keep on your device.</p>
+          <p>Paste a URL or share a page to ClipMD, and it extracts the article body and converts it to Markdown - headings, lists, and links included. Copy the result into your notes app, or keep it in ClipMD as a reading archive.</p>
+    </section>
+
+    <section class="section">
+      <h2>Who It Is For</h2>
+      <ul>
+            <li>People looking for a simple productivity app for one focused task</li>
+            <li>Users who prefer lightweight tools over complex all-in-one apps</li>
+            <li>iPhone users who want an official source before installing from the App Store</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Main Features</h2>
+      <ul>
+            <li>ClipMD turns web pages and copied text into clean Markdown clips you keep on your device.</li>
+            <li>Paste a URL or share a page to ClipMD, and it extracts the article body and converts it to Markdown - headings...</li>
+            <li>Copy the result into your notes app, or keep it in ClipMD as a reading archive.</li>
+            <li>Features: - Convert web pages to Markdown by URL or from the share sheet - Convert copied text in one tap - Clean...</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>How to Use</h2>
+      <ol>
+            <li>Install ClipMD from the App Store.</li>
+            <li>Open the app and complete the first screen or setup shown in the app.</li>
+            <li>Use the main action whenever the task comes up.</li>
+            <li>Return to the app when you want to review, adjust, or repeat the task.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Pricing</h2>
+      <p>Free</p>
+      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    </section>
+
+    <section class="section">
+      <h2>Privacy</h2>
+      <p>This page uses App Store metadata as its source. For the current Apple privacy labels and regional availability, check the linked App Store product page.</p>
+    </section>
+
+    <section class="section">
+      <h2>Screenshots</h2>
+      <div class="screenshots">
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f4/fe/62/f4fe62b0-bcc8-8b5e-da67-7ba21b9d29bb/01.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/06/37/13/0637134f-7da7-ab21-2008-a73e9257bd52/01.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/44/88/26/448826e6-85fb-51d1-c11a-fcb68daf6a34/02.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/56/db/ab/56dbabdc-1a8b-83b2-0c14-a3c2eed23dfe/02.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/1e/ac/3d1eacaa-c155-9cb2-a7d8-93bf1b4fb3ef/03-ipad.png/360x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>FAQ</h2>
+          <details>
+            <summary>What is ClipMD for?</summary>
+            <p>ClipMD is a focused iPhone app from ZEC Inc. The page above summarizes its purpose, intended users, and basic usage.</p>
+          </details>
+          <details>
+            <summary>Where can I download ClipMD?</summary>
+            <p>You can download ClipMD from its official App Store page linked on this page.</p>
+          </details>
+          <details>
+            <summary>How much does ClipMD cost?</summary>
+            <p>The App Store currently reports the price as Free. App Store pricing and availability may vary by country or change over time.</p>
+          </details>
+          <details>
+            <summary>Where can I check privacy information?</summary>
+            <p>The App Store product page contains Apple&#x27;s current privacy labels and related disclosure information for this app.</p>
+          </details>
+    </section>
+
+    <section class="section">
+      <h2>App Store</h2>
+      <p><a class="button primary" href="https://apps.apple.com/us/app/clipmd/id6789844342?uo=4">Open ClipMD on the App Store</a></p>
+      <p class="meta">Last updated: 2026-07-16</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">&copy; 2026 ZEC Inc.</div>
+  </footer>
+</body>
+</html>

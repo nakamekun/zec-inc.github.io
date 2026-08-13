@@ -16,9 +16,9 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 SITE_ORIGIN = "https://zec-inc.jp"
 APPS_DIR = ROOT_DIR / "apps"
 SITEMAP_XML = ROOT_DIR / "sitemap.xml"
+APPS_MANIFEST = ROOT_DIR / "data" / "apps-manifest.json"
 DETAIL_MARKER = ".generated-app-detail"
 CATEGORY_MARKER = ".generated-app-category"
-EXPECTED_CATEGORIES = {"photo-memory", "travel", "tap-tools", "widgets", "family", "productivity"}
 
 
 class PageParser(HTMLParser):
@@ -137,20 +137,39 @@ def validate_sitemap(expected_urls: set[str], errors: list[str]) -> None:
         errors.append(f"sitemap.xml missing {url}")
 
 
+def load_manifest(errors: list[str]) -> tuple[set[str], set[str]] | None:
+    if not APPS_MANIFEST.exists():
+        errors.append(f"missing {APPS_MANIFEST.relative_to(ROOT_DIR)} (run scripts/update_apps_page.py first)")
+        return None
+    try:
+        manifest = json.loads(APPS_MANIFEST.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        errors.append(f"invalid apps manifest: {exc}")
+        return None
+    return set(manifest.get("detail_slugs", [])), set(manifest.get("category_slugs", []))
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--expected-detail-count", type=int, default=24)
-    args = parser.parse_args(argv)
+    parser.parse_args(argv)
 
     errors: list[str] = []
     detail_pages, category_pages = collect_pages()
-    if len(detail_pages) != args.expected_detail_count:
-        errors.append(f"expected {args.expected_detail_count} detail pages, found {len(detail_pages)}")
+    manifest = load_manifest(errors)
+    if manifest is not None:
+        expected_detail_slugs, expected_category_slugs = manifest
 
-    category_slugs = {path.parent.name for path in category_pages}
-    missing_categories = sorted(EXPECTED_CATEGORIES - category_slugs)
-    for slug in missing_categories:
-        errors.append(f"missing category page apps/{slug}/index.html")
+        detail_slugs = {path.parent.name for path in detail_pages}
+        for slug in sorted(expected_detail_slugs - detail_slugs):
+            errors.append(f"missing detail page apps/{slug}/index.html")
+        for slug in sorted(detail_slugs - expected_detail_slugs):
+            errors.append(f"unexpected detail page apps/{slug}/index.html (not in apps manifest)")
+
+        category_slugs = {path.parent.name for path in category_pages}
+        for slug in sorted(expected_category_slugs - category_slugs):
+            errors.append(f"missing category page apps/{slug}/index.html")
+        for slug in sorted(category_slugs - expected_category_slugs):
+            errors.append(f"unexpected category page apps/{slug}/index.html (not in apps manifest)")
 
     pages = [ROOT_DIR / "index.html", APPS_DIR / "index.html"] + detail_pages + category_pages
     expected_sitemap_urls = {SITE_ORIGIN + "/", SITE_ORIGIN + "/apps/"}

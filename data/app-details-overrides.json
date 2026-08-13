@@ -115,64 +115,6 @@
       }
     ]
   },
-  "6771279362": {
-    "slug": "kickoff-bell-2026",
-    "short_description": "A lightweight, unofficial match schedule and reminder app for following 2026 football kickoff times.",
-    "meta_description": "Kickoff Bell 2026 is an unofficial iPhone schedule and reminder app for checking 2026 football match kickoff times.",
-    "categories": ["travel", "widgets", "productivity"],
-    "overview": [
-      "Kickoff Bell 2026 is an unofficial schedule and reminder app for people following football matches in 2026. It focuses on kickoff times, quick checks, and reminders rather than news, streaming, or official tournament coverage.",
-      "The app is intended as a lightweight companion for fans who want to know when a match starts in their local context. It is not affiliated with, endorsed by, or presented as an official event app."
-    ],
-    "target_users": [
-      "Fans who want a quick way to check kickoff times",
-      "People following matches across time zones",
-      "Users who want reminders without a heavy sports news app",
-      "Travelers or busy viewers who need schedule checks at a glance"
-    ],
-    "features": [
-      "Match schedule reference focused on kickoff times",
-      "Reminder-oriented workflow for upcoming games",
-      "Lightweight app structure for quick checks",
-      "Useful across time zones and daily routines",
-      "Unofficial positioning with a direct App Store link"
-    ],
-    "how_to_use": [
-      "Install Kickoff Bell 2026 from the App Store.",
-      "Open the app to check match schedules and kickoff times.",
-      "Use reminders or quick checks for matches you care about.",
-      "Confirm important details against official sources when needed.",
-      "Return to the app as the tournament schedule progresses."
-    ],
-    "pricing": "See the App Store for the current price, in-app purchase availability, and regional availability.",
-    "privacy": "Kickoff Bell 2026 is a schedule utility. Check the App Store product page for Apple's current privacy label and data disclosure information.",
-    "faq": [
-      {
-        "question": "Is Kickoff Bell 2026 an official tournament app?",
-        "answer": "No. Kickoff Bell 2026 is an unofficial schedule and reminder app from ZEC Inc. It is not affiliated with or endorsed by any tournament organizer."
-      },
-      {
-        "question": "What is the app for?",
-        "answer": "It helps users check football match kickoff times and keep track of matches they want to follow in 2026."
-      },
-      {
-        "question": "Does the app stream matches?",
-        "answer": "No. Kickoff Bell 2026 is not a streaming app. It is focused on schedules, kickoff times, and reminder-style use."
-      },
-      {
-        "question": "Should I rely on it for official match information?",
-        "answer": "Use the app as a convenient schedule aid. For critical or official details, confirm against official sources."
-      },
-      {
-        "question": "Is it useful across time zones?",
-        "answer": "The app is designed for quick kickoff checks, which is especially useful when match times are hard to track manually."
-      },
-      {
-        "question": "Where can I download it?",
-        "answer": "Use the App Store link on this page to open the official Kickoff Bell 2026 product page."
-      }
-    ]
-  },
   "6762576578": {
     "slug": "pooptap-daily-tracker",
     "short_description": "A simple daily bowel movement tracker and stool log for private poop records, digestion notes, and constipation notes.",

@@ -40,6 +40,7 @@ ASSETS_APPS_DIR = ROOT_DIR / "assets" / "apps"
 APPS_PAGE = APPS_DIR / "index.html"
 DETAIL_OVERRIDES = ROOT_DIR / "data" / "app-details-overrides.json"
 LOOKUP_CACHE = ROOT_DIR / "data" / "app-store-lookup-cache.json"
+APPS_MANIFEST = ROOT_DIR / "data" / "apps-manifest.json"
 SITEMAP_XML = ROOT_DIR / "sitemap.xml"
 ROBOTS_TXT = ROOT_DIR / "robots.txt"
 LLMS_TXT = ROOT_DIR / "llms.txt"
@@ -117,9 +118,8 @@ def fetch_lookup_payload() -> dict[str, Any]:
     try:
         with urllib.request.urlopen(request, timeout=30) as response:
             payload = json.load(response)
-        if not LOOKUP_CACHE.exists():
-            LOOKUP_CACHE.parent.mkdir(parents=True, exist_ok=True)
-            LOOKUP_CACHE.write_text(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        LOOKUP_CACHE.parent.mkdir(parents=True, exist_ok=True)
+        LOOKUP_CACHE.write_text(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         return payload
     except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
         if LOOKUP_CACHE.exists():
@@ -1020,14 +1020,13 @@ Sitemap: {SITE_ORIGIN}/sitemap.xml
 
 def write_llms(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> None:
     priority_names = {
-        "PhotoDay – One Photo a Day",
+        "PhotoDay: One Photo a Day",
         "Packed by ZEC",
-        "Kickoff Bell 2026",
         "PillTap",
         "LaundryTap",
         "Big Text Note",
-        "CleanURL Tap",
-        "PoopTap – Daily Tracker",
+        "CleanURL Tap - Tidy Long Links",
+        "PoopTap",
     }
     priority_apps = [app for app in apps if app_name(app) in priority_names]
     if len(priority_apps) < 7:
@@ -1060,6 +1059,20 @@ def write_llms(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> None:
     LLMS_TXT.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
 
 
+def write_manifest(apps: list[dict[str, Any]], category_urls: list[str]) -> None:
+    detail_slugs = sorted(str(app["slug"]) for app in apps)
+    category_slugs = sorted(url.rstrip("/").rsplit("/", 1)[-1] for url in category_urls)
+    APPS_MANIFEST.write_text(
+        json.dumps(
+            {"detail_slugs": detail_slugs, "category_slugs": category_slugs},
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+
 def run_build(strict: bool = False) -> tuple[list[dict[str, Any]], list[str]]:
     ctx = BuildContext(strict=strict)
     overrides = load_overrides(ctx)
@@ -1067,6 +1080,7 @@ def run_build(strict: bool = False) -> tuple[list[dict[str, Any]], list[str]]:
     update_apps_index(apps, overrides)
     detail_urls = write_detail_pages(apps, overrides, ctx)
     category_urls = write_category_pages(apps, overrides, ctx)
+    write_manifest(apps, category_urls)
     write_sitemap(detail_urls + category_urls)
     write_robots()
     write_llms(apps, overrides)
