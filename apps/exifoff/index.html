@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ExifOff | ZEC Apps</title>
-  <meta name="description" content="ExifOff checks what a photo reveals and creates a clean copy for safer sharing.">
+  <meta name="description" content="ExifOff removes EXIF metadata and location data from photos on iPhone. Check what a photo reveals, then share a clean copy - originals never change.">
   <link rel="canonical" href="https://zec-inc.jp/apps/exifoff/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
   <meta property="og:title" content="ExifOff | ZEC Apps">
-  <meta property="og:description" content="ExifOff checks what a photo reveals and creates a clean copy for safer sharing.">
+  <meta property="og:description" content="ExifOff removes EXIF metadata and location data from photos on iPhone. Check what a photo reveals, then share a clean copy - originals never change.">
   <meta property="og:url" content="https://zec-inc.jp/apps/exifoff/">
   <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/70/39/697039a4-ac66-4b91-b6f7-db675df5489b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
   <script type="application/ld+json">
@@ -20,7 +20,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "ExifOff",
-      "description": "ExifOff checks what a photo reveals and creates a clean copy for safer sharing.",
+      "description": "ExifOff removes EXIF metadata and location data from photos on iPhone. Check what a photo reveals, then share a clean copy - originals never change.",
       "operatingSystem": "iOS",
       "applicationCategory": "Utilities",
       "offers": {
@@ -45,34 +45,58 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is ExifOff for?",
+          "name": "Is ExifOff free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ExifOff is a focused iPhone app from ZEC Inc. The page above summarizes its purpose, intended users, and basic usage."
+            "text": "Yes. The app is free with no ads and no in-app purchases. App Store pricing can change, so check the listing for current details."
           }
         },
         {
           "@type": "Question",
-          "name": "Where can I download ExifOff?",
+          "name": "Are my photos uploaded to a server?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can download ExifOff from its official App Store page linked on this page."
+            "text": "No. Metadata checking and cleaning run entirely on your device. There is no account, no upload, and no tracking."
           }
         },
         {
           "@type": "Question",
-          "name": "How much does ExifOff cost?",
+          "name": "Does it delete or change my original photos?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The App Store currently reports the price as Free. App Store pricing and availability may vary by country or change over time."
+            "text": "No. ExifOff always creates a new clean JPEG copy for saving or sharing. Your originals are never edited or deleted."
           }
         },
         {
           "@type": "Question",
-          "name": "Where can I check privacy information?",
+          "name": "What metadata does it remove?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The App Store product page contains Apple's current privacy labels and related disclosure information for this app."
+            "text": "The clean copy is created without carrying over the source photo's metadata, including location data. Before cleaning, the app shows whether location data was found plus the date, camera, size, and file type."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I clean multiple photos at once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can clean up to 50 photos in one go."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it without opening the app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Share photos from any app to ExifOff via the share sheet and it hands back clean copies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should I remove EXIF data before sharing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Photos can carry embedded location coordinates and other details about when and how they were taken. Stripping that metadata before posting or sending prevents strangers from learning where a photo was taken."
           }
         }
       ]
@@ -159,7 +183,7 @@
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/70/39/697039a4-ac66-4b91-b6f7-db675df5489b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="ExifOff app icon" width="96" height="96">
       <div>
         <h1>ExifOff</h1>
-        <p class="tagline">ExifOff checks what a photo reveals and creates a clean copy for safer sharing.</p>
+        <p class="tagline">Check what a photo reveals - location, date, camera - and share a clean copy with metadata removed.</p>
         <div class="actions">
           <a class="button primary" href="https://apps.apple.com/us/app/exifoff/id6789844259?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
@@ -169,48 +193,55 @@
 
     <section class="section">
       <h2>Overview</h2>
-          <p>ExifOff checks what a photo reveals and creates a clean copy for safer sharing.</p>
-          <p>Pick a photo to see whether it contains location data, plus basics like date, camera, size, and file type. Then create a new JPEG copy with the metadata removed. Your original photo is never changed.</p>
+          <p>ExifOff checks what a photo reveals and creates a clean copy for safer sharing. Pick a photo to see whether it contains location data, along with basics like date, camera, size, and file type - then create a new JPEG copy with the metadata removed before you post or send it.</p>
+          <p>It is a single-purpose privacy tool, not a photo editor or a full EXIF browser: it shows only the fields that matter for a sharing decision, and it never touches your originals. Cleaning happens entirely on your device with no account, no upload, and no tracking.</p>
+          <p>You can clean up to 50 photos at once, and even clean straight from the share sheet - share photos from any app to ExifOff and get clean copies back.</p>
     </section>
 
     <section class="section">
       <h2>Who It Is For</h2>
       <ul>
-            <li>People looking for a simple utilities app for one focused task</li>
-            <li>Users who prefer lightweight tools over complex all-in-one apps</li>
-            <li>iPhone users who want an official source before installing from the App Store</li>
+            <li>Anyone posting photos to social media who doesn&#x27;t want to reveal where they were taken</li>
+            <li>People selling items online who share photos taken at home</li>
+            <li>Parents sharing kids&#x27; photos and worried about embedded location data</li>
+            <li>Users sending photos to strangers via marketplaces, forums, or chat apps</li>
+            <li>Privacy-conscious users who want metadata stripped on-device, not by a web service</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>Main Features</h2>
       <ul>
-            <li>ExifOff checks what a photo reveals and creates a clean copy for safer sharing.</li>
-            <li>Pick a photo to see whether it contains location data, plus basics like date, camera, size, and file type.</li>
-            <li>Then create a new JPEG copy with the metadata removed.</li>
-            <li>Your original photo is never changed.</li>
+            <li>See whether location data is present in a photo before you share it</li>
+            <li>Check key metadata: date, camera, image size, and file type</li>
+            <li>Create a clean JPEG copy with metadata removed - originals stay untouched</li>
+            <li>Clean up to 50 photos at once</li>
+            <li>Clean straight from the share sheet: share photos from any app and get clean copies back</li>
+            <li>Save the clean copies to your library or share them directly</li>
+            <li>Everything runs on your device - no account, no upload, no tracking</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>How to Use</h2>
       <ol>
-            <li>Install ExifOff from the App Store.</li>
-            <li>Open the app and complete the first screen or setup shown in the app.</li>
-            <li>Use the main action whenever the task comes up.</li>
-            <li>Return to the app when you want to review, adjust, or repeat the task.</li>
+            <li>Open ExifOff and pick a photo (or select up to 50 at once).</li>
+            <li>Review what the photo reveals: whether location data was found, plus date, camera, size, and file type.</li>
+            <li>Tap to create a clean copy - a new JPEG without the source metadata.</li>
+            <li>Save the clean copy to your photo library or share it straight from the app.</li>
+            <li>Alternatively, share photos to ExifOff from any app&#x27;s share sheet and get clean copies back without opening the app first.</li>
       </ol>
     </section>
 
     <section class="section">
       <h2>Pricing</h2>
-      <p>Free</p>
+      <p>ExifOff is free on the App Store, with no ads and no in-app purchases. App Store pricing and availability can change, so check the store listing for current details.</p>
       <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
     </section>
 
     <section class="section">
       <h2>Privacy</h2>
-      <p>This page uses App Store metadata as its source. For the current Apple privacy labels and regional availability, check the linked App Store product page.</p>
+      <p>All processing happens on your device - photos are never uploaded, and there is no account and no tracking. ExifOff creates new clean copies for sharing; it does not edit or delete your original photos. See the App Store privacy label for the current details.</p>
     </section>
 
     <section class="section">
@@ -227,20 +258,32 @@
     <section class="section">
       <h2>FAQ</h2>
           <details>
-            <summary>What is ExifOff for?</summary>
-            <p>ExifOff is a focused iPhone app from ZEC Inc. The page above summarizes its purpose, intended users, and basic usage.</p>
+            <summary>Is ExifOff free?</summary>
+            <p>Yes. The app is free with no ads and no in-app purchases. App Store pricing can change, so check the listing for current details.</p>
           </details>
           <details>
-            <summary>Where can I download ExifOff?</summary>
-            <p>You can download ExifOff from its official App Store page linked on this page.</p>
+            <summary>Are my photos uploaded to a server?</summary>
+            <p>No. Metadata checking and cleaning run entirely on your device. There is no account, no upload, and no tracking.</p>
           </details>
           <details>
-            <summary>How much does ExifOff cost?</summary>
-            <p>The App Store currently reports the price as Free. App Store pricing and availability may vary by country or change over time.</p>
+            <summary>Does it delete or change my original photos?</summary>
+            <p>No. ExifOff always creates a new clean JPEG copy for saving or sharing. Your originals are never edited or deleted.</p>
           </details>
           <details>
-            <summary>Where can I check privacy information?</summary>
-            <p>The App Store product page contains Apple&#x27;s current privacy labels and related disclosure information for this app.</p>
+            <summary>What metadata does it remove?</summary>
+            <p>The clean copy is created without carrying over the source photo&#x27;s metadata, including location data. Before cleaning, the app shows whether location data was found plus the date, camera, size, and file type.</p>
+          </details>
+          <details>
+            <summary>Can I clean multiple photos at once?</summary>
+            <p>Yes. You can clean up to 50 photos in one go.</p>
+          </details>
+          <details>
+            <summary>Can I use it without opening the app?</summary>
+            <p>Yes. Share photos from any app to ExifOff via the share sheet and it hands back clean copies.</p>
+          </details>
+          <details>
+            <summary>Why should I remove EXIF data before sharing?</summary>
+            <p>Photos can carry embedded location coordinates and other details about when and how they were taken. Stripping that metadata before posting or sending prevents strangers from learning where a photo was taken.</p>
           </details>
     </section>
 

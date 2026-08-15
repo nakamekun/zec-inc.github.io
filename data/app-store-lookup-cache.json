@@ -14,20 +14,20 @@
       "artistId": 1889726396,
       "artistName": "ZEC Inc.",
       "artistViewUrl": "https://apps.apple.com/us/developer/zec-inc/id1889726396?uo=4",
-      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5c/79/54/5c795478-dc90-e192-aaf3-eeccf6c02f47/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5c/79/54/5c795478-dc90-e192-aaf3-eeccf6c02f47/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-      "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5c/79/54/5c795478-dc90-e192-aaf3-eeccf6c02f47/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/60x60bb.jpg",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/c7/0b/eec70bc7-b804-0f99-c5ca-7330e8b4aa73/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/c7/0b/eec70bc7-b804-0f99-c5ca-7330e8b4aa73/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/c7/0b/eec70bc7-b804-0f99-c5ca-7330e8b4aa73/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/60x60bb.jpg",
       "averageUserRating": 0,
       "averageUserRatingForCurrentVersion": 0,
       "bundleId": "com.zec.PhotoCalendarApp",
       "contentAdvisoryRating": "4+",
       "currency": "USD",
-      "currentVersionReleaseDate": "2026-08-03T23:24:57Z",
+      "currentVersionReleaseDate": "2026-08-14T03:43:20Z",
       "description": "PhotoDay is a simple one-photo-a-day memory app for the days you want to keep.\n\nUse it for family moments, kids’ growth, pets, trips, everyday life, plants, creative work, or any small change worth remembering. Open a date, choose one meaningful photo, and let your saved days fill in without photo editing, albums, or social sharing getting in the way.\n\nPhotoDay focuses on the loop that matters: pick today’s photo, see it saved on your calendar, revisit past days in Memories, and add the widget to meet a saved moment at a glance.\n\nNo account is required. Your photos are read from the photo library on your device, and saved photo references are stored locally for the app and widget.",
       "features": [
         "iosUniversal"
       ],
-      "fileSizeBytes": "7434240",
+      "fileSizeBytes": "7757824",
       "formattedPrice": "Free",
       "genreIds": [
         "6012",
@@ -65,7 +65,7 @@
       "primaryGenreId": 6012,
       "primaryGenreName": "Lifestyle",
       "releaseDate": "2026-04-08T07:00:00Z",
-      "releaseNotes": "Frame Mode is now calmer and more beautiful. The controls quietly fade away after a few seconds, leaving just your photo and its date. Notes appear only on days that have one, long notes stay neatly within a few lines, and a Done button on the keyboard makes writing notes easier.",
+      "releaseNotes": "PhotoDay 2.0 adds iCloud Sync. Your photo choices and notes are stored in your personal iCloud, so they survive a new phone or a reinstall. It is free for everyone — turn it on under Settings > iCloud Sync. Photos themselves are never uploaded, and the developer cannot read your data.",
       "screenshotUrls": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/24/44/c7/2444c79a-74f5-2719-1f5c-e647696d407e/iphone_01.png/320x480bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/8c/84/0c8c843f-b85e-ba08-a628-57429c20fd4a/iphone_02.png/320x480bb.jpg",
@@ -211,7 +211,7 @@
       "trackViewUrl": "https://apps.apple.com/us/app/photoday-one-photo-a-day/id6761641437?uo=4",
       "userRatingCount": 0,
       "userRatingCountForCurrentVersion": 0,
-      "version": "1.10.1",
+      "version": "2.0.0",
       "wrapperType": "software"
     },
     {
@@ -220,20 +220,20 @@
       "artistId": 1889726396,
       "artistName": "ZEC Inc.",
       "artistViewUrl": "https://apps.apple.com/us/developer/zec-inc/id1889726396?uo=4",
-      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/59/83/52/598352e1-8539-977d-fb96-b295de13e20d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
-      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/59/83/52/598352e1-8539-977d-fb96-b295de13e20d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-      "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/59/83/52/598352e1-8539-977d-fb96-b295de13e20d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/60x60bb.jpg",
+      "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c8/d7/45/c8d7455e-e179-059d-dd7e-faf524486c53/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg",
+      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c8/d7/45/c8d7455e-e179-059d-dd7e-faf524486c53/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c8/d7/45/c8d7455e-e179-059d-dd7e-faf524486c53/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/60x60bb.jpg",
       "averageUserRating": 5,
       "averageUserRatingForCurrentVersion": 5,
       "bundleId": "com.zec.BigTextNote",
       "contentAdvisoryRating": "4+",
       "currency": "USD",
-      "currentVersionReleaseDate": "2026-08-01T19:02:58Z",
+      "currentVersionReleaseDate": "2026-08-14T12:42:54Z",
       "description": "Big Text Note is a simple local note app for showing one memo in large, easy-to-read text.\n\nShow what you type or dictate directly to the person in front of you. Big Text Note works as a simple communication board for talking with someone who is deaf or hard of hearing, leaving a message for an older family member, or getting a point across in a noisy place.\n\nSpeak a note with voice input, type directly, or edit the text by hand. Voice input converts speech into text, then you choose whether to append the result to your note or replace the current note. This app does not save audio files. Only text you apply to the note is saved locally.\n\nUse Show mode when you want the note to act like a clear message board. Choose Normal, Large, or Huge text presets, fine-tune the size, and set text and background colors in Settings. The larger sizes are especially useful on iPad.\n\nAdd the Home Screen widget to keep your current note visible at a glance. The widget reads the same note, text size, and colors as the app through private App Group storage.\n\nNo account is required. There are no ads, no tracking, and no server sync.",
       "features": [
         "iosUniversal"
       ],
-      "fileSizeBytes": "1250304",
+      "fileSizeBytes": "1213440",
       "formattedPrice": "Free",
       "genreIds": [
         "6007",
@@ -277,7 +277,7 @@
       "primaryGenreId": 6007,
       "primaryGenreName": "Productivity",
       "releaseDate": "2026-05-11T07:00:00Z",
-      "releaseNotes": "Version 1.2.2 adds a Done button above the keyboard, makes the text size buttons (A- / A+) easier to read, and improves voice input stability.",
+      "releaseNotes": "Version 1.2.3 simplifies the screens with larger, easier-to-tap buttons and consistent text size controls (A- / A+).",
       "screenshotUrls": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cb/3a/1f/cb3a1f7e-4573-f513-217e-5b29751bcdc4/01_iphone_hitsudan.png/320x480bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c1/52/58/c1525895-09ba-21b0-2da0-06bde77e11c1/01_iphone_show-huge-text.png/320x480bb.jpg",
@@ -427,7 +427,7 @@
       "trackViewUrl": "https://apps.apple.com/us/app/big-text-note/id6767796126?uo=4",
       "userRatingCount": 1,
       "userRatingCountForCurrentVersion": 1,
-      "version": "1.2.2",
+      "version": "1.2.3",
       "wrapperType": "software"
     },
     {

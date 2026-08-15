@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asset Curve | ZEC Apps</title>
-  <meta name="description" content="AssetCurve is a local, simple compound-growth simulator for creating rough estimates from your own inputs.">
+  <meta name="description" content="Asset Curve for iPhone simulates compound growth of your savings — future value, goal backsolve, charts, yearly projections. No account, no tracking.">
   <link rel="canonical" href="https://zec-inc.jp/apps/asset-curve/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
   <meta property="og:title" content="Asset Curve | ZEC Apps">
-  <meta property="og:description" content="AssetCurve is a local, simple compound-growth simulator for creating rough estimates from your own inputs.">
+  <meta property="og:description" content="Asset Curve for iPhone simulates compound growth of your savings — future value, goal backsolve, charts, yearly projections. No account, no tracking.">
   <meta property="og:url" content="https://zec-inc.jp/apps/asset-curve/">
   <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/50/95/51509524-f5be-b45a-9d7a-eaa659296f7a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
   <script type="application/ld+json">
@@ -20,7 +20,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "Asset Curve",
-      "description": "AssetCurve is a local, simple compound-growth simulator for creating rough estimates from your own inputs.",
+      "description": "Asset Curve for iPhone simulates compound growth of your savings — future value, goal backsolve, charts, yearly projections. No account, no tracking.",
       "operatingSystem": "iOS",
       "applicationCategory": "Finance",
       "offers": {
@@ -45,34 +45,50 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is Asset Curve for?",
+          "name": "Is Asset Curve free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Asset Curve is a focused iPhone app from ZEC Inc. The page above summarizes its purpose, intended users, and basic usage."
+            "text": "Yes. It is free to download and use, with no in-app purchases or paid content. Check the App Store listing for current pricing details."
           }
         },
         {
           "@type": "Question",
-          "name": "Where can I download Asset Curve?",
+          "name": "Does the app see my financial data?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can download Asset Curve from its official App Store page linked on this page."
+            "text": "No. Asset Curve uses no network services and collects nothing. Your inputs are processed on the device and are not persisted or transmitted anywhere."
           }
         },
         {
           "@type": "Question",
-          "name": "How much does Asset Curve cost?",
+          "name": "Is this investment advice?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The App Store currently reports the price as Free. App Store pricing and availability may vary by country or change over time."
+            "text": "No. Asset Curve does not recommend investments. Results are approximate simulations only and exclude taxes, fees, currency changes, market volatility, and asset allocation — they do not guarantee any outcome."
           }
         },
         {
           "@type": "Question",
-          "name": "Where can I check privacy information?",
+          "name": "How are the calculations done?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The App Store product page contains Apple's current privacy labels and related disclosure information for this app."
+            "text": "The simulator uses monthly compounding: the annual rate is divided by 12 and contributions are added at the end of each month. Results include future value, total contributions, estimated growth, and a yearly projection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which currencies does it support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "USD is the default, with JPY and EUR also selectable as display units. Switching units applies a simple fixed factor rather than live exchange rates, since the app performs no FX calculation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, completely. The app has no network connection requirement and no external API integration."
           }
         }
       ]
@@ -159,7 +175,7 @@
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/50/95/51509524-f5be-b45a-9d7a-eaa659296f7a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Asset Curve app icon" width="96" height="96">
       <div>
         <h1>Asset Curve</h1>
-        <p class="tagline">AssetCurve is a local, simple compound-growth simulator for creating rough estimates from your own inputs.</p>
+        <p class="tagline">A local compound-growth simulator: estimate future value or the monthly saving needed to hit a goal.</p>
         <div class="actions">
           <a class="button primary" href="https://apps.apple.com/us/app/asset-curve/id6768640767?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
@@ -169,48 +185,54 @@
 
     <section class="section">
       <h2>Overview</h2>
-          <p>AssetCurve is a local, simple compound-growth simulator for creating rough estimates from your own inputs.</p>
-          <p>Use Future Value mode to estimate a possible future asset amount from an initial amount, monthly contribution, expected annual return, and number of years. Use Goal Backsolve mode to estimate the monthly contribution that would be needed for a target amount under the same simplified assumptions.</p>
+          <p>Asset Curve is a simple compound-growth simulator for iPhone. Enter an initial amount, a monthly contribution, an expected annual return, and a number of years, and it produces a rough estimate of future asset value — along with total contributions, estimated growth, a monthly balance chart, and a year-by-year projection list.</p>
+          <p>It works in two directions. Future Value mode answers &quot;what might my savings grow to?&quot; Goal Backsolve mode flips the question: enter your current assets, a target amount, an expected return, and a time horizon, and it estimates the monthly contribution that would be needed under the same simplified assumptions. USD is the default unit, with JPY and EUR also selectable.</p>
+          <p>Asset Curve is deliberately a calculator, not a finance platform: no account, no brokerage connection, no cloud sync, and no network use at all. It is not investment advice — results are approximate simulations that exclude taxes, fees, currency changes, and market volatility, and a persistent disclaimer keeps that clear.</p>
     </section>
 
     <section class="section">
       <h2>Who It Is For</h2>
       <ul>
-            <li>People looking for a simple finance app for one focused task</li>
-            <li>Users who prefer lightweight tools over complex all-in-one apps</li>
-            <li>iPhone users who want an official source before installing from the App Store</li>
+            <li>Savers who want a quick feel for how monthly contributions could compound over the years</li>
+            <li>People planning toward a target amount who want to know the required monthly saving</li>
+            <li>Anyone comparing rough what-if scenarios with different return rates and time horizons</li>
+            <li>Privacy-conscious users who do not want to type financial figures into an online tool</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>Main Features</h2>
       <ul>
-            <li>AssetCurve is a local, simple compound-growth simulator for creating rough estimates from your own inputs.</li>
-            <li>Use Future Value mode to estimate a possible future asset amount from an initial amount, monthly contribution...</li>
-            <li>Use Goal Backsolve mode to estimate the monthly contribution that would be needed for a target amount under the...</li>
-            <li>The app shows future value, total contributions, estimated growth, a monthly chart, and a yearly projection.</li>
+            <li>Future Value mode: estimate a future asset amount from initial amount, monthly contribution, expected annual return, and years</li>
+            <li>Goal Backsolve mode: estimate the monthly contribution needed to reach a target amount</li>
+            <li>Monthly compounding with end-of-month contributions</li>
+            <li>Monthly balance and contribution chart plus a yearly projection list</li>
+            <li>USD, JPY, and EUR unit selector</li>
+            <li>Wide input ranges: annual return up to 200% and periods up to 100 years</li>
+            <li>Fully local — no account, no network connection, no data collection</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>How to Use</h2>
       <ol>
-            <li>Install Asset Curve from the App Store.</li>
-            <li>Open the app and complete the first screen or setup shown in the app.</li>
-            <li>Use the main action whenever the task comes up.</li>
-            <li>Return to the app when you want to review, adjust, or repeat the task.</li>
+            <li>Choose Future Value mode and enter your initial amount, monthly contribution, expected annual return, and number of years</li>
+            <li>Read the estimated future value, total contributions, and estimated growth</li>
+            <li>Explore the monthly chart and the yearly projection list to see how the balance builds</li>
+            <li>Switch to Goal Backsolve mode, enter your current assets, target amount, return, and years to get the required monthly contribution</li>
+            <li>Adjust the inputs to compare rough scenarios — all results are simplified simulations, not predictions</li>
       </ol>
     </section>
 
     <section class="section">
       <h2>Pricing</h2>
-      <p>Free</p>
+      <p>Asset Curve is free to download and use on the App Store, with no in-app purchases or paid content. App Store pricing and availability can change, so check the store listing for the latest details.</p>
       <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
     </section>
 
     <section class="section">
       <h2>Privacy</h2>
-      <p>This page uses App Store metadata as its source. For the current Apple privacy labels and regional availability, check the linked App Store product page.</p>
+      <p>Asset Curve collects no personal data, does not track you, and uses no network services at all — your calculator inputs never leave the device and are not even persisted. There is no account or login.</p>
     </section>
 
     <section class="section">
@@ -227,20 +249,28 @@
     <section class="section">
       <h2>FAQ</h2>
           <details>
-            <summary>What is Asset Curve for?</summary>
-            <p>Asset Curve is a focused iPhone app from ZEC Inc. The page above summarizes its purpose, intended users, and basic usage.</p>
+            <summary>Is Asset Curve free?</summary>
+            <p>Yes. It is free to download and use, with no in-app purchases or paid content. Check the App Store listing for current pricing details.</p>
           </details>
           <details>
-            <summary>Where can I download Asset Curve?</summary>
-            <p>You can download Asset Curve from its official App Store page linked on this page.</p>
+            <summary>Does the app see my financial data?</summary>
+            <p>No. Asset Curve uses no network services and collects nothing. Your inputs are processed on the device and are not persisted or transmitted anywhere.</p>
           </details>
           <details>
-            <summary>How much does Asset Curve cost?</summary>
-            <p>The App Store currently reports the price as Free. App Store pricing and availability may vary by country or change over time.</p>
+            <summary>Is this investment advice?</summary>
+            <p>No. Asset Curve does not recommend investments. Results are approximate simulations only and exclude taxes, fees, currency changes, market volatility, and asset allocation — they do not guarantee any outcome.</p>
           </details>
           <details>
-            <summary>Where can I check privacy information?</summary>
-            <p>The App Store product page contains Apple&#x27;s current privacy labels and related disclosure information for this app.</p>
+            <summary>How are the calculations done?</summary>
+            <p>The simulator uses monthly compounding: the annual rate is divided by 12 and contributions are added at the end of each month. Results include future value, total contributions, estimated growth, and a yearly projection.</p>
+          </details>
+          <details>
+            <summary>Which currencies does it support?</summary>
+            <p>USD is the default, with JPY and EUR also selectable as display units. Switching units applies a simple fixed factor rather than live exchange rates, since the app performs no FX calculation.</p>
+          </details>
+          <details>
+            <summary>Does it work offline?</summary>
+            <p>Yes, completely. The app has no network connection requirement and no external API integration.</p>
           </details>
     </section>
 

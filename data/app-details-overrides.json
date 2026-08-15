@@ -3,7 +3,11 @@
     "slug": "photo-day",
     "short_description": "Keep a simple one-photo-a-day memory habit for family life, trips, projects, and everyday moments.",
     "meta_description": "PhotoDay is a simple one-photo-a-day iPhone app for family memories, daily photo records, and widget-friendly reflection.",
-    "categories": ["photo-memory", "widgets", "family"],
+    "categories": [
+      "photo-memory",
+      "widgets",
+      "family"
+    ],
     "overview": [
       "PhotoDay is for keeping a small, steady photo record without turning it into a large photo management task. The idea is simple: choose one photo for the day and let that daily choice become a memory timeline.",
       "It fits family life, children growing up, trips, hobbies, work projects, or any season where one daily image says more than a long note. The page is the official ZEC Inc. source for what the app is meant to do and how to think about it."
@@ -61,7 +65,12 @@
     "slug": "packed",
     "short_description": "Prepare for trips and daily outings with a focused packing checklist and widget-friendly checking flow.",
     "meta_description": "Packed is a simple iPhone packing checklist app for travel, daily bags, family outings, and widget-friendly item checks.",
-    "categories": ["travel", "widgets", "family", "productivity"],
+    "categories": [
+      "travel",
+      "widgets",
+      "family",
+      "productivity"
+    ],
     "overview": [
       "Packed is a focused checklist app for the moment before you leave: travel packing, daily bags, school items, event gear, or anything you do not want to forget.",
       "Instead of acting like a general task manager, Packed stays close to the packing workflow: prepare a list, check items, and use the app as a quick final confirmation before leaving home."
@@ -119,7 +128,9 @@
     "slug": "pooptap-daily-tracker",
     "short_description": "A simple daily bowel movement tracker and stool log for private poop records, digestion notes, and constipation notes.",
     "meta_description": "PoopTap is a simple poop tracker and bowel movement log for stool notes, digestion notes, gut health notes, and constipation notes.",
-    "categories": ["tap-tools"],
+    "categories": [
+      "tap-tools"
+    ],
     "overview": [
       "PoopTap is a simple poop tracker and bowel movement log for private everyday tracking. It is designed for quick personal records rather than a clinical workflow.",
       "Use it to log bowel movements, stool notes, digestion notes, gut health notes, and constipation notes on a lightweight calendar. PoopTap keeps the experience playful with achievements and app-based progress while staying clear of medical advice."
@@ -177,7 +188,11 @@
     "slug": "pilltap",
     "short_description": "Record medication checks quickly without turning the task into a complex health tracking workflow.",
     "meta_description": "PillTap is a simple iPhone medication record app for quick personal checks. It is not medical advice or a compliance guarantee.",
-    "categories": ["tap-tools", "widgets", "family"],
+    "categories": [
+      "tap-tools",
+      "widgets",
+      "family"
+    ],
     "overview": [
       "PillTap is a small personal record app for quickly noting medication-related checks. It is designed for the everyday moment when you want to record whether you handled a medicine task.",
       "The app is not a medical device, does not provide medical advice, and does not guarantee medication adherence. It should be used only as a personal record aid alongside advice from qualified healthcare professionals."
@@ -235,7 +250,11 @@
     "slug": "laundrytap",
     "short_description": "A quick tap-based laundry record for remembering whether the laundry was done, moved, or checked.",
     "meta_description": "LaundryTap is a simple iPhone app for recording laundry status and avoiding small household memory gaps.",
-    "categories": ["tap-tools", "family", "productivity"],
+    "categories": [
+      "tap-tools",
+      "family",
+      "productivity"
+    ],
     "overview": [
       "LaundryTap is for a common household question: did I do the laundry, move it, or check it? The app keeps the workflow small so recording the status takes less effort than trying to remember it later.",
       "It is useful for people sharing household routines, doing laundry between other tasks, or wanting a lightweight record rather than a full chore management system."
@@ -293,7 +312,10 @@
     "slug": "big-text-note",
     "short_description": "Write one large, easy-to-read note for quick display, reminders, labels, and simple communication.",
     "meta_description": "Big Text Note is a simple iPhone note app for showing large readable text in everyday situations.",
-    "categories": ["productivity", "family"],
+    "categories": [
+      "productivity",
+      "family"
+    ],
     "overview": [
       "Big Text Note is a small note app built around readability. Instead of managing many documents, it helps you write and show large text when normal note text is too small or too slow to read.",
       "It can be useful for quick reminders, temporary labels, simple communication, family notes, travel messages, or any situation where the note itself needs to be visible at a glance."
@@ -351,7 +373,10 @@
     "slug": "cleanurl-tap",
     "short_description": "Clean copied links by removing common tracking clutter before saving, opening, or sharing them.",
     "meta_description": "CleanURL Tap is a privacy-oriented iPhone utility for cleaning copied URLs before sharing or saving links.",
-    "categories": ["tap-tools", "productivity"],
+    "categories": [
+      "tap-tools",
+      "productivity"
+    ],
     "overview": [
       "CleanURL Tap is a focused link-cleaning utility for moments when a copied URL contains tracking parameters, campaign tags, or other clutter you do not want to keep.",
       "The app is privacy-oriented in purpose: it helps users share or save cleaner links. It does not promise perfect removal of every possible parameter, and users should still review sensitive links before sending them."
@@ -402,6 +427,1744 @@
       {
         "question": "Where can I download it?",
         "answer": "Use the App Store link on this page to open the official CleanURL Tap product page."
+      }
+    ]
+  },
+  "6761447413": {
+    "slug": "donetoday-daily-log",
+    "short_description": "Mark one daily task done with a single tap and watch your streak build on a calendar and widget.",
+    "meta_description": "DoneToday: Daily Log is a one-tap habit tracker for iPhone. Mark today's task done, review your calendar history, and toggle it right from a widget.",
+    "categories": [
+      "tap-tools",
+      "widgets",
+      "productivity"
+    ],
+    "overview": [
+      "DoneToday: Daily Log is a one-tap habit tracker for a single daily task. Open the app (or just glance at the widget), tap once to mark today done, and the calendar keeps a simple visual history of your progress so you can see the habit build day by day.",
+      "It is deliberately not a task manager. There are no projects, no team features, and no cloud setup — the whole app is built around the one action that matters: did you do your thing today? That focus keeps it fast enough to actually use every day.",
+      "The Home Screen widget is interactive: you can toggle today's completion directly from the widget without opening the app. Optional reminder notifications include a Done action, and reminders are automatically skipped on days you have already completed."
+    ],
+    "target_users": [
+      "People trying to build one daily habit, like exercise, journaling, or language practice",
+      "Anyone who abandons full-featured habit apps because they take too long to log",
+      "Users who want their streak visible on the Home Screen at a glance",
+      "People who want a reminder that knows to stay quiet once the task is done"
+    ],
+    "features": [
+      "One-tap done / undo for today's task",
+      "Calendar view showing your completion history",
+      "Interactive Home Screen widget — mark today done without opening the app",
+      "Optional local reminder notifications with a Done action",
+      "Reminders automatically skipped on days already completed",
+      "Data stored locally on your device"
+    ],
+    "how_to_use": [
+      "Open DoneToday and decide the one daily task you want to track.",
+      "Tap once to mark today as done (tap again to undo).",
+      "Open the calendar view to review which days you completed.",
+      "Add the Home Screen widget to see and toggle today's status without opening the app.",
+      "Optionally turn on a daily reminder — it is skipped automatically on days you have already finished."
+    ],
+    "pricing": "DoneToday: Daily Log is free on the App Store with no in-app purchases. App Store pricing can change, so check the store listing for current details.",
+    "privacy": "Your completion history is stored locally on your device, and the app has no account system and no server sync. Widget data is shared with the app through local on-device storage. For the authoritative summary, see the privacy label on the app's App Store page.",
+    "faq": [
+      {
+        "question": "Is DoneToday free?",
+        "answer": "Yes. The app is free to download and has no in-app purchases. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Where is my data stored?",
+        "answer": "On your device. DoneToday has no account and no server sync — your completion history stays local. See the App Store privacy label for the full summary."
+      },
+      {
+        "question": "Does DoneToday have a widget?",
+        "answer": "Yes, and it is interactive: you can mark today done (or undo it) directly from the Home Screen widget without opening the app."
+      },
+      {
+        "question": "Can it remind me every day?",
+        "answer": "Yes. You can enable an optional local notification reminder, which includes a Done action. On days you have already completed the task, the reminder is skipped."
+      },
+      {
+        "question": "Can I track multiple habits?",
+        "answer": "The app focuses on a single daily task by design, which keeps logging down to one tap. It is intentionally not a multi-list task manager."
+      },
+      {
+        "question": "Does it work offline?",
+        "answer": "Yes. Everything is stored locally on the device, so no internet connection is needed to log or review your history."
+      }
+    ]
+  },
+  "6761535550": {
+    "slug": "taplog-mood-tracker",
+    "short_description": "Record your mood with one tap, add an optional note, and review your recent history — no journaling overhead.",
+    "meta_description": "TapLog - Mood Tracker is a one-tap mood diary for iPhone: log how you feel in seconds, add optional journal notes, and review your mood history.",
+    "categories": [
+      "tap-tools",
+      "productivity"
+    ],
+    "overview": [
+      "TapLog - Mood Tracker is a mood diary reduced to its essentials: tap the mood that matches how you feel, and you are done. If you want context, you can add a short journal note — but you never have to, which is what makes it fast enough to keep up every day.",
+      "Most mood apps pile on charts, scores, and analysis. TapLog goes the other way: a quick check-in, a simple history, and a journal view for the entries where you added words. It is a tool for noticing how you feel over time, not a mental health diagnosis or treatment app.",
+      "Optional reminder settings help you build the check-in habit, and the history view makes it easy to look back over recent days for lightweight self-reflection."
+    ],
+    "target_users": [
+      "People who want a simple mood diary without long-form journaling",
+      "Anyone who quit heavier mood trackers because logging took too long",
+      "Users doing lightweight self-reflection who want to spot patterns over time",
+      "People who occasionally want to jot a note about their day, but not every day"
+    ],
+    "features": [
+      "One-tap mood check-in",
+      "Optional journal notes for entries that need context",
+      "History view of your recent moods",
+      "Journal view for reading back your written entries",
+      "Reminder settings to help build the check-in habit",
+      "Deliberately simple: no complex analytics or scoring"
+    ],
+    "how_to_use": [
+      "Open TapLog and tap the mood that matches how you feel right now.",
+      "Optionally add a short journal note for context.",
+      "Repeat whenever you want to check in — it takes seconds.",
+      "Review the history view to see your recent moods at a glance.",
+      "Open the journal view to read back the entries where you wrote notes.",
+      "Optionally set a reminder so you remember to check in."
+    ],
+    "pricing": "TapLog - Mood Tracker is free on the App Store with no in-app purchases. App Store pricing can change, so check the store listing for current details.",
+    "privacy": "TapLog is built as a local mood log: your entries are kept on your device and no account or sign-up is needed. For the authoritative summary of data practices, see the privacy label on the app's App Store page.",
+    "faq": [
+      {
+        "question": "Is TapLog free?",
+        "answer": "Yes. It is free to download and has no in-app purchases. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Where are my mood entries stored?",
+        "answer": "Entries are kept on your device, and the app requires no account or sign-up. See the App Store privacy label for the full summary of data practices."
+      },
+      {
+        "question": "Do I have to write something every time?",
+        "answer": "No. A mood check-in is just one tap. Journal notes are optional, for the days you want to add context."
+      },
+      {
+        "question": "Can TapLog remind me to log my mood?",
+        "answer": "Yes. The app includes reminder settings to help you build a daily check-in habit."
+      },
+      {
+        "question": "Does it analyze my mental health?",
+        "answer": "No. TapLog is a simple mood memo and history tool for self-reflection. It does not provide diagnosis, treatment, or mental health analysis."
+      },
+      {
+        "question": "Can I look back at past entries?",
+        "answer": "Yes. The history view shows your recent moods, and the journal view lets you read back the entries where you added notes."
+      }
+    ]
+  },
+  "6762504100": {
+    "slug": "body-rhythm-log",
+    "short_description": "A private, on-device log for personal body rhythm events with a simple calendar, reminders, and a lock.",
+    "meta_description": "Body Rhythm Log for iPhone records personal rhythm events on a simple calendar, with gentle reminders and a privacy lock. Data stays on your device.",
+    "categories": [
+      "tap-tools",
+      "productivity"
+    ],
+    "overview": [
+      "Body Rhythm Log is a lightweight iPhone app for recording personal body rhythm events and reviewing them on a simple calendar. Add an event in seconds, look back over your history, and set optional local reminders — without accounts, cloud sync, or complicated setup.",
+      "Rhythm and wellness logs are among the most personal records you can keep, so Body Rhythm Log is built local-first: your entries are stored on your device, not on a server. A privacy lock overlay with local authentication helps keep the log for your eyes only, and reminder notifications use deliberately discreet wording that never reveals what the app is about on your Lock Screen.",
+      "The app stays intentionally simple. It is a personal log, not a medical tool — it offers no diagnosis, predictions, or health advice, just a low-friction way to keep your own record."
+    ],
+    "target_users": [
+      "People who want a lightweight, private way to track personal body rhythms",
+      "Users who prefer records that stay on their own device rather than in a cloud service",
+      "Anyone who wants a simple calendar view of personal events without a full health platform",
+      "People who want gentle, discreet reminders to keep their log up to date"
+    ],
+    "features": [
+      "Quick recording of personal rhythm events",
+      "Simple calendar view for reviewing your history",
+      "Local reminder notifications with discreet, content-free wording",
+      "Privacy lock overlay using local authentication",
+      "Local-first storage — entries are kept on your device",
+      "No account, no feed, no complicated setup"
+    ],
+    "how_to_use": [
+      "Open the app and add a rhythm event when it happens",
+      "Review your entries on the calendar and in your history",
+      "Turn on local reminders in Settings if you want a gentle nudge",
+      "Enable the privacy lock to keep the log behind local authentication",
+      "Keep logging over time to see your own pattern at a glance"
+    ],
+    "pricing": "Body Rhythm Log is free to download and use on the App Store, and it contains no in-app purchases. App Store pricing and availability can change, so check the store listing for the latest details.",
+    "privacy": "Body Rhythm Log is designed local-first: your entries are stored on your device and there is no account to create. Reminder notifications use discreet wording that does not reveal the contents of your log. For full details, see the privacy policy and the App Store privacy label.",
+    "faq": [
+      {
+        "question": "Is Body Rhythm Log free?",
+        "answer": "Yes. The app is free to download and use, and it has no in-app purchases. Check the App Store listing for current pricing details."
+      },
+      {
+        "question": "Where is my data stored?",
+        "answer": "Entries are stored locally on your device. The app is designed local-first, with no account and no cloud sync."
+      },
+      {
+        "question": "Can I lock the app so others cannot see my log?",
+        "answer": "Yes. Body Rhythm Log includes a privacy lock overlay that uses local authentication to keep your entries private."
+      },
+      {
+        "question": "Will notifications reveal what I am tracking?",
+        "answer": "No. Reminder notifications use deliberately discreet wording, such as noting that some time has passed since your last log, without revealing any content."
+      },
+      {
+        "question": "Is this a medical or cycle-prediction app?",
+        "answer": "No. Body Rhythm Log is a personal record-keeping tool only. It does not provide medical advice, diagnosis, or predictions."
+      },
+      {
+        "question": "Does it work offline?",
+        "answer": "Yes. The app stores everything locally, so recording and reviewing entries does not require an internet connection."
+      }
+    ]
+  },
+  "6763200921": {
+    "slug": "waterdone",
+    "short_description": "Log a drink in seconds, see today's water progress, and review daily and monthly hydration history.",
+    "meta_description": "WaterDone is a simple water tracker for iPhone: log drinks fast, see daily hydration progress, review monthly history, and log from the widget.",
+    "categories": [
+      "tap-tools",
+      "widgets"
+    ],
+    "overview": [
+      "WaterDone is a simple water intake tracker. Log a drink in a couple of taps, watch today's progress fill up, and look back over your recent days and a monthly log view to see how consistent you have been.",
+      "It is built for lightweight personal tracking, not medical management: WaterDone does not try to calculate a required hydration target or give health advice. No account is required, and your water logs are stored locally on your device.",
+      "A Home Screen widget gives you a faster surface for hydration: it shows your latest water status and supports logging via App Intents, so a quick entry does not require opening the app. Optional daily reminder notifications help you keep the habit going."
+    ],
+    "target_users": [
+      "People who want a simple daily water log without a full nutrition app",
+      "Desk workers who forget to drink and want an optional daily reminder",
+      "Habit builders who like seeing a monthly view of their consistency",
+      "Anyone who wants quick logging from a Home Screen widget",
+      "Users who prefer apps with no account and no cloud sync"
+    ],
+    "features": [
+      "Fast water logging in a couple of taps",
+      "Today's hydration progress at a glance",
+      "Day logs sheet for reviewing individual entries",
+      "Monthly log view for spotting streaks and gaps",
+      "Optional daily reminder notifications",
+      "Home Screen widget with quick status and App Intent logging",
+      "Local, on-device storage with no account required"
+    ],
+    "how_to_use": [
+      "Open WaterDone and log a drink when you have one.",
+      "Check today's progress on the main screen.",
+      "Open the day logs sheet to review or inspect individual entries.",
+      "Switch to the monthly view to see your hydration pattern over time.",
+      "Optionally set a daily reminder notification in settings.",
+      "Add the Home Screen widget to see your latest status and log without opening the app."
+    ],
+    "pricing": "WaterDone is free on the App Store, with no in-app purchases documented for this release. App Store pricing can change, so check the store listing for current details.",
+    "privacy": "Water logs, reminder preferences, and widget state are stored locally on your device. No account is required, and no analytics, ads, tracking, or external server storage are used. When you use the widget, the latest log state is shared between the app and widget through a local App Group container on the device. Notifications are optional and used only for the reminder you configure.",
+    "faq": [
+      {
+        "question": "Is WaterDone free?",
+        "answer": "Yes. It is free to download, and no in-app purchases are documented for this release. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Where are my water logs stored?",
+        "answer": "On your device. WaterDone stores logs, reminder preferences, and widget state locally, with no account, no analytics, and no external server storage."
+      },
+      {
+        "question": "Does WaterDone have a widget?",
+        "answer": "Yes. The Home Screen widget shows your latest water status and supports quick logging via App Intents, so you can record a drink without opening the app."
+      },
+      {
+        "question": "Can it remind me to drink water?",
+        "answer": "Yes. You can turn on an optional daily reminder notification. The app works fine without notifications if you prefer."
+      },
+      {
+        "question": "Does it calculate how much water I should drink?",
+        "answer": "No. WaterDone is a lightweight personal log, not medical advice — it deliberately does not try to compute a required hydration target."
+      },
+      {
+        "question": "Does it work offline?",
+        "answer": "Yes. Everything is stored locally, so you can log and review your history without an internet connection."
+      }
+    ]
+  },
+  "6763267903": {
+    "slug": "pinlog-text-notes",
+    "short_description": "Save text and links as pins from the share sheet or clipboard, then resurface them from a widget.",
+    "meta_description": "PinLog Text Notes for iPhone saves text, links, and quick notes as pins. Capture from the share sheet or clipboard and resurface them with a widget.",
+    "categories": [
+      "tap-tools",
+      "widgets",
+      "productivity"
+    ],
+    "overview": [
+      "PinLog Text Notes is a simple place on your iPhone to save text and links you do not want to lose. Type a note, dictate it with voice input, paste from the clipboard, import a file, or send content from another app through the share sheet. PinLog keeps each item clean and ready, then helps you return to it later from the app or a Home Screen widget.",
+      "PinLog is intentionally small: no feeds, no folders to manage, and no complicated note system. Instead of turning into a full notes app, it focuses on one job — capturing something now so you can act on it later. Saved URL pins open directly in your browser, and links inside notes are tappable from the detail view.",
+      "Everything is stored locally on your device. There is no account to create, and the app, widget, and share extension share the same local storage so a pin saved from anywhere shows up everywhere."
+    ],
+    "target_users": [
+      "People who collect short notes, prompts, links, and reminders throughout the day",
+      "Readers who save articles and URLs to come back to later",
+      "Makers and writers capturing product ideas and launch notes before they slip away",
+      "Anyone who wants quick capture from the iOS share sheet without a heavyweight notes app",
+      "Users who like being reminded of saved items via a Home Screen widget"
+    ],
+    "features": [
+      "Save text and links quickly as pins",
+      "Dictate notes with voice input",
+      "Paste directly from the clipboard",
+      "Import text, Markdown, and JSON files",
+      "Save from other apps with the share extension",
+      "Open URL pins in the browser and tap links inside notes",
+      "Home Screen widget that resurfaces saved items"
+    ],
+    "how_to_use": [
+      "Open PinLog and add a note by typing, dictating, or pasting from the clipboard",
+      "In other apps, use the share sheet and choose PinLog to save text or a link as a pin",
+      "Review your pins in the main list and open one for the full detail view",
+      "Tap a URL pin to open it in your browser, or tap links inside a note",
+      "Add the widget to your Home Screen so saved items resurface on their own",
+      "Copy, edit, share, or delete pins once you have acted on them"
+    ],
+    "pricing": "PinLog Text Notes is free to download and use on the App Store. Core features — saving pins, the share extension, and the widget — are all available for free. App Store pricing and availability can change, so check the store listing for the latest details.",
+    "privacy": "PinLog does not require an account. Saved pins are stored locally on your device, and the app uses no analytics, ads, or tracking. Microphone and speech recognition are used only when you start voice input, and clipboard text is read only when you tap the clipboard import action.",
+    "faq": [
+      {
+        "question": "Is PinLog Text Notes free?",
+        "answer": "Yes. PinLog is free to download and its core features — pins, the share extension, and the widget — are free to use. Check the App Store listing for current pricing details."
+      },
+      {
+        "question": "Where are my notes stored? Do I need an account?",
+        "answer": "No account is needed. All pins are stored locally on your device, and the app uses no analytics, ads, or tracking."
+      },
+      {
+        "question": "Can I save links from Safari or other apps?",
+        "answer": "Yes. PinLog includes a share extension, so you can send text or links from other apps through the iOS share sheet and they are saved as pins."
+      },
+      {
+        "question": "Does PinLog have a widget?",
+        "answer": "Yes. A Home Screen widget resurfaces your saved pins so you remember to act on them without opening the app."
+      },
+      {
+        "question": "Can I import existing files?",
+        "answer": "Yes. PinLog can import text, Markdown, and JSON files as pins."
+      },
+      {
+        "question": "Is PinLog a full notes app with folders and sync?",
+        "answer": "No, and that is by design. PinLog is a small capture tool — no feeds, no folders, no cloud sync. It is built for saving something quickly and coming back to it later."
+      },
+      {
+        "question": "Does PinLog read my clipboard automatically?",
+        "answer": "No. Clipboard text is read only when you explicitly tap the clipboard import action."
+      }
+    ]
+  },
+  "6764601072": {
+    "slug": "study-buddy-timer",
+    "short_description": "One-tap study stopwatch that tracks daily study time and turns minutes into EXP and levels for a buddy.",
+    "meta_description": "Study Buddy Timer is a one-tap study stopwatch for iPhone: track daily study time, earn EXP and levels, and check progress from widgets.",
+    "categories": [
+      "productivity",
+      "widgets"
+    ],
+    "overview": [
+      "Study Buddy Timer is a simple focus timer for tracking study time. Tap Start when you begin, tap Stop when you are done — no session length to configure up front. The app keeps your daily study time, session count, and running totals so you can see the hours actually add up.",
+      "What makes it different is the buddy: every minute of study earns EXP (with a small bonus for your first session of the day), leveling up a low-key companion character with short encouraging messages. It is deliberately a study stopwatch first and a character second — the timer, elapsed time, and totals stay front and center, and the buddy is light motivation rather than a game.",
+      "Home Screen and Lock Screen widgets keep your daily study time visible without opening the app, and a simple stats screen summarizes your progress. If you close the app mid-session, the running timer is restored when you come back."
+    ],
+    "target_users": [
+      "Students who want to log study hours without setting up a timer each time",
+      "Working adults studying for certifications or exams",
+      "Readers who want to track daily reading time",
+      "People building a study habit who respond to small progress rewards",
+      "Anyone who finds full task managers too heavy for simple time tracking"
+    ],
+    "features": [
+      "One-tap Start / Stop study stopwatch — no preset session length",
+      "Daily study time tracking with session counts and totals",
+      "EXP and level progress: 1 minute = 1 EXP, plus a first-session-of-the-day bonus",
+      "Buddy character with level and short encouraging messages",
+      "Home Screen widgets showing your study progress",
+      "Lock Screen widgets for at-a-glance study time",
+      "Simple stats screen, with data stored on your device"
+    ],
+    "how_to_use": [
+      "Open Study Buddy Timer and tap Start when you begin studying.",
+      "Study — the elapsed time is shown live, and the session survives closing the app.",
+      "Tap Stop when you finish; the session is saved and you earn EXP.",
+      "Check your daily study time, session count, and level progress on the stats screen.",
+      "Add Home Screen or Lock Screen widgets so today's study time is always visible."
+    ],
+    "pricing": "Study Buddy Timer is free on the App Store. App Store pricing can change, so check the store listing for current details.",
+    "privacy": "Your study sessions and progress are stored on your device, and the app works without an account. For the authoritative summary of data practices, see the privacy label on the app's App Store page.",
+    "faq": [
+      {
+        "question": "Is Study Buddy Timer free?",
+        "answer": "Yes, it is free to download on the App Store. Pricing can change, so check the store listing for current details."
+      },
+      {
+        "question": "Where is my study data stored?",
+        "answer": "Study data is stored on your device. See the App Store privacy label for the full summary of data practices."
+      },
+      {
+        "question": "Does it have widgets?",
+        "answer": "Yes, both Home Screen and Lock Screen widgets, so your daily study time and progress are visible without opening the app."
+      },
+      {
+        "question": "How does the EXP and level system work?",
+        "answer": "Each minute of study earns 1 EXP, and your first valid session of the day earns a small bonus. EXP levels up your buddy character, and the app shows how many minutes remain until the next level."
+      },
+      {
+        "question": "Do I have to set a timer length before starting?",
+        "answer": "No. It works as a stopwatch: tap Start when you begin and Stop when you finish, so there is no barrier to just starting."
+      },
+      {
+        "question": "What happens if I close the app during a session?",
+        "answer": "The running session is restored when you reopen the app, so your elapsed time is not lost."
+      },
+      {
+        "question": "Is it a game?",
+        "answer": "No. It is designed as a practical study stopwatch first — the buddy character is a light motivational touch, not a full pet-raising game."
+      }
+    ]
+  },
+  "6765796575": {
+    "slug": "sheep-to-sleep",
+    "short_description": "Counts sheep aloud for you, with a breathing guide, bedtime checklist, and calm timers. No ads, no account.",
+    "meta_description": "Sheep to Sleep for iPhone counts sheep aloud so you can wind down eyes-closed, with a breathing guide, bedtime checklist, and quiet sleep timers.",
+    "categories": [
+      "family",
+      "tap-tools"
+    ],
+    "overview": [
+      "Sheep to Sleep turns the classic bedtime ritual of counting sheep into a quiet companion for winding down. A calm, low-pitched voice counts sheep aloud for you, so you can lie back with your eyes closed — no need to watch the screen. A sleep timer stops the counting automatically, and if you pause or the timer ends, the app resumes from the next sheep.",
+      "Beyond counting, the app bundles a small set of wind-down tools on one dark, minimal home screen: a visual Inhale / Hold / Exhale breathing guide, a simple bedtime routine checklist, and Calm Timers of 5, 10, 15, or 30 minutes that end in a quiet completion state instead of a jarring alarm. Gentle local progress tracking shows today's max sheep count, totals, and streak days.",
+      "Sheep to Sleep is deliberately minimal and local-only: no account, no ads, no analytics, and no notifications. You can tune the counting to your taste — Slow / Normal / Fast speed, the gap between sheep, an optional playful adjective mode, three themes (Night / Forest / Cloud), and larger text. It is a relaxation aid, not a medical tool."
+    ],
+    "target_users": [
+      "People who have trouble falling asleep and want a screen-free way to wind down",
+      "Parents settling children at bedtime or nap time",
+      "Anyone who wants a simple pre-bed routine without accounts, ads, or tracking",
+      "Users who find guided breathing helpful for relaxing before sleep"
+    ],
+    "features": [
+      "Sheep counted aloud with the built-in speech synthesizer — Start, Pause, Resume, and Reset",
+      "Sleep timer that stops the counting automatically, with resume from the next sheep",
+      "Adjustable counting: Slow / Normal / Fast speed and configurable gap between sheep",
+      "Visual breathing guide with Inhale / Hold / Exhale phases",
+      "Bedtime routine checklist stored locally",
+      "Calm Timer with 5 / 10 / 15 / 30 minute options and a quiet completion screen",
+      "Local progress: today's max count, total sheep, streak days, and completed timers",
+      "Night / Forest / Cloud themes, large-text option, and keep-screen-awake setting"
+    ],
+    "how_to_use": [
+      "Open the app to the dark home screen and pick a mode: Sheep Count, Breathing, Bedtime Routine, or Calm Timer",
+      "In Sheep Count, set your speed and an optional sleep timer, then tap Start and close your eyes",
+      "Let the voice count for you; the timer stops it automatically, and you can resume from the next sheep later",
+      "Use the breathing guide or run through your bedtime checklist to settle down",
+      "Check your gentle progress stats — max count, totals, and streak — whenever you like"
+    ],
+    "pricing": "Sheep to Sleep is free to download and use on the App Store, with no in-app purchases and no ads. App Store pricing and availability can change, so check the store listing for the latest details.",
+    "privacy": "The app is local-only: no account, no ads, no analytics, and no external communication. Settings and progress are stored on your device in local app storage, and nothing is uploaded anywhere.",
+    "faq": [
+      {
+        "question": "Is Sheep to Sleep free?",
+        "answer": "Yes. It is free to download and use, with no in-app purchases and no ads. Check the App Store listing for current pricing details."
+      },
+      {
+        "question": "Does the app collect any data?",
+        "answer": "No. Sheep to Sleep is local-only — no account, no analytics, and no external communication. Your settings and progress stay on your device."
+      },
+      {
+        "question": "Can I listen with the screen off?",
+        "answer": "The app keeps the screen awake while counting so the voice continues; locking the screen stops the voice, since the app does not use background audio. Just set the phone down and close your eyes."
+      },
+      {
+        "question": "Will it stop by itself when I fall asleep?",
+        "answer": "Yes. Set the counting sleep timer and the voice stops automatically. Next time, counting resumes from the next sheep, or you can reset back to zero."
+      },
+      {
+        "question": "Does it work offline?",
+        "answer": "Yes, completely. The app has no external communication, so everything works without an internet connection."
+      },
+      {
+        "question": "Can I change how the counting sounds?",
+        "answer": "Yes. You can choose Slow / Normal / Fast speed, adjust the gap between sheep, and optionally enable a playful adjective mode. The voice is tuned low and calm for bedtime."
+      },
+      {
+        "question": "Is this a medical sleep treatment?",
+        "answer": "No. Sheep to Sleep is a relaxation and bedtime-routine aid only. It does not provide medical advice or guarantee sleep improvement."
+      }
+    ]
+  },
+  "6765821915": {
+    "slug": "sillycombovoice",
+    "short_description": "Kids pick three word cards and a serious textbook voice reads the silly nonsense combos aloud.",
+    "meta_description": "SillyComboVoice (Silly Word Beat) for iPhone lets kids combine three English word cards and hear a deadpan voice read the funny nonsense combos aloud.",
+    "categories": [
+      "family"
+    ],
+    "overview": [
+      "SillyComboVoice (also known as Silly Word Beat) is a playful word-sound app for kids. Children pick three pleasant-sounding English nouns from a word group, and a serious, textbook-style synthesized voice reads out a sequence of nonsense word combos. The fun comes from the gap between plain educational sentences — \"I have a pineapple.\" — and the meaningless compound words the app builds from the chosen cards.",
+      "There are three sound groups to play with, each with its own sentence pattern and exclamation: Pop Words (\"I have a...\" + \"Boom!\"), Tap Words (\"This is a...\" + \"Ta-da!\"), and Click Words (\"I like a...\" + \"Click!\"). Every combination generates an eight-line script, previewed on screen and then read aloud line by line with steady pauses, highlighting the line being spoken. The app even gets English grammar right, switching between \"a\" and \"an\" automatically.",
+      "The whole app is one simple screen with no accounts, no network features, and no ads or pop-culture tie-ins — just word cards, emoji, and a deadpan voice that makes kids laugh."
+    ],
+    "target_users": [
+      "Kids who love silly wordplay and funny sounds",
+      "Parents looking for a simple, safe app to hand to a child — no network, no accounts, no ads",
+      "Families playing together and competing to invent the silliest combo",
+      "Young learners getting playful exposure to simple English sentence patterns"
+    ],
+    "features": [
+      "Three sound groups — Pop, Tap, and Click — each with its own sentence pattern and exclamation",
+      "Pick three word cards (Base word, Word A, Word B) to build a nonsense combo",
+      "Eight-line script preview generated from your picks",
+      "Text-to-speech reading, one line at a time with fixed pauses and current-line highlighting",
+      "Shuffle button that picks a prepared three-word set for instant fun",
+      "Automatic a/an grammar handling for every word",
+      "Counter that tracks how many combos you have created, stored on device"
+    ],
+    "how_to_use": [
+      "Pick a sound group: Pop, Tap, or Click",
+      "Choose three word cards for the Base word, Word A, and Word B",
+      "Watch the app generate an eight-line silly script preview",
+      "Tap play and listen as the deadpan voice reads each line aloud",
+      "Hit Shuffle for a ready-made combination, or Reset and build a new one"
+    ],
+    "pricing": "SillyComboVoice is free to download and use on the App Store. App Store pricing and availability can change, so check the store listing for the latest details.",
+    "privacy": "The app is local-only: it has no network features, no accounts, and no cloud sync. The only thing it stores is a local count of combos you have created, kept on your device. See the App Store privacy label for details.",
+    "faq": [
+      {
+        "question": "Is SillyComboVoice free?",
+        "answer": "Yes, it is free to download and use. Check the App Store listing for current pricing details."
+      },
+      {
+        "question": "Is it safe for kids? Does it collect any data?",
+        "answer": "The app is local-only, with no network features, no accounts, and no ads. The only stored data is a local counter of created combos on your device."
+      },
+      {
+        "question": "Does it work offline?",
+        "answer": "Yes. The app has no network features at all, so everything works without an internet connection."
+      },
+      {
+        "question": "How does the voice reading work?",
+        "answer": "The app uses the iPhone's built-in speech synthesizer. Each line of the generated script is spoken separately with steady pauses, and the line being read is highlighted on screen."
+      },
+      {
+        "question": "What are the sound groups?",
+        "answer": "Pop Words use \"I have a/an ...\" with \"Boom!\", Tap Words use \"This is a/an ...\" with \"Ta-da!\", and Click Words use \"I like a/an ...\" with \"Click!\". Each group has its own word cards."
+      },
+      {
+        "question": "Does my child need to read English to use it?",
+        "answer": "The word cards show emoji alongside the words, the sentences are very simple, and the app reads everything aloud, so it works well even for kids still learning to read."
+      }
+    ]
+  },
+  "6765842391": {
+    "slug": "undocam",
+    "short_description": "Turn short videos into reversed rewind clips — pick a clip under 15 seconds, preview, then save or share.",
+    "meta_description": "UndoCam turns short videos into reversed rewind clips on iPhone. Pick a clip under 15 seconds, reverse it on device, then save or share. Free.",
+    "categories": [
+      "photo-memory",
+      "tap-tools"
+    ],
+    "overview": [
+      "UndoCam is a simple rewind-clip maker for iPhone. Choose a video of 15 seconds or less from your Photos library, and UndoCam plays it backwards — turning everyday moments, funny clips, and quick social posts into instant reversed videos you can save or share.",
+      "There is no timeline, no filters, and no complicated editing. UndoCam does one thing: it reverses the whole clip. You pick a video, watch the export progress, preview the result in the app, and then save it to Photos or send it anywhere with the share sheet.",
+      "Everything is processed on your device. Videos are never uploaded, and there is no account to create. Exports are rendered as stable 1080p/30fps muted video, prioritizing reliable results over preserving 4K or HDR source quality."
+    ],
+    "target_users": [
+      "People who want a quick reversed-video effect for social posts, Shorts, or Reels",
+      "Parents and friends capturing funny everyday moments to replay backwards",
+      "Anyone who finds full video editors too heavy for a single simple effect",
+      "Users who prefer on-device processing with no upload and no account"
+    ],
+    "features": [
+      "Pick a short video (15 seconds or less) from your Photos library",
+      "Reverse the entire clip into a rewind video",
+      "Export progress display while processing",
+      "In-app preview of the reversed result",
+      "Save the reversed video to Photos",
+      "Share directly through the iOS share sheet",
+      "All processing happens on your device — no upload, no account"
+    ],
+    "how_to_use": [
+      "Open UndoCam and pick a video from your Photos library.",
+      "Choose a clip that is 15 seconds or shorter (longer videos are rejected with a message).",
+      "Wait a moment while the app reverses the video on your device.",
+      "Preview the rewind clip in the app.",
+      "Save it to Photos or share it with the share sheet."
+    ],
+    "pricing": "UndoCam is free on the App Store, with no in-app purchases, subscriptions, or ads. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "Videos are processed entirely on your device. UndoCam does not require an account, does not upload your videos, and does not use ads or analytics. See the App Store privacy label for the current declaration.",
+    "faq": [
+      {
+        "question": "Is UndoCam free?",
+        "answer": "Yes. UndoCam is free with no in-app purchases, subscriptions, or ads. Pricing on the App Store can change, so check the listing for current details."
+      },
+      {
+        "question": "Are my videos uploaded anywhere?",
+        "answer": "No. All video processing happens on your device. UndoCam does not upload videos, does not require an account, and does not use analytics."
+      },
+      {
+        "question": "How long can the video be?",
+        "answer": "UndoCam accepts videos of 15 seconds or less. If you choose a longer video, the app asks you to pick a shorter one."
+      },
+      {
+        "question": "Does the reversed video keep its sound?",
+        "answer": "No. Reversed clips are exported without audio. UndoCam focuses on the visual rewind effect only."
+      },
+      {
+        "question": "What quality is the exported video?",
+        "answer": "Exports are rendered at up to 1080p/30fps in H.264 for stable, reliable results. Original 4K, HDR, or 60fps quality is not preserved."
+      },
+      {
+        "question": "Does UndoCam change my original video?",
+        "answer": "No. The reversed clip is saved as a new video. Your original stays untouched in your Photos library."
+      }
+    ]
+  },
+  "6766366722": {
+    "slug": "today-ready",
+    "short_description": "Turns the weather into four morning answers — umbrella, laundry, outfit, and outdoor plans — conclusion first.",
+    "meta_description": "Today Ready is an iPhone weather decision app: umbrella, laundry, outfit, and outdoor answers at a glance, with Home Screen widgets and a daily prep check.",
+    "categories": [
+      "productivity",
+      "widgets"
+    ],
+    "overview": [
+      "Today Ready is a weather app that skips the forecast and gives you the answer. Instead of charts and hourly graphs, it turns your local weather into the four calls you actually make every morning: whether to bring an umbrella, whether laundry is better indoors, whether a light jacket helps, and whether outdoor plans are easier earlier in the day.",
+      "The design philosophy is 'Open. See. Decide.' — one screen, four decision cards, conclusion first, with the weather data shown only as supporting evidence. There is no radar, no weekly forecast browsing, and no weather news, because the goal is to get you out the door, not keep you reading.",
+      "A prep checklist lets you tick items off as you get ready; today's checks stay for the day and reset the next morning. Home Screen widgets keep the top answer visible: the small widget shows the main prep conclusion, and the medium widget adds today's weather summary. Weather comes from Apple Weather/WeatherKit, with Open-Meteo as a fallback so the answers keep working."
+    ],
+    "target_users": [
+      "Commuters who just want to know if they need an umbrella before leaving home",
+      "People deciding whether to hang laundry outside or dry it indoors",
+      "Anyone choosing an outfit or jacket based on today's conditions",
+      "Parents planning a park trip or short outing around the weather",
+      "People tired of scrolling detailed forecasts for a simple yes/no answer"
+    ],
+    "features": [
+      "Four decision cards: umbrella, laundry, outfit, and outdoor/park plans",
+      "Conclusion-first layout — the answer comes before the forecast data",
+      "Daily prep checklist that resets automatically the next day",
+      "Small and medium Home Screen widgets showing the top prep conclusion and weather summary",
+      "Weather from Apple Weather/WeatherKit with Open-Meteo fallback",
+      "Units options (Auto, Metric, Imperial), compact wind display, manual refresh, light and dark mode"
+    ],
+    "how_to_use": [
+      "Open Today Ready and allow location access so it can fetch your local weather.",
+      "Read the four decision cards: umbrella, laundry, outfit, and outdoor plans.",
+      "Check off prep items as you get ready — today's checks reset automatically tomorrow.",
+      "Pull the latest conditions any time with manual refresh from the header.",
+      "Add the Home Screen widget to keep the first answer visible; open the app when the widget asks for a fresh update.",
+      "Adjust units (Auto, Metric, Imperial) in the small settings sheet if needed."
+    ],
+    "pricing": "Today Ready is free on the App Store, with no ads and no paid features. App Store pricing can change, so check the store listing for current details.",
+    "privacy": "Today Ready uses your location only to fetch local weather for its decisions, and does not store your location on a server. There is no account, no tracking, and no ads, and the app does not sell personal data. The widget never requests location or fetches weather itself — it only reads the latest decision snapshot the app saved locally in an App Group container.",
+    "faq": [
+      {
+        "question": "Is Today Ready free?",
+        "answer": "Yes. It is free to download with no ads and no paid features. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "What does the app do with my location?",
+        "answer": "Location is used only to fetch local weather so the app can show your umbrella, laundry, outfit, and outdoor decisions. It is not stored on a server, and there is no account or tracking."
+      },
+      {
+        "question": "Does Today Ready have a widget?",
+        "answer": "Yes. The small widget shows the top prep conclusion with compact temperature info, and the medium widget adds today's weather summary. Widgets show the latest saved snapshot and may ask you to open the app to refresh."
+      },
+      {
+        "question": "Where does the weather data come from?",
+        "answer": "Apple Weather/WeatherKit is the preferred provider. If WeatherKit is unavailable, the app falls back to Open-Meteo so the same local decisions keep working."
+      },
+      {
+        "question": "Is this a full forecast app?",
+        "answer": "No, by design. There is no radar, weekly forecast, or weather news — Today Ready shows only the four everyday decisions, with weather data as supporting evidence."
+      },
+      {
+        "question": "Do my checklist items carry over?",
+        "answer": "Today's checks stay for the day so you can see what is done, and they reset automatically the next day."
+      }
+    ]
+  },
+  "6767727517": {
+    "slug": "accesslens",
+    "short_description": "See camera or photos through simplified visual awareness filters — blur, cataract-style, tunnel, low contrast.",
+    "meta_description": "AccessLens applies simplified visual awareness filters to your iPhone camera or photos — blur, tunnel, low contrast — for education and design checks.",
+    "categories": [
+      "tap-tools",
+      "photo-memory"
+    ],
+    "overview": [
+      "AccessLens lets you view everyday scenes and photos through simplified visual awareness filters. Point the live camera at a sign, a menu, or a screen — or pick a photo — and apply blur, cataract-style, tunnel vision, central blind spot, or low contrast effects to notice how text, signs, and layouts can become harder to read.",
+      "The app is built for awareness, education, and accessibility checks — for example, discussing readability in a classroom or sanity-checking a design's contrast. It is deliberately honest about its limits: the filters are simplified simulations for learning and discussion, not medical reproductions of any visual condition, and the app provides no diagnosis or medical advice.",
+      "Each filter has an adjustable intensity slider and a Normal / Filtered comparison toggle, and you can save or share a filtered image — but only when you choose to. All processing happens locally on your device."
+    ],
+    "target_users": [
+      "Designers and developers doing quick accessibility and readability checks",
+      "Teachers and students exploring visual accessibility topics",
+      "Accessibility advocates preparing awareness demonstrations",
+      "Anyone curious how signs, text, and layouts look under reduced-vision conditions"
+    ],
+    "features": [
+      "Live camera preview with real-time filters",
+      "Photo import through the system photo picker",
+      "Five filters: Blurred Vision, Cataract View, Tunnel Vision, Central Blind Spot, and Low Contrast",
+      "Adjustable filter intensity slider",
+      "Normal / Filtered comparison toggle",
+      "Save filtered images to Photos (add-only permission, only when you choose)",
+      "Share filtered images through the system share sheet"
+    ],
+    "how_to_use": [
+      "Open AccessLens and allow camera access for the live preview, or choose a photo instead.",
+      "Select a filter: Blur, Cataract, Tunnel, Spot, or Low Contrast.",
+      "Adjust the intensity slider to strengthen or soften the effect.",
+      "Toggle between Normal and Filtered to compare views.",
+      "Optionally save the filtered image to Photos or share it with the share sheet."
+    ],
+    "pricing": "AccessLens is free on the App Store, with no subscriptions, accounts, or server connections required. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "Camera frames and selected photos are processed locally on your device and are never uploaded — AccessLens has no servers, no analytics, no advertising or tracking SDKs, and no external image services. It does not collect, sell, or share personal information, and its privacy manifest declares no tracking and no collected data types. Photo access is only requested when you pick a photo, and add-only Photos permission only when you save a result.",
+    "faq": [
+      {
+        "question": "Is AccessLens free?",
+        "answer": "Yes. AccessLens is free with no subscriptions or accounts. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Are my camera images or photos uploaded anywhere?",
+        "answer": "No. All filtering happens locally on your device. AccessLens uses no servers, no analytics, and no tracking SDKs, and never uploads camera frames or photos."
+      },
+      {
+        "question": "Do the filters accurately reproduce vision conditions?",
+        "answer": "No. The filters are simplified awareness simulations for education and discussion. AccessLens is not a medical app, provides no diagnosis or medical advice, and does not claim to accurately reproduce any visual condition."
+      },
+      {
+        "question": "What filters are included?",
+        "answer": "Blurred Vision, Cataract View, Tunnel Vision, Central Blind Spot, and Low Contrast — each with an adjustable intensity slider and a Normal/Filtered comparison."
+      },
+      {
+        "question": "Can I use it without allowing camera access?",
+        "answer": "Yes. You can pick a photo with the system photo picker instead of using the live camera preview."
+      },
+      {
+        "question": "Can I save or share the filtered result?",
+        "answer": "Yes. You can save filtered images to Photos (using add-only permission) or share them through the iOS share sheet — both only happen when you choose."
+      }
+    ]
+  },
+  "6767775689": {
+    "slug": "baronote",
+    "short_description": "Check current air pressure and its trend on your iPhone, then log how you feel — all stored on device.",
+    "meta_description": "BaroNote is a simple iPhone barometer and personal log. See current air pressure and trends, save mood and condition notes, and add widgets. Free.",
+    "categories": [
+      "productivity",
+      "widgets"
+    ],
+    "overview": [
+      "BaroNote is a simple barometer and personal log for iPhone. It reads the current air pressure from your iPhone's built-in pressure sensor, shows whether pressure is rising, steady, or falling, and lets you save a quick private note about your mood and physical condition alongside the reading.",
+      "Many weather apps bury pressure data under forecasts and ads. BaroNote does the opposite: one clear pressure reading, a simple trend, and a lightweight log — with no forecast API, no location tracking, no account, and no server. Everything you record stays on your device, and the app deliberately avoids medical claims: it is for personal logging only and does not provide medical advice.",
+      "Home Screen widgets show the current pressure and trend at a glance, and Lock Screen accessory widgets are available on supported iOS versions, so you can check pressure without opening the app."
+    ],
+    "target_users": [
+      "People who like to note how they feel when the weather and air pressure change",
+      "Anyone who wants a plain barometer reading without a full weather app",
+      "Users who keep simple daily mood and condition records",
+      "Privacy-conscious users who want their personal logs kept off the cloud",
+      "Widget users who want pressure and trend visible on the Home or Lock Screen"
+    ],
+    "features": [
+      "Current air pressure from the iPhone pressure sensor (on supported devices)",
+      "Rising, steady, and falling trend display with a delta from about three hours ago",
+      "Quick logs: mood, condition, symptom tags (headache, sleepy, tired, low focus, stiff shoulders), and an optional note",
+      "History list showing date, pressure, mood, condition, tags, and notes",
+      "Unit switching between hPa, mb, inHg, and mmHg",
+      "Home Screen widgets (small and medium) plus Lock Screen accessory widgets on supported iOS versions",
+      "Local-only storage with a delete-all-data option in Settings"
+    ],
+    "how_to_use": [
+      "Open BaroNote to see the current air pressure and its trend on the Home screen.",
+      "Tap the add-log button to record today's entry.",
+      "Pick your mood and condition (good / normal / bad), add symptom tags, and optionally type a note.",
+      "Review past entries in the History list.",
+      "Change the pressure unit (hPa, mb, inHg, mmHg) in Settings if needed.",
+      "Add a Home Screen or Lock Screen widget to check pressure and trend at a glance."
+    ],
+    "pricing": "BaroNote is free on the App Store, with no ads and no in-app purchases mentioned anywhere in the app. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "All data stays on your device: pressure readings, mood and condition logs, symptom tags, notes, and settings are stored locally and never sent to a server. There is no account, no cloud sync, no tracking, and no analytics or advertising SDKs. Widgets read a local snapshot shared only between the app and its widget extension. You can delete all local data from Settings at any time.",
+    "faq": [
+      {
+        "question": "Is BaroNote free?",
+        "answer": "Yes. BaroNote is free with no ads. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Where is my data stored?",
+        "answer": "Everything stays on your device. BaroNote has no account, no cloud sync, no server communication, and no tracking or analytics. You can delete all local data from Settings."
+      },
+      {
+        "question": "Does BaroNote work on every iPhone?",
+        "answer": "The pressure reading uses the iPhone's built-in barometric sensor. On devices without a pressure sensor, the app shows an unavailable state. BaroNote requires iOS 17 or later."
+      },
+      {
+        "question": "Does it have widgets?",
+        "answer": "Yes. Small and medium Home Screen widgets show current pressure, trend, and last log status, and Lock Screen accessory widgets are available on supported iOS versions."
+      },
+      {
+        "question": "Does BaroNote forecast the weather or predict headaches?",
+        "answer": "No. BaroNote shows measured pressure and a simple rising/steady/falling trend. It provides no forecasts, no diagnosis, and no health guidance — it is for personal logging only and does not provide medical advice."
+      },
+      {
+        "question": "What can I record in a log?",
+        "answer": "Each entry can include mood (good/normal/bad), condition (good/normal/bad), symptom tags such as headache, sleepy, tired, low focus, and stiff shoulders, plus an optional free-text note. The current pressure is saved with the entry."
+      }
+    ]
+  },
+  "6768640767": {
+    "slug": "asset-curve",
+    "short_description": "A local compound-growth simulator: estimate future value or the monthly saving needed to hit a goal.",
+    "meta_description": "Asset Curve for iPhone simulates compound growth of your savings — future value, goal backsolve, charts, yearly projections. No account, no tracking.",
+    "categories": [
+      "productivity"
+    ],
+    "overview": [
+      "Asset Curve is a simple compound-growth simulator for iPhone. Enter an initial amount, a monthly contribution, an expected annual return, and a number of years, and it produces a rough estimate of future asset value — along with total contributions, estimated growth, a monthly balance chart, and a year-by-year projection list.",
+      "It works in two directions. Future Value mode answers \"what might my savings grow to?\" Goal Backsolve mode flips the question: enter your current assets, a target amount, an expected return, and a time horizon, and it estimates the monthly contribution that would be needed under the same simplified assumptions. USD is the default unit, with JPY and EUR also selectable.",
+      "Asset Curve is deliberately a calculator, not a finance platform: no account, no brokerage connection, no cloud sync, and no network use at all. It is not investment advice — results are approximate simulations that exclude taxes, fees, currency changes, and market volatility, and a persistent disclaimer keeps that clear."
+    ],
+    "target_users": [
+      "Savers who want a quick feel for how monthly contributions could compound over the years",
+      "People planning toward a target amount who want to know the required monthly saving",
+      "Anyone comparing rough what-if scenarios with different return rates and time horizons",
+      "Privacy-conscious users who do not want to type financial figures into an online tool"
+    ],
+    "features": [
+      "Future Value mode: estimate a future asset amount from initial amount, monthly contribution, expected annual return, and years",
+      "Goal Backsolve mode: estimate the monthly contribution needed to reach a target amount",
+      "Monthly compounding with end-of-month contributions",
+      "Monthly balance and contribution chart plus a yearly projection list",
+      "USD, JPY, and EUR unit selector",
+      "Wide input ranges: annual return up to 200% and periods up to 100 years",
+      "Fully local — no account, no network connection, no data collection"
+    ],
+    "how_to_use": [
+      "Choose Future Value mode and enter your initial amount, monthly contribution, expected annual return, and number of years",
+      "Read the estimated future value, total contributions, and estimated growth",
+      "Explore the monthly chart and the yearly projection list to see how the balance builds",
+      "Switch to Goal Backsolve mode, enter your current assets, target amount, return, and years to get the required monthly contribution",
+      "Adjust the inputs to compare rough scenarios — all results are simplified simulations, not predictions"
+    ],
+    "pricing": "Asset Curve is free to download and use on the App Store, with no in-app purchases or paid content. App Store pricing and availability can change, so check the store listing for the latest details.",
+    "privacy": "Asset Curve collects no personal data, does not track you, and uses no network services at all — your calculator inputs never leave the device and are not even persisted. There is no account or login.",
+    "faq": [
+      {
+        "question": "Is Asset Curve free?",
+        "answer": "Yes. It is free to download and use, with no in-app purchases or paid content. Check the App Store listing for current pricing details."
+      },
+      {
+        "question": "Does the app see my financial data?",
+        "answer": "No. Asset Curve uses no network services and collects nothing. Your inputs are processed on the device and are not persisted or transmitted anywhere."
+      },
+      {
+        "question": "Is this investment advice?",
+        "answer": "No. Asset Curve does not recommend investments. Results are approximate simulations only and exclude taxes, fees, currency changes, market volatility, and asset allocation — they do not guarantee any outcome."
+      },
+      {
+        "question": "How are the calculations done?",
+        "answer": "The simulator uses monthly compounding: the annual rate is divided by 12 and contributions are added at the end of each month. Results include future value, total contributions, estimated growth, and a yearly projection."
+      },
+      {
+        "question": "Which currencies does it support?",
+        "answer": "USD is the default, with JPY and EUR also selectable as display units. Switching units applies a simple fixed factor rather than live exchange rates, since the app performs no FX calculation."
+      },
+      {
+        "question": "Does it work offline?",
+        "answer": "Yes, completely. The app has no network connection requirement and no external API integration."
+      }
+    ]
+  },
+  "6769219576": {
+    "slug": "caffeinetap",
+    "short_description": "Log caffeine in one tap and see how many mg you can still drink today - with a widget and cutoff reminder.",
+    "meta_description": "CaffeineTap is a one-tap caffeine tracker for iPhone. Log coffee, tea, or energy drinks, see today's total and what's left, and get a cutoff reminder.",
+    "categories": [
+      "tap-tools",
+      "widgets"
+    ],
+    "overview": [
+      "CaffeineTap is a lightweight caffeine tracker built to answer one question fast: how much caffeine can I still drink today? Tap coffee, espresso, tea, cola, or an energy drink and the app updates your daily total, your remaining amount against your personal limit, and a simple pace status.",
+      "It deliberately skips what heavier caffeine apps pile on - no accounts, no complicated charts, no HealthKit, no half-life math, no sleep predictions. Just quick logging, a seven-day history, and a small Home Screen widget showing today's remaining caffeine at a glance.",
+      "A single optional notification, the Cutoff Reminder, nudges you at the time you choose so you can pause before drinking caffeine late in the day."
+    ],
+    "target_users": [
+      "Coffee drinkers who want to stay under a daily caffeine limit without effort",
+      "People trying to cut back on afternoon caffeine for better evenings",
+      "Energy drink and tea drinkers who lose track of how much they've had",
+      "Anyone who abandoned heavyweight caffeine apps and just wants a quick log",
+      "People who want their remaining caffeine visible on the Home Screen"
+    ],
+    "features": [
+      "One-tap logging with presets: coffee (95 mg), espresso (65 mg), black tea (45 mg), green tea (30 mg), energy drinks (80/160 mg), cola (40 mg)",
+      "Custom amount entry for anything else",
+      "Personal daily limit in mg, with today's total, remaining amount, and a pace status (Good pace, Moderate, Near your limit, Over your daily limit)",
+      "Seven-day history grouped by day, with entry deletion",
+      "Small Home Screen widget showing today's remaining caffeine, or 'Over limit' when exceeded",
+      "Cutoff Reminder - a single local notification at the time you set",
+      "Local storage only; no account, no HealthKit"
+    ],
+    "how_to_use": [
+      "Set your personal daily caffeine limit in Settings.",
+      "When you drink something, tap its preset - coffee, espresso, tea, energy drink, cola - or enter a custom amount.",
+      "Check the home screen for today's total, how many mg you have left, and your pace status.",
+      "Add the small widget to your Home Screen to see remaining caffeine without opening the app.",
+      "Optionally enable the Cutoff Reminder in Settings to get a nudge at your chosen time.",
+      "Review the last seven days in History and delete entries if you mis-tapped."
+    ],
+    "pricing": "CaffeineTap is free on the App Store, with no in-app purchases or paid features. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "CaffeineTap does not collect, sell, share, or transmit personal data - no analytics, no advertising SDKs, no accounts, no server sync. Caffeine entries, your daily limit, and reminder settings are stored locally on your device, and the widget reads the same local data. The app does not use HealthKit. The Cutoff Reminder is a local notification, and permission is requested only if you enable it.",
+    "faq": [
+      {
+        "question": "Is CaffeineTap free?",
+        "answer": "Yes. The app is free with no in-app purchases or paid features. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Where is my caffeine data stored?",
+        "answer": "Only on your device. There is no account, no server sync, no analytics, and no ads. The widget reads the same local data through the app's App Group."
+      },
+      {
+        "question": "Is there a Home Screen widget?",
+        "answer": "Yes, a small widget that shows how many mg of caffeine you have left today (or 'Over limit'), along with your total versus your daily limit."
+      },
+      {
+        "question": "Does it connect to Apple Health?",
+        "answer": "No. CaffeineTap does not use HealthKit. It is a standalone personal log."
+      },
+      {
+        "question": "Will it send me notifications?",
+        "answer": "Only one, and only if you turn it on: the Cutoff Reminder at a time you choose. There are no logging-prompt notifications, and permission is asked only after you enable the feature in Settings."
+      },
+      {
+        "question": "How accurate are the caffeine amounts?",
+        "answer": "Preset amounts are estimates and can vary by brand, size, and brewing method. You can enter a custom amount when you know the exact figure. The app is for personal tracking and does not provide medical advice."
+      },
+      {
+        "question": "Can I see past days?",
+        "answer": "Yes. History shows the last seven days grouped by day, and you can delete individual entries."
+      }
+    ]
+  },
+  "6770047182": {
+    "slug": "warekiyakudoshichecker",
+    "short_description": "A family profile book for Japan: age, wareki dates, kazoedoshi, zodiac, yakudoshi, and longevity milestones.",
+    "meta_description": "年齢プロフィール for iPhone manages family birthdays and shows age, wareki (Japanese era) dates, kazoedoshi, zodiac, yakudoshi years, and longevity celebrations.",
+    "categories": [
+      "family",
+      "productivity"
+    ],
+    "overview": [
+      "年齢プロフィール (Age Profile) is a Japanese family profile book for iPhone. Save the birthdays of parents, grandparents, children, and relatives, and see at a glance each person's current age, kazoedoshi (traditional East Asian age counting), birth date and current year in wareki (Japanese era calendar: Meiji, Taisho, Showa, Heisei, Reiwa), Chinese zodiac animal, star sign, common yakudoshi (traditionally inauspicious years) guidance, and longevity celebrations such as kanreki (60th) and koki (70th).",
+      "Questions like \"How old is grandpa this year?\", \"When is my yakudoshi?\", or \"Which year is the kanreki celebration?\" are answered in one place, without looking up conversion tables. A built-in converter switches dates between the Western calendar and wareki across all five modern eras — handy for Japanese resumes, application forms, and paperwork at government offices — and correctly handles the boundary dates where one era changes to the next.",
+      "Everything is stored on your device: no account, no ads, and no data sent to external servers. The app presents yakudoshi and celebration years as common cultural guidance only — it makes no claims about fortune, misfortune, or health."
+    ],
+    "target_users": [
+      "Families in Japan who want one place to check everyone's age, zodiac, and celebration years",
+      "People planning kanreki, koki, kiju, and other longevity celebrations for parents and grandparents",
+      "Anyone filling out Japanese resumes or official forms that require wareki (era calendar) dates",
+      "People who want a quick reference for their own yakudoshi years",
+      "Expats and international residents in Japan who need help with era dates and traditional age customs"
+    ],
+    "features": [
+      "Family profile book: save birthdays with blood type and notes per person",
+      "Shows full age, kazoedoshi (counted age), Chinese zodiac, and star sign for each profile",
+      "Wareki display and converter covering Meiji, Taisho, Showa, Heisei, and Reiwa, with correct era-boundary handling",
+      "Yakudoshi guidance by gender (male, female, or unspecified), including major yakudoshi (taiyaku)",
+      "Longevity celebration detection based on kazoedoshi, such as kanreki and koki",
+      "Notifications for birthdays and longevity celebrations",
+      "All data stored on device — no account, no ads, no external transmission"
+    ],
+    "how_to_use": [
+      "Add family members and relatives with their birth dates using the date picker",
+      "Open the profile list to see each person's age, wareki dates, zodiac, and star sign at a glance",
+      "Check the yakudoshi and longevity celebration guidance shown for each profile",
+      "Set notifications so you do not miss birthdays or milestone celebrations like kanreki",
+      "Use the converter tab to switch any date between the Western calendar and wareki for forms and paperwork"
+    ],
+    "pricing": "The app is free to download and use. The free version stores up to 2 profiles; a one-time Plus in-app purchase (no subscription) unlocks unlimited profiles. App Store pricing can change, so check the store listing for current details.",
+    "privacy": "All data — profiles, birth dates, notes, blood types, and notification settings — is stored locally on your device and is never sent to external servers. There is no account registration, no tracking, and no ad or analytics SDKs. The app does not access your Contacts.",
+    "faq": [
+      {
+        "question": "Is the app free?",
+        "answer": "Yes, it is free to download and use, with up to 2 saved profiles in the free version. A one-time Plus purchase (not a subscription) unlocks unlimited profiles. Check the App Store listing for current pricing."
+      },
+      {
+        "question": "Where is my family's data stored?",
+        "answer": "Everything is stored locally on your device. Nothing is uploaded, there is no account, and the app uses no ads, tracking, or analytics SDKs."
+      },
+      {
+        "question": "What is wareki and which eras does the app support?",
+        "answer": "Wareki is the Japanese era calendar used on official documents. The app converts dates across the five modern eras — Meiji, Taisho, Showa, Heisei, and Reiwa — and correctly handles the dates where eras change."
+      },
+      {
+        "question": "What are yakudoshi and kazoedoshi?",
+        "answer": "Yakudoshi are years traditionally considered inauspicious in Japan, which differ for men and women. Kazoedoshi is the traditional age counting where you are 1 at birth. The app shows both as common cultural guidance, without any claims about fortune or misfortune."
+      },
+      {
+        "question": "Can it remind me about birthdays and celebrations?",
+        "answer": "Yes. You can set notifications for birthdays and for longevity celebrations such as kanreki (60th) and koki (70th)."
+      },
+      {
+        "question": "Does it work offline?",
+        "answer": "Yes. The app uses no external APIs, so everything works without an internet connection."
+      },
+      {
+        "question": "Is this a fortune-telling app?",
+        "answer": "No. Yakudoshi and celebration years are shown only as widely used cultural reference points. The app makes no statements about luck, misfortune, health, or religious effect."
+      }
+    ]
+  },
+  "6772096993": {
+    "slug": "hong-kong-phrase-card",
+    "short_description": "160 offline Cantonese travel phrase cards for Hong Kong — show large Traditional Chinese text or play speech.",
+    "meta_description": "Hong Kong Phrase Card puts 160 offline Cantonese travel phrases on your iPhone. Show large Traditional Chinese text or play speech — no internet needed.",
+    "categories": [
+      "travel"
+    ],
+    "overview": [
+      "Hong Kong Phrase Card is a practical travel phrase card app for visiting Hong Kong, designed primarily for Japanese travelers. Search or browse ready-made phrases, open one, and show the large Traditional Chinese text directly to a local person. When showing text is not enough, the app can speak the phrase using the iPhone's built-in text-to-speech.",
+      "Unlike live translation apps, Hong Kong Phrase Card uses fixed, reliable phrase cards that work completely offline — no typing under pressure, no waiting for a network connection, and no external translation API. Each card pairs the Traditional Chinese phrase with English text and a katakana pronunciation guide for Japanese speakers.",
+      "The 160 phrases cover real travel situations: airports, hotels, taxis, trains, restaurants, cafes, shopping, convenience stores, sightseeing, payment, illness, allergies, trouble, and emergencies. Phrases are ranked by practical usefulness so the ones you are most likely to need appear first."
+    ],
+    "target_users": [
+      "Japanese travelers visiting Hong Kong who do not speak Cantonese",
+      "Travelers who prefer fixed, reliable phrase cards over live translation apps",
+      "Visitors who need to communicate quickly in taxis, restaurants, shops, and hotels",
+      "Anyone who wants an offline communication backup for illness, allergies, or trouble situations",
+      "Travelers to other regions where Cantonese or Traditional Chinese is useful"
+    ],
+    "features": [
+      "160 travel phrases across 15 categories, all available offline",
+      "Search in Japanese, English, or Cantonese/Traditional Chinese",
+      "Show mode: large Traditional Chinese text with smaller English fallback",
+      "Speech playback using the iPhone text-to-speech system",
+      "Katakana pronunciation guides for Japanese travelers",
+      "Favorites saved locally on your device",
+      "Category lists sorted by practical usefulness rank, with rank filtering"
+    ],
+    "how_to_use": [
+      "Open the app and search for a phrase, or browse by category (airport, taxi, restaurant, and more).",
+      "Filter a category by usefulness rank if you want only the essential phrases.",
+      "Tap a phrase to open its card with Traditional Chinese, English, and pronunciation guide.",
+      "Show the large Traditional Chinese text to the person you are talking to.",
+      "Tap play to speak the phrase aloud if showing text is not enough.",
+      "Add frequently used phrases to Favorites for quick access."
+    ],
+    "pricing": "Hong Kong Phrase Card is free on the App Store, with no in-app purchases or ads. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "The app collects no personal information. There is no account, no tracking, and no external translation API — all phrase data is built into the app. Favorites are stored only on your device, and the app requests no location, camera, photo, contact, or microphone permissions. Speech playback uses the device text-to-speech system and does not record or transmit audio.",
+    "faq": [
+      {
+        "question": "Is Hong Kong Phrase Card free?",
+        "answer": "Yes. The app is free with no in-app purchases or ads. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Does it work offline?",
+        "answer": "Yes. All 160 phrases are included inside the app, so search, phrase cards, and Show mode work without any internet connection."
+      },
+      {
+        "question": "What data does the app collect?",
+        "answer": "None. There is no account, no tracking, and no external translation API. Favorites are stored only on your device."
+      },
+      {
+        "question": "Do I need to speak Cantonese to use it?",
+        "answer": "No. The core workflow is showing large Traditional Chinese text to a local person. You can also play the phrase aloud with text-to-speech, and each card includes a katakana pronunciation guide."
+      },
+      {
+        "question": "What situations do the phrases cover?",
+        "answer": "15 categories including airports, hotels, transportation, taxis, trains, restaurants, cafes, shopping, convenience stores, sightseeing, payment, illness, allergies, trouble, and emergencies."
+      },
+      {
+        "question": "Can I rely on it for emergencies or official matters?",
+        "answer": "The app supports simple travel communication only. For emergencies, medical, legal, immigration, or official matters, confirm with local authorities or qualified professionals."
+      },
+      {
+        "question": "Is it a language learning app?",
+        "answer": "No. It is a practical communication tool for travelers — phrase cards to show and play, not lessons or study features."
+      }
+    ]
+  },
+  "6780724192": {
+    "slug": "ocr-copy",
+    "short_description": "Copy text from camera, live scan, or photos with on-device OCR — save it locally and copy it again later.",
+    "meta_description": "OCR Copy reads text from camera, live scan, and photos on your iPhone using on-device OCR. Copy, edit, and save text locally — nothing is uploaded.",
+    "categories": [
+      "productivity",
+      "tap-tools"
+    ],
+    "overview": [
+      "OCR Copy is a local-first OCR utility for quickly copying text from the real world. Use live scan, take a photo, or pick an image from your library, and the app reads the text on your device with Apple Vision so you can copy it right away — receipts, books, packages, screenshots, signs, and other everyday text.",
+      "Instead of a heavy document manager or a cloud OCR service, OCR Copy keeps the job small and private: read text, copy it, done. When recognition isn't perfect, you can edit or delete individual lines while the original OCR result is kept as the source, and confidence values and text positions are available as optional detail information rather than intrusive scores.",
+      "Saved text stays on your device so you can come back and copy it again later. If Auto detection doesn't read your text well, OCR language settings let you choose modes like Japanese + English, Korean + English, Chinese + English, or European languages, and switch between Accurate and Fast recognition."
+    ],
+    "target_users": [
+      "People who frequently retype text from receipts, packages, books, or paper documents",
+      "Users who want to grab text from screenshots and photos without a cloud service",
+      "Anyone dealing with multilingual text who needs selectable OCR languages",
+      "Privacy-conscious users who don't want their photos or text sent to a server"
+    ],
+    "features": [
+      "Live scan: point the camera and grab text in real time",
+      "OCR from a camera photo or an image picked from your photo library",
+      "On-device text recognition with Apple Vision — no server involved",
+      "Edit or delete individual lines while keeping the original OCR result",
+      "Save recognized text locally and copy it again later",
+      "OCR language modes: Auto, Japanese + English, English, Korean + English, Simplified/Traditional Chinese + English, and European languages",
+      "Optional detail view with confidence values and text-position overlays"
+    ],
+    "how_to_use": [
+      "Open OCR Copy and choose live scan, camera capture, or a photo from your library.",
+      "Let the app read the text on your device.",
+      "Copy the recognized text with one tap.",
+      "If needed, tap a line to fix or delete it — the original result is kept.",
+      "Save the text to review and copy again later from the Home screen.",
+      "If text isn't reading well, change the OCR language mode or accuracy in Settings."
+    ],
+    "pricing": "OCR Copy is free on the App Store, with no subscriptions or monetization. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "OCR runs entirely on your device with Apple Vision. Photos, recognized text, line corrections, confidence values, and thumbnails are stored locally in the app and are never sent to an external server. There is no account, no tracking, and no analytics. Sharing text is always user-initiated through the iOS share sheet.",
+    "faq": [
+      {
+        "question": "Is OCR Copy free?",
+        "answer": "Yes. OCR Copy is free with no subscriptions or in-app monetization. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Are my photos or text uploaded anywhere?",
+        "answer": "No. Text recognition runs on your device with Apple Vision, and photos, text, and corrections are stored locally. The app uses no external networking, no account, and no tracking or analytics SDKs."
+      },
+      {
+        "question": "What languages can it read?",
+        "answer": "Auto detection plus selectable modes: Japanese + English, English, Korean + English, Simplified Chinese + English, Traditional Chinese + English, and European languages. You can also switch between Accurate and Fast recognition."
+      },
+      {
+        "question": "What if the OCR result has mistakes?",
+        "answer": "You can edit or delete individual lines. The original OCR result is kept as the source, so your corrections never destroy the raw reading. Lines with low confidence are flagged for review when detail display is enabled."
+      },
+      {
+        "question": "Can I save text and come back to it later?",
+        "answer": "Yes. Saved text is stored locally on your device and appears on the Home screen, where you can reopen and copy it again anytime."
+      },
+      {
+        "question": "Does it read handwriting or vertical Japanese text?",
+        "answer": "The app targets printed text in photos and camera shots. Vertical Japanese text and complex page layouts are not primary supported use cases in the current version."
+      },
+      {
+        "question": "Do I need camera access?",
+        "answer": "Camera access is needed for live scan and camera capture, but you can also pick existing images from your photo library with the system picker."
+      }
+    ]
+  },
+  "6789844137": {
+    "slug": "blur-before-share",
+    "short_description": "Blur, mosaic, or black out faces and personal info in photos before you share them — originals stay untouched.",
+    "meta_description": "Blur Before Share hides faces, names, and IDs in photos on your iPhone with blur, mosaic, or black-out. Saved copies carry no location metadata.",
+    "categories": [
+      "tap-tools",
+      "photo-memory"
+    ],
+    "overview": [
+      "Blur Before Share hides faces, names, IDs, and anything else you do not want to share, right before you share it. Pick a photo, draw with your finger over the parts to hide, and save or share a censored copy — while the original photo is never modified.",
+      "You choose the effect that fits what you are hiding: blur to soften faces and backgrounds, mosaic for irreversible pixelation of text, license plates, and IDs, or a fully opaque black cover for anything sensitive. You can mix effects in one photo, adjust brush size and strength, and undo or reset strokes while editing.",
+      "The saved copy is re-rendered from scratch, so it contains no EXIF or GPS metadata from the original photo — you are not leaking where or when a photo was taken along with it."
+    ],
+    "target_users": [
+      "People posting screenshots that contain names, chats, or account details",
+      "Parents sharing kids' photos who want other children's faces hidden",
+      "Anyone sharing tickets, documents, or IDs where numbers must stay private",
+      "Sellers and social media users who want backgrounds or bystanders obscured"
+    ],
+    "features": [
+      "Three effects: blur, mosaic, and opaque black cover",
+      "Draw masks with your finger exactly where you want them",
+      "Mix multiple effects in a single photo",
+      "Adjustable brush size and effect strength",
+      "Undo the last stroke or reset all strokes while editing",
+      "Saved copies contain no EXIF or GPS metadata",
+      "Original photo is never modified; save uses add-only Photos permission"
+    ],
+    "how_to_use": [
+      "Open the app and pick a photo with the system photo picker.",
+      "Choose an effect: blur, mosaic, or black.",
+      "Draw over faces, names, IDs, or anything else to hide — adjust brush size as needed.",
+      "Mix effects or use undo and reset until it looks right.",
+      "Save the censored copy to Photos or share it directly with the share sheet."
+    ],
+    "pricing": "Blur Before Share is free on the App Store, with no ads. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "Everything runs on your device: no account, no upload, no ads, and no tracking. The app only accesses the photo you pick and uses add-only permission to save the result. Saved copies are re-rendered from scratch and contain no EXIF or GPS metadata from the original, and your original photo is never changed.",
+    "faq": [
+      {
+        "question": "Is Blur Before Share free?",
+        "answer": "Yes. The app is free with no ads. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Are my photos uploaded anywhere?",
+        "answer": "No. All editing happens on your device. There is no account, no upload, and no tracking."
+      },
+      {
+        "question": "Can the blur be reversed to reveal what's underneath?",
+        "answer": "The app offers mosaic as irreversible pixelation for text, plates, and IDs, and a fully opaque black cover for anything sensitive. For maximum certainty, use black — nothing shows through an opaque cover."
+      },
+      {
+        "question": "Does it change my original photo?",
+        "answer": "No. The app saves a new censored copy and never modifies the original in your library."
+      },
+      {
+        "question": "Does the shared copy include location data?",
+        "answer": "No. Saved copies are re-rendered from scratch and contain no EXIF or GPS metadata from the original photo."
+      },
+      {
+        "question": "Does it automatically detect faces?",
+        "answer": "No. You draw the masks yourself with your finger, which gives you exact control over what gets hidden."
+      }
+    ]
+  },
+  "6789844158": {
+    "slug": "mute-video-before-share",
+    "short_description": "Remove all sound from a video in one tap — no re-encoding, no quality loss, no length limit, no watermark.",
+    "meta_description": "Mute Video Before Share removes the audio track from any video on your iPhone in one tap. No quality loss, no length limit, no watermark. Free.",
+    "categories": [
+      "tap-tools",
+      "photo-memory"
+    ],
+    "overview": [
+      "Mute Video Before Share removes the audio track from a video so you can share it without background voices, conversations, or noise. Pick a video, tap once, and get a silent copy ready to post or send — while your original video stays completely unchanged.",
+      "Unlike video editors that re-encode everything, this app copies the video track as-is and simply drops the audio. That means zero picture-quality loss, fast results even on long videos, no length limit, and no watermark. It is a single-purpose tool that does one job well.",
+      "The silent copy is also cleaner than the original in one important way: it contains no location or camera metadata from the source video, so you are not leaking where a clip was filmed when you share it."
+    ],
+    "target_users": [
+      "People posting videos to social media who want background conversations muted",
+      "Parents sharing kids' videos without household voices or names in the audio",
+      "Sellers adding videos to marketplace listings without ambient noise",
+      "Anyone sending clips to work, school, or family who wants privacy in the soundtrack"
+    ],
+    "features": [
+      "Remove all sound from a video in one tap",
+      "No quality loss — the video track is copied as-is, not re-encoded",
+      "No length limit and fast processing even for long videos",
+      "No watermark on the silent copy",
+      "Silent copy contains no location or camera metadata from the original",
+      "Preview the result, then save to Photos or share directly",
+      "Original video stays unchanged — everything runs on your device"
+    ],
+    "how_to_use": [
+      "Open the app and choose a video from your Photos library.",
+      "Preview the selected video.",
+      "Tap Remove Audio and wait a moment while the silent copy is created on your device.",
+      "Preview the silent copy to confirm it looks right.",
+      "Save it to Photos or share it directly with the share sheet."
+    ],
+    "pricing": "Mute Video Before Share is free on the App Store, with no ads and no watermark. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "Everything runs on your device: no account, no upload, no server processing, no ads, and no tracking. Photos access is used only to select a video and save the silent copy. As a bonus, the exported silent copy carries no location or camera metadata from the original video.",
+    "faq": [
+      {
+        "question": "Is Mute Video Before Share free?",
+        "answer": "Yes. The app is free with no ads and no watermark. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Are my videos uploaded anywhere?",
+        "answer": "No. Audio removal happens entirely on your device. There is no account, no upload, no server processing, and no tracking."
+      },
+      {
+        "question": "Does removing the audio reduce video quality?",
+        "answer": "No. The video track is copied as-is without re-encoding, so the picture quality of the silent copy is identical to the original."
+      },
+      {
+        "question": "Is there a video length limit?",
+        "answer": "No. Because the video is not re-encoded, even long videos finish fast."
+      },
+      {
+        "question": "Does it change my original video?",
+        "answer": "No. The app creates a new silent copy and leaves your original video untouched in your library."
+      },
+      {
+        "question": "Does the silent copy include location data?",
+        "answer": "No. The silent copy contains no location or camera metadata from the original, which makes it safer to share publicly."
+      }
+    ]
+  },
+  "6789844199": {
+    "slug": "cute-privacy-stamp",
+    "short_description": "Hide faces and private details in photos with cute stamps - hearts, stars, cats - before you share.",
+    "meta_description": "Cute Privacy Stamp hides faces and private info in photos with cute stamps on iPhone. Runs on device; saved copies carry no location metadata.",
+    "categories": [
+      "photo-memory",
+      "tap-tools"
+    ],
+    "overview": [
+      "Cute Privacy Stamp covers faces and private details in photos with cute stamps before you post, sell, or send them. Pick a photo, place a heart, star, cat, or sparkle over what you want to hide, and save or share a freshly rendered copy.",
+      "Unlike blur or mosaic tools, stamps keep the photo cheerful - especially handy before posting kids' photos to social media. It is a focused, single-purpose editor: no filters, no beauty editing, no layer system, just stamps you can move, resize, and rotate with your fingers.",
+      "Everything happens on your device. Your original photo is never modified, nothing is uploaded, and the saved copy contains no location metadata from the original."
+    ],
+    "target_users": [
+      "Parents who want to hide their kids' faces before posting to social media",
+      "People selling items online who need to cover names, addresses, or other private details in listing photos",
+      "Anyone sharing group photos who wants to cover other people's faces politely",
+      "Users who find blur and mosaic too plain and want photos to stay cute",
+      "Privacy-conscious users who don't want photos uploaded to a server for editing"
+    ],
+    "features": [
+      "Cute stamps for hiding faces: hearts, sparkles, stars, cats, and more",
+      "Privacy mark stamps such as NO, NG, HIDE, PRIVATE, SECRET, STOP, COVER, and MASKED",
+      "Eye-bar stamps and large cover patches for broader areas",
+      "Drag to move, pinch to resize, and two-finger rotate for each stamp",
+      "Undo the most recent stamp or clear all stamps",
+      "Save or share a newly rendered copy - the original photo stays unchanged",
+      "Saved copies contain no location metadata from the original photo"
+    ],
+    "how_to_use": [
+      "Open the app and pick a photo with the photo picker.",
+      "Choose a stamp - a heart, star, cat, sparkle, eye bar, or a privacy mark like HIDE or PRIVATE.",
+      "Drag the stamp over the face or detail you want to cover, then pinch to resize and rotate with two fingers.",
+      "Add more stamps as needed; undo the last one or clear all if you change your mind.",
+      "Save the stamped copy to your library or share it directly - your original photo is untouched."
+    ],
+    "pricing": "Cute Privacy Stamp is free on the App Store, with no ads. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "The app does not collect personal data, does not track you, and contains no third-party advertising. Photos are processed entirely on your device - nothing is uploaded to a server and no external image-processing API is used. Your original photo is never modified; saving or sharing creates a new copy, and that copy carries no location metadata from the original.",
+    "faq": [
+      {
+        "question": "Is Cute Privacy Stamp free?",
+        "answer": "Yes. The app is free on the App Store with no ads. Pricing can change, so check the store listing for current details."
+      },
+      {
+        "question": "Are my photos uploaded anywhere?",
+        "answer": "No. All editing happens on your device. The app does not upload photos to a server and does not use external APIs for image processing."
+      },
+      {
+        "question": "Does it change my original photo?",
+        "answer": "No. The original stays untouched. Saving or sharing creates a newly rendered copy with the stamps applied."
+      },
+      {
+        "question": "Does the saved photo include my location?",
+        "answer": "No. The saved copy contains no location metadata from the original photo, so you can share it without exposing where it was taken."
+      },
+      {
+        "question": "How is this different from blur or mosaic apps?",
+        "answer": "Instead of blurring, you cover faces and details with cute stamps - hearts, stars, cats, sparkles - so the photo stays cheerful, which is especially nice for kids' photos."
+      },
+      {
+        "question": "Can I adjust a stamp after placing it?",
+        "answer": "Yes. Drag to move it, pinch to resize, and rotate with two fingers. You can undo the most recent stamp or clear them all."
+      },
+      {
+        "question": "Do I need an account?",
+        "answer": "No. There is no account system, no sign-up, and no tracking."
+      }
+    ]
+  },
+  "6789844259": {
+    "slug": "exifoff",
+    "short_description": "Check what a photo reveals - location, date, camera - and share a clean copy with metadata removed.",
+    "meta_description": "ExifOff removes EXIF metadata and location data from photos on iPhone. Check what a photo reveals, then share a clean copy - originals never change.",
+    "categories": [
+      "tap-tools",
+      "photo-memory"
+    ],
+    "overview": [
+      "ExifOff checks what a photo reveals and creates a clean copy for safer sharing. Pick a photo to see whether it contains location data, along with basics like date, camera, size, and file type - then create a new JPEG copy with the metadata removed before you post or send it.",
+      "It is a single-purpose privacy tool, not a photo editor or a full EXIF browser: it shows only the fields that matter for a sharing decision, and it never touches your originals. Cleaning happens entirely on your device with no account, no upload, and no tracking.",
+      "You can clean up to 50 photos at once, and even clean straight from the share sheet - share photos from any app to ExifOff and get clean copies back."
+    ],
+    "target_users": [
+      "Anyone posting photos to social media who doesn't want to reveal where they were taken",
+      "People selling items online who share photos taken at home",
+      "Parents sharing kids' photos and worried about embedded location data",
+      "Users sending photos to strangers via marketplaces, forums, or chat apps",
+      "Privacy-conscious users who want metadata stripped on-device, not by a web service"
+    ],
+    "features": [
+      "See whether location data is present in a photo before you share it",
+      "Check key metadata: date, camera, image size, and file type",
+      "Create a clean JPEG copy with metadata removed - originals stay untouched",
+      "Clean up to 50 photos at once",
+      "Clean straight from the share sheet: share photos from any app and get clean copies back",
+      "Save the clean copies to your library or share them directly",
+      "Everything runs on your device - no account, no upload, no tracking"
+    ],
+    "how_to_use": [
+      "Open ExifOff and pick a photo (or select up to 50 at once).",
+      "Review what the photo reveals: whether location data was found, plus date, camera, size, and file type.",
+      "Tap to create a clean copy - a new JPEG without the source metadata.",
+      "Save the clean copy to your photo library or share it straight from the app.",
+      "Alternatively, share photos to ExifOff from any app's share sheet and get clean copies back without opening the app first."
+    ],
+    "pricing": "ExifOff is free on the App Store, with no ads and no in-app purchases. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "All processing happens on your device - photos are never uploaded, and there is no account and no tracking. ExifOff creates new clean copies for sharing; it does not edit or delete your original photos. See the App Store privacy label for the current details.",
+    "faq": [
+      {
+        "question": "Is ExifOff free?",
+        "answer": "Yes. The app is free with no ads and no in-app purchases. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Are my photos uploaded to a server?",
+        "answer": "No. Metadata checking and cleaning run entirely on your device. There is no account, no upload, and no tracking."
+      },
+      {
+        "question": "Does it delete or change my original photos?",
+        "answer": "No. ExifOff always creates a new clean JPEG copy for saving or sharing. Your originals are never edited or deleted."
+      },
+      {
+        "question": "What metadata does it remove?",
+        "answer": "The clean copy is created without carrying over the source photo's metadata, including location data. Before cleaning, the app shows whether location data was found plus the date, camera, size, and file type."
+      },
+      {
+        "question": "Can I clean multiple photos at once?",
+        "answer": "Yes. You can clean up to 50 photos in one go."
+      },
+      {
+        "question": "Can I use it without opening the app?",
+        "answer": "Yes. Share photos from any app to ExifOff via the share sheet and it hands back clean copies."
+      },
+      {
+        "question": "Why should I remove EXIF data before sharing?",
+        "answer": "Photos can carry embedded location coordinates and other details about when and how they were taken. Stripping that metadata before posting or sending prevents strangers from learning where a photo was taken."
+      }
+    ]
+  },
+  "6789844290": {
+    "slug": "foot-size-check",
+    "short_description": "Measure foot length and width from a photo, using a sheet of A4 paper as the size reference.",
+    "meta_description": "Foot Size Check measures foot length and width from an iPhone photo using A4 paper as a reference, with JP shoe size and JIS width estimates.",
+    "categories": [
+      "family",
+      "tap-tools"
+    ],
+    "overview": [
+      "Foot Size Check turns your iPhone into a foot measuring tool using nothing but a sheet of A4 paper. Place a foot on the paper, take a photo from directly above, and the app calculates foot length, foot width, and a suggested Japanese shoe size range in 0.5 cm steps. It is made for parents who need to keep up with fast-growing kids' feet, but works for adults too.",
+      "Unlike mail-order measuring mats, there is nothing to buy or wait for: A4 paper is the reference object, and you can fine-tune the paper corners and measurement points by hand, so you stay in control of the result. Everything is processed on your device, with no account, no ads, and no upload.",
+      "The app can also estimate a JIS-standard width grade (E, 2E, and so on) from your measured length and width. Choose a men / women / kids category to enable it, and optionally enter a taped girth measurement for a closer match. Results are estimates; the app deliberately avoids claiming a guaranteed fit and recommends an in-store fitting before buying shoes."
+    ],
+    "target_users": [
+      "Parents checking a child's shoe size before buying new shoes",
+      "Families who want a growth record of kids' feet over time",
+      "Shoppers who want a quick JP size guide without ordering a measuring mat",
+      "Anyone curious about their foot width grade as well as length",
+      "People who prefer a no-account, on-device tool for body measurements"
+    ],
+    "features": [
+      "Foot length and width measurement from a photo, with A4 paper as the size reference",
+      "Suggested Japanese shoe size guide in 0.5 cm steps",
+      "JIS-standard width grade estimate (E, 2E, etc.), with optional taped girth input for accuracy",
+      "Wall mode: heel against the wall, snap a photo, done",
+      "Manual fine-tuning of the A4 corners and measurement points",
+      "Growth history saved over time, with left and right feet tracked separately",
+      "On-device processing: no account, no upload, no ads"
+    ],
+    "how_to_use": [
+      "Place a sheet of A4 paper on a flat floor and stand one foot on it (or use wall mode with the heel against the wall).",
+      "Take a photo from directly above with your iPhone.",
+      "Adjust the A4 corner markers and the foot measurement points by hand if needed.",
+      "Read the measured foot length, width, and suggested JP shoe size range.",
+      "Optionally pick a category (men / women / kids) to see a JIS width grade estimate, and enter a taped girth for a closer match.",
+      "Save the result to history to track growth, with left and right feet recorded separately."
+    ],
+    "pricing": "Foot Size Check is free on the App Store, with no ads and no subscriptions. App Store pricing and availability can change, so check the store listing for the current details.",
+    "privacy": "Photos are processed on your device for measurement and are never uploaded by the app; they are not even saved into measurement history. Saved history contains measurement values only (name, foot side, length, width, size range, date), and you can delete entries or clear everything from Settings. The app does not collect personal data, does not use tracking or advertising SDKs, and does not require an account.",
+    "faq": [
+      {
+        "question": "Is Foot Size Check free?",
+        "answer": "Yes. The app is free to download and use, with no ads and no subscriptions. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Are my photos uploaded anywhere?",
+        "answer": "No. Photos are processed on your device only. They are not uploaded to any server and are not stored in your measurement history."
+      },
+      {
+        "question": "What do I need to measure a foot?",
+        "answer": "Just a sheet of A4 paper and your iPhone. The paper acts as the size reference, so there is no measuring mat to order and no sign-up."
+      },
+      {
+        "question": "How accurate are the results?",
+        "answer": "Results are estimates. You can fine-tune the measurement points by hand for a better result, but shoe fit varies by brand, model, and foot shape, so an in-person fitting is recommended before buying shoes."
+      },
+      {
+        "question": "Can I track my child's foot growth over time?",
+        "answer": "Yes. Saved measurements build a growth history over time, and left and right feet are tracked separately."
+      },
+      {
+        "question": "What is the JIS width grade estimate?",
+        "answer": "Besides length, the app estimates a JIS-standard width grade (E, 2E, and similar) from your measured foot length and width. Choose a men / women / kids category to enable it, and enter a taped girth measurement for a more accurate match."
+      },
+      {
+        "question": "Do I need an account?",
+        "answer": "No. There is no account, no sign-up, and no cloud sync. All measurement records stay on your device."
+      }
+    ]
+  },
+  "6789844298": {
+    "slug": "foodsnapquest",
+    "short_description": "A relaxed meal photo diary: snap what you ate, tag the meal, and watch your calendar fill up.",
+    "meta_description": "Gohan Snap (FoodSnapQuest) is a photo-only meal log for iPhone. No calorie counting - snap, tag breakfast to snack, and review meals on a calendar.",
+    "categories": [
+      "photo-memory",
+      "tap-tools"
+    ],
+    "overview": [
+      "Gohan Snap (Japanese name: ごはんスナップ) is a relaxed meal-logging app that records what you ate with photos alone. Take a picture, tag it as breakfast, lunch, dinner, or snack, and your eating record builds up on a calendar - that's the whole routine.",
+      "It deliberately does not count calories or judge your nutrition. If strict food-tracking apps never stuck for you but you still want a record of what you ate, this is the lightest possible meal photo log: no account, no ads, and records that never leave your device.",
+      "Streaks and gentle badges make it a little more fun to keep going, and a clipboard feature lets you copy your meal record to paste into the AI app of your choice for advice - the app itself contains no AI."
+    ],
+    "target_users": [
+      "People who gave up on strict calorie-counting apps but still want to remember what they ate",
+      "Anyone who wants a visual meal diary with the lowest possible effort",
+      "People reviewing their eating patterns by looking back over a calendar of photos",
+      "Users who want to discuss their meals with an AI chat app using their own log",
+      "Privacy-conscious users who want food records kept on their phone only"
+    ],
+    "features": [
+      "One-tap meal capture from the camera or photo library",
+      "Meal type tags: breakfast, lunch, dinner, and snack",
+      "Calendar view showing which days you recorded, with day detail views",
+      "Streak tracking and simple badges as a gentle reward for continuing",
+      "Copy-to-clipboard prompt so you can paste your record into your favorite AI app for meal advice (no AI built into the app)",
+      "No calorie counting, no nutrition scoring - just photos and tags"
+    ],
+    "how_to_use": [
+      "Open the app when you eat and snap a photo, or pick one from your library.",
+      "Choose a tag: breakfast, lunch, dinner, or snack.",
+      "That's it - the entry lands on your calendar automatically.",
+      "Look back over the calendar to see which days you recorded and review each day's meals.",
+      "Keep the streak going and collect badges, or copy your record to consult an AI app about your eating."
+    ],
+    "pricing": "Gohan Snap is free on the App Store, with no ads and no account required. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "Your meal records and photos stay on your device - the app states that nothing is sent to external servers. There is no account and no ads. The optional AI consultation simply copies your record to the clipboard; you decide whether to paste it into another app. See the App Store privacy label for the current details.",
+    "faq": [
+      {
+        "question": "Is Gohan Snap free?",
+        "answer": "Yes. The app is free with no ads and no account. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Does it count calories or analyze nutrition?",
+        "answer": "No, by design. It does not calculate calories or judge nutrition. A photo and a meal tag are enough - it is a record, not a diet coach."
+      },
+      {
+        "question": "Where is my meal data stored?",
+        "answer": "On your device. The app states that records are kept locally and nothing is transmitted externally. There is no account."
+      },
+      {
+        "question": "Is there AI in the app?",
+        "answer": "No AI is built in. The app can copy your meal record to the clipboard so you can paste it into the AI app you already use and ask about your meals."
+      },
+      {
+        "question": "How do I record a meal?",
+        "answer": "Take a photo with the camera or pick one from your library, then choose breakfast, lunch, dinner, or snack. The entry appears on your calendar."
+      },
+      {
+        "question": "Does it help me keep the habit going?",
+        "answer": "Yes, gently. It tracks your recording streak and awards simple badges - a light reward rather than pressure."
+      },
+      {
+        "question": "Is this app available in English?",
+        "answer": "The app is a Japanese app (ごはんスナップ). Check the App Store listing for currently supported languages."
+      }
+    ]
+  },
+  "6789844338": {
+    "slug": "korean-travel-phrase-card",
+    "short_description": "Offline Korean phrase cards for travelers: search in Japanese, show big Korean text, play speech.",
+    "meta_description": "Korean Travel Phrase Card shows 96 offline Korean travel phrases on iPhone. Search in Japanese, display large Korean text, and play speech. No ads.",
+    "categories": [
+      "travel"
+    ],
+    "overview": [
+      "Korean Travel Phrase Card is a practical phrase card app for travelers visiting Korea, designed especially for Japanese speakers. Instead of memorizing Korean, you search for a phrase, open it, and show large Korean text to a local person - or play the phrase aloud using the iPhone's built-in text-to-speech.",
+      "It is a phrase card app, not a language-learning app, and not a live translation workflow. All 96 phrases across 12 travel categories are bundled inside the app, so everything works offline from the moment you land - no account, no ads, no external translation API.",
+      "Phrases are organized by real travel situations - restaurants, cafes, shopping, cosmetics and beauty, hotels, transportation, payment, photo requests, fan events, health and allergies, and trouble - and ordered by practical usefulness so the phrases you actually need come first."
+    ],
+    "target_users": [
+      "Japanese travelers visiting Korea who cannot speak Korean",
+      "Tourists who want a small offline phrase tool instead of a live translation app",
+      "Visitors ordering at restaurants and cafes or shopping for cosmetics in Korea",
+      "K-pop and fan-event travelers who need quick, situation-specific phrases",
+      "Travelers who want to communicate about allergies or health issues clearly"
+    ],
+    "features": [
+      "96 offline travel phrases across 12 categories, bundled in the app",
+      "Search in Japanese, English, and Korean (plus katakana readings)",
+      "Large Show mode for presenting the Korean phrase to a local person",
+      "Korean speech playback via the iOS text-to-speech system",
+      "Katakana reading guides as approximate pronunciation aids for Japanese travelers",
+      "Favorites for quick access to frequently used phrases",
+      "Category lists ordered by practical usefulness rank"
+    ],
+    "how_to_use": [
+      "Open the app and browse a travel category, or search for a phrase in Japanese, English, or Korean.",
+      "Open the phrase to see the Japanese source, Korean text, katakana reading, and English fallback.",
+      "Tap Show mode to display the Korean phrase in large text and show it to a local person.",
+      "Play the Korean speech with text-to-speech when showing the text is not enough.",
+      "Favorite the phrases you use often so they are one tap away next time."
+    ],
+    "pricing": "Korean Travel Phrase Card is free on the App Store, with no ads and no in-app purchases. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "The app does not collect, transmit, sell, or share personal data. There is no account registration, no analytics, no advertising SDKs, no tracking, and no network translation API. Favorites are stored only on your device, and speech playback uses the iOS text-to-speech system without recording audio.",
+    "faq": [
+      {
+        "question": "Is Korean Travel Phrase Card free?",
+        "answer": "Yes. The app is free with no ads and no in-app purchases. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Does it work offline?",
+        "answer": "Yes. All 96 phrases are bundled in the app, so search, Show mode, and speech playback work without an internet connection - useful when you have no data plan in Korea."
+      },
+      {
+        "question": "What data does the app collect?",
+        "answer": "None. There is no account, no analytics, no ads, and no tracking. Your favorite phrases are stored only on your device."
+      },
+      {
+        "question": "Is this a Korean learning app?",
+        "answer": "No. It is a phrase card app for showing and playing short Korean phrases during a trip. Katakana readings are approximate travel aids, not precise pronunciation guidance."
+      },
+      {
+        "question": "What situations do the phrases cover?",
+        "answer": "12 categories: greetings, restaurants, cafes, shopping, cosmetics and beauty, hotels, transportation, payment, photo requests, fan events, health and allergies, and trouble."
+      },
+      {
+        "question": "How does speech playback work?",
+        "answer": "The app plays Korean phrases using the iPhone's built-in text-to-speech system (AVSpeechSynthesizer). No audio is recorded and no external service is used."
+      },
+      {
+        "question": "Can I rely on it for emergencies?",
+        "answer": "The phrases support simple travel communication. For emergencies, medical, legal, or immigration matters, confirm with local authorities or qualified professionals."
+      }
+    ]
+  },
+  "6789844342": {
+    "slug": "clipmd",
+    "short_description": "Turn web pages and copied text into clean Markdown clips - saved on your device, ready to paste anywhere.",
+    "meta_description": "ClipMD converts web pages and copied text into clean Markdown on iPhone. Clip via URL or share sheet, keep clips locally, and paste into any notes app.",
+    "categories": [
+      "productivity",
+      "tap-tools"
+    ],
+    "overview": [
+      "ClipMD turns web pages and copied text into clean Markdown clips you keep on your device. Paste a URL or share a page to ClipMD, and it extracts the article body and converts it to Markdown - headings, lists, and links preserved - ready to paste into your notes app or keep as a reading archive.",
+      "It is a focused clipping tool, not a read-it-later service or a browser replacement. There is no account, no cloud sync, and no telemetry; the only network requests it makes are fetching the exact pages you ask it to convert.",
+      "Made for note-takers who live in Markdown: clip it now, paste it anywhere later."
+    ],
+    "target_users": [
+      "Writers and researchers collecting article snippets for reference",
+      "Developers who keep notes and documentation in Markdown",
+      "Obsidian, Bear, and other Markdown notes app users who want clean paste-ready text",
+      "Anyone tired of copy-pasting web articles and losing headings, lists, and links",
+      "Privacy-conscious users who want clips stored locally, not on someone's server"
+    ],
+    "features": [
+      "Convert any web page to Markdown by pasting its URL",
+      "Clip directly from Safari or other apps via the share sheet",
+      "Convert copied text to Markdown in one tap",
+      "Clean extraction focused on the article body, with headings, lists, and links preserved",
+      "Clip list with detail view - copy, share, edit, or delete any clip",
+      "All clips stored locally on your device; network used only to fetch pages you request"
+    ],
+    "how_to_use": [
+      "Find a page worth keeping - in Safari, tap Share and choose ClipMD, or copy the URL.",
+      "In the app, paste the URL (or your copied text) and let ClipMD extract the article body.",
+      "Review the generated Markdown - headings, lists, and links come through intact.",
+      "Save it as a clip, then copy or share it into your notes app whenever you need it.",
+      "Edit or delete clips from the list; your archive stays on your device."
+    ],
+    "pricing": "ClipMD is free on the App Store, with no ads. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "Clips, titles, and settings are stored locally on your device and are never uploaded to the developer or any third party. There is no account, no analytics, no tracking, no ads, no crash reporting, and no third-party SDKs. Network access is user-initiated only: when you give ClipMD a URL, it fetches that page directly from the site you specified and makes no other requests. Uninstalling the app removes all stored data.",
+    "faq": [
+      {
+        "question": "Is ClipMD free?",
+        "answer": "Yes. ClipMD is free on the App Store with no ads. Pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Where are my clips stored?",
+        "answer": "Only on your device (including App Group storage shared with the share extension). Nothing is uploaded to the developer or any third party, and uninstalling the app removes all stored data."
+      },
+      {
+        "question": "Does ClipMD connect to the internet?",
+        "answer": "Only when you ask it to convert a URL - it fetches that page directly from the site you specified. It makes no other network requests and has no telemetry."
+      },
+      {
+        "question": "Can I clip from Safari?",
+        "answer": "Yes. Use the share sheet from Safari (or other apps) and choose ClipMD to convert the page to Markdown."
+      },
+      {
+        "question": "What does the Markdown output keep from the page?",
+        "answer": "ClipMD extracts the article body and preserves structure - headings, lists, and links - so the clip pastes cleanly into any Markdown notes app."
+      },
+      {
+        "question": "Does it sync between devices?",
+        "answer": "No. There is no cloud sync or account; clips live on the device where you saved them. You can copy or share a clip to move it elsewhere."
+      },
+      {
+        "question": "Can I edit a clip after saving it?",
+        "answer": "Yes. Any clip can be copied, shared, edited, or deleted from the clip list."
+      }
+    ]
+  },
+  "6791862183": {
+    "slug": "number-forge-daily-puzzle",
+    "short_description": "One new number puzzle a day: forge six numbers with + - x / into the target and keep your streak alive.",
+    "meta_description": "Number Forge is a daily number puzzle for iPhone. Combine six numbers with + - x / to hit the target, chase par, keep a streak, and share spoiler-free.",
+    "categories": [
+      "tap-tools",
+      "widgets"
+    ],
+    "overview": [
+      "Number Forge is a daily number puzzle. Every day brings exactly one new puzzle: combine six numbers using addition, subtraction, multiplication, and division to forge the target number. Pick two tiles and an operation, forge them into a new number, and work your way to the target in as few operations as you can.",
+      "Because there is only one puzzle per day and everyone in the world gets the same one, it becomes a short daily brain habit rather than an endless time sink. Par shows the minimum possible number of operations, so even after you solve it there's a reason to think harder. Streaks, par-match counts, and spoiler-free result sharing keep the habit going - and the whole game works completely offline.",
+      "A Home Screen widget (small and medium) shows today's target before you solve, or your result and streak after - and an optional once-a-day reminder helps you keep the chain, though the app works fully without notifications."
+    ],
+    "target_users": [
+      "Fans of daily puzzle games like Wordle or NYT Digits looking for a numbers version",
+      "People who want a short, sharp mental-math workout with morning coffee or on the commute",
+      "Puzzle players who enjoy chasing the optimal solution, not just any solution",
+      "Streak keepers who like building an unbroken daily record",
+      "Anyone who wants a quality brain game with no ads, no account, and no tracking"
+    ],
+    "features": [
+      "One new puzzle every day - the same puzzle for every player worldwide",
+      "Forge mechanic: pick two tiles and an operation (+ - x /) to combine them, with undo and reset",
+      "Par shows the minimum possible operations - match it if you can",
+      "Stats: solved days, current streak, longest streak, and par matches",
+      "Spoiler-free share text with puzzle number, operation count, and streak",
+      "Small and medium Home Screen widgets showing today's target or your solved result",
+      "Optional daily reminder notification; fully playable without it, and fully offline"
+    ],
+    "how_to_use": [
+      "Open the app - today's puzzle appears immediately, no onboarding, no menus.",
+      "Pick two number tiles and an operation to forge them into a new number.",
+      "Keep combining until you hit the target; use undo or reset if you take a wrong turn.",
+      "Try to match par - the minimum possible number of operations.",
+      "Share your result as spoiler-free text and compare with friends.",
+      "Come back tomorrow for the next puzzle and keep your streak alive - the widget shows the new target at a glance."
+    ],
+    "pricing": "Number Forge is free on the App Store, with no ads and no in-app purchases in the current version. App Store pricing and features can change, so check the store listing for current details.",
+    "privacy": "No account is required, and the app does not collect personal data or track you. Your progress - solved days, streaks, and settings - is stored locally on your device (shared with the widget via an App Group, on-device only), with no iCloud sync and no network requests. The optional daily reminder is a local notification.",
+    "faq": [
+      {
+        "question": "Is Number Forge free?",
+        "answer": "Yes. The current version is completely free with no ads and no in-app purchases. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "How does the daily puzzle work?",
+        "answer": "Each day there is one new puzzle, generated from the date, and every player in the world gets the same one. You combine six numbers with + - x / to reach the target number."
+      },
+      {
+        "question": "What is par?",
+        "answer": "Par is the minimum possible number of operations for that day's puzzle. Solving is one thing - matching par is the real challenge, and the app counts your par matches over time."
+      },
+      {
+        "question": "Does it work offline?",
+        "answer": "Yes, completely. Puzzles are generated on your device and the app makes no network requests."
+      },
+      {
+        "question": "Is there a widget?",
+        "answer": "Yes, in small and medium sizes. Before you solve, it shows today's target with a quick way into the game; after you solve, it shows your result and current streak. It updates at midnight for the next puzzle."
+      },
+      {
+        "question": "What data does the app collect?",
+        "answer": "None. There is no account, no tracking, and no analytics. Your streaks and results stay on your device."
+      },
+      {
+        "question": "Will it send me notifications?",
+        "answer": "Only if you turn on the optional once-a-day reminder. It skips days you have already solved, and the app works fully without notifications."
       }
     ]
   }

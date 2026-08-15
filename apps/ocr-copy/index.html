@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OCR Copy | ZEC Apps</title>
-  <meta name="description" content="OCR Copy is a local-first OCR utility for quickly copying text from camera, live scan, and photos.">
+  <meta name="description" content="OCR Copy reads text from camera, live scan, and photos on your iPhone using on-device OCR. Copy, edit, and save text locally — nothing is uploaded.">
   <link rel="canonical" href="https://zec-inc.jp/apps/ocr-copy/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
   <meta property="og:title" content="OCR Copy | ZEC Apps">
-  <meta property="og:description" content="OCR Copy is a local-first OCR utility for quickly copying text from camera, live scan, and photos.">
+  <meta property="og:description" content="OCR Copy reads text from camera, live scan, and photos on your iPhone using on-device OCR. Copy, edit, and save text locally — nothing is uploaded.">
   <meta property="og:url" content="https://zec-inc.jp/apps/ocr-copy/">
   <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/23/3f/b6/233fb6e3-eb4e-35f0-66ab-df8245062795/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
   <script type="application/ld+json">
@@ -20,7 +20,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "OCR Copy",
-      "description": "OCR Copy is a local-first OCR utility for quickly copying text from camera, live scan, and photos.",
+      "description": "OCR Copy reads text from camera, live scan, and photos on your iPhone using on-device OCR. Copy, edit, and save text locally — nothing is uploaded.",
       "operatingSystem": "iOS",
       "applicationCategory": "Utilities",
       "offers": {
@@ -45,34 +45,58 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is OCR Copy for?",
+          "name": "Is OCR Copy free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "OCR Copy is a focused iPhone app from ZEC Inc. The page above summarizes its purpose, intended users, and basic usage."
+            "text": "Yes. OCR Copy is free with no subscriptions or in-app monetization. App Store pricing can change, so check the listing for current details."
           }
         },
         {
           "@type": "Question",
-          "name": "Where can I download OCR Copy?",
+          "name": "Are my photos or text uploaded anywhere?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can download OCR Copy from its official App Store page linked on this page."
+            "text": "No. Text recognition runs on your device with Apple Vision, and photos, text, and corrections are stored locally. The app uses no external networking, no account, and no tracking or analytics SDKs."
           }
         },
         {
           "@type": "Question",
-          "name": "How much does OCR Copy cost?",
+          "name": "What languages can it read?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The App Store currently reports the price as Free. App Store pricing and availability may vary by country or change over time."
+            "text": "Auto detection plus selectable modes: Japanese + English, English, Korean + English, Simplified Chinese + English, Traditional Chinese + English, and European languages. You can also switch between Accurate and Fast recognition."
           }
         },
         {
           "@type": "Question",
-          "name": "Where can I check privacy information?",
+          "name": "What if the OCR result has mistakes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The App Store product page contains Apple's current privacy labels and related disclosure information for this app."
+            "text": "You can edit or delete individual lines. The original OCR result is kept as the source, so your corrections never destroy the raw reading. Lines with low confidence are flagged for review when detail display is enabled."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I save text and come back to it later?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Saved text is stored locally on your device and appears on the Home screen, where you can reopen and copy it again anytime."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it read handwriting or vertical Japanese text?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The app targets printed text in photos and camera shots. Vertical Japanese text and complex page layouts are not primary supported use cases in the current version."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need camera access?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Camera access is needed for live scan and camera capture, but you can also pick existing images from your photo library with the system picker."
           }
         }
       ]
@@ -159,7 +183,7 @@
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/23/3f/b6/233fb6e3-eb4e-35f0-66ab-df8245062795/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="OCR Copy app icon" width="96" height="96">
       <div>
         <h1>OCR Copy</h1>
-        <p class="tagline">OCR Copy is a local-first OCR utility for quickly copying text from camera, live scan, and photos.</p>
+        <p class="tagline">Copy text from camera, live scan, or photos with on-device OCR — save it locally and copy it again later.</p>
         <div class="actions">
           <a class="button primary" href="https://apps.apple.com/us/app/ocr-copy/id6780724192?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
@@ -169,48 +193,55 @@
 
     <section class="section">
       <h2>Overview</h2>
-          <p>OCR Copy is a local-first OCR utility for quickly copying text from camera, live scan, and photos.</p>
-          <p>Use live scan, take a photo, or pick an image from Photos to read text and copy it right away. You can edit or remove only the lines you need while keeping the original OCR result.</p>
+          <p>OCR Copy is a local-first OCR utility for quickly copying text from the real world. Use live scan, take a photo, or pick an image from your library, and the app reads the text on your device with Apple Vision so you can copy it right away — receipts, books, packages, screenshots, signs, and other everyday text.</p>
+          <p>Instead of a heavy document manager or a cloud OCR service, OCR Copy keeps the job small and private: read text, copy it, done. When recognition isn&#x27;t perfect, you can edit or delete individual lines while the original OCR result is kept as the source, and confidence values and text positions are available as optional detail information rather than intrusive scores.</p>
+          <p>Saved text stays on your device so you can come back and copy it again later. If Auto detection doesn&#x27;t read your text well, OCR language settings let you choose modes like Japanese + English, Korean + English, Chinese + English, or European languages, and switch between Accurate and Fast recognition.</p>
     </section>
 
     <section class="section">
       <h2>Who It Is For</h2>
       <ul>
-            <li>People looking for a simple utilities app for one focused task</li>
-            <li>Users who prefer lightweight tools over complex all-in-one apps</li>
-            <li>iPhone users who want an official source before installing from the App Store</li>
+            <li>People who frequently retype text from receipts, packages, books, or paper documents</li>
+            <li>Users who want to grab text from screenshots and photos without a cloud service</li>
+            <li>Anyone dealing with multilingual text who needs selectable OCR languages</li>
+            <li>Privacy-conscious users who don&#x27;t want their photos or text sent to a server</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>Main Features</h2>
       <ul>
-            <li>OCR Copy is a local-first OCR utility for quickly copying text from camera, live scan, and photos.</li>
-            <li>Use live scan, take a photo, or pick an image from Photos to read text and copy it right away.</li>
-            <li>You can edit or remove only the lines you need while keeping the original OCR result.</li>
-            <li>Saved text stays on your device so you can return to it and copy it again later.</li>
+            <li>Live scan: point the camera and grab text in real time</li>
+            <li>OCR from a camera photo or an image picked from your photo library</li>
+            <li>On-device text recognition with Apple Vision — no server involved</li>
+            <li>Edit or delete individual lines while keeping the original OCR result</li>
+            <li>Save recognized text locally and copy it again later</li>
+            <li>OCR language modes: Auto, Japanese + English, English, Korean + English, Simplified/Traditional Chinese + English, and European languages</li>
+            <li>Optional detail view with confidence values and text-position overlays</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>How to Use</h2>
       <ol>
-            <li>Install OCR Copy from the App Store.</li>
-            <li>Open the app and complete the first screen or setup shown in the app.</li>
-            <li>Use the main action whenever the task comes up.</li>
-            <li>Return to the app when you want to review, adjust, or repeat the task.</li>
+            <li>Open OCR Copy and choose live scan, camera capture, or a photo from your library.</li>
+            <li>Let the app read the text on your device.</li>
+            <li>Copy the recognized text with one tap.</li>
+            <li>If needed, tap a line to fix or delete it — the original result is kept.</li>
+            <li>Save the text to review and copy again later from the Home screen.</li>
+            <li>If text isn&#x27;t reading well, change the OCR language mode or accuracy in Settings.</li>
       </ol>
     </section>
 
     <section class="section">
       <h2>Pricing</h2>
-      <p>Free</p>
+      <p>OCR Copy is free on the App Store, with no subscriptions or monetization. App Store pricing and availability can change, so check the store listing for current details.</p>
       <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
     </section>
 
     <section class="section">
       <h2>Privacy</h2>
-      <p>This page uses App Store metadata as its source. For the current Apple privacy labels and regional availability, check the linked App Store product page.</p>
+      <p>OCR runs entirely on your device with Apple Vision. Photos, recognized text, line corrections, confidence values, and thumbnails are stored locally in the app and are never sent to an external server. There is no account, no tracking, and no analytics. Sharing text is always user-initiated through the iOS share sheet.</p>
     </section>
 
     <section class="section">
@@ -227,20 +258,32 @@
     <section class="section">
       <h2>FAQ</h2>
           <details>
-            <summary>What is OCR Copy for?</summary>
-            <p>OCR Copy is a focused iPhone app from ZEC Inc. The page above summarizes its purpose, intended users, and basic usage.</p>
+            <summary>Is OCR Copy free?</summary>
+            <p>Yes. OCR Copy is free with no subscriptions or in-app monetization. App Store pricing can change, so check the listing for current details.</p>
           </details>
           <details>
-            <summary>Where can I download OCR Copy?</summary>
-            <p>You can download OCR Copy from its official App Store page linked on this page.</p>
+            <summary>Are my photos or text uploaded anywhere?</summary>
+            <p>No. Text recognition runs on your device with Apple Vision, and photos, text, and corrections are stored locally. The app uses no external networking, no account, and no tracking or analytics SDKs.</p>
           </details>
           <details>
-            <summary>How much does OCR Copy cost?</summary>
-            <p>The App Store currently reports the price as Free. App Store pricing and availability may vary by country or change over time.</p>
+            <summary>What languages can it read?</summary>
+            <p>Auto detection plus selectable modes: Japanese + English, English, Korean + English, Simplified Chinese + English, Traditional Chinese + English, and European languages. You can also switch between Accurate and Fast recognition.</p>
           </details>
           <details>
-            <summary>Where can I check privacy information?</summary>
-            <p>The App Store product page contains Apple&#x27;s current privacy labels and related disclosure information for this app.</p>
+            <summary>What if the OCR result has mistakes?</summary>
+            <p>You can edit or delete individual lines. The original OCR result is kept as the source, so your corrections never destroy the raw reading. Lines with low confidence are flagged for review when detail display is enabled.</p>
+          </details>
+          <details>
+            <summary>Can I save text and come back to it later?</summary>
+            <p>Yes. Saved text is stored locally on your device and appears on the Home screen, where you can reopen and copy it again anytime.</p>
+          </details>
+          <details>
+            <summary>Does it read handwriting or vertical Japanese text?</summary>
+            <p>The app targets printed text in photos and camera shots. Vertical Japanese text and complex page layouts are not primary supported use cases in the current version.</p>
+          </details>
+          <details>
+            <summary>Do I need camera access?</summary>
+            <p>Camera access is needed for live scan and camera capture, but you can also pick existing images from your photo library with the system picker.</p>
           </details>
     </section>
 
