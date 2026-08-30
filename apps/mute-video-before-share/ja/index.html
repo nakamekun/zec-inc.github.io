@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mute Video Before Share | ZEC Apps</title>
+  <meta name="description" content="Mute Video Before Shareは、動画から音声だけをワンタップで取り除くiPhoneアプリです。再エンコードしないため画質は劣化せず、長さ制限も透かしもありません。処理はすべて端末内で完結します。">
+  <link rel="canonical" href="https://zec-inc.jp/apps/mute-video-before-share/ja/">
+  <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/mute-video-before-share/">
+  <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/mute-video-before-share/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://zec-inc.jp/apps/mute-video-before-share/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ZEC Apps">
+  <meta property="og:title" content="Mute Video Before Share | ZEC Apps">
+  <meta property="og:description" content="Mute Video Before Shareは、動画から音声だけをワンタップで取り除くiPhoneアプリです。再エンコードしないため画質は劣化せず、長さ制限も透かしもありません。処理はすべて端末内で完結します。">
+  <meta property="og:url" content="https://zec-inc.jp/apps/mute-video-before-share/ja/">
+  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/69/c9/4869c921-0a2c-8516-1e27-94152142137d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Mute Video Before Share",
+      "description": "Mute Video Before Shareは、動画から音声だけをワンタップで取り除くiPhoneアプリです。再エンコードしないため画質は劣化せず、長さ制限も透かしもありません。処理はすべて端末内で完結します。",
+      "operatingSystem": "iOS",
+      "applicationCategory": "Photo & Video",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "url": "https://apps.apple.com/jp/app/mute-video-before-share/id6789844158?uo=4"
+      },
+      "url": "https://zec-inc.jp/apps/mute-video-before-share/ja/",
+      "inLanguage": "ja",
+      "downloadUrl": "https://apps.apple.com/jp/app/mute-video-before-share/id6789844158?uo=4",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ZEC Inc.",
+        "url": "https://zec-inc.jp"
+      },
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/69/c9/4869c921-0a2c-8516-1e27-94152142137d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "softwareVersion": "1.1",
+      "contentRating": "4+"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Mute Video Before Shareは無料ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。広告も透かしもなく無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "動画はどこかにアップロードされますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。音声の削除はすべて端末内で行われます。アカウントもアップロードもサーバー処理もトラッキングもありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "音を消すと画質は落ちますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "落ちません。映像トラックは再エンコードせずそのままコピーするため、無音コピーの画質は元の動画とまったく同じです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "動画の長さに制限はありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ありません。再エンコードを行わない方式のため、長い動画でも高速に処理が完了します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "元の動画は変更されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "変更されません。アプリは新しい無音コピーを作成するだけで、ライブラリ内の元の動画はそのまま残ります。"
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <style>
+
+    :root {
+      --bg: #f5f8ff;
+      --surface: #ffffff;
+      --soft: #f8fbff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+      --header: #2c3e50;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header { background: var(--header); color: #ffffff; padding: 20px; }
+    .topbar, main, footer { max-width: 920px; margin: 0 auto; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .brand { font-weight: 600; }
+    a { color: var(--accent); }
+    .topbar a { color: #ffffff; text-decoration: none; }
+    .topbar a:hover, a:hover { text-decoration: underline; }
+    main { padding: 44px 20px; }
+    .hero, .section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.06); }
+    .hero { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; }
+    .app-icon { width: 96px; height: 96px; border-radius: 22px; border: 1px solid rgba(226, 232, 240, 0.9); box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1); }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.2; letter-spacing: 0; }
+    .tagline { margin: 0 0 18px; color: var(--muted); font-size: 17px; }
+    .actions, .app-actions, .category-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .button, .app-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line); background: #ffffff; text-decoration: none; font-weight: 600; }
+    .button.primary, .app-link.primary { background: var(--accent); border-color: var(--accent); color: #ffffff; }
+    .section { margin-top: 18px; }
+    h2 { margin: 0 0 14px; font-size: 22px; color: var(--header); }
+    p { margin: 0 0 12px; }
+    ul, ol { margin: 0; padding-left: 1.25em; }
+    .app-grid, .screenshots { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+    .app-mini-card, .screenshot { margin: 0; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .app-mini-card h2, .app-mini-card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.3; }
+    .app-mini-card p { color: var(--muted); font-size: 14px; }
+    .mini-icon { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 10px; }
+    .screenshot img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    details { border-top: 1px solid var(--line); padding: 14px 0; }
+    details:first-child { border-top: 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    .meta { color: var(--muted); font-size: 14px; }
+    footer { padding: 0 20px 40px; color: var(--muted); font-size: 14px; }
+    .footer { border-top: 1px solid var(--line); padding-top: 16px; }
+    @media (max-width: 640px) {
+      main { padding-top: 28px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      .section { padding: 22px; }
+      h1 { font-size: 30px; }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">ZEC Inc.</div>
+      <nav aria-label="Secondary">
+        <a href="/apps/ja/">アプリ</a>
+        <a href="/apps/mute-video-before-share/">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/69/c9/4869c921-0a2c-8516-1e27-94152142137d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Mute Video Before Share のアプリアイコン" width="96" height="96">
+      <div>
+        <h1>Mute Video Before Share</h1>
+        <p class="tagline">動画の音をワンタップで消して無音のコピーを作成。画質劣化ゼロ・長さ制限なし・透かしなしです。</p>
+        <div class="actions">
+          <a class="button primary" href="https://apps.apple.com/jp/app/mute-video-before-share/id6789844158?uo=4">App Storeで見る</a>
+          <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>概要</h2>
+          <p>Mute Video Before Shareは、動画から音声トラックだけを取り除き、無音のコピーを作るアプリです。後ろの会話や生活音、風の音が入ってしまった動画も、動画を選んでワンタップするだけで、そのままSNSに投稿したり送ったりできる状態になります。元の動画は一切変更されません。</p>
+          <p>一般的な動画編集アプリとちがい、映像を再エンコードせずにそのままコピーして音声だけを外す方式のため、画質の劣化はゼロです。長い動画でも高速に処理でき、長さ制限も透かし（ウォーターマーク）もありません。「動画の音を消す」ことだけに絞ったシンプルな道具です。</p>
+          <p>作成された無音コピーには、元動画の位置情報や撮影情報が引き継がれません。どこで撮影したかを知られずに共有できるという点でも、投稿前のひと手間として役立ちます。</p>
+    </section>
+
+    <section class="section">
+      <h2>こんな方に</h2>
+      <ul>
+            <li>SNSに動画を投稿する際、背景の会話や生活音を消したい方</li>
+            <li>家族の声や名前が音声に入らないよう配慮して、子どもの動画を共有したい方</li>
+            <li>フリマやマーケットプレイスの出品動画から周囲の雑音を取り除きたい方</li>
+            <li>職場・学校・家族に動画を送るとき、音声のプライバシーが気になる方</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>主な機能</h2>
+      <ul>
+            <li>ワンタップで動画の音をすべて削除</li>
+            <li>映像は再エンコードせずそのままコピーするため、画質劣化ゼロ</li>
+            <li>長さ制限なし。長い動画でも高速に処理</li>
+            <li>無音コピーに透かし（ウォーターマーク）は入りません</li>
+            <li>無音コピーには元動画の位置情報・撮影情報が含まれません</li>
+            <li>結果をプレビューしてから、写真アプリへの保存や共有シートでの共有が可能</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>使い方</h2>
+      <ol>
+            <li>アプリを開き、写真ライブラリから動画を選びます。</li>
+            <li>選んだ動画をプレビューで確認します。</li>
+            <li>「音声を削除」をタップすると、端末内で無音コピーが作成されます。</li>
+            <li>無音コピーをプレビューして、仕上がりを確認します。</li>
+            <li>写真アプリに保存するか、共有シートからそのまま共有します。</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>価格</h2>
+      <p>App Storeで無料で提供されており、広告や透かしはありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    </section>
+
+    <section class="section">
+      <h2>プライバシー</h2>
+      <p>処理はすべて端末内で行われ、アカウント登録・アップロード・サーバー処理・広告・トラッキングはありません。写真へのアクセスは、動画の選択と無音コピーの保存にのみ使われます。作成された無音コピーには、元動画の位置情報や撮影情報も含まれません。</p>
+    </section>
+
+    <section class="section">
+      <h2>スクリーンショット</h2>
+      <div class="screenshots">
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b3/9a/e2/b39ae271-ea81-6233-3557-8ab65df47adc/01.png/320x480bb.jpg" alt="Mute Video Before Share のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/97/b9/18/97b9187c-6bd7-3798-5982-f2e3b36f599f/02.png/320x480bb.jpg" alt="Mute Video Before Share のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ab/14/4d/ab144d88-9c0f-0244-cd24-091fed77aaf2/03-ipad.png/360x480bb.jpg" alt="Mute Video Before Share のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/d9/a1/96d9a146-e5a4-f259-ddfe-af1beb1022cb/04-ipad.png/360x480bb.jpg" alt="Mute Video Before Share のスクリーンショット" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>よくある質問</h2>
+          <details>
+            <summary>Mute Video Before Shareは無料ですか？</summary>
+            <p>はい。広告も透かしもなく無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。</p>
+          </details>
+          <details>
+            <summary>動画はどこかにアップロードされますか？</summary>
+            <p>いいえ。音声の削除はすべて端末内で行われます。アカウントもアップロードもサーバー処理もトラッキングもありません。</p>
+          </details>
+          <details>
+            <summary>音を消すと画質は落ちますか？</summary>
+            <p>落ちません。映像トラックは再エンコードせずそのままコピーするため、無音コピーの画質は元の動画とまったく同じです。</p>
+          </details>
+          <details>
+            <summary>動画の長さに制限はありますか？</summary>
+            <p>ありません。再エンコードを行わない方式のため、長い動画でも高速に処理が完了します。</p>
+          </details>
+          <details>
+            <summary>元の動画は変更されますか？</summary>
+            <p>変更されません。アプリは新しい無音コピーを作成するだけで、ライブラリ内の元の動画はそのまま残ります。</p>
+          </details>
+    </section>
+
+    <section class="section">
+      <h2>App Store</h2>
+      <p><a class="button primary" href="https://apps.apple.com/jp/app/mute-video-before-share/id6789844158?uo=4">Mute Video Before Share をApp Storeで開く</a></p>
+      <p class="meta">最終更新日: 2026-08-27</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">&copy; 2026 ZEC Inc.</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TapLog - Mood Tracker | ZEC Apps</title>
+  <meta name="description" content="TapLog - Mood Trackerは、いまの気分をワンタップで記録できるiPhoneアプリです。必要なときだけメモを添えて、履歴からここ最近の気分の流れを気軽に振り返れます。">
+  <link rel="canonical" href="https://zec-inc.jp/apps/taplog-mood-tracker/ja/">
+  <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/taplog-mood-tracker/">
+  <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/taplog-mood-tracker/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://zec-inc.jp/apps/taplog-mood-tracker/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ZEC Apps">
+  <meta property="og:title" content="TapLog - Mood Tracker | ZEC Apps">
+  <meta property="og:description" content="TapLog - Mood Trackerは、いまの気分をワンタップで記録できるiPhoneアプリです。必要なときだけメモを添えて、履歴からここ最近の気分の流れを気軽に振り返れます。">
+  <meta property="og:url" content="https://zec-inc.jp/apps/taplog-mood-tracker/ja/">
+  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/f8/51/32f851e9-8a76-941e-f514-a604e8eec42b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "TapLog - Mood Tracker",
+      "description": "TapLog - Mood Trackerは、いまの気分をワンタップで記録できるiPhoneアプリです。必要なときだけメモを添えて、履歴からここ最近の気分の流れを気軽に振り返れます。",
+      "operatingSystem": "iOS",
+      "applicationCategory": "Lifestyle",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "url": "https://apps.apple.com/jp/app/taplog-mood-tracker/id6761535550?uo=4"
+      },
+      "url": "https://zec-inc.jp/apps/taplog-mood-tracker/ja/",
+      "inLanguage": "ja",
+      "downloadUrl": "https://apps.apple.com/jp/app/taplog-mood-tracker/id6761535550?uo=4",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ZEC Inc.",
+        "url": "https://zec-inc.jp"
+      },
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/f8/51/32f851e9-8a76-941e-f514-a604e8eec42b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "softwareVersion": "1.1.1",
+      "contentRating": "4+"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "TapLogは無料ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。無料でダウンロードでき、アプリ内課金はありません。価格は変わる場合があるため、最新の情報はApp Storeでご確認ください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "記録はどこに保存されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "端末内に保存され、アカウント登録は不要です。データの取り扱いの詳細はApp Storeのプライバシーラベルをご覧ください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "毎回メモを書く必要がありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。気分の記録はワンタップで完了します。メモは、何か書き残したい日にだけ添えられる任意の機能です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "記録を忘れないようにリマインドできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。リマインダー設定があり、毎日のチェックインを習慣にする助けになります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "メンタルヘルスの分析をしてくれますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。TapLogは自己観察のためのシンプルな気分メモと履歴のアプリです。診断・治療・メンタルヘルスの分析は行いません。"
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <style>
+
+    :root {
+      --bg: #f5f8ff;
+      --surface: #ffffff;
+      --soft: #f8fbff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+      --header: #2c3e50;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header { background: var(--header); color: #ffffff; padding: 20px; }
+    .topbar, main, footer { max-width: 920px; margin: 0 auto; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .brand { font-weight: 600; }
+    a { color: var(--accent); }
+    .topbar a { color: #ffffff; text-decoration: none; }
+    .topbar a:hover, a:hover { text-decoration: underline; }
+    main { padding: 44px 20px; }
+    .hero, .section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.06); }
+    .hero { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; }
+    .app-icon { width: 96px; height: 96px; border-radius: 22px; border: 1px solid rgba(226, 232, 240, 0.9); box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1); }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.2; letter-spacing: 0; }
+    .tagline { margin: 0 0 18px; color: var(--muted); font-size: 17px; }
+    .actions, .app-actions, .category-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .button, .app-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line); background: #ffffff; text-decoration: none; font-weight: 600; }
+    .button.primary, .app-link.primary { background: var(--accent); border-color: var(--accent); color: #ffffff; }
+    .section { margin-top: 18px; }
+    h2 { margin: 0 0 14px; font-size: 22px; color: var(--header); }
+    p { margin: 0 0 12px; }
+    ul, ol { margin: 0; padding-left: 1.25em; }
+    .app-grid, .screenshots { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+    .app-mini-card, .screenshot { margin: 0; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .app-mini-card h2, .app-mini-card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.3; }
+    .app-mini-card p { color: var(--muted); font-size: 14px; }
+    .mini-icon { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 10px; }
+    .screenshot img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    details { border-top: 1px solid var(--line); padding: 14px 0; }
+    details:first-child { border-top: 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    .meta { color: var(--muted); font-size: 14px; }
+    footer { padding: 0 20px 40px; color: var(--muted); font-size: 14px; }
+    .footer { border-top: 1px solid var(--line); padding-top: 16px; }
+    @media (max-width: 640px) {
+      main { padding-top: 28px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      .section { padding: 22px; }
+      h1 { font-size: 30px; }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">ZEC Inc.</div>
+      <nav aria-label="Secondary">
+        <a href="/apps/ja/">アプリ</a>
+        <a href="/apps/taplog-mood-tracker/">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/f8/51/32f851e9-8a76-941e-f514-a604e8eec42b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="TapLog - Mood Tracker のアプリアイコン" width="96" height="96">
+      <div>
+        <h1>TapLog - Mood Tracker</h1>
+        <p class="tagline">いまの気分をワンタップで記録。書きたい日だけメモを添えて、最近の気分を気軽に振り返れるシンプルな気分日記です。</p>
+        <div class="actions">
+          <a class="button primary" href="https://apps.apple.com/jp/app/taplog-mood-tracker/id6761535550?uo=4">App Storeで見る</a>
+          <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>概要</h2>
+          <p>TapLog - Mood Trackerは、気分日記を必要最小限までそぎ落としたアプリです。いまの気分に合うものをタップすれば記録は完了。書き残したいことがある日は短いメモを添えられますが、毎回書く必要はありません。この気軽さが、毎日続けられる理由です。</p>
+          <p>多くの気分記録アプリはグラフやスコア、分析機能を積み重ねますが、TapLogは逆の方向を選びました。サッと記録して、シンプルな履歴を眺め、メモを書いた日の記録はジャーナル表示で読み返す。気分の移り変わりに「気づく」ための道具であって、メンタルヘルスの診断や治療を行うアプリではありません。</p>
+          <p>任意のリマインダー設定で記録の習慣づけをサポートし、履歴表示でここ数日の気分をさっと見返せます。</p>
+    </section>
+
+    <section class="section">
+      <h2>こんな方に</h2>
+      <ul>
+            <li>長い日記を書かずに、シンプルに気分を記録したい方</li>
+            <li>多機能な気分トラッカーは記録が重くて続かなかった方</li>
+            <li>気分の傾向にゆるく気づきたい、軽い自己観察をしたい方</li>
+            <li>毎日ではなく「書きたい日だけ」一言メモを残したい方</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>主な機能</h2>
+      <ul>
+            <li>ワンタップの気分チェックイン</li>
+            <li>必要なときだけ添えられるメモ（任意）</li>
+            <li>最近の気分を一覧できる履歴表示</li>
+            <li>書いたメモを読み返せるジャーナル表示</li>
+            <li>記録の習慣づけを助けるリマインダー設定</li>
+            <li>複雑な分析やスコアリングをあえて持たないシンプル設計</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>使い方</h2>
+      <ol>
+            <li>TapLogを開き、いまの気分に合うものをタップします。</li>
+            <li>書きたいことがあれば、短いメモを添えます（任意）。</li>
+            <li>気が向いたタイミングで繰り返します。数秒で終わります。</li>
+            <li>履歴表示で、最近の気分をひと目で振り返ります。</li>
+            <li>ジャーナル表示で、メモを書いた日の記録を読み返します。</li>
+            <li>必要ならリマインダーを設定して、記録を習慣にします。</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>価格</h2>
+      <p>無料でダウンロードでき、アプリ内課金はありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    </section>
+
+    <section class="section">
+      <h2>プライバシー</h2>
+      <p>記録は端末内に保存され、アカウント登録は不要です。正式なデータの取り扱いは、App Storeのプライバシーラベルをご確認ください。</p>
+    </section>
+
+    <section class="section">
+      <h2>スクリーンショット</h2>
+      <div class="screenshots">
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7a/7f/de/7a7fdeda-5bf0-0510-7fa8-f2539eb3a9e7/iphone-01-home.png/320x480bb.jpg" alt="TapLog - Mood Tracker のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bd/6d/1a/bd6d1a5f-cc72-09b2-e98b-008df90265d7/iphone-02-calendar.png/320x480bb.jpg" alt="TapLog - Mood Tracker のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/91/fd/ca/91fdca52-cea2-32e7-33e9-46dfdf65f357/iphone-03-settings.png/320x480bb.jpg" alt="TapLog - Mood Tracker のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/90/13/fa901398-094f-a753-0d95-c9a50e11b0b9/ipad-01-home.png/360x480bb.jpg" alt="TapLog - Mood Tracker のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/a5/56/02a55659-2035-8733-c6e5-dac18785266c/ipad-02-calendar.png/360x480bb.jpg" alt="TapLog - Mood Tracker のスクリーンショット" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>よくある質問</h2>
+          <details>
+            <summary>TapLogは無料ですか？</summary>
+            <p>はい。無料でダウンロードでき、アプリ内課金はありません。価格は変わる場合があるため、最新の情報はApp Storeでご確認ください。</p>
+          </details>
+          <details>
+            <summary>記録はどこに保存されますか？</summary>
+            <p>端末内に保存され、アカウント登録は不要です。データの取り扱いの詳細はApp Storeのプライバシーラベルをご覧ください。</p>
+          </details>
+          <details>
+            <summary>毎回メモを書く必要がありますか？</summary>
+            <p>いいえ。気分の記録はワンタップで完了します。メモは、何か書き残したい日にだけ添えられる任意の機能です。</p>
+          </details>
+          <details>
+            <summary>記録を忘れないようにリマインドできますか？</summary>
+            <p>はい。リマインダー設定があり、毎日のチェックインを習慣にする助けになります。</p>
+          </details>
+          <details>
+            <summary>メンタルヘルスの分析をしてくれますか？</summary>
+            <p>いいえ。TapLogは自己観察のためのシンプルな気分メモと履歴のアプリです。診断・治療・メンタルヘルスの分析は行いません。</p>
+          </details>
+    </section>
+
+    <section class="section">
+      <h2>App Store</h2>
+      <p><a class="button primary" href="https://apps.apple.com/jp/app/taplog-mood-tracker/id6761535550?uo=4">TapLog - Mood Tracker をApp Storeで開く</a></p>
+      <p class="meta">最終更新日: 2026-07-10</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">&copy; 2026 ZEC Inc.</div>
+  </footer>
+</body>
+</html>

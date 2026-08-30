@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WaterDone 水分補給の記録 | ZEC Apps</title>
+  <meta name="description" content="WaterDoneは、飲んだらワンタップで記録するシンプルな水分記録アプリです。今日の進み具合や月間の記録を振り返れて、ホーム画面ウィジェットからアプリを開かずに記録できます。">
+  <link rel="canonical" href="https://zec-inc.jp/apps/waterdone/ja/">
+  <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/waterdone/">
+  <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/waterdone/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://zec-inc.jp/apps/waterdone/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ZEC Apps">
+  <meta property="og:title" content="WaterDone 水分補給の記録 | ZEC Apps">
+  <meta property="og:description" content="WaterDoneは、飲んだらワンタップで記録するシンプルな水分記録アプリです。今日の進み具合や月間の記録を振り返れて、ホーム画面ウィジェットからアプリを開かずに記録できます。">
+  <meta property="og:url" content="https://zec-inc.jp/apps/waterdone/ja/">
+  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/72/e7/a8/72e7a8e6-68f5-e3d7-f846-daa98dd12759/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "WaterDone 水分補給の記録",
+      "description": "WaterDoneは、飲んだらワンタップで記録するシンプルな水分記録アプリです。今日の進み具合や月間の記録を振り返れて、ホーム画面ウィジェットからアプリを開かずに記録できます。",
+      "operatingSystem": "iOS",
+      "applicationCategory": "Health & Fitness",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "url": "https://apps.apple.com/jp/app/waterdone/id6763200921?uo=4"
+      },
+      "url": "https://zec-inc.jp/apps/waterdone/ja/",
+      "inLanguage": "ja",
+      "downloadUrl": "https://apps.apple.com/jp/app/waterdone/id6763200921?uo=4",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ZEC Inc.",
+        "url": "https://zec-inc.jp"
+      },
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/72/e7/a8/72e7a8e6-68f5-e3d7-f846-daa98dd12759/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "softwareVersion": "1.0",
+      "contentRating": "4+"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "WaterDoneは無料ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。無料でダウンロードでき、現行リリースにアプリ内課金の記載はありません。最新の情報はApp Storeでご確認ください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "記録はどこに保存されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "端末内に保存されます。アカウント不要で、解析や外部サーバーへの保存もありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ウィジェットはありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。ホーム画面ウィジェットで最新の記録状況を確認でき、アプリを開かずにすばやく記録することもできます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "水を飲むのをリマインドしてもらえますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。任意で毎日のリマインダー通知をオンにできます。通知なしでも問題なく使えます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "必要な水分量を計算してくれますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。WaterDoneは気軽な個人記録のためのアプリで、医療的なアドバイスではありません。必要量の計算はあえて行わない設計です。"
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <style>
+
+    :root {
+      --bg: #f5f8ff;
+      --surface: #ffffff;
+      --soft: #f8fbff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+      --header: #2c3e50;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header { background: var(--header); color: #ffffff; padding: 20px; }
+    .topbar, main, footer { max-width: 920px; margin: 0 auto; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .brand { font-weight: 600; }
+    a { color: var(--accent); }
+    .topbar a { color: #ffffff; text-decoration: none; }
+    .topbar a:hover, a:hover { text-decoration: underline; }
+    main { padding: 44px 20px; }
+    .hero, .section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.06); }
+    .hero { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; }
+    .app-icon { width: 96px; height: 96px; border-radius: 22px; border: 1px solid rgba(226, 232, 240, 0.9); box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1); }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.2; letter-spacing: 0; }
+    .tagline { margin: 0 0 18px; color: var(--muted); font-size: 17px; }
+    .actions, .app-actions, .category-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .button, .app-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line); background: #ffffff; text-decoration: none; font-weight: 600; }
+    .button.primary, .app-link.primary { background: var(--accent); border-color: var(--accent); color: #ffffff; }
+    .section { margin-top: 18px; }
+    h2 { margin: 0 0 14px; font-size: 22px; color: var(--header); }
+    p { margin: 0 0 12px; }
+    ul, ol { margin: 0; padding-left: 1.25em; }
+    .app-grid, .screenshots { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+    .app-mini-card, .screenshot { margin: 0; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .app-mini-card h2, .app-mini-card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.3; }
+    .app-mini-card p { color: var(--muted); font-size: 14px; }
+    .mini-icon { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 10px; }
+    .screenshot img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    details { border-top: 1px solid var(--line); padding: 14px 0; }
+    details:first-child { border-top: 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    .meta { color: var(--muted); font-size: 14px; }
+    footer { padding: 0 20px 40px; color: var(--muted); font-size: 14px; }
+    .footer { border-top: 1px solid var(--line); padding-top: 16px; }
+    @media (max-width: 640px) {
+      main { padding-top: 28px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      .section { padding: 22px; }
+      h1 { font-size: 30px; }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">ZEC Inc.</div>
+      <nav aria-label="Secondary">
+        <a href="/apps/ja/">アプリ</a>
+        <a href="/apps/waterdone/">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/72/e7/a8/72e7a8e6-68f5-e3d7-f846-daa98dd12759/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="WaterDone 水分補給の記録 のアプリアイコン" width="96" height="96">
+      <div>
+        <h1>WaterDone 水分補給の記録</h1>
+        <p class="tagline">飲んだらワンタップで水分を記録。今日の進み具合と月間の記録を確認でき、ウィジェットからアプリを開かずに記録できます。</p>
+        <div class="actions">
+          <a class="button primary" href="https://apps.apple.com/jp/app/waterdone/id6763200921?uo=4">App Storeで見る</a>
+          <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>概要</h2>
+          <p>WaterDoneは、シンプルな水分補給の記録アプリです。飲んだら数タップで記録し、今日の進み具合が積み上がっていくのを確認。最近の日々の記録や月間表示を見返せば、どれくらい続けられているかがひと目で分かります。</p>
+          <p>気軽な個人記録のためのアプリであり、医療的な管理を目的としたものではありません。必要な水分量の計算や健康アドバイスは行わない設計です。アカウント登録は不要で、記録はすべて端末内に保存されます。</p>
+          <p>ホーム画面ウィジェットを使えば、最新の記録状況の確認と、アプリを開かないすばやい記録ができます。任意の毎日のリマインダー通知も、習慣を続ける助けになります。</p>
+    </section>
+
+    <section class="section">
+      <h2>こんな方に</h2>
+      <ul>
+            <li>本格的な栄養管理アプリではなく、シンプルに水分だけ記録したい方</li>
+            <li>つい水を飲み忘れてしまう、リマインダーがほしいデスクワーカー</li>
+            <li>月間表示で継続の様子を眺めるのが好きな習慣づくり派</li>
+            <li>ホーム画面ウィジェットからサッと記録したい方</li>
+            <li>アカウント不要・クラウド同期なしのアプリを好む方</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>主な機能</h2>
+      <ul>
+            <li>数タップで完了するすばやい水分記録</li>
+            <li>今日の進み具合をひと目で確認</li>
+            <li>その日の記録を1件ずつ見返せる日別ログ</li>
+            <li>継続や抜けが分かる月間表示</li>
+            <li>毎日のリマインダー通知（任意）</li>
+            <li>状況確認とすばやい記録に対応したホーム画面ウィジェット</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>使い方</h2>
+      <ol>
+            <li>WaterDoneを開き、飲んだタイミングで記録します。</li>
+            <li>メイン画面で今日の進み具合を確認します。</li>
+            <li>日別ログを開くと、1件ずつの記録を見返せます。</li>
+            <li>月間表示に切り替えて、水分補給のパターンを振り返ります。</li>
+            <li>必要なら設定で毎日のリマインダー通知をオンにします。</li>
+            <li>ホーム画面にウィジェットを追加すると、アプリを開かずに確認・記録できます。</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>価格</h2>
+      <p>無料でダウンロードでき、現行リリースにアプリ内課金の記載はありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    </section>
+
+    <section class="section">
+      <h2>プライバシー</h2>
+      <p>水分の記録、リマインダー設定、ウィジェットの状態はすべて端末内に保存されます。アカウント不要で、解析・広告・トラッキング・外部サーバーへの保存はありません。ウィジェットとのデータ共有は端末内のApp Groupで行われ、通知は設定したリマインダーにのみ使われます。</p>
+    </section>
+
+    <section class="section">
+      <h2>スクリーンショット</h2>
+      <div class="screenshots">
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0d/93/5e/0d935e73-528a-59d4-fd56-adcfc5f53d01/iphone-01-home.png/320x480bb.jpg" alt="WaterDone 水分補給の記録 のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/29/53/cb2953ef-d6a0-076e-5e50-75763e824995/iphone-02-calendar.png/320x480bb.jpg" alt="WaterDone 水分補給の記録 のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ca/02/7e/ca027e17-d286-54ad-c8c3-c2f131f1bce5/iphone-03-widget.png/320x480bb.jpg" alt="WaterDone 水分補給の記録 のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/36/88/b9/3688b915-0300-b879-1d64-aceb9223f9d1/iphone-04-settings.png/320x480bb.jpg" alt="WaterDone 水分補給の記録 のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d2/53/ec/d253eca6-9145-961c-7050-e617ccdb5412/ipad-01-home.png/360x480bb.jpg" alt="WaterDone 水分補給の記録 のスクリーンショット" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>よくある質問</h2>
+          <details>
+            <summary>WaterDoneは無料ですか？</summary>
+            <p>はい。無料でダウンロードでき、現行リリースにアプリ内課金の記載はありません。最新の情報はApp Storeでご確認ください。</p>
+          </details>
+          <details>
+            <summary>記録はどこに保存されますか？</summary>
+            <p>端末内に保存されます。アカウント不要で、解析や外部サーバーへの保存もありません。</p>
+          </details>
+          <details>
+            <summary>ウィジェットはありますか？</summary>
+            <p>はい。ホーム画面ウィジェットで最新の記録状況を確認でき、アプリを開かずにすばやく記録することもできます。</p>
+          </details>
+          <details>
+            <summary>水を飲むのをリマインドしてもらえますか？</summary>
+            <p>はい。任意で毎日のリマインダー通知をオンにできます。通知なしでも問題なく使えます。</p>
+          </details>
+          <details>
+            <summary>必要な水分量を計算してくれますか？</summary>
+            <p>いいえ。WaterDoneは気軽な個人記録のためのアプリで、医療的なアドバイスではありません。必要量の計算はあえて行わない設計です。</p>
+          </details>
+    </section>
+
+    <section class="section">
+      <h2>App Store</h2>
+      <p><a class="button primary" href="https://apps.apple.com/jp/app/waterdone/id6763200921?uo=4">WaterDone 水分補給の記録 をApp Storeで開く</a></p>
+      <p class="meta">最終更新日: 2026-04-23</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">&copy; 2026 ZEC Inc.</div>
+  </footer>
+</body>
+</html>

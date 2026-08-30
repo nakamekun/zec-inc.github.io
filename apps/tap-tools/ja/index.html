@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>タップ記録ツール | ZEC Apps</title>
+  <meta name="description" content="ワンタップの記録や毎日の小さな繰り返しに特化した、素早く使える単機能アプリです。">
+  <link rel="canonical" href="https://zec-inc.jp/apps/tap-tools/ja/">
+  <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/tap-tools/">
+  <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/tap-tools/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://zec-inc.jp/apps/tap-tools/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ZEC Apps">
+  <meta property="og:title" content="タップ記録ツール | ZEC Apps">
+  <meta property="og:description" content="ワンタップの記録や毎日の小さな繰り返しに特化した、素早く使える単機能アプリです。">
+  <meta property="og:url" content="https://zec-inc.jp/apps/tap-tools/ja/">
+  <style>
+
+    :root {
+      --bg: #f5f8ff;
+      --surface: #ffffff;
+      --soft: #f8fbff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+      --header: #2c3e50;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header { background: var(--header); color: #ffffff; padding: 20px; }
+    .topbar, main, footer { max-width: 920px; margin: 0 auto; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .brand { font-weight: 600; }
+    a { color: var(--accent); }
+    .topbar a { color: #ffffff; text-decoration: none; }
+    .topbar a:hover, a:hover { text-decoration: underline; }
+    main { padding: 44px 20px; }
+    .hero, .section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.06); }
+    .hero { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; }
+    .app-icon { width: 96px; height: 96px; border-radius: 22px; border: 1px solid rgba(226, 232, 240, 0.9); box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1); }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.2; letter-spacing: 0; }
+    .tagline { margin: 0 0 18px; color: var(--muted); font-size: 17px; }
+    .actions, .app-actions, .category-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .button, .app-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line); background: #ffffff; text-decoration: none; font-weight: 600; }
+    .button.primary, .app-link.primary { background: var(--accent); border-color: var(--accent); color: #ffffff; }
+    .section { margin-top: 18px; }
+    h2 { margin: 0 0 14px; font-size: 22px; color: var(--header); }
+    p { margin: 0 0 12px; }
+    ul, ol { margin: 0; padding-left: 1.25em; }
+    .app-grid, .screenshots { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+    .app-mini-card, .screenshot { margin: 0; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .app-mini-card h2, .app-mini-card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.3; }
+    .app-mini-card p { color: var(--muted); font-size: 14px; }
+    .mini-icon { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 10px; }
+    .screenshot img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    details { border-top: 1px solid var(--line); padding: 14px 0; }
+    details:first-child { border-top: 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    .meta { color: var(--muted); font-size: 14px; }
+    footer { padding: 0 20px 40px; color: var(--muted); font-size: 14px; }
+    .footer { border-top: 1px solid var(--line); padding-top: 16px; }
+    @media (max-width: 640px) {
+      main { padding-top: 28px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      .section { padding: 22px; }
+      h1 { font-size: 30px; }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">ZEC Inc.</div>
+      <nav aria-label="Secondary">
+        <a href="/apps/ja/">アプリ</a>
+        <a href="/apps/tap-tools/">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>タップ記録ツール</h1>
+        <p class="tagline">ワンタップの記録や毎日の小さな繰り返しに特化した、素早く使える単機能アプリです。</p>
+        <div class="actions">
+          <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>アプリ一覧</h2>
+      <div class="app-grid">
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fa/4b/6d/fa4b6d78-ad3a-d761-f5f6-6b93d270cde1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="足はかる のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/foot-size-check/ja/">足はかる</a></h2>
+          <p>A4用紙と写真だけで足長・足幅を測り、靴サイズの目安を表示。子どもの足の成長記録にも使えます。専用の道具は要りません。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/foot-size-check/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/foot-size-check/id6789844290?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/69/c9/4869c921-0a2c-8516-1e27-94152142137d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Mute Video Before Share のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/mute-video-before-share/ja/">Mute Video Before Share</a></h2>
+          <p>動画の音をワンタップで消して無音のコピーを作成。画質劣化ゼロ・長さ制限なし・透かしなしです。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/mute-video-before-share/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/mute-video-before-share/id6789844158?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/6f/04/696f0476-5c40-2993-ed93-396947e06f3e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="LaundryTap のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/laundrytap/ja/">LaundryTap</a></h2>
+          <p>「今日、洗濯したっけ？」に応えるワンタップ記録アプリ。カレンダーとリマインダー付きで、洗濯の状況をすぐ確認できます。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/laundrytap/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/laundrytap/id6762600691?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fa/19/3d/fa193d21-3d02-3bd6-4a99-5516b65b9b90/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Number Forge - 毎日1問の計算パズル のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/number-forge-daily-puzzle/ja/">Number Forge - 毎日1問の計算パズル</a></h2>
+          <p>1日1問の数字パズル。6つの数字を足す・引く・掛ける・割るで組み合わせて目標の数を作る、毎日の脳トレです。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/number-forge-daily-puzzle/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/number-forge-daily-puzzle/id6791862183?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/12/10/80/121080ba-84e1-35cb-a520-73b772177333/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="CleanURL Tap - URLを短くきれいに のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/cleanurl-tap/ja/">CleanURL Tap - URLを短くきれいに</a></h2>
+          <p>コピーしたURLから追跡パラメータなどの余計な部分を取り除き、短くきれいなリンクにして共有・保存できるユーティリティです。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/cleanurl-tap/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/cleanurl-tap-tidy-long-links/id6767538573?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ba/d0/bc/bad0bcc4-8a7e-a955-3f14-a2fde4d1475f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="DoneToday: Daily Log のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/donetoday-daily-log/ja/">DoneToday: Daily Log</a></h2>
+          <p>1日1つの習慣をワンタップで「できた」と記録。カレンダーとウィジェットで継続が一目でわかる習慣トラッカーです。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/donetoday-daily-log/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/donetoday-daily-log/id6761447413?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f0/1d/04/f01d04e1-f7de-bc0d-2788-026b5a949f09/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PillTap のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/pilltap/ja/">PillTap</a></h2>
+          <p>毎日のお薬時間に鳴るシンプルなリマインダーと、ワンタップの服薬メモ。医療アプリではなく、個人の記録のための道具です。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/pilltap/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/pilltap/id6762545903?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/72/e7/a8/72e7a8e6-68f5-e3d7-f846-daa98dd12759/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="WaterDone 水分補給の記録 のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/waterdone/ja/">WaterDone 水分補給の記録</a></h2>
+          <p>飲んだらワンタップで水分を記録。今日の進み具合と月間の記録を確認でき、ウィジェットからアプリを開かずに記録できます。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/waterdone/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/waterdone/id6763200921?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d5/f2/67/d5f2672b-7c31-5a9d-85b0-a3425f2d5ceb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="OCR Copy のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/ocr-copy/ja/">OCR Copy</a></h2>
+          <p>カメラ・ライブスキャン・写真から文字を読み取ってすぐコピー。認識はすべて端末内で行われ、保存したテキストは後からもコピーできます。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/ocr-copy/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/ocr-copy/id6780724192?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e6/b9/12/e6b91226-649e-918b-42d6-459c893d4a6d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PinLog あとで戻るメモ のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/pinlog-text-notes/ja/">PinLog あとで戻るメモ</a></h2>
+          <p>失くしたくないテキストやリンクを共有シートやクリップボードからすばやく保存。ウィジェットで保存した内容にあとで戻れます。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/pinlog-text-notes/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/pinlog-text-notes/id6763267903?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/32/f8/51/32f851e9-8a76-941e-f514-a604e8eec42b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="TapLog - Mood Tracker のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/taplog-mood-tracker/ja/">TapLog - Mood Tracker</a></h2>
+          <p>いまの気分をワンタップで記録。書きたい日だけメモを添えて、最近の気分を気軽に振り返れるシンプルな気分日記です。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/taplog-mood-tracker/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/taplog-mood-tracker/id6761535550?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/58/83/ee5883e8-20bb-1fe2-3831-5473d2909c1c/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="Body Rhythm Log のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/body-rhythm-log/ja/">Body Rhythm Log</a></h2>
+          <p>体のリズムに関わる個人的な記録を端末内だけに残せるアプリ。シンプルなカレンダーと控えめな通知、プライバシーロック付きです。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/body-rhythm-log/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/body-rhythm-log/id6762504100?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/e1/25/28e12558-f1cc-b5a1-de9b-8879911d2cb8/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="PoopTap のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/pooptap-daily-tracker/ja/">PoopTap</a></h2>
+          <p>ワンタップでうんちを記録。記録するたびに相棒のうんちが育つ、カレンダー付きのゆるい排便記録アプリです。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/pooptap-daily-tracker/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/pooptap/id6762576578?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f0/c3/c0/f0c3c0e0-943a-4b64-ea4f-1c7151009b72/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Sheep to Sleep ひつじを数える のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/sheep-to-sleep/ja/">Sheep to Sleep ひつじを数える</a></h2>
+          <p>ひつじを声で数え上げてくれる入眠のおとも。呼吸ガイドとおやすみチェックリスト付き。広告なし・アカウント不要。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/sheep-to-sleep/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/sheep-to-sleep/id6765796575?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/78/ce/67/78ce673e-de44-a6ff-fbec-d1af6013e11f/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="UndoCam のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/undocam/ja/">UndoCam</a></h2>
+          <p>15秒以内の動画を選ぶだけで、逆再生の巻き戻しクリップに変換。プレビューして保存・共有まで、端末内で完結します。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/undocam/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/undocam/id6765842391?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/c8/1c/e9c81ccf-1500-e02e-8ec3-1ecb5643a2d3/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="AccessLens のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/accesslens/ja/">AccessLens</a></h2>
+          <p>カメラや写真に、ぼかし・視野狭窄・低コントラストなどの簡易的な「見え方」フィルタを適用。読みやすさの気づきやデザイン確認に使えます。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/accesslens/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/accesslens/id6767727517?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/66/97/83/66978305-9b19-1399-cacb-a7ffc53d7b19/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="ごはんスナップ のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/foodsnapquest/ja/">ごはんスナップ</a></h2>
+          <p>写真を撮ってタグを選ぶだけのゆるい食事記録。カロリー計算なしで、記録はカレンダーに積み上がります。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/foodsnapquest/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/%E3%81%94%E3%81%AF%E3%82%93%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97/id6789844298?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d1/74/22/d1742262-70b1-f03c-a7c9-d6d30df1f253/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="ペタかくし のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/cute-privacy-stamp/ja/">ペタかくし</a></h2>
+          <p>写真の顔や見せたくない部分を、ハート・星・ねこなどのかわいいスタンプでペタッと隠して共有できます。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/cute-privacy-stamp/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/cute-privacy-stamp/id6789844199?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6b/e8/39/6be839d7-15f1-be36-c275-aef551b47328/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="ClipMD のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/clipmd/ja/">ClipMD</a></h2>
+          <p>WebページやコピーしたテキストをきれいなMarkdownに変換して保存。クリップは端末内にのみ残ります。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/clipmd/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/clipmd/id6789844342?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/71/1a/c1/711ac113-fdcb-d041-9f14-b4bc68670cf0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="CaffeineTap のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/caffeinetap/ja/">CaffeineTap</a></h2>
+          <p>コーヒーやお茶を1タップで記録し、今日あとどれくらいカフェインを摂れるかを表示。ウィジェットとカットオフリマインダーにも対応しています。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/caffeinetap/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/caffeinetap/id6769219576?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/3a/06/6b3a06b4-124c-b6c5-6179-0e11440ca9f1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="ExifOff のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/exifoff/ja/">ExifOff</a></h2>
+          <p>写真の位置情報や撮影情報を確認し、メタデータを除去したきれいなコピーを作成。元の写真は変更しません。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/exifoff/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/exifoff/id6789844259?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b2/36/bb/b236bb03-8690-ed3d-1b1d-04441ef9c5eb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Blur Before Share のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/blur-before-share/ja/">Blur Before Share</a></h2>
+          <p>写真の顔・名前・ナンバーなどを、ぼかし・モザイク・黒塗りで共有前にサッと隠せます。元の写真はそのまま残ります。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/blur-before-share/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/blur-before-share/id6789844137?uo=4">App Store →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">&copy; 2026 ZEC Inc.</div>
+  </footer>
+</body>
+</html>

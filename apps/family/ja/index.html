@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>家族向けアプリ | ZEC Apps</title>
+  <meta name="description" content="家庭のルーティンや家族の記録、準備の共有、毎日の簡単なチェックに使えるアプリです。">
+  <link rel="canonical" href="https://zec-inc.jp/apps/family/ja/">
+  <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/family/">
+  <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/family/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://zec-inc.jp/apps/family/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ZEC Apps">
+  <meta property="og:title" content="家族向けアプリ | ZEC Apps">
+  <meta property="og:description" content="家庭のルーティンや家族の記録、準備の共有、毎日の簡単なチェックに使えるアプリです。">
+  <meta property="og:url" content="https://zec-inc.jp/apps/family/ja/">
+  <style>
+
+    :root {
+      --bg: #f5f8ff;
+      --surface: #ffffff;
+      --soft: #f8fbff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+      --header: #2c3e50;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header { background: var(--header); color: #ffffff; padding: 20px; }
+    .topbar, main, footer { max-width: 920px; margin: 0 auto; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .brand { font-weight: 600; }
+    a { color: var(--accent); }
+    .topbar a { color: #ffffff; text-decoration: none; }
+    .topbar a:hover, a:hover { text-decoration: underline; }
+    main { padding: 44px 20px; }
+    .hero, .section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.06); }
+    .hero { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; }
+    .app-icon { width: 96px; height: 96px; border-radius: 22px; border: 1px solid rgba(226, 232, 240, 0.9); box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1); }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.2; letter-spacing: 0; }
+    .tagline { margin: 0 0 18px; color: var(--muted); font-size: 17px; }
+    .actions, .app-actions, .category-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .button, .app-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line); background: #ffffff; text-decoration: none; font-weight: 600; }
+    .button.primary, .app-link.primary { background: var(--accent); border-color: var(--accent); color: #ffffff; }
+    .section { margin-top: 18px; }
+    h2 { margin: 0 0 14px; font-size: 22px; color: var(--header); }
+    p { margin: 0 0 12px; }
+    ul, ol { margin: 0; padding-left: 1.25em; }
+    .app-grid, .screenshots { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+    .app-mini-card, .screenshot { margin: 0; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .app-mini-card h2, .app-mini-card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.3; }
+    .app-mini-card p { color: var(--muted); font-size: 14px; }
+    .mini-icon { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 10px; }
+    .screenshot img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    details { border-top: 1px solid var(--line); padding: 14px 0; }
+    details:first-child { border-top: 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    .meta { color: var(--muted); font-size: 14px; }
+    footer { padding: 0 20px 40px; color: var(--muted); font-size: 14px; }
+    .footer { border-top: 1px solid var(--line); padding-top: 16px; }
+    @media (max-width: 640px) {
+      main { padding-top: 28px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      .section { padding: 22px; }
+      h1 { font-size: 30px; }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">ZEC Inc.</div>
+      <nav aria-label="Secondary">
+        <a href="/apps/ja/">アプリ</a>
+        <a href="/apps/family/">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>家族向けアプリ</h1>
+        <p class="tagline">家庭のルーティンや家族の記録、準備の共有、毎日の簡単なチェックに使えるアプリです。</p>
+        <div class="actions">
+          <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>アプリ一覧</h2>
+      <div class="app-grid">
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ac/fd/76/acfd7607-0fe8-1e7b-e169-2e765935b4fc/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PhotoDay - 1日1枚の写真日記 のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/photo-day/ja/">PhotoDay - 1日1枚の写真日記</a></h2>
+          <p>1日1枚の写真で毎日をゆるやかに記録。子どもの成長や旅行、何気ない日常を、続けやすい写真日記として残せます。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/photo-day/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/photoday-one-photo-a-day/id6761641437?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fa/4b/6d/fa4b6d78-ad3a-d761-f5f6-6b93d270cde1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="足はかる のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/foot-size-check/ja/">足はかる</a></h2>
+          <p>A4用紙と写真だけで足長・足幅を測り、靴サイズの目安を表示。子どもの足の成長記録にも使えます。専用の道具は要りません。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/foot-size-check/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/foot-size-check/id6789844290?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/62/33/99/623399cc-3b85-2508-2c91-59c9ab59912f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="大きな文字メモ のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/big-text-note/ja/">大きな文字メモ</a></h2>
+          <p>ひとつのメモを大きな文字で表示するアプリ。筆談の補助や伝言、窓口でのやりとりなど「書いて見せる」場面で役立ちます。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/big-text-note/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/big-text-note/id6767796126?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/6f/04/696f0476-5c40-2993-ed93-396947e06f3e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="LaundryTap のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/laundrytap/ja/">LaundryTap</a></h2>
+          <p>「今日、洗濯したっけ？」に応えるワンタップ記録アプリ。カレンダーとリマインダー付きで、洗濯の状況をすぐ確認できます。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/laundrytap/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/laundrytap/id6762600691?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f0/1d/04/f01d04e1-f7de-bc0d-2788-026b5a949f09/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PillTap のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/pilltap/ja/">PillTap</a></h2>
+          <p>毎日のお薬時間に鳴るシンプルなリマインダーと、ワンタップの服薬メモ。医療アプリではなく、個人の記録のための道具です。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/pilltap/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/pilltap/id6762545903?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/fd/0e/60fd0e74-fcc2-0c14-9c79-4258529c667c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Packed by ZEC のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/packed/ja/">Packed by ZEC</a></h2>
+          <p>旅行や毎日のかばんの持ち物チェックリスト。出かける前にサッと確認して、忘れ物を防ぐシンプルなアプリです。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/packed/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/packed-by-zec/id6762812333?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/aa/b0/74/aab07441-c1e6-5233-0bae-7f73d28d110e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/warekiyakudoshichecker/ja/">年齢プロフィール - 和暦・厄年・数え年</a></h2>
+          <p>家族の生年月日をまとめて登録し、満年齢・数え年・和暦・干支・厄年の目安・長寿祝いをひと目で確認できるプロフィール帳アプリです。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/warekiyakudoshichecker/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/%E5%B9%B4%E9%BD%A2%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB-%E5%92%8C%E6%9A%A6-%E5%8E%84%E5%B9%B4-%E6%95%B0%E3%81%88%E5%B9%B4/id6770047182?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1e/db/78/1edb7857-455f-07b3-a624-09257584b3d5/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="Silly Word Beat - 英単語あそび のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/sillycombovoice/ja/">Silly Word Beat - 英単語あそび</a></h2>
+          <p>英単語カードを3まい選ぶと、まじめな教科書口調の声がヘンテコな合成語コンボを読み上げる、親子で笑える音あそびアプリ。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/sillycombovoice/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/silly-word-beat-word-play/id6765821915?uo=4">App Store →</a>
+          </div>
+        </article>
+        <article class="app-mini-card">
+          <img class="mini-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f0/c3/c0/f0c3c0e0-943a-4b64-ea4f-1c7151009b72/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Sheep to Sleep ひつじを数える のアプリアイコン" loading="lazy">
+          <h2><a href="/apps/sheep-to-sleep/ja/">Sheep to Sleep ひつじを数える</a></h2>
+          <p>ひつじを声で数え上げてくれる入眠のおとも。呼吸ガイドとおやすみチェックリスト付き。広告なし・アカウント不要。</p>
+          <div class="app-actions">
+            <a class="app-link primary" href="/apps/sheep-to-sleep/ja/">詳細</a>
+            <a class="app-link" href="https://apps.apple.com/jp/app/sheep-to-sleep/id6765796575?uo=4">App Store →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">&copy; 2026 ZEC Inc.</div>
+  </footer>
+</body>
+</html>
