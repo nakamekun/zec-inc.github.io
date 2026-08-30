@@ -1,63 +1,66 @@
 {
   "6761641437": {
     "slug": "photo-day",
-    "short_description": "Keep a simple one-photo-a-day memory habit for family life, trips, projects, and everyday moments.",
-    "meta_description": "PhotoDay is a simple one-photo-a-day iPhone app for family memories, daily photo records, and widget-friendly reflection.",
+    "short_description": "Keep one photo a day as a simple memory calendar, with notes, widgets, Frame Mode, and free optional iCloud sync.",
+    "meta_description": "PhotoDay is a one-photo-a-day iPhone memory app with a photo calendar, 300-character notes and search, widgets, Frame Mode, and free optional iCloud sync.",
     "categories": [
       "photo-memory",
       "widgets",
       "family"
     ],
     "overview": [
-      "PhotoDay is for keeping a small, steady photo record without turning it into a large photo management task. The idea is simple: choose one photo for the day and let that daily choice become a memory timeline.",
-      "It fits family life, children growing up, trips, hobbies, work projects, or any season where one daily image says more than a long note. The page is the official ZEC Inc. source for what the app is meant to do and how to think about it."
+      "PhotoDay keeps a small, steady photo record without turning it into a photo management task. Open a date, choose one photo that captures the day, and the daily choices grow into a memory calendar.",
+      "It fits family life, kids growing up, pets, trips, plants, creative projects, and ordinary days worth remembering. Empty days can even fill themselves: PhotoDay quietly suggests one good photo, favoring people and pets and skipping screenshots and document shots, with all processing done on the device.",
+      "Each day can hold a note of up to 300 characters, and you can search notes later to find a day again. Frame Mode shows today's photo full screen with its date and note, so a spare iPad or an old iPhone can work as a family photo frame."
     ],
     "target_users": [
-      "Parents and families who want a gentle daily photo habit",
-      "People who want to remember ordinary days without posting publicly",
-      "Travelers who want one representative photo per day",
-      "Users who like widget-friendly apps for quick daily reflection"
+      "Parents and families who want a gentle daily photo habit for kids, pets, and everyday moments",
+      "People who want to remember ordinary days privately, without posting to social feeds",
+      "Travelers and hobbyists who want one representative photo per day",
+      "Anyone who wants a widget or a photo frame at hand to revisit saved days"
     ],
     "features": [
-      "One-photo-a-day record keeping",
-      "Simple memory timeline for daily photos",
-      "A lightweight flow that avoids complex album management",
-      "Useful for family, travel, project, and personal memory contexts",
-      "Designed as a private first-party app page with a direct App Store link"
+      "One-photo-a-day memory calendar, with a monthly album replay at the start of each month",
+      "On-device photo suggestions that can fill empty days automatically",
+      "Notes up to 300 characters per day, with note search",
+      "Frame Mode: today's photo full screen with its date and note",
+      "Home Screen widget and gentle 'on this day in past years' notices",
+      "Free optional iCloud sync that restores your records after a phone change or reinstall"
     ],
     "how_to_use": [
       "Install PhotoDay from the App Store.",
-      "Open the app when you want to save the day’s representative photo.",
-      "Choose a photo that captures the day, even if it is ordinary.",
-      "Return over time to see the daily sequence grow.",
-      "Use widgets or quick entry points where available to keep the habit visible."
+      "Open a date and choose one photo that captures the day.",
+      "Add a short note if you want (up to 300 characters per day).",
+      "Turn on iCloud Sync (free, optional) so your records survive a new phone or a reinstall.",
+      "Add the widget or use Frame Mode to revisit saved days without opening the app.",
+      "Share a favorite day as a card - photo, date, and note - whenever you choose to."
     ],
-    "pricing": "See the App Store for the current price and regional availability.",
-    "privacy": "PhotoDay is intended for personal photo records. Check the App Store product page for Apple's current privacy label and permission details before installing.",
+    "pricing": "The core app is free: the calendar, photo picking, notes, note search, and iCloud Sync. PhotoDay Plus is a one-time purchase (not a subscription) that adds PhotoDay Archive, unlimited Frame Mode, unlimited monthly album replays, and multi-device sync. See the App Store for the current price and availability.",
+    "privacy": "No account is required, and PhotoDay never uploads your photos. With iCloud Sync on, only your photo choices and notes are stored in your personal iCloud, where the developer cannot read them. See the App Store privacy label for current details.",
     "faq": [
       {
         "question": "What is PhotoDay for?",
-        "answer": "PhotoDay is for keeping a simple one-photo-a-day record of everyday life, family moments, travel, hobbies, or projects."
+        "answer": "PhotoDay keeps a one-photo-a-day record of everyday life, family moments, trips, hobbies, and projects, arranged as a memory calendar you can revisit."
       },
       {
         "question": "Is PhotoDay a full photo library manager?",
-        "answer": "No. PhotoDay is intentionally focused on selecting and remembering one photo per day rather than replacing the Photos app or a full album system."
-      },
-      {
-        "question": "Who is PhotoDay useful for?",
-        "answer": "It is useful for families, parents, travelers, hobbyists, and anyone who wants a small daily memory habit without maintaining a long diary."
+        "answer": "No. PhotoDay focuses on choosing and remembering one photo per day. It does not replace the Photos app or a full album system."
       },
       {
         "question": "Does PhotoDay post my photos publicly?",
-        "answer": "PhotoDay is presented as a personal memory app. Check the App Store page and in-app permission prompts for the current privacy and sharing behavior."
+        "answer": "No. There is no social feed and nothing is published automatically. When you want to share a day, you create a card with the photo, date, and note, and share it yourself."
       },
       {
-        "question": "Can I use PhotoDay for family memories?",
-        "answer": "Yes. A one-photo-a-day format works well for children growing up, family routines, trips, and ordinary moments that are easy to forget."
+        "question": "How much of PhotoDay is free?",
+        "answer": "The calendar, photo picking, notes up to 300 characters, note search, and iCloud Sync are free. PhotoDay Plus, a one-time purchase, adds PhotoDay Archive, unlimited Frame Mode, unlimited monthly album replays, and multi-device sync."
+      },
+      {
+        "question": "Will my records survive a new phone?",
+        "answer": "Yes, if you turn on iCloud Sync (free, optional). Your photo choices and notes are stored in your personal iCloud and can be restored after a phone change or a reinstall."
       },
       {
         "question": "Does PhotoDay support widgets?",
-        "answer": "PhotoDay is positioned around a widget-friendly daily memory habit where available. The App Store page has the current feature list for the released version."
+        "answer": "Yes. A Home Screen widget shows today's photo, and PhotoDay can gently let you know when a photo from this day in past years exists."
       }
     ],
     "locales": {
@@ -67,8 +70,8 @@
         "meta_description": "PhotoDayは1日1枚の写真で毎日を記録するiPhoneアプリ。子どもの成長や家族の時間、旅行の思い出をカレンダーで見返せて、ウィジェットやフレーム表示にも対応した写真日記です。",
         "overview": [
           "PhotoDayは、大切な毎日を1日1枚の写真で残すシンプルな記録アプリです。写真を大量に整理するのではなく、「今日の1枚」を選ぶだけ。その積み重ねが、そのまま思い出のタイムラインになります。",
-          "子どもの成長、家族の時間、ペット、旅行、趣味や仕事のプロジェクトなど、長い日記を書かなくても1枚の写真が多くを語ってくれる場面にぴったりです。1日300字までのメモを添えられて、あとから言葉で検索してあの日をすぐに見つけられます。",
-          "フレームモードで今日の1枚を日付・メモと一緒に画面いっぱいに飾ったり、ウィジェットでホーム画面に置いたり、アプリを開かなくても思い出に触れられる作りになっています。"
+          "子どもの成長、家族の時間、ペット、旅行、趣味や仕事のプロジェクトなど、長い日記を書かなくても1枚の写真が多くを語ってくれる場面にぴったりです。空いた日は自動でも埋まります。人やペットの写った写真を優先し、スクリーンショットのような写真は避けて、端末の中だけの処理でその日の1枚をそっとおすすめします。",
+          "1日300字までのメモを添えられて、あとから言葉で検索してあの日をすぐに見つけられます。フレームモードで今日の1枚を日付・メモと一緒に画面いっぱいに飾ったり、ウィジェットでホーム画面に置いたり、アプリを開かなくても思い出に触れられる作りです。"
         ],
         "target_users": [
           "子どもの成長や家族の毎日をゆるやかに残したい方",
@@ -78,9 +81,10 @@
         ],
         "features": [
           "1日1枚を選ぶだけのシンプルな写真記録",
-          "毎日の1枚が並ぶ思い出のカレンダー",
-          "フレームモードで日付・メモと一緒に写真を飾れる",
-          "ホーム画面ウィジェットで今日の1枚を表示",
+          "毎日の1枚が並ぶ思い出のカレンダーと、月のはじめの月間アルバム",
+          "空いた日は自動でも埋まる、端末内だけで動くおすすめ機能（人・ペットの写真を優先）",
+          "フレームモードで日付・メモと一緒に写真を飾れる（iPadや古いiPhoneがフォトフレームに）",
+          "ホーム画面ウィジェットと、過去の同じ日のお知らせ",
           "1日300字までのメモと、あとからのメモ検索",
           "iCloud同期（無料・任意）で機種変更後も記録を復元"
         ],
@@ -91,7 +95,7 @@
           "毎日続けて、カレンダーに並んでいく写真を見返します。",
           "ウィジェットやフレームモードを使えば、アプリを開かなくても思い出に触れられます。"
         ],
-        "pricing": "基本機能は無料で使えて、買い切りのPhotoDay Plusも用意されていますが、最新の価格・提供状況はApp Storeでご確認ください。",
+        "pricing": "カレンダー・写真選び・1日300字のメモ・メモ検索・iCloud同期は無料です。買い切りのPhotoDay Plus（サブスクリプションではありません）では、時間制限のないフレームモードや複数端末での同期などが加わります。最新の価格・提供状況はApp Storeでご確認ください。",
         "privacy": "アカウントは不要で、写真そのものをPhotoDayがアップロードすることはありません。詳しい取り扱いは、インストール前にApp Storeのプライバシーラベルをご確認ください。",
         "faq": [
           {
@@ -108,7 +112,11 @@
           },
           {
             "question": "ウィジェットは使えますか？",
-            "answer": "ホーム画面ウィジェットで今日の1枚を表示できます。最新の対応状況はApp Storeの製品ページをご確認ください。"
+            "answer": "ホーム画面ウィジェットで今日の1枚を表示できます。過去の同じ日の写真があるときは、そっとお知らせも届きます。"
+          },
+          {
+            "question": "無料でどこまで使えますか？",
+            "answer": "カレンダー・写真選び・1日300字のメモ・メモ検索・iCloud同期は無料で使えます。買い切りのPhotoDay Plusを購入すると、選んだ写真のコピーをアプリ内に保存するPhotoDay Archive、時間制限のないフレームモード、月間アルバムの何度でも再生、複数端末での同期が加わります。"
           },
           {
             "question": "機種変更しても記録は残りますか？",

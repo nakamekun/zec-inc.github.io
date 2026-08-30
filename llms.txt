@@ -5,7 +5,7 @@ ZEC Apps are small iPhone apps from ZEC Inc. for everyday records, quick checks,
 Canonical app index: https://zec-inc.jp/apps/
 
 ## Main Apps
-- PhotoDay: One Photo a Day: Keep a simple one-photo-a-day memory habit for family life, trips, projects, and everyday moments. https://zec-inc.jp/apps/photo-day/
+- PhotoDay: One Photo a Day: Keep one photo a day as a simple memory calendar, with notes, widgets, Frame Mode, and free optional... https://zec-inc.jp/apps/photo-day/
 - Big Text Note: Write one large, easy-to-read note for quick display, reminders, labels, and simple communication. https://zec-inc.jp/apps/big-text-note/
 - LaundryTap: A quick tap-based laundry record for remembering whether the laundry was done, moved, or checked. https://zec-inc.jp/apps/laundrytap/
 - CleanURL Tap - Tidy Long Links: Clean copied links by removing common tracking clutter before saving, opening, or sharing them. https://zec-inc.jp/apps/cleanurl-tap/
