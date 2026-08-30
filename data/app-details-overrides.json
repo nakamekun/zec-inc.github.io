@@ -55,12 +55,76 @@
         "answer": "The calendar, photo picking, notes up to 300 characters, note search, and iCloud Sync are free. PhotoDay Plus, a one-time purchase, adds PhotoDay Archive, unlimited Frame Mode, unlimited monthly album replays, and multi-device sync."
       },
       {
-        "question": "Will my records survive a new phone?",
-        "answer": "Yes, if you turn on iCloud Sync (free, optional). Your photo choices and notes are stored in your personal iCloud and can be restored after a phone change or a reinstall."
+        "question": "Where are my photos stored?",
+        "answer": "PhotoDay uses photos from your iPhone photo library. When you choose a photo for a day, PhotoDay remembers which photo you chose — it does not copy the photo itself. If the original is deleted from the Photos app, PhotoDay may no longer be able to show it, unless it was saved with PhotoDay Archive. When iCloud Sync is on, your choices and notes are stored only in your personal iCloud."
       },
       {
-        "question": "Does PhotoDay support widgets?",
-        "answer": "Yes. A Home Screen widget shows today's photo, and PhotoDay can gently let you know when a photo from this day in past years exists."
+        "question": "Will my records survive a new iPhone?",
+        "answer": "Yes, if you turn on iCloud Sync. iCloud Sync is free for everyone. Its purpose is simple: your photo choices and notes exist only in PhotoDay, so this keeps them safe when you switch phones or reinstall the app. How to use it: open Settings, and under iCloud Sync turn on \"Sync choices & notes\" (you need to be signed in to iCloud). On a new iPhone, turn it on again and your records come back. Everything is stored only in your personal iCloud — photos themselves are never uploaded; they follow your photo library transfer, such as iCloud Photos."
+      },
+      {
+        "question": "Does restore happen automatically?",
+        "answer": "If your new iPhone was set up from a backup or Quick Start, iCloud Sync stays on and your records reconnect automatically — nothing to do. After a fresh install, turn iCloud Sync on once in Settings; everything after that is automatic, and there is no separate restore button. This works whenever your records are gone from the device but still in your iCloud: a new phone, a reinstall, or a reset device."
+      },
+      {
+        "question": "What's the difference between the two iCloud Sync options?",
+        "answer": "iCloud Sync keeps your day choices and notes safe in your personal iCloud, so they survive a new phone or reinstall and appear on your other devices — for free. The photos themselves aren't uploaded; each device shows them from its own photo library.\n\nIf you use iCloud Photos, that's usually all you need: the photos you keep are already on your other devices, so even a spare iPad can become a photo frame at no extra cost.\n\nIf you don't use iCloud Photos, turn on Sync this day's photo (PhotoDay Plus). For a little iCloud storage, PhotoDay keeps a private copy of each day's photo in your own iCloud, so your days still appear on your other devices — and an old iPhone or iPad can become a family photo frame. Only you can open them; the developer cannot read your data."
+      },
+      {
+        "question": "What happens if I delete a photo from Photos?",
+        "answer": "If you delete the original photo from the Photos app, it may no longer be available in PhotoDay. Photos saved with PhotoDay Archive will still be shown."
+      },
+      {
+        "question": "What is PhotoDay Plus?",
+        "answer": "PhotoDay Plus is a one-time purchase that adds four things: PhotoDay Archive (saves a copy of each day's chosen photo inside PhotoDay), unlimited Frame Mode (the free version has a 5-minute preview), unlimited Monthly Recap replays (the free version includes one full playback), and multi-device sync (your choices and notes appear on your other devices right away). Photos are shown from each device's own photo library (such as iCloud Photos). By default PhotoDay does not upload your photos. If you turn on Sync this day's photo, PhotoDay also keeps a small copy of each chosen photo in your personal iCloud so it can appear on devices that don't use iCloud Photos — only you can open it, and the developer still cannot read your data. Your calendar, photo picking, notes, and iCloud Sync stay free."
+      },
+      {
+        "question": "What is PhotoDay Archive?",
+        "answer": "PhotoDay Archive is a PhotoDay Plus feature that saves a copy of the photo you chose for each day inside PhotoDay. Even if the original is later deleted from your photo library, PhotoDay can still show the saved copy. It also makes browsing steadier and faster: archived copies display instantly, even when the original lives in iCloud and would otherwise need to download first. You can choose whether auto-picked photos are saved too. You can see everything that's been saved in Settings > Archived photos."
+      },
+      {
+        "question": "Does PhotoDay Archive copy my entire photo library?",
+        "answer": "No. PhotoDay Archive saves only the daily photos you choose so they can be displayed more reliably inside the app. If PhotoDay is deleted or the device is erased, photos saved only inside PhotoDay may also be lost."
+      },
+      {
+        "question": "What do the star and sparkles icons mean?",
+        "answer": "The star means you picked the photo yourself. The sparkles mean PhotoDay suggested or picked the photo automatically for that day."
+      },
+      {
+        "question": "How does PhotoDay pick photos automatically?",
+        "answer": "Auto-pick only fills days that are still empty — it never replaces a photo you chose. It looks for photos with people or pets, and skips videos, screenshots, and shots that look like documents or receipts. If a day has only that kind of photo, the day stays empty on the calendar and you can pick one yourself. Everything is analyzed on your device; nothing is uploaded. To change an auto-picked photo, open the day and choose another — the sparkles turn into a star."
+      },
+      {
+        "question": "Can I use an iPad or old iPhone as a photo frame?",
+        "answer": "Yes. Open Frame Mode to show your chosen photo full screen with its date; the controls fade away after a few seconds, leaving just the photo. Stand an iPad or a spare iPhone on a shelf and it becomes a family photo frame. The free version plays for 5 minutes at a time; PhotoDay Plus removes the time limit. With Plus multi-device sync, a photo you pick on your phone appears on the frame right away."
+      },
+      {
+        "question": "Can I search my notes?",
+        "answer": "Yes. Open your saved days and use the search bar to find a note by a word you wrote. This is free for everyone."
+      },
+      {
+        "question": "What's the difference between notes and tags?",
+        "answer": "A note is a short text shown together with the photo — on the day screen, in Frame Mode, and on share cards. Tags are short labels, like a family member's name, that are not shown on the photo; they work behind the scenes for search and for choosing which photos Frame Mode shows. Once you create a tag it is saved, so next time you can add it with one tap instead of typing it again. You can see, rename, and delete all your tags in Settings > Tags."
+      },
+      {
+        "question": "Can I share a day or a month?",
+        "answer": "Yes. From a day, tap the share button to create a card with that photo, its date, and note. After a monthly album plays, you can share the whole month as a single card too. Sharing happens through the normal share sheet — nothing is posted automatically, and PhotoDay never uploads your photos in the background."
+      },
+      {
+        "question": "How do I restore my purchase?",
+        "answer": "If you bought PhotoDay Plus before — on another device or after reinstalling — open Settings > PhotoDay Plus and tap Restore Purchases. Make sure you're signed in with the same Apple Account you used for the purchase."
+      },
+      {
+        "question": "Why does the widget show a different photo depending on the widget size?",
+        "answer": "Each widget size can have its own selected photo.\n\nFor example, the small, medium, and large widgets may each show a different photo because they are managed separately.\n\nIf you want the same photo to appear, please set or update the photo for each widget size."
+      },
+      {
+        "question": "Why can I keep only one photo per day?",
+        "answer": "PhotoDay is designed around choosing one meaningful photo for each day. Keeping one photo makes your calendar simple, easy to look back on, and focused on the photo that best represents the day."
+      },
+      {
+        "question": "Why do photos sometimes take time to load?",
+        "answer": "PhotoDay reads photos available on your device. Loading may take a little time when there are many photos to show, when the image is large, or when the app is opening that day’s photos for the first time."
       }
     ],
     "locales": {
@@ -111,16 +175,80 @@
             "answer": "PhotoDayは個人の記録のためのアプリで、SNSのように自動で公開される仕組みはありません。共有したい日だけ、写真と日付とメモを1枚のカードにして自分で共有できます。"
           },
           {
-            "question": "ウィジェットは使えますか？",
-            "answer": "ホーム画面ウィジェットで今日の1枚を表示できます。過去の同じ日の写真があるときは、そっとお知らせも届きます。"
-          },
-          {
             "question": "無料でどこまで使えますか？",
             "answer": "カレンダー・写真選び・1日300字のメモ・メモ検索・iCloud同期は無料で使えます。買い切りのPhotoDay Plusを購入すると、選んだ写真のコピーをアプリ内に保存するPhotoDay Archive、時間制限のないフレームモード、月間アルバムの何度でも再生、複数端末での同期が加わります。"
           },
           {
+            "question": "写真はどこに保存されていますか？",
+            "answer": "PhotoDayはiPhoneの写真ライブラリにある写真を使用します。日ごとに写真を選ぶと、PhotoDayはどの写真を選んだかを記録しますが、写真自体はコピーしません。写真アプリから元の写真を削除すると、PhotoDay Archiveで保存していない限り、PhotoDayで表示できなくなる場合があります。iCloud同期がONの場合、選んだ記録とメモはあなたのiCloudにのみ保存されます。"
+          },
+          {
             "question": "機種変更しても記録は残りますか？",
-            "answer": "iCloud同期（無料・任意）をONにすると、選んだ記録とメモがあなたのiCloudに保存され、機種変更やアプリの入れ直しのあとも復元できます。"
+            "answer": "はい、iCloud同期をONにしていれば残ります。iCloud同期は誰でも使える無料機能です。選んだ記録とメモはPhotoDayにしか存在しないため、機種変更やアプリの入れ直しで消えないように守るのが目的です。使い方：設定の「iCloud同期」で「選んだ記録とメモを同期」をONにします（iCloudへのサインインが必要です）。新しいiPhoneでも同じようにONにすれば記録が戻ります。保存先はあなたのiCloudのみで、写真そのものはアップロードされません。写真本体はiCloudフォトなど写真ライブラリの引き継ぎに従います。"
+          },
+          {
+            "question": "復元は自動で行われますか？",
+            "answer": "新しいiPhoneをバックアップやクイックスタートから設定した場合は、iCloud同期はONのまま引き継がれ、記録は自動でつながり直します。何もする必要はありません。まっさらにインストールした場合は、設定でiCloud同期を一度ONにしてください。それ以降はすべて自動で、復元ボタンのような操作はありません。機種変更・アプリの入れ直し・端末の初期化など、端末から記録が消えてもあなたのiCloudに残っていれば同じように戻ります。"
+          },
+          {
+            "question": "2つのiCloud同期はどう違いますか？",
+            "answer": "iCloud同期は、選んだ日の記録とメモをあなたのiCloudに保存します。機種変更やアプリの入れ直しでも消えず、ほかの端末にも無料で表示されます。写真そのものはアップロードされず、各端末の写真ライブラリから表示されます。\n\niCloud写真を使っている場合は、通常これだけで十分です。その日の1枚はすでにほかの端末にもあるため、追加料金なしで、使っていないiPadをフォトフレームにすることもできます。\n\niCloud写真を使っていない場合は、「この日の1枚を同期」（PhotoDay Plus）をONにしてください。わずかなiCloud容量で、その日の1枚のプライベートなコピーをあなた自身のiCloudに保存し、ほかの端末にも選んだ日を表示できます。古いiPhoneやiPadを家族のフォトフレームにすることもできます。開けるのはあなただけで、開発者はデータを読めません。"
+          },
+          {
+            "question": "写真アプリから写真を削除するとどうなりますか？",
+            "answer": "写真アプリで元の写真を削除すると、PhotoDayで利用できなくなる場合があります。PhotoDay Archiveで保存済みの写真は、引き続き表示できます。"
+          },
+          {
+            "question": "PhotoDay Plus とは何ですか？",
+            "answer": "PhotoDay Plusは買い切りの追加機能です。①PhotoDay Archive：選んだ1枚のコピーをPhotoDay内にも保存 ②フレームモード：時間制限なし（無料版は5分間のプレビュー）③月のふりかえり：いつでも何度でも再生（無料版は最初の1回を最後まで再生できます）④複数端末で同期：選んだ写真とメモが、他の端末にもすぐ反映されます。写真は各端末の写真ライブラリ（iCloudフォトなど）から表示されます。初期設定では、PhotoDayが写真をアップロードすることはありません。「この日の1枚を同期」をONにすると、選んだ写真の小さなコピーをあなたのiCloudにも保存し、iCloud写真を使っていない端末でも表示できるようにします。開いて見られるのはあなただけで、開発者がデータを読むことはできません。カレンダー・写真選び・メモ・iCloud同期は今後も無料で使えます。"
+          },
+          {
+            "question": "PhotoDay Archive とは何ですか？",
+            "answer": "各日に選んだ写真のコピーをPhotoDay内にも保存する、PhotoDay Plusの機能です。あとで元の写真がライブラリから削除されても、保存したコピーを表示できます。また、閲覧が安定して速くなります。保存したコピーはすぐに表示されるため、元の写真がiCloudにあって先にダウンロードが必要な場合でも待たされません。自動で選ばれた写真も保存するかは設定で選べます。保存済みの写真は、設定の「保存済みの写真」からいつでも確認できます。"
+          },
+          {
+            "question": "PhotoDay Archiveは写真ライブラリ全体をコピーしますか？",
+            "answer": "いいえ。PhotoDay Archiveは、アプリ内でより安定して表示できるように、選んだ日々の写真だけを保存します。PhotoDayを削除したり端末を消去した場合、PhotoDay内にのみ保存された写真も失われる場合があります。"
+          },
+          {
+            "question": "星とキラキラのマークは何ですか？",
+            "answer": "星マークは自分で選んだ写真、キラキラマークはPhotoDayがその日におすすめまたは自動で選んだ写真を表します。"
+          },
+          {
+            "question": "PhotoDayはどうやって写真を自動で選んでいますか？",
+            "answer": "自動選択は、まだ空いている日だけを埋めます。自分で選んだ写真を差し替えることはありません。人やペットが写った写真を探し、動画、スクリーンショット、書類やレシートのように見える写真は対象外にします。その日にそうした写真しかない場合、カレンダー上ではその日は空いたままになり、自分で写真を選べます。分析はすべて端末内で行われ、何もアップロードされません。自動選択された写真を変えたい場合は、その日を開いて別の写真を選ぶだけで、キラキラのマークが星のマークに変わります。"
+          },
+          {
+            "question": "iPadや古いiPhoneをフォトフレームにできますか？",
+            "answer": "はい。フレームモードを開くと、選んだ写真が日付とともに画面いっぱいに表示され、数秒たつと操作ボタンが消えて写真だけになります。iPadや使わなくなったiPhoneを棚に立てておけば、家族のフォトフレームになります。無料版は1回5分まで、PhotoDay Plusにすると時間制限がなくなります。Plusの複数端末同期を使えば、スマホで選んだ写真がすぐにフレームにも反映されます。"
+          },
+          {
+            "question": "メモを検索できますか？",
+            "answer": "はい。保存した日の一覧で検索バーに言葉を入力すると、その言葉を含むメモの日が見つかります。誰でも使える無料機能です。"
+          },
+          {
+            "question": "メモとタグの違いは何ですか？",
+            "answer": "メモは写真と一緒に表示される短いテキストで、日付の画面・フレームモード・共有カードに表示されます。タグは家族の名前などの短いラベルで、写真の上には表示されません。検索や、フレームモードに表示する写真の絞り込みに裏側で使われます。一度作成したタグは保存されるので、次回からは入力し直さずにワンタップで追加できます。タグの確認・名前の変更・削除は、設定の「タグ」からいつでも行えます。"
+          },
+          {
+            "question": "1日や1ヶ月を共有できますか？",
+            "answer": "はい。日付の画面で共有ボタンを押すと、その写真・日付・メモを1枚のカードにできます。月間アルバムを見終わったあとは、その月をまとめて1枚のカードとして共有することもできます。共有は通常の共有シートから行われ、自動で投稿されることはありません。PhotoDayが写真をバックグラウンドでアップロードすることもありません。"
+          },
+          {
+            "question": "購入を復元するには？",
+            "answer": "別の端末や再インストール後などでPhotoDay Plusが反映されていない場合は、設定 > PhotoDay Plus の「購入を復元」をタップしてください。購入時と同じApple Accountでのサインインが必要です。"
+          },
+          {
+            "question": "なぜウィジェットのサイズによって違う写真が表示されるのですか？",
+            "answer": "各ウィジェットサイズには、それぞれ別の選択写真を設定できます。\n\nたとえば、小・中・大のウィジェットは別々に管理されているため、それぞれ違う写真が表示される場合があります。\n\n同じ写真を表示したい場合は、各ウィジェットサイズごとに写真を設定または更新してください。"
+          },
+          {
+            "question": "なぜ1日1枚だけなのですか？",
+            "answer": "PhotoDayは、1日を表す大切な1枚を選ぶためのアプリです。1日1枚にすることで、カレンダーがすっきりし、あとから見返しやすく、その日らしい写真に集中できます。"
+          },
+          {
+            "question": "なぜ写真の読み込みに時間がかかることがありますか？",
+            "answer": "PhotoDayは端末内で利用できる写真を読み込みます。表示する写真が多い場合、画像サイズが大きい場合、その日の写真を初めて開く場合などは、読み込みに少し時間がかかることがあります。"
           }
         ]
       }
