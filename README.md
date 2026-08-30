@@ -55,6 +55,25 @@ macOS / Linux:
 python3 scripts/update_apps_page.py
 ```
 
+## Localization (ja)
+
+English is the canonical language. Japanese pages are generated from
+`locales.ja` blocks in `data/app-details-overrides.json`:
+
+- App detail pages: `/apps/<slug>/ja/`
+- Apps index: `/apps/ja/`
+- Category pages: `/apps/<category>/ja/`
+
+The generator localizes section headings and navigation (`UI_STRINGS` in
+`scripts/update_apps_page.py`), emits `hreflang` alternate links on every
+page pair (`en` / `ja` / `x-default` → en), switches App Store links to the
+`apps.apple.com/jp/` storefront on ja pages, and includes all ja URLs in
+`sitemap.xml`. To add another language, add `locales.<code>` content to the
+overrides plus a `UI_STRINGS` entry (and a `CATEGORY_DEFINITIONS` translation);
+everything else is derived automatically. ja copy should be natural Japanese
+written from each app's fastlane ja metadata and docs — not literal
+translation of the English text.
+
 ## After Updating
 
 1. Run `git diff`

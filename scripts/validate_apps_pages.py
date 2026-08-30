@@ -19,6 +19,7 @@ SITEMAP_XML = ROOT_DIR / "sitemap.xml"
 APPS_MANIFEST = ROOT_DIR / "data" / "apps-manifest.json"
 DETAIL_MARKER = ".generated-app-detail"
 CATEGORY_MARKER = ".generated-app-category"
+LOCALE_INDEX_MARKER = ".generated-app-locale-index"
 
 
 class PageParser(HTMLParser):
@@ -78,10 +79,14 @@ def page_path_for_url(url: str, source_path: Path) -> Path | None:
     return ROOT_DIR / path.lstrip("/")
 
 
-def collect_pages() -> tuple[list[Path], list[Path]]:
+def collect_pages() -> tuple[list[Path], list[Path], list[Path]]:
     detail_pages = sorted(path.parent / "index.html" for path in APPS_DIR.glob(f"*/{DETAIL_MARKER}"))
     category_pages = sorted(path.parent / "index.html" for path in APPS_DIR.glob(f"*/{CATEGORY_MARKER}"))
-    return detail_pages, category_pages
+    locale_pages = sorted(path.parent / "index.html" for path in APPS_DIR.glob(f"*/{LOCALE_INDEX_MARKER}"))
+    for marker in (DETAIL_MARKER, CATEGORY_MARKER):
+        for marker_path in APPS_DIR.glob(f"*/{marker}"):
+            locale_pages.extend(sorted(marker_path.parent.glob("*/index.html")))
+    return detail_pages, category_pages, locale_pages
 
 
 def parse_page(path: Path) -> PageParser:
@@ -154,7 +159,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.parse_args(argv)
 
     errors: list[str] = []
-    detail_pages, category_pages = collect_pages()
+    detail_pages, category_pages, locale_pages = collect_pages()
     manifest = load_manifest(errors)
     if manifest is not None:
         expected_detail_slugs, expected_category_slugs = manifest
@@ -171,9 +176,9 @@ def main(argv: list[str] | None = None) -> int:
         for slug in sorted(category_slugs - expected_category_slugs):
             errors.append(f"unexpected category page apps/{slug}/index.html (not in apps manifest)")
 
-    pages = [ROOT_DIR / "index.html", APPS_DIR / "index.html"] + detail_pages + category_pages
+    pages = [ROOT_DIR / "index.html", APPS_DIR / "index.html"] + detail_pages + category_pages + locale_pages
     expected_sitemap_urls = {SITE_ORIGIN + "/", SITE_ORIGIN + "/apps/"}
-    for path in detail_pages + category_pages:
+    for path in detail_pages + category_pages + locale_pages:
         rel = path.parent.relative_to(ROOT_DIR).as_posix()
         expected_sitemap_urls.add(f"{SITE_ORIGIN}/{rel}/")
 
@@ -193,7 +198,10 @@ def main(argv: list[str] | None = None) -> int:
             print(f"error: {error}", file=sys.stderr)
         return 1
 
-    print(f"validated {len(detail_pages)} detail pages and {len(category_pages)} category pages")
+    print(
+        f"validated {len(detail_pages)} detail pages, {len(category_pages)} category pages, "
+        f"and {len(locale_pages)} locale pages"
+    )
     return 0
 
 

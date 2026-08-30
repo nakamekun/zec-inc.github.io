@@ -48,31 +48,123 @@ START_MARKER = "<!-- APPS_LIST_START -->"
 END_MARKER = "<!-- APPS_LIST_END -->"
 DETAIL_MARKER = ".generated-app-detail"
 CATEGORY_MARKER = ".generated-app-category"
+LOCALE_INDEX_MARKER = ".generated-app-locale-index"
+
+DEFAULT_LOCALE = "en"
 
 CATEGORY_DEFINITIONS = {
     "photo-memory": {
-        "title": "Photo and Memory Apps",
-        "description": "Simple iPhone apps for keeping everyday photos, memories, and visual records easier to continue.",
+        "en": {
+            "title": "Photo and Memory Apps",
+            "description": "Simple iPhone apps for keeping everyday photos, memories, and visual records easier to continue.",
+        },
+        "ja": {
+            "title": "写真・思い出のアプリ",
+            "description": "毎日の写真や思い出、目で見て残す記録を続けやすくする、シンプルなiPhoneアプリです。",
+        },
     },
     "travel": {
-        "title": "Travel Apps",
-        "description": "Small iPhone tools for trips, packing, phrases, schedules, and quick checks while away from home.",
+        "en": {
+            "title": "Travel Apps",
+            "description": "Small iPhone tools for trips, packing, phrases, schedules, and quick checks while away from home.",
+        },
+        "ja": {
+            "title": "旅行のアプリ",
+            "description": "旅行の持ち物・フレーズ・予定・出先でのちょっとした確認に使える、小さなiPhoneツールです。",
+        },
     },
     "tap-tools": {
-        "title": "Tap Tools",
-        "description": "Fast one-purpose apps designed around quick taps, daily records, and small repeated actions.",
+        "en": {
+            "title": "Tap Tools",
+            "description": "Fast one-purpose apps designed around quick taps, daily records, and small repeated actions.",
+        },
+        "ja": {
+            "title": "タップ記録ツール",
+            "description": "ワンタップの記録や毎日の小さな繰り返しに特化した、素早く使える単機能アプリです。",
+        },
     },
     "widgets": {
-        "title": "Widget-Friendly Apps",
-        "description": "ZEC apps with widget-oriented use cases for glancing, checking, or continuing from the Home Screen.",
+        "en": {
+            "title": "Widget-Friendly Apps",
+            "description": "ZEC apps with widget-oriented use cases for glancing, checking, or continuing from the Home Screen.",
+        },
+        "ja": {
+            "title": "ウィジェット対応アプリ",
+            "description": "ホーム画面からひと目で確認・継続できる、ウィジェット活用を想定したZECアプリです。",
+        },
     },
     "family": {
-        "title": "Family Apps",
-        "description": "Apps for household routines, family records, shared preparation, and simple daily checks.",
+        "en": {
+            "title": "Family Apps",
+            "description": "Apps for household routines, family records, shared preparation, and simple daily checks.",
+        },
+        "ja": {
+            "title": "家族向けアプリ",
+            "description": "家庭のルーティンや家族の記録、準備の共有、毎日の簡単なチェックに使えるアプリです。",
+        },
     },
     "productivity": {
-        "title": "Productivity Apps",
-        "description": "Focused iPhone apps for notes, planning, cleaning links, tracking, and getting small tasks done.",
+        "en": {
+            "title": "Productivity Apps",
+            "description": "Focused iPhone apps for notes, planning, cleaning links, tracking, and getting small tasks done.",
+        },
+        "ja": {
+            "title": "仕事効率化アプリ",
+            "description": "メモ・計画・リンク整理・記録など、小さなタスクを片づけることに集中したiPhoneアプリです。",
+        },
+    },
+}
+
+UI_STRINGS = {
+    "en": {
+        "overview": "Overview",
+        "audience": "Who It Is For",
+        "features": "Main Features",
+        "usage": "How to Use",
+        "pricing": "Pricing",
+        "pricing_note": "Pricing and availability can vary by country and may change on the App Store.",
+        "privacy": "Privacy",
+        "screenshots": "Screenshots",
+        "faq": "FAQ",
+        "app_store": "App Store",
+        "view_on_app_store": "View on the App Store",
+        "open_on_app_store": "Open {name} on the App Store",
+        "all_apps": "All ZEC Apps",
+        "last_updated": "Last updated",
+        "details": "Details",
+        "app_store_link": "App Store →",
+        "apps_nav": "Apps",
+        "apps_heading": "Apps",
+        "language_names": {"en": "English", "ja": "日本語"},
+        "apps_index_title": "ZEC Apps",
+        "apps_index_description": "Official list of iPhone apps from ZEC Inc. Small, focused tools for daily records, quick checks, travel, family routines, and widgets.",
+        "icon_alt": "{name} app icon",
+        "screenshot_alt": "{name} screenshot",
+    },
+    "ja": {
+        "overview": "概要",
+        "audience": "こんな方に",
+        "features": "主な機能",
+        "usage": "使い方",
+        "pricing": "価格",
+        "pricing_note": "価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。",
+        "privacy": "プライバシー",
+        "screenshots": "スクリーンショット",
+        "faq": "よくある質問",
+        "app_store": "App Store",
+        "view_on_app_store": "App Storeで見る",
+        "open_on_app_store": "{name} をApp Storeで開く",
+        "all_apps": "ZECアプリ一覧",
+        "last_updated": "最終更新日",
+        "details": "詳細",
+        "app_store_link": "App Store →",
+        "apps_nav": "アプリ",
+        "apps_heading": "アプリ一覧",
+        "language_names": {"en": "English", "ja": "日本語"},
+        "apps_index_title": "ZECのアプリ一覧",
+        "apps_index_description": "合同会社ゼク（ZEC Inc.）が開発するiPhoneアプリの公式一覧です。毎日の記録・すばやい確認・旅行・家族の習慣・ウィジェットのための、小さくて目的のはっきりした道具を揃えています。",
+        "icon_alt": "{name} のアプリアイコン",
+        "screenshot_alt": "{name} のスクリーンショット",
     },
 }
 
@@ -278,6 +370,35 @@ def localized_override(app: dict[str, Any], overrides: dict[str, Any], locale: s
     return app_override
 
 
+def app_locales(app: dict[str, Any], overrides: dict[str, Any]) -> list[str]:
+    override = app_override_for(app, overrides)
+    locales = override.get("locales")
+    extra: list[str] = []
+    if isinstance(locales, dict):
+        extra = sorted(
+            locale
+            for locale, value in locales.items()
+            if locale != DEFAULT_LOCALE and isinstance(value, dict) and locale in UI_STRINGS
+        )
+    return [DEFAULT_LOCALE] + extra
+
+
+def site_locales(overrides: dict[str, Any]) -> list[str]:
+    found: set[str] = set()
+    for value in overrides.values():
+        if isinstance(value, dict) and isinstance(value.get("locales"), dict):
+            found.update(
+                locale
+                for locale, locale_value in value["locales"].items()
+                if locale != DEFAULT_LOCALE and isinstance(locale_value, dict) and locale in UI_STRINGS
+            )
+    return sorted(found)
+
+
+def ui_strings(locale: str) -> dict[str, Any]:
+    return UI_STRINGS.get(locale, UI_STRINGS[DEFAULT_LOCALE])
+
+
 def assign_slugs(apps: list[dict[str, Any]], overrides: dict[str, Any], ctx: BuildContext) -> list[dict[str, Any]]:
     used: dict[str, str] = {}
     for app in apps:
@@ -299,8 +420,8 @@ def assign_slugs(apps: list[dict[str, Any]], overrides: dict[str, Any], ctx: Bui
     return apps
 
 
-def short_description(app: dict[str, Any], overrides: dict[str, Any] | None = None) -> str:
-    override = app_override_for(app, overrides or {})
+def short_description(app: dict[str, Any], overrides: dict[str, Any] | None = None, locale: str = DEFAULT_LOCALE) -> str:
+    override = localized_override(app, overrides or {}, locale)
     explicit = override.get("short_description") or override.get("tagline")
     if isinstance(explicit, str) and explicit.strip():
         return truncate_text(explicit, 110)
@@ -453,15 +574,52 @@ def last_updated(app: dict[str, Any]) -> str:
     return datetime.now(timezone.utc).date().isoformat()
 
 
-def page_url(app: dict[str, Any], locale: str = "en") -> str:
+def page_href(app: dict[str, Any], locale: str = DEFAULT_LOCALE) -> str:
     slug = str(app.get("slug", "")).strip()
-    if locale == "en":
-        return f"{SITE_ORIGIN}/apps/{slug}/"
-    return f"{SITE_ORIGIN}/apps/{slug}/{locale}/"
+    if locale == DEFAULT_LOCALE:
+        return f"/apps/{slug}/"
+    return f"/apps/{slug}/{locale}/"
 
 
-def category_url(slug: str) -> str:
-    return f"{SITE_ORIGIN}/apps/{slug}/"
+def page_url(app: dict[str, Any], locale: str = DEFAULT_LOCALE) -> str:
+    return SITE_ORIGIN + page_href(app, locale)
+
+
+def category_href(slug: str, locale: str = DEFAULT_LOCALE) -> str:
+    if locale == DEFAULT_LOCALE:
+        return f"/apps/{slug}/"
+    return f"/apps/{slug}/{locale}/"
+
+
+def category_url(slug: str, locale: str = DEFAULT_LOCALE) -> str:
+    return SITE_ORIGIN + category_href(slug, locale)
+
+
+def apps_index_href(locale: str = DEFAULT_LOCALE) -> str:
+    if locale == DEFAULT_LOCALE:
+        return "/apps/"
+    return f"/apps/{locale}/"
+
+
+def apps_index_url(locale: str = DEFAULT_LOCALE) -> str:
+    return SITE_ORIGIN + apps_index_href(locale)
+
+
+def hreflang_alternates(locales: list[str], url_for) -> list[tuple[str, str]]:
+    if len(locales) < 2:
+        return []
+    alternates = [(locale, url_for(locale)) for locale in locales]
+    alternates.append(("x-default", url_for(DEFAULT_LOCALE)))
+    return alternates
+
+
+def language_links(locales: list[str], current: str, href_for) -> list[tuple[str, str]]:
+    names = ui_strings(current).get("language_names", {})
+    return [
+        (href_for(locale), str(names.get(locale, locale)))
+        for locale in locales
+        if locale != current
+    ]
 
 
 def asset_url(path: Path) -> str:
@@ -573,9 +731,15 @@ def html_paragraphs(items: list[str]) -> str:
     return "\n".join(f"          <p>{html.escape(item)}</p>" for item in items)
 
 
-def app_store_url(app: dict[str, Any]) -> str:
-    url = str(app.get("trackViewUrl", "")).strip()
-    return url or "https://apps.apple.com/us/developer/zec-inc/id1889726396"
+APP_STORE_STOREFRONTS = {"ja": "jp"}
+
+
+def app_store_url(app: dict[str, Any], locale: str = DEFAULT_LOCALE) -> str:
+    url = str(app.get("trackViewUrl", "")).strip() or "https://apps.apple.com/us/developer/zec-inc/id1889726396"
+    storefront = APP_STORE_STOREFRONTS.get(locale)
+    if storefront:
+        url = re.sub(r"(apps\.apple\.com)/[a-z]{2}/", rf"\1/{storefront}/", url, count=1)
+    return url
 
 
 def icon_url(app: dict[str, Any]) -> str:
@@ -594,10 +758,11 @@ def json_ld(app: dict[str, Any], content: dict[str, Any], locale: str) -> str:
             "@type": "Offer",
             "price": str(offer_price) if offer_price is not None else "",
             "priceCurrency": app.get("currency") or "USD",
-            "url": app_store_url(app),
+            "url": app_store_url(app, locale),
         },
         "url": page_url(app, locale),
-        "downloadUrl": app_store_url(app),
+        "inLanguage": locale,
+        "downloadUrl": app_store_url(app, locale),
         "publisher": {
             "@type": "Organization",
             "name": DEVELOPER_NAME,
@@ -693,16 +858,26 @@ def base_css() -> str:
 """
 
 
-def render_head(title: str, description: str, canonical: str, og_image: str = "") -> str:
+def render_head(
+    title: str,
+    description: str,
+    canonical: str,
+    og_image: str = "",
+    alternates: list[tuple[str, str]] | None = None,
+) -> str:
     title = title.strip() or "ZEC Apps"
     description = truncate_text(description, 155) or "Official ZEC Apps page."
     image_meta = f'  <meta property="og:image" content="{html.escape(og_image, quote=True)}">\n' if og_image else ""
+    alternate_meta = "".join(
+        f'  <link rel="alternate" hreflang="{html.escape(hreflang, quote=True)}" href="{html.escape(href, quote=True)}">\n'
+        for hreflang, href in (alternates or [])
+    )
     return f"""  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(description, quote=True)}">
   <link rel="canonical" href="{html.escape(canonical, quote=True)}">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+{alternate_meta}  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
   <meta property="og:title" content="{html.escape(title, quote=True)}">
@@ -711,17 +886,34 @@ def render_head(title: str, description: str, canonical: str, og_image: str = ""
 {image_meta}"""
 
 
-def render_shell(title: str, description: str, canonical: str, body: str, og_image: str = "", lang: str = "en", json_payload: str = "") -> str:
+def render_shell(
+    title: str,
+    description: str,
+    canonical: str,
+    body: str,
+    og_image: str = "",
+    lang: str = "en",
+    json_payload: str = "",
+    alternates: list[tuple[str, str]] | None = None,
+    lang_links: list[tuple[str, str]] | None = None,
+) -> str:
     json_block = ""
     if json_payload:
         json_block = f"""  <script type="application/ld+json">
 {json_payload.replace("</", "<\\/")}
   </script>
 """
+    strings = ui_strings(lang)
+    nav_items = [
+        f'<a href="{html.escape(apps_index_href(lang), quote=True)}">{html.escape(str(strings["apps_nav"]))}</a>'
+    ]
+    for href, label in lang_links or []:
+        nav_items.append(f'<a href="{html.escape(href, quote=True)}">{html.escape(label)}</a>')
+    nav_html = "\n        ".join(nav_items)
     return f"""<!DOCTYPE html>
 <html lang="{html.escape(lang)}">
 <head>
-{render_head(title, description, canonical, og_image)}{json_block}  <style>
+{render_head(title, description, canonical, og_image, alternates)}{json_block}  <style>
 {base_css()}
   </style>
 </head>
@@ -730,7 +922,7 @@ def render_shell(title: str, description: str, canonical: str, body: str, og_ima
     <div class="topbar">
       <div class="brand">ZEC Inc.</div>
       <nav aria-label="Secondary">
-        <a href="/apps/">Apps</a>
+        {nav_html}
       </nav>
     </div>
   </header>
@@ -781,16 +973,21 @@ def render_cards(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> str:
 
 def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: BuildContext, locale: str = "en") -> str:
     content = detail_content(app, overrides, ctx, locale)
+    strings = ui_strings(locale)
+    locales = app_locales(app, overrides)
+    alternates = hreflang_alternates(locales, lambda loc: page_url(app, loc))
+    lang_links = language_links(locales, locale, lambda loc: page_href(app, loc))
     title = f"{content['name']} | ZEC Apps"
     canonical = page_url(app, locale)
     img = icon_url(app)
+    screenshot_alt = str(strings["screenshot_alt"]).format(name=content["name"])
     screenshot_html = ""
     if content["screenshots"]:
         screenshot_html = f"""
     <section class="section">
-      <h2>Screenshots</h2>
+      <h2>{html.escape(str(strings['screenshots']))}</h2>
       <div class="screenshots">
-{chr(10).join(f'        <figure class="screenshot"><img src="{html.escape(url, quote=True)}" alt="{html.escape(content["name"], quote=True)} screenshot" loading="lazy"></figure>' for url in content["screenshots"])}
+{chr(10).join(f'        <figure class="screenshot"><img src="{html.escape(url, quote=True)}" alt="{html.escape(screenshot_alt, quote=True)}" loading="lazy"></figure>' for url in content["screenshots"])}
       </div>
     </section>
 """
@@ -805,91 +1002,122 @@ def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: Buil
         )
         for item in content["faq"]
     )
+    icon_alt = str(strings["icon_alt"]).format(name=content["name"])
+    open_label = str(strings["open_on_app_store"]).format(name=content["name"])
     body = f"""
   <main>
     <section class="hero">
-      {f'<img class="app-icon" src="{html.escape(img, quote=True)}" alt="{html.escape(content["name"], quote=True)} app icon" width="96" height="96">' if img else ''}
+      {f'<img class="app-icon" src="{html.escape(img, quote=True)}" alt="{html.escape(icon_alt, quote=True)}" width="96" height="96">' if img else ''}
       <div>
         <h1>{html.escape(content['name'])}</h1>
         <p class="tagline">{html.escape(content['tagline'])}</p>
         <div class="actions">
-          <a class="button primary" href="{html.escape(app_store_url(app), quote=True)}">View on the App Store</a>
-          <a class="button" href="/apps/">All ZEC Apps</a>
+          <a class="button primary" href="{html.escape(app_store_url(app, locale), quote=True)}">{html.escape(str(strings['view_on_app_store']))}</a>
+          <a class="button" href="{html.escape(apps_index_href(locale), quote=True)}">{html.escape(str(strings['all_apps']))}</a>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <h2>Overview</h2>
+      <h2>{html.escape(str(strings['overview']))}</h2>
 {html_paragraphs(content['overview'])}
     </section>
 
     <section class="section">
-      <h2>Who It Is For</h2>
+      <h2>{html.escape(str(strings['audience']))}</h2>
       <ul>
 {html_list(content['audience'])}
       </ul>
     </section>
 
     <section class="section">
-      <h2>Main Features</h2>
+      <h2>{html.escape(str(strings['features']))}</h2>
       <ul>
 {html_list(content['features'])}
       </ul>
     </section>
 
     <section class="section">
-      <h2>How to Use</h2>
+      <h2>{html.escape(str(strings['usage']))}</h2>
       <ol>
 {html_list(content['usage'])}
       </ol>
     </section>
 
     <section class="section">
-      <h2>Pricing</h2>
+      <h2>{html.escape(str(strings['pricing']))}</h2>
       <p>{html.escape(content['pricing'])}</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      <p class="meta">{html.escape(str(strings['pricing_note']))}</p>
     </section>
 
     <section class="section">
-      <h2>Privacy</h2>
+      <h2>{html.escape(str(strings['privacy']))}</h2>
       <p>{html.escape(content['privacy'])}</p>
     </section>
 {screenshot_html}
     <section class="section">
-      <h2>FAQ</h2>
+      <h2>{html.escape(str(strings['faq']))}</h2>
 {faq_html}
     </section>
 
     <section class="section">
-      <h2>App Store</h2>
-      <p><a class="button primary" href="{html.escape(app_store_url(app), quote=True)}">Open {html.escape(content['name'])} on the App Store</a></p>
-      <p class="meta">Last updated: {html.escape(last_updated(app))}</p>
+      <h2>{html.escape(str(strings['app_store']))}</h2>
+      <p><a class="button primary" href="{html.escape(app_store_url(app, locale), quote=True)}">{html.escape(open_label)}</a></p>
+      <p class="meta">{html.escape(str(strings['last_updated']))}: {html.escape(last_updated(app))}</p>
     </section>
   </main>
 """
-    return render_shell(title, content["meta_description"], canonical, body, img, locale, json_ld(app, content, locale))
+    return render_shell(
+        title,
+        content["meta_description"],
+        canonical,
+        body,
+        img,
+        locale,
+        json_ld(app, content, locale),
+        alternates,
+        lang_links,
+    )
 
 
-def render_app_mini_card(app: dict[str, Any], overrides: dict[str, Any]) -> str:
+def render_app_mini_card(app: dict[str, Any], overrides: dict[str, Any], locale: str = DEFAULT_LOCALE) -> str:
+    strings = ui_strings(locale)
+    localized_name = override_string(localized_override(app, overrides, locale).get("name"), app_name(app))
+    icon_alt = str(strings["icon_alt"]).format(name=localized_name)
     img = icon_url(app)
-    icon = f'<img class="mini-icon" src="{html.escape(img, quote=True)}" alt="{html.escape(app_name(app), quote=True)} app icon" loading="lazy">' if img else ""
+    icon = f'<img class="mini-icon" src="{html.escape(img, quote=True)}" alt="{html.escape(icon_alt, quote=True)}" loading="lazy">' if img else ""
+    detail_href = html.escape(page_href(app, locale), quote=True)
     return f"""        <article class="app-mini-card">
           {icon}
-          <h2><a href="/apps/{html.escape(str(app['slug']), quote=True)}/">{html.escape(app_name(app))}</a></h2>
-          <p>{html.escape(short_description(app, overrides))}</p>
+          <h2><a href="{detail_href}">{html.escape(localized_name)}</a></h2>
+          <p>{html.escape(short_description(app, overrides, locale))}</p>
           <div class="app-actions">
-            <a class="app-link primary" href="/apps/{html.escape(str(app['slug']), quote=True)}/">Details</a>
-            <a class="app-link" href="{html.escape(app_store_url(app), quote=True)}">App Store →</a>
+            <a class="app-link primary" href="{detail_href}">{html.escape(str(strings['details']))}</a>
+            <a class="app-link" href="{html.escape(app_store_url(app, locale), quote=True)}">{html.escape(str(strings['app_store_link']))}</a>
           </div>
         </article>"""
 
 
-def render_category_page(slug: str, apps: list[dict[str, Any]], overrides: dict[str, Any]) -> str:
+def category_definition(slug: str, locale: str) -> dict[str, str]:
     definition = CATEGORY_DEFINITIONS[slug]
+    return definition.get(locale, definition[DEFAULT_LOCALE])
+
+
+def render_category_page(
+    slug: str,
+    apps: list[dict[str, Any]],
+    overrides: dict[str, Any],
+    locale: str = DEFAULT_LOCALE,
+    locales: list[str] | None = None,
+) -> str:
+    definition = category_definition(slug, locale)
+    strings = ui_strings(locale)
+    page_locales = locales or [DEFAULT_LOCALE]
+    alternates = hreflang_alternates(page_locales, lambda loc: category_url(slug, loc))
+    lang_links = language_links(page_locales, locale, lambda loc: category_href(slug, loc))
     title = f"{definition['title']} | ZEC Apps"
     description = definition["description"]
-    cards = "\n".join(render_app_mini_card(app, overrides) for app in apps)
+    cards = "\n".join(render_app_mini_card(app, overrides, locale) for app in apps)
     body = f"""
   <main>
     <section class="hero">
@@ -897,20 +1125,72 @@ def render_category_page(slug: str, apps: list[dict[str, Any]], overrides: dict[
         <h1>{html.escape(definition['title'])}</h1>
         <p class="tagline">{html.escape(description)}</p>
         <div class="actions">
-          <a class="button" href="/apps/">All ZEC Apps</a>
+          <a class="button" href="{html.escape(apps_index_href(locale), quote=True)}">{html.escape(str(strings['all_apps']))}</a>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <h2>Apps</h2>
+      <h2>{html.escape(str(strings['apps_heading']))}</h2>
       <div class="app-grid">
 {cards}
       </div>
     </section>
   </main>
 """
-    return render_shell(title, description, category_url(slug), body)
+    return render_shell(
+        title,
+        description,
+        category_url(slug, locale),
+        body,
+        "",
+        locale,
+        "",
+        alternates,
+        lang_links,
+    )
+
+
+def render_locale_apps_index(
+    apps: list[dict[str, Any]],
+    overrides: dict[str, Any],
+    locale: str,
+    locales: list[str],
+) -> str:
+    strings = ui_strings(locale)
+    title = str(strings["apps_index_title"])
+    description = str(strings["apps_index_description"])
+    alternates = hreflang_alternates(locales, apps_index_url)
+    lang_links = language_links(locales, locale, apps_index_href)
+    cards = "\n".join(render_app_mini_card(app, overrides, locale) for app in apps)
+    body = f"""
+  <main>
+    <section class="hero">
+      <div>
+        <h1>{html.escape(title)}</h1>
+        <p class="tagline">{html.escape(description)}</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>{html.escape(str(strings['apps_heading']))}</h2>
+      <div class="app-grid">
+{cards}
+      </div>
+    </section>
+  </main>
+"""
+    return render_shell(
+        f"{title} | ZEC Inc.",
+        description,
+        apps_index_url(locale),
+        body,
+        "",
+        locale,
+        "",
+        alternates,
+        lang_links,
+    )
 
 
 def remove_generated_dirs(valid_slugs: set[str], marker_name: str) -> None:
@@ -926,6 +1206,23 @@ def remove_generated_dirs(valid_slugs: set[str], marker_name: str) -> None:
             child.rmdir()
 
 
+def remove_stale_locale_dirs(parent_dir: Path, expected_locales: set[str]) -> None:
+    """Remove locale subdirectories of a generated page dir that are no longer produced."""
+    if not parent_dir.exists():
+        return
+    for child in parent_dir.iterdir():
+        if not child.is_dir() or child.name in expected_locales:
+            continue
+        if not (child / "index.html").exists():
+            continue
+        for path in sorted(child.rglob("*"), reverse=True):
+            if path.is_file():
+                path.unlink()
+            elif path.is_dir():
+                path.rmdir()
+        child.rmdir()
+
+
 def write_detail_pages(apps: list[dict[str, Any]], overrides: dict[str, Any], ctx: BuildContext) -> list[str]:
     generated_urls: list[str] = []
     valid_slugs = {str(app["slug"]) for app in apps} | set(CATEGORY_DEFINITIONS)
@@ -937,25 +1234,25 @@ def write_detail_pages(apps: list[dict[str, Any]], overrides: dict[str, Any], ct
         (app_dir / "index.html").write_text(render_detail_page(app, overrides, ctx), encoding="utf-8", newline="\n")
         generated_urls.append(page_url(app))
 
-        override = app_override_for(app, overrides)
-        locales = override.get("locales")
-        if isinstance(locales, dict):
-            for locale in sorted(locales):
-                if locale == "en" or not isinstance(locales[locale], dict):
-                    continue
-                locale_dir = app_dir / locale
-                locale_dir.mkdir(parents=True, exist_ok=True)
-                (locale_dir / "index.html").write_text(render_detail_page(app, overrides, ctx, locale), encoding="utf-8", newline="\n")
-                generated_urls.append(page_url(app, locale))
+        extra_locales = [locale for locale in app_locales(app, overrides) if locale != DEFAULT_LOCALE]
+        remove_stale_locale_dirs(app_dir, set(extra_locales))
+        for locale in extra_locales:
+            locale_dir = app_dir / locale
+            locale_dir.mkdir(parents=True, exist_ok=True)
+            (locale_dir / "index.html").write_text(render_detail_page(app, overrides, ctx, locale), encoding="utf-8", newline="\n")
+            generated_urls.append(page_url(app, locale))
     return generated_urls
 
 
-def write_category_pages(apps: list[dict[str, Any]], overrides: dict[str, Any], ctx: BuildContext) -> list[str]:
+def write_category_pages(
+    apps: list[dict[str, Any]], overrides: dict[str, Any], ctx: BuildContext, locales: list[str]
+) -> list[str]:
     category_apps: dict[str, list[dict[str, Any]]] = {slug: [] for slug in CATEGORY_DEFINITIONS}
     for app in apps:
         for slug in app_categories(app, overrides, ctx):
             category_apps[slug].append(app)
 
+    extra_locales = [locale for locale in locales if locale != DEFAULT_LOCALE]
     generated_urls: list[str] = []
     valid_slugs = {str(app["slug"]) for app in apps} | set(CATEGORY_DEFINITIONS)
     remove_generated_dirs(valid_slugs, CATEGORY_MARKER)
@@ -965,8 +1262,41 @@ def write_category_pages(apps: list[dict[str, Any]], overrides: dict[str, Any], 
         category_dir = APPS_DIR / slug
         category_dir.mkdir(parents=True, exist_ok=True)
         (category_dir / CATEGORY_MARKER).write_text("Generated by scripts/update_apps_page.py\n", encoding="utf-8")
-        (category_dir / "index.html").write_text(render_category_page(slug, apps_for_category, overrides), encoding="utf-8", newline="\n")
+        page_locales = [DEFAULT_LOCALE] + extra_locales
+        (category_dir / "index.html").write_text(
+            render_category_page(slug, apps_for_category, overrides, DEFAULT_LOCALE, page_locales),
+            encoding="utf-8",
+            newline="\n",
+        )
         generated_urls.append(category_url(slug))
+        remove_stale_locale_dirs(category_dir, set(extra_locales))
+        for locale in extra_locales:
+            locale_dir = category_dir / locale
+            locale_dir.mkdir(parents=True, exist_ok=True)
+            (locale_dir / "index.html").write_text(
+                render_category_page(slug, apps_for_category, overrides, locale, page_locales),
+                encoding="utf-8",
+                newline="\n",
+            )
+            generated_urls.append(category_url(slug, locale))
+    return generated_urls
+
+
+def write_locale_indexes(apps: list[dict[str, Any]], overrides: dict[str, Any], locales: list[str]) -> list[str]:
+    extra_locales = [locale for locale in locales if locale != DEFAULT_LOCALE]
+    remove_generated_dirs(set(extra_locales), LOCALE_INDEX_MARKER)
+    generated_urls: list[str] = []
+    page_locales = [DEFAULT_LOCALE] + extra_locales
+    for locale in extra_locales:
+        locale_dir = APPS_DIR / locale
+        locale_dir.mkdir(parents=True, exist_ok=True)
+        (locale_dir / LOCALE_INDEX_MARKER).write_text("Generated by scripts/update_apps_page.py\n", encoding="utf-8")
+        (locale_dir / "index.html").write_text(
+            render_locale_apps_index(apps, overrides, locale, page_locales),
+            encoding="utf-8",
+            newline="\n",
+        )
+        generated_urls.append(apps_index_url(locale))
     return generated_urls
 
 
@@ -1048,7 +1378,8 @@ def write_llms(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> None:
             "## Category Pages",
         ]
     )
-    for slug, definition in CATEGORY_DEFINITIONS.items():
+    for slug in CATEGORY_DEFINITIONS:
+        definition = category_definition(slug, DEFAULT_LOCALE)
         lines.append(f"- {definition['title']}: https://zec-inc.jp/apps/{slug}/")
     lines.extend(
         [
@@ -1061,7 +1392,13 @@ def write_llms(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> None:
 
 def write_manifest(apps: list[dict[str, Any]], category_urls: list[str]) -> None:
     detail_slugs = sorted(str(app["slug"]) for app in apps)
-    category_slugs = sorted(url.rstrip("/").rsplit("/", 1)[-1] for url in category_urls)
+    category_slugs = sorted(
+        {
+            slug
+            for slug in (url.rstrip("/").rsplit("/", 1)[-1] for url in category_urls)
+            if slug in CATEGORY_DEFINITIONS
+        }
+    )
     APPS_MANIFEST.write_text(
         json.dumps(
             {"detail_slugs": detail_slugs, "category_slugs": category_slugs},
@@ -1077,11 +1414,13 @@ def run_build(strict: bool = False) -> tuple[list[dict[str, Any]], list[str]]:
     ctx = BuildContext(strict=strict)
     overrides = load_overrides(ctx)
     apps = assign_slugs(fetch_apps(), overrides, ctx)
+    locales = [DEFAULT_LOCALE] + site_locales(overrides)
     update_apps_index(apps, overrides)
     detail_urls = write_detail_pages(apps, overrides, ctx)
-    category_urls = write_category_pages(apps, overrides, ctx)
+    locale_index_urls = write_locale_indexes(apps, overrides, locales)
+    category_urls = write_category_pages(apps, overrides, ctx, locales)
     write_manifest(apps, category_urls)
-    write_sitemap(detail_urls + category_urls)
+    write_sitemap(detail_urls + locale_index_urls + category_urls)
     write_robots()
     write_llms(apps, overrides)
 
