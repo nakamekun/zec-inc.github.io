@@ -5,13 +5,13 @@ ZEC Apps are small iPhone apps from ZEC Inc. for everyday records, quick checks,
 Canonical app index: https://zec-inc.jp/apps/
 
 ## Main Apps
-- PhotoDay: One Photo a Day: Keep one photo a day as a simple memory calendar, with notes, widgets, Frame Mode, and free optional... https://zec-inc.jp/apps/photo-day/
-- CleanURL Tap - Tidy Long Links: Clean copied links by removing common tracking clutter before saving, opening, or sharing them. https://zec-inc.jp/apps/cleanurl-tap/
+- Foot Size Check: Measure foot length and width from a photo, using a sheet of A4 paper as the size reference. https://zec-inc.jp/apps/foot-size-check/
+- DailyAlbum: One Photo a Day: Keep one photo a day as a simple memory calendar, with notes, widgets, Frame Mode, and free optional... https://zec-inc.jp/apps/photo-day/
 - Big Text Note: Write one large, easy-to-read note for quick display, reminders, labels, and simple communication. https://zec-inc.jp/apps/big-text-note/
-- LaundryTap: A quick tap-based laundry record for remembering whether the laundry was done, moved, or checked. https://zec-inc.jp/apps/laundrytap/
-- PillTap: Record medication checks quickly without turning the task into a complex health tracking workflow. https://zec-inc.jp/apps/pilltap/
-- Packed by ZEC: Prepare for trips and daily outings with a focused packing checklist and widget-friendly checking flow. https://zec-inc.jp/apps/packed/
-- PoopTap: A simple daily bowel movement tracker and stool log for private poop records, digestion notes, and... https://zec-inc.jp/apps/pooptap-daily-tracker/
+- Mute Video Before Share: Remove all sound from a video in one tap — no re-encoding, no quality loss, no length limit, no watermark. https://zec-inc.jp/apps/mute-video-before-share/
+- Study Buddy Timer: One-tap study stopwatch that tracks daily study time and turns minutes into EXP and levels for a buddy. https://zec-inc.jp/apps/study-buddy-timer/
+- CleanURL Tap - Tidy Long Links: Clean copied links by removing common tracking clutter before saving, opening, or sharing them. https://zec-inc.jp/apps/cleanurl-tap/
+- Hong Kong Phrase Card: 160 offline Cantonese travel phrase cards for Hong Kong — show large Traditional Chinese text or play speech. https://zec-inc.jp/apps/hong-kong-phrase-card/
 
 ## Category Pages
 - Photo and Memory Apps: https://zec-inc.jp/apps/photo-memory/
