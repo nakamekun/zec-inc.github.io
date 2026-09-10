@@ -1315,7 +1315,7 @@ def update_apps_index(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> 
 def write_sitemap(urls: list[str]) -> None:
     unique_urls = []
     seen: set[str] = set()
-    for url in [SITE_ORIGIN + "/", SITE_ORIGIN + "/apps/"] + urls:
+    for url in [SITE_ORIGIN + "/", SITE_ORIGIN + "/apps/", SITE_ORIGIN + "/works/"] + urls:
         if url not in seen:
             seen.add(url)
             unique_urls.append(url)
