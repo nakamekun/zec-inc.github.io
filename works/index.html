@@ -4,206 +4,194 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>制作物 | 合同会社ゼク</title>
-  <meta name="description" content="合同会社ゼク（ZEC Inc.）が AI 制作パイプラインで作った制作物の一覧。LINE アニメーションスタンプ「みけねこの毎日あいさつ（動く）」ほか。">
+  <meta name="description" content="合同会社ゼク（ZEC Inc.）の制作物。LINE アニメーションスタンプ「みけねこの毎日あいさつ（動く）」。">
   <link rel="canonical" href="https://zec-inc.jp/works/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Inc.">
   <meta property="og:title" content="制作物 | 合同会社ゼク">
-  <meta property="og:description" content="合同会社ゼクが AI 制作パイプラインで作った制作物の一覧。">
+  <meta property="og:description" content="LINE アニメーションスタンプ「みけねこの毎日あいさつ（動く）」">
   <meta property="og:url" content="https://zec-inc.jp/works/">
   <meta property="og:image" content="https://zec-inc.jp/works/img/mikeneko-8.png">
   <style>
     :root {
-      --bg: #f9f9f9;
-      --surface: #ffffff;
-      --text: #333333;
-      --muted: #64748b;
-      --line: #e2e8f0;
-      --header: #2c3e50;
+      --bg: #faf9f6;
+      --tile: #ffffff;
+      --text: #2a2a2a;
+      --muted: #8a8580;
+      --line: #e8e4de;
+      --brand: #2c3e50;
       --link: #2563eb;
-      --tag-bg: #eef2ff;
-      --tag-text: #3730a3;
     }
 
     * { box-sizing: border-box; }
 
+    html { background: var(--bg); }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
       margin: 0;
-      line-height: 1.7;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
       background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .topbar {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 22px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 0.9em;
+    }
+
+    .topbar a { color: var(--brand); text-decoration: none; }
+    .topbar a:hover { text-decoration: underline; }
+    .brand { font-weight: 600; letter-spacing: 0.02em; }
+    .topbar nav { display: flex; gap: 20px; }
+
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+
+    .work-title {
+      text-align: center;
+      margin: 0 0 56px;
+    }
+
+    .work-title h1 {
+      margin: 0;
+      font-size: 1.6em;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       color: var(--text);
     }
 
-    header {
-      background-color: var(--header);
-      color: #fff;
-      padding: 2em 1em;
-      text-align: center;
+    .work-title p {
+      margin: 10px 0 0;
+      font-size: 0.9em;
+      color: var(--muted);
+      letter-spacing: 0.08em;
     }
 
-    .header-inner { max-width: 900px; margin: 0 auto; }
-    header h1 { margin: 0; font-size: 2em; }
-    header p { margin: 0.5em 0 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
 
-    .site-nav {
-      margin-top: 1.25em;
+    .tile {
+      background: var(--tile);
+      border-radius: 14px;
+      aspect-ratio: 320 / 270;
       display: flex;
+      align-items: center;
       justify-content: center;
-      gap: 1em;
-      flex-wrap: wrap;
-      font-size: 0.95em;
+      overflow: hidden;
+      box-shadow: 0 1px 2px rgba(40, 30, 20, 0.04), 0 8px 24px rgba(40, 30, 20, 0.05);
     }
 
-    .site-nav a, .footer-link { color: inherit; text-decoration: none; }
-    .site-nav a:hover, .footer-link:hover { text-decoration: underline; }
-
-    main {
-      max-width: 900px;
-      margin: 2em auto;
-      padding: 0 1em;
-      background: var(--surface);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-      border-radius: 6px;
+    .tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
 
-    section {
-      padding: 2em 1em;
-      border-bottom: 1px solid #eee;
+    .meta {
+      margin: 64px auto 0;
+      max-width: 640px;
+      text-align: center;
+      font-size: 0.9em;
+      color: var(--muted);
+      line-height: 2;
     }
 
-    section:last-child { border-bottom: none; }
-
-    h2 { color: var(--header); margin-top: 0; }
-    h3 { color: var(--header); margin: 1.5em 0 0.5em; font-size: 1.1em; }
-
-    .lead { color: var(--muted); margin-top: 0; }
-
-    .work { display: grid; grid-template-columns: 240px 1fr; gap: 1.5em; align-items: start; }
-    .work-figure { margin: 0; }
-    .work-figure img { width: 240px; height: 240px; display: block; background: #fff; border: 1px solid var(--line); border-radius: 6px; }
-    .work-figure figcaption { font-size: 0.85em; color: var(--muted); margin-top: 0.4em; }
-    .work-body h2 { margin-bottom: 0.25em; }
-
-    .meta { list-style: none; padding: 0; margin: 0.5em 0 1em; display: flex; flex-wrap: wrap; gap: 0.5em 1.25em; font-size: 0.92em; color: var(--muted); }
-    .meta strong { color: var(--text); font-weight: 600; margin-right: 0.35em; }
-
-    .status {
+    .meta .status {
       display: inline-block;
-      background: var(--tag-bg);
-      color: var(--tag-text);
+      border: 1px solid var(--line);
       border-radius: 999px;
-      padding: 0.1em 0.8em;
-      font-size: 0.85em;
-      font-weight: 600;
+      padding: 0 14px;
+      color: var(--muted);
+      background: #fff;
     }
 
-    .row-figure { margin: 1.5em 0 0; }
-    .row-figure img { width: 100%; height: auto; display: block; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
-    .row-figure figcaption { font-size: 0.85em; color: var(--muted); margin-top: 0.4em; }
+    .meta a { color: var(--link); text-decoration: none; }
+    .meta a:hover { text-decoration: underline; }
+    .meta .dot { margin: 0 8px; color: var(--line); }
 
-    ol.pipeline { padding-left: 1.4em; margin: 0.5em 0; }
-    ol.pipeline li { margin-bottom: 0.35em; }
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: var(--muted);
+      padding: 24px 24px 40px;
+      border-top: 1px solid var(--line);
+    }
 
-    .links { margin-top: 1.25em; display: flex; flex-wrap: wrap; gap: 0.75em 1.5em; }
-    .links a { color: var(--link); font-weight: 500; text-decoration: none; }
-    .links a:hover { text-decoration: underline; }
-    .links .pending { color: var(--muted); }
+    footer a { color: inherit; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-links { margin-top: 6px; }
 
-    .note { font-size: 0.9em; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 1em; margin-top: 1.5em; }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      main { padding: 32px 16px 72px; }
+      .work-title { margin-bottom: 36px; }
+    }
 
-    footer { text-align: center; font-size: 0.9em; color: #888; padding: 1em 1em 2em; }
-    .footer-links { margin-top: 0.5em; }
-
-    @media (max-width: 640px) {
-      header h1 { font-size: 1.5em; }
-      .site-nav { gap: 0.75em; font-size: 0.9em; }
-      .work { grid-template-columns: 1fr; }
-      .work-figure img { width: 200px; height: 200px; }
+    @media (max-width: 420px) {
+      .grid { gap: 12px; }
+      .tile { border-radius: 10px; }
+      .topbar nav { gap: 14px; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="header-inner">
-      <h1>制作物</h1>
-      <p>合同会社ゼクが AI 制作パイプラインで作ったもの</p>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="/">ホーム</a>
+    <div class="topbar">
+      <a class="brand" href="/">合同会社ゼク</a>
+      <nav aria-label="Primary">
         <a href="/apps/">Apps</a>
-        <a href="/works/">制作物</a>
-        <a href="/#company">会社情報</a>
-        <a href="/#contact">お問い合わせ</a>
+        <a href="/works/" aria-current="page">Works</a>
       </nav>
     </div>
   </header>
 
   <main>
 
-    <section id="about">
-      <h2>このページについて</h2>
-      <p class="lead">画像生成 AI と自社ツールで「揃える・動かす・検査する」工程を組み、審査のある販売プラットフォームに出すまでを一人法人で完結させた制作物を載せています。売上の大小より、工程が再現できることを重視しています。制作の経緯は会社公式 note に連載します。</p>
-    </section>
+    <div class="work-title">
+      <h1>みけねこの毎日あいさつ（動く）</h1>
+      <p>LINE アニメーションスタンプ · 8 個 · 2026</p>
+    </div>
 
-    <section id="mikeneko">
-      <div class="work">
-        <figure class="work-figure">
-          <img src="/works/img/mikeneko-main.png" width="240" height="240" alt="三毛猫のキャラクターが動くメイン画像">
-          <figcaption>メイン画像（APNG、240×240）</figcaption>
-        </figure>
-        <div class="work-body">
-          <h2>みけねこの毎日あいさつ（動く）</h2>
-          <span class="status">LINE Creators Market 審査中（2026年9月10日 申請）</span>
-          <ul class="meta">
-            <li><strong>種別</strong>LINE アニメーションスタンプ 8 個</li>
-            <li><strong>名義</strong>ZEC（合同会社ゼク）</li>
-            <li><strong>価格</strong>250 円</li>
-            <li><strong>文言</strong>ありがとう / OK！ / おつかれ〜 / ごめんね / おはよ〜 / おやすみ… / やったー！ / おねがい！</li>
-          </ul>
-          <p>のんびりした三毛猫が、毎日の返事とあいさつを「構え → 動作 → 決め → 余韻」のコマ差し替えで演じます。文字はセリフとして頭と同じ大きさで入れ、キャラクターに重ねません。</p>
-        </div>
-      </div>
+    <div class="grid">
+      <div class="tile"><img src="/works/img/mikeneko/01.png" width="320" height="270" alt="ありがとう"></div>
+      <div class="tile"><img src="/works/img/mikeneko/02.png" width="320" height="270" alt="OK！"></div>
+      <div class="tile"><img src="/works/img/mikeneko/03.png" width="320" height="270" alt="おつかれ〜"></div>
+      <div class="tile"><img src="/works/img/mikeneko/04.png" width="320" height="270" alt="ごめんね"></div>
+      <div class="tile"><img src="/works/img/mikeneko/05.png" width="320" height="270" alt="おはよ〜" loading="lazy"></div>
+      <div class="tile"><img src="/works/img/mikeneko/06.png" width="320" height="270" alt="おやすみ…" loading="lazy"></div>
+      <div class="tile"><img src="/works/img/mikeneko/07.png" width="320" height="270" alt="やったー！" loading="lazy"></div>
+      <div class="tile"><img src="/works/img/mikeneko/08.png" width="320" height="270" alt="おねがい！" loading="lazy"></div>
+    </div>
 
-      <figure class="row-figure">
-        <img src="/works/img/mikeneko-8.png" width="1280" height="147" alt="8 個のスタンプの決めポーズを横に並べた一覧">
-        <figcaption>8 個の決めポーズ。大きさ・目・線の太さをセットで揃えています。</figcaption>
-      </figure>
-
-      <h3>作り方</h3>
-      <ol class="pipeline">
-        <li>売れ筋セットの実測から「売れるスタンプの原則」を 25 項目に書き出す</li>
-        <li>基準となるキャラクター 1 枚を確定し、1 スタンプにつき 4 コマのスプライトシートを画像生成 AI（GPT Image）で描く</li>
-        <li>自社ツールで切り出し、立ち姿の高さで大きさを揃え、足元で位置を揃える</li>
-        <li>振付データからコマ差し替え・尻尾と耳の副次動作・文字の出現を組み立て、APNG（320×270、4 秒以内、1MB 以内）に書き出す</li>
-        <li>原則のうち機械で測れる 16 項目を自動検査し、通らなければビルドを止める</li>
-        <li>2 倍拡大した全コマを別系統の AI と人が検品し、指摘を直して再ビルド</li>
-      </ol>
-      <p>画像は AI で生成し、組み立てと検査は自社ツールで行っています。既存キャラクターの模倣はなく、文字は SIL Open Font License のフォント（Mochiy Pop One）を使用しています。</p>
-
-      <div class="links">
-        <span class="pending">LINE STORE（販売開始後にリンクを掲載）</span>
-        <a href="https://note.com/zec_apps" target="_blank" rel="noopener">制作の経緯（会社公式 note）</a>
-      </div>
-
-      <p class="note">2026年9月10日 審査申請。承認・販売開始・販売数はこのページに追記します。</p>
-    </section>
+    <p class="meta">
+      <span class="status">LINE Creators Market 審査中</span><br>
+      ZEC<span class="dot">·</span>250 円<span class="dot">·</span><a href="https://note.com/zec_apps" target="_blank" rel="noopener">note</a>
+    </p>
 
   </main>
 
   <footer>
     <div>&copy; 2026 ZEC Inc.</div>
     <div class="footer-links">
-      <a class="footer-link" href="/">Home</a>
-      <span aria-hidden="true"> · </span>
-      <a class="footer-link" href="/apps/">Apps</a>
-      <span aria-hidden="true"> · </span>
-      <a class="footer-link" href="/works/">Works</a>
-      <span aria-hidden="true"> · </span>
-      <a class="footer-link" href="/privacy.html">Privacy</a>
-      <span aria-hidden="true"> · </span>
-      <a class="footer-link" href="/support.html">Support</a>
+      <a href="/">Home</a> · <a href="/apps/">Apps</a> · <a href="/works/">Works</a> · <a href="/privacy.html">Privacy</a>
     </div>
   </footer>
 
