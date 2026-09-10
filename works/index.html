@@ -200,7 +200,7 @@
       <button class="tile" type="button" data-anim="/works/img/mikeneko/08.png" aria-label="おねがい！ を再生"><img src="/works/img/mikeneko/08_still.png" width="320" height="270" alt="おねがい！"><span class="play" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 1.5v9l8-4.5z" fill="currentColor"/></svg></span></button>
     </div>
 
-    <p class="hint">タップで再生</p>
+    <p class="hint">タップまたはマウスを重ねると動きます</p>
 
     <p class="meta">
       <span class="status">LINE Creators Market 申請準備中</span><br>
@@ -219,42 +219,53 @@
   <script>
     (function () {
       var PLAY_MS = 4300;
-      var tiles = document.querySelectorAll('.tile');
-      Array.prototype.forEach.call(tiles, function (tile) {
+      var hoverable = window.matchMedia('(hover: hover)').matches;
+
+      function toBlob(src) {
+        if (src.indexOf('data:') === 0) {
+          var comma = src.indexOf(',');
+          var bin = atob(src.slice(comma + 1));
+          var bytes = new Uint8Array(bin.length);
+          for (var i = 0; i < bin.length; i++) { bytes[i] = bin.charCodeAt(i); }
+          return Promise.resolve(new Blob([bytes], { type: 'image/png' }));
+        }
+        return fetch(src).then(function (r) { return r.blob(); });
+      }
+
+      Array.prototype.forEach.call(document.querySelectorAll('.tile'), function (tile) {
         var img = tile.querySelector('img');
         var still = img.getAttribute('src');
         var anim = tile.getAttribute('data-anim');
         var blob = null;
         var url = null;
         var timer = null;
+        var loading = false;
 
-        function show(u) {
+        function stop() {
+          tile.classList.remove('playing');
+          img.src = still;
+          if (url) { URL.revokeObjectURL(url); url = null; }
+        }
+
+        function start() {
           if (url) { URL.revokeObjectURL(url); }
-          url = u;
-          img.src = u;
+          url = URL.createObjectURL(blob);
+          img.src = url;
+          tile.classList.add('playing');
+          clearTimeout(timer);
+          timer = setTimeout(stop, PLAY_MS);
         }
 
         function play() {
-          tile.classList.add('playing');
-          clearTimeout(timer);
-          var start = function () {
-            show(URL.createObjectURL(blob));
-            timer = setTimeout(function () {
-              tile.classList.remove('playing');
-              img.src = still;
-              if (url) { URL.revokeObjectURL(url); url = null; }
-            }, PLAY_MS);
-          };
           if (blob) { start(); return; }
-          fetch(anim).then(function (r) { return r.blob(); }).then(function (b) {
-            blob = b;
-            start();
-          }).catch(function () {
-            tile.classList.remove('playing');
-          });
+          if (loading) { return; }
+          loading = true;
+          toBlob(anim).then(function (b) { blob = b; loading = false; start(); })
+            .catch(function () { loading = false; });
         }
 
         tile.addEventListener('click', play);
+        if (hoverable) { tile.addEventListener('mouseenter', play); }
       });
     })();
   </script>
