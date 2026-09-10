@@ -16,7 +16,6 @@
   <style>
     :root {
       --bg: #faf9f6;
-      --tile: #ffffff;
       --text: #2a2a2a;
       --muted: #8a8580;
       --line: #e8e4de;
@@ -62,7 +61,7 @@
 
     .work-title {
       text-align: center;
-      margin: 0 0 56px;
+      margin: 0 0 48px;
     }
 
     .work-title h1 {
@@ -70,7 +69,6 @@
       font-size: 1.6em;
       font-weight: 600;
       letter-spacing: 0.04em;
-      color: var(--text);
     }
 
     .work-title p {
@@ -83,19 +81,21 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      gap: 28px 20px;
     }
 
     .tile {
-      background: var(--tile);
-      border-radius: 14px;
+      position: relative;
       aspect-ratio: 320 / 270;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      box-shadow: 0 1px 2px rgba(40, 30, 20, 0.04), 0 8px 24px rgba(40, 30, 20, 0.05);
+      border: 0;
+      padding: 0;
+      background: transparent;
+      cursor: pointer;
+      border-radius: 12px;
+      -webkit-tap-highlight-color: transparent;
     }
+
+    .tile:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
 
     .tile img {
       width: 100%;
@@ -104,11 +104,38 @@
       display: block;
     }
 
-    .meta {
-      margin: 64px auto 0;
-      max-width: 640px;
+    .tile .play {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      transition: opacity 0.2s;
+      pointer-events: none;
+    }
+
+    .tile .play svg { width: 12px; height: 12px; margin-left: 2px; }
+    .tile.playing .play { opacity: 0; }
+
+    .hint {
       text-align: center;
-      font-size: 0.9em;
+      font-size: 0.82em;
+      color: var(--muted);
+      margin: 28px 0 0;
+      letter-spacing: 0.04em;
+    }
+
+    .meta {
+      margin: 56px auto 0;
+      text-align: center;
+      font-size: 0.88em;
       color: var(--muted);
       line-height: 2;
     }
@@ -118,13 +145,11 @@
       border: 1px solid var(--line);
       border-radius: 999px;
       padding: 0 14px;
-      color: var(--muted);
       background: #fff;
     }
 
     .meta a { color: var(--link); text-decoration: none; }
     .meta a:hover { text-decoration: underline; }
-    .meta .dot { margin: 0 8px; color: var(--line); }
 
     footer {
       text-align: center;
@@ -139,15 +164,9 @@
     .footer-links { margin-top: 6px; }
 
     @media (max-width: 900px) {
-      .grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .grid { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
       main { padding: 32px 16px 72px; }
-      .work-title { margin-bottom: 36px; }
-    }
-
-    @media (max-width: 420px) {
-      .grid { gap: 12px; }
-      .tile { border-radius: 10px; }
-      .topbar nav { gap: 14px; }
+      .work-title { margin-bottom: 32px; }
     }
   </style>
 </head>
@@ -170,20 +189,22 @@
       <p>LINE アニメーションスタンプ · 8 個 · 2026</p>
     </div>
 
-    <div class="grid">
-      <div class="tile"><img src="/works/img/mikeneko/01.png" width="320" height="270" alt="ありがとう"></div>
-      <div class="tile"><img src="/works/img/mikeneko/02.png" width="320" height="270" alt="OK！"></div>
-      <div class="tile"><img src="/works/img/mikeneko/03.png" width="320" height="270" alt="おつかれ〜"></div>
-      <div class="tile"><img src="/works/img/mikeneko/04.png" width="320" height="270" alt="ごめんね"></div>
-      <div class="tile"><img src="/works/img/mikeneko/05.png" width="320" height="270" alt="おはよ〜" loading="lazy"></div>
-      <div class="tile"><img src="/works/img/mikeneko/06.png" width="320" height="270" alt="おやすみ…" loading="lazy"></div>
-      <div class="tile"><img src="/works/img/mikeneko/07.png" width="320" height="270" alt="やったー！" loading="lazy"></div>
-      <div class="tile"><img src="/works/img/mikeneko/08.png" width="320" height="270" alt="おねがい！" loading="lazy"></div>
+    <div class="grid" id="grid">
+      <button class="tile" type="button" data-anim="/works/img/mikeneko/01.png" aria-label="ありがとう を再生"><img src="/works/img/mikeneko/01_still.png" width="320" height="270" alt="ありがとう"><span class="play" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 1.5v9l8-4.5z" fill="currentColor"/></svg></span></button>
+      <button class="tile" type="button" data-anim="/works/img/mikeneko/02.png" aria-label="OK！ を再生"><img src="/works/img/mikeneko/02_still.png" width="320" height="270" alt="OK！"><span class="play" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 1.5v9l8-4.5z" fill="currentColor"/></svg></span></button>
+      <button class="tile" type="button" data-anim="/works/img/mikeneko/03.png" aria-label="おつかれ〜 を再生"><img src="/works/img/mikeneko/03_still.png" width="320" height="270" alt="おつかれ〜"><span class="play" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 1.5v9l8-4.5z" fill="currentColor"/></svg></span></button>
+      <button class="tile" type="button" data-anim="/works/img/mikeneko/04.png" aria-label="ごめんね を再生"><img src="/works/img/mikeneko/04_still.png" width="320" height="270" alt="ごめんね"><span class="play" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 1.5v9l8-4.5z" fill="currentColor"/></svg></span></button>
+      <button class="tile" type="button" data-anim="/works/img/mikeneko/05.png" aria-label="おはよ〜 を再生"><img src="/works/img/mikeneko/05_still.png" width="320" height="270" alt="おはよ〜"><span class="play" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 1.5v9l8-4.5z" fill="currentColor"/></svg></span></button>
+      <button class="tile" type="button" data-anim="/works/img/mikeneko/06.png" aria-label="おやすみ… を再生"><img src="/works/img/mikeneko/06_still.png" width="320" height="270" alt="おやすみ…"><span class="play" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 1.5v9l8-4.5z" fill="currentColor"/></svg></span></button>
+      <button class="tile" type="button" data-anim="/works/img/mikeneko/07.png" aria-label="やったー！ を再生"><img src="/works/img/mikeneko/07_still.png" width="320" height="270" alt="やったー！"><span class="play" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 1.5v9l8-4.5z" fill="currentColor"/></svg></span></button>
+      <button class="tile" type="button" data-anim="/works/img/mikeneko/08.png" aria-label="おねがい！ を再生"><img src="/works/img/mikeneko/08_still.png" width="320" height="270" alt="おねがい！"><span class="play" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 1.5v9l8-4.5z" fill="currentColor"/></svg></span></button>
     </div>
+
+    <p class="hint">タップで再生</p>
 
     <p class="meta">
       <span class="status">LINE Creators Market 審査中</span><br>
-      ZEC<span class="dot">·</span>250 円<span class="dot">·</span><a href="https://note.com/zec_apps" target="_blank" rel="noopener">note</a>
+      <a href="https://note.com/zec_apps" target="_blank" rel="noopener">note</a>
     </p>
 
   </main>
@@ -194,6 +215,49 @@
       <a href="/">Home</a> · <a href="/apps/">Apps</a> · <a href="/works/">Works</a> · <a href="/privacy.html">Privacy</a>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var PLAY_MS = 4300;
+      var tiles = document.querySelectorAll('.tile');
+      Array.prototype.forEach.call(tiles, function (tile) {
+        var img = tile.querySelector('img');
+        var still = img.getAttribute('src');
+        var anim = tile.getAttribute('data-anim');
+        var blob = null;
+        var url = null;
+        var timer = null;
+
+        function show(u) {
+          if (url) { URL.revokeObjectURL(url); }
+          url = u;
+          img.src = u;
+        }
+
+        function play() {
+          tile.classList.add('playing');
+          clearTimeout(timer);
+          var start = function () {
+            show(URL.createObjectURL(blob));
+            timer = setTimeout(function () {
+              tile.classList.remove('playing');
+              img.src = still;
+              if (url) { URL.revokeObjectURL(url); url = null; }
+            }, PLAY_MS);
+          };
+          if (blob) { start(); return; }
+          fetch(anim).then(function (r) { return r.blob(); }).then(function (b) {
+            blob = b;
+            start();
+          }).catch(function () {
+            tile.classList.remove('playing');
+          });
+        }
+
+        tile.addEventListener('click', play);
+      });
+    })();
+  </script>
 
 </body>
 </html>
