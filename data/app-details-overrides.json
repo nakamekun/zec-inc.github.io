@@ -2,15 +2,15 @@
   "6761641437": {
     "slug": "photo-day",
     "short_description": "Keep one photo a day as a simple memory calendar, with notes, widgets, Frame Mode, and free optional iCloud sync.",
-    "meta_description": "PhotoDay is a one-photo-a-day iPhone memory app with a photo calendar, 300-character notes and search, widgets, Frame Mode, and free optional iCloud sync.",
+    "meta_description": "DailyAlbum is a one-photo-a-day iPhone memory app with a photo calendar, 300-character notes and search, widgets, Frame Mode, and free optional iCloud sync.",
     "categories": [
       "photo-memory",
       "widgets",
       "family"
     ],
     "overview": [
-      "PhotoDay keeps a small, steady photo record without turning it into a photo management task. Open a date, choose one photo that captures the day, and the daily choices grow into a memory calendar.",
-      "It fits family life, kids growing up, pets, trips, plants, creative projects, and ordinary days worth remembering. Empty days can even fill themselves: PhotoDay quietly suggests one good photo, favoring people and pets and skipping screenshots and document shots, with all processing done on the device.",
+      "DailyAlbum keeps a small, steady photo record without turning it into a photo management task. Open a date, choose one photo that captures the day, and the daily choices grow into a memory calendar.",
+      "It fits family life, kids growing up, pets, trips, plants, creative projects, and ordinary days worth remembering. Empty days can even fill themselves: DailyAlbum quietly suggests one good photo, favoring people and pets and skipping screenshots and document shots, with all processing done on the device.",
       "Each day can hold a note of up to 300 characters, and you can search notes later to find a day again. Frame Mode shows today's photo full screen with its date and note, so a spare iPad or an old iPhone can work as a family photo frame."
     ],
     "target_users": [
@@ -28,39 +28,39 @@
       "Free optional iCloud sync that restores your records after a phone change or reinstall"
     ],
     "how_to_use": [
-      "Install PhotoDay from the App Store.",
+      "Install DailyAlbum from the App Store.",
       "Open a date and choose one photo that captures the day.",
       "Add a short note if you want (up to 300 characters per day).",
       "Turn on iCloud Sync (free, optional) so your records survive a new phone or a reinstall.",
       "Add the widget or use Frame Mode to revisit saved days without opening the app.",
       "Share a favorite day as a card - photo, date, and note - whenever you choose to."
     ],
-    "pricing": "The core app is free: the calendar, photo picking, notes, note search, and iCloud Sync. PhotoDay Plus is a one-time purchase (not a subscription) that adds PhotoDay Archive, unlimited Frame Mode, unlimited monthly album replays, and multi-device sync. See the App Store for the current price and availability.",
-    "privacy": "No account is required, and PhotoDay never uploads your photos. With iCloud Sync on, only your photo choices and notes are stored in your personal iCloud, where the developer cannot read them. See the App Store privacy label for current details.",
+    "pricing": "The core app is free: the calendar, photo picking, notes, note search, and iCloud Sync. DailyAlbum Plus is a one-time purchase (not a subscription) that adds DailyAlbum Archive, unlimited Frame Mode, unlimited monthly album replays, and multi-device sync. See the App Store for the current price and availability.",
+    "privacy": "No account is required. Photos are processed on your device and are not sent anywhere by default. With iCloud Sync on (free), only your day choices and notes are stored in your personal iCloud. Only if you turn on photo sync (DailyAlbum Plus) or family sharing (DailyAlbum Family) is a copy of the photo you chose stored in your own iCloud, where the developer cannot read it. Full policy: https://dailyalbum.app/privacy/",
     "faq": [
       {
-        "question": "What is PhotoDay for?",
-        "answer": "PhotoDay keeps a one-photo-a-day record of everyday life, family moments, trips, hobbies, and projects, arranged as a memory calendar you can revisit."
+        "question": "What is DailyAlbum for?",
+        "answer": "DailyAlbum keeps a one-photo-a-day record of everyday life, family moments, trips, hobbies, and projects, arranged as a memory calendar you can revisit."
       },
       {
-        "question": "Is PhotoDay a full photo library manager?",
-        "answer": "No. PhotoDay focuses on choosing and remembering one photo per day. It does not replace the Photos app or a full album system."
+        "question": "Is DailyAlbum a full photo library manager?",
+        "answer": "No. DailyAlbum focuses on choosing and remembering one photo per day. It does not replace the Photos app or a full album system."
       },
       {
-        "question": "Does PhotoDay post my photos publicly?",
+        "question": "Does DailyAlbum post my photos publicly?",
         "answer": "No. There is no social feed and nothing is published automatically. When you want to share a day, you create a card with the photo, date, and note, and share it yourself."
       },
       {
-        "question": "How much of PhotoDay is free?",
-        "answer": "The calendar, photo picking, notes up to 300 characters, note search, and iCloud Sync are free. PhotoDay Plus, a one-time purchase, adds PhotoDay Archive, unlimited Frame Mode, unlimited monthly album replays, and multi-device sync."
+        "question": "How much of DailyAlbum is free?",
+        "answer": "The calendar, photo picking, notes up to 300 characters, note search, and iCloud Sync are free. DailyAlbum Plus, a one-time purchase, adds DailyAlbum Archive, unlimited Frame Mode, unlimited monthly album replays, and multi-device sync."
       },
       {
         "question": "Where are my photos stored?",
-        "answer": "PhotoDay uses photos from your iPhone photo library. When you choose a photo for a day, PhotoDay remembers which photo you chose — it does not copy the photo itself. If the original is deleted from the Photos app, PhotoDay may no longer be able to show it, unless it was saved with PhotoDay Archive. When iCloud Sync is on, your choices and notes are stored only in your personal iCloud."
+        "answer": "DailyAlbum uses photos from your iPhone photo library. When you choose a photo for a day, DailyAlbum remembers which photo you chose — it does not copy the photo itself. If the original is deleted from the Photos app, DailyAlbum may no longer be able to show it, unless it was saved with DailyAlbum Archive. When iCloud Sync is on, your choices and notes are stored only in your personal iCloud."
       },
       {
         "question": "Will my records survive a new iPhone?",
-        "answer": "Yes, if you turn on iCloud Sync. iCloud Sync is free for everyone. Its purpose is simple: your photo choices and notes exist only in PhotoDay, so this keeps them safe when you switch phones or reinstall the app. How to use it: open Settings, and under iCloud Sync turn on \"Sync choices & notes\" (you need to be signed in to iCloud). On a new iPhone, turn it on again and your records come back. Everything is stored only in your personal iCloud — photos themselves are never uploaded; they follow your photo library transfer, such as iCloud Photos."
+        "answer": "Yes, if you turn on iCloud Sync. iCloud Sync is free for everyone. Its purpose is simple: your photo choices and notes exist only in DailyAlbum, so this keeps them safe when you switch phones or reinstall the app. How to use it: open Settings, and under iCloud Sync turn on \"Sync choices & notes\" (you need to be signed in to iCloud). On a new iPhone, turn it on again and your records come back. Everything is stored only in your personal iCloud — photos themselves are never uploaded; they follow your photo library transfer, such as iCloud Photos."
       },
       {
         "question": "Does restore happen automatically?",
@@ -68,35 +68,35 @@
       },
       {
         "question": "What's the difference between the two iCloud Sync options?",
-        "answer": "iCloud Sync keeps your day choices and notes safe in your personal iCloud, so they survive a new phone or reinstall and appear on your other devices — for free. The photos themselves aren't uploaded; each device shows them from its own photo library.\n\nIf you use iCloud Photos, that's usually all you need: the photos you keep are already on your other devices, so even a spare iPad can become a photo frame at no extra cost.\n\nIf you don't use iCloud Photos, turn on Sync this day's photo (PhotoDay Plus). For a little iCloud storage, PhotoDay keeps a private copy of each day's photo in your own iCloud, so your days still appear on your other devices — and an old iPhone or iPad can become a family photo frame. Only you can open them; the developer cannot read your data."
+        "answer": "iCloud Sync keeps your day choices and notes safe in your personal iCloud, so they survive a new phone or reinstall and appear on your other devices — for free. The photos themselves aren't uploaded; each device shows them from its own photo library.\n\nIf you use iCloud Photos, that's usually all you need: the photos you keep are already on your other devices, so even a spare iPad can become a photo frame at no extra cost.\n\nIf you don't use iCloud Photos, turn on Sync this day's photo (DailyAlbum Plus). For a little iCloud storage, DailyAlbum keeps a private copy of each day's photo in your own iCloud, so your days still appear on your other devices — and an old iPhone or iPad can become a family photo frame. Only you can open them; the developer cannot read your data."
       },
       {
         "question": "What happens if I delete a photo from Photos?",
-        "answer": "If you delete the original photo from the Photos app, it may no longer be available in PhotoDay. Photos saved with PhotoDay Archive will still be shown."
+        "answer": "If you delete the original photo from the Photos app, it may no longer be available in DailyAlbum. Photos saved with DailyAlbum Archive will still be shown."
       },
       {
-        "question": "What is PhotoDay Plus?",
-        "answer": "PhotoDay Plus is a one-time purchase that adds four things: PhotoDay Archive (saves a copy of each day's chosen photo inside PhotoDay), unlimited Frame Mode (the free version has a 5-minute preview), unlimited Monthly Recap replays (the free version includes one full playback), and multi-device sync (your choices and notes appear on your other devices right away). Photos are shown from each device's own photo library (such as iCloud Photos). By default PhotoDay does not upload your photos. If you turn on Sync this day's photo, PhotoDay also keeps a small copy of each chosen photo in your personal iCloud so it can appear on devices that don't use iCloud Photos — only you can open it, and the developer still cannot read your data. Your calendar, photo picking, notes, and iCloud Sync stay free."
+        "question": "What is DailyAlbum Plus?",
+        "answer": "DailyAlbum Plus is a one-time purchase that adds four things: DailyAlbum Archive (saves a copy of each day's chosen photo inside DailyAlbum), unlimited Frame Mode (the free version has a 5-minute preview), unlimited Monthly Recap replays (the free version includes one full playback), and multi-device sync (your choices and notes appear on your other devices right away). Photos are shown from each device's own photo library (such as iCloud Photos). By default DailyAlbum does not upload your photos. If you turn on Sync this day's photo, DailyAlbum also keeps a small copy of each chosen photo in your personal iCloud so it can appear on devices that don't use iCloud Photos — only you can open it, and the developer still cannot read your data. Your calendar, photo picking, notes, and iCloud Sync stay free."
       },
       {
-        "question": "What is PhotoDay Archive?",
-        "answer": "PhotoDay Archive is a PhotoDay Plus feature that saves a copy of the photo you chose for each day inside PhotoDay. Even if the original is later deleted from your photo library, PhotoDay can still show the saved copy. It also makes browsing steadier and faster: archived copies display instantly, even when the original lives in iCloud and would otherwise need to download first. You can choose whether auto-picked photos are saved too. You can see everything that's been saved in Settings > Archived photos."
+        "question": "What is DailyAlbum Archive?",
+        "answer": "DailyAlbum Archive is a DailyAlbum Plus feature that saves a copy of the photo you chose for each day inside DailyAlbum. Even if the original is later deleted from your photo library, DailyAlbum can still show the saved copy. It also makes browsing steadier and faster: archived copies display instantly, even when the original lives in iCloud and would otherwise need to download first. You can choose whether auto-picked photos are saved too. You can see everything that's been saved in Settings > Archived photos."
       },
       {
-        "question": "Does PhotoDay Archive copy my entire photo library?",
-        "answer": "No. PhotoDay Archive saves only the daily photos you choose so they can be displayed more reliably inside the app. If PhotoDay is deleted or the device is erased, photos saved only inside PhotoDay may also be lost."
+        "question": "Does DailyAlbum Archive copy my entire photo library?",
+        "answer": "No. DailyAlbum Archive saves only the daily photos you choose so they can be displayed more reliably inside the app. If DailyAlbum is deleted or the device is erased, photos saved only inside DailyAlbum may also be lost."
       },
       {
         "question": "What do the star and sparkles icons mean?",
-        "answer": "The star means you picked the photo yourself. The sparkles mean PhotoDay suggested or picked the photo automatically for that day."
+        "answer": "The star means you picked the photo yourself. The sparkles mean DailyAlbum suggested or picked the photo automatically for that day."
       },
       {
-        "question": "How does PhotoDay pick photos automatically?",
+        "question": "How does DailyAlbum pick photos automatically?",
         "answer": "Auto-pick only fills days that are still empty — it never replaces a photo you chose. It looks for photos with people or pets, and skips videos, screenshots, and shots that look like documents or receipts. If a day has only that kind of photo, the day stays empty on the calendar and you can pick one yourself. Everything is analyzed on your device; nothing is uploaded. To change an auto-picked photo, open the day and choose another — the sparkles turn into a star."
       },
       {
         "question": "Can I use an iPad or old iPhone as a photo frame?",
-        "answer": "Yes. Open Frame Mode to show your chosen photo full screen with its date; the controls fade away after a few seconds, leaving just the photo. Stand an iPad or a spare iPhone on a shelf and it becomes a family photo frame. The free version plays for 5 minutes at a time; PhotoDay Plus removes the time limit. With Plus multi-device sync, a photo you pick on your phone appears on the frame right away."
+        "answer": "Yes. Open Frame Mode to show your chosen photo full screen with its date; the controls fade away after a few seconds, leaving just the photo. Stand an iPad or a spare iPhone on a shelf and it becomes a family photo frame. The free version plays for 5 minutes at a time; DailyAlbum Plus removes the time limit. With Plus multi-device sync, a photo you pick on your phone appears on the frame right away."
       },
       {
         "question": "Can I search my notes?",
@@ -108,11 +108,11 @@
       },
       {
         "question": "Can I share a day or a month?",
-        "answer": "Yes. From a day, tap the share button to create a card with that photo, its date, and note. After a monthly album plays, you can share the whole month as a single card too. Sharing happens through the normal share sheet — nothing is posted automatically, and PhotoDay never uploads your photos in the background."
+        "answer": "Yes. From a day, tap the share button to create a card with that photo, its date, and note. After a monthly album plays, you can share the whole month as a single card too. Sharing happens through the normal share sheet — nothing is posted automatically, and DailyAlbum never uploads your photos in the background."
       },
       {
         "question": "How do I restore my purchase?",
-        "answer": "If you bought PhotoDay Plus before — on another device or after reinstalling — open Settings > PhotoDay Plus and tap Restore Purchases. Make sure you're signed in with the same Apple Account you used for the purchase."
+        "answer": "If you bought DailyAlbum Plus before — on another device or after reinstalling — open Settings > DailyAlbum Plus and tap Restore Purchases. Make sure you're signed in with the same Apple Account you used for the purchase."
       },
       {
         "question": "Why does the widget show a different photo depending on the widget size?",
@@ -120,20 +120,20 @@
       },
       {
         "question": "Why can I keep only one photo per day?",
-        "answer": "PhotoDay is designed around choosing one meaningful photo for each day. Keeping one photo makes your calendar simple, easy to look back on, and focused on the photo that best represents the day."
+        "answer": "DailyAlbum is designed around choosing one meaningful photo for each day. Keeping one photo makes your calendar simple, easy to look back on, and focused on the photo that best represents the day."
       },
       {
         "question": "Why do photos sometimes take time to load?",
-        "answer": "PhotoDay reads photos available on your device. Loading may take a little time when there are many photos to show, when the image is large, or when the app is opening that day’s photos for the first time."
+        "answer": "DailyAlbum reads photos available on your device. Loading may take a little time when there are many photos to show, when the image is large, or when the app is opening that day’s photos for the first time."
       }
     ],
     "locales": {
       "ja": {
-        "name": "PhotoDay - 1日1枚の写真日記",
+        "name": "1枚かざる - 写真日記とフォトフレーム",
         "short_description": "1日1枚の写真で毎日をゆるやかに記録。子どもの成長や旅行、何気ない日常を、続けやすい写真日記として残せます。",
-        "meta_description": "PhotoDayは1日1枚の写真で毎日を記録するiPhoneアプリ。子どもの成長や家族の時間、旅行の思い出をカレンダーで見返せて、ウィジェットやフレーム表示にも対応した写真日記です。",
+        "meta_description": "1枚かざるは1日1枚の写真で毎日を記録するiPhoneアプリ。子どもの成長や家族の時間、旅行の思い出をカレンダーで見返せて、ウィジェットやフレーム表示にも対応した写真日記です。",
         "overview": [
-          "PhotoDayは、大切な毎日を1日1枚の写真で残すシンプルな記録アプリです。写真を大量に整理するのではなく、「今日の1枚」を選ぶだけ。その積み重ねが、そのまま思い出のタイムラインになります。",
+          "1枚かざるは、大切な毎日を1日1枚の写真で残すシンプルな記録アプリです。写真を大量に整理するのではなく、「今日の1枚」を選ぶだけ。その積み重ねが、そのまま思い出のタイムラインになります。",
           "子どもの成長、家族の時間、ペット、旅行、趣味や仕事のプロジェクトなど、長い日記を書かなくても1枚の写真が多くを語ってくれる場面にぴったりです。空いた日は自動でも埋まります。人やペットの写った写真を優先し、スクリーンショットのような写真は避けて、端末の中だけの処理でその日の1枚をそっとおすすめします。",
           "1日300字までのメモを添えられて、あとから言葉で検索してあの日をすぐに見つけられます。フレームモードで今日の1枚を日付・メモと一緒に画面いっぱいに飾ったり、ウィジェットでホーム画面に置いたり、アプリを開かなくても思い出に触れられる作りです。"
         ],
@@ -153,38 +153,38 @@
           "iCloud同期（無料・任意）で機種変更後も記録を復元"
         ],
         "how_to_use": [
-          "App StoreからPhotoDayをインストールします。",
+          "App Storeから1枚かざるをインストールします。",
           "日付を開いて、その日を代表する1枚を選びます。",
           "必要に応じてメモを添えます（1日300字まで）。",
           "毎日続けて、カレンダーに並んでいく写真を見返します。",
           "ウィジェットやフレームモードを使えば、アプリを開かなくても思い出に触れられます。"
         ],
-        "pricing": "カレンダー・写真選び・1日300字のメモ・メモ検索・iCloud同期は無料です。買い切りのPhotoDay Plus（サブスクリプションではありません）では、時間制限のないフレームモードや複数端末での同期などが加わります。最新の価格・提供状況はApp Storeでご確認ください。",
-        "privacy": "アカウントは不要で、写真そのものをPhotoDayがアップロードすることはありません。詳しい取り扱いは、インストール前にApp Storeのプライバシーラベルをご確認ください。",
+        "pricing": "カレンダー・写真選び・1日300字のメモ・メモ検索・iCloud同期は無料です。買い切りの1枚かざる Plus（サブスクリプションではありません）では、時間制限のないフレームモードや複数端末での同期などが加わります。最新の価格・提供状況はApp Storeでご確認ください。",
+        "privacy": "アカウントは不要です。写真は端末内で処理され、標準ではどこにも送りません。iCloud 同期（無料）をオンにすると、その日の選択とメモだけがあなた自身の iCloud に保存されます。写真の同期（1枚かざる Plus）や家族共有（1枚かざる Family）をオンにしたときだけ、選んだ写真のコピーがあなた自身の iCloud に保存されます。開発者がその中身を見ることはできません。詳細: https://dailyalbum.app/ja/privacy/",
         "faq": [
           {
-            "question": "PhotoDayはどんなアプリですか？",
+            "question": "1枚かざるはどんなアプリですか？",
             "answer": "1日1枚の写真で毎日を記録するアプリです。家族の思い出、旅行、趣味、プロジェクトなど、あとで見返したい日々を気軽に残せます。"
           },
           {
             "question": "写真アプリやアルバム管理の代わりになりますか？",
-            "answer": "いいえ。PhotoDayは「その日の1枚を選んで残す」ことに絞ったアプリで、写真ライブラリ全体の管理を置き換えるものではありません。"
+            "answer": "いいえ。1枚かざるは「その日の1枚を選んで残す」ことに絞ったアプリで、写真ライブラリ全体の管理を置き換えるものではありません。"
           },
           {
             "question": "写真は外部に公開されますか？",
-            "answer": "PhotoDayは個人の記録のためのアプリで、SNSのように自動で公開される仕組みはありません。共有したい日だけ、写真と日付とメモを1枚のカードにして自分で共有できます。"
+            "answer": "1枚かざるは個人の記録のためのアプリで、SNSのように自動で公開される仕組みはありません。共有したい日だけ、写真と日付とメモを1枚のカードにして自分で共有できます。"
           },
           {
             "question": "無料でどこまで使えますか？",
-            "answer": "カレンダー・写真選び・1日300字のメモ・メモ検索・iCloud同期は無料で使えます。買い切りのPhotoDay Plusを購入すると、選んだ写真のコピーをアプリ内に保存するPhotoDay Archive、時間制限のないフレームモード、月間アルバムの何度でも再生、複数端末での同期が加わります。"
+            "answer": "カレンダー・写真選び・1日300字のメモ・メモ検索・iCloud同期は無料で使えます。買い切りの1枚かざる Plusを購入すると、選んだ写真のコピーをアプリ内に保存する1枚かざる Archive、時間制限のないフレームモード、月間アルバムの何度でも再生、複数端末での同期が加わります。"
           },
           {
             "question": "写真はどこに保存されていますか？",
-            "answer": "PhotoDayはiPhoneの写真ライブラリにある写真を使用します。日ごとに写真を選ぶと、PhotoDayはどの写真を選んだかを記録しますが、写真自体はコピーしません。写真アプリから元の写真を削除すると、PhotoDay Archiveで保存していない限り、PhotoDayで表示できなくなる場合があります。iCloud同期がONの場合、選んだ記録とメモはあなたのiCloudにのみ保存されます。"
+            "answer": "1枚かざるはiPhoneの写真ライブラリにある写真を使用します。日ごとに写真を選ぶと、1枚かざるはどの写真を選んだかを記録しますが、写真自体はコピーしません。写真アプリから元の写真を削除すると、1枚かざる Archiveで保存していない限り、1枚かざるで表示できなくなる場合があります。iCloud同期がONの場合、選んだ記録とメモはあなたのiCloudにのみ保存されます。"
           },
           {
             "question": "機種変更しても記録は残りますか？",
-            "answer": "はい、iCloud同期をONにしていれば残ります。iCloud同期は誰でも使える無料機能です。選んだ記録とメモはPhotoDayにしか存在しないため、機種変更やアプリの入れ直しで消えないように守るのが目的です。使い方：設定の「iCloud同期」で「選んだ記録とメモを同期」をONにします（iCloudへのサインインが必要です）。新しいiPhoneでも同じようにONにすれば記録が戻ります。保存先はあなたのiCloudのみで、写真そのものはアップロードされません。写真本体はiCloudフォトなど写真ライブラリの引き継ぎに従います。"
+            "answer": "はい、iCloud同期をONにしていれば残ります。iCloud同期は誰でも使える無料機能です。選んだ記録とメモは1枚かざるにしか存在しないため、機種変更やアプリの入れ直しで消えないように守るのが目的です。使い方：設定の「iCloud同期」で「選んだ記録とメモを同期」をONにします（iCloudへのサインインが必要です）。新しいiPhoneでも同じようにONにすれば記録が戻ります。保存先はあなたのiCloudのみで、写真そのものはアップロードされません。写真本体はiCloudフォトなど写真ライブラリの引き継ぎに従います。"
           },
           {
             "question": "復元は自動で行われますか？",
@@ -192,35 +192,35 @@
           },
           {
             "question": "2つのiCloud同期はどう違いますか？",
-            "answer": "iCloud同期は、選んだ日の記録とメモをあなたのiCloudに保存します。機種変更やアプリの入れ直しでも消えず、ほかの端末にも無料で表示されます。写真そのものはアップロードされず、各端末の写真ライブラリから表示されます。\n\niCloud写真を使っている場合は、通常これだけで十分です。その日の1枚はすでにほかの端末にもあるため、追加料金なしで、使っていないiPadをフォトフレームにすることもできます。\n\niCloud写真を使っていない場合は、「この日の1枚を同期」（PhotoDay Plus）をONにしてください。わずかなiCloud容量で、その日の1枚のプライベートなコピーをあなた自身のiCloudに保存し、ほかの端末にも選んだ日を表示できます。古いiPhoneやiPadを家族のフォトフレームにすることもできます。開けるのはあなただけで、開発者はデータを読めません。"
+            "answer": "iCloud同期は、選んだ日の記録とメモをあなたのiCloudに保存します。機種変更やアプリの入れ直しでも消えず、ほかの端末にも無料で表示されます。写真そのものはアップロードされず、各端末の写真ライブラリから表示されます。\n\niCloud写真を使っている場合は、通常これだけで十分です。その日の1枚はすでにほかの端末にもあるため、追加料金なしで、使っていないiPadをフォトフレームにすることもできます。\n\niCloud写真を使っていない場合は、「この日の1枚を同期」（1枚かざる Plus）をONにしてください。わずかなiCloud容量で、その日の1枚のプライベートなコピーをあなた自身のiCloudに保存し、ほかの端末にも選んだ日を表示できます。古いiPhoneやiPadを家族のフォトフレームにすることもできます。開けるのはあなただけで、開発者はデータを読めません。"
           },
           {
             "question": "写真アプリから写真を削除するとどうなりますか？",
-            "answer": "写真アプリで元の写真を削除すると、PhotoDayで利用できなくなる場合があります。PhotoDay Archiveで保存済みの写真は、引き続き表示できます。"
+            "answer": "写真アプリで元の写真を削除すると、1枚かざるで利用できなくなる場合があります。1枚かざる Archiveで保存済みの写真は、引き続き表示できます。"
           },
           {
-            "question": "PhotoDay Plus とは何ですか？",
-            "answer": "PhotoDay Plusは買い切りの追加機能です。①PhotoDay Archive：選んだ1枚のコピーをPhotoDay内にも保存 ②フレームモード：時間制限なし（無料版は5分間のプレビュー）③月のふりかえり：いつでも何度でも再生（無料版は最初の1回を最後まで再生できます）④複数端末で同期：選んだ写真とメモが、他の端末にもすぐ反映されます。写真は各端末の写真ライブラリ（iCloudフォトなど）から表示されます。初期設定では、PhotoDayが写真をアップロードすることはありません。「この日の1枚を同期」をONにすると、選んだ写真の小さなコピーをあなたのiCloudにも保存し、iCloud写真を使っていない端末でも表示できるようにします。開いて見られるのはあなただけで、開発者がデータを読むことはできません。カレンダー・写真選び・メモ・iCloud同期は今後も無料で使えます。"
+            "question": "1枚かざる Plus とは何ですか？",
+            "answer": "1枚かざる Plusは買い切りの追加機能です。①1枚かざる Archive：選んだ1枚のコピーを1枚かざる内にも保存 ②フレームモード：時間制限なし（無料版は5分間のプレビュー）③月のふりかえり：いつでも何度でも再生（無料版は最初の1回を最後まで再生できます）④複数端末で同期：選んだ写真とメモが、他の端末にもすぐ反映されます。写真は各端末の写真ライブラリ（iCloudフォトなど）から表示されます。初期設定では、1枚かざるが写真をアップロードすることはありません。「この日の1枚を同期」をONにすると、選んだ写真の小さなコピーをあなたのiCloudにも保存し、iCloud写真を使っていない端末でも表示できるようにします。開いて見られるのはあなただけで、開発者がデータを読むことはできません。カレンダー・写真選び・メモ・iCloud同期は今後も無料で使えます。"
           },
           {
-            "question": "PhotoDay Archive とは何ですか？",
-            "answer": "各日に選んだ写真のコピーをPhotoDay内にも保存する、PhotoDay Plusの機能です。あとで元の写真がライブラリから削除されても、保存したコピーを表示できます。また、閲覧が安定して速くなります。保存したコピーはすぐに表示されるため、元の写真がiCloudにあって先にダウンロードが必要な場合でも待たされません。自動で選ばれた写真も保存するかは設定で選べます。保存済みの写真は、設定の「保存済みの写真」からいつでも確認できます。"
+            "question": "1枚かざる Archive とは何ですか？",
+            "answer": "各日に選んだ写真のコピーを1枚かざる内にも保存する、1枚かざる Plusの機能です。あとで元の写真がライブラリから削除されても、保存したコピーを表示できます。また、閲覧が安定して速くなります。保存したコピーはすぐに表示されるため、元の写真がiCloudにあって先にダウンロードが必要な場合でも待たされません。自動で選ばれた写真も保存するかは設定で選べます。保存済みの写真は、設定の「保存済みの写真」からいつでも確認できます。"
           },
           {
-            "question": "PhotoDay Archiveは写真ライブラリ全体をコピーしますか？",
-            "answer": "いいえ。PhotoDay Archiveは、アプリ内でより安定して表示できるように、選んだ日々の写真だけを保存します。PhotoDayを削除したり端末を消去した場合、PhotoDay内にのみ保存された写真も失われる場合があります。"
+            "question": "1枚かざる Archiveは写真ライブラリ全体をコピーしますか？",
+            "answer": "いいえ。1枚かざる Archiveは、アプリ内でより安定して表示できるように、選んだ日々の写真だけを保存します。1枚かざるを削除したり端末を消去した場合、1枚かざる内にのみ保存された写真も失われる場合があります。"
           },
           {
             "question": "星とキラキラのマークは何ですか？",
-            "answer": "星マークは自分で選んだ写真、キラキラマークはPhotoDayがその日におすすめまたは自動で選んだ写真を表します。"
+            "answer": "星マークは自分で選んだ写真、キラキラマークは1枚かざるがその日におすすめまたは自動で選んだ写真を表します。"
           },
           {
-            "question": "PhotoDayはどうやって写真を自動で選んでいますか？",
+            "question": "1枚かざるはどうやって写真を自動で選んでいますか？",
             "answer": "自動選択は、まだ空いている日だけを埋めます。自分で選んだ写真を差し替えることはありません。人やペットが写った写真を探し、動画、スクリーンショット、書類やレシートのように見える写真は対象外にします。その日にそうした写真しかない場合、カレンダー上ではその日は空いたままになり、自分で写真を選べます。分析はすべて端末内で行われ、何もアップロードされません。自動選択された写真を変えたい場合は、その日を開いて別の写真を選ぶだけで、キラキラのマークが星のマークに変わります。"
           },
           {
             "question": "iPadや古いiPhoneをフォトフレームにできますか？",
-            "answer": "はい。フレームモードを開くと、選んだ写真が日付とともに画面いっぱいに表示され、数秒たつと操作ボタンが消えて写真だけになります。iPadや使わなくなったiPhoneを棚に立てておけば、家族のフォトフレームになります。無料版は1回5分まで、PhotoDay Plusにすると時間制限がなくなります。Plusの複数端末同期を使えば、スマホで選んだ写真がすぐにフレームにも反映されます。"
+            "answer": "はい。フレームモードを開くと、選んだ写真が日付とともに画面いっぱいに表示され、数秒たつと操作ボタンが消えて写真だけになります。iPadや使わなくなったiPhoneを棚に立てておけば、家族のフォトフレームになります。無料版は1回5分まで、1枚かざる Plusにすると時間制限がなくなります。Plusの複数端末同期を使えば、スマホで選んだ写真がすぐにフレームにも反映されます。"
           },
           {
             "question": "メモを検索できますか？",
@@ -232,11 +232,11 @@
           },
           {
             "question": "1日や1ヶ月を共有できますか？",
-            "answer": "はい。日付の画面で共有ボタンを押すと、その写真・日付・メモを1枚のカードにできます。月間アルバムを見終わったあとは、その月をまとめて1枚のカードとして共有することもできます。共有は通常の共有シートから行われ、自動で投稿されることはありません。PhotoDayが写真をバックグラウンドでアップロードすることもありません。"
+            "answer": "はい。日付の画面で共有ボタンを押すと、その写真・日付・メモを1枚のカードにできます。月間アルバムを見終わったあとは、その月をまとめて1枚のカードとして共有することもできます。共有は通常の共有シートから行われ、自動で投稿されることはありません。1枚かざるが写真をバックグラウンドでアップロードすることもありません。"
           },
           {
             "question": "購入を復元するには？",
-            "answer": "別の端末や再インストール後などでPhotoDay Plusが反映されていない場合は、設定 > PhotoDay Plus の「購入を復元」をタップしてください。購入時と同じApple Accountでのサインインが必要です。"
+            "answer": "別の端末や再インストール後などで1枚かざる Plusが反映されていない場合は、設定 > 1枚かざる Plus の「購入を復元」をタップしてください。購入時と同じApple Accountでのサインインが必要です。"
           },
           {
             "question": "なぜウィジェットのサイズによって違う写真が表示されるのですか？",
@@ -244,11 +244,11 @@
           },
           {
             "question": "なぜ1日1枚だけなのですか？",
-            "answer": "PhotoDayは、1日を表す大切な1枚を選ぶためのアプリです。1日1枚にすることで、カレンダーがすっきりし、あとから見返しやすく、その日らしい写真に集中できます。"
+            "answer": "1枚かざるは、1日を表す大切な1枚を選ぶためのアプリです。1日1枚にすることで、カレンダーがすっきりし、あとから見返しやすく、その日らしい写真に集中できます。"
           },
           {
             "question": "なぜ写真の読み込みに時間がかかることがありますか？",
-            "answer": "PhotoDayは端末内で利用できる写真を読み込みます。表示する写真が多い場合、画像サイズが大きい場合、その日の写真を初めて開く場合などは、読み込みに少し時間がかかることがあります。"
+            "answer": "1枚かざるは端末内で利用できる写真を読み込みます。表示する写真が多い場合、画像サイズが大きい場合、その日の写真を初めて開く場合などは、読み込みに少し時間がかかることがあります。"
           }
         ]
       }
