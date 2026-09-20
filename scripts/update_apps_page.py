@@ -117,6 +117,7 @@ CATEGORY_DEFINITIONS = {
 
 UI_STRINGS = {
     "en": {
+        "official_site": "Official site",
         "overview": "Overview",
         "audience": "Who It Is For",
         "features": "Main Features",
@@ -142,6 +143,7 @@ UI_STRINGS = {
         "screenshot_alt": "{name} screenshot",
     },
     "ja": {
+        "official_site": "公式サイト",
         "overview": "概要",
         "audience": "こんな方に",
         "features": "主な機能",
@@ -170,6 +172,7 @@ UI_STRINGS = {
 
 APP_OVERRIDE_FIELDS = {
     "slug",
+    "site_url",  # optional: the app's own site (adds a button next to the App Store link)
     "name",
     "tagline",
     "short_description",
@@ -974,6 +977,12 @@ def render_cards(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> str:
 def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: BuildContext, locale: str = "en") -> str:
     content = detail_content(app, overrides, ctx, locale)
     strings = ui_strings(locale)
+    # 任意: アプリ専用サイトがあれば、その導線を足す（overrides の site_url。ロケール別も可）
+    _site_url = localized_override(app, overrides, locale).get('site_url')
+    site_button = (
+        f'<a class="button" href="{html.escape(str(_site_url), quote=True)}">'
+        f'{html.escape(str(strings.get("official_site", "Official site")))}</a>\n          '
+    ) if _site_url else ''
     locales = app_locales(app, overrides)
     alternates = hreflang_alternates(locales, lambda loc: page_url(app, loc))
     lang_links = language_links(locales, locale, lambda loc: page_href(app, loc))
@@ -1013,7 +1022,7 @@ def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: Buil
         <p class="tagline">{html.escape(content['tagline'])}</p>
         <div class="actions">
           <a class="button primary" href="{html.escape(app_store_url(app, locale), quote=True)}">{html.escape(str(strings['view_on_app_store']))}</a>
-          <a class="button" href="{html.escape(apps_index_href(locale), quote=True)}">{html.escape(str(strings['all_apps']))}</a>
+          {site_button}<a class="button" href="{html.escape(apps_index_href(locale), quote=True)}">{html.escape(str(strings['all_apps']))}</a>
         </div>
       </div>
     </section>

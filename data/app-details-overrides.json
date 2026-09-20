@@ -11,7 +11,8 @@
     "overview": [
       "DailyAlbum keeps a small, steady photo record without turning it into a photo management task. Open a date, choose one photo that captures the day, and the daily choices grow into a memory calendar.",
       "It fits family life, kids growing up, pets, trips, plants, creative projects, and ordinary days worth remembering. Empty days can even fill themselves: DailyAlbum quietly suggests one good photo, favoring people and pets and skipping screenshots and document shots, with all processing done on the device.",
-      "Each day can hold a note of up to 300 characters, and you can search notes later to find a day again. Frame Mode shows today's photo full screen with its date and note, so a spare iPad or an old iPhone can work as a family photo frame."
+      "Each day can hold a note of up to 300 characters, and you can search notes later to find a day again. Frame Mode shows today's photo full screen with its date and note, so a spare iPad or an old iPhone can work as a family photo frame.",
+      "Full details, guides and the video are on the app's own site: https://dailyalbum.app/"
     ],
     "target_users": [
       "Parents and families who want a gentle daily photo habit for kids, pets, and everyday moments",
@@ -135,7 +136,8 @@
         "overview": [
           "1枚かざるは、大切な毎日を1日1枚の写真で残すシンプルな記録アプリです。写真を大量に整理するのではなく、「今日の1枚」を選ぶだけ。その積み重ねが、そのまま思い出のタイムラインになります。",
           "子どもの成長、家族の時間、ペット、旅行、趣味や仕事のプロジェクトなど、長い日記を書かなくても1枚の写真が多くを語ってくれる場面にぴったりです。空いた日は自動でも埋まります。人やペットの写った写真を優先し、スクリーンショットのような写真は避けて、端末の中だけの処理でその日の1枚をそっとおすすめします。",
-          "1日300字までのメモを添えられて、あとから言葉で検索してあの日をすぐに見つけられます。フレームモードで今日の1枚を日付・メモと一緒に画面いっぱいに飾ったり、ウィジェットでホーム画面に置いたり、アプリを開かなくても思い出に触れられる作りです。"
+          "1日300字までのメモを添えられて、あとから言葉で検索してあの日をすぐに見つけられます。フレームモードで今日の1枚を日付・メモと一緒に画面いっぱいに飾ったり、ウィジェットでホーム画面に置いたり、アプリを開かなくても思い出に触れられる作りです。",
+          "詳しい説明・ガイド・動画は、アプリの公式サイト https://dailyalbum.app/ja/ にあります。"
         ],
         "target_users": [
           "子どもの成長や家族の毎日をゆるやかに残したい方",
@@ -250,9 +252,11 @@
             "question": "なぜ写真の読み込みに時間がかかることがありますか？",
             "answer": "1枚かざるは端末内で利用できる写真を読み込みます。表示する写真が多い場合、画像サイズが大きい場合、その日の写真を初めて開く場合などは、読み込みに少し時間がかかることがあります。"
           }
-        ]
+        ],
+        "site_url": "https://dailyalbum.app/ja/"
       }
-    }
+    },
+    "site_url": "https://dailyalbum.app/"
   },
   "6762812333": {
     "slug": "packed",
