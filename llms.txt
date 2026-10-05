@@ -9,9 +9,9 @@ Canonical app index: https://zec-inc.jp/apps/
 - DailyAlbum: One Photo a Day: Keep one photo a day as a simple memory calendar, with notes, widgets, Frame Mode, and free optional... https://zec-inc.jp/apps/photo-day/
 - Mute Video Before Share: Remove all sound from a video in one tap — no re-encoding, no quality loss, no length limit, no watermark. https://zec-inc.jp/apps/mute-video-before-share/
 - Big Text Note: Write one large, easy-to-read note for quick display, reminders, labels, and simple communication. https://zec-inc.jp/apps/big-text-note/
-- OCR Copy: Copy text from camera, live scan, or photos with on-device OCR — save it locally and copy it again later. https://zec-inc.jp/apps/ocr-copy/
-- LaundryTap: A quick tap-based laundry record for remembering whether the laundry was done, moved, or checked. https://zec-inc.jp/apps/laundrytap/
+- DoneToday: Daily Log: Mark one daily task done with a single tap and watch your streak build on a calendar and widget. https://zec-inc.jp/apps/donetoday-daily-log/
 - BaroNote: Check current air pressure and its trend on your iPhone, then log how you feel — all stored on device. https://zec-inc.jp/apps/baronote/
+- Study Buddy Timer: One-tap study stopwatch that tracks daily study time and turns minutes into EXP and levels for a buddy. https://zec-inc.jp/apps/study-buddy-timer/
 
 ## Category Pages
 - Photo and Memory Apps: https://zec-inc.jp/apps/photo-memory/
