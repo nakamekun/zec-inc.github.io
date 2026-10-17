@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>ご意見・お問い合わせ - ZEC Inc.</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif; line-height: 1.7; background: #f9f9f9; color: #333; }
+    main { max-width: 32rem; margin: 0 auto; padding: 3rem 16px; }
+    a { color: #2563eb; }
+    @media (prefers-color-scheme: dark) { body { background: #111827; color: #e5e7eb; } a { color: #93c5fd; } }
+  </style>
+  <script>
+    // アプリから開く入口。フォームを差し替えるときはこのファイルだけ直す（apps/docs/components/feedback-form.md）。
+    (function () {
+      var FORM = "https://docs.google.com/forms/d/e/1FAIpQLSem0XvrFRuDv2RnVdoLwZli1H5iGF_7qiIka_GN7dTRZlSJUA/viewform";
+      var FIELDS = { app: "entry.1650527822", v: "entry.609826410", d: "entry.1031163619", l: "entry.68594117" };
+      var MAX = 100;
+      var q = new URLSearchParams(location.search);
+      var out = new URLSearchParams();
+      var filled = false;
+      for (var key in FIELDS) {
+        var value = (q.get(key) || "").replace(/[\u0000-\u001f\u007f]/g, "").trim().slice(0, MAX);
+        if (value) { out.set(FIELDS[key], value); filled = true; }
+      }
+      var url = filled ? FORM + "?usp=pp_url&" + out.toString() : FORM;
+      window.__feedbackURL = url;
+      location.replace(url);
+    })();
+  </script>
+</head>
+<body>
+  <main>
+    <p>ご意見・お問い合わせのフォームを開いています…</p>
+    <p>開かないときは <a id="go" href="https://docs.google.com/forms/d/e/1FAIpQLSem0XvrFRuDv2RnVdoLwZli1H5iGF_7qiIka_GN7dTRZlSJUA/viewform">こちら</a> を押してください。<br>
+    Opening the feedback form… If nothing happens, <a href="https://docs.google.com/forms/d/e/1FAIpQLSem0XvrFRuDv2RnVdoLwZli1H5iGF_7qiIka_GN7dTRZlSJUA/viewform">tap here</a>.</p>
+  </main>
+  <script>if (window.__feedbackURL) document.getElementById("go").href = window.__feedbackURL;</script>
+</body>
+</html>
