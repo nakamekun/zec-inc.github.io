@@ -33,6 +33,7 @@ LOOKUP_URL = (
     "https://itunes.apple.com/lookup"
     f"?id={DEVELOPER_ID}&entity=software&country=us&limit=200"
 )
+LOOKUP_URL_JP = LOOKUP_URL.replace("country=us", "country=jp")
 SITE_ORIGIN = "https://zec-inc.jp"
 ROOT_DIR = Path(__file__).resolve().parent.parent
 APPS_DIR = ROOT_DIR / "apps"
@@ -40,6 +41,7 @@ ASSETS_APPS_DIR = ROOT_DIR / "assets" / "apps"
 APPS_PAGE = APPS_DIR / "index.html"
 DETAIL_OVERRIDES = ROOT_DIR / "data" / "app-details-overrides.json"
 LOOKUP_CACHE = ROOT_DIR / "data" / "app-store-lookup-cache.json"
+LOOKUP_CACHE_JP = ROOT_DIR / "data" / "app-store-lookup-cache-jp.json"
 APPS_MANIFEST = ROOT_DIR / "data" / "apps-manifest.json"
 SITEMAP_XML = ROOT_DIR / "sitemap.xml"
 ROBOTS_TXT = ROOT_DIR / "robots.txt"
@@ -216,9 +218,9 @@ class BuildContext:
         self.warnings.append(message)
 
 
-def fetch_lookup_payload() -> dict[str, Any]:
+def fetch_lookup_payload(url: str = LOOKUP_URL, cache: Path = LOOKUP_CACHE) -> dict[str, Any]:
     request = urllib.request.Request(
-        LOOKUP_URL,
+        url,
         headers={
             "User-Agent": "zec-inc.github.io apps updater/2.0",
             "Accept": "application/json",
@@ -227,14 +229,14 @@ def fetch_lookup_payload() -> dict[str, Any]:
     try:
         with urllib.request.urlopen(request, timeout=30) as response:
             payload = json.load(response)
-        LOOKUP_CACHE.parent.mkdir(parents=True, exist_ok=True)
-        LOOKUP_CACHE.write_text(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        cache.write_text(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         return payload
     except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
-        if LOOKUP_CACHE.exists():
+        if cache.exists():
             print(f"note: using cached App Store lookup data because live fetch failed: {exc}", file=sys.stderr)
             try:
-                return json.loads(LOOKUP_CACHE.read_text(encoding="utf-8"))
+                return json.loads(cache.read_text(encoding="utf-8"))
             except json.JSONDecodeError as cache_exc:
                 raise RuntimeError(f"Failed to read cached App Store data: {cache_exc}") from cache_exc
         raise RuntimeError(f"Failed to fetch App Store data and no cache exists: {exc}") from exc
@@ -242,6 +244,12 @@ def fetch_lookup_payload() -> dict[str, Any]:
 
 def fetch_apps() -> list[dict[str, Any]]:
     payload = fetch_lookup_payload()
+    try:
+        jp_payload = fetch_lookup_payload(LOOKUP_URL_JP, LOOKUP_CACHE_JP)
+    except RuntimeError as exc:
+        print(f"note: Japan storefront lookup unavailable: {exc}", file=sys.stderr)
+        jp_payload = {}
+    jp_by_id = {str(item.get("trackId", "")): item for item in jp_payload.get("results", [])}
 
     apps: list[dict[str, Any]] = []
     for item in payload.get("results", []):
@@ -258,9 +266,13 @@ def fetch_apps() -> list[dict[str, Any]]:
         if not track_name or not track_url:
             continue
 
+        jp_item = jp_by_id.get(str(item.get("trackId", "")).strip(), {})
         apps.append(
             {
                 "trackId": str(item.get("trackId", "")).strip(),
+                "languages": [str(c) for c in item.get("languageCodesISO2A") or []],
+                "screenshotUrlsJa": jp_item.get("screenshotUrls") if isinstance(jp_item.get("screenshotUrls"), list) else [],
+                "ipadScreenshotUrlsJa": jp_item.get("ipadScreenshotUrls") if isinstance(jp_item.get("ipadScreenshotUrls"), list) else [],
                 "trackName": track_name,
                 "bundleId": str(item.get("bundleId", "")).strip(),
                 "primaryGenreName": str(item.get("primaryGenreName", "")).strip(),
@@ -643,7 +655,7 @@ def asset_url(path: Path) -> str:
     return "/" + path.relative_to(ROOT_DIR).as_posix()
 
 
-def resolve_screenshots(app: dict[str, Any], override: dict[str, Any], ctx: BuildContext) -> list[str]:
+def resolve_screenshots(app: dict[str, Any], override: dict[str, Any], ctx: BuildContext, locale: str = "en") -> list[str]:
     screenshots: list[str] = []
     local_dir = ASSETS_APPS_DIR / str(app["slug"]) / "screenshots"
     if local_dir.exists():
@@ -671,12 +683,12 @@ def resolve_screenshots(app: dict[str, Any], override: dict[str, Any], ctx: Buil
                 else:
                     ctx.warn(f"Screenshot path not found for {app_name(app)}: {value}")
 
-    api_screenshots = [
-        str(url)
-        for url in (app.get("screenshotUrls") or []) + (app.get("ipadScreenshotUrls") or [])
-        if isinstance(url, str) and url.startswith(("http://", "https://"))
-    ]
-    screenshots.extend(api_screenshots)
+    if locale == "ja":
+        # 日本語ページには日本のストア(ja ローカライズ済み)のスクショだけを出す。ja 未対応アプリは英語画像になるので出さない。
+        api_urls = (app.get("screenshotUrlsJa") or []) + (app.get("ipadScreenshotUrlsJa") or []) if "JA" in app.get("languages", []) else []
+    else:
+        api_urls = (app.get("screenshotUrls") or []) + (app.get("ipadScreenshotUrls") or [])
+    screenshots.extend(url for url in api_urls if isinstance(url, str) and url.startswith(("http://", "https://")))
 
     deduped: list[str] = []
     seen: set[str] = set()
@@ -703,7 +715,7 @@ def detail_content(app: dict[str, Any], overrides: dict[str, Any], ctx: BuildCon
     faq = override_faq(override.get("faq"), generated_faq(app))
     meta_description = override_string(override.get("meta_description"), tagline)
     meta_description = truncate_text(meta_description, 155) or f"{name} official app page by ZEC Inc."
-    screenshots = resolve_screenshots(app, override, ctx)
+    screenshots = resolve_screenshots(app, override, ctx, locale)
 
     if not name or not tagline or not meta_description:
         raise RuntimeError(f"Generated empty SEO content for {app_name(app)}.")
