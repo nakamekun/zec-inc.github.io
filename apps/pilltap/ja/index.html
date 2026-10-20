@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PillTap | ZEC Apps</title>
-  <meta name="description" content="PillTapは設定した時刻に毎日通知するシンプルなお薬リマインダーアプリ。飲んだかどうかをワンタップで記録できます。医療上の助言は行わない、個人の記録のための道具です。">
+  <title>おくすりタップ - 毎日鳴るお薬リマインダー | ZEC Apps</title>
+  <meta name="description" content="おくすりタップは、朝・昼・夜・就寝前に毎日通知する飲み忘れ防止のお薬リマインダー。通知から「飲んだ」を1タップで記録でき、ロック画面ウィジェットにも対応します。">
   <link rel="canonical" href="https://zec-inc.jp/apps/pilltap/ja/">
   <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/pilltap/">
   <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/pilltap/ja/">
@@ -12,8 +12,8 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
-  <meta property="og:title" content="PillTap | ZEC Apps">
-  <meta property="og:description" content="PillTapは設定した時刻に毎日通知するシンプルなお薬リマインダーアプリ。飲んだかどうかをワンタップで記録できます。医療上の助言は行わない、個人の記録のための道具です。">
+  <meta property="og:title" content="おくすりタップ - 毎日鳴るお薬リマインダー | ZEC Apps">
+  <meta property="og:description" content="おくすりタップは、朝・昼・夜・就寝前に毎日通知する飲み忘れ防止のお薬リマインダー。通知から「飲んだ」を1タップで記録でき、ロック画面ウィジェットにも対応します。">
   <meta property="og:url" content="https://zec-inc.jp/apps/pilltap/ja/">
   <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5d/d3/5b/5dd35b60-b6ed-97bf-5e91-a165a0388fc1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
   <script type="application/ld+json">
@@ -22,8 +22,8 @@
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      "name": "PillTap",
-      "description": "PillTapは設定した時刻に毎日通知するシンプルなお薬リマインダーアプリ。飲んだかどうかをワンタップで記録できます。医療上の助言は行わない、個人の記録のための道具です。",
+      "name": "おくすりタップ - 毎日鳴るお薬リマインダー",
+      "description": "おくすりタップは、朝・昼・夜・就寝前に毎日通知する飲み忘れ防止のお薬リマインダー。通知から「飲んだ」を1タップで記録でき、ロック画面ウィジェットにも対応します。",
       "operatingSystem": "iOS",
       "applicationCategory": "Health & Fitness",
       "offers": {
@@ -49,10 +49,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "PillTapは医療上の助言を提供しますか？",
+          "name": "おくすりタップは医療上の助言を提供しますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "いいえ。診断、治療のすすめ、服薬指示は提供しません。個人のメモとしての記録機能を持つだけのアプリです。"
+            "text": "いいえ。診断、治療のすすめ、服薬指示は提供しません。薬の服用は、医師や薬剤師の指示に従ってください。"
           }
         },
         {
@@ -60,15 +60,39 @@
           "name": "正しく薬を飲めることを保証してくれますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "いいえ。あくまで個人の記録の補助であり、服薬遵守や安全性を保証するものではありません。"
+            "text": "いいえ。あくまでリマインダーと個人の記録の補助であり、服薬遵守や安全性を保証するものではありません。"
           }
         },
         {
           "@type": "Question",
-          "name": "どんな人に向いていますか？",
+          "name": "「飲んだ」を押さなかったらどうなりますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "薬に関する確認を、自分用の参考としてかんたんに記録しておきたい方に向いています。"
+            "text": "何も起きません。「飲んだ」を押すのは自分の記録のためで、任意です。押さなくても翌日また通知が鳴ります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "毎日以外のスケジュールにできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "できません。朝・昼・夜・就寝前の毎日固定のスケジュールです。曜日指定や数日おきには対応していません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "睡眠中や集中モードでも通知は届きますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iOSの設定で許可していれば、時間の指定が重要な通知として表示されます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "データはどこに保存されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "アカウント登録もクラウド送信もなく、App Storeの説明のとおり、薬の情報と記録は端末の中だけに保存されます。"
           }
         },
         {
@@ -77,14 +101,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "なりません。薬に関する疑問は、必ず資格を持つ医療の専門家の指示に従ってください。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "介護をしている家族でも使えますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "シンプルな記録は見守りの補助として役立つ場合がありますが、専門的なケア計画や正式な医療記録の代わりにはなりません。"
           }
         }
       ]
@@ -169,10 +185,10 @@
 
   <main>
     <section class="hero">
-      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5d/d3/5b/5dd35b60-b6ed-97bf-5e91-a165a0388fc1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PillTap のアプリアイコン" width="96" height="96">
+      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5d/d3/5b/5dd35b60-b6ed-97bf-5e91-a165a0388fc1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のアプリアイコン" width="96" height="96">
       <div>
-        <h1>PillTap</h1>
-        <p class="tagline">毎日のお薬時間に鳴るシンプルなリマインダーと、ワンタップの服薬メモ。医療アプリではなく、個人の記録のための道具です。</p>
+        <h1>おくすりタップ - 毎日鳴るお薬リマインダー</h1>
+        <p class="tagline">毎日の飲み忘れ防止に。通知から「飲んだ」を1タップで記録できる、シンプルなお薬リマインダーです。ロック画面ウィジェットにも対応。</p>
         <div class="actions">
           <a class="button primary" href="https://apps.apple.com/jp/app/pilltap/id6762545903?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
@@ -182,92 +198,105 @@
 
     <section class="section">
       <h2>概要</h2>
-          <p>PillTapは、薬の時間をうっかり忘れないための小さなリマインダーアプリです。設定した時刻に毎日通知が届き、飲んだかどうかをワンタップで記録できます。複雑な健康管理システムではなく、「確認して、記録する」だけの日常の道具として設計されています。</p>
-          <p>時間帯は朝・昼・夜・就寝前のシンプルな4つで、記録は任意です。ロック画面ウィジェットやLive Activityを使えば、アプリを開かなくても次のお薬時間を確認できます。</p>
-          <p>PillTapは医療機器ではなく、医療上の助言を提供するものでも、服薬遵守を保証するものでもありません。薬に関する疑問は、必ず医師・薬剤師などの専門家にご相談ください。</p>
+          <p>おくすりタップ（PillTap）は、薬やサプリの飲み忘れを減らす手助けをする、毎日鳴るリマインダーです。薬ごとに朝・昼・夜・就寝前の時刻を決めるだけで、毎日同じ時刻に通知が届きます。</p>
+          <p>「飲んだ」を押すのは記録のためで、押さなくても翌日また鳴ります。通知のボタンから、アプリを開かずに記録できます。止めたいときは、その時間帯をオフにするか薬を削除します。15分後にもう一度通知する設定（オフにもできます）もあります。</p>
+          <p>ロック画面ウィジェットで次の服用を確認でき、服用時刻の少し前にはライブアクティビティでも表示されます。おくすりタップは医療アドバイスや病状の判断、薬の服用指導を行うものではありません。薬の服用は、医師や薬剤師の指示に従ってください。</p>
     </section>
 
     <section class="section">
       <h2>こんな方に</h2>
       <ul>
-            <li>薬の時間をつい忘れてしまう方</li>
-            <li>家族の服薬確認をかんたんなメモとして残したい方</li>
-            <li>複雑な健康管理アプリを使いたくない方</li>
-            <li>医療アプリではなく個人の記録用だと理解したうえで使える方</li>
+            <li>毎日の薬やサプリをつい飲み忘れてしまう方</li>
+            <li>複雑な健康管理アプリではなく、シンプルなリマインダーがほしい方</li>
+            <li>毎日同じ時間帯に薬を飲む方</li>
+            <li>アカウント登録やクラウド送信のない、プライベートなリマインダーを使いたい方</li>
+            <li>医療アプリではなく、リマインダーと個人の記録用だと理解したうえで使える方</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>主な機能</h2>
       <ul>
-            <li>設定した時刻に毎日くり返し届く服薬リマインダー</li>
-            <li>飲んだかどうかをワンタップで記録（記録は任意）</li>
-            <li>朝・昼・夜・就寝前のシンプルな時間帯管理</li>
-            <li>ロック画面ウィジェットとLive Activityで次のお薬時間を表示</li>
-            <li>記録を端末内に保存するローカルファースト設計</li>
+            <li>薬ごとに朝・昼・夜・就寝前の4つの時間帯で、毎日リマインダー通知</li>
+            <li>15分後にもう一度通知（設定でオフにできます）</li>
+            <li>通知のボタンから、アプリを開かずに「飲んだ」を記録</li>
+            <li>ロック画面ウィジェットで次の服用を確認</li>
+            <li>服用時刻の少し前にライブアクティビティで表示（5・15・30分前を選択）</li>
+            <li>集中モードや睡眠中でも、iOSの設定で許可していれば通知を表示（時間の指定が重要な通知）</li>
+            <li>今日・昨日・過去7日の履歴</li>
+            <li>スケジュールは毎日固定のみ。曜日指定、数日おき、服薬カレンダー、残薬管理、家族との共有はありません</li>
+            <li>アカウント登録なし・クラウド送信なし。データは端末の中だけに保存</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>使い方</h2>
       <ol>
-            <li>App StoreからPillTapをインストールします。</li>
-            <li>薬の時間帯と通知時刻を設定します。</li>
-            <li>通知が届いたら確認し、必要に応じてワンタップで記録します。</li>
-            <li>履歴で最近の記録をふりかえります。</li>
-            <li>医療上の判断はアプリに頼らず、疑問は医師・薬剤師に相談します。</li>
+            <li>薬を追加して、朝・昼・夜・就寝前の時間帯を選びます。</li>
+            <li>必要に応じて、15分後の再通知やライブアクティビティの表示タイミングを設定します。</li>
+            <li>通知が届いたら、医師や薬剤師の指示どおりに服用し、記録したいときは「飲んだ」をタップします。</li>
+            <li>ロック画面にウィジェットを追加すると、次の服用をひと目で確認できます。</li>
+            <li>今日・昨日・過去7日の履歴を確認できます。通知を止めたいときは、その時間帯をオフにするか薬を削除します。</li>
       </ol>
     </section>
 
     <section class="section">
       <h2>価格</h2>
-      <p>無料で提供されていますが、最新の価格・提供状況はApp Storeでご確認ください。</p>
+      <p>ダウンロードは無料です。国や時期によって価格・提供状況が変わることがあるため、最新の情報はApp Storeでご確認ください。</p>
       <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
     </section>
 
     <section class="section">
       <h2>プライバシー</h2>
-      <p>個人の記録のためのアプリで、医療機関が管理する正式な服薬記録の代わりにはなりません。詳細はApp Storeのプライバシーラベルをご確認ください。</p>
+      <p>アカウント登録なし、クラウド送信なし。App Storeの説明のとおり、薬の情報と記録は端末の中だけに保存されます。通知は端末内で行われます。リマインダーと個人の記録のためのアプリで、医療機関が管理する正式な服薬記録の代わりにはなりません。最新のプライバシーラベルはApp Storeでご確認ください。</p>
     </section>
 
     <section class="section">
       <h2>スクリーンショット</h2>
       <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d8/ea/42d8eab6-86b5-c04c-d53e-1362833203cc/iphone-01-home.png/320x480bb.jpg" alt="PillTap のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/c8/a0/9cc8a083-88db-d448-204e-f579d057eae5/iphone-02-schedule.png/320x480bb.jpg" alt="PillTap のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ed/33/79/ed3379d9-1682-3a8a-e26c-1f8aa2b6cfc5/iphone-03-history.png/320x480bb.jpg" alt="PillTap のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/a3/fc/23a3fcd4-bb9b-867b-943a-cf9093ae1a15/iphone-04-follow-up.png/320x480bb.jpg" alt="PillTap のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/00/85/50008564-6448-8e88-8017-cf14c5dd741e/iphone-05-how-it-works.png/320x480bb.jpg" alt="PillTap のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d8/ea/42d8eab6-86b5-c04c-d53e-1362833203cc/iphone-01-home.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/c8/a0/9cc8a083-88db-d448-204e-f579d057eae5/iphone-02-schedule.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ed/33/79/ed3379d9-1682-3a8a-e26c-1f8aa2b6cfc5/iphone-03-history.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/a3/fc/23a3fcd4-bb9b-867b-943a-cf9093ae1a15/iphone-04-follow-up.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/00/85/50008564-6448-8e88-8017-cf14c5dd741e/iphone-05-how-it-works.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" loading="lazy"></figure>
       </div>
     </section>
 
     <section class="section">
       <h2>よくある質問</h2>
           <details>
-            <summary>PillTapは医療上の助言を提供しますか？</summary>
-            <p>いいえ。診断、治療のすすめ、服薬指示は提供しません。個人のメモとしての記録機能を持つだけのアプリです。</p>
+            <summary>おくすりタップは医療上の助言を提供しますか？</summary>
+            <p>いいえ。診断、治療のすすめ、服薬指示は提供しません。薬の服用は、医師や薬剤師の指示に従ってください。</p>
           </details>
           <details>
             <summary>正しく薬を飲めることを保証してくれますか？</summary>
-            <p>いいえ。あくまで個人の記録の補助であり、服薬遵守や安全性を保証するものではありません。</p>
+            <p>いいえ。あくまでリマインダーと個人の記録の補助であり、服薬遵守や安全性を保証するものではありません。</p>
           </details>
           <details>
-            <summary>どんな人に向いていますか？</summary>
-            <p>薬に関する確認を、自分用の参考としてかんたんに記録しておきたい方に向いています。</p>
+            <summary>「飲んだ」を押さなかったらどうなりますか？</summary>
+            <p>何も起きません。「飲んだ」を押すのは自分の記録のためで、任意です。押さなくても翌日また通知が鳴ります。</p>
+          </details>
+          <details>
+            <summary>毎日以外のスケジュールにできますか？</summary>
+            <p>できません。朝・昼・夜・就寝前の毎日固定のスケジュールです。曜日指定や数日おきには対応していません。</p>
+          </details>
+          <details>
+            <summary>睡眠中や集中モードでも通知は届きますか？</summary>
+            <p>iOSの設定で許可していれば、時間の指定が重要な通知として表示されます。</p>
+          </details>
+          <details>
+            <summary>データはどこに保存されますか？</summary>
+            <p>アカウント登録もクラウド送信もなく、App Storeの説明のとおり、薬の情報と記録は端末の中だけに保存されます。</p>
           </details>
           <details>
             <summary>医師や薬剤師への相談の代わりになりますか？</summary>
             <p>なりません。薬に関する疑問は、必ず資格を持つ医療の専門家の指示に従ってください。</p>
           </details>
-          <details>
-            <summary>介護をしている家族でも使えますか？</summary>
-            <p>シンプルな記録は見守りの補助として役立つ場合がありますが、専門的なケア計画や正式な医療記録の代わりにはなりません。</p>
-          </details>
     </section>
 
     <section class="section">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/pilltap/id6762545903?uo=4">PillTap をApp Storeで開く</a></p>
+      <p><a class="button primary" href="https://apps.apple.com/jp/app/pilltap/id6762545903?uo=4">おくすりタップ - 毎日鳴るお薬リマインダー をApp Storeで開く</a></p>
       <p class="meta">最終更新日: 2026-09-12</p>
     </section>
   </main>

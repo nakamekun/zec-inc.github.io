@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Today Ready | ZEC Apps</title>
-  <meta name="description" content="Today Ready is an iPhone weather decision app: umbrella, laundry, outfit, and outdoor answers at a glance, with Home Screen widgets and a daily prep check.">
+  <meta name="description" content="Today Ready is an iPhone weather app that turns the forecast into today&#x27;s outfit, layer, and umbrella answer, with a morning notification and widgets.">
   <link rel="canonical" href="https://zec-inc.jp/apps/today-ready/">
   <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/today-ready/">
   <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/today-ready/ja/">
@@ -13,9 +13,9 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
   <meta property="og:title" content="Today Ready | ZEC Apps">
-  <meta property="og:description" content="Today Ready is an iPhone weather decision app: umbrella, laundry, outfit, and outdoor answers at a glance, with Home Screen widgets and a daily prep check.">
+  <meta property="og:description" content="Today Ready is an iPhone weather app that turns the forecast into today&#x27;s outfit, layer, and umbrella answer, with a morning notification and widgets.">
   <meta property="og:url" content="https://zec-inc.jp/apps/today-ready/">
-  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/b1/59/00b159ad-22b8-9798-a7fa-9fc189e8e3ff/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
+  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1f/21/47/1f2147d6-9e03-0a7f-5383-4eacdb8b0e7d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -23,7 +23,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "Today Ready",
-      "description": "Today Ready is an iPhone weather decision app: umbrella, laundry, outfit, and outdoor answers at a glance, with Home Screen widgets and a daily prep check.",
+      "description": "Today Ready is an iPhone weather app that turns the forecast into today's outfit, layer, and umbrella answer, with a morning notification and widgets.",
       "operatingSystem": "iOS",
       "applicationCategory": "Weather",
       "offers": {
@@ -40,8 +40,8 @@
         "name": "ZEC Inc.",
         "url": "https://zec-inc.jp"
       },
-      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/b1/59/00b159ad-22b8-9798-a7fa-9fc189e8e3ff/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-      "softwareVersion": "1.3.0",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1f/21/47/1f2147d6-9e03-0a7f-5383-4eacdb8b0e7d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "softwareVersion": "1.4.0",
       "contentRating": "4+"
     },
     {
@@ -52,7 +52,15 @@
           "name": "Is Today Ready free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. It is free to download with no ads and no paid features. App Store pricing can change, so check the listing for current details."
+            "text": "Yes. It is free to download, and today's outfit, layer, and umbrella answer, one morning notification, the runs-cold and runs-hot adjustment, and the widgets are free, with no account, ads, or tracking. An optional Pro subscription adds more. Check the App Store listing for current prices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Today Ready Pro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pro is an optional auto-renewable subscription, billed monthly or yearly, with a 1-week free trial for eligible new subscribers. It adds the leaving-home alert, family outfits, going-out and coming-home advice, tomorrow's answer the evening before, up to three saved places, forecasts through the weekend when available, and weekday notification choices. It supports Family Sharing. If it ends, your saved places, family and settings are kept, and all free features remain available."
           }
         },
         {
@@ -60,7 +68,7 @@
           "name": "What does the app do with my location?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Location is used only to fetch local weather so the app can show your umbrella, laundry, outfit, and outdoor decisions. It is not stored on a server, and there is no account or tracking."
+            "text": "Location is used only to fetch local weather so the app can show your outfit, layer, and umbrella answer. It is not stored on a server, and there is no account or tracking."
           }
         },
         {
@@ -68,7 +76,7 @@
           "name": "Does Today Ready have a widget?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The small widget shows the top prep conclusion with compact temperature info, and the medium widget adds today's weather summary. Widgets show the latest saved snapshot and may ask you to open the app to refresh."
+            "text": "Yes. Home Screen and Lock Screen widgets are free. They show the latest answer the app saved, and may ask you to open the app to refresh."
           }
         },
         {
@@ -76,7 +84,7 @@
           "name": "Where does the weather data come from?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Apple Weather/WeatherKit is the preferred provider. If WeatherKit is unavailable, the app falls back to Open-Meteo so the same local decisions keep working."
+            "text": "Weather data is provided by Apple Weather."
           }
         },
         {
@@ -84,15 +92,23 @@
           "name": "Is this a full forecast app?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No, by design. There is no radar, weekly forecast, or weather news — Today Ready shows only the four everyday decisions, with weather data as supporting evidence."
+            "text": "No, by design. Today Ready shows the answer to what to wear and what to carry today rather than charts and detailed forecasts."
           }
         },
         {
           "@type": "Question",
-          "name": "Do my checklist items carry over?",
+          "name": "How does the leaving-home alert work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Today's checks stay for the day so you can see what is done, and they reset automatically the next day."
+            "text": "In Today Ready Pro, you set up a Shortcuts automation once, triggered when your home Wi-Fi disconnects, the charger comes off, or your alarm stops. You are then told your umbrella and outfit as you leave. It does not need \"Always\" location access, and you never get more than one alert a day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I see my family's outfits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with Today Ready Pro. Add each person's name, icon and runs-cold or runs-hot setting, and see everyone's outfit on the home screen and in notifications. The umbrella answer is shared."
           }
         }
       ]
@@ -177,10 +193,10 @@
 
   <main>
     <section class="hero">
-      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/b1/59/00b159ad-22b8-9798-a7fa-9fc189e8e3ff/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Today Ready app icon" width="96" height="96">
+      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1f/21/47/1f2147d6-9e03-0a7f-5383-4eacdb8b0e7d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Today Ready app icon" width="96" height="96">
       <div>
         <h1>Today Ready</h1>
-        <p class="tagline">Turns the weather into four morning answers — umbrella, laundry, outfit, and outdoor plans — conclusion first.</p>
+        <p class="tagline">Don&#x27;t read the forecast, get the answer: what to wear, whether to bring a layer, and whether you need an umbrella today.</p>
         <div class="actions">
           <a class="button primary" href="https://apps.apple.com/us/app/today-ready/id6766366722?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
@@ -190,31 +206,33 @@
 
     <section class="section">
       <h2>Overview</h2>
-          <p>Today Ready is a weather app that skips the forecast and gives you the answer. Instead of charts and hourly graphs, it turns your local weather into the four calls you actually make every morning: whether to bring an umbrella, whether laundry is better indoors, whether a light jacket helps, and whether outdoor plans are easier earlier in the day.</p>
-          <p>The design philosophy is &#x27;Open. See. Decide.&#x27; — one screen, four decision cards, conclusion first, with the weather data shown only as supporting evidence. There is no radar, no weekly forecast browsing, and no weather news, because the goal is to get you out the door, not keep you reading.</p>
-          <p>A prep checklist lets you tick items off as you get ready; today&#x27;s checks stay for the day and reset the next morning. Home Screen widgets keep the top answer visible: the small widget shows the main prep conclusion, and the medium widget adds today&#x27;s weather summary. Weather comes from Apple Weather/WeatherKit, with Open-Meteo as a fallback so the answers keep working.</p>
+          <p>Today Ready is a weather app that skips the forecast and gives you the answer. It turns local weather into the choices you make before leaving: what to wear, whether to bring a layer, and whether you need an umbrella.</p>
+          <p>The free app gives you today&#x27;s outfit, layer, and umbrella answer, one morning notification, a runs-cold or runs-hot adjustment, and Home Screen and Lock Screen widgets. There is no account, no ads, and no tracking.</p>
+          <p>Optional Today Ready Pro, an auto-renewable subscription, adds an alert the moment you leave home (set up once with a Shortcuts automation, with no &quot;Always&quot; location access and never more than one alert a day), the whole family&#x27;s outfits at once, going-out and coming-home advice, tomorrow&#x27;s answer the evening before, up to three saved places, forecasts through the weekend when available, and weekday notification choices. Weather data is provided by Apple Weather.</p>
     </section>
 
     <section class="section">
       <h2>Who It Is For</h2>
       <ul>
             <li>Commuters who just want to know if they need an umbrella before leaving home</li>
-            <li>People deciding whether to hang laundry outside or dry it indoors</li>
-            <li>Anyone choosing an outfit or jacket based on today&#x27;s conditions</li>
-            <li>Parents planning a park trip or short outing around the weather</li>
-            <li>People tired of scrolling detailed forecasts for a simple yes/no answer</li>
+            <li>Anyone choosing an outfit or a layer based on today&#x27;s conditions</li>
+            <li>People who run cold or hot and want the advice adjusted to them</li>
+            <li>Families who want everyone&#x27;s outfit and the umbrella answer in one place (Pro)</li>
+            <li>People tired of scrolling detailed forecasts for a simple answer</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>Main Features</h2>
       <ul>
-            <li>Four decision cards: umbrella, laundry, outfit, and outdoor/park plans</li>
-            <li>Conclusion-first layout — the answer comes before the forecast data</li>
-            <li>Daily prep checklist that resets automatically the next day</li>
-            <li>Small and medium Home Screen widgets showing the top prep conclusion and weather summary</li>
-            <li>Weather from Apple Weather/WeatherKit with Open-Meteo fallback</li>
-            <li>Units options (Auto, Metric, Imperial), compact wind display, manual refresh, light and dark mode</li>
+            <li>Today&#x27;s outfit, layer, and umbrella answer, conclusion first</li>
+            <li>One morning notification</li>
+            <li>Runs-cold and runs-hot adjustment</li>
+            <li>Home Screen and Lock Screen widgets</li>
+            <li>No account, ads, or tracking</li>
+            <li>Pro: get your umbrella and outfit when you leave home, using a one-time Shortcuts automation (home Wi-Fi disconnects, charger comes off, or alarm stops)</li>
+            <li>Pro: add family members with their own name, icon and runs-cold or runs-hot setting, and see everyone&#x27;s outfit on the home screen and in notifications</li>
+            <li>Pro: going-out and coming-home advice, tomorrow&#x27;s answer the evening before, up to three saved places, forecasts through the weekend when available, and weekday notification choices</li>
       </ul>
     </section>
 
@@ -222,33 +240,32 @@
       <h2>How to Use</h2>
       <ol>
             <li>Open Today Ready and allow location access so it can fetch your local weather.</li>
-            <li>Read the four decision cards: umbrella, laundry, outfit, and outdoor plans.</li>
-            <li>Check off prep items as you get ready — today&#x27;s checks reset automatically tomorrow.</li>
-            <li>Pull the latest conditions any time with manual refresh from the header.</li>
-            <li>Add the Home Screen widget to keep the first answer visible; open the app when the widget asks for a fresh update.</li>
-            <li>Adjust units (Auto, Metric, Imperial) in the small settings sheet if needed.</li>
+            <li>Read today&#x27;s outfit, layer, and umbrella answer.</li>
+            <li>Turn on the morning notification and set your runs-cold or runs-hot adjustment.</li>
+            <li>Add the Home Screen or Lock Screen widget to keep the answer visible.</li>
+            <li>Optional: with Today Ready Pro, set up a Shortcuts automation to be notified when you leave home, or add your family.</li>
       </ol>
     </section>
 
     <section class="section">
       <h2>Pricing</h2>
-      <p>Today Ready is free on the App Store, with no ads and no paid features. App Store pricing can change, so check the store listing for current details.</p>
+      <p>Today Ready is free to download. Today&#x27;s answer, the morning notification, the runs-cold and runs-hot adjustment, and the widgets are free. Today Ready Pro is an optional auto-renewable subscription, billed monthly or yearly, with a 1-week free trial for eligible new subscribers, and it supports Family Sharing. Your saved places, family and settings are not deleted when a subscription ends, and current-location weather and all free features remain available. Check the App Store listing for current prices and details.</p>
       <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
     </section>
 
     <section class="section">
       <h2>Privacy</h2>
-      <p>Today Ready uses your location only to fetch local weather for its decisions, and does not store your location on a server. There is no account, no tracking, and no ads, and the app does not sell personal data. The widget never requests location or fetches weather itself — it only reads the latest decision snapshot the app saved locally in an App Group container.</p>
+      <p>Today Ready uses your location only to fetch local weather for its answers, and does not store your location on a server. There is no account, no tracking, and no ads, and the app does not sell personal data. Weather comes from Apple Weather. If you use Pro, saved places and family settings are kept on your device. The widget never requests location or fetches weather itself — it only reads the latest snapshot the app saved locally in an App Group container. Subscriptions are handled by Apple, and the app does not receive your payment details.</p>
     </section>
 
     <section class="section">
       <h2>Screenshots</h2>
       <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/64/c8/35/64c83512-ba0b-647c-3d05-8486beb1a340/01-iphone-widget.png/320x480bb.jpg" alt="Today Ready screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6b/eb/54/6beb54e4-e601-ab80-c30d-f494bc47c909/02-iphone-home.png/320x480bb.jpg" alt="Today Ready screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7e/a7/40/7ea74049-9a9f-16ff-25ea-9af0a5508578/03-iphone-commute.png/320x480bb.jpg" alt="Today Ready screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6d/53/4e/6d534e94-44d4-19a4-4b71-c030bc869927/04-iphone-evening.png/320x480bb.jpg" alt="Today Ready screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/da/14/3b/da143bd1-9308-a8e3-cf00-47a08c14ac6b/05-iphone-done.png/320x480bb.jpg" alt="Today Ready screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/cd/94/50cd946c-bcf8-7b57-1cef-582bdc66b2de/01-iphone-widget.png/320x480bb.jpg" alt="Today Ready screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ad/44/0c/ad440c1d-2182-218c-ac52-cadf51ff8205/02-iphone-home.png/320x480bb.jpg" alt="Today Ready screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/3b/b3/f53bb342-f15a-7d50-5b5b-9cd82c50769a/03-iphone-leavehome.png/320x480bb.jpg" alt="Today Ready screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e2/77/9b/e2779b1a-e75c-0cf6-5799-0c1e513e51ef/04-iphone-family.png/320x480bb.jpg" alt="Today Ready screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b4/a3/27/b4a3279e-f9e1-efa0-5974-f02a5a8fc7a1/05-iphone-commute.png/320x480bb.jpg" alt="Today Ready screenshot" loading="lazy"></figure>
       </div>
     </section>
 
@@ -256,27 +273,35 @@
       <h2>FAQ</h2>
           <details>
             <summary>Is Today Ready free?</summary>
-            <p>Yes. It is free to download with no ads and no paid features. App Store pricing can change, so check the listing for current details.</p>
+            <p>Yes. It is free to download, and today&#x27;s outfit, layer, and umbrella answer, one morning notification, the runs-cold and runs-hot adjustment, and the widgets are free, with no account, ads, or tracking. An optional Pro subscription adds more. Check the App Store listing for current prices.</p>
+          </details>
+          <details>
+            <summary>What is Today Ready Pro?</summary>
+            <p>Pro is an optional auto-renewable subscription, billed monthly or yearly, with a 1-week free trial for eligible new subscribers. It adds the leaving-home alert, family outfits, going-out and coming-home advice, tomorrow&#x27;s answer the evening before, up to three saved places, forecasts through the weekend when available, and weekday notification choices. It supports Family Sharing. If it ends, your saved places, family and settings are kept, and all free features remain available.</p>
           </details>
           <details>
             <summary>What does the app do with my location?</summary>
-            <p>Location is used only to fetch local weather so the app can show your umbrella, laundry, outfit, and outdoor decisions. It is not stored on a server, and there is no account or tracking.</p>
+            <p>Location is used only to fetch local weather so the app can show your outfit, layer, and umbrella answer. It is not stored on a server, and there is no account or tracking.</p>
           </details>
           <details>
             <summary>Does Today Ready have a widget?</summary>
-            <p>Yes. The small widget shows the top prep conclusion with compact temperature info, and the medium widget adds today&#x27;s weather summary. Widgets show the latest saved snapshot and may ask you to open the app to refresh.</p>
+            <p>Yes. Home Screen and Lock Screen widgets are free. They show the latest answer the app saved, and may ask you to open the app to refresh.</p>
           </details>
           <details>
             <summary>Where does the weather data come from?</summary>
-            <p>Apple Weather/WeatherKit is the preferred provider. If WeatherKit is unavailable, the app falls back to Open-Meteo so the same local decisions keep working.</p>
+            <p>Weather data is provided by Apple Weather.</p>
           </details>
           <details>
             <summary>Is this a full forecast app?</summary>
-            <p>No, by design. There is no radar, weekly forecast, or weather news — Today Ready shows only the four everyday decisions, with weather data as supporting evidence.</p>
+            <p>No, by design. Today Ready shows the answer to what to wear and what to carry today rather than charts and detailed forecasts.</p>
           </details>
           <details>
-            <summary>Do my checklist items carry over?</summary>
-            <p>Today&#x27;s checks stay for the day so you can see what is done, and they reset automatically the next day.</p>
+            <summary>How does the leaving-home alert work?</summary>
+            <p>In Today Ready Pro, you set up a Shortcuts automation once, triggered when your home Wi-Fi disconnects, the charger comes off, or your alarm stops. You are then told your umbrella and outfit as you leave. It does not need &quot;Always&quot; location access, and you never get more than one alert a day.</p>
+          </details>
+          <details>
+            <summary>Can I see my family&#x27;s outfits?</summary>
+            <p>Yes, with Today Ready Pro. Add each person&#x27;s name, icon and runs-cold or runs-hot setting, and see everyone&#x27;s outfit on the home screen and in notifications. The umbrella answer is shared.</p>
           </details>
     </section>
 

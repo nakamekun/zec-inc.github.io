@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CaffeineTap | ZEC Apps</title>
-  <meta name="description" content="CaffeineTapは1タップで使えるカフェイン記録アプリ。今日の合計と残り量、ペースの目安を表示し、ホーム画面ウィジェットや飲み止め時刻のリマインダーにも対応。記録は端末内にのみ保存します。">
+  <title>妊娠中・授乳中のカフェイン記録 - Caffeine Tap | ZEC Apps</title>
+  <meta name="description" content="妊娠中・授乳中のカフェイン記録アプリ Caffeine Tap。コーヒーやお茶を1タップで記録し、今日の合計と目安までの残りを表示。アカウント不要・広告なし。">
   <link rel="canonical" href="https://zec-inc.jp/apps/caffeinetap/ja/">
   <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/caffeinetap/">
   <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/caffeinetap/ja/">
@@ -12,8 +12,8 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
-  <meta property="og:title" content="CaffeineTap | ZEC Apps">
-  <meta property="og:description" content="CaffeineTapは1タップで使えるカフェイン記録アプリ。今日の合計と残り量、ペースの目安を表示し、ホーム画面ウィジェットや飲み止め時刻のリマインダーにも対応。記録は端末内にのみ保存します。">
+  <meta property="og:title" content="妊娠中・授乳中のカフェイン記録 - Caffeine Tap | ZEC Apps">
+  <meta property="og:description" content="妊娠中・授乳中のカフェイン記録アプリ Caffeine Tap。コーヒーやお茶を1タップで記録し、今日の合計と目安までの残りを表示。アカウント不要・広告なし。">
   <meta property="og:url" content="https://zec-inc.jp/apps/caffeinetap/ja/">
   <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2e/a3/70/2ea3706d-2e7b-303d-2a7e-b4e2df8f39ba/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
   <script type="application/ld+json">
@@ -22,8 +22,8 @@
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      "name": "CaffeineTap",
-      "description": "CaffeineTapは1タップで使えるカフェイン記録アプリ。今日の合計と残り量、ペースの目安を表示し、ホーム画面ウィジェットや飲み止め時刻のリマインダーにも対応。記録は端末内にのみ保存します。",
+      "name": "妊娠中・授乳中のカフェイン記録 - Caffeine Tap",
+      "description": "妊娠中・授乳中のカフェイン記録アプリ Caffeine Tap。コーヒーやお茶を1タップで記録し、今日の合計と目安までの残りを表示。アカウント不要・広告なし。",
       "operatingSystem": "iOS",
       "applicationCategory": "Health & Fitness",
       "offers": {
@@ -49,10 +49,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "CaffeineTapは無料ですか？",
+          "name": "Caffeine Tapは無料ですか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "はい。無料で、アプリ内課金や有料機能はありません。最新の価格はApp Storeでご確認ください。"
+            "text": "はい。無料で、広告もありません。最新の価格はApp Storeでご確認ください。"
           }
         },
         {
@@ -60,7 +60,15 @@
           "name": "記録したデータはどこに保存されますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "端末内にのみ保存されます。アカウント・サーバー同期・解析・広告はなく、ウィジェットはApp Groupを通じて同じローカルデータを読み取ります。"
+            "text": "端末の中だけに保存されます。アカウントも広告もなく、ウィジェットも同じ端末内のデータを読み取ります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ウィジェットはありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。ホーム画面とロック画面のウィジェットで今日の量を確認できます。ホーム画面の小さいウィジェットではプリセット一覧の先頭の飲み物を記録でき、ロック画面ウィジェットは確認用です。"
           }
         },
         {
@@ -68,23 +76,31 @@
           "name": "ヘルスケア（Apple Health）と連携しますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "いいえ。HealthKitは使用しません。CaffeineTapは単独で使う個人用の記録アプリです。"
+            "text": "任意で連携できます。設定でオンにすると、記録したカフェイン（mg）をヘルスケアに保存します。睡眠は2つの平均を並べて表示するためだけに読み取り、カフェインが睡眠にどう影響するかは判定しません。ヘルスケアのデータは外部に送りません。"
           }
         },
         {
           "@type": "Question",
-          "name": "通知は届きますか？",
+          "name": "1日の目安はどこから来ていますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "自分で有効にしたときだけ、カットオフリマインダーが選んだ時刻に1件届きます。記録を促す通知はなく、通知権限も設定で機能を有効にしたときにはじめて求められます。"
+            "text": "妊娠中・授乳中は、地域に応じた機関の目安を設定し、出典の機関名も表示します。目安は国や機関で異なり、EFSAは200mg、カナダ保健省は300mgです。目安は自分で変更でき、「どちらでもない」なら自分で決めた目安で使えます。"
           }
         },
         {
           "@type": "Question",
-          "name": "プリセットのカフェイン量はどのくらい正確ですか？",
+          "name": "カフェイン量はどのくらい正確ですか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "プリセットの量は目安の推定値で、銘柄・サイズ・淹れ方によって変わります。正確な量がわかる場合はカスタム入力できます。本アプリは個人の記録用で、医療的な助言は行いません。"
+            "text": "量は標準的な値で、商品や淹れ方によって変わります。最大12個のプリセットは、カフェイン量を変更できます。記録と目安の表示のためのもので、診断や治療を目的としていません。気になることは医師・助産師にご相談ください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "過去の記録は見られますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。7日・30日の平均、目安を超えた日、よく飲んだものを確認でき、カレンダーで日々の記録を振り返れます。"
           }
         }
       ]
@@ -169,10 +185,10 @@
 
   <main>
     <section class="hero">
-      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2e/a3/70/2ea3706d-2e7b-303d-2a7e-b4e2df8f39ba/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="CaffeineTap のアプリアイコン" width="96" height="96">
+      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2e/a3/70/2ea3706d-2e7b-303d-2a7e-b4e2df8f39ba/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="妊娠中・授乳中のカフェイン記録 - Caffeine Tap のアプリアイコン" width="96" height="96">
       <div>
-        <h1>CaffeineTap</h1>
-        <p class="tagline">コーヒーやお茶を1タップで記録し、今日あとどれくらいカフェインを摂れるかを表示。ウィジェットとカットオフリマインダーにも対応しています。</p>
+        <h1>妊娠中・授乳中のカフェイン記録 - Caffeine Tap</h1>
+        <p class="tagline">妊娠中・授乳中のカフェインを1タップで記録。今日の合計と、1日の目安までの残りがひと目でわかります。</p>
         <div class="actions">
           <a class="button primary" href="https://apps.apple.com/jp/app/pregnancy-caffeine-tracker/id6769219576?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
@@ -182,95 +198,105 @@
 
     <section class="section">
       <h2>概要</h2>
-          <p>CaffeineTapは、「今日はあとどれくらいカフェインを飲めるか」にすぐ答えるための軽量なカフェイン記録アプリです。コーヒー、エスプレッソ、紅茶、コーラ、エナジードリンクをタップすると、今日の合計、自分で決めた上限までの残り量、シンプルなペースの目安が更新されます。</p>
-          <p>多機能なカフェインアプリが積み上げがちなものを、あえて省きました。アカウントも、複雑なグラフも、ヘルスケア（HealthKit）連携も、半減期の計算も、睡眠予測もありません。あるのは、すばやい記録と7日分の履歴、そして今日の残り量をひと目で示すホーム画面の小さなウィジェットだけです。</p>
-          <p>通知は1つだけ。任意で設定できる「カットオフリマインダー」が、自分で選んだ時刻に知らせてくれるので、遅い時間にカフェインを摂る前にひと呼吸おくきっかけになります。</p>
+          <p>Caffeine Tapは、妊娠中・授乳中のカフェインを毎日の記録で確かめたい方のためのアプリです。飲んだ量を記録し、今日の合計と、選んだ1日の目安までの残りを表示します。はじめに「妊娠中・授乳中・どちらでもない」を選びます。妊娠中・授乳中は地域に応じた機関の目安を設定し、出典の機関名も表示します。目安は国や機関で異なり（EFSAは200mg、カナダ保健省は300mg）、自分で変更でき、「どちらでもない」なら自分で決めた目安で使えます。</p>
+          <p>飲み物を選んで1タップで記録でき、最大12個のプリセットはカフェイン量を変更できます。½・1½・2杯や飲んだ時刻の指定、記録の修正・取り消しにも対応。量は標準的な値で、商品や淹れ方によって変わります。7日・30日の平均、目安を超えた日、よく飲んだものを確認でき、カレンダーで日々の記録を振り返れます。</p>
+          <p>ホーム画面・ロック画面のウィジェットで今日の量を確認でき、Siri・ショートカットでも記録できます。watchOS 26以降のApple Watchなら1杯の記録も可能です（Watchアプリは不要）。ヘルスケア連携は任意で、オンにするまで使われません。アカウントなし・広告なしで、データは端末の中だけに保存します。記録と目安の表示のためのもので、診断や治療を目的としていません。体内の残存量や睡眠、授乳までの待ち時間を予測・判定する機能もありません。気になることは医師・助産師にご相談ください。</p>
     </section>
 
     <section class="section">
       <h2>こんな方に</h2>
       <ul>
-            <li>無理なく1日のカフェイン上限を守りたいコーヒー好きの方</li>
-            <li>夕方以降のカフェインを控えたい方</li>
-            <li>エナジードリンクやお茶で、どれだけ飲んだかわからなくなりがちな方</li>
-            <li>多機能なカフェインアプリをやめて、手早い記録だけで十分な方</li>
-            <li>ホーム画面で残り量を確認したい方</li>
+            <li>妊娠中・授乳中で、毎日のカフェインをかんたんに記録したい方</li>
+            <li>今日の合計と、自分の目安までの残りをひと目で確かめたい方</li>
+            <li>コーヒー・お茶・エナジードリンクをどれだけ飲んだか分からなくなりがちな方</li>
+            <li>ホーム画面・ロック画面・Siri・Apple Watchから手早く記録したい方</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>主な機能</h2>
       <ul>
-            <li>1タップ記録のプリセット: コーヒー（95mg）、エスプレッソ（65mg）、紅茶（45mg）、緑茶（30mg）、エナジードリンク（80/160mg）、コーラ（40mg）</li>
-            <li>プリセットにない飲み物はカスタム量で入力可能</li>
-            <li>1日の上限（mg）を自分で設定し、今日の合計・残り量・ペースの目安（良いペース〜上限オーバー）を表示</li>
-            <li>日ごとにまとまった7日分の履歴と、記録の削除</li>
-            <li>今日の残りカフェイン量（超過時は上限オーバー表示）を示す小サイズのホーム画面ウィジェット</li>
-            <li>選んだ時刻に届くカットオフリマインダー（ローカル通知1件のみ）。データは端末内にのみ保存</li>
+            <li>「妊娠中・授乳中・どちらでもない」を選択。妊娠中・授乳中は地域に応じた目安と出典の機関名を表示（変更も可能）</li>
+            <li>1タップ記録のプリセット。最大12個のカフェイン量を変更可能</li>
+            <li>½・1½・2杯、飲んだ時刻の指定、記録の修正・取り消し</li>
+            <li>今日の合計と、1日の目安までの残り</li>
+            <li>7日・30日の平均、目安を超えた日、よく飲んだもの、日々の記録を見返せるカレンダー</li>
+            <li>ホーム画面・ロック画面のウィジェット（ホーム画面の小さいウィジェットは先頭のプリセットを記録、ロック画面は確認用）</li>
+            <li>Siri・ショートカットで記録と確認</li>
+            <li>watchOS 26以降のApple Watchから1杯を記録（Watchアプリは不要）</li>
+            <li>任意のヘルスケア連携。記録したカフェイン（mg）を保存し、睡眠は2つの平均を並べて表示するためだけに読み取ります（カフェインの影響は判定しません）</li>
+            <li>アカウントなし・広告なし。データは端末の中だけに保存</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>使い方</h2>
       <ol>
-            <li>設定で、1日のカフェイン上限（mg）を決めます。</li>
-            <li>何か飲んだら、コーヒー・エスプレッソ・お茶・エナジードリンク・コーラのプリセットをタップするか、カスタム量を入力します。</li>
-            <li>ホーム画面で、今日の合計・残り量・ペースの目安を確認します。</li>
-            <li>小サイズのウィジェットをホーム画面に追加すると、アプリを開かずに残り量がわかります。</li>
-            <li>必要に応じて設定でカットオフリマインダーを有効にし、通知時刻を選びます。</li>
-            <li>履歴で直近7日間を見返し、タップミスした記録は削除します。</li>
+            <li>「妊娠中・授乳中・どちらでもない」を選びます。妊娠中・授乳中は、地域に応じて設定された目安を確認し、必要なら変更します。</li>
+            <li>飲んだらプリセットをタップして記録するか、½・1½・2杯や飲んだ時刻を指定して記録します。</li>
+            <li>ホームで、今日の合計と目安までの残りを確認します。</li>
+            <li>7日・30日の平均やカレンダーで振り返り、必要なら記録を修正・取り消します。</li>
+            <li>必要に応じて、ウィジェットの追加、Siri・ショートカット、Apple Watchでの記録、設定でのヘルスケア連携を使います。</li>
       </ol>
     </section>
 
     <section class="section">
       <h2>価格</h2>
-      <p>CaffeineTapは無料で、アプリ内課金や有料機能はありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+      <p>Caffeine Tapは無料で、広告もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
       <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
     </section>
 
     <section class="section">
       <h2>プライバシー</h2>
-      <p>個人データの収集・共有・送信は行いません。解析・広告SDK・アカウント・サーバー同期はなく、カフェインの記録、上限設定、リマインダー設定は端末内に保存されます。ウィジェットも同じローカルデータを読み取り、HealthKitは使用しません。カットオフリマインダーはローカル通知で、権限は機能を有効にしたときにだけ求められます。</p>
+      <p>アカウントなし・広告なし。データは端末の中だけに保存され、ウィジェットも同じ端末内のデータを読み取ります。ヘルスケア連携は任意で、設定でオンにするまで使われません。オンにすると記録したカフェイン（mg）をヘルスケアに保存し、睡眠は2つの平均を並べて表示するためだけに読み取ります。ヘルスケアのデータは端末の中で扱い、外部には送りません。リマインダー通知を使う場合はローカル通知で、権限は有効にしたときにだけ求められます。</p>
     </section>
 
     <section class="section">
       <h2>スクリーンショット</h2>
       <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/08/96/20/08962076-c8fd-3dc7-0765-b2daf02b7674/69-01-home.png/320x480bb.jpg" alt="CaffeineTap のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/74/04/7c/74047c32-48e5-f883-7b8f-174fe430003d/69-02-stats.png/320x480bb.jpg" alt="CaffeineTap のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/67/bc/fc/67bcfc85-cb28-be0a-13fa-05db4abf8ffe/69-03-lifestage.png/320x480bb.jpg" alt="CaffeineTap のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dc/e4/a9/dce4a970-756e-a021-9f13-47067ba40127/69-04-presets.png/320x480bb.jpg" alt="CaffeineTap のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/42/df/a142dfa8-f8a1-d81c-faef-4a8910909dd3/69-05-widgets.png/320x480bb.jpg" alt="CaffeineTap のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/08/96/20/08962076-c8fd-3dc7-0765-b2daf02b7674/69-01-home.png/320x480bb.jpg" alt="妊娠中・授乳中のカフェイン記録 - Caffeine Tap のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/74/04/7c/74047c32-48e5-f883-7b8f-174fe430003d/69-02-stats.png/320x480bb.jpg" alt="妊娠中・授乳中のカフェイン記録 - Caffeine Tap のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/67/bc/fc/67bcfc85-cb28-be0a-13fa-05db4abf8ffe/69-03-lifestage.png/320x480bb.jpg" alt="妊娠中・授乳中のカフェイン記録 - Caffeine Tap のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dc/e4/a9/dce4a970-756e-a021-9f13-47067ba40127/69-04-presets.png/320x480bb.jpg" alt="妊娠中・授乳中のカフェイン記録 - Caffeine Tap のスクリーンショット" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/42/df/a142dfa8-f8a1-d81c-faef-4a8910909dd3/69-05-widgets.png/320x480bb.jpg" alt="妊娠中・授乳中のカフェイン記録 - Caffeine Tap のスクリーンショット" loading="lazy"></figure>
       </div>
     </section>
 
     <section class="section">
       <h2>よくある質問</h2>
           <details>
-            <summary>CaffeineTapは無料ですか？</summary>
-            <p>はい。無料で、アプリ内課金や有料機能はありません。最新の価格はApp Storeでご確認ください。</p>
+            <summary>Caffeine Tapは無料ですか？</summary>
+            <p>はい。無料で、広告もありません。最新の価格はApp Storeでご確認ください。</p>
           </details>
           <details>
             <summary>記録したデータはどこに保存されますか？</summary>
-            <p>端末内にのみ保存されます。アカウント・サーバー同期・解析・広告はなく、ウィジェットはApp Groupを通じて同じローカルデータを読み取ります。</p>
+            <p>端末の中だけに保存されます。アカウントも広告もなく、ウィジェットも同じ端末内のデータを読み取ります。</p>
+          </details>
+          <details>
+            <summary>ウィジェットはありますか？</summary>
+            <p>はい。ホーム画面とロック画面のウィジェットで今日の量を確認できます。ホーム画面の小さいウィジェットではプリセット一覧の先頭の飲み物を記録でき、ロック画面ウィジェットは確認用です。</p>
           </details>
           <details>
             <summary>ヘルスケア（Apple Health）と連携しますか？</summary>
-            <p>いいえ。HealthKitは使用しません。CaffeineTapは単独で使う個人用の記録アプリです。</p>
+            <p>任意で連携できます。設定でオンにすると、記録したカフェイン（mg）をヘルスケアに保存します。睡眠は2つの平均を並べて表示するためだけに読み取り、カフェインが睡眠にどう影響するかは判定しません。ヘルスケアのデータは外部に送りません。</p>
           </details>
           <details>
-            <summary>通知は届きますか？</summary>
-            <p>自分で有効にしたときだけ、カットオフリマインダーが選んだ時刻に1件届きます。記録を促す通知はなく、通知権限も設定で機能を有効にしたときにはじめて求められます。</p>
+            <summary>1日の目安はどこから来ていますか？</summary>
+            <p>妊娠中・授乳中は、地域に応じた機関の目安を設定し、出典の機関名も表示します。目安は国や機関で異なり、EFSAは200mg、カナダ保健省は300mgです。目安は自分で変更でき、「どちらでもない」なら自分で決めた目安で使えます。</p>
           </details>
           <details>
-            <summary>プリセットのカフェイン量はどのくらい正確ですか？</summary>
-            <p>プリセットの量は目安の推定値で、銘柄・サイズ・淹れ方によって変わります。正確な量がわかる場合はカスタム入力できます。本アプリは個人の記録用で、医療的な助言は行いません。</p>
+            <summary>カフェイン量はどのくらい正確ですか？</summary>
+            <p>量は標準的な値で、商品や淹れ方によって変わります。最大12個のプリセットは、カフェイン量を変更できます。記録と目安の表示のためのもので、診断や治療を目的としていません。気になることは医師・助産師にご相談ください。</p>
+          </details>
+          <details>
+            <summary>過去の記録は見られますか？</summary>
+            <p>はい。7日・30日の平均、目安を超えた日、よく飲んだものを確認でき、カレンダーで日々の記録を振り返れます。</p>
           </details>
     </section>
 
     <section class="section">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/pregnancy-caffeine-tracker/id6769219576?uo=4">CaffeineTap をApp Storeで開く</a></p>
+      <p><a class="button primary" href="https://apps.apple.com/jp/app/pregnancy-caffeine-tracker/id6769219576?uo=4">妊娠中・授乳中のカフェイン記録 - Caffeine Tap をApp Storeで開く</a></p>
       <p class="meta">最終更新日: 2026-10-18</p>
     </section>
   </main>

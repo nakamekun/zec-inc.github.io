@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compound Interest - AssetCurve | ZEC Apps</title>
-  <meta name="description" content="Asset Curve for iPhone simulates compound growth of your savings — future value, goal backsolve, charts, yearly projections. No account, no tracking.">
+  <meta name="description" content="AssetCurve is a compound interest calculator for iPhone: savings growth, withdrawal runway and goal backsolve, with charts. No account, no ads, no network.">
   <link rel="canonical" href="https://zec-inc.jp/apps/asset-curve/">
   <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/asset-curve/">
   <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/asset-curve/ja/">
@@ -13,9 +13,9 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
   <meta property="og:title" content="Compound Interest - AssetCurve | ZEC Apps">
-  <meta property="og:description" content="Asset Curve for iPhone simulates compound growth of your savings — future value, goal backsolve, charts, yearly projections. No account, no tracking.">
+  <meta property="og:description" content="AssetCurve is a compound interest calculator for iPhone: savings growth, withdrawal runway and goal backsolve, with charts. No account, no ads, no network.">
   <meta property="og:url" content="https://zec-inc.jp/apps/asset-curve/">
-  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/01/bf/e601bfcf-050c-4ca8-7abb-0ab6d74d3c2d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg">
+  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/75/91/ac/7591ac59-4d7e-0974-55a5-63e4fa5ab571/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -23,7 +23,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "Compound Interest - AssetCurve",
-      "description": "Asset Curve for iPhone simulates compound growth of your savings — future value, goal backsolve, charts, yearly projections. No account, no tracking.",
+      "description": "AssetCurve is a compound interest calculator for iPhone: savings growth, withdrawal runway and goal backsolve, with charts. No account, no ads, no network.",
       "operatingSystem": "iOS",
       "applicationCategory": "Finance",
       "offers": {
@@ -40,8 +40,8 @@
         "name": "ZEC Inc.",
         "url": "https://zec-inc.jp"
       },
-      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/01/bf/e601bfcf-050c-4ca8-7abb-0ab6d74d3c2d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "softwareVersion": "1.3.0",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/75/91/ac/7591ac59-4d7e-0974-55a5-63e4fa5ab571/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "softwareVersion": "1.4.0",
       "contentRating": "4+"
     },
     {
@@ -49,10 +49,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Is Asset Curve free?",
+          "name": "Is AssetCurve free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. It is free to download and use, with no in-app purchases or paid content. Check the App Store listing for current pricing details."
+            "text": "Yes. It is free to download and use, with no ads and no account. Check the App Store listing for current pricing details."
           }
         },
         {
@@ -60,7 +60,7 @@
           "name": "Does the app see my financial data?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Asset Curve uses no network services and collects nothing. Your inputs are processed on the device and are not persisted or transmitted anywhere."
+            "text": "No. AssetCurve has no network connection and no account. Everything is calculated on your device, and your inputs are not sent anywhere."
           }
         },
         {
@@ -68,7 +68,7 @@
           "name": "Is this investment advice?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Asset Curve does not recommend investments. Results are approximate simulations only and exclude taxes, fees, currency changes, market volatility, and asset allocation — they do not guarantee any outcome."
+            "text": "No. AssetCurve does not recommend any investment. Results are rough simulations with monthly compounding that do not guarantee future outcomes. Taxes, fees, currency changes, and market volatility are not included."
           }
         },
         {
@@ -76,7 +76,7 @@
           "name": "How are the calculations done?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The simulator uses monthly compounding: the annual rate is divided by 12 and contributions are added at the end of each month. Results include future value, total contributions, estimated growth, and a yearly projection."
+            "text": "The simulator uses monthly compounding. Every result comes with a balance chart and a year-by-year table showing contributions and estimated growth."
           }
         },
         {
@@ -84,7 +84,7 @@
           "name": "Which currencies does it support?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "USD is the default, with JPY and EUR also selectable as display units. Switching units applies a simple fixed factor rather than live exchange rates, since the app performs no FX calculation."
+            "text": "USD, JPY, and EUR can be selected as the display unit. Switching only changes the unit; the app does not convert amounts with exchange rates."
           }
         },
         {
@@ -92,7 +92,7 @@
           "name": "Does it work offline?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, completely. The app has no network connection requirement and no external API integration."
+            "text": "Yes, completely. The app has no network connection and does not call any external service."
           }
         }
       ]
@@ -177,10 +177,10 @@
 
   <main>
     <section class="hero">
-      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/01/bf/e601bfcf-050c-4ca8-7abb-0ab6d74d3c2d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Compound Interest - AssetCurve app icon" width="96" height="96">
+      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/75/91/ac/7591ac59-4d7e-0974-55a5-63e4fa5ab571/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Compound Interest - AssetCurve app icon" width="96" height="96">
       <div>
         <h1>Compound Interest - AssetCurve</h1>
-        <p class="tagline">A local compound-growth simulator: estimate future value or the monthly saving needed to hit a goal.</p>
+        <p class="tagline">A private compound interest calculator: estimate savings growth, how long withdrawals could last, or what a goal would take.</p>
         <div class="actions">
           <a class="button primary" href="https://apps.apple.com/us/app/compound-interest-assetcurve/id6768640767?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
@@ -190,16 +190,18 @@
 
     <section class="section">
       <h2>Overview</h2>
-          <p>Asset Curve is a simple compound-growth simulator for iPhone. Enter an initial amount, a monthly contribution, an expected annual return, and a number of years, and it produces a rough estimate of future asset value — along with total contributions, estimated growth, a monthly balance chart, and a year-by-year projection list.</p>
-          <p>It works in two directions. Future Value mode answers &quot;what might my savings grow to?&quot; Goal Backsolve mode flips the question: enter your current assets, a target amount, an expected return, and a time horizon, and it estimates the monthly contribution that would be needed under the same simplified assumptions. USD is the default unit, with JPY and EUR also selectable.</p>
-          <p>Asset Curve is deliberately a calculator, not a finance platform: no account, no brokerage connection, no cloud sync, and no network use at all. It is not investment advice — results are approximate simulations that exclude taxes, fees, currency changes, and market volatility, and a persistent disclaimer keeps that clear.</p>
+          <p>AssetCurve is a simple, private calculator for rough compound-growth estimates. Enter a starting amount, a monthly contribution, an expected annual return, and a number of years, and it shows an estimated future balance along with total contributions, estimated growth, a balance chart, and a year-by-year table.</p>
+          <p>It works in three ways. Future Value estimates what savings might grow to. Withdrawal takes your assets and a monthly withdrawal and shows roughly how long the money could last. Goal Backsolve works back from a target to the monthly contribution, the number of years, or the annual return it would take.</p>
+          <p>In Future Value and Withdrawal modes you can compare two saved plans side by side, and switch the chart and amounts to today&#x27;s value using your own inflation input. For yen contributions, small notices flag conditions that exceed the published new NISA annual allowance or reach the lifetime tax-free holding limit (taxes are not calculated).</p>
+          <p>AssetCurve is deliberately a calculator, not a finance platform: no account, no ads, no tracking, and no network connection. It is not investment advice. Results are rough simulations with monthly compounding that do not guarantee future outcomes, and taxes, fees, currency changes, and market volatility are not included.</p>
     </section>
 
     <section class="section">
       <h2>Who It Is For</h2>
       <ul>
             <li>Savers who want a quick feel for how monthly contributions could compound over the years</li>
-            <li>People planning toward a target amount who want to know the required monthly saving</li>
+            <li>People planning toward a target amount who want to know the required monthly saving, years, or return</li>
+            <li>People picturing how long savings might last when withdrawing monthly</li>
             <li>Anyone comparing rough what-if scenarios with different return rates and time horizons</li>
             <li>Privacy-conscious users who do not want to type financial figures into an online tool</li>
       </ul>
@@ -208,81 +210,82 @@
     <section class="section">
       <h2>Main Features</h2>
       <ul>
-            <li>Future Value mode: estimate a future asset amount from initial amount, monthly contribution, expected annual return, and years</li>
-            <li>Goal Backsolve mode: estimate the monthly contribution needed to reach a target amount</li>
-            <li>Monthly compounding with end-of-month contributions</li>
-            <li>Monthly balance and contribution chart plus a yearly projection list</li>
-            <li>USD, JPY, and EUR unit selector</li>
-            <li>Wide input ranges: annual return up to 200% and periods up to 100 years</li>
-            <li>Fully local — no account, no network connection, no data collection</li>
+            <li>Future Value mode: estimate a future asset amount from starting amount, monthly contribution, expected annual return, and years</li>
+            <li>Withdrawal mode: see roughly how long your assets could last with a monthly withdrawal</li>
+            <li>Goal Backsolve mode: work back from a target to the monthly contribution, number of years, or annual return required</li>
+            <li>Balance chart and a year-by-year table of contributions and estimated growth</li>
+            <li>Compare two saved plans side by side in Future Value and Withdrawal modes</li>
+            <li>Switch chart and amounts to today&#x27;s value using your own inflation input</li>
+            <li>Monthly compounding, with a USD, JPY, or EUR unit selector</li>
+            <li>Fully local: no account, no ads, no tracking, no network connection</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>How to Use</h2>
       <ol>
-            <li>Choose Future Value mode and enter your initial amount, monthly contribution, expected annual return, and number of years</li>
-            <li>Read the estimated future value, total contributions, and estimated growth</li>
-            <li>Explore the monthly chart and the yearly projection list to see how the balance builds</li>
-            <li>Switch to Goal Backsolve mode, enter your current assets, target amount, return, and years to get the required monthly contribution</li>
-            <li>Adjust the inputs to compare rough scenarios — all results are simplified simulations, not predictions</li>
+            <li>Choose Future Value, Withdrawal, or Goal Backsolve mode.</li>
+            <li>Enter your amounts, expected annual return, and years (or your target, in Goal Backsolve).</li>
+            <li>Read the estimated result, then explore the balance chart and the year-by-year table.</li>
+            <li>Optionally compare two saved plans, or switch to today&#x27;s value with your own inflation input.</li>
+            <li>Adjust the inputs to compare rough scenarios. All results are simplified simulations, not predictions.</li>
       </ol>
     </section>
 
     <section class="section">
       <h2>Pricing</h2>
-      <p>Asset Curve is free to download and use on the App Store, with no in-app purchases or paid content. App Store pricing and availability can change, so check the store listing for the latest details.</p>
+      <p>AssetCurve is free to download and use on the App Store, with no ads. App Store pricing and availability can change, so check the store listing for the latest details.</p>
       <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
     </section>
 
     <section class="section">
       <h2>Privacy</h2>
-      <p>Asset Curve collects no personal data, does not track you, and uses no network services at all — your calculator inputs never leave the device and are not even persisted. There is no account or login.</p>
+      <p>AssetCurve has no account, no ads, no tracking, and no network connection. Everything is calculated on your device and your inputs are never sent anywhere; your last settings are saved locally on the device.</p>
     </section>
 
     <section class="section">
       <h2>Screenshots</h2>
       <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d9/7f/22/d97f22d6-1bc0-1f62-c2f3-9e9ffa25cfe6/iphone-01-future.png/320x480bb.jpg" alt="Compound Interest - AssetCurve screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/65/c4/6665c4a8-35df-a848-2f48-664e8cb8eae9/iphone-02-compare.png/320x480bb.jpg" alt="Compound Interest - AssetCurve screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/8d/ce/228dce06-826b-fe85-631c-3655b36ee11f/iphone-03-withdrawal.png/320x480bb.jpg" alt="Compound Interest - AssetCurve screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/01/11/3c/01113c89-645c-5011-9b29-4c031d1df4ea/iphone-04-target.png/320x480bb.jpg" alt="Compound Interest - AssetCurve screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0d/c4/c7/0dc4c705-af48-3f14-25bd-e45a730d3db4/iphone-05-rate.png/320x480bb.jpg" alt="Compound Interest - AssetCurve screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f0/e2/8d/f0e28dd5-5c12-d047-2bc9-02744fa8b632/iphone-01-future.png/320x480bb.jpg" alt="Compound Interest - AssetCurve screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7a/12/da/7a12da59-ebeb-eaf9-4f19-5b17f39b37fb/iphone-02-compare.png/320x480bb.jpg" alt="Compound Interest - AssetCurve screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/d4/59/05d4598a-f6ba-b324-eec5-23914e03d03c/iphone-03-withdrawal.png/320x480bb.jpg" alt="Compound Interest - AssetCurve screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d9/d1/5a/d9d15ac0-8c12-7bb6-f24d-8ac1e7fb81a6/iphone-04-target.png/320x480bb.jpg" alt="Compound Interest - AssetCurve screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8c/18/16/8c181661-5b35-a724-164b-98e49c1cbef7/iphone-05-rate.png/320x480bb.jpg" alt="Compound Interest - AssetCurve screenshot" loading="lazy"></figure>
       </div>
     </section>
 
     <section class="section">
       <h2>FAQ</h2>
           <details>
-            <summary>Is Asset Curve free?</summary>
-            <p>Yes. It is free to download and use, with no in-app purchases or paid content. Check the App Store listing for current pricing details.</p>
+            <summary>Is AssetCurve free?</summary>
+            <p>Yes. It is free to download and use, with no ads and no account. Check the App Store listing for current pricing details.</p>
           </details>
           <details>
             <summary>Does the app see my financial data?</summary>
-            <p>No. Asset Curve uses no network services and collects nothing. Your inputs are processed on the device and are not persisted or transmitted anywhere.</p>
+            <p>No. AssetCurve has no network connection and no account. Everything is calculated on your device, and your inputs are not sent anywhere.</p>
           </details>
           <details>
             <summary>Is this investment advice?</summary>
-            <p>No. Asset Curve does not recommend investments. Results are approximate simulations only and exclude taxes, fees, currency changes, market volatility, and asset allocation — they do not guarantee any outcome.</p>
+            <p>No. AssetCurve does not recommend any investment. Results are rough simulations with monthly compounding that do not guarantee future outcomes. Taxes, fees, currency changes, and market volatility are not included.</p>
           </details>
           <details>
             <summary>How are the calculations done?</summary>
-            <p>The simulator uses monthly compounding: the annual rate is divided by 12 and contributions are added at the end of each month. Results include future value, total contributions, estimated growth, and a yearly projection.</p>
+            <p>The simulator uses monthly compounding. Every result comes with a balance chart and a year-by-year table showing contributions and estimated growth.</p>
           </details>
           <details>
             <summary>Which currencies does it support?</summary>
-            <p>USD is the default, with JPY and EUR also selectable as display units. Switching units applies a simple fixed factor rather than live exchange rates, since the app performs no FX calculation.</p>
+            <p>USD, JPY, and EUR can be selected as the display unit. Switching only changes the unit; the app does not convert amounts with exchange rates.</p>
           </details>
           <details>
             <summary>Does it work offline?</summary>
-            <p>Yes, completely. The app has no network connection requirement and no external API integration.</p>
+            <p>Yes, completely. The app has no network connection and does not call any external service.</p>
           </details>
     </section>
 
     <section class="section">
       <h2>App Store</h2>
       <p><a class="button primary" href="https://apps.apple.com/us/app/compound-interest-assetcurve/id6768640767?uo=4">Open Compound Interest - AssetCurve on the App Store</a></p>
-      <p class="meta">Last updated: 2026-10-18</p>
+      <p class="meta">Last updated: 2026-10-19</p>
     </section>
   </main>
 

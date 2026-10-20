@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PillTap | ZEC Apps</title>
-  <meta name="description" content="PillTap is a simple iPhone medication record app for quick personal checks. It is not medical advice or a compliance guarantee.">
+  <meta name="description" content="PillTap is a simple daily medication reminder for iPhone: morning, noon, night and bedtime alerts, one-tap taken from the notification, Lock Screen widget.">
   <link rel="canonical" href="https://zec-inc.jp/apps/pilltap/">
   <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/pilltap/">
   <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/pilltap/ja/">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
   <meta property="og:title" content="PillTap | ZEC Apps">
-  <meta property="og:description" content="PillTap is a simple iPhone medication record app for quick personal checks. It is not medical advice or a compliance guarantee.">
+  <meta property="og:description" content="PillTap is a simple daily medication reminder for iPhone: morning, noon, night and bedtime alerts, one-tap taken from the notification, Lock Screen widget.">
   <meta property="og:url" content="https://zec-inc.jp/apps/pilltap/">
   <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5d/d3/5b/5dd35b60-b6ed-97bf-5e91-a165a0388fc1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
   <script type="application/ld+json">
@@ -23,7 +23,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "PillTap",
-      "description": "PillTap is a simple iPhone medication record app for quick personal checks. It is not medical advice or a compliance guarantee.",
+      "description": "PillTap is a simple daily medication reminder for iPhone: morning, noon, night and bedtime alerts, one-tap taken from the notification, Lock Screen widget.",
       "operatingSystem": "iOS",
       "applicationCategory": "Health & Fitness",
       "offers": {
@@ -52,7 +52,7 @@
           "name": "Is PillTap medical advice?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. PillTap does not provide medical advice, diagnosis, treatment recommendations, or medication instructions."
+            "text": "No. PillTap does not provide medical advice, diagnosis, treatment recommendations, or medication instructions. Always follow instructions from your doctor, pharmacist, or healthcare provider."
           }
         },
         {
@@ -60,15 +60,39 @@
           "name": "Does PillTap guarantee that I take medicine correctly?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. PillTap is only a personal record aid and cannot guarantee medication adherence or safety."
+            "text": "No. PillTap is a reminder and personal record aid and cannot guarantee medication adherence or safety."
           }
         },
         {
           "@type": "Question",
-          "name": "Who is PillTap for?",
+          "name": "What do I do if I do not tap Taken?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It is for people who want a simple way to record medication-related checks for personal reference."
+            "text": "Nothing. Tapping Taken is optional and only for your own record. Reminders repeat the next day anyway."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it on a schedule other than every day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The schedule is a fixed daily one: morning, noon, night, and bedtime. There are no weekday or every-few-days schedules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can reminders appear during Sleep or Focus modes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They can appear as Time Sensitive notifications, depending on your iOS settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is my data stored?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no account and no cloud. According to the App Store listing, your medications and records stay on your device."
           }
         },
         {
@@ -77,22 +101,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No. Always follow guidance from qualified healthcare professionals for medication questions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can caregivers use PillTap?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Caregivers may find the simple log useful, but it should not replace professional care plans or required medical documentation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where can I check the privacy details?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Use the linked App Store product page to review Apple's current privacy label and disclosure information."
           }
         }
       ]
@@ -180,7 +188,7 @@
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5d/d3/5b/5dd35b60-b6ed-97bf-5e91-a165a0388fc1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PillTap app icon" width="96" height="96">
       <div>
         <h1>PillTap</h1>
-        <p class="tagline">Record medication checks quickly without turning the task into a complex health tracking workflow.</p>
+        <p class="tagline">A daily medication reminder with one-tap logging from the notification, a Lock Screen widget, and Live Activity.</p>
         <div class="actions">
           <a class="button primary" href="https://apps.apple.com/us/app/pilltap/id6762545903?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
@@ -190,16 +198,18 @@
 
     <section class="section">
       <h2>Overview</h2>
-          <p>PillTap is a small personal record app for quickly noting medication-related checks. It is designed for the everyday moment when you want to record whether you handled a medicine task.</p>
-          <p>The app is not a medical device, does not provide medical advice, and does not guarantee medication adherence. It should be used only as a personal record aid alongside advice from qualified healthcare professionals.</p>
+          <p>PillTap helps you avoid missed doses with simple daily medication reminders. Set your medication times once, and PillTap will remind you every day at the times you choose — morning, noon, night, and bedtime. It is built for medicines and supplements you take at the same times every day.</p>
+          <p>Marking a dose as taken is optional and used only for your own record. You can tap Taken right from the notification without opening the app. Reminders continue to repeat unless you turn off a scheduled time or delete the medication. An optional follow-up reminder can sound 15 minutes later.</p>
+          <p>A Lock Screen widget shows your next dose, and a Live Activity appears shortly before it is time. PillTap does not provide medical advice, assess conditions, or recommend how to take medication; always follow instructions from your doctor, pharmacist, or healthcare provider.</p>
     </section>
 
     <section class="section">
       <h2>Who It Is For</h2>
       <ul>
-            <li>People who want a lightweight personal medication check record</li>
-            <li>Caregivers or family members who need a simple reminder-adjacent log</li>
-            <li>Users who do not want a complex health tracking system</li>
+            <li>People who tend to forget daily medicines or supplements</li>
+            <li>Users who want a simple reminder rather than a complex health tracking system</li>
+            <li>People who take medication at the same times every day</li>
+            <li>Anyone who wants a private reminder with no account and no cloud</li>
             <li>People who understand that the app is not medical advice</li>
       </ul>
     </section>
@@ -207,34 +217,38 @@
     <section class="section">
       <h2>Main Features</h2>
       <ul>
-            <li>Quick medication check recording</li>
-            <li>Simple personal record workflow</li>
-            <li>Focused screens for repeated daily use</li>
-            <li>Clear separation from medical advice or treatment decisions</li>
-            <li>Direct official App Store link</li>
+            <li>Daily medication reminders at morning, noon, night, and bedtime, set per medication</li>
+            <li>Optional follow-up reminder 15 minutes later (can be turned off in settings)</li>
+            <li>One tap to mark a dose as taken, right from the notification</li>
+            <li>Lock Screen widget showing your next dose</li>
+            <li>Live Activity shortly before it is time (choose 5, 15, or 30 minutes before)</li>
+            <li>Time Sensitive reminders that can appear during Sleep or other Focus modes, based on your iOS settings</li>
+            <li>Recent history: today, yesterday, and the last 7 days</li>
+            <li>Daily schedule only: no weekday or every-few-days schedules, medication calendar, remaining-supply tracking, or family sharing</li>
+            <li>No account and no cloud; your medications and records stay on your device</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>How to Use</h2>
       <ol>
-            <li>Install PillTap from the App Store.</li>
-            <li>Open the app when you need to record a medication-related check.</li>
-            <li>Use the app as a personal log, not as a medical decision tool.</li>
-            <li>Confirm any medication questions with a qualified healthcare professional.</li>
-            <li>Check the App Store page for the current released feature set.</li>
+            <li>Add a medication and choose its times: morning, noon, night, and bedtime.</li>
+            <li>Optionally turn on the follow-up reminder and the Live Activity lead time.</li>
+            <li>When the notification arrives, take your medication as directed by your doctor or pharmacist, then tap Taken if you want to record it.</li>
+            <li>Add the Lock Screen widget to see your next dose at a glance.</li>
+            <li>Check the recent history for today, yesterday, and the last 7 days. To stop reminders, turn off that time or delete the medication.</li>
       </ol>
     </section>
 
     <section class="section">
       <h2>Pricing</h2>
-      <p>Free. App Store pricing and availability may vary by country and can change over time.</p>
+      <p>PillTap is free to download. App Store pricing and availability may vary by country and can change over time, so check the listing for current details.</p>
       <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
     </section>
 
     <section class="section">
       <h2>Privacy</h2>
-      <p>PillTap is intended for personal record keeping. Check the App Store product page for Apple&#x27;s current privacy label. Do not use the app as a substitute for medical records maintained by a healthcare provider.</p>
+      <p>PillTap needs no account and has no cloud. According to the App Store listing, your medications and records stay on your device. Reminders are notifications on your device. PillTap is a reminder and personal record aid, not a substitute for medical records kept by a healthcare provider. See the App Store page for Apple&#x27;s current privacy label.</p>
     </section>
 
     <section class="section">
@@ -252,27 +266,31 @@
       <h2>FAQ</h2>
           <details>
             <summary>Is PillTap medical advice?</summary>
-            <p>No. PillTap does not provide medical advice, diagnosis, treatment recommendations, or medication instructions.</p>
+            <p>No. PillTap does not provide medical advice, diagnosis, treatment recommendations, or medication instructions. Always follow instructions from your doctor, pharmacist, or healthcare provider.</p>
           </details>
           <details>
             <summary>Does PillTap guarantee that I take medicine correctly?</summary>
-            <p>No. PillTap is only a personal record aid and cannot guarantee medication adherence or safety.</p>
+            <p>No. PillTap is a reminder and personal record aid and cannot guarantee medication adherence or safety.</p>
           </details>
           <details>
-            <summary>Who is PillTap for?</summary>
-            <p>It is for people who want a simple way to record medication-related checks for personal reference.</p>
+            <summary>What do I do if I do not tap Taken?</summary>
+            <p>Nothing. Tapping Taken is optional and only for your own record. Reminders repeat the next day anyway.</p>
+          </details>
+          <details>
+            <summary>Can I use it on a schedule other than every day?</summary>
+            <p>No. The schedule is a fixed daily one: morning, noon, night, and bedtime. There are no weekday or every-few-days schedules.</p>
+          </details>
+          <details>
+            <summary>Can reminders appear during Sleep or Focus modes?</summary>
+            <p>They can appear as Time Sensitive notifications, depending on your iOS settings.</p>
+          </details>
+          <details>
+            <summary>Where is my data stored?</summary>
+            <p>There is no account and no cloud. According to the App Store listing, your medications and records stay on your device.</p>
           </details>
           <details>
             <summary>Should I use PillTap instead of talking to a doctor or pharmacist?</summary>
             <p>No. Always follow guidance from qualified healthcare professionals for medication questions.</p>
-          </details>
-          <details>
-            <summary>Can caregivers use PillTap?</summary>
-            <p>Caregivers may find the simple log useful, but it should not replace professional care plans or required medical documentation.</p>
-          </details>
-          <details>
-            <summary>Where can I check the privacy details?</summary>
-            <p>Use the linked App Store product page to review Apple&#x27;s current privacy label and disclosure information.</p>
           </details>
     </section>
 

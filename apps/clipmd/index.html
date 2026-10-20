@@ -15,7 +15,7 @@
   <meta property="og:title" content="ClipMD | ZEC Apps">
   <meta property="og:description" content="ClipMD converts web pages and copied text into clean Markdown on iPhone. Clip via URL or share sheet, keep clips locally, and paste into any notes app.">
   <meta property="og:url" content="https://zec-inc.jp/apps/clipmd/">
-  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/e2/83/32e28307-b780-911e-a72a-9ac779ce39b8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg">
+  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/91/2a/b3/912ab352-b2da-4ecd-bc59-c5cd2f52c4cd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -40,8 +40,8 @@
         "name": "ZEC Inc.",
         "url": "https://zec-inc.jp"
       },
-      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/e2/83/32e28307-b780-911e-a72a-9ac779ce39b8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "softwareVersion": "1.1.0",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/91/2a/b3/912ab352-b2da-4ecd-bc59-c5cd2f52c4cd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "softwareVersion": "1.2.0",
       "contentRating": "4+"
     },
     {
@@ -60,7 +60,7 @@
           "name": "Where are my clips stored?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Only on your device (including App Group storage shared with the share extension). Nothing is uploaded to the developer or any third party, and uninstalling the app removes all stored data."
+            "text": "Only on your device (including App Group storage shared with the share extension). Nothing is uploaded to the developer or any third party, and uninstalling the app removes all stored data. If you choose to save .md files to a folder, those files are saved where you pick."
           }
         },
         {
@@ -92,7 +92,7 @@
           "name": "Does it sync between devices?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. There is no cloud sync or account; clips live on the device where you saved them. You can copy or share a clip to move it elsewhere."
+            "text": "No. There is no cloud sync or account; clips live on the device where you saved them. You can copy or share a clip, or save it as a .md file, to move it elsewhere."
           }
         },
         {
@@ -100,7 +100,15 @@
           "name": "Can I edit a clip after saving it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Any clip can be copied, shared, edited, or deleted from the clip list."
+            "text": "Yes. Any clip can be copied, shared, edited, or deleted from the clip list, and you can search your clips by title and text."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work with Obsidian, AI tools, or Shortcuts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can save .md files to a chosen folder or Obsidian vault, copy an AI-ready version with clear summary and body sections, and convert URLs or clipboard text from Apple Shortcuts."
           }
         }
       ]
@@ -185,7 +193,7 @@
 
   <main>
     <section class="hero">
-      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/e2/83/32e28307-b780-911e-a72a-9ac779ce39b8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="ClipMD app icon" width="96" height="96">
+      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/91/2a/b3/912ab352-b2da-4ecd-bc59-c5cd2f52c4cd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="ClipMD app icon" width="96" height="96">
       <div>
         <h1>ClipMD</h1>
         <p class="tagline">Turn web pages and copied text into clean Markdown clips - saved on your device, ready to paste anywhere.</p>
@@ -199,7 +207,7 @@
     <section class="section">
       <h2>Overview</h2>
           <p>ClipMD turns web pages and copied text into clean Markdown clips you keep on your device. Paste a URL or share a page to ClipMD, and it extracts the article body and converts it to Markdown - headings, lists, and links preserved - ready to paste into your notes app or keep as a reading archive.</p>
-          <p>It is a focused clipping tool, not a read-it-later service or a browser replacement. There is no account, no cloud sync, and no telemetry; the only network requests it makes are fetching the exact pages you ask it to convert.</p>
+          <p>It is a focused clipping tool, not a read-it-later service or a browser replacement. You can save .md files to a folder you choose (such as an Obsidian vault), copy an AI-ready version with summary and body sections, search your clips, and convert URLs or clipboard text from Apple Shortcuts. There is no account, no cloud sync, and no telemetry; the only network requests it makes are fetching the exact pages you ask it to convert.</p>
           <p>Made for note-takers who live in Markdown: clip it now, paste it anywhere later.</p>
     </section>
 
@@ -221,7 +229,10 @@
             <li>Clip directly from Safari or other apps via the share sheet</li>
             <li>Convert copied text to Markdown in one tap</li>
             <li>Clean extraction focused on the article body, with headings, lists, and links preserved</li>
-            <li>Clip list with detail view - copy, share, edit, or delete any clip</li>
+            <li>Clip list with detail view - copy, share, edit, or delete any clip, and search titles and text</li>
+            <li>Save .md files to a chosen folder or Obsidian vault</li>
+            <li>Copy an AI-ready version with clear summary and body sections</li>
+            <li>Convert URLs or clipboard text from Apple Shortcuts</li>
             <li>All clips stored locally on your device; network used only to fetch pages you request</li>
       </ul>
     </section>
@@ -251,11 +262,11 @@
     <section class="section">
       <h2>Screenshots</h2>
       <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/d1/72/55d172aa-806f-2d92-d69e-ff352dbef9d5/01.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/33/dc/29/33dc2960-a69a-cf26-f901-53a5141f2817/02.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2e/63/7f/2e637f25-b205-e73e-927b-9d16766c8489/03.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6f/7e/9f/6f7e9f91-fbb1-2c57-e69b-13201ee3ecb2/04.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2c/d8/18/2cd818b0-970d-5835-6fdb-8f423b0977e8/05.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cd/f8/30/cdf8308a-0364-d604-6473-b5e69f7c0a8a/01.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4e/2d/32/4e2d3246-8756-c6f9-75c8-fcfcb76858d9/02.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/94/fb/24/94fb24c6-63b9-ae9b-403f-de66bcef1cd4/03.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/d9/d9/91d9d911-02f4-de04-a591-1e23d4431dc0/04.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
+        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/d2/39/0cd23968-8984-fbd2-1312-2044271168e0/05.png/320x480bb.jpg" alt="ClipMD screenshot" loading="lazy"></figure>
       </div>
     </section>
 
@@ -267,7 +278,7 @@
           </details>
           <details>
             <summary>Where are my clips stored?</summary>
-            <p>Only on your device (including App Group storage shared with the share extension). Nothing is uploaded to the developer or any third party, and uninstalling the app removes all stored data.</p>
+            <p>Only on your device (including App Group storage shared with the share extension). Nothing is uploaded to the developer or any third party, and uninstalling the app removes all stored data. If you choose to save .md files to a folder, those files are saved where you pick.</p>
           </details>
           <details>
             <summary>Does ClipMD connect to the internet?</summary>
@@ -283,18 +294,22 @@
           </details>
           <details>
             <summary>Does it sync between devices?</summary>
-            <p>No. There is no cloud sync or account; clips live on the device where you saved them. You can copy or share a clip to move it elsewhere.</p>
+            <p>No. There is no cloud sync or account; clips live on the device where you saved them. You can copy or share a clip, or save it as a .md file, to move it elsewhere.</p>
           </details>
           <details>
             <summary>Can I edit a clip after saving it?</summary>
-            <p>Yes. Any clip can be copied, shared, edited, or deleted from the clip list.</p>
+            <p>Yes. Any clip can be copied, shared, edited, or deleted from the clip list, and you can search your clips by title and text.</p>
+          </details>
+          <details>
+            <summary>Does it work with Obsidian, AI tools, or Shortcuts?</summary>
+            <p>Yes. You can save .md files to a chosen folder or Obsidian vault, copy an AI-ready version with clear summary and body sections, and convert URLs or clipboard text from Apple Shortcuts.</p>
           </details>
     </section>
 
     <section class="section">
       <h2>App Store</h2>
       <p><a class="button primary" href="https://apps.apple.com/us/app/clipmd/id6789844342?uo=4">Open ClipMD on the App Store</a></p>
-      <p class="meta">Last updated: 2026-10-18</p>
+      <p class="meta">Last updated: 2026-10-19</p>
     </section>
   </main>
 

@@ -74,6 +74,12 @@ everything else is derived automatically. ja copy should be natural Japanese
 written from each app's fastlane ja metadata and docs — not literal
 translation of the English text.
 
+## Sitemap and llms.txt
+
+- `sitemap.xml` keeps the previous `lastmod` of a URL unless this run actually
+  rewrote that page, so weekly runs only touch URLs whose content changed.
+- `llms.txt` lists every app in the Lookup result (not a hand-picked subset).
+
 ## After Updating
 
 1. Run `git diff`
