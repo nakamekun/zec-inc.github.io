@@ -273,6 +273,9 @@ UI_STRINGS.update({
     },
 })
 
+for _code, _extra in {'en': {'chip_free': 'Free download', 'chip_iphone': 'iPhone', 'chip_both': 'iPhone & iPad', 'chip_languages': '{n} languages', 'related': 'More apps in this category', 'breadcrumb': 'Breadcrumb', 'highlights': 'At a glance'}, 'ja': {'chip_free': 'ダウンロード無料', 'chip_iphone': 'iPhone', 'chip_both': 'iPhone・iPad', 'chip_languages': '{n}言語に対応', 'related': '同じカテゴリのアプリ', 'breadcrumb': 'パンくずリスト', 'highlights': 'ひと目でわかるポイント'}, 'zh-hans': {'chip_free': '免费下载', 'chip_iphone': 'iPhone', 'chip_both': 'iPhone 和 iPad', 'chip_languages': '支持 {n} 种语言', 'related': '同类应用', 'breadcrumb': '导航路径', 'highlights': '要点'}, 'zh-hant': {'chip_free': '免費下載', 'chip_iphone': 'iPhone', 'chip_both': 'iPhone 與 iPad', 'chip_languages': '支援 {n} 種語言', 'related': '同類 App', 'breadcrumb': '導覽路徑', 'highlights': '重點'}, 'ko': {'chip_free': '무료 다운로드', 'chip_iphone': 'iPhone', 'chip_both': 'iPhone·iPad', 'chip_languages': '{n}개 언어 지원', 'related': '같은 카테고리의 앱', 'breadcrumb': '이동 경로', 'highlights': '한눈에 보기'}}.items():
+    UI_STRINGS[_code].update(_extra)
+
 APP_OVERRIDE_FIELDS = {
     "slug",
     "site_url",  # optional: the app's own site (adds a button next to the App Store link)
@@ -385,6 +388,8 @@ def fetch_apps() -> list[dict[str, Any]]:
                 "screenshotUrls": item.get("screenshotUrls") if isinstance(item.get("screenshotUrls"), list) else [],
                 "ipadScreenshotUrls": item.get("ipadScreenshotUrls") if isinstance(item.get("ipadScreenshotUrls"), list) else [],
                 "formattedPrice": str(item.get("formattedPrice", "")).strip(),
+                "formattedPriceJa": str(jp_item.get("formattedPrice", "")).strip(),
+                "supportedDevices": [str(d) for d in item.get("supportedDevices") or []],
                 "price": item.get("price"),
                 "currency": str(item.get("currency", "")).strip(),
                 "version": str(item.get("version", "")).strip(),
@@ -922,7 +927,7 @@ def icon_url(app: dict[str, Any]) -> str:
     return str(app.get("artworkUrl512") or app.get("artworkUrl100") or "").strip()
 
 
-def json_ld(app: dict[str, Any], content: dict[str, Any], locale: str) -> str:
+def json_ld(app: dict[str, Any], content: dict[str, Any], locale: str, crumbs: list[tuple[str, str]] | None = None) -> str:
     offer_price = "0" if price_text(app).lower() == "free" else app.get("price", "")
     app_node: dict[str, Any] = {
         "@type": "SoftwareApplication",
@@ -964,6 +969,16 @@ def json_ld(app: dict[str, Any], content: dict[str, Any], locale: str) -> str:
                         "acceptedAnswer": {"@type": "Answer", "text": item["answer"]},
                     }
                     for item in content["faq"]
+                ],
+            }
+        )
+    if crumbs:
+        graph.append(
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": i + 1, "name": name, "item": url}
+                    for i, (name, url) in enumerate(crumbs)
                 ],
             }
         )
@@ -1140,6 +1155,132 @@ def render_cards(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+
+RELATED_BY_CATEGORY: dict[str, list[dict[str, Any]]] = {}
+APP_CATEGORY_CACHE: dict[str, list[str]] = {}
+
+
+def home_href(locale: str) -> str:
+    return "/en/" if locale == DEFAULT_LOCALE else "/"
+
+
+def screenshot_size(url: str) -> tuple[int, int] | None:
+    match = re.search(r"/(\d+)x(\d+)(?:bb|sr)?\.(?:jpg|jpeg|png|webp)$", url)
+    if match:
+        return int(match.group(1)), int(match.group(2))
+    return None
+
+
+def render_screenshot_strip(urls: list[str], alt: str, heading: str) -> str:
+    if not urls:
+        return ""
+    figures = []
+    for url in urls:
+        size = screenshot_size(url)
+        dims = f' width="{size[0]}" height="{size[1]}"' if size else ""
+        figures.append(
+            f'        <figure class="shot"><img src="{html.escape(url, quote=True)}" alt="{html.escape(alt, quote=True)}"{dims} loading="lazy" decoding="async"></figure>'
+        )
+    return f"""
+    <section class="shots" aria-label="{html.escape(heading, quote=True)}">
+      <h2 class="visually-hidden">{html.escape(heading)}</h2>
+      <div class="shot-strip">
+{chr(10).join(figures)}
+      </div>
+    </section>
+"""
+
+
+def fact_chips(app: dict[str, Any], locale: str, categories: list[str]) -> str:
+    strings = ui_strings(locale)
+    chips: list[str] = []
+    if app.get("price") in (0, 0.0, "0"):
+        chips.append(html.escape(str(strings["chip_free"])))
+    else:
+        price = app.get("formattedPriceJa") if locale == "ja" and app.get("formattedPriceJa") else app.get("formattedPrice")
+        if price:
+            chips.append(html.escape(str(price)))
+    devices = " ".join(app.get("supportedDevices") or [])
+    has_ipad = "iPad" in devices
+    has_iphone = "iPhone" in devices or not devices
+    if has_iphone:
+        chips.append(html.escape(str(strings["chip_both"] if has_ipad else strings["chip_iphone"])))
+    languages = {code for code in app.get("languages", []) if code}
+    if len(languages) > 1:
+        chips.append(html.escape(str(strings["chip_languages"]).format(n=len(languages))))
+    items = [f'<li class="chip">{chip}</li>' for chip in chips]
+    for slug in categories:
+        title = category_definition(slug, locale)["title"]
+        items.append(f'<li class="chip chip-link"><a href="{html.escape(category_href(slug, locale), quote=True)}">{html.escape(title)}</a></li>')
+    if not items:
+        return ""
+    return f'        <ul class="chips" aria-label="{html.escape(str(strings["highlights"]), quote=True)}">' + "".join(items) + "</ul>"
+
+
+def render_breadcrumb(crumbs: list[tuple[str, str]], locale: str) -> str:
+    strings = ui_strings(locale)
+    parts = []
+    for i, (name, href) in enumerate(crumbs):
+        if i == len(crumbs) - 1:
+            parts.append(f'<li aria-current="page">{html.escape(name)}</li>')
+        else:
+            parts.append(f'<li><a href="{html.escape(href, quote=True)}">{html.escape(name)}</a></li>')
+    return f'    <nav class="crumbs" aria-label="{html.escape(str(strings["breadcrumb"]), quote=True)}"><ol>{"".join(parts)}</ol></nav>'
+
+
+LEAD_DELIMITERS = ("、", "。", "：", " - ", ": ", ", ")
+
+
+def emphasize_lead(text: str) -> str:
+    positions = [text.find(d) for d in LEAD_DELIMITERS if text.find(d) > 0]
+    if positions:
+        cut = min(positions)
+        lead = text[:cut]
+        if len(lead) >= 4 and len(lead) <= 0.45 * len(text):
+            return f"<strong>{html.escape(lead)}</strong>{html.escape(text[cut:])}"
+    return html.escape(text)
+
+
+CHECK_SVG = '<svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+
+
+def render_related(app: dict[str, Any], overrides: dict[str, Any], locale: str, categories: list[str]) -> str:
+    strings = ui_strings(locale)
+    seen = {str(app.get("slug"))}
+    picks: list[dict[str, Any]] = []
+    for slug in categories:
+        for other in RELATED_BY_CATEGORY.get(slug, []):
+            key = str(other.get("slug"))
+            if key in seen or locale not in app_locales(other, overrides):
+                continue
+            seen.add(key)
+            picks.append(other)
+            if len(picks) == 3:
+                break
+        if len(picks) == 3:
+            break
+    if not picks:
+        return ""
+    cards = []
+    for other in picks:
+        name = display_name(other, overrides, locale)
+        img = icon_url(other)
+        icon = f'<img src="{html.escape(img, quote=True)}" alt="" width="56" height="56" loading="lazy">' if img else ""
+        desc = short_description(other, overrides, locale)
+        cards.append(
+            f'        <a class="related-card" href="{html.escape(page_href(other, locale), quote=True)}">{icon}'
+            f'<span><h3>{html.escape(name)}</h3><p>{html.escape(truncate_text(desc, 80))}</p></span></a>'
+        )
+    return f"""
+    <section class="block">
+      <h2>{html.escape(str(strings['related']))}</h2>
+      <div class="related">
+{chr(10).join(cards)}
+      </div>
+    </section>
+"""
+
+
 def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: BuildContext, locale: str = "en") -> str:
     content = detail_content(app, overrides, ctx, locale)
     strings = ui_strings(locale)
@@ -1156,88 +1297,92 @@ def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: Buil
     canonical = page_url(app, locale)
     img = icon_url(app)
     screenshot_alt = str(strings["screenshot_alt"]).format(name=content["name"])
-    screenshot_html = ""
-    if content["screenshots"]:
-        screenshot_html = f"""
-    <section class="section">
-      <h2>{html.escape(str(strings['screenshots']))}</h2>
-      <div class="screenshots">
-{chr(10).join(f'        <figure class="screenshot"><img src="{html.escape(url, quote=True)}" alt="{html.escape(screenshot_alt, quote=True)}" loading="lazy"></figure>' for url in content["screenshots"])}
-      </div>
-    </section>
-"""
-    faq_html = "\n".join(
-        "\n".join(
-            [
-                "          <details>",
-                f"            <summary>{html.escape(item['question'])}</summary>",
-                f"            <p>{html.escape(item['answer'])}</p>",
-                "          </details>",
-            ]
+    categories = APP_CATEGORY_CACHE.get(str(app.get("slug")), [])
+    crumbs = [(str(strings["home_nav"]), home_href(locale)), (str(strings["apps_nav"]), apps_index_href(locale))]
+    if categories:
+        crumbs.append((category_definition(categories[0], locale)["title"], category_href(categories[0], locale)))
+    crumbs.append((content["name"], page_href(app, locale)))
+    store = html.escape(app_store_url(app, locale), quote=True)
+    overview = content["overview"]
+    overview_html = ""
+    if overview:
+        overview_html = f'      <p class="lead-para">{html.escape(overview[0])}</p>\n' + "\n".join(
+            f"      <p>{html.escape(item)}</p>" for item in overview[1:]
         )
+    features_html = "\n".join(f'        <li>{CHECK_SVG}<span>{emphasize_lead(item)}</span></li>' for item in content["features"])
+    audience_html = "\n".join(f"        <li>{html.escape(item)}</li>" for item in content["audience"])
+    usage_html = "\n".join(f"        <li><span>{html.escape(item)}</span></li>" for item in content["usage"])
+    faq_html = "\n".join(
+        f"""        <details>
+          <summary>{html.escape(item['question'])}</summary>
+          <p>{html.escape(item['answer'])}</p>
+        </details>"""
         for item in content["faq"]
     )
     icon_alt = str(strings["icon_alt"]).format(name=content["name"])
     open_label = str(strings["open_on_app_store"]).format(name=content["name"])
     body = f"""
-  <main>
+  <main class="detail">
+{render_breadcrumb(crumbs, locale)}
     <section class="hero">
       {f'<img class="app-icon" src="{html.escape(img, quote=True)}" alt="{html.escape(icon_alt, quote=True)}" width="96" height="96">' if img else ''}
       <div>
         <h1>{html.escape(content['name'])}</h1>
         <p class="tagline">{html.escape(content['tagline'])}</p>
         <div class="actions">
-          <a class="button primary" href="{html.escape(app_store_url(app, locale), quote=True)}">{html.escape(str(strings['view_on_app_store']))}</a>
+          <a class="button primary" href="{store}">{html.escape(str(strings['view_on_app_store']))}</a>
           {site_button}<a class="button" href="{html.escape(apps_index_href(locale), quote=True)}">{html.escape(str(strings['all_apps']))}</a>
         </div>
+{fact_chips(app, locale, categories)}
       </div>
     </section>
-
-    <section class="section">
+{render_screenshot_strip(content['screenshots'], screenshot_alt, str(strings['screenshots']))}
+    <section class="block prose">
       <h2>{html.escape(str(strings['overview']))}</h2>
-{html_paragraphs(content['overview'])}
+{overview_html}
     </section>
 
-    <section class="section">
-      <h2>{html.escape(str(strings['audience']))}</h2>
-      <ul>
-{html_list(content['audience'])}
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>{html.escape(str(strings['features']))}</h2>
-      <ul>
-{html_list(content['features'])}
+      <ul class="feature-grid">
+{features_html}
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>{html.escape(str(strings['audience']))}</h2>
+      <ul class="audience-grid">
+{audience_html}
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>{html.escape(str(strings['usage']))}</h2>
-      <ol>
-{html_list(content['usage'])}
+      <ol class="steps">
+{usage_html}
       </ol>
     </section>
 
-    <section class="section">
-      <h2>{html.escape(str(strings['pricing']))}</h2>
-      <p>{html.escape(content['pricing'])}</p>
-      <p class="meta">{html.escape(str(strings['pricing_note']))}</p>
-    </section>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>{html.escape(str(strings['pricing']))}</h2>
+        <p>{html.escape(content['pricing'])}</p>
+        <p class="meta">{html.escape(str(strings['pricing_note']))}</p>
+      </section>
+      <section class="info-card">
+        <h2>{html.escape(str(strings['privacy']))}</h2>
+        <p>{html.escape(content['privacy'])}</p>
+      </section>
+    </div>
 
-    <section class="section">
-      <h2>{html.escape(str(strings['privacy']))}</h2>
-      <p>{html.escape(content['privacy'])}</p>
-    </section>
-{screenshot_html}
-    <section class="section">
+    <section class="block faq">
       <h2>{html.escape(str(strings['faq']))}</h2>
 {faq_html}
     </section>
-
-    <section class="section">
+{render_related(app, overrides, locale, categories)}
+    <section class="cta">
       <h2>{html.escape(str(strings['app_store']))}</h2>
-      <p><a class="button primary" href="{html.escape(app_store_url(app, locale), quote=True)}">{html.escape(open_label)}</a></p>
+      <a class="button primary big" href="{store}">{html.escape(open_label)}</a>
       <p class="meta">{html.escape(str(strings['last_updated']))}: {html.escape(last_updated(app))}</p>
     </section>
   </main>
@@ -1249,7 +1394,7 @@ def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: Buil
         body,
         img,
         locale,
-        json_ld(app, content, locale),
+        json_ld(app, content, locale, [(name, SITE_ORIGIN + href) for name, href in crumbs]),
         alternates,
         lang_links,
     )
@@ -1286,22 +1431,13 @@ def render_light_detail_page(app: dict[str, Any], overrides: dict[str, Any], loc
     store_url = app_store_url(app, locale)
     icon_alt = str(strings["icon_alt"]).format(name=name)
     screenshot_alt = str(strings["screenshot_alt"]).format(name=name)
-    screenshot_html = ""
-    if screenshots:
-        figures = "\n".join(
-            f'        <figure class="screenshot"><img src="{html.escape(url, quote=True)}" alt="{html.escape(screenshot_alt, quote=True)}" loading="lazy"></figure>'
-            for url in screenshots
-        )
-        screenshot_html = f"""
-    <section class="section">
-      <h2>{html.escape(str(strings['screenshots']))}</h2>
-      <div class="screenshots">
-{figures}
-      </div>
-    </section>
-"""
+    crumbs = [(str(strings["home_nav"]), home_href(locale)), (str(strings["apps_nav"]), apps_index_href(locale)), (name, page_href(app, locale))]
+    overview_html = ""
+    if overview:
+        overview_html = f'      <p class="lead-para">{html.escape(overview[0])}</p>\n' + "\n".join(f"      <p>{html.escape(item)}</p>" for item in overview[1:])
     body = f"""
-  <main>
+  <main class="detail">
+{render_breadcrumb(crumbs, locale)}
     <section class="hero">
       {f'<img class="app-icon" src="{html.escape(img, quote=True)}" alt="{html.escape(icon_alt, quote=True)}" width="96" height="96">' if img else ''}
       <div>
@@ -1311,18 +1447,19 @@ def render_light_detail_page(app: dict[str, Any], overrides: dict[str, Any], loc
           <a class="button primary" href="{html.escape(store_url, quote=True)}">{html.escape(str(strings['view_on_app_store']))}</a>
           <a class="button" href="{html.escape(apps_index_href(locale), quote=True)}">{html.escape(str(strings['all_apps']))}</a>
         </div>
+{fact_chips(app, locale, [])}
       </div>
     </section>
-
-    <section class="section">
+{render_screenshot_strip(screenshots, screenshot_alt, str(strings['screenshots']))}
+    <section class="block prose">
       <h2>{html.escape(str(strings['overview']))}</h2>
-{html_paragraphs(overview)}
+{overview_html}
     </section>
-{screenshot_html}
-    <section class="section">
+
+    <section class="cta">
       <h2>{html.escape(str(strings['store_note_heading']))}</h2>
       <p>{html.escape(str(strings['store_note']))}</p>
-      <p><a class="button primary" href="{html.escape(store_url, quote=True)}">{html.escape(str(strings['open_on_app_store']).format(name=name))}</a></p>
+      <a class="button primary big" href="{html.escape(store_url, quote=True)}">{html.escape(str(strings['open_on_app_store']).format(name=name))}</a>
       <p class="meta">{html.escape(str(strings['last_updated']))}: {html.escape(last_updated(app))}</p>
     </section>
   </main>
@@ -1335,7 +1472,7 @@ def render_light_detail_page(app: dict[str, Any], overrides: dict[str, Any], loc
         body,
         img,
         locale,
-        json_ld(app, content, locale),
+        json_ld(app, content, locale, [(n, SITE_ORIGIN + h) for n, h in crumbs]),
         alternates,
         lang_links,
     )
@@ -1488,6 +1625,13 @@ def write_detail_pages(apps: list[dict[str, Any]], overrides: dict[str, Any], ct
     generated_urls: list[str] = []
     valid_slugs = {str(app["slug"]) for app in apps} | set(CATEGORY_DEFINITIONS)
     remove_generated_dirs(valid_slugs, DETAIL_MARKER)
+    RELATED_BY_CATEGORY.clear()
+    APP_CATEGORY_CACHE.clear()
+    for app in apps:
+        cats = app_categories(app, overrides, BuildContext())
+        APP_CATEGORY_CACHE[str(app["slug"])] = cats
+        for slug in cats:
+            RELATED_BY_CATEGORY.setdefault(slug, []).append(app)
     for app in apps:
         app_dir = APPS_DIR / str(app["slug"])
         app_dir.mkdir(parents=True, exist_ok=True)
