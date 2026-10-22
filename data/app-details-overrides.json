@@ -3053,14 +3053,15 @@
   },
   "6770047182": {
     "slug": "warekiyakudoshichecker",
+    "name": "Age Profile - Wareki, Yakudoshi & Kazoedoshi",
     "short_description": "A family profile book for Japan: age, wareki dates, kazoedoshi, zodiac, yakudoshi, and longevity milestones.",
-    "meta_description": "年齢プロフィール keeps family birthdays and shows age, Japanese era (wareki) dates, kazoedoshi, zodiac, yakudoshi and longevity years, with a year converter.",
+    "meta_description": "Age Profile keeps family birthdays and shows age, Japanese era (wareki) dates, kazoedoshi, zodiac, yakudoshi and longevity years, with a year converter.",
     "categories": [
       "family",
       "productivity"
     ],
     "overview": [
-      "年齢プロフィール (Age Profile) is a Japanese family profile book for iPhone. Save the birthdays of parents, grandparents, children, and relatives, and see at a glance each person's current age, kazoedoshi (traditional East Asian age counting), birth date and current year in wareki (Japanese era calendar: Meiji, Taisho, Showa, Heisei, Reiwa), Chinese zodiac animal, star sign, common yakudoshi (traditionally inauspicious years) guidance, and longevity celebrations such as kanreki (60th) and koki (70th).",
+      "Age Profile is a Japanese family profile book for iPhone. Save the birthdays of parents, grandparents, children, and relatives, and see at a glance each person's current age, kazoedoshi (traditional East Asian age counting), birth date and current year in wareki (Japanese era calendar: Meiji, Taisho, Showa, Heisei, Reiwa), Chinese zodiac animal, star sign, common yakudoshi (traditionally inauspicious years) guidance, and longevity celebrations such as kanreki (60th) and koki (70th).",
       "Questions like \"How old is grandpa this year?\", \"When is my yakudoshi?\", or \"Which year is the kanreki celebration?\" are answered in one place, without looking up conversion tables. The Birthdays tab lists your family's birthdays for the coming year in date order, showing who is next, what age (and kazoedoshi age) they turn, and who is in a yakudoshi year. A built-in converter switches dates between the Western calendar and wareki across all five modern eras — handy for Japanese resumes, application forms, and paperwork at government offices — and can read non-existent era dates such as Heisei 32 or Showa 100 as the correct Western year and era. It also shows a child's current school year and the entrance and graduation years from elementary school through university.",
       "Home Screen and Lock Screen widgets show this year's wareki and the next birthday or milestone. Everything is stored on your device: no account, no ads, and profiles are never sent to external servers automatically. The app presents yakudoshi and celebration years as common cultural guidance only — it makes no claims about fortune, misfortune, or health."
     ],
@@ -4242,7 +4243,7 @@
       "tap-tools"
     ],
     "overview": [
-      "GohanSnap (Japanese name: ごはんスナップ) is a food photo diary that turns your meal photos into a calendar of everyday memories. Just take a photo with the camera or pick one from your library - the entry takes its time from the photo, and breakfast, lunch, dinner, or snack is chosen from that time (you can change it later). Dish names and calorie notes are optional: add them only when you want to.",
+      "GohanSnap is a food photo diary that turns your meal photos into a calendar of everyday memories. Just take a photo with the camera or pick one from your library - the entry takes its time from the photo, and breakfast, lunch, dinner, or snack is chosen from that time (you can change it later). Dish names and calorie notes are optional: add them only when you want to.",
       "It is a record, not a diet coach. The daily calorie total adds up only the values you entered, you set your own daily calorie goal (the app does not recommend one), and it does not judge meals as good or bad. Add from Photos finds meal photos on your device so you can record several at once, and you can still record a dish name or note without a photo. Entries can be tagged Home cooking, Eating out, or Takeout, saved as My Items to record the same meal again, searched, and exported as CSV.",
       "Look back with a monthly calendar and daily list, this month's summary and your recording streak, a Home Screen widget, and optional breakfast, lunch, and dinner reminders (off by default). You can share your month in meals as one image, and export entries and photos together as a backup file. Your entries are stored on your device, with no ads and no account. This app does not provide medical or nutritional advice."
     ],

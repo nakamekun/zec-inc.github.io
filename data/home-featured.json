@@ -3,48 +3,88 @@
     "bundleId": "com.zec.PhotoCalendarApp",
     "name": "1枚かざる",
     "q": "スマホの写真、増えるばかりで見返さない。",
-    "d": "1日1枚だけ選んで、カレンダーに飾る写真日記。"
+    "d": "1日1枚だけ選んで、カレンダーに飾る写真日記。",
+    "en": {
+      "name": "DailyAlbum",
+      "q": "Your camera roll keeps growing, and you never look back.",
+      "d": "Pick one photo a day and hang it on a calendar, like a photo diary."
+    }
   },
   {
     "bundleId": "com.zec.footsizecheck",
     "name": "足はかる",
     "q": "子どもの靴、いまのサイズが分からない。",
-    "d": "紙とカメラで足の長さを測って、成長を記録。"
+    "d": "紙とカメラで足の長さを測って、成長を記録。",
+    "en": {
+      "name": "Foot Size Check",
+      "q": "You're never sure what size your kid's shoes are now.",
+      "d": "Measure foot length with a sheet of paper and your camera, and track growth."
+    }
   },
   {
     "bundleId": "com.zec.studybuddytimer",
     "name": "Study Buddy",
     "q": "ひとりだと、勉強が続かない。",
-    "d": "となりで一緒にがんばるバディのいる勉強タイマー。"
+    "d": "となりで一緒にがんばるバディのいる勉強タイマー。",
+    "en": {
+      "name": "Study Buddy",
+      "q": "Studying alone, it is hard to keep going.",
+      "d": "A study timer with a buddy who works right alongside you."
+    }
   },
   {
     "bundleId": "com.zec.BigTextNote",
     "name": "大きな文字メモ",
     "q": "騒がしい場所で、声が届かない。",
-    "d": "打った言葉を画面いっぱいの文字で見せる筆談メモ。"
+    "d": "打った言葉を画面いっぱいの文字で見せる筆談メモ。",
+    "en": {
+      "name": "Big Text Note",
+      "q": "It's too loud for anyone to hear you.",
+      "d": "Type a few words and show them in huge letters across the screen."
+    }
   },
   {
     "bundleId": "com.zec.PillTap",
     "name": "おくすりタップ",
     "q": "あれ、今日の薬はのんだっけ？",
-    "d": "毎日鳴って、飲んだら1タップで記録するお薬リマインダー。"
+    "d": "毎日鳴って、飲んだら1タップで記録するお薬リマインダー。",
+    "en": {
+      "name": "PillTap",
+      "q": "Wait, did I take my medicine today?",
+      "d": "A daily medication reminder that logs each dose with one tap."
+    }
   },
   {
     "bundleId": "com.zec.FoodSnapQuest",
     "name": "ごはんスナップ",
     "q": "何を食べたか、すぐ忘れてしまう。",
-    "d": "食事の写真をとるだけの、かんたん食事記録。"
+    "d": "食事の写真をとるだけの、かんたん食事記録。",
+    "en": {
+      "name": "GohanSnap",
+      "q": "You forget what you ate almost right away.",
+      "d": "Just take a photo of your meal for an easy food diary."
+    }
   },
   {
     "bundleId": "com.zec.photometadatacleaner",
     "name": "ExifOff",
     "q": "この写真、家の場所が分かってしまう？",
-    "d": "送る前に、写真の位置情報を消す。"
+    "d": "送る前に、写真の位置情報を消す。",
+    "en": {
+      "name": "ExifOff",
+      "q": "Could this photo give away where I live?",
+      "d": "Remove location data from photos before you send them."
+    }
   },
   {
     "bundleId": "com.zec.Packed",
     "name": "Packed",
     "q": "家を出てから、忘れ物に気づく。",
-    "d": "出かける前の持ち物チェックリスト。"
+    "d": "出かける前の持ち物チェックリスト。",
+    "en": {
+      "name": "Packed",
+      "q": "You only notice what you forgot after you leave.",
+      "d": "A checklist of what to take before you head out."
+    }
   }
 ]

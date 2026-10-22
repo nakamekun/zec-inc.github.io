@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZEC Inc. — Small iPhone apps for everyday snags</title>
+  <meta name="description" content="ZEC Inc. makes small iPhone apps that each fix one everyday snag: DailyAlbum photo diary, Foot Size Check, Study Buddy timer, and 30+ more.">
+  <link rel="canonical" href="https://zec-inc.jp/en/">
+  <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/">
+  <link rel="alternate" hreflang="en" href="https://zec-inc.jp/en/">
+  <link rel="alternate" hreflang="x-default" href="https://zec-inc.jp/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ZEC Inc.">
+  <meta property="og:title" content="ZEC Inc. — Small iPhone apps for everyday snags">
+  <meta property="og:description" content="ZEC Inc. makes small iPhone apps that each fix one everyday snag: DailyAlbum photo diary, Foot Size Check, Study Buddy timer, and 30+ more.">
+  <meta property="og:url" content="https://zec-inc.jp/en/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#F3F5F0; --card:#FFFFFF; --ink:#1A1F2B; --muted:#5A6270; --line:#D8DCD2;
+  --tap:#2B59FF; --tap-soft:#E3E9FF; --on-tap:#FFFFFF; --warm:#FF9A3C;
+  --display:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans",sans-serif;
+  --body:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#12151B; --card:#1B1F28; --ink:#ECEEF2; --muted:#A3AAB6; --line:#2C323D;
+  --tap:#7C97FF; --tap-soft:#232C48; --on-tap:#0E1220; --warm:#FFB26B; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --paper:#12151B; --card:#1B1F28; --ink:#ECEEF2; --muted:#A3AAB6; --line:#2C323D;
+  --tap:#7C97FF; --tap-soft:#232C48; --on-tap:#0E1220; --warm:#FFB26B; color-scheme:dark;}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.8;margin:0;padding-inline:20px}
+a{color:inherit}
+.wrap{max-width:1040px;margin-inline:auto}
+.draft{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center;padding-block:8px;border-bottom:1px dashed var(--line)}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:20px;flex-wrap:wrap}
+.logo{font-family:var(--display);font-weight:900;font-size:24px;letter-spacing:.04em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:14px;height:14px;border-radius:50%;background:var(--tap);display:inline-block;box-shadow:0 0 0 5px var(--tap-soft)}
+nav{display:flex;gap:20px;font-size:14px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted)} nav a:hover{color:var(--ink)}
+nav .lang{font-family:var(--mono)}
+
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding-block:56px 72px}
+.eyebrow{font-family:var(--mono);font-size:13px;color:var(--muted);letter-spacing:.08em}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(30px,4.4vw,50px);line-height:1.3;margin:12px 0 20px;text-wrap:balance}
+h1 .ln{display:inline-block}
+h1 em{font-style:normal;color:var(--tap)}
+.lead{color:var(--muted);max-width:30em;margin:0}
+
+.tapcard{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:28px;position:relative;min-height:340px;display:flex;flex-direction:column;gap:18px}
+.tapcard .label{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.08em}
+.bubble{font-family:var(--display);font-weight:700;font-size:clamp(20px,2.6vw,26px);line-height:1.5;min-height:3em;transition:opacity .25s}
+.answer{display:flex;gap:14px;align-items:center;padding:14px;border-radius:18px;background:var(--tap-soft);transition:opacity .25s;text-decoration:none}
+.answer img{width:56px;height:56px;border-radius:13px;flex:none}
+.answer b{display:block;font-size:16px}
+.answer span{font-size:14px;color:var(--muted);line-height:1.5}
+.tapbtn{margin-top:auto;align-self:flex-start;display:flex;align-items:center;gap:10px;border:0;cursor:pointer;background:var(--tap);color:var(--on-tap);font:700 15px var(--body);padding:12px 20px 12px 14px;border-radius:999px}
+.tapbtn .dot{width:22px;height:22px;border-radius:50%;background:var(--on-tap);position:relative}
+.tapbtn .dot::after{content:"";position:absolute;inset:6px;border-radius:50%;background:var(--tap)}
+.tapbtn:active{transform:scale(.97)}
+.tapbtn:focus-visible{outline:3px solid var(--warm);outline-offset:3px}
+.ripple{position:absolute;width:24px;height:24px;border-radius:50%;border:2px solid var(--tap);pointer-events:none;animation:rip .6s ease-out forwards}
+@keyframes rip{to{transform:scale(6);opacity:0}}
+.counter{font-family:var(--mono);font-size:12px;color:var(--muted);position:absolute;top:28px;right:28px}
+
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line);margin-bottom:80px}
+.facts div{padding:22px 4px;display:flex;flex-direction:column;gap:2px}
+.facts div+div{border-left:1px solid var(--line);padding-left:24px}
+.facts strong{font-family:var(--mono);font-weight:500;font-size:34px;font-variant-numeric:tabular-nums;line-height:1.2}
+.facts span{font-size:14px;color:var(--muted)}
+
+section{margin-bottom:96px}
+h2{font-family:var(--display);font-weight:900;font-size:clamp(26px,3.6vw,36px);line-height:1.35;margin:6px 0 10px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 32px;max-width:36em}
+
+.works{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.work{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;display:flex;flex-direction:column;gap:12px;text-decoration:none;transition:transform .2s,border-color .2s}
+.work:hover{transform:translateY(-3px);border-color:var(--tap)}
+.work img{width:64px;height:64px;border-radius:15px}
+.work q{quotes:none;font-size:13px;color:var(--muted);line-height:1.6}
+.work b{font-size:17px;line-height:1.4}
+.work p{margin:0;font-size:14px;line-height:1.6}
+.work .go{margin-top:auto;font-family:var(--mono);font-size:12px;color:var(--tap)}
+.all{display:inline-flex;margin-top:24px;font-weight:700;color:var(--tap);text-decoration:none}
+
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.way h3{font-family:var(--display);font-size:20px;margin:0 0 8px}
+.way p{margin:0;color:var(--muted);font-size:15px}
+.way .mark{width:40px;height:40px;border-radius:12px;background:var(--tap-soft);color:var(--tap);display:grid;place-items:center;margin-bottom:14px}
+.way svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.other{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.other a{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;text-decoration:none;display:block}
+.other b{display:block;font-size:17px;margin-bottom:4px}
+.other span{color:var(--muted);font-size:14px}
+
+.company{display:grid;grid-template-columns:1fr 1fr;gap:48px;border-top:1px solid var(--line);padding-top:40px}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 24px;font-size:15px}
+dt{color:var(--muted)} dd{margin:0}
+.mail{font-family:var(--mono);font-size:18px;user-select:all}
+footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:28px 40px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer nav{gap:16px}
+.langs{flex-basis:100%;font-size:12px}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:32px;padding-block:32px 48px}
+  .works{grid-template-columns:repeat(2,1fr)}
+  .ways,.other,.company{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  body{padding-inline:16px}
+  .facts{grid-template-columns:1fr}
+  .facts div+div{border-left:0;border-top:1px solid var(--line);padding-left:4px}
+  .works{grid-template-columns:1fr}
+  nav{gap:14px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header>
+  <a class="logo" href="/"><i></i>ZEC</a>
+  <nav aria-label="Primary">
+    <a href="#works">Apps</a><a href="#ways">How we work</a><a href="#other">Also</a><a href="#company">Company</a><a class="lang" href="/" hreflang="ja" lang="ja">日本語</a>
+  </nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <div class="eyebrow">ZEC INC. — SMALL APPS FOR iPHONE</div>
+    <h1><span class="ln">Small fixes for</span> <span class="ln">everyday snags,</span> <span class="ln">in <em>one tap</em>.</span></h1>
+    <p class="lead">ZEC Inc. makes small iPhone apps that each take care of one everyday snag. They work right after you download them, and your records stay on your iPhone by default.</p>
+  </div>
+  <div class="tapcard" id="tapcard" aria-live="polite">
+    <div class="label">Sound familiar?</div>
+    <div class="counter" id="counter">1 / 8</div>
+    <div class="bubble" id="bubble"></div>
+    <a class="answer" id="answer" target="_blank" rel="noopener"><img alt="" id="aicon"><div><b id="aname"></b><span id="adesc"></span></div></a>
+    <button class="tapbtn" id="tapbtn" type="button"><span class="dot"></span>Show another</button>
+  </div>
+</div>
+
+<div class="facts">
+  <div><strong><!-- HOME_COUNT_START -->33<!-- HOME_COUNT_END --></strong><span>apps on the App Store</span></div>
+  <div><strong>26</strong><span>languages in our most localized app</span></div>
+  <div><strong>1</strong><span>snag per app, and only one</span></div>
+</div>
+
+<section id="works">
+  <div class="eyebrow">WORKS</div>
+  <h2>Popular apps</h2>
+  <p class="sub">Each one is a small tool built for a single job.</p>
+  <!-- HOME_FEATURED_START -->
+    <div class="works">
+      <a class="work" href="https://apps.apple.com/us/app/dailyalbum-one-photo-a-day/id6761641437?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/4f/dd/444fdd0a-a5ef-6137-1c93-c0b8d302b620/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>Your camera roll keeps growing, and you never look back.</q><b>DailyAlbum</b><p>Pick one photo a day and hang it on a calendar, like a photo diary.</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/us/app/foot-size-check/id6789844290?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>You&#x27;re never sure what size your kid&#x27;s shoes are now.</q><b>Foot Size Check</b><p>Measure foot length with a sheet of paper and your camera, and track growth.</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/us/app/study-buddy-timer/id6764601072?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>Studying alone, it is hard to keep going.</q><b>Study Buddy</b><p>A study timer with a buddy who works right alongside you.</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/us/app/big-text-note/id6767796126?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>It&#x27;s too loud for anyone to hear you.</q><b>Big Text Note</b><p>Type a few words and show them in huge letters across the screen.</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/us/app/pilltap/id6762545903?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d6/c9/b2/d6c9b2c6-3803-13a4-7dba-eee738aeb682/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>Wait, did I take my medicine today?</q><b>PillTap</b><p>A daily medication reminder that logs each dose with one tap.</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/us/app/food-photo-diary-gohansnap/id6789844298?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/1f/4b/4a1f4b23-0ef9-f17c-1dae-36fabc21c9cf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>You forget what you ate almost right away.</q><b>GohanSnap</b><p>Just take a photo of your meal for an easy food diary.</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/us/app/exifoff-remove-photo-location/id6789844259?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/21/89/822189d9-2163-7736-34a3-f237e278e90d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>Could this photo give away where I live?</q><b>ExifOff</b><p>Remove location data from photos before you send them.</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/us/app/packed-daily-packing-list/id6762812333?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/bd/d2/dbbdd28b-532f-37bc-c671-ed10601d8936/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>You only notice what you forgot after you leave.</q><b>Packed</b><p>A checklist of what to take before you head out.</p><span class="go">App Store ↗</span></a>
+    </div>
+    <script type="application/json" id="featured-data">[{"name": "DailyAlbum", "q": "Your camera roll keeps growing, and you never look back.", "d": "Pick one photo a day and hang it on a calendar, like a photo diary.", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/4f/dd/444fdd0a-a5ef-6137-1c93-c0b8d302b620/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/us/app/dailyalbum-one-photo-a-day/id6761641437?uo=4"}, {"name": "Foot Size Check", "q": "You're never sure what size your kid's shoes are now.", "d": "Measure foot length with a sheet of paper and your camera, and track growth.", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/us/app/foot-size-check/id6789844290?uo=4"}, {"name": "Study Buddy", "q": "Studying alone, it is hard to keep going.", "d": "A study timer with a buddy who works right alongside you.", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/us/app/study-buddy-timer/id6764601072?uo=4"}, {"name": "Big Text Note", "q": "It's too loud for anyone to hear you.", "d": "Type a few words and show them in huge letters across the screen.", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/us/app/big-text-note/id6767796126?uo=4"}, {"name": "PillTap", "q": "Wait, did I take my medicine today?", "d": "A daily medication reminder that logs each dose with one tap.", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d6/c9/b2/d6c9b2c6-3803-13a4-7dba-eee738aeb682/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/us/app/pilltap/id6762545903?uo=4"}, {"name": "GohanSnap", "q": "You forget what you ate almost right away.", "d": "Just take a photo of your meal for an easy food diary.", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/1f/4b/4a1f4b23-0ef9-f17c-1dae-36fabc21c9cf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/us/app/food-photo-diary-gohansnap/id6789844298?uo=4"}, {"name": "ExifOff", "q": "Could this photo give away where I live?", "d": "Remove location data from photos before you send them.", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/21/89/822189d9-2163-7736-34a3-f237e278e90d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/us/app/exifoff-remove-photo-location/id6789844259?uo=4"}, {"name": "Packed", "q": "You only notice what you forgot after you leave.", "d": "A checklist of what to take before you head out.", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/bd/d2/dbbdd28b-532f-37bc-c671-ed10601d8936/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/us/app/packed-daily-packing-list/id6762812333?uo=4"}]</script>
+    <!-- HOME_FEATURED_END -->
+  <a class="all" href="/apps/">See all apps →</a>
+</section>
+
+<section id="ways">
+  <div class="eyebrow">HOW WE MAKE</div>
+  <h2>“Wouldn’t it be nice if…”, built small and fast.</h2>
+  <p class="sub">Not one big app that does everything, but many small tools that each do one thing right away.</p>
+  <div class="ways">
+    <div class="way"><div class="mark"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg></div><h3>Runs on your device</h3><p>Your records stay on your iPhone by default. Syncing between devices is left to Apple’s own services such as iCloud.</p></div>
+    <div class="way"><div class="mark"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0z"/><path d="M8.5 14s1.3 2 3.5 2 3.5-2 3.5-2M9 9.5h.01M15 9.5h.01"/></svg></div><h3>No guilt, no rush</h3><p>Missed a day? The app won’t scold you. Notifications come only when they’re needed, in a gentle tone.</p></div>
+    <div class="way"><div class="mark"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg></div><h3>Improved after launch</h3><p>We read reviews and watch how the apps are used, and ship updates almost every week. Small apps are quick to fix.</p></div>
+  </div>
+</section>
+
+<section id="other">
+  <div class="eyebrow">ALSO</div>
+  <h2>Beyond apps</h2>
+  <div class="other">
+    <a href="/works/"><b>LINE stickers</b><span>Two sets of animated calico-cat stickers, on sale in the LINE STORE.</span></a>
+    <a href="https://github.com/nakamekun/app-store-monitor" target="_blank" rel="noopener"><b>app-store-monitor</b><span>A small open-source tool that sends a daily summary of App Store Connect numbers.</span></a>
+  </div>
+</section>
+
+<section id="company" class="company">
+  <div>
+    <div class="eyebrow">COMPANY</div>
+    <h2>Company</h2>
+    <dl><dt>Name</dt><dd>ZEC Inc.</dd><dt>Location</dt><dd>Koto City, Tokyo, Japan</dd><dt>Founded</dt><dd>2025</dd><dt>Business</dt><dd>Building and running iPhone apps; data analysis and business tools</dd></dl>
+  </div>
+  <div>
+    <div class="eyebrow">CONTACT</div>
+    <h2>Contact</h2>
+    <p class="sub" style="margin-bottom:12px">For app feedback or business inquiries, please email us.</p>
+    <div class="mail">info [at] zec-inc.jp</div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>© 2026 ZEC Inc.</span>
+  <nav aria-label="Footer"><a href="/apps/">Apps</a><a href="/works/">Works</a><a href="/privacy.html">Privacy</a><a href="/support.html">Support</a></nav>
+  <nav aria-label="App list languages" class="langs"><a href="/apps/" hreflang="en" lang="en">English</a><a href="/apps/ja/" hreflang="ja" lang="ja">日本語</a><a href="/apps/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/apps/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/apps/ko/" hreflang="ko" lang="ko">한국어</a></nav>
+</footer>
+</div>
+
+<script>
+const APPS = JSON.parse(document.getElementById('featured-data').textContent);
+let i = 0;
+const $ = id => document.getElementById(id);
+function show(n){
+  const a = APPS[n];
+  $('bubble').textContent = '“' + a.q + '”';
+  $('aicon').src = a.icon; $('aname').textContent = a.name; $('adesc').textContent = a.d;
+  $('answer').href = a.url; $('counter').textContent = (n+1) + ' / ' + APPS.length;
+}
+show(0);
+$('tapbtn').addEventListener('click', e => {
+  const card = $('tapcard'), r = document.createElement('span'), b = card.getBoundingClientRect();
+  r.className = 'ripple'; r.style.left = (e.clientX - b.left - 12) + 'px'; r.style.top = (e.clientY - b.top - 12) + 'px';
+  card.appendChild(r); setTimeout(() => r.remove(), 700);
+  ['bubble','answer'].forEach(id => $(id).style.opacity = 0);
+  setTimeout(() => { i = (i + 1) % APPS.length; show(i); ['bubble','answer'].forEach(id => $(id).style.opacity = 1); }, 220);
+});
+</script>
+</body>
+</html>
