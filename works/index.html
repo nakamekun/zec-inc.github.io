@@ -13,51 +13,12 @@
   <meta property="og:description" content="LINE アニメーションスタンプ「動くみけねこの毎日あいさつ」「動くみけねこのAI時代の会話」（LINE STORE で販売中）">
   <meta property="og:url" content="https://zec-inc.jp/works/">
   <meta property="og:image" content="https://zec-inc.jp/works/img/mikeneko-8.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
   <style>
-    :root {
-      --bg: #faf9f6;
-      --text: #2a2a2a;
-      --muted: #8a8580;
-      --line: #e8e4de;
-      --brand: #2c3e50;
-      --link: #2563eb;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { background: var(--bg); }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .topbar {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 22px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 16px;
-      flex-wrap: wrap;
-      font-size: 0.9em;
-    }
-
-    .topbar a { color: var(--brand); text-decoration: none; }
-    .topbar a:hover { text-decoration: underline; }
-    .brand { font-weight: 600; letter-spacing: 0.02em; }
-    .topbar nav { display: flex; gap: 20px; }
-
-    main {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 48px 24px 96px;
-    }
+    main { padding-top: 32px; }
 
     .work-title {
       text-align: center;
@@ -85,6 +46,7 @@
     }
 
     .tile {
+      background: #FFFFFF;
       position: relative;
       aspect-ratio: 320 / 270;
       border: 0;
@@ -95,7 +57,7 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-    .tile:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+    .tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 
     .tile img {
       width: 100%;
@@ -145,40 +107,25 @@
       border: 1px solid var(--line);
       border-radius: 999px;
       padding: 0 14px;
-      background: #fff;
+      background: var(--surface);
     }
 
-    .meta a { color: var(--link); text-decoration: none; }
+    .meta a { color: var(--accent); text-decoration: none; }
     .meta a:hover { text-decoration: underline; }
-
-    footer {
-      text-align: center;
-      font-size: 0.85em;
-      color: var(--muted);
-      padding: 24px 24px 40px;
-      border-top: 1px solid var(--line);
-    }
-
-    footer a { color: inherit; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .footer-links { margin-top: 6px; }
 
     @media (max-width: 900px) {
       .grid { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
-      main { padding: 32px 16px 72px; }
+      main { padding-top: 24px; }
       .work-title { margin-bottom: 32px; }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="topbar">
-      <a class="brand" href="/">合同会社ゼク</a>
-      <nav aria-label="Primary">
-        <a href="/apps/">Apps</a>
-        <a href="/works/" aria-current="page">Works</a>
-      </nav>
+  <header class="site">
+    <div class="site-in">
+      <a class="logo" href="/"><i></i>ZEC</a>
+      <nav aria-label="Primary"><a href="/">ホーム</a><a href="/apps/ja/">アプリ</a><a href="/works/" aria-current="page">制作物</a></nav>
     </div>
   </header>
 
@@ -230,10 +177,10 @@
 
   </main>
 
-  <footer>
-    <div>&copy; 2026 ZEC Inc.</div>
-    <div class="footer-links">
-      <a href="/">Home</a> · <a href="/apps/">Apps</a> · <a href="/works/">Works</a> · <a href="/privacy.html">Privacy</a>
+  <footer class="site-foot">
+    <div class="site-in">
+      <span>&copy; 2026 ZEC Inc.</span>
+      <nav aria-label="Footer"><a href="/apps/">Apps</a><a href="/works/">Works</a><a href="/privacy.html">Privacy</a><a href="/support.html">Support</a></nav>
     </div>
   </footer>
 

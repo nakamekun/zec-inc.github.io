@@ -5,106 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ページが見つかりません - ZEC Inc.</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <style>
-    :root {
-      --bg: #f9f9f9;
-      --surface: #ffffff;
-      --text: #333333;
-      --muted: #64748b;
-      --line: #e2e8f0;
-      --header: #2c3e50;
-      --link: #2563eb;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
-      line-height: 1.7;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    header {
-      background-color: var(--header);
-      color: #fff;
-      padding: 2em 1em;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-      letter-spacing: 0;
-    }
-
-    main {
-      max-width: 760px;
-      margin: 2em auto;
-      padding: 2em;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-      border-radius: 6px;
-    }
-
-    h2 {
-      color: var(--header);
-      margin-top: 0;
-    }
-
-    .lead-en {
-      color: var(--muted);
-    }
-
-    .actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 24px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 40px;
-      padding: 0 14px;
-      border-radius: 8px;
-      border: 1px solid var(--line);
-      color: var(--link);
-      background: #ffffff;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .button.primary {
-      background: var(--link);
-      border-color: var(--link);
-      color: #ffffff;
-    }
-
-    .button:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #888;
-      padding: 1em 1em 2em;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <header>
-    <h1>合同会社ゼク</h1>
-    <p>ZEC Inc.</p>
+  <header class="site">
+    <div class="site-in">
+      <a class="logo" href="/"><i></i>ZEC</a>
+      <nav aria-label="Primary"><a href="/">ホーム</a><a href="/apps/ja/">アプリ</a><a href="/works/">制作物</a></nav>
+    </div>
   </header>
 
   <main>
-    <h2>ページが見つかりません</h2>
+    <h1>ページが見つかりません</h1>
     <p>お探しのページは移動または削除された可能性があります。</p>
     <p class="lead-en">The page you are looking for could not be found.</p>
     <div class="actions">
@@ -113,8 +28,11 @@
     </div>
   </main>
 
-  <footer>
-    &copy; 2026 ZEC Inc.
+  <footer class="site-foot">
+    <div class="site-in">
+      <span>&copy; 2026 ZEC Inc.</span>
+      <nav aria-label="Footer"><a href="/apps/">Apps</a><a href="/works/">Works</a><a href="/privacy.html">Privacy</a><a href="/support.html">Support</a></nav>
+    </div>
   </footer>
 </body>
 </html>
