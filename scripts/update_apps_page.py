@@ -1206,8 +1206,10 @@ def fact_chips(app: dict[str, Any], locale: str, categories: list[str]) -> str:
     if has_iphone:
         chips.append(html.escape(str(strings["chip_both"] if has_ipad else strings["chip_iphone"])))
     languages = {code for code in app.get("languages", []) if code}
-    if len(languages) > 1:
-        chips.append(html.escape(str(strings["chip_languages"]).format(n=len(languages))))
+    # Apple folds zh-Hans and zh-Hant into one "ZH" code.
+    language_count = len(languages) + (1 if "ZH" in languages else 0)
+    if language_count > 1:
+        chips.append(html.escape(str(strings["chip_languages"]).format(n=language_count)))
     items = [f'<li class="chip">{chip}</li>' for chip in chips]
     for slug in categories:
         title = category_definition(slug, locale)["title"]
