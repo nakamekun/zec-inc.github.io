@@ -3955,8 +3955,8 @@
     "short_description": "Remove photo location and other EXIF metadata. See where a photo was taken on a map, check what it reveals, then share a clean copy.",
     "meta_description": "ExifOff removes location and EXIF metadata from photos on iPhone and iPad. See where a photo was taken on a map, then share a clean copy. Free, on-device.",
     "categories": [
-      "tap-tools",
-      "photo-memory"
+      "photo-memory",
+      "tap-tools"
     ],
     "overview": [
       "ExifOff checks what a photo reveals and creates a clean copy for safer sharing. Pick a photo to see whether it contains location data (and where it was taken, on a map), along with basics like date taken, camera, image size, original file type, and file size - then create a new copy with the metadata removed before you post or send it. HEIC, PNG, and JPEG keep their original format; only the photo info is removed.",
