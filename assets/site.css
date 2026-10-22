@@ -1,0 +1,87 @@
+/* ZEC 共通スタイル(トップページ index.html と同じトークン) */
+:root{
+  color-scheme:light;
+  --bg:#F3F5F0; --surface:#FFFFFF; --soft:#F7F8F4; --text:#1A1F2B; --muted:#5A6270; --line:#D8DCD2;
+  --accent:#2B59FF; --accent-soft:#E3E9FF; --on-accent:#FFFFFF;
+  --display:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans",sans-serif;
+  --body:"Zen Kaku Gothic New",-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP","Segoe UI",sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  color-scheme:dark; --bg:#12151B; --surface:#1B1F28; --soft:#161A22; --text:#ECEEF2; --muted:#A3AAB6; --line:#2C323D;
+  --accent:#7C97FF; --accent-soft:#232C48; --on-accent:#0E1220;}}
+*{box-sizing:border-box}
+body{margin:0;padding-inline:20px;font-family:var(--body);background:var(--bg);color:var(--text);line-height:1.75}
+a{color:var(--accent)}
+.site-in,main{max-width:1040px;margin-inline:auto}
+
+/* header / footer */
+header.site .site-in{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:20px}
+.logo{font-family:var(--display);font-weight:900;font-size:22px;letter-spacing:.04em;text-decoration:none;color:var(--text);display:flex;align-items:center;gap:10px}
+.logo i{width:13px;height:13px;border-radius:50%;background:var(--accent);display:inline-block;box-shadow:0 0 0 5px var(--accent-soft)}
+header.site nav,footer.site-foot nav{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}
+header.site nav a,footer.site-foot nav a{color:var(--muted);text-decoration:none}
+header.site nav a:hover,footer.site-foot nav a:hover{color:var(--text)}
+footer.site-foot{margin-top:72px}
+footer.site-foot .site-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:28px 40px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+
+/* type */
+main{padding-block:32px 0}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(28px,4vw,42px);line-height:1.3;margin:0 0 10px;text-wrap:balance}
+h2{font-family:var(--display);font-weight:900;font-size:22px;line-height:1.4;margin:0 0 14px;text-wrap:balance}
+p{margin:0 0 12px}
+ul,ol{margin:0;padding-left:1.25em}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin:0 0 8px}
+.tagline,.lead{color:var(--muted);font-size:16px;margin:0 0 18px;max-width:40em}
+.lead-ja{margin:0 0 28px;max-width:40em}
+.meta{color:var(--muted);font-size:14px}
+
+/* blocks */
+.intro{padding:0}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;padding-block:16px 32px;border-bottom:1px solid var(--line);margin-bottom:32px}
+.section{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:28px;margin-top:18px}
+.app-icon{width:96px;height:96px;border-radius:22px;border:1px solid var(--line)}
+.grid .app-icon,.app-card .app-icon{width:64px;height:64px;border-radius:15px}
+.mini-icon{width:56px;height:56px;border-radius:13px;margin-bottom:10px;border:1px solid var(--line)}
+
+/* buttons / links */
+.actions,.app-actions,.category-links{display:flex;gap:10px;flex-wrap:wrap}
+.button,.app-link,.category-link{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);text-decoration:none;font-weight:700;font-size:14px}
+.button.primary,.app-link.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.button:hover,.app-link:hover,.category-link:hover{border-color:var(--accent)}
+.category-link{min-height:36px;font-weight:500;color:var(--accent)}
+.category-nav{margin:0 0 28px}
+.category-nav h2{font-size:16px;margin-bottom:10px}
+
+/* app cards */
+.grid,.app-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.app-card,.app-mini-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:20px;display:flex;flex-direction:column;gap:12px;transition:border-color .2s,transform .2s}
+.app-card:hover,.app-mini-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.app-card-main{display:flex;flex-direction:column;gap:14px;flex:1}
+.app-copy{display:flex;flex-direction:column;min-width:0}
+.app-card h2,.app-mini-card h2,.app-mini-card h3{font-family:var(--body);font-weight:700;font-size:17px;line-height:1.4;margin:0 0 6px}
+.app-card h2 a,.app-mini-card h2 a,.app-mini-card h3 a{color:inherit;text-decoration:none}
+.app-card p,.app-mini-card p{color:var(--muted);font-size:14px;line-height:1.6;margin:0}
+.app-card .app-actions,.app-mini-card .app-actions{margin-top:auto}
+.app-card .app-link,.app-mini-card .app-link{min-height:34px;padding:0 12px;font-size:13px}
+
+/* screenshots / faq */
+.screenshots{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+.screenshot{margin:0;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:10px}
+.screenshot img{display:block;width:100%;height:auto;border-radius:10px}
+details{border-top:1px solid var(--line);padding:14px 0}
+details:first-child{border-top:0}
+summary{cursor:pointer;font-weight:700}
+
+/* store badge (apps index) */
+.store-download{margin:0 0 24px}
+.store-badge{height:44px;width:auto}
+
+@media (max-width:640px){
+  body{padding-inline:16px}
+  .hero{grid-template-columns:1fr}
+  .section{padding:20px}
+  header.site nav{gap:14px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.section:has(> .app-grid){background:none;border:0;padding:0}

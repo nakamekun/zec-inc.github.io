@@ -45,6 +45,22 @@ LOOKUP_CACHE_JP = ROOT_DIR / "data" / "app-store-lookup-cache-jp.json"
 APPS_MANIFEST = ROOT_DIR / "data" / "apps-manifest.json"
 SITEMAP_XML = ROOT_DIR / "sitemap.xml"
 HOME_PAGE = ROOT_DIR / "index.html"
+
+FONTS_CSS = "https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap"
+SITE_HEADER = """  <header class="site">
+    <div class="site-in">
+      <a class="logo" href="/"><i></i>ZEC</a>
+      <nav aria-label="Primary">
+        {nav}
+      </nav>
+    </div>
+  </header>"""
+SITE_FOOTER = """  <footer class="site-foot">
+    <div class="site-in">
+      <span>&copy; 2026 ZEC Inc.</span>
+      <nav aria-label="Footer"><a href="/apps/">Apps</a><a href="/works/">Works</a><a href="/privacy.html">Privacy</a><a href="/support.html">Support</a></nav>
+    </div>
+  </footer>"""
 HOME_FEATURED_JSON = ROOT_DIR / "data" / "home-featured.json"
 HOME_FEATURED_START = "<!-- HOME_FEATURED_START -->"
 HOME_FEATURED_END = "<!-- HOME_FEATURED_END -->"
@@ -940,6 +956,7 @@ def render_shell(
 """
     strings = ui_strings(lang)
     nav_items = [
+        '<a href="/">' + ("ホーム" if lang == "ja" else "Home") + "</a>",
         f'<a href="{html.escape(apps_index_href(lang), quote=True)}">{html.escape(str(strings["apps_nav"]))}</a>'
     ]
     for href, label in lang_links or []:
@@ -948,23 +965,15 @@ def render_shell(
     return f"""<!DOCTYPE html>
 <html lang="{html.escape(lang)}">
 <head>
-{render_head(title, description, canonical, og_image, alternates)}{json_block}  <style>
-{base_css()}
-  </style>
+{render_head(title, description, canonical, og_image, alternates)}{json_block}  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="{FONTS_CSS}">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <header>
-    <div class="topbar">
-      <div class="brand">ZEC Inc.</div>
-      <nav aria-label="Secondary">
-        {nav_html}
-      </nav>
-    </div>
-  </header>
+{SITE_HEADER.replace("{nav}", nav_html)}
 {body}
-  <footer>
-    <div class="footer">&copy; 2026 ZEC Inc.</div>
-  </footer>
+{SITE_FOOTER}
 </body>
 </html>
 """

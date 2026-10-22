@@ -108,75 +108,17 @@
   ]
 }
   </script>
-  <style>
-
-    :root {
-      --bg: #f5f8ff;
-      --surface: #ffffff;
-      --soft: #f8fbff;
-      --text: #1e293b;
-      --muted: #64748b;
-      --line: #e2e8f0;
-      --accent: #2563eb;
-      --header: #2c3e50;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    header { background: var(--header); color: #ffffff; padding: 20px; }
-    .topbar, main, footer { max-width: 920px; margin: 0 auto; }
-    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
-    .brand { font-weight: 600; }
-    a { color: var(--accent); }
-    .topbar a { color: #ffffff; text-decoration: none; }
-    .topbar a:hover, a:hover { text-decoration: underline; }
-    main { padding: 44px 20px; }
-    .hero, .section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.06); }
-    .hero { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; }
-    .app-icon { width: 96px; height: 96px; border-radius: 22px; border: 1px solid rgba(226, 232, 240, 0.9); box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1); }
-    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.2; letter-spacing: 0; }
-    .tagline { margin: 0 0 18px; color: var(--muted); font-size: 17px; }
-    .actions, .app-actions, .category-links { display: flex; gap: 12px; flex-wrap: wrap; }
-    .button, .app-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line); background: #ffffff; text-decoration: none; font-weight: 600; }
-    .button.primary, .app-link.primary { background: var(--accent); border-color: var(--accent); color: #ffffff; }
-    .section { margin-top: 18px; }
-    h2 { margin: 0 0 14px; font-size: 22px; color: var(--header); }
-    p { margin: 0 0 12px; }
-    ul, ol { margin: 0; padding-left: 1.25em; }
-    .app-grid, .screenshots { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
-    .app-mini-card, .screenshot { margin: 0; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
-    .app-mini-card h2, .app-mini-card h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.3; }
-    .app-mini-card p { color: var(--muted); font-size: 14px; }
-    .mini-icon { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 10px; }
-    .screenshot img { display: block; width: 100%; height: auto; border-radius: 8px; }
-    details { border-top: 1px solid var(--line); padding: 14px 0; }
-    details:first-child { border-top: 0; }
-    summary { cursor: pointer; font-weight: 600; }
-    .meta { color: var(--muted); font-size: 14px; }
-    footer { padding: 0 20px 40px; color: var(--muted); font-size: 14px; }
-    .footer { border-top: 1px solid var(--line); padding-top: 16px; }
-    @media (max-width: 640px) {
-      main { padding-top: 28px; }
-      .hero { grid-template-columns: 1fr; padding: 22px; }
-      .section { padding: 22px; }
-      h1 { font-size: 30px; }
-    }
-
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <header>
-    <div class="topbar">
-      <div class="brand">ZEC Inc.</div>
-      <nav aria-label="Secondary">
+  <header class="site">
+    <div class="site-in">
+      <a class="logo" href="/"><i></i>ZEC</a>
+      <nav aria-label="Primary">
+        <a href="/">Home</a>
         <a href="/apps/">Apps</a>
         <a href="/apps/pilltap/ja/">日本語</a>
       </nav>
@@ -301,8 +243,11 @@
     </section>
   </main>
 
-  <footer>
-    <div class="footer">&copy; 2026 ZEC Inc.</div>
+  <footer class="site-foot">
+    <div class="site-in">
+      <span>&copy; 2026 ZEC Inc.</span>
+      <nav aria-label="Footer"><a href="/apps/">Apps</a><a href="/works/">Works</a><a href="/privacy.html">Privacy</a><a href="/support.html">Support</a></nav>
+    </div>
   </footer>
 </body>
 </html>
