@@ -99,6 +99,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tap Tools",
+          "item": "https://zec-inc.jp/apps/tap-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "CleanURL Tap: Remove Tracking",
+          "item": "https://zec-inc.jp/apps/cleanurl-tap/"
+        }
+      ]
     }
   ]
 }
@@ -123,7 +152,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">CleanURL Tap: Remove Tracking</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/c8/c4/1cc8c40d-88e9-022b-a783-c9177f48af90/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="CleanURL Tap: Remove Tracking app icon" width="96" height="96">
       <div>
@@ -133,103 +163,114 @@
           <a class="button primary" href="https://apps.apple.com/us/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">7 languages</li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li><li class="chip chip-link"><a href="/apps/productivity/">Productivity Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/52/d7/7552d788-5cd8-136f-9325-126aa119b2e0/01-iphone-result.png/320x480bb.jpg" alt="CleanURL Tap: Remove Tracking screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/95/28/19/952819d9-8ef2-33ce-fd8b-9f4bbfaa022e/02-iphone-share-sheet.png/320x480bb.jpg" alt="CleanURL Tap: Remove Tracking screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/83/09/ee/8309ee4c-5ac8-7315-e17e-42ac0c39c61d/03-iphone-batch.png/320x480bb.jpg" alt="CleanURL Tap: Remove Tracking screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c5/7a/ca/c57acafd-b786-f04b-49b0-dd1f92dff795/04-iphone-shortcuts.png/320x480bb.jpg" alt="CleanURL Tap: Remove Tracking screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/44/1e/9a441e93-2f1f-3ade-8915-67b826851284/05-iphone-privacy.png/320x480bb.jpg" alt="CleanURL Tap: Remove Tracking screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>CleanURL Tap is a focused link-cleaning utility for moments when a copied URL contains tracking parameters, campaign tags, or other clutter you do not want to keep. iOS blocks some known tracking, but copied links can still carry UTM campaign tags, affiliate tags, ad click IDs, and long shop parameters.</p>
-          <p>Paste a URL or a whole block of text and CleanURL Tap cleans every link while leaving the rest of the text unchanged. Removed parameter names are shown as crossed-out tags, and product choices such as variant, size, color, and quantity are kept. You can also clean links from the share sheet and Shortcuts without opening the app.</p>
-          <p>Cleanup happens on your device, and everything is free and ad-free. The app does not promise perfect removal of every possible parameter, so review sensitive links before sending them.</p>
+      <p class="lead-para">CleanURL Tap is a focused link-cleaning utility for moments when a copied URL contains tracking parameters, campaign tags, or other clutter you do not want to keep. iOS blocks some known tracking, but copied links can still carry UTM campaign tags, affiliate tags, ad click IDs, and long shop parameters.</p>
+      <p>Paste a URL or a whole block of text and CleanURL Tap cleans every link while leaving the rest of the text unchanged. Removed parameter names are shown as crossed-out tags, and product choices such as variant, size, color, and quantity are kept. You can also clean links from the share sheet and Shortcuts without opening the app.</p>
+      <p>Cleanup happens on your device, and everything is free and ad-free. The app does not promise perfect removal of every possible parameter, so review sensitive links before sending them.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who copy and share links often</li>
-            <li>Users who prefer cleaner URLs with less tracking clutter</li>
-            <li>Writers, researchers, and shoppers who save links for later</li>
-            <li>Privacy-conscious users who want a small dedicated utility</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Removes tracking parameters such as UTM tags, affiliate tags, and ad click IDs from links</li>
-            <li>Cleans every URL inside a block of text at once, leaving the rest of the text unchanged</li>
-            <li>Shows removed parameter names as crossed-out tags</li>
-            <li>Works from the share sheet and Shortcuts without opening the app</li>
-            <li>Handles Amazon, Rakuten, eBay, Etsy, AliExpress, social, and general links, and keeps choices like variant, size, color, and quantity</li>
-            <li>Lets you choose which cleanup categories are enabled</li>
-            <li>Cleanup runs on your device, with no account, ads, analytics, or link history</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Removes tracking parameters such as UTM tags, affiliate tags, and ad click IDs from links</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cleans every URL inside a block of text at once, leaving the rest of the text unchanged</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Shows removed parameter names as crossed-out tags</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Works from the share sheet and Shortcuts without opening the app</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Handles Amazon</strong>, Rakuten, eBay, Etsy, AliExpress, social, and general links, and keeps choices like variant, size, color, and quantity</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lets you choose which cleanup categories are enabled</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Cleanup runs on your device</strong>, with no account, ads, analytics, or link history</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who copy and share links often</li>
+        <li>Users who prefer cleaner URLs with less tracking clutter</li>
+        <li>Writers, researchers, and shoppers who save links for later</li>
+        <li>Privacy-conscious users who want a small dedicated utility</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Install CleanURL Tap from the App Store.</li>
-            <li>Copy a link (or a block of text containing links) from Safari or another app.</li>
-            <li>Paste it into CleanURL Tap, or use the share sheet or Shortcuts to clean it without opening the app.</li>
-            <li>Review the cleaned link and the removed parameter tags before sharing or saving it.</li>
-            <li>Choose which cleanup categories are enabled in the app&#x27;s settings.</li>
+      <ol class="steps">
+        <li><span>Install CleanURL Tap from the App Store.</span></li>
+        <li><span>Copy a link (or a block of text containing links) from Safari or another app.</span></li>
+        <li><span>Paste it into CleanURL Tap, or use the share sheet or Shortcuts to clean it without opening the app.</span></li>
+        <li><span>Review the cleaned link and the removed parameter tags before sharing or saving it.</span></li>
+        <li><span>Choose which cleanup categories are enabled in the app&#x27;s settings.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>CleanURL Tap is free on the App Store, with no ads. App Store pricing can change, so check the store listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>CleanURL Tap is free on the App Store, with no ads. App Store pricing can change, so check the store listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Cleanup happens on your device. According to the App Store listing, there is no account, advertising, analytics, link history, or network request for cleanup. For the authoritative summary of data practices, see the privacy label on the app&#x27;s App Store page.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>What does CleanURL Tap do?</summary>
+          <p>It removes tracking parameters such as UTM tags, affiliate tags, and ad click IDs from links, so you can send, save, or post cleaner URLs. It can clean every link inside a block of text at once.</p>
+        </details>
+        <details>
+          <summary>Does it remove every possible tracking parameter?</summary>
+          <p>No app can guarantee removal of every possible tracking mechanism. CleanURL Tap focuses on common URL clutter, and you can see exactly which parameters were removed. Review sensitive links before sending them.</p>
+        </details>
+        <details>
+          <summary>Who is it for?</summary>
+          <p>It is for people who copy and share links often and want a quick way to clean them before sending, saving, or posting.</p>
+        </details>
+        <details>
+          <summary>Does CleanURL Tap replace a browser?</summary>
+          <p>No. It is a small URL utility, not a browser replacement. You can use it from the share sheet and Shortcuts without opening the app.</p>
+        </details>
+        <details>
+          <summary>Are my links sent anywhere?</summary>
+          <p>No. Cleanup happens on your device, with no account, analytics, link history, or network request for cleanup. The App Store privacy label remains the source for current data disclosure details.</p>
+        </details>
+        <details>
+          <summary>Where can I download it?</summary>
+          <p>Use the App Store link on this page to open the official CleanURL Tap product page. It is free to download.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Cleanup happens on your device. According to the App Store listing, there is no account, advertising, analytics, link history, or network request for cleanup. For the authoritative summary of data practices, see the privacy label on the app&#x27;s App Store page.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/52/d7/7552d788-5cd8-136f-9325-126aa119b2e0/01-iphone-result.png/320x480bb.jpg" alt="CleanURL Tap: Remove Tracking screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/95/28/19/952819d9-8ef2-33ce-fd8b-9f4bbfaa022e/02-iphone-share-sheet.png/320x480bb.jpg" alt="CleanURL Tap: Remove Tracking screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/83/09/ee/8309ee4c-5ac8-7315-e17e-42ac0c39c61d/03-iphone-batch.png/320x480bb.jpg" alt="CleanURL Tap: Remove Tracking screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c5/7a/ca/c57acafd-b786-f04b-49b0-dd1f92dff795/04-iphone-shortcuts.png/320x480bb.jpg" alt="CleanURL Tap: Remove Tracking screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/44/1e/9a441e93-2f1f-3ade-8915-67b826851284/05-iphone-privacy.png/320x480bb.jpg" alt="CleanURL Tap: Remove Tracking screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>What does CleanURL Tap do?</summary>
-            <p>It removes tracking parameters such as UTM tags, affiliate tags, and ad click IDs from links, so you can send, save, or post cleaner URLs. It can clean every link inside a block of text at once.</p>
-          </details>
-          <details>
-            <summary>Does it remove every possible tracking parameter?</summary>
-            <p>No app can guarantee removal of every possible tracking mechanism. CleanURL Tap focuses on common URL clutter, and you can see exactly which parameters were removed. Review sensitive links before sending them.</p>
-          </details>
-          <details>
-            <summary>Who is it for?</summary>
-            <p>It is for people who copy and share links often and want a quick way to clean them before sending, saving, or posting.</p>
-          </details>
-          <details>
-            <summary>Does CleanURL Tap replace a browser?</summary>
-            <p>No. It is a small URL utility, not a browser replacement. You can use it from the share sheet and Shortcuts without opening the app.</p>
-          </details>
-          <details>
-            <summary>Are my links sent anywhere?</summary>
-            <p>No. Cleanup happens on your device, with no account, analytics, link history, or network request for cleanup. The App Store privacy label remains the source for current data disclosure details.</p>
-          </details>
-          <details>
-            <summary>Where can I download it?</summary>
-            <p>Use the App Store link on this page to open the official CleanURL Tap product page. It is free to download.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">Open CleanURL Tap: Remove Tracking on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">Open CleanURL Tap: Remove Tracking on the App Store</a>
       <p class="meta">Last updated: 2026-10-19</p>
     </section>
   </main>

@@ -107,6 +107,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "仕事効率化アプリ",
+          "item": "https://zec-inc.jp/apps/productivity/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Study Buddy：勉強タイマー",
+          "item": "https://zec-inc.jp/apps/study-buddy-timer/ja/"
+        }
+      ]
     }
   ]
 }
@@ -131,7 +160,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li><li aria-current="page">Study Buddy：勉強タイマー</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Study Buddy：勉強タイマー のアプリアイコン" width="96" height="96">
       <div>
@@ -141,109 +171,120 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/study-buddy-timer/id6764601072?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">10言語に対応</li><li class="chip chip-link"><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li><li class="chip chip-link"><a href="/apps/widgets/ja/">ウィジェット対応アプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/93/1c/9e931c2d-3a1e-5100-c61f-6954a1d594fd/iphone-01-talk.png/320x480bb.jpg" alt="Study Buddy：勉強タイマー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d7/34/74/d7347419-2f9b-a83e-89f7-dc95452f2421/iphone-02-pair.png/320x480bb.jpg" alt="Study Buddy：勉強タイマー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/82/e4/0f82e423-7ccf-6c66-15d0-1286fd3c65f6/iphone-03-share.png/320x480bb.jpg" alt="Study Buddy：勉強タイマー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b6/62/6f/b6626fcc-4a15-1bce-1d46-96b680900b7a/iphone-04-lock.png/320x480bb.jpg" alt="Study Buddy：勉強タイマー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b5/3c/a3/b53ca3aa-c126-e474-df55-48e722020ee6/iphone-05-pomodoro.png/320x480bb.jpg" alt="Study Buddy：勉強タイマー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>Study Buddy：勉強タイマーは、勉強時間をシンプルに記録するためのタイマーです。始めるときに開始、終わったら停止を押すだけで、事前にタイマーの長さを設定する必要はありません。アプリを閉じても測り続け、途中で一時停止もできます。今日の勉強時間、セッション数、累計時間が記録されるので、積み重ねた時間が目に見える形で残ります。</p>
-          <p>特徴は「バディ」の存在です。勉強1分ごとに1EXPが貯まり（その日最初のセッションには少しボーナスがつきます）、控えめなバディがレベルアップして、さわるとしゃべってくれます。休んでも、育ったバディは縮みません。あくまで勉強タイマーが主役で、タイマー・経過時間・累計が画面の中心。バディはゲームではなく、続けるためのささやかな動機づけとして設計されています。</p>
-          <p>アプリを開かなくても測れます。計測中はロック画面とDynamic Islandに経過時間とバディが表示され、ホーム画面のウィジェット、コントロールセンター、アクションボタンから開始・停止もできます。ほかにも、勉強予定、ポモドーロ、環境音、1日の目標、試験カウントダウン、科目ごとのグラフ、CSV書き出し、iCloud同期（任意）を備えています。ランキングなしで、ひとりの相手といっしょに育てるスタディペアも使えます。</p>
+      <p class="lead-para">Study Buddy：勉強タイマーは、勉強時間をシンプルに記録するためのタイマーです。始めるときに開始、終わったら停止を押すだけで、事前にタイマーの長さを設定する必要はありません。アプリを閉じても測り続け、途中で一時停止もできます。今日の勉強時間、セッション数、累計時間が記録されるので、積み重ねた時間が目に見える形で残ります。</p>
+      <p>特徴は「バディ」の存在です。勉強1分ごとに1EXPが貯まり（その日最初のセッションには少しボーナスがつきます）、控えめなバディがレベルアップして、さわるとしゃべってくれます。休んでも、育ったバディは縮みません。あくまで勉強タイマーが主役で、タイマー・経過時間・累計が画面の中心。バディはゲームではなく、続けるためのささやかな動機づけとして設計されています。</p>
+      <p>アプリを開かなくても測れます。計測中はロック画面とDynamic Islandに経過時間とバディが表示され、ホーム画面のウィジェット、コントロールセンター、アクションボタンから開始・停止もできます。ほかにも、勉強予定、ポモドーロ、環境音、1日の目標、試験カウントダウン、科目ごとのグラフ、CSV書き出し、iCloud同期（任意）を備えています。ランキングなしで、ひとりの相手といっしょに育てるスタディペアも使えます。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>毎回タイマーを設定せずに勉強時間だけ記録したい学生の方</li>
-            <li>資格や試験に向けて勉強している社会人の方</li>
-            <li>毎日の読書時間を記録したい方</li>
-            <li>小さなごほうびがあると習慣が続きやすい方</li>
-            <li>本格的なタスク管理アプリは重すぎると感じる方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>ワンタップで開始・停止できる勉強タイマー（アプリを閉じても計測が続き、一時停止もできます）</li>
-            <li>計測中はロック画面とDynamic Islandに表示。ホーム画面ウィジェット、コントロールセンター、アクションボタン、集中モード連動の開始にも対応</li>
-            <li>1分=1EXP+その日最初のセッションのボーナスで貯まるEXPとレベル</li>
-            <li>勉強時間で育ち、さわるとしゃべるバディ（休んでも縮みません）</li>
-            <li>勉強予定（AIで作った計画の貼り付け、カレンダーの予定、リマインダー連携にも対応）、科目、教材の登録</li>
-            <li>ポモドーロ、1日の目標勉強時間、お知らせつきの試験カウントダウン、環境音</li>
-            <li>科目ごとの週・月グラフ、勉強量カレンダー、週のまとめ、CSV書き出し</li>
-            <li>iCloud同期とバックアップ（任意）。ランキングなしでいっしょに勉強するスタディペア（ペアを作る人はStudy Buddy Proが必要）</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ワンタップで開始・停止できる勉強タイマー（アプリを閉じても計測が続き、一時停止もできます）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>計測中はロック画面とDynamic Islandに表示</strong>。ホーム画面ウィジェット、コントロールセンター、アクションボタン、集中モード連動の開始にも対応</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>1分=1EXP+その日最初のセッションのボーナスで貯まるEXPとレベル</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>勉強時間で育ち</strong>、さわるとしゃべるバディ（休んでも縮みません）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>勉強予定（AIで作った計画の貼り付け</strong>、カレンダーの予定、リマインダー連携にも対応）、科目、教材の登録</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>ポモドーロ</strong>、1日の目標勉強時間、お知らせつきの試験カウントダウン、環境音</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>科目ごとの週・月グラフ</strong>、勉強量カレンダー、週のまとめ、CSV書き出し</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>iCloud同期とバックアップ（任意）</strong>。ランキングなしでいっしょに勉強するスタディペア（ペアを作る人はStudy Buddy Proが必要）</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>毎回タイマーを設定せずに勉強時間だけ記録したい学生の方</li>
+        <li>資格や試験に向けて勉強している社会人の方</li>
+        <li>毎日の読書時間を記録したい方</li>
+        <li>小さなごほうびがあると習慣が続きやすい方</li>
+        <li>本格的なタスク管理アプリは重すぎると感じる方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>アプリを開き、勉強を始めるタイミングで開始をタップします（先に科目や予定を選ぶこともできます）。</li>
-            <li>そのまま勉強します。経過時間はリアルタイムで表示され、ロック画面やDynamic Islandにも出ます。アプリを閉じても計測は続きます。</li>
-            <li>終わったら停止をタップすると、セッションが保存されEXPが貯まります。</li>
-            <li>今日の勉強時間、グラフ、カレンダー、バディのレベルをアプリ内の各画面で確認します。</li>
-            <li>ホーム画面のウィジェットやコントロールセンターのコントロールを追加すれば、アプリを開かずに開始・停止できます。</li>
+      <ol class="steps">
+        <li><span>アプリを開き、勉強を始めるタイミングで開始をタップします（先に科目や予定を選ぶこともできます）。</span></li>
+        <li><span>そのまま勉強します。経過時間はリアルタイムで表示され、ロック画面やDynamic Islandにも出ます。アプリを閉じても計測は続きます。</span></li>
+        <li><span>終わったら停止をタップすると、セッションが保存されEXPが貯まります。</span></li>
+        <li><span>今日の勉強時間、グラフ、カレンダー、バディのレベルをアプリ内の各画面で確認します。</span></li>
+        <li><span>ホーム画面のウィジェットやコントロールセンターのコントロールを追加すれば、アプリを開かずに開始・停止できます。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>Study Buddy：勉強タイマーはApp Storeで無料でダウンロードできます。任意の買い切り「Study Buddy Pro」（月額なし）で、過去の週・月の記録、スタディペアの作成、環境音の追加、試験5件までの登録が使えます。タイマー、ポモドーロ、勉強予定、記録、ウィジェット、CSV書き出し、iCloud同期は無料です。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>Study Buddy：勉強タイマーはApp Storeで無料でダウンロードできます。任意の買い切り「Study Buddy Pro」（月額なし）で、過去の週・月の記録、スタディペアの作成、環境音の追加、試験5件までの登録が使えます。タイマー、ポモドーロ、勉強予定、記録、ウィジェット、CSV書き出し、iCloud同期は無料です。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>広告は表示しません。勉強の記録はお使いのiPhone内に保存し、開発者のサーバーには送りません。アカウント登録なしで利用できます。iCloud同期をオンにしたときは、あなた自身のiCloudにも保存され、開発者は見られません。スタディペアで共有する分は、ペアを作った人のiCloudに保存され、相手に見えるのは勉強時間の集計だけです。データの取り扱いの正式な内容は、App Storeページのプライバシーラベルをご確認ください。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>Study Buddy：勉強タイマーは無料ですか？</summary>
+          <p>はい、無料でダウンロードでき、基本の機能は無料で使えます。任意の買い切り「Study Buddy Pro」（月額なし）で、過去の週・月の記録、スタディペアの作成、試験の追加登録などが使えます。最新の情報はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>勉強データはどこに保存されますか？</summary>
+          <p>勉強の記録はiPhone内に保存し、開発者のサーバーには送りません。iCloud同期をオンにしたときは、あなた自身のiCloudにも保存されます。データの取り扱いの詳細は、App Storeのプライバシーラベルをご確認ください。</p>
+        </details>
+        <details>
+          <summary>ウィジェットはありますか？</summary>
+          <p>はい。ホーム画面のウィジェットから、アプリを開かずに開始・停止や勉強時間の確認ができます。計測中は、ロック画面とDynamic Islandにも経過時間とバディが表示されます。</p>
+        </details>
+        <details>
+          <summary>EXPとレベルの仕組みを教えてください。</summary>
+          <p>勉強1分ごとに1EXPが貯まり、その日最初の有効なセッションには少しボーナスがつきます。EXPが貯まるとバディがレベルアップし、次のレベルまであと何分かも表示されます。休んでもバディは縮みません。</p>
+        </details>
+        <details>
+          <summary>始める前にタイマーの長さを設定する必要はありますか？</summary>
+          <p>いいえ。ストップウォッチ方式なので、始めるときに開始、終わったら停止を押すだけです。集中25分・休憩5分をくり返すポモドーロモードも選べます。</p>
+        </details>
+        <details>
+          <summary>セッション中にアプリを閉じたらどうなりますか？</summary>
+          <p>アプリを閉じても計測は続きます。止め忘れたときは3時間後に1回だけお知らせし、終わりの時刻はあとから直せます。</p>
+        </details>
+        <details>
+          <summary>ゲームですか？</summary>
+          <p>いいえ。まず実用的な勉強タイマーとして設計されていて、バディは続けるためのささやかな動機づけです。育成ゲームではありません。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>広告は表示しません。勉強の記録はお使いのiPhone内に保存し、開発者のサーバーには送りません。アカウント登録なしで利用できます。iCloud同期をオンにしたときは、あなた自身のiCloudにも保存され、開発者は見られません。スタディペアで共有する分は、ペアを作った人のiCloudに保存され、相手に見えるのは勉強時間の集計だけです。データの取り扱いの正式な内容は、App Storeページのプライバシーラベルをご確認ください。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/93/1c/9e931c2d-3a1e-5100-c61f-6954a1d594fd/iphone-01-talk.png/320x480bb.jpg" alt="Study Buddy：勉強タイマー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d7/34/74/d7347419-2f9b-a83e-89f7-dc95452f2421/iphone-02-pair.png/320x480bb.jpg" alt="Study Buddy：勉強タイマー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/82/e4/0f82e423-7ccf-6c66-15d0-1286fd3c65f6/iphone-03-share.png/320x480bb.jpg" alt="Study Buddy：勉強タイマー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b6/62/6f/b6626fcc-4a15-1bce-1d46-96b680900b7a/iphone-04-lock.png/320x480bb.jpg" alt="Study Buddy：勉強タイマー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b5/3c/a3/b53ca3aa-c126-e474-df55-48e722020ee6/iphone-05-pomodoro.png/320x480bb.jpg" alt="Study Buddy：勉強タイマー のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>大きな文字メモ</h3><p>ひとつのメモを大きな文字で目の前の相手に見せるアプリ。読み上げや音声入力にも対応し、筆談の補助や窓口でのやりとりに使えます。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>Study Buddy：勉強タイマーは無料ですか？</summary>
-            <p>はい、無料でダウンロードでき、基本の機能は無料で使えます。任意の買い切り「Study Buddy Pro」（月額なし）で、過去の週・月の記録、スタディペアの作成、試験の追加登録などが使えます。最新の情報はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>勉強データはどこに保存されますか？</summary>
-            <p>勉強の記録はiPhone内に保存し、開発者のサーバーには送りません。iCloud同期をオンにしたときは、あなた自身のiCloudにも保存されます。データの取り扱いの詳細は、App Storeのプライバシーラベルをご確認ください。</p>
-          </details>
-          <details>
-            <summary>ウィジェットはありますか？</summary>
-            <p>はい。ホーム画面のウィジェットから、アプリを開かずに開始・停止や勉強時間の確認ができます。計測中は、ロック画面とDynamic Islandにも経過時間とバディが表示されます。</p>
-          </details>
-          <details>
-            <summary>EXPとレベルの仕組みを教えてください。</summary>
-            <p>勉強1分ごとに1EXPが貯まり、その日最初の有効なセッションには少しボーナスがつきます。EXPが貯まるとバディがレベルアップし、次のレベルまであと何分かも表示されます。休んでもバディは縮みません。</p>
-          </details>
-          <details>
-            <summary>始める前にタイマーの長さを設定する必要はありますか？</summary>
-            <p>いいえ。ストップウォッチ方式なので、始めるときに開始、終わったら停止を押すだけです。集中25分・休憩5分をくり返すポモドーロモードも選べます。</p>
-          </details>
-          <details>
-            <summary>セッション中にアプリを閉じたらどうなりますか？</summary>
-            <p>アプリを閉じても計測は続きます。止め忘れたときは3時間後に1回だけお知らせし、終わりの時刻はあとから直せます。</p>
-          </details>
-          <details>
-            <summary>ゲームですか？</summary>
-            <p>いいえ。まず実用的な勉強タイマーとして設計されていて、バディは続けるためのささやかな動機づけです。育成ゲームではありません。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/study-buddy-timer/id6764601072?uo=4">Study Buddy：勉強タイマー をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/study-buddy-timer/id6764601072?uo=4">Study Buddy：勉強タイマー をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

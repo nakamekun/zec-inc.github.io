@@ -96,6 +96,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "タップ記録ツール",
+          "item": "https://zec-inc.jp/apps/tap-tools/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Body Rhythm Log",
+          "item": "https://zec-inc.jp/apps/body-rhythm-log/ja/"
+        }
+      ]
     }
   ]
 }
@@ -117,7 +146,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li aria-current="page">Body Rhythm Log</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/58/83/ee5883e8-20bb-1fe2-3831-5473d2909c1c/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="Body Rhythm Log のアプリアイコン" width="96" height="96">
       <div>
@@ -127,92 +157,103 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/body-rhythm-log/id6762504100?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li class="chip chip-link"><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="block prose">
       <h2>概要</h2>
-          <p>Body Rhythm Logは、自分のパターンをシンプルかつプライベートに記録するためのアプリです。連続記録もプレッシャーもなく、出来事をワンタップで記録し、すっきりしたカレンダーで履歴を見返して、自分のリズムを長い目で把握できます。アカウント登録も複雑な設定もありません。</p>
-          <p>記録は、もっとも個人的な記録のひとつです。そのためBody Rhythm Logはローカルファーストで設計されており、記録はサーバーではなく端末内に保存されます。ローカル認証によるプライバシーロックで自分だけの記録として守れるほか、任意のリマインダー通知は、何を記録しているか分からない控えめな文言を使います。</p>
-          <p>機能はあえてシンプルに保ち、余計なものを省いたデザインにしています。あくまで個人の記録帳であり、医療用のツールではありません。診断・予測・健康アドバイスは行いません。</p>
+      <p class="lead-para">Body Rhythm Logは、自分のパターンをシンプルかつプライベートに記録するためのアプリです。連続記録もプレッシャーもなく、出来事をワンタップで記録し、すっきりしたカレンダーで履歴を見返して、自分のリズムを長い目で把握できます。アカウント登録も複雑な設定もありません。</p>
+      <p>記録は、もっとも個人的な記録のひとつです。そのためBody Rhythm Logはローカルファーストで設計されており、記録はサーバーではなく端末内に保存されます。ローカル認証によるプライバシーロックで自分だけの記録として守れるほか、任意のリマインダー通知は、何を記録しているか分からない控えめな文言を使います。</p>
+      <p>機能はあえてシンプルに保ち、余計なものを省いたデザインにしています。あくまで個人の記録帳であり、医療用のツールではありません。診断・予測・健康アドバイスは行いません。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>体のリズムを、軽くプライベートに記録したい方</li>
-            <li>クラウドサービスではなく自分の端末に記録を残したい方</li>
-            <li>本格的なヘルスケアプラットフォームではなく、シンプルなカレンダーで個人的な記録を見たい方</li>
-            <li>内容の分からない控えめなリマインダーで、記録を続けたい方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>出来事をワンタップで記録</li>
-            <li>すっきりしたカレンダーで履歴を振り返り</li>
-            <li>内容が分からない控えめな文言の、任意のローカルリマインダー通知</li>
-            <li>ローカル認証によるプライバシーロック</li>
-            <li>ローカルファースト設計。記録は端末内に保存</li>
-            <li>アカウント不要。連続記録のプレッシャーのない、余計なものを省いたデザイン</li>
-            <li>アプリ内の表示は英語</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>出来事をワンタップで記録</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>すっきりしたカレンダーで履歴を振り返り</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>内容が分からない控えめな文言の、任意のローカルリマインダー通知</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ローカル認証によるプライバシーロック</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ローカルファースト設計。記録は端末内に保存</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>アカウント不要</strong>。連続記録のプレッシャーのない、余計なものを省いたデザイン</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>アプリ内の表示は英語</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>体のリズムを、軽くプライベートに記録したい方</li>
+        <li>クラウドサービスではなく自分の端末に記録を残したい方</li>
+        <li>本格的なヘルスケアプラットフォームではなく、シンプルなカレンダーで個人的な記録を見たい方</li>
+        <li>内容の分からない控えめなリマインダーで、記録を続けたい方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>アプリを開き、出来事があったときに記録を追加します。</li>
-            <li>カレンダーと履歴で、これまでの記録を振り返ります。</li>
-            <li>そっと知らせてほしい場合は、設定でローカルリマインダーをオンにします。</li>
-            <li>プライバシーロックを有効にすると、記録をローカル認証の内側に置けます。</li>
-            <li>記録を続けていくと、自分のパターンがひと目で見えてきます。</li>
+      <ol class="steps">
+        <li><span>アプリを開き、出来事があったときに記録を追加します。</span></li>
+        <li><span>カレンダーと履歴で、これまでの記録を振り返ります。</span></li>
+        <li><span>そっと知らせてほしい場合は、設定でローカルリマインダーをオンにします。</span></li>
+        <li><span>プライバシーロックを有効にすると、記録をローカル認証の内側に置けます。</span></li>
+        <li><span>記録を続けていくと、自分のパターンがひと目で見えてきます。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>無料でダウンロードできます。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
-    </section>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>無料でダウンロードできます。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>ローカルファースト設計で、記録は端末内に保存され、アカウント作成は不要です。リマインダー通知は記録の内容が分からない控えめな文言を使用します。詳細はプライバシーポリシーとApp Storeのプライバシーラベルをご確認ください。</p>
+      </section>
+    </div>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>ローカルファースト設計で、記録は端末内に保存され、アカウント作成は不要です。リマインダー通知は記録の内容が分からない控えめな文言を使用します。詳細はプライバシーポリシーとApp Storeのプライバシーラベルをご確認ください。</p>
-    </section>
-
-    <section class="section">
+    <section class="block faq">
       <h2>よくある質問</h2>
-          <details>
-            <summary>Body Rhythm Logは無料ですか？</summary>
-            <p>はい。無料でダウンロードできます。最新の価格はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>データはどこに保存されますか？</summary>
-            <p>端末内に保存されます。ローカルファースト設計で、アカウントもクラウド同期もありません。</p>
-          </details>
-          <details>
-            <summary>他の人に記録を見られないようロックできますか？</summary>
-            <p>はい。ローカル認証を使ったプライバシーロックがあり、記録を自分だけのものとして守れます。</p>
-          </details>
-          <details>
-            <summary>通知で記録の内容がバレませんか？</summary>
-            <p>いいえ。リマインダー通知は「前回の記録から少し時間が経ちました」といった、内容の分からない控えめな文言を使います。</p>
-          </details>
-          <details>
-            <summary>医療アプリや周期予測アプリですか？</summary>
-            <p>いいえ。Body Rhythm Logは個人の記録帳としてのみ提供されるツールです。医療的なアドバイス・診断・予測は行いません。</p>
-          </details>
-          <details>
-            <summary>オフラインでも使えますか？</summary>
-            <p>はい。すべて端末内に保存するため、記録も振り返りも通信なしで行えます。</p>
-          </details>
+        <details>
+          <summary>Body Rhythm Logは無料ですか？</summary>
+          <p>はい。無料でダウンロードできます。最新の価格はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>データはどこに保存されますか？</summary>
+          <p>端末内に保存されます。ローカルファースト設計で、アカウントもクラウド同期もありません。</p>
+        </details>
+        <details>
+          <summary>他の人に記録を見られないようロックできますか？</summary>
+          <p>はい。ローカル認証を使ったプライバシーロックがあり、記録を自分だけのものとして守れます。</p>
+        </details>
+        <details>
+          <summary>通知で記録の内容がバレませんか？</summary>
+          <p>いいえ。リマインダー通知は「前回の記録から少し時間が経ちました」といった、内容の分からない控えめな文言を使います。</p>
+        </details>
+        <details>
+          <summary>医療アプリや周期予測アプリですか？</summary>
+          <p>いいえ。Body Rhythm Logは個人の記録帳としてのみ提供されるツールです。医療的なアドバイス・診断・予測は行いません。</p>
+        </details>
+        <details>
+          <summary>オフラインでも使えますか？</summary>
+          <p>はい。すべて端末内に保存するため、記録も振り返りも通信なしで行えます。</p>
+        </details>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
+      </div>
+    </section>
+
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/body-rhythm-log/id6762504100?uo=4">Body Rhythm Log をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/body-rhythm-log/id6762504100?uo=4">Body Rhythm Log をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-04-21</p>
     </section>
   </main>

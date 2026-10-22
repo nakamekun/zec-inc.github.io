@@ -45,6 +45,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c8/c3/c7/c8c3c7d7-630c-b44d-db8b-2f32cc663afb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.5",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "应用",
+          "item": "https://zec-inc.jp/apps/zh-hans/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "PinLog 稍后回归备忘",
+          "item": "https://zec-inc.jp/apps/pinlog-text-notes/zh-hans/"
+        }
+      ]
     }
   ]
 }
@@ -68,7 +91,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="导航路径"><ol><li><a href="/">首页</a></li><li><a href="/apps/zh-hans/">应用</a></li><li aria-current="page">PinLog 稍后回归备忘</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c8/c3/c7/c8c3c7d7-630c-b44d-db8b-2f32cc663afb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PinLog 稍后回归备忘 的应用图标" width="96" height="96">
       <div>
@@ -78,31 +102,32 @@
           <a class="button primary" href="https://apps.apple.com/cn/app/pinlog-text-notes/id6763267903?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hans/">ZEC 应用一览</a>
         </div>
+        <ul class="chips" aria-label="要点"><li class="chip">免费下载</li><li class="chip">iPhone 和 iPad</li><li class="chip">支持 9 种语言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截图">
+      <h2 class="visually-hidden">截图</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/23/9c/dd239c55-b5a9-af32-bf5b-3949c421dea7/01-iphone-home.png/320x480bb.jpg" alt="PinLog 稍后回归备忘 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c2/e3/7c/c2e37cec-1e2b-0a31-29ac-afe48dc9a74b/02-iphone-remind.png/320x480bb.jpg" alt="PinLog 稍后回归备忘 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7c/65/43/7c6543b2-b91e-c908-7d97-031abae9fa17/03-iphone-image.png/320x480bb.jpg" alt="PinLog 稍后回归备忘 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9b/4c/d3/9b4cd325-caaa-fd10-b97a-92ae585b6840/04-iphone-widget.png/320x480bb.jpg" alt="PinLog 稍后回归备忘 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2b/9a/11/2b9a11fd-934f-2566-4e1b-016bd44d77b4/05-iphone-done.png/320x480bb.jpg" alt="PinLog 稍后回归备忘 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>简介</h2>
-          <p>PinLog 是一款让你稍后重温文字和链接的备忘录 App。把内容保存为 Pin，之后它会主动再次出现。保存只需片刻，记住它的事交给 App。</p>
-          <p>■ 先保存下来 • 点按 + 撰写并保存 • 在其他 App 中点按共享按钮，选择 PinLog 保存文字或链接 • 使用“从剪贴板保存”保存已复制的文字 • 对 Siri 说“保存 Pin 到 PinLog”，也可以通过控制中心或快捷指令 App 撰写 • 使用语音输入，或导入文本、Markdown 和 JSON 文件 • 含链接的 Pin 会显示网页标题</p>
-          <p>■ 让它再次出现 • 保存了几天或许久未查看的 Pin，会再次出现在首页和小组件中 • 点按 Pin 的铃铛，设置今晚、明早、周末或自选日期与时间的提醒 • 在设置中开启“每天提醒一个 Pin”，即可在指定时间收到一个 Pin</p>
+      <p class="lead-para">PinLog 是一款让你稍后重温文字和链接的备忘录 App。把内容保存为 Pin，之后它会主动再次出现。保存只需片刻，记住它的事交给 App。</p>
+      <p>■ 先保存下来 • 点按 + 撰写并保存 • 在其他 App 中点按共享按钮，选择 PinLog 保存文字或链接 • 使用“从剪贴板保存”保存已复制的文字 • 对 Siri 说“保存 Pin 到 PinLog”，也可以通过控制中心或快捷指令 App 撰写 • 使用语音输入，或导入文本、Markdown 和 JSON 文件 • 含链接的 Pin 会显示网页标题</p>
+      <p>■ 让它再次出现 • 保存了几天或许久未查看的 Pin，会再次出现在首页和小组件中 • 点按 Pin 的铃铛，设置今晚、明早、周末或自选日期与时间的提醒 • 在设置中开启“每天提醒一个 Pin”，即可在指定时间收到一个 Pin</p>
     </section>
 
-    <section class="section">
-      <h2>截图</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/23/9c/dd239c55-b5a9-af32-bf5b-3949c421dea7/01-iphone-home.png/320x480bb.jpg" alt="PinLog 稍后回归备忘 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c2/e3/7c/c2e37cec-1e2b-0a31-29ac-afe48dc9a74b/02-iphone-remind.png/320x480bb.jpg" alt="PinLog 稍后回归备忘 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7c/65/43/7c6543b2-b91e-c908-7d97-031abae9fa17/03-iphone-image.png/320x480bb.jpg" alt="PinLog 稍后回归备忘 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9b/4c/d3/9b4cd325-caaa-fd10-b97a-92ae585b6840/04-iphone-widget.png/320x480bb.jpg" alt="PinLog 稍后回归备忘 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2b/9a/11/2b9a11fd-934f-2566-4e1b-016bd44d77b4/05-iphone-done.png/320x480bb.jpg" alt="PinLog 稍后回归备忘 的截图" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>价格与隐私</h2>
       <p>价格、App 内购买与最新的隐私信息，请以 App Store 页面为准。本页介绍文字来自 App Store 的应用说明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/cn/app/pinlog-text-notes/id6763267903?uo=4">在 App Store 打开 PinLog 稍后回归备忘</a></p>
+      <a class="button primary big" href="https://apps.apple.com/cn/app/pinlog-text-notes/id6763267903?uo=4">在 App Store 打开 PinLog 稍后回归备忘</a>
       <p class="meta">最后更新: 2026-10-21</p>
     </section>
   </main>

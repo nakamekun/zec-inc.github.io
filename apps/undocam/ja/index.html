@@ -107,6 +107,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "写真・思い出のアプリ",
+          "item": "https://zec-inc.jp/apps/photo-memory/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "動画の逆再生 - UndoCam",
+          "item": "https://zec-inc.jp/apps/undocam/ja/"
+        }
+      ]
     }
   ]
 }
@@ -131,7 +160,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/photo-memory/ja/">写真・思い出のアプリ</a></li><li aria-current="page">動画の逆再生 - UndoCam</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/b0/0c/b6b00c26-cd26-398e-53e7-ecf9ba70a63e/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="動画の逆再生 - UndoCam のアプリアイコン" width="96" height="96">
       <div>
@@ -141,109 +171,120 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/reverse-video-maker-undocam/id6765842391?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">22言語に対応</li><li class="chip chip-link"><a href="/apps/photo-memory/ja/">写真・思い出のアプリ</a></li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/57/a4/2b/57a42b12-0874-ee08-2e71-fa18e6a8b427/01-preview.png/320x480bb.jpg" alt="動画の逆再生 - UndoCam のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/06/91/eb069113-3709-d7e3-0325-24eb144f7d5e/02-speed.png/320x480bb.jpg" alt="動画の逆再生 - UndoCam のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/20/d6/2c/20d62ccc-87ad-8c8c-41c5-056d72b597e3/03-boomerang.png/320x480bb.jpg" alt="動画の逆再生 - UndoCam のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/61/f9/c861f9af-25fb-f765-6518-55c676cf87fc/04-range.png/320x480bb.jpg" alt="動画の逆再生 - UndoCam のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/88/d1/8a88d1d4-8b2a-fc44-8653-14df57b0c992/05-free.png/320x480bb.jpg" alt="動画の逆再生 - UndoCam のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>UndoCamは、動画を最後から最初へ、音ごと逆向きに再生する動画に変えるiPhoneアプリです。写真から動画を選び、開始位置と長さ（最大15秒）を決めて逆再生にするだけ。こぼれた水がコップに戻る、プールに飛び込んだ人が水から飛び出してくる、崩れた積み木が元どおりに積み上がる。いつもの動画も、巻き戻すとちょっと楽しいネタになります。</p>
-          <p>タイムライン編集のような複雑な操作はありません。動画を選び、逆再生したい部分を決めて「逆再生にする」をタップし、アプリ内でプレビューしたら、写真に保存するか共有シートでそのまま送れます。音も逆再生になり、スイッチで音なしにもできます。速さは0.25×から2×まで選べ、ブーメランで前→後ろをひとつにつなぐこともできます。</p>
-          <p>処理はすべてiPhoneの中で行われます。動画がアップロードされることはなく、アカウント登録も不要です。元の動画はそのまま残り、透かし（ウォーターマーク）もなく、元の解像度とfpsを保って保存します（HDRはSDRへ変換）。無料・広告なし・サブスクなしで、25言語に対応しています。</p>
+      <p class="lead-para">UndoCamは、動画を最後から最初へ、音ごと逆向きに再生する動画に変えるiPhoneアプリです。写真から動画を選び、開始位置と長さ（最大15秒）を決めて逆再生にするだけ。こぼれた水がコップに戻る、プールに飛び込んだ人が水から飛び出してくる、崩れた積み木が元どおりに積み上がる。いつもの動画も、巻き戻すとちょっと楽しいネタになります。</p>
+      <p>タイムライン編集のような複雑な操作はありません。動画を選び、逆再生したい部分を決めて「逆再生にする」をタップし、アプリ内でプレビューしたら、写真に保存するか共有シートでそのまま送れます。音も逆再生になり、スイッチで音なしにもできます。速さは0.25×から2×まで選べ、ブーメランで前→後ろをひとつにつなぐこともできます。</p>
+      <p>処理はすべてiPhoneの中で行われます。動画がアップロードされることはなく、アカウント登録も不要です。元の動画はそのまま残り、透かし（ウォーターマーク）もなく、元の解像度とfpsを保って保存します（HDRはSDRへ変換）。無料・広告なし・サブスクなしで、25言語に対応しています。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>SNSやショート動画向けに、手軽な逆再生・巻き戻しエフェクトを使いたい方</li>
-            <li>日常のおもしろい瞬間を逆再生で楽しみたいご家族やお友だち同士</li>
-            <li>ひとつの効果のために本格的な動画編集アプリを開くのは大げさだと感じる方</li>
-            <li>アップロードなし・アカウントなしの端末内処理を好む方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>写真から長さを問わず動画を選び、好きなところだけ逆再生（1回15秒まで）</li>
-            <li>音も逆再生。スイッチで音なしにもできる</li>
-            <li>速さは0.25×・0.5×・1×・1.5×・2×から無料で選択</li>
-            <li>ブーメランで前→後ろをひとつにつなぎ、音あり・なしも選択</li>
-            <li>アプリ内でプレビューして、写真に保存、またはiOSの共有シートから共有</li>
-            <li>透かしなし。元の解像度・fpsを保って保存し、HDRはSDRへ変換</li>
-            <li>すべてiPhoneの中で処理——アップロードなし・アカウント不要。元の動画はそのまま残る</li>
-            <li>無料・広告なし・サブスクなしで、25言語に対応</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>写真から長さを問わず動画を選び</strong>、好きなところだけ逆再生（1回15秒まで）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>音も逆再生</strong>。スイッチで音なしにもできる</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>速さは0.25×・0.5×・1×・1.5×・2×から無料で選択</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ブーメランで前→後ろをひとつにつなぎ、音あり・なしも選択</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>アプリ内でプレビューして</strong>、写真に保存、またはiOSの共有シートから共有</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>透かしなし</strong>。元の解像度・fpsを保って保存し、HDRはSDRへ変換</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>すべてiPhoneの中で処理——アップロードなし・アカウント不要。元の動画はそのまま残る</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>無料・広告なし・サブスクなしで、25言語に対応</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>SNSやショート動画向けに、手軽な逆再生・巻き戻しエフェクトを使いたい方</li>
+        <li>日常のおもしろい瞬間を逆再生で楽しみたいご家族やお友だち同士</li>
+        <li>ひとつの効果のために本格的な動画編集アプリを開くのは大げさだと感じる方</li>
+        <li>アップロードなし・アカウントなしの端末内処理を好む方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>UndoCamを開き、写真ライブラリから動画を選びます。</li>
-            <li>開始位置と長さ（最大15秒）を決めます。</li>
-            <li>必要に応じて、速さを選んだり、音なしにしたり、ブーメランをオンにしたりします。</li>
-            <li>「逆再生にする」をタップして、iPhoneの中で変換が終わるまで少し待ちます。</li>
-            <li>できあがった巻き戻しクリップをアプリ内でプレビューします。</li>
-            <li>写真に保存するか、共有シートで送ります。</li>
+      <ol class="steps">
+        <li><span>UndoCamを開き、写真ライブラリから動画を選びます。</span></li>
+        <li><span>開始位置と長さ（最大15秒）を決めます。</span></li>
+        <li><span>必要に応じて、速さを選んだり、音なしにしたり、ブーメランをオンにしたりします。</span></li>
+        <li><span>「逆再生にする」をタップして、iPhoneの中で変換が終わるまで少し待ちます。</span></li>
+        <li><span>できあがった巻き戻しクリップをアプリ内でプレビューします。</span></li>
+        <li><span>写真に保存するか、共有シートで送ります。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>無料で、広告・サブスク・アカウント登録はありません。速さの変更とブーメランも無料です。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>無料で、広告・サブスク・アカウント登録はありません。速さの変更とブーメランも無料です。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>動画の処理はすべてiPhoneの中で行われます。アカウント不要で、動画のアップロードも広告もありません。元の動画はそのまま残ります。最新の取り扱い内容はApp Storeのプライバシーラベルをご確認ください。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>UndoCamは無料ですか？</summary>
+          <p>はい、無料で、広告・サブスク・アカウント登録はありません。速さの変更とブーメランも無料です。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>動画はどこかにアップロードされますか？</summary>
+          <p>いいえ。処理はすべてiPhoneの中で完結します。動画のアップロードはなく、アカウントも不要です。</p>
+        </details>
+        <details>
+          <summary>動画の長さに制限はありますか？</summary>
+          <p>選べる動画の長さは問いません。その中から逆再生したい部分を選びます。1回に逆再生できるのは15秒までです。</p>
+        </details>
+        <details>
+          <summary>逆再生した動画に音は残りますか？</summary>
+          <p>はい。音も逆再生になります。スイッチで音なしにすることもできます。</p>
+        </details>
+        <details>
+          <summary>書き出した動画の画質はどうなりますか？</summary>
+          <p>元の解像度とfpsを保って保存します。HDRの動画は正しい色のSDRに変換されます。透かし（ウォーターマーク）は入りません。</p>
+        </details>
+        <details>
+          <summary>速さを変えたり、ブーメランを作ったりできますか？</summary>
+          <p>はい。0.25×・0.5×・1×・1.5×・2×から無料で選べます。ブーメランは前→後ろをひとつにつなぎ、音あり・なしも選べます。</p>
+        </details>
+        <details>
+          <summary>元の動画は変更されますか？</summary>
+          <p>いいえ。巻き戻しクリップは新しい動画として保存され、元の動画は写真ライブラリにそのまま残ります。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>動画の処理はすべてiPhoneの中で行われます。アカウント不要で、動画のアップロードも広告もありません。元の動画はそのまま残ります。最新の取り扱い内容はApp Storeのプライバシーラベルをご確認ください。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/57/a4/2b/57a42b12-0874-ee08-2e71-fa18e6a8b427/01-preview.png/320x480bb.jpg" alt="動画の逆再生 - UndoCam のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/06/91/eb069113-3709-d7e3-0325-24eb144f7d5e/02-speed.png/320x480bb.jpg" alt="動画の逆再生 - UndoCam のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/20/d6/2c/20d62ccc-87ad-8c8c-41c5-056d72b597e3/03-boomerang.png/320x480bb.jpg" alt="動画の逆再生 - UndoCam のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/61/f9/c861f9af-25fb-f765-6518-55c676cf87fc/04-range.png/320x480bb.jpg" alt="動画の逆再生 - UndoCam のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/88/d1/8a88d1d4-8b2a-fc44-8653-14df57b0c992/05-free.png/320x480bb.jpg" alt="動画の逆再生 - UndoCam のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/photo-day/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/4f/dd/444fdd0a-a5ef-6137-1c93-c0b8d302b620/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>1枚かざる - 1日1枚の写真日記</h3><p>1日1枚の写真日記。子どもの成長や家族、ペット、旅行の思い出をカレンダーに残し、フレームモードで飾って見返せます。</p></span></a>
+        <a class="related-card" href="/apps/mute-video-before-share/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/31/26/62/3126628d-786f-294f-5828-7e5e67ea8829/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>動画の音消し</h3><p>動画の音を消してから共有。ワンタップでミュートした無音コピーを作成し、一部だけピー音にすることも。画質劣化ゼロ・透かしなし。</p></span></a>
+        <a class="related-card" href="/apps/foodsnapquest/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/1f/4b/4a1f4b23-0ef9-f17c-1dae-36fabc21c9cf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>ごはんスナップ</h3><p>写真で残す食事記録アプリ。写真を撮るだけで、カレンダーが自分のごはんで埋まっていきます。メニューやカロリーメモは、入れたいときだけ。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>UndoCamは無料ですか？</summary>
-            <p>はい、無料で、広告・サブスク・アカウント登録はありません。速さの変更とブーメランも無料です。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>動画はどこかにアップロードされますか？</summary>
-            <p>いいえ。処理はすべてiPhoneの中で完結します。動画のアップロードはなく、アカウントも不要です。</p>
-          </details>
-          <details>
-            <summary>動画の長さに制限はありますか？</summary>
-            <p>選べる動画の長さは問いません。その中から逆再生したい部分を選びます。1回に逆再生できるのは15秒までです。</p>
-          </details>
-          <details>
-            <summary>逆再生した動画に音は残りますか？</summary>
-            <p>はい。音も逆再生になります。スイッチで音なしにすることもできます。</p>
-          </details>
-          <details>
-            <summary>書き出した動画の画質はどうなりますか？</summary>
-            <p>元の解像度とfpsを保って保存します。HDRの動画は正しい色のSDRに変換されます。透かし（ウォーターマーク）は入りません。</p>
-          </details>
-          <details>
-            <summary>速さを変えたり、ブーメランを作ったりできますか？</summary>
-            <p>はい。0.25×・0.5×・1×・1.5×・2×から無料で選べます。ブーメランは前→後ろをひとつにつなぎ、音あり・なしも選べます。</p>
-          </details>
-          <details>
-            <summary>元の動画は変更されますか？</summary>
-            <p>いいえ。巻き戻しクリップは新しい動画として保存され、元の動画は写真ライブラリにそのまま残ります。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/reverse-video-maker-undocam/id6765842391?uo=4">動画の逆再生 - UndoCam をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/reverse-video-maker-undocam/id6765842391?uo=4">動画の逆再生 - UndoCam をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

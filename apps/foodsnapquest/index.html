@@ -115,6 +115,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Photo and Memory Apps",
+          "item": "https://zec-inc.jp/apps/photo-memory/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Food Photo Diary: GohanSnap",
+          "item": "https://zec-inc.jp/apps/foodsnapquest/"
+        }
+      ]
     }
   ]
 }
@@ -139,7 +168,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/photo-memory/">Photo and Memory Apps</a></li><li aria-current="page">Food Photo Diary: GohanSnap</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/1f/4b/4a1f4b23-0ef9-f17c-1dae-36fabc21c9cf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Food Photo Diary: GohanSnap app icon" width="96" height="96">
       <div>
@@ -149,114 +179,125 @@
           <a class="button primary" href="https://apps.apple.com/us/app/food-photo-diary-gohansnap/id6789844298?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">22 languages</li><li class="chip chip-link"><a href="/apps/photo-memory/">Photo and Memory Apps</a></li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/da/ec/9c/daec9ca4-a19a-07b2-ad43-35b8d62fb3ae/01-home.png/320x480bb.jpg" alt="Food Photo Diary: GohanSnap screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/ac/5f/51ac5f27-095b-a53b-6166-912fce8645ef/02-day.png/320x480bb.jpg" alt="Food Photo Diary: GohanSnap screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/af/6d/b8/af6db85a-8a83-25e2-aac1-6ee239e62dc7/03-myitems.png/320x480bb.jpg" alt="Food Photo Diary: GohanSnap screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/fe/4a/15fe4a22-c101-56d6-cdad-a55fb51755c7/04-caption.png/320x480bb.jpg" alt="Food Photo Diary: GohanSnap screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/2a/c3/7b2ac39b-1aa1-395d-e4eb-0c8ca59eade2/05-import.png/320x480bb.jpg" alt="Food Photo Diary: GohanSnap screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>GohanSnap is a food photo diary that turns your meal photos into a calendar of everyday memories. Just take a photo with the camera or pick one from your library - the entry takes its time from the photo, and breakfast, lunch, dinner, or snack is chosen from that time (you can change it later). Dish names and calorie notes are optional: add them only when you want to.</p>
-          <p>It is a record, not a diet coach. The daily calorie total adds up only the values you entered, you set your own daily calorie goal (the app does not recommend one), and it does not judge meals as good or bad. Add from Photos finds meal photos on your device so you can record several at once, and you can still record a dish name or note without a photo. Entries can be tagged Home cooking, Eating out, or Takeout, saved as My Items to record the same meal again, searched, and exported as CSV.</p>
-          <p>Look back with a monthly calendar and daily list, this month&#x27;s summary and your recording streak, a Home Screen widget, and optional breakfast, lunch, and dinner reminders (off by default). You can share your month in meals as one image, and export entries and photos together as a backup file. Your entries are stored on your device, with no ads and no account. This app does not provide medical or nutritional advice.</p>
+      <p class="lead-para">GohanSnap is a food photo diary that turns your meal photos into a calendar of everyday memories. Just take a photo with the camera or pick one from your library - the entry takes its time from the photo, and breakfast, lunch, dinner, or snack is chosen from that time (you can change it later). Dish names and calorie notes are optional: add them only when you want to.</p>
+      <p>It is a record, not a diet coach. The daily calorie total adds up only the values you entered, you set your own daily calorie goal (the app does not recommend one), and it does not judge meals as good or bad. Add from Photos finds meal photos on your device so you can record several at once, and you can still record a dish name or note without a photo. Entries can be tagged Home cooking, Eating out, or Takeout, saved as My Items to record the same meal again, searched, and exported as CSV.</p>
+      <p>Look back with a monthly calendar and daily list, this month&#x27;s summary and your recording streak, a Home Screen widget, and optional breakfast, lunch, and dinner reminders (off by default). You can share your month in meals as one image, and export entries and photos together as a backup file. Your entries are stored on your device, with no ads and no account. This app does not provide medical or nutritional advice.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who gave up on strict calorie-counting apps but still want to remember what they ate</li>
-            <li>Anyone who wants a visual meal diary with the lowest possible effort</li>
-            <li>People reviewing their eating patterns by looking back over a calendar of photos</li>
-            <li>Users who want to prepare a question about their meals for an AI app they already use</li>
-            <li>Privacy-conscious users who want food records kept on their phone</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Record a meal from the camera or photo library; the time comes from the photo and the meal type (breakfast, lunch, dinner, snack) is picked automatically</li>
-            <li>Add from Photos: find meal photos on your device and record several at once; or record a dish name or note without a photo</li>
-            <li>Optional dish name, calories, notes, date and time, edited later; the daily total adds up only what you entered, with your own daily calorie goal</li>
-            <li>My Items keep photos, calories, and notes so you can record the same meal again with a tap; tags for Home cooking, Eating out, and Takeout; search and CSV export</li>
-            <li>On iPhones with Apple Intelligence, a short on-device caption for each photo - it never estimates calories and can be turned off</li>
-            <li>Optional Apple Health integration: writes only the calories you enter, never reads Health data, off by default</li>
-            <li>Choose what to ask an AI, then hand the question and photos to the external AI app you use - the app never sends anything to an AI service on its own</li>
-            <li>Monthly calendar, daily list, monthly summary, recording streak, shareable month image, Home Screen widget, and optional reminders (off by default)</li>
-            <li>Backup of entries and photos in one file via Files or AirDrop; entries are stored on your device, with no ads and no account</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Record a meal from the camera or photo library; the time comes from the photo and the meal type (breakfast, lunch, dinner, snack) is picked automatically</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Add from Photos</strong>: find meal photos on your device and record several at once; or record a dish name or note without a photo</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Optional dish name</strong>, calories, notes, date and time, edited later; the daily total adds up only what you entered, with your own daily calorie goal</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>My Items keep photos</strong>, calories, and notes so you can record the same meal again with a tap; tags for Home cooking, Eating out, and Takeout; search and CSV export</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>On iPhones with Apple Intelligence</strong>, a short on-device caption for each photo - it never estimates calories and can be turned off</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Optional Apple Health integration</strong>: writes only the calories you enter, never reads Health data, off by default</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Choose what to ask an AI</strong>, then hand the question and photos to the external AI app you use - the app never sends anything to an AI service on its own</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Monthly calendar</strong>, daily list, monthly summary, recording streak, shareable month image, Home Screen widget, and optional reminders (off by default)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Backup of entries and photos in one file via Files or AirDrop; entries are stored on your device, with no ads and no account</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who gave up on strict calorie-counting apps but still want to remember what they ate</li>
+        <li>Anyone who wants a visual meal diary with the lowest possible effort</li>
+        <li>People reviewing their eating patterns by looking back over a calendar of photos</li>
+        <li>Users who want to prepare a question about their meals for an AI app they already use</li>
+        <li>Privacy-conscious users who want food records kept on their phone</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open the app when you eat and take a photo, or pick one from your library (or use Add from Photos to record several at once).</li>
-            <li>The meal type is chosen from the photo&#x27;s time - change it if you like.</li>
-            <li>Add a dish name, calories, or a note only when you want to; tap a photo later to edit details.</li>
-            <li>Look back over the monthly calendar and daily list, and check this month&#x27;s summary and your recording streak.</li>
-            <li>Optionally turn on reminders, Apple Health, or photo saving in Settings (all off by default), or export a backup file.</li>
+      <ol class="steps">
+        <li><span>Open the app when you eat and take a photo, or pick one from your library (or use Add from Photos to record several at once).</span></li>
+        <li><span>The meal type is chosen from the photo&#x27;s time - change it if you like.</span></li>
+        <li><span>Add a dish name, calories, or a note only when you want to; tap a photo later to edit details.</span></li>
+        <li><span>Look back over the monthly calendar and daily list, and check this month&#x27;s summary and your recording streak.</span></li>
+        <li><span>Optionally turn on reminders, Apple Health, or photo saving in Settings (all off by default), or export a backup file.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>GohanSnap is free on the App Store, with no ads and no account required. App Store pricing and availability can change, so check the store listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>GohanSnap is free on the App Store, with no ads and no account required. App Store pricing and availability can change, so check the store listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Your entries are stored on your device. Writing calories to Apple Health happens only when you turn it on, and the app never reads Health data. There is no account and no ads. The app never sends anything to an AI service on its own - if you choose to ask an AI, you hand the question and photos to an external AI app yourself. Photo captions are made on your iPhone with Apple Intelligence. See the App Store privacy label for the current details.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is GohanSnap free?</summary>
+          <p>Yes. The app is free with no ads and no account required. App Store pricing can change, so check the listing for current details.</p>
+        </details>
+        <details>
+          <summary>Does it count calories or analyze nutrition?</summary>
+          <p>Not for you. Calories are optional notes you enter yourself, and the daily total adds up only those values. The app never estimates calories, does not recommend a goal, and does not judge meals as good or bad - it is a record, not a diet coach.</p>
+        </details>
+        <details>
+          <summary>Where is my meal data stored?</summary>
+          <p>On your device. Entries are stored locally, and writing to Apple Health happens only when you turn it on. There is no account. You can also export entries and photos as a backup file.</p>
+        </details>
+        <details>
+          <summary>Is there AI in the app?</summary>
+          <p>No AI service is used by the app on its own. On iPhones with Apple Intelligence it can add a short caption to each photo, made on your device. You can also prepare a question and hand it, with your photos, to an external AI app you use, such as ChatGPT or Claude.</p>
+        </details>
+        <details>
+          <summary>How do I record a meal?</summary>
+          <p>Take a photo with the camera or pick one from your library. The time comes from the photo and the meal type is chosen from it. Add a dish name, calories, or a note later if you like - or record without a photo.</p>
+        </details>
+        <details>
+          <summary>Does it help me keep the habit going?</summary>
+          <p>Gently. It shows your recording streak and a short monthly summary, and offers optional breakfast, lunch, and dinner reminders (off by default) and a Home Screen widget.</p>
+        </details>
+        <details>
+          <summary>Is this app available in English?</summary>
+          <p>Yes. GohanSnap is available in English, Japanese, and many other languages - more than 20 in total. Check the App Store listing for the current list.</p>
+        </details>
+        <details>
+          <summary>Does it work with Apple Health?</summary>
+          <p>Optionally. When you turn it on, the app writes only the calories you enter to Apple Health as dietary energy. It does not read any Health data, and it is off by default.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Your entries are stored on your device. Writing calories to Apple Health happens only when you turn it on, and the app never reads Health data. There is no account and no ads. The app never sends anything to an AI service on its own - if you choose to ask an AI, you hand the question and photos to an external AI app yourself. Photo captions are made on your iPhone with Apple Intelligence. See the App Store privacy label for the current details.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/da/ec/9c/daec9ca4-a19a-07b2-ad43-35b8d62fb3ae/01-home.png/320x480bb.jpg" alt="Food Photo Diary: GohanSnap screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/ac/5f/51ac5f27-095b-a53b-6166-912fce8645ef/02-day.png/320x480bb.jpg" alt="Food Photo Diary: GohanSnap screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/af/6d/b8/af6db85a-8a83-25e2-aac1-6ee239e62dc7/03-myitems.png/320x480bb.jpg" alt="Food Photo Diary: GohanSnap screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/fe/4a/15fe4a22-c101-56d6-cdad-a55fb51755c7/04-caption.png/320x480bb.jpg" alt="Food Photo Diary: GohanSnap screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/2a/c3/7b2ac39b-1aa1-395d-e4eb-0c8ca59eade2/05-import.png/320x480bb.jpg" alt="Food Photo Diary: GohanSnap screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/photo-day/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/4f/dd/444fdd0a-a5ef-6137-1c93-c0b8d302b620/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>DailyAlbum: One Photo a Day</h3><p>Keep one photo a day as a simple photo diary and memory calendar, with...</p></span></a>
+        <a class="related-card" href="/apps/mute-video-before-share/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/31/26/62/3126628d-786f-294f-5828-7e5e67ea8829/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Mute Video Before Share</h3><p>Remove sound from any video in one tap, or beep out selected parts — from...</p></span></a>
+        <a class="related-card" href="/apps/undocam/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/b0/0c/b6b00c26-cd26-398e-53e7-ecf9ba70a63e/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Reverse Video Maker: UndoCam</h3><p>Reverse video maker for iPhone: play any clip backwards, sound included....</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is GohanSnap free?</summary>
-            <p>Yes. The app is free with no ads and no account required. App Store pricing can change, so check the listing for current details.</p>
-          </details>
-          <details>
-            <summary>Does it count calories or analyze nutrition?</summary>
-            <p>Not for you. Calories are optional notes you enter yourself, and the daily total adds up only those values. The app never estimates calories, does not recommend a goal, and does not judge meals as good or bad - it is a record, not a diet coach.</p>
-          </details>
-          <details>
-            <summary>Where is my meal data stored?</summary>
-            <p>On your device. Entries are stored locally, and writing to Apple Health happens only when you turn it on. There is no account. You can also export entries and photos as a backup file.</p>
-          </details>
-          <details>
-            <summary>Is there AI in the app?</summary>
-            <p>No AI service is used by the app on its own. On iPhones with Apple Intelligence it can add a short caption to each photo, made on your device. You can also prepare a question and hand it, with your photos, to an external AI app you use, such as ChatGPT or Claude.</p>
-          </details>
-          <details>
-            <summary>How do I record a meal?</summary>
-            <p>Take a photo with the camera or pick one from your library. The time comes from the photo and the meal type is chosen from it. Add a dish name, calories, or a note later if you like - or record without a photo.</p>
-          </details>
-          <details>
-            <summary>Does it help me keep the habit going?</summary>
-            <p>Gently. It shows your recording streak and a short monthly summary, and offers optional breakfast, lunch, and dinner reminders (off by default) and a Home Screen widget.</p>
-          </details>
-          <details>
-            <summary>Is this app available in English?</summary>
-            <p>Yes. GohanSnap is available in English, Japanese, and many other languages - more than 20 in total. Check the App Store listing for the current list.</p>
-          </details>
-          <details>
-            <summary>Does it work with Apple Health?</summary>
-            <p>Optionally. When you turn it on, the app writes only the calories you enter to Apple Health as dietary energy. It does not read any Health data, and it is off by default.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/food-photo-diary-gohansnap/id6789844298?uo=4">Open Food Photo Diary: GohanSnap on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/food-photo-diary-gohansnap/id6789844298?uo=4">Open Food Photo Diary: GohanSnap on the App Store</a>
       <p class="meta">Last updated: 2026-10-18</p>
     </section>
   </main>

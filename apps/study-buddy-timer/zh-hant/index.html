@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.9.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "App",
+          "item": "https://zec-inc.jp/apps/zh-hant/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Study Buddy：讀書計時器",
+          "item": "https://zec-inc.jp/apps/study-buddy-timer/zh-hant/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/">首頁</a></li><li><a href="/apps/zh-hant/">App</a></li><li aria-current="page">Study Buddy：讀書計時器</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Study Buddy：讀書計時器 的 App 圖示" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/tw/app/study-buddy-timer/id6764601072?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hant/">ZEC App 一覽</a>
         </div>
+        <ul class="chips" aria-label="重點"><li class="chip">免費下載</li><li class="chip">iPhone 與 iPad</li><li class="chip">支援 10 種語言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截圖">
+      <h2 class="visually-hidden">截圖</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/c4/b9/cbc4b9f7-0f12-a303-bece-74b59592397e/iphone-01-talk.png/320x480bb.jpg" alt="Study Buddy：讀書計時器 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d1/6a/3c/d16a3ce6-1594-684c-88d5-4086543e758f/iphone-02-pair.png/320x480bb.jpg" alt="Study Buddy：讀書計時器 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a5/8f/c0/a58fc012-1f6c-60bc-be9a-687b9292f98f/iphone-03-share.png/320x480bb.jpg" alt="Study Buddy：讀書計時器 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/ea/88/65ea886f-d351-8b64-d3a0-5f117eddff1e/iphone-04-lock.png/320x480bb.jpg" alt="Study Buddy：讀書計時器 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ee/a1/b1/eea1b1c1-a9a6-ce1d-a3f6-1842eb3f57f1/iphone-05-pomodoro.png/320x480bb.jpg" alt="Study Buddy：讀書計時器 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>簡介</h2>
-          <p>把讀書的時間，變成夥伴的成長。自己讀書時，有悠閒的夥伴陪在身邊；也能找朋友一起，沒有排行榜，不用互相比較。</p>
-          <p>點一下，夥伴就回應 開始讀書時，夥伴會說句話；點一下，也會回應你。讀書的每一分鐘，都讓它慢慢成長。休息幾天，長大的夥伴也不會變小。</p>
-          <p>學習夥伴：一起就好 透過邀請連結配對，就能看見對方今天的讀書總時間，以及現在是不是正在讀書。兩個人的時間，一起養大一個夥伴。選擇「鼓勵」角色，每天鼓勵一次也能參與，家人也能用這個方式陪伴。雙方都完成各自角色的那天，就是「雙人日」，夥伴會長得更多。科目、筆記和確切的起訖時間不會顯示給對方。只有建立配對的人需要 Pro，受邀加入免費。</p>
+      <p class="lead-para">把讀書的時間，變成夥伴的成長。自己讀書時，有悠閒的夥伴陪在身邊；也能找朋友一起，沒有排行榜，不用互相比較。</p>
+      <p>點一下，夥伴就回應 開始讀書時，夥伴會說句話；點一下，也會回應你。讀書的每一分鐘，都讓它慢慢成長。休息幾天，長大的夥伴也不會變小。</p>
+      <p>學習夥伴：一起就好 透過邀請連結配對，就能看見對方今天的讀書總時間，以及現在是不是正在讀書。兩個人的時間，一起養大一個夥伴。選擇「鼓勵」角色，每天鼓勵一次也能參與，家人也能用這個方式陪伴。雙方都完成各自角色的那天，就是「雙人日」，夥伴會長得更多。科目、筆記和確切的起訖時間不會顯示給對方。只有建立配對的人需要 Pro，受邀加入免費。</p>
     </section>
 
-    <section class="section">
-      <h2>截圖</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/c4/b9/cbc4b9f7-0f12-a303-bece-74b59592397e/iphone-01-talk.png/320x480bb.jpg" alt="Study Buddy：讀書計時器 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d1/6a/3c/d16a3ce6-1594-684c-88d5-4086543e758f/iphone-02-pair.png/320x480bb.jpg" alt="Study Buddy：讀書計時器 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a5/8f/c0/a58fc012-1f6c-60bc-be9a-687b9292f98f/iphone-03-share.png/320x480bb.jpg" alt="Study Buddy：讀書計時器 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/ea/88/65ea886f-d351-8b64-d3a0-5f117eddff1e/iphone-04-lock.png/320x480bb.jpg" alt="Study Buddy：讀書計時器 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ee/a1/b1/eea1b1c1-a9a6-ce1d-a3f6-1842eb3f57f1/iphone-05-pomodoro.png/320x480bb.jpg" alt="Study Buddy：讀書計時器 的截圖" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>價格與隱私</h2>
       <p>價格、App 內購買與最新的隱私權資訊，請以 App Store 頁面為準。本頁的介紹文字取自 App Store 的 App 說明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/tw/app/study-buddy-timer/id6764601072?uo=4">在 App Store 開啟 Study Buddy：讀書計時器</a></p>
+      <a class="button primary big" href="https://apps.apple.com/tw/app/study-buddy-timer/id6764601072?uo=4">在 App Store 開啟 Study Buddy：讀書計時器</a>
       <p class="meta">最後更新: 2026-10-21</p>
     </section>
   </main>

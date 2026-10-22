@@ -115,6 +115,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Family Apps",
+          "item": "https://zec-inc.jp/apps/family/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Foot Size Check",
+          "item": "https://zec-inc.jp/apps/foot-size-check/"
+        }
+      ]
     }
   ]
 }
@@ -139,7 +168,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/family/">Family Apps</a></li><li aria-current="page">Foot Size Check</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Foot Size Check app icon" width="96" height="96">
       <div>
@@ -149,114 +179,125 @@
           <a class="button primary" href="https://apps.apple.com/us/app/foot-size-check/id6789844290?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">23 languages</li><li class="chip chip-link"><a href="/apps/family/">Family Apps</a></li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/af/dd/ebafddb7-a025-1aa0-a2f2-481d62f8aa5d/01.png/320x480bb.jpg" alt="Foot Size Check screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6c/98/c4/6c98c444-58d5-e68b-9e1b-fdd43f716783/02.png/320x480bb.jpg" alt="Foot Size Check screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6e/84/82/6e8482f4-3944-aa61-4f6f-dd2382985821/03.png/320x480bb.jpg" alt="Foot Size Check screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4d/23/a0/4d23a094-4883-3f79-aa2f-a9289c3c8e3a/04.png/320x480bb.jpg" alt="Foot Size Check screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/69/84/47/698447d6-4c55-aad5-94f5-6707d3d56a0b/05.png/320x480bb.jpg" alt="Foot Size Check screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Foot Size Check measures feet with nothing but a sheet of Letter or A4 paper and a photo. Kids&#x27; feet grow fast: place a foot on the paper, trace around it with a pen, and photograph the sheet. The app reads the outline and measures foot length, width, and a suggested shoe size automatically - no points to line up by hand (you can still fine-tune them). The outline is kept at true size.</p>
-          <p>Unlike mail-order measuring mats, there is nothing to buy or wait for. Beyond the measurement you get a growth history with left and right feet tracked separately, foot outline and growth cards to share with family, EU, US, and UK size conversion and a shoe size chart, insole measuring to see your current toe room, and tips on how to fit shoes. Reminders for the next measurement and one-time birthday messages are free.</p>
-          <p>No account and no banner ads. Photos and records stay on your device, with optional iCloud sync to your own iCloud; the developer cannot read your data. &quot;Find shoes&quot; (Japan) links include advertising (affiliate links). Foot Size Check Pro is an optional one-time purchase, not a subscription. Results are estimates only; shoe fit varies by brand, model, and foot shape, so we recommend measuring in person before buying shoes.</p>
+      <p class="lead-para">Foot Size Check measures feet with nothing but a sheet of Letter or A4 paper and a photo. Kids&#x27; feet grow fast: place a foot on the paper, trace around it with a pen, and photograph the sheet. The app reads the outline and measures foot length, width, and a suggested shoe size automatically - no points to line up by hand (you can still fine-tune them). The outline is kept at true size.</p>
+      <p>Unlike mail-order measuring mats, there is nothing to buy or wait for. Beyond the measurement you get a growth history with left and right feet tracked separately, foot outline and growth cards to share with family, EU, US, and UK size conversion and a shoe size chart, insole measuring to see your current toe room, and tips on how to fit shoes. Reminders for the next measurement and one-time birthday messages are free.</p>
+      <p>No account and no banner ads. Photos and records stay on your device, with optional iCloud sync to your own iCloud; the developer cannot read your data. &quot;Find shoes&quot; (Japan) links include advertising (affiliate links). Foot Size Check Pro is an optional one-time purchase, not a subscription. Results are estimates only; shoe fit varies by brand, model, and foot shape, so we recommend measuring in person before buying shoes.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>Parents checking a child&#x27;s shoe size before buying new shoes</li>
-            <li>Families who want a growth record of kids&#x27; feet over time</li>
-            <li>Shoppers who want a quick shoe size guide without ordering a measuring mat</li>
-            <li>Families with siblings who want to keep each child&#x27;s measurements and foot outlines</li>
-            <li>People who prefer a no-account, on-device tool for body measurements</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Foot measurement on Letter or A4 paper: trace the foot, photograph the sheet, and get length and width automatically (adjust by hand if you like)</li>
-            <li>Foot outline saved as a true-size shape, with a foot outline card to send to family right after saving</li>
-            <li>Suggested shoe size (foot length plus 0.5-1.0 cm), EU, US, and UK conversion, and your own notation (JP, EU, US, or UK in Settings)</li>
-            <li>Shoe size chart for children, men, and women</li>
-            <li>Growth history over time, left and right feet tracked separately, and a growth card to share as one image</li>
-            <li>Insole measuring to see the current toe room, and how-to-fit-shoes checks based on podiatry society guidance</li>
-            <li>Find shoes by age and sex or by use, My size book, seasonal shoe reminders, and age-based measurement reminders (Japan; links include advertising)</li>
-            <li>Optional iCloud sync to your own iCloud; no account, no banner ads</li>
-            <li>Foot Size Check Pro (optional one-time purchase): same-age reference band on the growth chart, shoe replacement estimate, more than one child and shoe note, full &quot;All&quot; growth span, show-in-store large text, and more</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Foot measurement on Letter or A4 paper</strong>: trace the foot, photograph the sheet, and get length and width automatically (adjust by hand if you like)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Foot outline saved as a true-size shape</strong>, with a foot outline card to send to family right after saving</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Suggested shoe size (foot length plus 0.5-1.0 cm)</strong>, EU, US, and UK conversion, and your own notation (JP, EU, US, or UK in Settings)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Shoe size chart for children, men, and women</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Growth history over time</strong>, left and right feet tracked separately, and a growth card to share as one image</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Insole measuring to see the current toe room</strong>, and how-to-fit-shoes checks based on podiatry society guidance</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Find shoes by age and sex or by use</strong>, My size book, seasonal shoe reminders, and age-based measurement reminders (Japan; links include advertising)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Optional iCloud sync to your own iCloud; no account, no banner ads</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Foot Size Check Pro (optional one-time purchase)</strong>: same-age reference band on the growth chart, shoe replacement estimate, more than one child and shoe note, full &quot;All&quot; growth span, show-in-store large text, and more</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>Parents checking a child&#x27;s shoe size before buying new shoes</li>
+        <li>Families who want a growth record of kids&#x27; feet over time</li>
+        <li>Shoppers who want a quick shoe size guide without ordering a measuring mat</li>
+        <li>Families with siblings who want to keep each child&#x27;s measurements and foot outlines</li>
+        <li>People who prefer a no-account, on-device tool for body measurements</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Choose Letter or A4 paper, place a sheet on a flat floor, and stand the foot on it.</li>
-            <li>Trace around the foot with a pen, then photograph the sheet.</li>
-            <li>The app reads the outline and places the heel, toe, and width points for you. Fine-tune them by hand if needed.</li>
-            <li>Read the measured foot length, width, and suggested shoe size, and save the record to build a growth history (left and right feet separately).</li>
-            <li>Share the foot outline card or growth card with family, or turn on measurement reminders for the next time.</li>
+      <ol class="steps">
+        <li><span>Choose Letter or A4 paper, place a sheet on a flat floor, and stand the foot on it.</span></li>
+        <li><span>Trace around the foot with a pen, then photograph the sheet.</span></li>
+        <li><span>The app reads the outline and places the heel, toe, and width points for you. Fine-tune them by hand if needed.</span></li>
+        <li><span>Read the measured foot length, width, and suggested shoe size, and save the record to build a growth history (left and right feet separately).</span></li>
+        <li><span>Share the foot outline card or growth card with family, or turn on measurement reminders for the next time.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>Foot Size Check is free to download on the App Store, with no banner ads and no subscription. Foot Size Check Pro is an optional one-time purchase that adds extras such as a same-age reference band on the growth chart, a shoe replacement estimate, and more than one child. Measuring, records, the growth chart, foot outlines, reminders, and birthday messages are free. App Store pricing can change, so check the store listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>Foot Size Check is free to download on the App Store, with no banner ads and no subscription. Foot Size Check Pro is an optional one-time purchase that adds extras such as a same-age reference band on the growth chart, a shoe replacement estimate, and more than one child. Measuring, records, the growth chart, foot outlines, reminders, and birthday messages are free. App Store pricing can change, so check the store listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>No account and no banner ads. Photos and records stay on your device. iCloud sync is optional: records and outlines are saved to your own iCloud, and annotated measurement photos stay on the device. The developer cannot read your data. Links in &quot;Find shoes&quot; include advertising (affiliate links). For the authoritative summary, see the privacy label on the app&#x27;s App Store page.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is Foot Size Check free?</summary>
+          <p>Yes. The app is free to download, with no banner ads and no subscription. Foot Size Check Pro is an optional one-time purchase for extras, while measuring, records, the growth chart, foot outlines, reminders, and birthday messages are free. App Store pricing can change, so check the listing for current details.</p>
+        </details>
+        <details>
+          <summary>Are my photos uploaded anywhere?</summary>
+          <p>No. Photos and records stay on your device, and the developer cannot read your data. If you turn on iCloud sync, records and outlines are saved to your own iCloud (annotated measurement photos stay on the device).</p>
+        </details>
+        <details>
+          <summary>What do I need to measure a foot?</summary>
+          <p>A sheet of Letter or A4 paper, a pen, and your iPhone. Place the foot on the paper, trace around it, and photograph the sheet. There is no measuring mat to order and no sign-up.</p>
+        </details>
+        <details>
+          <summary>How accurate are the results?</summary>
+          <p>Results are estimates. The app places the measurement points automatically and you can fine-tune them by hand, but shoe fit varies by brand, model, and foot shape, so an in-person fitting is recommended before buying shoes.</p>
+        </details>
+        <details>
+          <summary>Can I track my child&#x27;s foot growth over time?</summary>
+          <p>Yes. Saved measurements build a growth history, left and right feet are tracked separately, and foot outlines are kept at true size so you can compare records. You can also share a growth card with family.</p>
+        </details>
+        <details>
+          <summary>How is the suggested shoe size worked out?</summary>
+          <p>It is a label-size guide: foot length plus 0.5-1.0 cm. You can see EU, US, and UK conversion and choose your own notation (JP, EU, US, or UK) in Settings. It is separate from the inside length you can measure with an insole.</p>
+        </details>
+        <details>
+          <summary>Do I need an account?</summary>
+          <p>No. There is no account or sign-up. iCloud sync is optional and uses your own iCloud.</p>
+        </details>
+        <details>
+          <summary>Are there ads?</summary>
+          <p>There are no banner ads. Links in &quot;Find shoes&quot; (Japan) include advertising (affiliate links).</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>No account and no banner ads. Photos and records stay on your device. iCloud sync is optional: records and outlines are saved to your own iCloud, and annotated measurement photos stay on the device. The developer cannot read your data. Links in &quot;Find shoes&quot; include advertising (affiliate links). For the authoritative summary, see the privacy label on the app&#x27;s App Store page.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/af/dd/ebafddb7-a025-1aa0-a2f2-481d62f8aa5d/01.png/320x480bb.jpg" alt="Foot Size Check screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6c/98/c4/6c98c444-58d5-e68b-9e1b-fdd43f716783/02.png/320x480bb.jpg" alt="Foot Size Check screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6e/84/82/6e8482f4-3944-aa61-4f6f-dd2382985821/03.png/320x480bb.jpg" alt="Foot Size Check screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4d/23/a0/4d23a094-4883-3f79-aa2f-a9289c3c8e3a/04.png/320x480bb.jpg" alt="Foot Size Check screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/69/84/47/698447d6-4c55-aad5-94f5-6707d3d56a0b/05.png/320x480bb.jpg" alt="Foot Size Check screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Big Text Note</h3><p>Show one note in large, easy-to-read text to the person in front of you...</p></span></a>
+        <a class="related-card" href="/apps/photo-day/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/4f/dd/444fdd0a-a5ef-6137-1c93-c0b8d302b620/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>DailyAlbum: One Photo a Day</h3><p>Keep one photo a day as a simple photo diary and memory calendar, with...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is Foot Size Check free?</summary>
-            <p>Yes. The app is free to download, with no banner ads and no subscription. Foot Size Check Pro is an optional one-time purchase for extras, while measuring, records, the growth chart, foot outlines, reminders, and birthday messages are free. App Store pricing can change, so check the listing for current details.</p>
-          </details>
-          <details>
-            <summary>Are my photos uploaded anywhere?</summary>
-            <p>No. Photos and records stay on your device, and the developer cannot read your data. If you turn on iCloud sync, records and outlines are saved to your own iCloud (annotated measurement photos stay on the device).</p>
-          </details>
-          <details>
-            <summary>What do I need to measure a foot?</summary>
-            <p>A sheet of Letter or A4 paper, a pen, and your iPhone. Place the foot on the paper, trace around it, and photograph the sheet. There is no measuring mat to order and no sign-up.</p>
-          </details>
-          <details>
-            <summary>How accurate are the results?</summary>
-            <p>Results are estimates. The app places the measurement points automatically and you can fine-tune them by hand, but shoe fit varies by brand, model, and foot shape, so an in-person fitting is recommended before buying shoes.</p>
-          </details>
-          <details>
-            <summary>Can I track my child&#x27;s foot growth over time?</summary>
-            <p>Yes. Saved measurements build a growth history, left and right feet are tracked separately, and foot outlines are kept at true size so you can compare records. You can also share a growth card with family.</p>
-          </details>
-          <details>
-            <summary>How is the suggested shoe size worked out?</summary>
-            <p>It is a label-size guide: foot length plus 0.5-1.0 cm. You can see EU, US, and UK conversion and choose your own notation (JP, EU, US, or UK) in Settings. It is separate from the inside length you can measure with an insole.</p>
-          </details>
-          <details>
-            <summary>Do I need an account?</summary>
-            <p>No. There is no account or sign-up. iCloud sync is optional and uses your own iCloud.</p>
-          </details>
-          <details>
-            <summary>Are there ads?</summary>
-            <p>There are no banner ads. Links in &quot;Find shoes&quot; (Japan) include advertising (affiliate links).</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/foot-size-check/id6789844290?uo=4">Open Foot Size Check on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/foot-size-check/id6789844290?uo=4">Open Foot Size Check on the App Store</a>
       <p class="meta">Last updated: 2026-10-20</p>
     </section>
   </main>

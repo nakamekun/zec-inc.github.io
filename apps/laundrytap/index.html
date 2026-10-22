@@ -107,6 +107,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tap Tools",
+          "item": "https://zec-inc.jp/apps/tap-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Laundry Tap: Washer Timer",
+          "item": "https://zec-inc.jp/apps/laundrytap/"
+        }
+      ]
     }
   ]
 }
@@ -131,7 +160,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">Laundry Tap: Washer Timer</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Laundry Tap: Washer Timer app icon" width="96" height="96">
       <div>
@@ -141,109 +171,120 @@
           <a class="button primary" href="https://apps.apple.com/us/app/laundry-tap-washer-timer/id6762600691?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">23 languages</li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li><li class="chip chip-link"><a href="/apps/family/">Family Apps</a></li><li class="chip chip-link"><a href="/apps/productivity/">Productivity Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/ca/aa/16caaa6b-bfc9-4e44-578e-65deb8ca915d/01-timer-running.png/320x480bb.jpg" alt="Laundry Tap: Washer Timer screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/8d/04/0e8d044d-f85e-5983-21d7-7d824829d89b/02-timer-done.png/320x480bb.jpg" alt="Laundry Tap: Washer Timer screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8e/eb/d9/8eebd986-a871-e2a6-aab0-5190f9513b89/03-logged.png/320x480bb.jpg" alt="Laundry Tap: Washer Timer screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/72/32/a3/7232a3ce-9c3a-ee13-fd5a-cd8812043382/04-history.png/320x480bb.jpg" alt="Laundry Tap: Washer Timer screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fb/b8/c3/fbb8c3e9-30f6-a662-8cef-8aafb1895ba7/05-settings.png/320x480bb.jpg" alt="Laundry Tap: Washer Timer screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Laundry Tap reminds you when the wash is done and keeps track of when you last did the laundry. Start a wash or dry timer, put your phone away, and get a notification when the cycle ends. The countdown also stays on your Lock Screen and in the Dynamic Island.</p>
-          <p>When the clothes are hung up, tap once to log today&#x27;s laundry. Home then shows how many days it has been since your last wash and when it is about time again, and a monthly calendar lets you look back at your laundry days.</p>
-          <p>It is a small, focused tool rather than a full chore manager. It does not connect to your washing machine, so the timer uses the length you set, and it does not handle laundromat payments or weather forecasts.</p>
+      <p class="lead-para">Laundry Tap reminds you when the wash is done and keeps track of when you last did the laundry. Start a wash or dry timer, put your phone away, and get a notification when the cycle ends. The countdown also stays on your Lock Screen and in the Dynamic Island.</p>
+      <p>When the clothes are hung up, tap once to log today&#x27;s laundry. Home then shows how many days it has been since your last wash and when it is about time again, and a monthly calendar lets you look back at your laundry days.</p>
+      <p>It is a small, focused tool rather than a full chore manager. It does not connect to your washing machine, so the timer uses the length you set, and it does not handle laundromat payments or weather forecasts.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who walk away from the washer and want a reminder when the cycle ends</li>
-            <li>People who forget when they last did the laundry</li>
-            <li>Households that want a small, quick log of laundry days</li>
-            <li>Users who prefer a dedicated laundry tool over a full chore app</li>
-            <li>Busy users doing laundry between work, errands, or family routines</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Wash and dry timers from 5 to 180 minutes, remembering your last length</li>
-            <li>Live Activity countdown on the Lock Screen and in the Dynamic Island</li>
-            <li>Notification when the cycle ends, with a button to log today&#x27;s laundry</li>
-            <li>One-tap &quot;Hung up&quot; log, plus &quot;days since last wash&quot; and a gentle status based on how often you like to wash (every 1–7 days)</li>
-            <li>Monthly calendar of your laundry days; tap any day to add or remove it</li>
-            <li>Up to 5 reminders, each with its own time and days (every day, weekdays, weekends, or days you pick), and an option to stay quiet on days you have already washed</li>
-            <li>Log laundry with Shortcuts and Siri, Home Screen and Lock Screen widgets, Control Center, or a control on Apple Watch (watchOS 26) without opening the app</li>
-            <li>Available in 25 languages</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Wash and dry timers from 5 to 180 minutes, remembering your last length</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Live Activity countdown on the Lock Screen and in the Dynamic Island</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Notification when the cycle ends, with a button to log today&#x27;s laundry</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>One-tap &quot;Hung up&quot; log</strong>, plus &quot;days since last wash&quot; and a gentle status based on how often you like to wash (every 1–7 days)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Monthly calendar of your laundry days; tap any day to add or remove it</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Up to 5 reminders</strong>, each with its own time and days (every day, weekdays, weekends, or days you pick), and an option to stay quiet on days you have already washed</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Log laundry with Shortcuts and Siri</strong>, Home Screen and Lock Screen widgets, Control Center, or a control on Apple Watch (watchOS 26) without opening the app</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Available in 25 languages</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who walk away from the washer and want a reminder when the cycle ends</li>
+        <li>People who forget when they last did the laundry</li>
+        <li>Households that want a small, quick log of laundry days</li>
+        <li>Users who prefer a dedicated laundry tool over a full chore app</li>
+        <li>Busy users doing laundry between work, errands, or family routines</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Tap &quot;Wash 45 min&quot; or &quot;Dry 60 min&quot; to start a timer; you choose the length.</li>
-            <li>Put your phone away. The countdown shows on the Lock Screen and in the Dynamic Island.</li>
-            <li>When the notification arrives, hang up the laundry and tap &quot;Hung up&quot; to log today&#x27;s laundry.</li>
-            <li>Check Home for the days since your last wash, or open the monthly calendar to look back or fix a day.</li>
-            <li>Optionally set up to 5 reminders and add widgets or the Control Center control for quicker logging.</li>
+      <ol class="steps">
+        <li><span>Tap &quot;Wash 45 min&quot; or &quot;Dry 60 min&quot; to start a timer; you choose the length.</span></li>
+        <li><span>Put your phone away. The countdown shows on the Lock Screen and in the Dynamic Island.</span></li>
+        <li><span>When the notification arrives, hang up the laundry and tap &quot;Hung up&quot; to log today&#x27;s laundry.</span></li>
+        <li><span>Check Home for the days since your last wash, or open the monthly calendar to look back or fix a day.</span></li>
+        <li><span>Optionally set up to 5 reminders and add widgets or the Control Center control for quicker logging.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>Laundry Tap is free to download. According to its App Store listing, it has no ads and no in-app purchases. App Store pricing and availability can change, so check the listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>Laundry Tap is free to download. According to its App Store listing, it has no ads and no in-app purchases. App Store pricing and availability can change, so check the listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Laundry Tap needs no account and has no ads. According to the App Store listing, everything stays on your iPhone and nothing is sent to a server. The app uses notifications for timers and reminders. See the App Store page for Apple&#x27;s current privacy label.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>What is Laundry Tap for?</summary>
+          <p>It reminds you when the wash is done with a timer and notification, and keeps track of when you last did the laundry so you can see at a glance whether it is about time again.</p>
+        </details>
+        <details>
+          <summary>Is Laundry Tap a chore management app?</summary>
+          <p>No. It is intentionally small and focused on laundry timers and a laundry log rather than managing every household task.</p>
+        </details>
+        <details>
+          <summary>Does it connect to my washing machine?</summary>
+          <p>No. The timer simply counts down the length you set. It also does not handle laundromat payments or weather forecasts.</p>
+        </details>
+        <details>
+          <summary>Does Laundry Tap replace reminders?</summary>
+          <p>It includes its own reminders: up to 5, each with its own time, on every day, weekdays, weekends, or days you pick. It can stay quiet on days you have already washed.</p>
+        </details>
+        <details>
+          <summary>Can I log laundry without opening the app?</summary>
+          <p>Yes. You can log from the timer notification, Shortcuts and Siri, Home Screen and Lock Screen widgets, Control Center, or a control on Apple Watch with watchOS 26.</p>
+        </details>
+        <details>
+          <summary>Is my data sent anywhere?</summary>
+          <p>According to the App Store listing, everything stays on your iPhone and nothing is sent to a server. There is no account.</p>
+        </details>
+        <details>
+          <summary>Where can I download it?</summary>
+          <p>Use the App Store link on this page to open the official Laundry Tap product page.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Laundry Tap needs no account and has no ads. According to the App Store listing, everything stays on your iPhone and nothing is sent to a server. The app uses notifications for timers and reminders. See the App Store page for Apple&#x27;s current privacy label.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/ca/aa/16caaa6b-bfc9-4e44-578e-65deb8ca915d/01-timer-running.png/320x480bb.jpg" alt="Laundry Tap: Washer Timer screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/8d/04/0e8d044d-f85e-5983-21d7-7d824829d89b/02-timer-done.png/320x480bb.jpg" alt="Laundry Tap: Washer Timer screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8e/eb/d9/8eebd986-a871-e2a6-aab0-5190f9513b89/03-logged.png/320x480bb.jpg" alt="Laundry Tap: Washer Timer screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/72/32/a3/7232a3ce-9c3a-ee13-fd5a-cd8812043382/04-history.png/320x480bb.jpg" alt="Laundry Tap: Washer Timer screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fb/b8/c3/fbb8c3e9-30f6-a662-8cef-8aafb1895ba7/05-settings.png/320x480bb.jpg" alt="Laundry Tap: Washer Timer screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/mute-video-before-share/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/31/26/62/3126628d-786f-294f-5828-7e5e67ea8829/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Mute Video Before Share</h3><p>Remove sound from any video in one tap, or beep out selected parts — from...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>What is Laundry Tap for?</summary>
-            <p>It reminds you when the wash is done with a timer and notification, and keeps track of when you last did the laundry so you can see at a glance whether it is about time again.</p>
-          </details>
-          <details>
-            <summary>Is Laundry Tap a chore management app?</summary>
-            <p>No. It is intentionally small and focused on laundry timers and a laundry log rather than managing every household task.</p>
-          </details>
-          <details>
-            <summary>Does it connect to my washing machine?</summary>
-            <p>No. The timer simply counts down the length you set. It also does not handle laundromat payments or weather forecasts.</p>
-          </details>
-          <details>
-            <summary>Does Laundry Tap replace reminders?</summary>
-            <p>It includes its own reminders: up to 5, each with its own time, on every day, weekdays, weekends, or days you pick. It can stay quiet on days you have already washed.</p>
-          </details>
-          <details>
-            <summary>Can I log laundry without opening the app?</summary>
-            <p>Yes. You can log from the timer notification, Shortcuts and Siri, Home Screen and Lock Screen widgets, Control Center, or a control on Apple Watch with watchOS 26.</p>
-          </details>
-          <details>
-            <summary>Is my data sent anywhere?</summary>
-            <p>According to the App Store listing, everything stays on your iPhone and nothing is sent to a server. There is no account.</p>
-          </details>
-          <details>
-            <summary>Where can I download it?</summary>
-            <p>Use the App Store link on this page to open the official Laundry Tap product page.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/laundry-tap-washer-timer/id6762600691?uo=4">Open Laundry Tap: Washer Timer on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/laundry-tap-washer-timer/id6762600691?uo=4">Open Laundry Tap: Washer Timer on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

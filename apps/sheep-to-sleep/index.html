@@ -104,6 +104,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Family Apps",
+          "item": "https://zec-inc.jp/apps/family/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Sheep to Sleep",
+          "item": "https://zec-inc.jp/apps/sheep-to-sleep/"
+        }
+      ]
     }
   ]
 }
@@ -125,7 +154,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/family/">Family Apps</a></li><li aria-current="page">Sheep to Sleep</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6f/3f/27/6f3f27ce-a19a-0961-306b-5fb64aed448e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Sheep to Sleep app icon" width="96" height="96">
       <div>
@@ -135,109 +165,120 @@
           <a class="button primary" href="https://apps.apple.com/us/app/sheep-to-sleep/id6765796575?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">2 languages</li><li class="chip chip-link"><a href="/apps/family/">Family Apps</a></li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/c9/6d/1bc96da4-bb28-2eaa-f053-9b5b684b318c/01-counting.png/320x480bb.jpg" alt="Sheep to Sleep screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7d/93/37/7d933718-081a-8833-95aa-0cced15327a5/02-start.png/320x480bb.jpg" alt="Sheep to Sleep screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3b/a3/cf/3ba3cfdc-41fe-e034-7245-ea4422d428c9/03-sleep-week.png/320x480bb.jpg" alt="Sheep to Sleep screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/e1/05/30e10580-7dc4-6b0d-ad25-72794b6f64ff/04-breathing.png/320x480bb.jpg" alt="Sheep to Sleep screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/dd/9a/05dd9ac8-e67f-0859-d3e1-64b57bfa8414/05-progress.png/320x480bb.jpg" alt="Sheep to Sleep screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Sheep to Sleep turns the classic bedtime ritual of counting sheep into a quiet companion for winding down. A calm voice counts sheep aloud for you, so you can lie back with your eyes closed and just listen — no need to watch the screen. The voice keeps going when you lock the screen, and ends quietly on its own, after 100 sheep or your sleep timer.</p>
-          <p>Beyond counting, the app offers a gentle breathing guide to settle down before bed, a Tonight&#x27;s Preparation checklist, and a Progress tab that shows your past seven nights of sleep side by side (time in bed and time asleep, read from Apple Health, with a small mark on nights you counted sheep). Sheep, Breathing, Progress, and Settings each have their own tab.</p>
-          <p>Apple Health is optional and off by default: finished breathing sessions can be saved as Mindful Minutes, and your recorded sleep times can be shown on a morning card and in This week&#x27;s sleep (read only). Health data stays on your device. There is no account and there are no ads. Sheep to Sleep is a relaxation aid, not a medical tool.</p>
+      <p class="lead-para">Sheep to Sleep turns the classic bedtime ritual of counting sheep into a quiet companion for winding down. A calm voice counts sheep aloud for you, so you can lie back with your eyes closed and just listen — no need to watch the screen. The voice keeps going when you lock the screen, and ends quietly on its own, after 100 sheep or your sleep timer.</p>
+      <p>Beyond counting, the app offers a gentle breathing guide to settle down before bed, a Tonight&#x27;s Preparation checklist, and a Progress tab that shows your past seven nights of sleep side by side (time in bed and time asleep, read from Apple Health, with a small mark on nights you counted sheep). Sheep, Breathing, Progress, and Settings each have their own tab.</p>
+      <p>Apple Health is optional and off by default: finished breathing sessions can be saved as Mindful Minutes, and your recorded sleep times can be shown on a morning card and in This week&#x27;s sleep (read only). Health data stays on your device. There is no account and there are no ads. Sheep to Sleep is a relaxation aid, not a medical tool.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who have trouble falling asleep and want a screen-free way to wind down</li>
-            <li>Parents settling children at bedtime or nap time</li>
-            <li>Anyone who wants a simple pre-bed routine without an account or ads</li>
-            <li>Users who find guided breathing helpful for relaxing before sleep</li>
-            <li>People who like to look back at their past week of sleep from Apple Health</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Sheep counted aloud for you — just listen, no need to watch the screen</li>
-            <li>Voice keeps going when the screen is locked and ends quietly after 100 sheep or your timer</li>
-            <li>Sleep timer in the Sheep tab that stops the counting automatically</li>
-            <li>Gentle breathing guide with Inhale / Hold / Exhale phases to settle down before bed</li>
-            <li>This week&#x27;s sleep in Progress: your past seven nights side by side, read only from Apple Health</li>
-            <li>Tonight&#x27;s Preparation checklist in the Progress tab</li>
-            <li>Start hands-free with Siri, Control Center, or the Action button through Shortcuts</li>
-            <li>Optional Apple Health: save finished breathing sessions as Mindful Minutes; off by default</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Sheep counted aloud for you — just listen, no need to watch the screen</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Voice keeps going when the screen is locked and ends quietly after 100 sheep or your timer</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Sleep timer in the Sheep tab that stops the counting automatically</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Gentle breathing guide with Inhale / Hold / Exhale phases to settle down before bed</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>This week&#x27;s sleep in Progress</strong>: your past seven nights side by side, read only from Apple Health</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tonight&#x27;s Preparation checklist in the Progress tab</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Start hands-free with Siri</strong>, Control Center, or the Action button through Shortcuts</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Optional Apple Health</strong>: save finished breathing sessions as Mindful Minutes; off by default</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who have trouble falling asleep and want a screen-free way to wind down</li>
+        <li>Parents settling children at bedtime or nap time</li>
+        <li>Anyone who wants a simple pre-bed routine without an account or ads</li>
+        <li>Users who find guided breathing helpful for relaxing before sleep</li>
+        <li>People who like to look back at their past week of sleep from Apple Health</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open the Sheep tab, choose a sleep timer if you like, and tap Start</li>
-            <li>Lie back and close your eyes; the voice counts for you, even with the screen locked, and ends on its own</li>
-            <li>Use the Breathing tab to settle down before bed</li>
-            <li>Go through Tonight&#x27;s Preparation in the Progress tab</li>
-            <li>In the morning, check Progress to see your past seven nights of sleep (turn on Apple Health in Settings first)</li>
+      <ol class="steps">
+        <li><span>Open the Sheep tab, choose a sleep timer if you like, and tap Start</span></li>
+        <li><span>Lie back and close your eyes; the voice counts for you, even with the screen locked, and ends on its own</span></li>
+        <li><span>Use the Breathing tab to settle down before bed</span></li>
+        <li><span>Go through Tonight&#x27;s Preparation in the Progress tab</span></li>
+        <li><span>In the morning, check Progress to see your past seven nights of sleep (turn on Apple Health in Settings first)</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>Sheep to Sleep is free to download and use on the App Store, with no ads. App Store pricing and availability can change, so check the store listing for the latest details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>Sheep to Sleep is free to download and use on the App Store, with no ads. App Store pricing and availability can change, so check the store listing for the latest details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>No account and no ads. Apple Health is optional and off by default; when on, it reads your recorded sleep times for display only, and saves finished breathing sessions as Mindful Minutes if you choose. Health data stays on your device.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is Sheep to Sleep free?</summary>
+          <p>Yes. It is free to download and use, with no ads and no account. Check the App Store listing for current pricing details.</p>
+        </details>
+        <details>
+          <summary>Does the app collect any data?</summary>
+          <p>There is no account. Apple Health is optional and off by default; sleep records are only read for display and Health data stays on your device. Please also see the privacy policy linked on the App Store page.</p>
+        </details>
+        <details>
+          <summary>Can I listen with the screen locked?</summary>
+          <p>Yes. The voice keeps going when you lock the screen and ends quietly on its own, after 100 sheep or your timer. To stop it sooner, use pause on the lock screen or stop it in the app.</p>
+        </details>
+        <details>
+          <summary>Will it stop by itself when I fall asleep?</summary>
+          <p>Yes. Choose a sleep timer in the Sheep tab and the counting stops automatically; it also ends on its own after 100 sheep.</p>
+        </details>
+        <details>
+          <summary>What does it write to Apple Health?</summary>
+          <p>Only if you turn it on, it saves breathing sessions you finished as Mindful Minutes. Sleep records are only read for display on the morning card and in This week&#x27;s sleep.</p>
+        </details>
+        <details>
+          <summary>Why is This week&#x27;s sleep empty?</summary>
+          <p>Turn on the Health sleep option in Settings and allow Sleep access for Sheep to Sleep in the Health app. Nights appear only when something, such as a watch or a sleep app, records sleep to Health.</p>
+        </details>
+        <details>
+          <summary>Is this a medical sleep treatment?</summary>
+          <p>No. Sheep to Sleep is a relaxation and bedtime aid only. It is not a medical device and does not promise any effect. If trouble sleeping continues, please talk to a doctor.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>No account and no ads. Apple Health is optional and off by default; when on, it reads your recorded sleep times for display only, and saves finished breathing sessions as Mindful Minutes if you choose. Health data stays on your device.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/c9/6d/1bc96da4-bb28-2eaa-f053-9b5b684b318c/01-counting.png/320x480bb.jpg" alt="Sheep to Sleep screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7d/93/37/7d933718-081a-8833-95aa-0cced15327a5/02-start.png/320x480bb.jpg" alt="Sheep to Sleep screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3b/a3/cf/3ba3cfdc-41fe-e034-7245-ea4422d428c9/03-sleep-week.png/320x480bb.jpg" alt="Sheep to Sleep screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/e1/05/30e10580-7dc4-6b0d-ad25-72794b6f64ff/04-breathing.png/320x480bb.jpg" alt="Sheep to Sleep screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/dd/9a/05dd9ac8-e67f-0859-d3e1-64b57bfa8414/05-progress.png/320x480bb.jpg" alt="Sheep to Sleep screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Big Text Note</h3><p>Show one note in large, easy-to-read text to the person in front of you...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is Sheep to Sleep free?</summary>
-            <p>Yes. It is free to download and use, with no ads and no account. Check the App Store listing for current pricing details.</p>
-          </details>
-          <details>
-            <summary>Does the app collect any data?</summary>
-            <p>There is no account. Apple Health is optional and off by default; sleep records are only read for display and Health data stays on your device. Please also see the privacy policy linked on the App Store page.</p>
-          </details>
-          <details>
-            <summary>Can I listen with the screen locked?</summary>
-            <p>Yes. The voice keeps going when you lock the screen and ends quietly on its own, after 100 sheep or your timer. To stop it sooner, use pause on the lock screen or stop it in the app.</p>
-          </details>
-          <details>
-            <summary>Will it stop by itself when I fall asleep?</summary>
-            <p>Yes. Choose a sleep timer in the Sheep tab and the counting stops automatically; it also ends on its own after 100 sheep.</p>
-          </details>
-          <details>
-            <summary>What does it write to Apple Health?</summary>
-            <p>Only if you turn it on, it saves breathing sessions you finished as Mindful Minutes. Sleep records are only read for display on the morning card and in This week&#x27;s sleep.</p>
-          </details>
-          <details>
-            <summary>Why is This week&#x27;s sleep empty?</summary>
-            <p>Turn on the Health sleep option in Settings and allow Sleep access for Sheep to Sleep in the Health app. Nights appear only when something, such as a watch or a sleep app, records sleep to Health.</p>
-          </details>
-          <details>
-            <summary>Is this a medical sleep treatment?</summary>
-            <p>No. Sheep to Sleep is a relaxation and bedtime aid only. It is not a medical device and does not promise any effect. If trouble sleeping continues, please talk to a doctor.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/sheep-to-sleep/id6765796575?uo=4">Open Sheep to Sleep on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/sheep-to-sleep/id6765796575?uo=4">Open Sheep to Sleep on the App Store</a>
       <p class="meta">Last updated: 2026-10-19</p>
     </section>
   </main>

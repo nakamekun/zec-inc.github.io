@@ -112,6 +112,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Travel Apps",
+          "item": "https://zec-inc.jp/apps/travel/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Packed - Daily Packing List",
+          "item": "https://zec-inc.jp/apps/packed/"
+        }
+      ]
     }
   ]
 }
@@ -133,7 +162,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/travel/">Travel Apps</a></li><li aria-current="page">Packed - Daily Packing List</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/bd/d2/dbbdd28b-532f-37bc-c671-ed10601d8936/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Packed - Daily Packing List app icon" width="96" height="96">
       <div>
@@ -143,111 +173,122 @@
           <a class="button primary" href="https://apps.apple.com/us/app/packed-daily-packing-list/id6762812333?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">2 languages</li><li class="chip chip-link"><a href="/apps/travel/">Travel Apps</a></li><li class="chip chip-link"><a href="/apps/widgets/">Widget-Friendly Apps</a></li><li class="chip chip-link"><a href="/apps/family/">Family Apps</a></li><li class="chip chip-link"><a href="/apps/productivity/">Productivity Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/77/35/ec/7735ec78-2a52-5d82-c3f6-4ca582a34fc2/01-iphone-widget.png/320x480bb.jpg" alt="Packed - Daily Packing List screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/61/56/92/6156922d-d3cd-e15b-e41a-e6f1224d41db/02-iphone-home.png/320x480bb.jpg" alt="Packed - Daily Packing List screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/75/20/64/75206422-72f0-0ad9-a27f-ecf0fd2bc7c0/03-iphone-detail.png/320x480bb.jpg" alt="Packed - Daily Packing List screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/52/f6/65/52f665fe-0c41-8d92-0bd0-f193116c078a/04-iphone-notification.png/320x480bb.jpg" alt="Packed - Daily Packing List screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3e/35/4f/3e354f8f-de55-0552-74d9-b040d464eaa4/05-iphone-templates.png/320x480bb.jpg" alt="Packed - Daily Packing List screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Packed is a quick check you do at the door every morning, so nothing gets left behind. Make a group for each routine you repeat — your commute, school bag, or gym — and just check it before you leave. You can check items right from the Home Screen widget, without opening the app.</p>
-          <p>Every check resets on its own the next day, so there is nothing to clear. Instead of acting like a general task manager, Packed stays close to the packing workflow, and it is handy before a trip, too.</p>
+      <p class="lead-para">Packed is a quick check you do at the door every morning, so nothing gets left behind. Make a group for each routine you repeat — your commute, school bag, or gym — and just check it before you leave. You can check items right from the Home Screen widget, without opening the app.</p>
+      <p>Every check resets on its own the next day, so there is nothing to clear. Instead of acting like a general task manager, Packed stays close to the packing workflow, and it is handy before a trip, too.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who ask themselves &quot;keys? wallet?&quot; every morning before heading out</li>
-            <li>Commuters, students, and gym-goers with a routine bag to pack</li>
-            <li>Families preparing bags for school, trips, or outings</li>
-            <li>Travelers and business travelers who want a ready packing list</li>
-            <li>Users who prefer a simple dedicated checklist over a large productivity app</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Check items from the Home Screen widget, and mark a whole group packed in one tap</li>
-            <li>Ready lists to start from: commute, school, gym, overnight trip, business trip, doctor&#x27;s visit, and emergency bag (the items are common examples you can change freely)</li>
-            <li>Reminders by group, on the days and time you choose (for example weekdays for work, Mon/Wed/Fri for the gym)</li>
-            <li>Reorder items, add counts (×2), and short notes</li>
-            <li>Make as many groups as you like</li>
-            <li>Checks reset automatically every day</li>
-            <li>No account, no ads, no subscription; lists are stored on your device</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Check items from the Home Screen widget, and mark a whole group packed in one tap</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Ready lists to start from</strong>: commute, school, gym, overnight trip, business trip, doctor&#x27;s visit, and emergency bag (the items are common examples you can change freely)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Reminders by group</strong>, on the days and time you choose (for example weekdays for work, Mon/Wed/Fri for the gym)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Reorder items</strong>, add counts (×2), and short notes</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Make as many groups as you like</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Checks reset automatically every day</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>No account</strong>, no ads, no subscription; lists are stored on your device</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who ask themselves &quot;keys? wallet?&quot; every morning before heading out</li>
+        <li>Commuters, students, and gym-goers with a routine bag to pack</li>
+        <li>Families preparing bags for school, trips, or outings</li>
+        <li>Travelers and business travelers who want a ready packing list</li>
+        <li>Users who prefer a simple dedicated checklist over a large productivity app</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Make a group for a routine you repeat, such as your commute, school bag, or gym, or start from a ready list.</li>
-            <li>Edit the items, and add counts or short notes if you need them.</li>
-            <li>Set a reminder for the days and time you leave, and add the widget to your Home Screen.</li>
-            <li>Before you leave, check items from the widget or the app, or mark the whole group packed in one tap.</li>
-            <li>The next day, every check resets on its own, ready for the next time.</li>
+      <ol class="steps">
+        <li><span>Make a group for a routine you repeat, such as your commute, school bag, or gym, or start from a ready list.</span></li>
+        <li><span>Edit the items, and add counts or short notes if you need them.</span></li>
+        <li><span>Set a reminder for the days and time you leave, and add the widget to your Home Screen.</span></li>
+        <li><span>Before you leave, check items from the widget or the app, or mark the whole group packed in one tap.</span></li>
+        <li><span>The next day, every check resets on its own, ready for the next time.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>Packed is free on the App Store. According to its listing, there are no ads and no subscription. App Store pricing and availability can change, so check the listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>Packed is free on the App Store. According to its listing, there are no ads and no subscription. App Store pricing and availability can change, so check the listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Packed needs no account and has no ads. Your lists are stored on your device and are not sent to any server. Reminders are notifications on your device. See the App Store page for Apple&#x27;s current privacy label.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>What is Packed for?</summary>
+          <p>It is a quick check you do at the door, for commute, school, gym, or trip essentials, so nothing gets left behind.</p>
+        </details>
+        <details>
+          <summary>Is Packed a general to-do app?</summary>
+          <p>No. Packed is designed around packing and preparation rather than broad project management.</p>
+        </details>
+        <details>
+          <summary>Can families use Packed?</summary>
+          <p>Yes. It is useful for family outings, school bags, children’s items, and repeating routines.</p>
+        </details>
+        <details>
+          <summary>Do I need to clear the checks each day?</summary>
+          <p>No. Every check resets automatically the next day, so your lists are ready to use again.</p>
+        </details>
+        <details>
+          <summary>Does Packed support widgets?</summary>
+          <p>Yes. You can check items right from the Home Screen widget without opening the app, and mark a whole group packed in one tap.</p>
+        </details>
+        <details>
+          <summary>Can I get reminders?</summary>
+          <p>Yes. Set a reminder per group on the days and time you choose, such as weekdays for work or Mon/Wed/Fri for the gym.</p>
+        </details>
+        <details>
+          <summary>Does it need an account, and is my data sent anywhere?</summary>
+          <p>No account is needed, and your lists are stored on your device and are not sent to any server.</p>
+        </details>
+        <details>
+          <summary>Where is the official download link?</summary>
+          <p>Use the App Store link on this page to open the official Packed product page.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Packed needs no account and has no ads. Your lists are stored on your device and are not sent to any server. Reminders are notifications on your device. See the App Store page for Apple&#x27;s current privacy label.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/77/35/ec/7735ec78-2a52-5d82-c3f6-4ca582a34fc2/01-iphone-widget.png/320x480bb.jpg" alt="Packed - Daily Packing List screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/61/56/92/6156922d-d3cd-e15b-e41a-e6f1224d41db/02-iphone-home.png/320x480bb.jpg" alt="Packed - Daily Packing List screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/75/20/64/75206422-72f0-0ad9-a27f-ecf0fd2bc7c0/03-iphone-detail.png/320x480bb.jpg" alt="Packed - Daily Packing List screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/52/f6/65/52f665fe-0c41-8d92-0bd0-f193116c078a/04-iphone-notification.png/320x480bb.jpg" alt="Packed - Daily Packing List screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3e/35/4f/3e354f8f-de55-0552-74d9-b040d464eaa4/05-iphone-templates.png/320x480bb.jpg" alt="Packed - Daily Packing List screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/hong-kong-phrase-card/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/0c/cb/990ccbe1-f5ec-ef23-38cb-2959c4eb2f27/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Hong Kong Phrase Card</h3><p>160 offline Cantonese travel phrase cards for Hong Kong — show large...</p></span></a>
+        <a class="related-card" href="/apps/korean-travel-phrase-card/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/36/9b/58369b4b-1172-fbab-9915-087f7bb1e571/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Korean Travel Phrase Card</h3><p>Offline Korean phrase cards for travelers: search in Japanese, show big...</p></span></a>
+        <a class="related-card" href="/apps/study-buddy-timer/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Study Buddy Timer</h3><p>A study timer with a chill buddy that grows with every minute you study....</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>What is Packed for?</summary>
-            <p>It is a quick check you do at the door, for commute, school, gym, or trip essentials, so nothing gets left behind.</p>
-          </details>
-          <details>
-            <summary>Is Packed a general to-do app?</summary>
-            <p>No. Packed is designed around packing and preparation rather than broad project management.</p>
-          </details>
-          <details>
-            <summary>Can families use Packed?</summary>
-            <p>Yes. It is useful for family outings, school bags, children’s items, and repeating routines.</p>
-          </details>
-          <details>
-            <summary>Do I need to clear the checks each day?</summary>
-            <p>No. Every check resets automatically the next day, so your lists are ready to use again.</p>
-          </details>
-          <details>
-            <summary>Does Packed support widgets?</summary>
-            <p>Yes. You can check items right from the Home Screen widget without opening the app, and mark a whole group packed in one tap.</p>
-          </details>
-          <details>
-            <summary>Can I get reminders?</summary>
-            <p>Yes. Set a reminder per group on the days and time you choose, such as weekdays for work or Mon/Wed/Fri for the gym.</p>
-          </details>
-          <details>
-            <summary>Does it need an account, and is my data sent anywhere?</summary>
-            <p>No account is needed, and your lists are stored on your device and are not sent to any server.</p>
-          </details>
-          <details>
-            <summary>Where is the official download link?</summary>
-            <p>Use the App Store link on this page to open the official Packed product page.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/packed-daily-packing-list/id6762812333?uo=4">Open Packed - Daily Packing List on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/packed-daily-packing-list/id6762812333?uo=4">Open Packed - Daily Packing List on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

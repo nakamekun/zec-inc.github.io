@@ -115,6 +115,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "写真・思い出のアプリ",
+          "item": "https://zec-inc.jp/apps/photo-memory/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "ごはんスナップ",
+          "item": "https://zec-inc.jp/apps/foodsnapquest/ja/"
+        }
+      ]
     }
   ]
 }
@@ -139,7 +168,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/photo-memory/ja/">写真・思い出のアプリ</a></li><li aria-current="page">ごはんスナップ</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/1f/4b/4a1f4b23-0ef9-f17c-1dae-36fabc21c9cf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="ごはんスナップ のアプリアイコン" width="96" height="96">
       <div>
@@ -149,114 +179,125 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/food-photo-diary-gohansnap/id6789844298?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">22言語に対応</li><li class="chip chip-link"><a href="/apps/photo-memory/ja/">写真・思い出のアプリ</a></li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c0/3e/4f/c03e4f13-4496-824c-a72b-ba03c4eb748b/01-home.png/320x480bb.jpg" alt="ごはんスナップ のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/cb/df/36cbdfc9-1085-6f21-e067-bea54ae63e16/02-day.png/320x480bb.jpg" alt="ごはんスナップ のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0d/8a/4a/0d8a4ad3-cea6-61ac-4402-35bd70e70bad/03-myitems.png/320x480bb.jpg" alt="ごはんスナップ のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3c/77/36/3c7736e6-4058-91b7-9efa-b134e125d169/04-caption.png/320x480bb.jpg" alt="ごはんスナップ のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9d/a3/98/9da39857-467f-c625-d0ad-e8610ea05bd9/05-import.png/320x480bb.jpg" alt="ごはんスナップ のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>ごはんスナップは、食べたものを写真で残す食事記録アプリです。カメラか写真ライブラリから写真を選ぶだけ。時刻は写真の撮影時刻で入り、朝・昼・夜・間食も時刻から自動で選ばれます（あとから変えられます）。メニューやカロリーは、入れたいときだけ。写真を撮るだけで、カレンダーが自分のごはんで埋まっていきます。</p>
-          <p>ダイエットのコーチではなく「記録」のためのアプリです。その日の合計カロリーは入れた分だけの合計で、1日の目標も自分で決めた値を入れるだけ（アプリが目標値を決めることはありません）。食事を良い・悪いで判定することもありません。「写真から追加」で、写真アプリのごはん写真を端末内で探してまとめて記録でき、撮り忘れた日は写真なしでメニューやメモだけ残せます。自炊・外食・テイクアウトのタグ、MYアイテムへの保存（同じ食事をタップでまた記録）、検索、CSV書き出しにも対応しています。</p>
-          <p>月カレンダーと日ごとの一覧、今月のまとめ、連続記録、ホーム画面ウィジェット、朝・昼・夜のリマインダー（初期設定はオフ）で、ふりかえりも気軽にできます。今月のごはんを1枚の画像にして共有したり、記録と写真を1つのファイルにバックアップしたりも可能。記録は端末の中だけに保存され、広告なし、アカウント不要です。本アプリは医療・栄養に関する助言を行いません。</p>
+      <p class="lead-para">ごはんスナップは、食べたものを写真で残す食事記録アプリです。カメラか写真ライブラリから写真を選ぶだけ。時刻は写真の撮影時刻で入り、朝・昼・夜・間食も時刻から自動で選ばれます（あとから変えられます）。メニューやカロリーは、入れたいときだけ。写真を撮るだけで、カレンダーが自分のごはんで埋まっていきます。</p>
+      <p>ダイエットのコーチではなく「記録」のためのアプリです。その日の合計カロリーは入れた分だけの合計で、1日の目標も自分で決めた値を入れるだけ（アプリが目標値を決めることはありません）。食事を良い・悪いで判定することもありません。「写真から追加」で、写真アプリのごはん写真を端末内で探してまとめて記録でき、撮り忘れた日は写真なしでメニューやメモだけ残せます。自炊・外食・テイクアウトのタグ、MYアイテムへの保存（同じ食事をタップでまた記録）、検索、CSV書き出しにも対応しています。</p>
+      <p>月カレンダーと日ごとの一覧、今月のまとめ、連続記録、ホーム画面ウィジェット、朝・昼・夜のリマインダー（初期設定はオフ）で、ふりかえりも気軽にできます。今月のごはんを1枚の画像にして共有したり、記録と写真を1つのファイルにバックアップしたりも可能。記録は端末の中だけに保存され、広告なし、アカウント不要です。本アプリは医療・栄養に関する助言を行いません。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>厳密なカロリー計算アプリが続かなかったけれど、食べたものは残しておきたい方</li>
-            <li>できるだけ手間をかけずに、写真の食事日記をつけたい方</li>
-            <li>カレンダーに並んだ写真を眺めて、自分の食生活を振り返りたい方</li>
-            <li>普段使っているAIアプリに、食事についての相談を用意して渡したい方</li>
-            <li>食事の記録をスマホの中に置いておきたい、プライバシー重視の方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>カメラか写真ライブラリから記録。時刻は写真の撮影時刻で入り、朝・昼・夜・間食は時刻から自動で選ばれます</li>
-            <li>「写真から追加」で、写真アプリのごはん写真を端末内で探してまとめて記録。撮り忘れた日は写真なしでメニューやメモだけ残せます</li>
-            <li>メニュー・カロリー・メモ・日時はあとから書き足せます。合計カロリーは入れた分だけ。1日の目標も自分で決めた値を入れるだけ</li>
-            <li>MYアイテムに写真・カロリー・メモを保存して、タップするだけで同じ食事をまた記録。自炊・外食・テイクアウトのタグ、検索、CSV書き出し</li>
-            <li>Apple Intelligence対応のiPhoneでは、写真に端末内で作る短いひとこと。カロリーは推定せず、設定でオフにできます</li>
-            <li>ヘルスケア連携（任意）：入力したカロリーだけを書き込み、ヘルスケアのデータは読み取りません。初期設定はオフ</li>
-            <li>AIに相談する内容を選び、写真と相談文をお使いのAIアプリに渡せます。アプリ自体がAIに送ることはありません</li>
-            <li>月カレンダーと日ごとの一覧、今月のまとめ、連続記録、月のごはんの画像共有、ホーム画面ウィジェット、朝・昼・夜のリマインダー（初期設定はオフ）</li>
-            <li>記録と写真を1つのファイルにバックアップ（ファイルアプリやAirDrop）。記録は端末の中だけ、広告なし、アカウント不要</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>カメラか写真ライブラリから記録</strong>。時刻は写真の撮影時刻で入り、朝・昼・夜・間食は時刻から自動で選ばれます</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>「写真から追加」で</strong>、写真アプリのごはん写真を端末内で探してまとめて記録。撮り忘れた日は写真なしでメニューやメモだけ残せます</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>メニュー・カロリー・メモ・日時はあとから書き足せます</strong>。合計カロリーは入れた分だけ。1日の目標も自分で決めた値を入れるだけ</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>MYアイテムに写真・カロリー・メモを保存して</strong>、タップするだけで同じ食事をまた記録。自炊・外食・テイクアウトのタグ、検索、CSV書き出し</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Apple Intelligence対応のiPhoneでは</strong>、写真に端末内で作る短いひとこと。カロリーは推定せず、設定でオフにできます</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>ヘルスケア連携（任意）</strong>：入力したカロリーだけを書き込み、ヘルスケアのデータは読み取りません。初期設定はオフ</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>AIに相談する内容を選び</strong>、写真と相談文をお使いのAIアプリに渡せます。アプリ自体がAIに送ることはありません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>月カレンダーと日ごとの一覧</strong>、今月のまとめ、連続記録、月のごはんの画像共有、ホーム画面ウィジェット、朝・昼・夜のリマインダー（初期設定はオフ）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>記録と写真を1つのファイルにバックアップ（ファイルアプリやAirDrop）。記録は端末の中だけ、広告なし、アカウント不要</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>厳密なカロリー計算アプリが続かなかったけれど、食べたものは残しておきたい方</li>
+        <li>できるだけ手間をかけずに、写真の食事日記をつけたい方</li>
+        <li>カレンダーに並んだ写真を眺めて、自分の食生活を振り返りたい方</li>
+        <li>普段使っているAIアプリに、食事についての相談を用意して渡したい方</li>
+        <li>食事の記録をスマホの中に置いておきたい、プライバシー重視の方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>食事のときにアプリを開き、写真を撮るか、ライブラリから選びます（「写真から追加」ならまとめて記録できます）。</li>
-            <li>朝・昼・夜・間食は写真の時刻から自動で選ばれます。変えたいときはあとから直せます。</li>
-            <li>メニュー・カロリー・メモは、入れたいときだけ。写真をタップして、あとから書き足せます。</li>
-            <li>月カレンダーと日ごとの一覧、今月のまとめ、連続記録でふりかえります。</li>
-            <li>必要に応じて、設定でリマインダー、ヘルスケア連携、写真アプリへの保存をオンにしたり（すべて初期設定はオフ）、バックアップを書き出したりできます。</li>
+      <ol class="steps">
+        <li><span>食事のときにアプリを開き、写真を撮るか、ライブラリから選びます（「写真から追加」ならまとめて記録できます）。</span></li>
+        <li><span>朝・昼・夜・間食は写真の時刻から自動で選ばれます。変えたいときはあとから直せます。</span></li>
+        <li><span>メニュー・カロリー・メモは、入れたいときだけ。写真をタップして、あとから書き足せます。</span></li>
+        <li><span>月カレンダーと日ごとの一覧、今月のまとめ、連続記録でふりかえります。</span></li>
+        <li><span>必要に応じて、設定でリマインダー、ヘルスケア連携、写真アプリへの保存をオンにしたり（すべて初期設定はオフ）、バックアップを書き出したりできます。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>App Storeで無料で提供されており、広告もアカウント登録もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>App Storeで無料で提供されており、広告もアカウント登録もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>記録は端末の中に保存されます。ヘルスケアへの書き込みは、オンにしたときだけで、ヘルスケアのデータを読み取ることはありません。アカウントも広告もありません。アプリ自体がAIサービスに送信することはなく、AIに相談する場合は、ご自身で写真と相談文をお使いのAIアプリに渡します。写真のひとことは、Apple Intelligence対応のiPhoneの中だけで作成されます。最新の情報はApp Storeのプライバシー表示をご確認ください。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>ごはんスナップは無料ですか？</summary>
+          <p>はい。広告もアカウントもなく無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>カロリー計算や栄養の分析はできますか？</summary>
+          <p>アプリが計算することはありません。カロリーは自分で入れるメモで、その日の合計は入れた分だけの合計です。カロリーを推定したり、目標値を決めたり、食事を良い・悪いで判定したりしません。ダイエットコーチではなく「記録」のアプリです。</p>
+        </details>
+        <details>
+          <summary>食事のデータはどこに保存されますか？</summary>
+          <p>端末の中です。記録は端末内に保存され、ヘルスケアへの書き込みはオンにしたときだけです。アカウントもありません。記録と写真は、バックアップファイルとして書き出すこともできます。</p>
+        </details>
+        <details>
+          <summary>AIは入っていますか？</summary>
+          <p>アプリ自体がAIサービスに送信することはありません。Apple Intelligence対応のiPhoneでは、写真に端末内で作るひとことが付きます。また、相談内容を選んで、写真と相談文をChatGPTやClaudeなどお使いのAIアプリに渡すこともできます。</p>
+        </details>
+        <details>
+          <summary>食事はどうやって記録しますか？</summary>
+          <p>カメラで撮るか、ライブラリから写真を選びます。時刻は写真の撮影時刻で入り、朝・昼・夜・間食も自動で選ばれます。メニュー・カロリー・メモは、入れたいときにあとから足せます。写真なしでの記録もできます。</p>
+        </details>
+        <details>
+          <summary>続けるための仕組みはありますか？</summary>
+          <p>ゆるやかにあります。連続記録と今月のまとめが見られ、朝・昼・夜のリマインダー（初期設定はオフ）とホーム画面ウィジェットも使えます。</p>
+        </details>
+        <details>
+          <summary>英語など、日本語以外でも使えますか？</summary>
+          <p>はい。日本語、英語をはじめ20以上の言語に対応しています。最新の対応言語はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>ヘルスケアと連携できますか？</summary>
+          <p>任意で連携できます。オンにすると、入力したカロリーだけをヘルスケアの「食事エネルギー」に書き込みます。ヘルスケアのデータは読み取らず、初期設定はオフです。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>記録は端末の中に保存されます。ヘルスケアへの書き込みは、オンにしたときだけで、ヘルスケアのデータを読み取ることはありません。アカウントも広告もありません。アプリ自体がAIサービスに送信することはなく、AIに相談する場合は、ご自身で写真と相談文をお使いのAIアプリに渡します。写真のひとことは、Apple Intelligence対応のiPhoneの中だけで作成されます。最新の情報はApp Storeのプライバシー表示をご確認ください。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c0/3e/4f/c03e4f13-4496-824c-a72b-ba03c4eb748b/01-home.png/320x480bb.jpg" alt="ごはんスナップ のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/cb/df/36cbdfc9-1085-6f21-e067-bea54ae63e16/02-day.png/320x480bb.jpg" alt="ごはんスナップ のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0d/8a/4a/0d8a4ad3-cea6-61ac-4402-35bd70e70bad/03-myitems.png/320x480bb.jpg" alt="ごはんスナップ のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3c/77/36/3c7736e6-4058-91b7-9efa-b134e125d169/04-caption.png/320x480bb.jpg" alt="ごはんスナップ のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9d/a3/98/9da39857-467f-c625-d0ad-e8610ea05bd9/05-import.png/320x480bb.jpg" alt="ごはんスナップ のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/photo-day/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/4f/dd/444fdd0a-a5ef-6137-1c93-c0b8d302b620/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>1枚かざる - 1日1枚の写真日記</h3><p>1日1枚の写真日記。子どもの成長や家族、ペット、旅行の思い出をカレンダーに残し、フレームモードで飾って見返せます。</p></span></a>
+        <a class="related-card" href="/apps/mute-video-before-share/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/31/26/62/3126628d-786f-294f-5828-7e5e67ea8829/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>動画の音消し</h3><p>動画の音を消してから共有。ワンタップでミュートした無音コピーを作成し、一部だけピー音にすることも。画質劣化ゼロ・透かしなし。</p></span></a>
+        <a class="related-card" href="/apps/undocam/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/b0/0c/b6b00c26-cd26-398e-53e7-ecf9ba70a63e/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>動画の逆再生 - UndoCam</h3><p>動画を音ごと逆再生。逆再生したい部分を選んで、巻き戻しクリップを作り、そのまま保存・共有できるiPhoneアプリです。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>ごはんスナップは無料ですか？</summary>
-            <p>はい。広告もアカウントもなく無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>カロリー計算や栄養の分析はできますか？</summary>
-            <p>アプリが計算することはありません。カロリーは自分で入れるメモで、その日の合計は入れた分だけの合計です。カロリーを推定したり、目標値を決めたり、食事を良い・悪いで判定したりしません。ダイエットコーチではなく「記録」のアプリです。</p>
-          </details>
-          <details>
-            <summary>食事のデータはどこに保存されますか？</summary>
-            <p>端末の中です。記録は端末内に保存され、ヘルスケアへの書き込みはオンにしたときだけです。アカウントもありません。記録と写真は、バックアップファイルとして書き出すこともできます。</p>
-          </details>
-          <details>
-            <summary>AIは入っていますか？</summary>
-            <p>アプリ自体がAIサービスに送信することはありません。Apple Intelligence対応のiPhoneでは、写真に端末内で作るひとことが付きます。また、相談内容を選んで、写真と相談文をChatGPTやClaudeなどお使いのAIアプリに渡すこともできます。</p>
-          </details>
-          <details>
-            <summary>食事はどうやって記録しますか？</summary>
-            <p>カメラで撮るか、ライブラリから写真を選びます。時刻は写真の撮影時刻で入り、朝・昼・夜・間食も自動で選ばれます。メニュー・カロリー・メモは、入れたいときにあとから足せます。写真なしでの記録もできます。</p>
-          </details>
-          <details>
-            <summary>続けるための仕組みはありますか？</summary>
-            <p>ゆるやかにあります。連続記録と今月のまとめが見られ、朝・昼・夜のリマインダー（初期設定はオフ）とホーム画面ウィジェットも使えます。</p>
-          </details>
-          <details>
-            <summary>英語など、日本語以外でも使えますか？</summary>
-            <p>はい。日本語、英語をはじめ20以上の言語に対応しています。最新の対応言語はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>ヘルスケアと連携できますか？</summary>
-            <p>任意で連携できます。オンにすると、入力したカロリーだけをヘルスケアの「食事エネルギー」に書き込みます。ヘルスケアのデータは読み取らず、初期設定はオフです。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/food-photo-diary-gohansnap/id6789844298?uo=4">ごはんスナップ をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/food-photo-diary-gohansnap/id6789844298?uo=4">ごはんスナップ をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-18</p>
     </section>
   </main>

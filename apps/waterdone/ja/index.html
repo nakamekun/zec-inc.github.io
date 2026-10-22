@@ -112,6 +112,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "タップ記録ツール",
+          "item": "https://zec-inc.jp/apps/tap-tools/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "水飲んだ？ - 水分補給の記録・リマインダー",
+          "item": "https://zec-inc.jp/apps/waterdone/ja/"
+        }
+      ]
     }
   ]
 }
@@ -133,7 +162,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li aria-current="page">水飲んだ？ - 水分補給の記録・リマインダー</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ca/96/be/ca96be51-5eea-6cf0-c167-fc139ee8b0f0/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="水飲んだ？ - 水分補給の記録・リマインダー のアプリアイコン" width="96" height="96">
       <div>
@@ -143,114 +173,125 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/waterdone/id6763200921?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">2言語に対応</li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li class="chip chip-link"><a href="/apps/widgets/ja/">ウィジェット対応アプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b2/bd/7d/b2bd7db5-6f01-f133-b1dd-c7a5d4f7fdeb/iphone-01-home.png/320x480bb.jpg" alt="水飲んだ？ - 水分補給の記録・リマインダー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c3/38/44/c338445d-48fd-839c-f623-e1ccd05b6ea5/iphone-02-widget.png/320x480bb.jpg" alt="水飲んだ？ - 水分補給の記録・リマインダー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2d/4a/9f/2d4a9f7c-17f6-b599-a54e-4fd88bd6d4a8/iphone-03-calendar.png/320x480bb.jpg" alt="水飲んだ？ - 水分補給の記録・リマインダー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0a/af/29/0aaf2975-8313-df4f-48bf-c66c77932602/iphone-04-settings.png/320x480bb.jpg" alt="水飲んだ？ - 水分補給の記録・リマインダー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1f/30/da/1f30dae3-aeeb-20af-9292-450569348a94/iphone-05-pro.png/320x480bb.jpg" alt="水飲んだ？ - 水分補給の記録・リマインダー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>「水飲んだ？」（WaterDone）は、のどが乾く前に飲む習慣をいちばん軽く続けるためのアプリです。飲んだら「飲んだよ」をタップするだけ。量は入力しません。目標は「何ml」でも「何回」でもなく、「最後に飲んでから、決めた時間以内にまた飲む」というリズム。しずくの水位が時間とともに乾いていき、飲むとまた満ちます。「そろそろ飲もう」のひとことで、いまのうるおいがわかります。</p>
-          <p>ホームでは、しずくの周りのリングと「次に飲むまでの時間」が確認でき、今日の記録は1本の流れ（タイムライン）で見られます。ロック画面・ホーム画面のウィジェットから、アプリを開かずに1タップで記録でき、間違えて押してもすぐ取り消せます。続いた日数と、毎日の記録を残すカレンダーもあります。</p>
-          <p>乾く前にそっとお知らせします。間隔（2〜4時間）とお知らせする時間帯はあなたが決められ、おやすみ時間や1日の通知回数の上限も設定できます。通知なしでも使えます。任意で、飲んだ記録をAppleヘルスケアにも残せます。アカウント不要で、記録は端末の中に保存されます。このアプリは医療上の助言を行うものではなく、必要な水分量を計算するものでもありません。</p>
+      <p class="lead-para">「水飲んだ？」（WaterDone）は、のどが乾く前に飲む習慣をいちばん軽く続けるためのアプリです。飲んだら「飲んだよ」をタップするだけ。量は入力しません。目標は「何ml」でも「何回」でもなく、「最後に飲んでから、決めた時間以内にまた飲む」というリズム。しずくの水位が時間とともに乾いていき、飲むとまた満ちます。「そろそろ飲もう」のひとことで、いまのうるおいがわかります。</p>
+      <p>ホームでは、しずくの周りのリングと「次に飲むまでの時間」が確認でき、今日の記録は1本の流れ（タイムライン）で見られます。ロック画面・ホーム画面のウィジェットから、アプリを開かずに1タップで記録でき、間違えて押してもすぐ取り消せます。続いた日数と、毎日の記録を残すカレンダーもあります。</p>
+      <p>乾く前にそっとお知らせします。間隔（2〜4時間）とお知らせする時間帯はあなたが決められ、おやすみ時間や1日の通知回数の上限も設定できます。通知なしでも使えます。任意で、飲んだ記録をAppleヘルスケアにも残せます。アカウント不要で、記録は端末の中に保存されます。このアプリは医療上の助言を行うものではなく、必要な水分量を計算するものでもありません。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>量を入力したり、毎日の目標を追いかけたりせず、気軽に水分補給を記録したい方</li>
-            <li>つい水を飲み忘れてしまう、乾く前に知らせてほしいデスクワーカー</li>
-            <li>続いた日数や毎日の記録のカレンダーで、習慣づくりを楽しみたい方</li>
-            <li>ロック画面やホーム画面のウィジェットから、アプリを開かずにサッと記録したい方</li>
-            <li>アカウント不要・クラウド同期なしのアプリを好む方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>ワンタップで記録。ロック画面・ホーム画面のウィジェットからアプリを開かずに記録できる</li>
-            <li>時間とともに乾き、飲むと満ちるしずくと、いまの状態を伝えるひとこと</li>
-            <li>ホームに次に飲むまでの時間とリングを表示。今日の記録は1本のタイムラインで確認</li>
-            <li>乾く前のお知らせ：間隔（2〜4時間）と時間帯を選べ、おやすみ時間や1日の通知回数の上限も設定可能</li>
-            <li>間違えて押してもワンタップで取り消し</li>
-            <li>続いた日数と、毎日の記録を残すカレンダー</li>
-            <li>Appleヘルスケアへの記録（任意）</li>
-            <li>量の入力も1日の目標もなし。アカウント不要で、記録はすべて端末の中に保存</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>ワンタップで記録</strong>。ロック画面・ホーム画面のウィジェットからアプリを開かずに記録できる</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>時間とともに乾き</strong>、飲むと満ちるしずくと、いまの状態を伝えるひとこと</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ホームに次に飲むまでの時間とリングを表示。今日の記録は1本のタイムラインで確認</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>乾く前のお知らせ</strong>：間隔（2〜4時間）と時間帯を選べ、おやすみ時間や1日の通知回数の上限も設定可能</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>間違えて押してもワンタップで取り消し</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>続いた日数と</strong>、毎日の記録を残すカレンダー</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Appleヘルスケアへの記録（任意）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>量の入力も1日の目標もなし</strong>。アカウント不要で、記録はすべて端末の中に保存</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>量を入力したり、毎日の目標を追いかけたりせず、気軽に水分補給を記録したい方</li>
+        <li>つい水を飲み忘れてしまう、乾く前に知らせてほしいデスクワーカー</li>
+        <li>続いた日数や毎日の記録のカレンダーで、習慣づくりを楽しみたい方</li>
+        <li>ロック画面やホーム画面のウィジェットから、アプリを開かずにサッと記録したい方</li>
+        <li>アカウント不要・クラウド同期なしのアプリを好む方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>「水飲んだ？」を開くか、ロック画面・ホーム画面のウィジェットから、飲んだらワンタップで記録します。</li>
-            <li>ホームで、次に飲むまでの時間と、いまのうるおいを確認します。</li>
-            <li>間違えて押したら、ワンタップで取り消します。</li>
-            <li>今日のタイムラインで記録を確認し、カレンダーで過去の日や続いた日数を見返します。</li>
-            <li>設定でお知らせの間隔（2〜4時間）、時間帯、1日の通知回数の上限を決めます。通知なしでも使えます。</li>
-            <li>必要なら、Appleヘルスケアへの記録をオンにします。</li>
+      <ol class="steps">
+        <li><span>「水飲んだ？」を開くか、ロック画面・ホーム画面のウィジェットから、飲んだらワンタップで記録します。</span></li>
+        <li><span>ホームで、次に飲むまでの時間と、いまのうるおいを確認します。</span></li>
+        <li><span>間違えて押したら、ワンタップで取り消します。</span></li>
+        <li><span>今日のタイムラインで記録を確認し、カレンダーで過去の日や続いた日数を見返します。</span></li>
+        <li><span>設定でお知らせの間隔（2〜4時間）、時間帯、1日の通知回数の上限を決めます。通知なしでも使えます。</span></li>
+        <li><span>必要なら、Appleヘルスケアへの記録をオンにします。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>無料でダウンロードでき、ストアの説明にアプリ内課金の記載はありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>無料でダウンロードでき、ストアの説明にアプリ内課金の記載はありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>水分の記録、リマインダー設定、ウィジェットの状態はすべて端末内に保存されます。アカウント不要で、解析・広告・トラッキング・外部サーバーへの保存はありません。ウィジェットとのデータ共有は端末内のApp Groupで行われ、通知は設定したお知らせにのみ使われます。Appleヘルスケアへの記録は任意で、初期設定はオフです。オンにした場合も、飲んだ記録を「水分」へ書き込むだけで、ヘルスケアのデータを読み取ることはありません。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>「水飲んだ？」は無料ですか？</summary>
+          <p>はい。無料でダウンロードでき、ストアの説明にアプリ内課金の記載はありません。最新の情報はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>記録はどこに保存されますか？</summary>
+          <p>端末内に保存されます。記録、お知らせの設定、ウィジェットの状態はすべて端末の中だけで、アカウント不要、解析や外部サーバーへの保存もありません。</p>
+        </details>
+        <details>
+          <summary>ウィジェットはありますか？</summary>
+          <p>はい。ロック画面・ホーム画面のウィジェットから、アプリを開かずにワンタップで記録できます。</p>
+        </details>
+        <details>
+          <summary>水を飲むのをリマインドしてもらえますか？</summary>
+          <p>はい。乾く前にそっとお知らせします。間隔（2〜4時間）と時間帯を決められ、おやすみ時間や1日の通知回数の上限も設定できます。通知なしでも問題なく使えます。</p>
+        </details>
+        <details>
+          <summary>必要な水分量を計算してくれますか？</summary>
+          <p>いいえ。量の入力も1日の目標もなく、「決めた時間以内にまた飲む」というリズムを続けるためのアプリです。医療上の助言ではなく、必要な水分量の計算はあえて行いません。</p>
+        </details>
+        <details>
+          <summary>間違えて押してしまったら？</summary>
+          <p>ワンタップですぐ取り消せます。</p>
+        </details>
+        <details>
+          <summary>Appleヘルスケアと連携できますか？</summary>
+          <p>任意で連携できます。初期設定はオフで、オンにすると飲んだ記録を「水分」に書き込みます。ヘルスケアのデータを読み取ることはありません。</p>
+        </details>
+        <details>
+          <summary>オフラインでも使えますか？</summary>
+          <p>はい。記録と履歴は端末内に保存され、アカウントや外部サーバーへの保存もないため、インターネット接続がなくても記録・確認できます。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>水分の記録、リマインダー設定、ウィジェットの状態はすべて端末内に保存されます。アカウント不要で、解析・広告・トラッキング・外部サーバーへの保存はありません。ウィジェットとのデータ共有は端末内のApp Groupで行われ、通知は設定したお知らせにのみ使われます。Appleヘルスケアへの記録は任意で、初期設定はオフです。オンにした場合も、飲んだ記録を「水分」へ書き込むだけで、ヘルスケアのデータを読み取ることはありません。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b2/bd/7d/b2bd7db5-6f01-f133-b1dd-c7a5d4f7fdeb/iphone-01-home.png/320x480bb.jpg" alt="水飲んだ？ - 水分補給の記録・リマインダー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c3/38/44/c338445d-48fd-839c-f623-e1ccd05b6ea5/iphone-02-widget.png/320x480bb.jpg" alt="水飲んだ？ - 水分補給の記録・リマインダー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2d/4a/9f/2d4a9f7c-17f6-b599-a54e-4fd88bd6d4a8/iphone-03-calendar.png/320x480bb.jpg" alt="水飲んだ？ - 水分補給の記録・リマインダー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0a/af/29/0aaf2975-8313-df4f-48bf-c66c77932602/iphone-04-settings.png/320x480bb.jpg" alt="水飲んだ？ - 水分補給の記録・リマインダー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1f/30/da/1f30dae3-aeeb-20af-9292-450569348a94/iphone-05-pro.png/320x480bb.jpg" alt="水飲んだ？ - 水分補給の記録・リマインダー のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>「水飲んだ？」は無料ですか？</summary>
-            <p>はい。無料でダウンロードでき、ストアの説明にアプリ内課金の記載はありません。最新の情報はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>記録はどこに保存されますか？</summary>
-            <p>端末内に保存されます。記録、お知らせの設定、ウィジェットの状態はすべて端末の中だけで、アカウント不要、解析や外部サーバーへの保存もありません。</p>
-          </details>
-          <details>
-            <summary>ウィジェットはありますか？</summary>
-            <p>はい。ロック画面・ホーム画面のウィジェットから、アプリを開かずにワンタップで記録できます。</p>
-          </details>
-          <details>
-            <summary>水を飲むのをリマインドしてもらえますか？</summary>
-            <p>はい。乾く前にそっとお知らせします。間隔（2〜4時間）と時間帯を決められ、おやすみ時間や1日の通知回数の上限も設定できます。通知なしでも問題なく使えます。</p>
-          </details>
-          <details>
-            <summary>必要な水分量を計算してくれますか？</summary>
-            <p>いいえ。量の入力も1日の目標もなく、「決めた時間以内にまた飲む」というリズムを続けるためのアプリです。医療上の助言ではなく、必要な水分量の計算はあえて行いません。</p>
-          </details>
-          <details>
-            <summary>間違えて押してしまったら？</summary>
-            <p>ワンタップですぐ取り消せます。</p>
-          </details>
-          <details>
-            <summary>Appleヘルスケアと連携できますか？</summary>
-            <p>任意で連携できます。初期設定はオフで、オンにすると飲んだ記録を「水分」に書き込みます。ヘルスケアのデータを読み取ることはありません。</p>
-          </details>
-          <details>
-            <summary>オフラインでも使えますか？</summary>
-            <p>はい。記録と履歴は端末内に保存され、アカウントや外部サーバーへの保存もないため、インターネット接続がなくても記録・確認できます。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/waterdone/id6763200921?uo=4">水飲んだ？ - 水分補給の記録・リマインダー をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/waterdone/id6763200921?uo=4">水飲んだ？ - 水分補給の記録・リマインダー をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

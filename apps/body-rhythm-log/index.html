@@ -96,6 +96,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tap Tools",
+          "item": "https://zec-inc.jp/apps/tap-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Body Rhythm Log",
+          "item": "https://zec-inc.jp/apps/body-rhythm-log/"
+        }
+      ]
     }
   ]
 }
@@ -117,7 +146,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">Body Rhythm Log</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/58/83/ee5883e8-20bb-1fe2-3831-5473d2909c1c/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="Body Rhythm Log app icon" width="96" height="96">
       <div>
@@ -127,100 +157,111 @@
           <a class="button primary" href="https://apps.apple.com/us/app/body-rhythm-log/id6762504100?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li><li class="chip chip-link"><a href="/apps/productivity/">Productivity Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/f3/c2/0cf3c27f-7f17-0bd9-ad6a-b977e2fc8532/iphone-01-home.png/320x480bb.jpg" alt="Body Rhythm Log screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/17/15/c9/1715c963-61ab-4b26-6f44-4f7c41e4243d/iphone-02-calendar.png/320x480bb.jpg" alt="Body Rhythm Log screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Body Rhythm Log is a simple and private way to track your personal patterns. No streaks. No pressure. Just log events with a single tap, view your history in a clean calendar, and stay aware of your own rhythm over time. There is no account to create and no complicated setup.</p>
-          <p>Your log is among the most personal records you can keep, so Body Rhythm Log is built local-first: your entries are stored on your device, not on a server. A privacy lock overlay with local authentication helps keep the log for your eyes only, and optional reminder notifications use discreet wording that does not reveal what you are tracking.</p>
-          <p>The app stays intentionally simple, with minimal design and no distractions. It is a personal log, not a medical tool, and it offers no diagnosis, predictions, or health advice.</p>
+      <p class="lead-para">Body Rhythm Log is a simple and private way to track your personal patterns. No streaks. No pressure. Just log events with a single tap, view your history in a clean calendar, and stay aware of your own rhythm over time. There is no account to create and no complicated setup.</p>
+      <p>Your log is among the most personal records you can keep, so Body Rhythm Log is built local-first: your entries are stored on your device, not on a server. A privacy lock overlay with local authentication helps keep the log for your eyes only, and optional reminder notifications use discreet wording that does not reveal what you are tracking.</p>
+      <p>The app stays intentionally simple, with minimal design and no distractions. It is a personal log, not a medical tool, and it offers no diagnosis, predictions, or health advice.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who want a lightweight, private way to track personal body rhythms</li>
-            <li>Users who prefer records that stay on their own device rather than in a cloud service</li>
-            <li>Anyone who wants a simple calendar view of personal events without a full health platform</li>
-            <li>People who want gentle, discreet reminders to keep their log up to date</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Log events with a single tap</li>
-            <li>View your history in a clean calendar</li>
-            <li>Optional local reminder notifications with discreet wording</li>
-            <li>Privacy lock overlay using local authentication</li>
-            <li>Local-first storage: entries are kept on your device</li>
-            <li>No account, no streaks, no pressure; minimal design with no distractions</li>
-            <li>In-app text is in English</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Log events with a single tap</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>View your history in a clean calendar</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Optional local reminder notifications with discreet wording</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Privacy lock overlay using local authentication</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Local-first storage</strong>: entries are kept on your device</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>No account</strong>, no streaks, no pressure; minimal design with no distractions</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>In-app text is in English</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who want a lightweight, private way to track personal body rhythms</li>
+        <li>Users who prefer records that stay on their own device rather than in a cloud service</li>
+        <li>Anyone who wants a simple calendar view of personal events without a full health platform</li>
+        <li>People who want gentle, discreet reminders to keep their log up to date</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open the app and add a rhythm event when it happens</li>
-            <li>Review your entries on the calendar and in your history</li>
-            <li>Turn on local reminders in Settings if you want a gentle nudge</li>
-            <li>Enable the privacy lock to keep the log behind local authentication</li>
-            <li>Keep logging over time to see your own pattern at a glance</li>
+      <ol class="steps">
+        <li><span>Open the app and add a rhythm event when it happens</span></li>
+        <li><span>Review your entries on the calendar and in your history</span></li>
+        <li><span>Turn on local reminders in Settings if you want a gentle nudge</span></li>
+        <li><span>Enable the privacy lock to keep the log behind local authentication</span></li>
+        <li><span>Keep logging over time to see your own pattern at a glance</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>Body Rhythm Log is free to download on the App Store. App Store pricing and availability can change, so check the store listing for the latest details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>Body Rhythm Log is free to download on the App Store. App Store pricing and availability can change, so check the store listing for the latest details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Body Rhythm Log is designed local-first: your entries are stored on your device and there is no account to create. Reminder notifications use discreet wording that does not reveal the contents of your log. For full details, see the privacy policy and the App Store privacy label.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is Body Rhythm Log free?</summary>
+          <p>Yes. The app is free to download. Check the App Store listing for current pricing details.</p>
+        </details>
+        <details>
+          <summary>Where is my data stored?</summary>
+          <p>Entries are stored locally on your device. The app is designed local-first, with no account and no cloud sync.</p>
+        </details>
+        <details>
+          <summary>Can I lock the app so others cannot see my log?</summary>
+          <p>Yes. Body Rhythm Log includes a privacy lock overlay that uses local authentication to keep your entries private.</p>
+        </details>
+        <details>
+          <summary>Will notifications reveal what I am tracking?</summary>
+          <p>No. Reminder notifications use discreet wording, such as noting that a little time has passed since your last log, without revealing any content.</p>
+        </details>
+        <details>
+          <summary>Is this a medical or cycle-prediction app?</summary>
+          <p>No. Body Rhythm Log is a personal record-keeping tool only. It does not provide medical advice, diagnosis, or predictions.</p>
+        </details>
+        <details>
+          <summary>Does it work offline?</summary>
+          <p>Yes. The app stores everything locally, so recording and reviewing entries does not require an internet connection.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Body Rhythm Log is designed local-first: your entries are stored on your device and there is no account to create. Reminder notifications use discreet wording that does not reveal the contents of your log. For full details, see the privacy policy and the App Store privacy label.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/f3/c2/0cf3c27f-7f17-0bd9-ad6a-b977e2fc8532/iphone-01-home.png/320x480bb.jpg" alt="Body Rhythm Log screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/17/15/c9/1715c963-61ab-4b26-6f44-4f7c41e4243d/iphone-02-calendar.png/320x480bb.jpg" alt="Body Rhythm Log screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is Body Rhythm Log free?</summary>
-            <p>Yes. The app is free to download. Check the App Store listing for current pricing details.</p>
-          </details>
-          <details>
-            <summary>Where is my data stored?</summary>
-            <p>Entries are stored locally on your device. The app is designed local-first, with no account and no cloud sync.</p>
-          </details>
-          <details>
-            <summary>Can I lock the app so others cannot see my log?</summary>
-            <p>Yes. Body Rhythm Log includes a privacy lock overlay that uses local authentication to keep your entries private.</p>
-          </details>
-          <details>
-            <summary>Will notifications reveal what I am tracking?</summary>
-            <p>No. Reminder notifications use discreet wording, such as noting that a little time has passed since your last log, without revealing any content.</p>
-          </details>
-          <details>
-            <summary>Is this a medical or cycle-prediction app?</summary>
-            <p>No. Body Rhythm Log is a personal record-keeping tool only. It does not provide medical advice, diagnosis, or predictions.</p>
-          </details>
-          <details>
-            <summary>Does it work offline?</summary>
-            <p>Yes. The app stores everything locally, so recording and reviewing entries does not require an internet connection.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/body-rhythm-log/id6762504100?uo=4">Open Body Rhythm Log on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/body-rhythm-log/id6762504100?uo=4">Open Body Rhythm Log on the App Store</a>
       <p class="meta">Last updated: 2026-04-21</p>
     </section>
   </main>

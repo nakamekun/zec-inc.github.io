@@ -112,6 +112,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tap Tools",
+          "item": "https://zec-inc.jp/apps/tap-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "WaterDone",
+          "item": "https://zec-inc.jp/apps/waterdone/"
+        }
+      ]
     }
   ]
 }
@@ -133,7 +162,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">WaterDone</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ca/96/be/ca96be51-5eea-6cf0-c167-fc139ee8b0f0/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="WaterDone app icon" width="96" height="96">
       <div>
@@ -143,114 +173,125 @@
           <a class="button primary" href="https://apps.apple.com/us/app/waterdone/id6763200921?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">2 languages</li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li><li class="chip chip-link"><a href="/apps/widgets/">Widget-Friendly Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8e/da/62/8eda6296-636f-c9f5-e4cd-0170175135f4/iphone-01-home.png/320x480bb.jpg" alt="WaterDone screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/d5/84/16d5840d-c697-e80d-2ca0-010b7adf6485/iphone-02-widget.png/320x480bb.jpg" alt="WaterDone screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d1/f5/f2/d1f5f2c9-4480-9b90-109b-2f228e85ce82/iphone-03-calendar.png/320x480bb.jpg" alt="WaterDone screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/40/51/c740517b-d851-65e1-5834-2d3eb403db87/iphone-04-settings.png/320x480bb.jpg" alt="WaterDone screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/d3/1e/5fd31e61-626d-a027-5cc6-2ec628c2d80a/iphone-05-pro.png/320x480bb.jpg" alt="WaterDone screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>WaterDone is the lightest way to keep sipping before you get thirsty. Had a sip? Tap once. There are no amounts to type and no daily target — the goal is a rhythm: another sip within the interval you choose. A little drop dries out as time passes and fills up when you drink, and a gentle word tells you how you are doing, like &quot;Hydrated&quot; or &quot;Time for a sip&quot;.</p>
-          <p>The home screen shows when your next sip is due, with a ring around the drop, and today&#x27;s sips appear on a single timeline. You can log with one tap from a Lock Screen or Home Screen widget without opening the app, and undo a mistaken tap in one tap. A streak and a simple calendar keep every sip on record.</p>
-          <p>A gentle nudge arrives before you dry out. You pick the interval (2–4 hours) and the hours it can reach you, with quiet hours and a daily reminder cap, and the app works fine with notifications off too. Optionally, WaterDone can log each sip to Apple Health. No account is required and your logs stay on your device. WaterDone is not medical advice and does not calculate how much water you need.</p>
+      <p class="lead-para">WaterDone is the lightest way to keep sipping before you get thirsty. Had a sip? Tap once. There are no amounts to type and no daily target — the goal is a rhythm: another sip within the interval you choose. A little drop dries out as time passes and fills up when you drink, and a gentle word tells you how you are doing, like &quot;Hydrated&quot; or &quot;Time for a sip&quot;.</p>
+      <p>The home screen shows when your next sip is due, with a ring around the drop, and today&#x27;s sips appear on a single timeline. You can log with one tap from a Lock Screen or Home Screen widget without opening the app, and undo a mistaken tap in one tap. A streak and a simple calendar keep every sip on record.</p>
+      <p>A gentle nudge arrives before you dry out. You pick the interval (2–4 hours) and the hours it can reach you, with quiet hours and a daily reminder cap, and the app works fine with notifications off too. Optionally, WaterDone can log each sip to Apple Health. No account is required and your logs stay on your device. WaterDone is not medical advice and does not calculate how much water you need.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who want a simple water log without typing amounts or chasing a daily target</li>
-            <li>Desk workers who forget to drink and want a gentle reminder before they dry out</li>
-            <li>Habit builders who like a streak and a simple calendar of every sip</li>
-            <li>Anyone who wants to log from the Lock Screen or Home Screen widget without opening the app</li>
-            <li>Users who prefer apps with no account and no cloud sync</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>One-tap logging, including from a Lock Screen or Home Screen widget without opening the app</li>
-            <li>A drop that dries out over time and fills when you drink, with a gentle status word</li>
-            <li>Next sip due time and a ring on the home screen, plus today&#x27;s sips on a single timeline</li>
-            <li>A gentle reminder before you dry out: choose the interval (2–4 hours) and the hours it can reach you, with quiet hours and a daily reminder cap</li>
-            <li>Undo a mistaken tap in one tap</li>
-            <li>A streak and a simple calendar of every sip</li>
-            <li>Optional logging to Apple Health</li>
-            <li>No amounts to type and no daily target; no account, everything stays on your device</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>One-tap logging</strong>, including from a Lock Screen or Home Screen widget without opening the app</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A drop that dries out over time and fills when you drink, with a gentle status word</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Next sip due time and a ring on the home screen, plus today&#x27;s sips on a single timeline</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>A gentle reminder before you dry out</strong>: choose the interval (2–4 hours) and the hours it can reach you, with quiet hours and a daily reminder cap</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Undo a mistaken tap in one tap</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A streak and a simple calendar of every sip</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Optional logging to Apple Health</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No amounts to type and no daily target; no account, everything stays on your device</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who want a simple water log without typing amounts or chasing a daily target</li>
+        <li>Desk workers who forget to drink and want a gentle reminder before they dry out</li>
+        <li>Habit builders who like a streak and a simple calendar of every sip</li>
+        <li>Anyone who wants to log from the Lock Screen or Home Screen widget without opening the app</li>
+        <li>Users who prefer apps with no account and no cloud sync</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open WaterDone, or use the Lock Screen or Home Screen widget, and tap once when you have a sip.</li>
-            <li>Check on the home screen when your next sip is due and how hydrated you are.</li>
-            <li>Tapped by mistake? Undo it in one tap.</li>
-            <li>Open today&#x27;s timeline to see your sips, and the calendar to see past days and your streak.</li>
-            <li>Choose your reminder interval (2–4 hours), the hours it can reach you, and the daily cap in settings, or leave notifications off.</li>
-            <li>Optionally turn on logging to Apple Health.</li>
+      <ol class="steps">
+        <li><span>Open WaterDone, or use the Lock Screen or Home Screen widget, and tap once when you have a sip.</span></li>
+        <li><span>Check on the home screen when your next sip is due and how hydrated you are.</span></li>
+        <li><span>Tapped by mistake? Undo it in one tap.</span></li>
+        <li><span>Open today&#x27;s timeline to see your sips, and the calendar to see past days and your streak.</span></li>
+        <li><span>Choose your reminder interval (2–4 hours), the hours it can reach you, and the daily cap in settings, or leave notifications off.</span></li>
+        <li><span>Optionally turn on logging to Apple Health.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>WaterDone is free to download, and the live store listing mentions no in-app purchases. App Store pricing and availability can change, so check the store listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>WaterDone is free to download, and the live store listing mentions no in-app purchases. App Store pricing and availability can change, so check the store listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Water logs, reminder preferences, and widget state are stored locally on your device. No account is required, and no analytics, ads, tracking, or external server storage are used. When you use the widget, the latest log state is shared between the app and widget through a local App Group container on the device. Notifications are optional and used only for the reminders you configure. Apple Health logging is optional and off by default; when you turn it on, WaterDone only writes your sips to Water and never reads Health data.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is WaterDone free?</summary>
+          <p>Yes. It is free to download, and the store listing mentions no in-app purchases. App Store pricing can change, so check the listing for current details.</p>
+        </details>
+        <details>
+          <summary>Where are my water logs stored?</summary>
+          <p>On your device. WaterDone stores logs, reminder preferences, and widget state locally, with no account, no analytics, and no external server storage.</p>
+        </details>
+        <details>
+          <summary>Does WaterDone have a widget?</summary>
+          <p>Yes. You can log a sip with one tap from a Lock Screen or Home Screen widget without opening the app.</p>
+        </details>
+        <details>
+          <summary>Can it remind me to drink water?</summary>
+          <p>Yes. A gentle nudge arrives before you dry out. You choose the interval (2–4 hours) and the hours it can reach you, and you can set quiet hours and a daily reminder cap. The app works fine without notifications if you prefer.</p>
+        </details>
+        <details>
+          <summary>Does it calculate how much water I should drink?</summary>
+          <p>No. There are no amounts to type and no daily target. WaterDone is a lightweight rhythm tracker, not medical advice — it deliberately does not calculate how much water you need.</p>
+        </details>
+        <details>
+          <summary>What if I tapped by mistake?</summary>
+          <p>You can undo it in one tap.</p>
+        </details>
+        <details>
+          <summary>Does it connect to Apple Health?</summary>
+          <p>Optionally. Logging to Apple Health is off by default; when you turn it on, WaterDone writes each sip to Water and never reads your Health data.</p>
+        </details>
+        <details>
+          <summary>Does it work offline?</summary>
+          <p>Logs and history are stored on your device and WaterDone has no account or external server storage, so you can log and review your history without an internet connection.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Water logs, reminder preferences, and widget state are stored locally on your device. No account is required, and no analytics, ads, tracking, or external server storage are used. When you use the widget, the latest log state is shared between the app and widget through a local App Group container on the device. Notifications are optional and used only for the reminders you configure. Apple Health logging is optional and off by default; when you turn it on, WaterDone only writes your sips to Water and never reads Health data.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8e/da/62/8eda6296-636f-c9f5-e4cd-0170175135f4/iphone-01-home.png/320x480bb.jpg" alt="WaterDone screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/d5/84/16d5840d-c697-e80d-2ca0-010b7adf6485/iphone-02-widget.png/320x480bb.jpg" alt="WaterDone screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d1/f5/f2/d1f5f2c9-4480-9b90-109b-2f228e85ce82/iphone-03-calendar.png/320x480bb.jpg" alt="WaterDone screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/40/51/c740517b-d851-65e1-5834-2d3eb403db87/iphone-04-settings.png/320x480bb.jpg" alt="WaterDone screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/d3/1e/5fd31e61-626d-a027-5cc6-2ec628c2d80a/iphone-05-pro.png/320x480bb.jpg" alt="WaterDone screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is WaterDone free?</summary>
-            <p>Yes. It is free to download, and the store listing mentions no in-app purchases. App Store pricing can change, so check the listing for current details.</p>
-          </details>
-          <details>
-            <summary>Where are my water logs stored?</summary>
-            <p>On your device. WaterDone stores logs, reminder preferences, and widget state locally, with no account, no analytics, and no external server storage.</p>
-          </details>
-          <details>
-            <summary>Does WaterDone have a widget?</summary>
-            <p>Yes. You can log a sip with one tap from a Lock Screen or Home Screen widget without opening the app.</p>
-          </details>
-          <details>
-            <summary>Can it remind me to drink water?</summary>
-            <p>Yes. A gentle nudge arrives before you dry out. You choose the interval (2–4 hours) and the hours it can reach you, and you can set quiet hours and a daily reminder cap. The app works fine without notifications if you prefer.</p>
-          </details>
-          <details>
-            <summary>Does it calculate how much water I should drink?</summary>
-            <p>No. There are no amounts to type and no daily target. WaterDone is a lightweight rhythm tracker, not medical advice — it deliberately does not calculate how much water you need.</p>
-          </details>
-          <details>
-            <summary>What if I tapped by mistake?</summary>
-            <p>You can undo it in one tap.</p>
-          </details>
-          <details>
-            <summary>Does it connect to Apple Health?</summary>
-            <p>Optionally. Logging to Apple Health is off by default; when you turn it on, WaterDone writes each sip to Water and never reads your Health data.</p>
-          </details>
-          <details>
-            <summary>Does it work offline?</summary>
-            <p>Logs and history are stored on your device and WaterDone has no account or external server storage, so you can log and review your history without an internet connection.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/waterdone/id6763200921?uo=4">Open WaterDone on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/waterdone/id6763200921?uo=4">Open WaterDone on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

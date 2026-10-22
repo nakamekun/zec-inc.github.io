@@ -107,6 +107,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tap Tools",
+          "item": "https://zec-inc.jp/apps/tap-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "ExifOff: Remove Photo Location",
+          "item": "https://zec-inc.jp/apps/exifoff/"
+        }
+      ]
     }
   ]
 }
@@ -131,7 +160,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">ExifOff: Remove Photo Location</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/21/89/822189d9-2163-7736-34a3-f237e278e90d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="ExifOff: Remove Photo Location app icon" width="96" height="96">
       <div>
@@ -141,108 +171,119 @@
           <a class="button primary" href="https://apps.apple.com/us/app/exifoff-remove-photo-location/id6789844259?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">22 languages</li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li><li class="chip chip-link"><a href="/apps/photo-memory/">Photo and Memory Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3f/26/49/3f2649ed-94c7-7e8b-d547-7dc597c37cf4/01.png/320x480bb.jpg" alt="ExifOff: Remove Photo Location screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ab/9c/44/ab9c4477-6b8a-fd18-30f1-9a624f0f5f23/02.png/320x480bb.jpg" alt="ExifOff: Remove Photo Location screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/fd/89/46fd891a-b5b9-b1ca-f2bd-5587860664a3/03.png/320x480bb.jpg" alt="ExifOff: Remove Photo Location screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6e/58/a9/6e58a9a9-f577-1aef-e71b-7bee917f22c3/04.png/320x480bb.jpg" alt="ExifOff: Remove Photo Location screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/5a/24/5f5a249a-e44a-c0be-d15a-551a2c7f9827/ipad-01.png/360x480bb.jpg" alt="ExifOff: Remove Photo Location screenshot" width="360" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>ExifOff checks what a photo reveals and creates a clean copy for safer sharing. Pick a photo to see whether it contains location data (and where it was taken, on a map), along with basics like date taken, camera, image size, original file type, and file size - then create a new copy with the metadata removed before you post or send it. HEIC, PNG, and JPEG keep their original format; only the photo info is removed.</p>
-          <p>It is a single-purpose privacy tool, not a photo editor or a full EXIF browser: it shows only the fields that matter for a sharing decision, and it never edits or deletes your originals. Everything runs on your device with no account, no upload, and no tracking. It is free, with no ads and no subscription.</p>
-          <p>You can clean up to 50 photos at once, and even clean straight from the share sheet - share photos from Photos or another app to ExifOff and share the copies right away. It also works on iPad and in Shortcuts.</p>
+      <p class="lead-para">ExifOff checks what a photo reveals and creates a clean copy for safer sharing. Pick a photo to see whether it contains location data (and where it was taken, on a map), along with basics like date taken, camera, image size, original file type, and file size - then create a new copy with the metadata removed before you post or send it. HEIC, PNG, and JPEG keep their original format; only the photo info is removed.</p>
+      <p>It is a single-purpose privacy tool, not a photo editor or a full EXIF browser: it shows only the fields that matter for a sharing decision, and it never edits or deletes your originals. Everything runs on your device with no account, no upload, and no tracking. It is free, with no ads and no subscription.</p>
+      <p>You can clean up to 50 photos at once, and even clean straight from the share sheet - share photos from Photos or another app to ExifOff and share the copies right away. It also works on iPad and in Shortcuts.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>Anyone posting photos to social media who doesn&#x27;t want to reveal where they were taken</li>
-            <li>People selling items online who share photos taken at home</li>
-            <li>Parents sharing kids&#x27; photos and worried about embedded location data</li>
-            <li>Users sending photos to strangers via marketplaces, forums, or chat apps</li>
-            <li>Privacy-conscious users who want metadata stripped on-device, not by a web service</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>See whether location (GPS) data is found in a photo, and see where it was taken on a map</li>
-            <li>Check key metadata: date taken, camera, image size, original file type, and file size</li>
-            <li>Create a copy without the metadata - HEIC, PNG, and JPEG keep their original format, and originals stay untouched</li>
-            <li>Clean up to 50 photos at once, then save or share them together</li>
-            <li>Clean straight from the share sheet: share photos from Photos or another app and share the copies right away</li>
-            <li>Works on iPad and in Shortcuts</li>
-            <li>Everything runs on your device - no account, no upload, no tracking; free, with no ads and no subscription</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>See whether location (GPS) data is found in a photo, and see where it was taken on a map</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Check key metadata</strong>: date taken, camera, image size, original file type, and file size</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Create a copy without the metadata</strong> - HEIC, PNG, and JPEG keep their original format, and originals stay untouched</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Clean up to 50 photos at once, then save or share them together</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Clean straight from the share sheet</strong>: share photos from Photos or another app and share the copies right away</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Works on iPad and in Shortcuts</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Everything runs on your device</strong> - no account, no upload, no tracking; free, with no ads and no subscription</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>Anyone posting photos to social media who doesn&#x27;t want to reveal where they were taken</li>
+        <li>People selling items online who share photos taken at home</li>
+        <li>Parents sharing kids&#x27; photos and worried about embedded location data</li>
+        <li>Users sending photos to strangers via marketplaces, forums, or chat apps</li>
+        <li>Privacy-conscious users who want metadata stripped on-device, not by a web service</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open ExifOff and pick a photo (or select up to 50 at once).</li>
-            <li>Review what the photo reveals: whether location data was found (and where it was taken on a map), plus date taken, camera, size, and file type.</li>
-            <li>Tap to create a clean copy - a new file without the source metadata, in the original format.</li>
-            <li>Save the clean copy or share it straight from the app.</li>
-            <li>Alternatively, share photos to ExifOff from the share sheet of Photos or another app and share the copies right away.</li>
+      <ol class="steps">
+        <li><span>Open ExifOff and pick a photo (or select up to 50 at once).</span></li>
+        <li><span>Review what the photo reveals: whether location data was found (and where it was taken on a map), plus date taken, camera, size, and file type.</span></li>
+        <li><span>Tap to create a clean copy - a new file without the source metadata, in the original format.</span></li>
+        <li><span>Save the clean copy or share it straight from the app.</span></li>
+        <li><span>Alternatively, share photos to ExifOff from the share sheet of Photos or another app and share the copies right away.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>ExifOff is free on the App Store, with no ads and no subscription. App Store pricing and availability can change, so check the store listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>ExifOff is free on the App Store, with no ads and no subscription. App Store pricing and availability can change, so check the store listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>All processing happens on your device - photos are never uploaded, and there is no account and no tracking. ExifOff creates new clean copies for sharing; it does not edit or delete your original photos. See the App Store privacy label for the current details.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is ExifOff free?</summary>
+          <p>Yes. The app is free with no ads and no subscription. App Store pricing can change, so check the listing for current details.</p>
+        </details>
+        <details>
+          <summary>Are my photos uploaded to a server?</summary>
+          <p>No. Metadata checking and cleaning run entirely on your device. There is no account, no upload, and no tracking.</p>
+        </details>
+        <details>
+          <summary>Does it delete or change my original photos?</summary>
+          <p>No. ExifOff always creates a new copy for saving or sharing. Your originals are never edited or deleted.</p>
+        </details>
+        <details>
+          <summary>What metadata does it remove?</summary>
+          <p>The new copy is created without the source photo&#x27;s metadata, including location data. HEIC, PNG, and JPEG keep their original format. Before cleaning, the app shows whether location data was found (and where it was taken on a map) plus the date taken, camera, size, and file type.</p>
+        </details>
+        <details>
+          <summary>Can I clean multiple photos at once?</summary>
+          <p>Yes. You can clean up to 50 photos in one go, then save or share them together.</p>
+        </details>
+        <details>
+          <summary>Can I use it without opening the app?</summary>
+          <p>Yes. Share photos from Photos or another app to ExifOff via the share sheet and share the copies right away. It also works in Shortcuts.</p>
+        </details>
+        <details>
+          <summary>Why should I remove EXIF data before sharing?</summary>
+          <p>Photos can carry embedded location coordinates and other details about when and how they were taken. Stripping that metadata before posting or sending prevents strangers from learning where a photo was taken.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>All processing happens on your device - photos are never uploaded, and there is no account and no tracking. ExifOff creates new clean copies for sharing; it does not edit or delete your original photos. See the App Store privacy label for the current details.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3f/26/49/3f2649ed-94c7-7e8b-d547-7dc597c37cf4/01.png/320x480bb.jpg" alt="ExifOff: Remove Photo Location screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ab/9c/44/ab9c4477-6b8a-fd18-30f1-9a624f0f5f23/02.png/320x480bb.jpg" alt="ExifOff: Remove Photo Location screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/fd/89/46fd891a-b5b9-b1ca-f2bd-5587860664a3/03.png/320x480bb.jpg" alt="ExifOff: Remove Photo Location screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6e/58/a9/6e58a9a9-f577-1aef-e71b-7bee917f22c3/04.png/320x480bb.jpg" alt="ExifOff: Remove Photo Location screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/5a/24/5f5a249a-e44a-c0be-d15a-551a2c7f9827/ipad-01.png/360x480bb.jpg" alt="ExifOff: Remove Photo Location screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is ExifOff free?</summary>
-            <p>Yes. The app is free with no ads and no subscription. App Store pricing can change, so check the listing for current details.</p>
-          </details>
-          <details>
-            <summary>Are my photos uploaded to a server?</summary>
-            <p>No. Metadata checking and cleaning run entirely on your device. There is no account, no upload, and no tracking.</p>
-          </details>
-          <details>
-            <summary>Does it delete or change my original photos?</summary>
-            <p>No. ExifOff always creates a new copy for saving or sharing. Your originals are never edited or deleted.</p>
-          </details>
-          <details>
-            <summary>What metadata does it remove?</summary>
-            <p>The new copy is created without the source photo&#x27;s metadata, including location data. HEIC, PNG, and JPEG keep their original format. Before cleaning, the app shows whether location data was found (and where it was taken on a map) plus the date taken, camera, size, and file type.</p>
-          </details>
-          <details>
-            <summary>Can I clean multiple photos at once?</summary>
-            <p>Yes. You can clean up to 50 photos in one go, then save or share them together.</p>
-          </details>
-          <details>
-            <summary>Can I use it without opening the app?</summary>
-            <p>Yes. Share photos from Photos or another app to ExifOff via the share sheet and share the copies right away. It also works in Shortcuts.</p>
-          </details>
-          <details>
-            <summary>Why should I remove EXIF data before sharing?</summary>
-            <p>Photos can carry embedded location coordinates and other details about when and how they were taken. Stripping that metadata before posting or sending prevents strangers from learning where a photo was taken.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/exifoff-remove-photo-location/id6789844259?uo=4">Open ExifOff: Remove Photo Location on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/exifoff-remove-photo-location/id6789844259?uo=4">Open ExifOff: Remove Photo Location on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

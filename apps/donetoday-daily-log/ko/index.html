@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/34/29/1834290f-84b0-155f-af6a-b108f78bec07/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.9.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "앱",
+          "item": "https://zec-inc.jp/apps/ko/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "DoneToday: 하루 한 가지 습관",
+          "item": "https://zec-inc.jp/apps/donetoday-daily-log/ko/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/">홈</a></li><li><a href="/apps/ko/">앱</a></li><li aria-current="page">DoneToday: 하루 한 가지 습관</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/34/29/1834290f-84b0-155f-af6a-b108f78bec07/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="DoneToday: 하루 한 가지 습관 앱 아이콘" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/kr/app/donetoday-daily-log/id6761447413?uo=4">App Store에서 보기</a>
           <a class="button" href="/apps/ko/">ZEC 앱 목록</a>
         </div>
+        <ul class="chips" aria-label="한눈에 보기"><li class="chip">무료 다운로드</li><li class="chip">iPhone·iPad</li><li class="chip">9개 언어 지원</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="스크린샷">
+      <h2 class="visually-hidden">스크린샷</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/69/10/4f691084-aa58-50b1-ad09-f360dfba61e7/iphone-01-home.png/320x480bb.jpg" alt="DoneToday: 하루 한 가지 습관 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/41/dd/2a/41dd2a62-de24-c801-9c7f-ab50b1ff0423/iphone-02-done.png/320x480bb.jpg" alt="DoneToday: 하루 한 가지 습관 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/59/8b/e5/598be5bc-0131-9d78-29ef-965759512d63/iphone-03-calendar.png/320x480bb.jpg" alt="DoneToday: 하루 한 가지 습관 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/7d/4f/b07d4f77-4d99-6ec5-7ca6-6eacbe8af25e/iphone-04-first-run.png/320x480bb.jpg" alt="DoneToday: 하루 한 가지 습관 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/9c/39/d49c3945-dc03-7e40-fe99-1a3cd70d4c61/iphone-05-settings.png/320x480bb.jpg" alt="DoneToday: 하루 한 가지 습관 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>소개</h2>
-          <p>DoneToday는 홈 화면, 잠금 화면, 제어 센터, Apple Watch에서 앱을 열지 않고 매일 한 가지를 탭 한 번으로 완료하는 기록 앱이에요.</p>
-          <p>할 일 목록도 계획도 필요 없어요. 나의 한 가지를 정하고, 해낸 날 &#x27;완료&#x27;를 누르면 연속 일수와 달력이 채워집니다.</p>
-          <p>- 할 일은 하나, 탭 한 번으로 완료 - 현재 연속 일수, 최고 기록, 월간 달력 - 홈 화면 위젯의 &#x27;완료&#x27; 버튼과 최근 7일 기록 - 잠금 화면 위젯과 제어 센터 (iOS 18) - Siri와 단축어: 오늘 완료하기, 오늘 상태·연속 일수 확인 - 완료한 날은 울리지 않는 선택형 리마인더 - 어제 기록을 잊었다면 달력에서 나중에 표시 - 새 할 일을 시작해도 이전 기록은 &#x27;지난 할 일&#x27;에 남아요 - 완료한 뒤 한 줄 메모로 오늘 해낸 일을 남기기 - 백업 파일로 내보내고 새 iPhone에서 복원</p>
+      <p class="lead-para">DoneToday는 홈 화면, 잠금 화면, 제어 센터, Apple Watch에서 앱을 열지 않고 매일 한 가지를 탭 한 번으로 완료하는 기록 앱이에요.</p>
+      <p>할 일 목록도 계획도 필요 없어요. 나의 한 가지를 정하고, 해낸 날 &#x27;완료&#x27;를 누르면 연속 일수와 달력이 채워집니다.</p>
+      <p>- 할 일은 하나, 탭 한 번으로 완료 - 현재 연속 일수, 최고 기록, 월간 달력 - 홈 화면 위젯의 &#x27;완료&#x27; 버튼과 최근 7일 기록 - 잠금 화면 위젯과 제어 센터 (iOS 18) - Siri와 단축어: 오늘 완료하기, 오늘 상태·연속 일수 확인 - 완료한 날은 울리지 않는 선택형 리마인더 - 어제 기록을 잊었다면 달력에서 나중에 표시 - 새 할 일을 시작해도 이전 기록은 &#x27;지난 할 일&#x27;에 남아요 - 완료한 뒤 한 줄 메모로 오늘 해낸 일을 남기기 - 백업 파일로 내보내고 새 iPhone에서 복원</p>
     </section>
 
-    <section class="section">
-      <h2>스크린샷</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/69/10/4f691084-aa58-50b1-ad09-f360dfba61e7/iphone-01-home.png/320x480bb.jpg" alt="DoneToday: 하루 한 가지 습관 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/41/dd/2a/41dd2a62-de24-c801-9c7f-ab50b1ff0423/iphone-02-done.png/320x480bb.jpg" alt="DoneToday: 하루 한 가지 습관 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/59/8b/e5/598be5bc-0131-9d78-29ef-965759512d63/iphone-03-calendar.png/320x480bb.jpg" alt="DoneToday: 하루 한 가지 습관 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/7d/4f/b07d4f77-4d99-6ec5-7ca6-6eacbe8af25e/iphone-04-first-run.png/320x480bb.jpg" alt="DoneToday: 하루 한 가지 습관 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/9c/39/d49c3945-dc03-7e40-fe99-1a3cd70d4c61/iphone-05-settings.png/320x480bb.jpg" alt="DoneToday: 하루 한 가지 습관 스크린샷" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>가격 및 개인정보</h2>
       <p>가격, 앱 내 구입, 최신 개인정보 처리 정보는 App Store 페이지에서 확인해 주세요. 이 페이지의 소개 문구는 App Store의 앱 설명에서 가져왔습니다.</p>
-      <p><a class="button primary" href="https://apps.apple.com/kr/app/donetoday-daily-log/id6761447413?uo=4">App Store에서 DoneToday: 하루 한 가지 습관 열기</a></p>
+      <a class="button primary big" href="https://apps.apple.com/kr/app/donetoday-daily-log/id6761447413?uo=4">App Store에서 DoneToday: 하루 한 가지 습관 열기</a>
       <p class="meta">최종 업데이트: 2026-10-21</p>
     </section>
   </main>

@@ -112,6 +112,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "旅行のアプリ",
+          "item": "https://zec-inc.jp/apps/travel/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "忘れ物チェック・持ち物リスト Packed",
+          "item": "https://zec-inc.jp/apps/packed/ja/"
+        }
+      ]
     }
   ]
 }
@@ -133,7 +162,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/travel/ja/">旅行のアプリ</a></li><li aria-current="page">忘れ物チェック・持ち物リスト Packed</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/bd/d2/dbbdd28b-532f-37bc-c671-ed10601d8936/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="忘れ物チェック・持ち物リスト Packed のアプリアイコン" width="96" height="96">
       <div>
@@ -143,111 +173,122 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/packed-daily-packing-list/id6762812333?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">2言語に対応</li><li class="chip chip-link"><a href="/apps/travel/ja/">旅行のアプリ</a></li><li class="chip chip-link"><a href="/apps/widgets/ja/">ウィジェット対応アプリ</a></li><li class="chip chip-link"><a href="/apps/family/ja/">家族向けアプリ</a></li><li class="chip chip-link"><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e0/aa/40/e0aa40a3-ed03-d19b-cb52-d7658b08a529/01-iphone-widget.png/320x480bb.jpg" alt="忘れ物チェック・持ち物リスト Packed のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/11/35/3611351e-e74e-56e4-cf84-f3722e3c8a4b/02-iphone-home.png/320x480bb.jpg" alt="忘れ物チェック・持ち物リスト Packed のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/5c/8c/aa5c8c46-6099-4f2a-760b-af41b136b407/03-iphone-detail.png/320x480bb.jpg" alt="忘れ物チェック・持ち物リスト Packed のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ac/fc/a8/acfca880-a391-d91c-7527-c96c0df7efae/04-iphone-notification.png/320x480bb.jpg" alt="忘れ物チェック・持ち物リスト Packed のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1b/64/9b/1b649bdf-1dd4-c186-f956-ddeed463e6b5/05-iphone-templates.png/320x480bb.jpg" alt="忘れ物チェック・持ち物リスト Packed のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>Packedは、毎朝の「鍵、持った？財布は？」を玄関で3秒で終わらせる忘れ物チェックです。通勤・通学・ジムなど、毎日くり返す持ち物をグループにしておけば、出かける前にチェックするだけ。ホーム画面のウィジェットから、アプリを開かずにチェックできます。</p>
-          <p>チェックは毎日自動でリセットされるので、外す手間もありません。汎用のタスク管理アプリとは違い、持ち物の準備に絞った作りで、旅行や出張の前の確認にも使えます。</p>
+      <p class="lead-para">Packedは、毎朝の「鍵、持った？財布は？」を玄関で3秒で終わらせる忘れ物チェックです。通勤・通学・ジムなど、毎日くり返す持ち物をグループにしておけば、出かける前にチェックするだけ。ホーム画面のウィジェットから、アプリを開かずにチェックできます。</p>
+      <p>チェックは毎日自動でリセットされるので、外す手間もありません。汎用のタスク管理アプリとは違い、持ち物の準備に絞った作りで、旅行や出張の前の確認にも使えます。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>毎朝「鍵、持った？財布は？」と気になる方</li>
-            <li>毎日同じかばんで通勤・通学・ジムに出かける方</li>
-            <li>学校や習いごと、おでかけの持ち物を準備するご家庭</li>
-            <li>旅行や出張の持ち物リストをすぐ用意したい方</li>
-            <li>大きな生産性アプリではなく、持ち物専用のシンプルな道具を好む方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>ウィジェットから持ち物をチェック。「すべて準備」もワンタップ</li>
-            <li>テンプレートからすぐ始められる（通勤・通学・ジム・旅行（1泊）・出張・通院・防災。持ち物は一般的な例で、自由に変えられます）</li>
-            <li>グループごとに曜日と時刻を決めて通知（平日は通勤、月水金はジムなど）</li>
-            <li>持ち物の並べ替え、数量（×2など）、ひとことメモ</li>
-            <li>グループはいくつでも作れます</li>
-            <li>次の日になると、自動で「未準備」に戻ります</li>
-            <li>アカウント登録・広告・サブスクなし。リストは端末の中に保存</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ウィジェットから持ち物をチェック。「すべて準備」もワンタップ</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>テンプレートからすぐ始められる（通勤・通学・ジム・旅行（1泊）・出張・通院・防災。持ち物は一般的な例で、自由に変えられます）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>グループごとに曜日と時刻を決めて通知（平日は通勤、月水金はジムなど）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>持ち物の並べ替え</strong>、数量（×2など）、ひとことメモ</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>グループはいくつでも作れます</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>次の日になると</strong>、自動で「未準備」に戻ります</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>アカウント登録・広告・サブスクなし。リストは端末の中に保存</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>毎朝「鍵、持った？財布は？」と気になる方</li>
+        <li>毎日同じかばんで通勤・通学・ジムに出かける方</li>
+        <li>学校や習いごと、おでかけの持ち物を準備するご家庭</li>
+        <li>旅行や出張の持ち物リストをすぐ用意したい方</li>
+        <li>大きな生産性アプリではなく、持ち物専用のシンプルな道具を好む方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>通勤・通学・ジムなど、くり返す用事ごとにグループを作ります。テンプレートから始めることもできます。</li>
-            <li>持ち物を編集し、必要なら数量やひとことメモを加えます。</li>
-            <li>出かける曜日と時刻に通知を設定し、ホーム画面にウィジェットを追加します。</li>
-            <li>出かける前に、ウィジェットやアプリから持ち物をチェックするか、「すべて準備」をワンタップします。</li>
-            <li>翌日になると、チェックは自動でリセットされ、次の外出に備えられます。</li>
+      <ol class="steps">
+        <li><span>通勤・通学・ジムなど、くり返す用事ごとにグループを作ります。テンプレートから始めることもできます。</span></li>
+        <li><span>持ち物を編集し、必要なら数量やひとことメモを加えます。</span></li>
+        <li><span>出かける曜日と時刻に通知を設定し、ホーム画面にウィジェットを追加します。</span></li>
+        <li><span>出かける前に、ウィジェットやアプリから持ち物をチェックするか、「すべて準備」をワンタップします。</span></li>
+        <li><span>翌日になると、チェックは自動でリセットされ、次の外出に備えられます。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>ダウンロードは無料です。App Storeの説明では、広告もサブスクリプションもありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>ダウンロードは無料です。App Storeの説明では、広告もサブスクリプションもありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>アカウント登録は不要で、広告もありません。リストは端末の中に保存され、外部のサーバーには送りません。通知は端末内で行われます。最新のプライバシーラベルはApp Storeでご確認ください。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>Packedは何のためのアプリですか？</summary>
+          <p>通勤・通学・ジムや旅行の必需品がそろっているかを、玄関でサッと確認して忘れ物を防ぐためのアプリです。</p>
+        </details>
+        <details>
+          <summary>普通のToDoアプリと何が違いますか？</summary>
+          <p>幅広いタスクやプロジェクトの管理ではなく、持ち物の準備と確認に特化しています。その分、開いてすぐ確認が済みます。</p>
+        </details>
+        <details>
+          <summary>家族でも使えますか？</summary>
+          <p>はい。家族のおでかけ、学校のかばん、子どもの持ち物など、くり返しの準備に向いています。</p>
+        </details>
+        <details>
+          <summary>チェックを毎日外す必要はありますか？</summary>
+          <p>ありません。チェックは次の日に自動でリセットされるので、リストはそのまま使えます。</p>
+        </details>
+        <details>
+          <summary>ウィジェットに対応していますか？</summary>
+          <p>はい。ホーム画面のウィジェットから、アプリを開かずに持ち物をチェックでき、グループ全体をワンタップで準備済みにもできます。</p>
+        </details>
+        <details>
+          <summary>通知は使えますか？</summary>
+          <p>はい。グループごとに曜日と時刻を決めて通知できます（平日は通勤、月水金はジムなど）。</p>
+        </details>
+        <details>
+          <summary>アカウントは必要ですか？データは外部に送られますか？</summary>
+          <p>アカウント登録は不要です。リストは端末の中に保存され、外部のサーバーには送りません。</p>
+        </details>
+        <details>
+          <summary>公式のダウンロードリンクはどこですか？</summary>
+          <p>このページのApp Storeリンクから、Packedの公式ページを開けます。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>アカウント登録は不要で、広告もありません。リストは端末の中に保存され、外部のサーバーには送りません。通知は端末内で行われます。最新のプライバシーラベルはApp Storeでご確認ください。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e0/aa/40/e0aa40a3-ed03-d19b-cb52-d7658b08a529/01-iphone-widget.png/320x480bb.jpg" alt="忘れ物チェック・持ち物リスト Packed のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/11/35/3611351e-e74e-56e4-cf84-f3722e3c8a4b/02-iphone-home.png/320x480bb.jpg" alt="忘れ物チェック・持ち物リスト Packed のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/5c/8c/aa5c8c46-6099-4f2a-760b-af41b136b407/03-iphone-detail.png/320x480bb.jpg" alt="忘れ物チェック・持ち物リスト Packed のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ac/fc/a8/acfca880-a391-d91c-7527-c96c0df7efae/04-iphone-notification.png/320x480bb.jpg" alt="忘れ物チェック・持ち物リスト Packed のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1b/64/9b/1b649bdf-1dd4-c186-f956-ddeed463e6b5/05-iphone-templates.png/320x480bb.jpg" alt="忘れ物チェック・持ち物リスト Packed のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/hong-kong-phrase-card/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/0c/cb/990ccbe1-f5ec-ef23-38cb-2959c4eb2f27/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>香港フレーズカード</h3><p>香港旅行で使える160の広東語フレーズをオフライン収録。繁体字を大きく表示して相手に見せるか、読み上げで伝えられる旅行会話カードです。</p></span></a>
+        <a class="related-card" href="/apps/korean-travel-phrase-card/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/36/9b/58369b4b-1172-fbab-9915-087f7bb1e571/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>韓国旅行フレーズカード</h3><p>韓国旅行で使える106の韓国語フレーズをオフライン収録。ハングルを大きく見せるだけの指さし会話カードで、音声再生にも対応。</p></span></a>
+        <a class="related-card" href="/apps/study-buddy-timer/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Study Buddy：勉強タイマー</h3><p>勉強した時間で、ゆるいバディが育つ勉強タイマー。ワンタップで開始・停止、予定、ポモドーロ、ウィジェット、ふたりで使うペアにも対応。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>Packedは何のためのアプリですか？</summary>
-            <p>通勤・通学・ジムや旅行の必需品がそろっているかを、玄関でサッと確認して忘れ物を防ぐためのアプリです。</p>
-          </details>
-          <details>
-            <summary>普通のToDoアプリと何が違いますか？</summary>
-            <p>幅広いタスクやプロジェクトの管理ではなく、持ち物の準備と確認に特化しています。その分、開いてすぐ確認が済みます。</p>
-          </details>
-          <details>
-            <summary>家族でも使えますか？</summary>
-            <p>はい。家族のおでかけ、学校のかばん、子どもの持ち物など、くり返しの準備に向いています。</p>
-          </details>
-          <details>
-            <summary>チェックを毎日外す必要はありますか？</summary>
-            <p>ありません。チェックは次の日に自動でリセットされるので、リストはそのまま使えます。</p>
-          </details>
-          <details>
-            <summary>ウィジェットに対応していますか？</summary>
-            <p>はい。ホーム画面のウィジェットから、アプリを開かずに持ち物をチェックでき、グループ全体をワンタップで準備済みにもできます。</p>
-          </details>
-          <details>
-            <summary>通知は使えますか？</summary>
-            <p>はい。グループごとに曜日と時刻を決めて通知できます（平日は通勤、月水金はジムなど）。</p>
-          </details>
-          <details>
-            <summary>アカウントは必要ですか？データは外部に送られますか？</summary>
-            <p>アカウント登録は不要です。リストは端末の中に保存され、外部のサーバーには送りません。</p>
-          </details>
-          <details>
-            <summary>公式のダウンロードリンクはどこですか？</summary>
-            <p>このページのApp Storeリンクから、Packedの公式ページを開けます。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/packed-daily-packing-list/id6762812333?uo=4">忘れ物チェック・持ち物リスト Packed をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/packed-daily-packing-list/id6762812333?uo=4">忘れ物チェック・持ち物リスト Packed をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

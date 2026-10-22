@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c7/f9/49/c7f94995-d42b-9492-eca3-7a4eee10eb5e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.7.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "App",
+          "item": "https://zec-inc.jp/apps/zh-hant/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "動物遮臉 - 照片可愛打碼",
+          "item": "https://zec-inc.jp/apps/cute-privacy-stamp/zh-hant/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/">首頁</a></li><li><a href="/apps/zh-hant/">App</a></li><li aria-current="page">動物遮臉 - 照片可愛打碼</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c7/f9/49/c7f94995-d42b-9492-eca3-7a4eee10eb5e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="動物遮臉 - 照片可愛打碼 的 App 圖示" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/tw/app/animal-face-hide-photo-mask/id6789844199?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hant/">ZEC App 一覽</a>
         </div>
+        <ul class="chips" aria-label="重點"><li class="chip">免費下載</li><li class="chip">iPhone 與 iPad</li><li class="chip">支援 22 種語言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截圖">
+      <h2 class="visually-hidden">截圖</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/34/3e/b5/343eb53e-f2be-5f64-7bf9-841faa64c1a7/01-faces.png/320x480bb.jpg" alt="動物遮臉 - 照片可愛打碼 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/33/39/c7/3339c75f-9335-9a53-a78d-c864e56adf2f/02-batch.png/320x480bb.jpg" alt="動物遮臉 - 照片可愛打碼 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/54/72/a1547230-2263-76c9-79ec-b40ee61d3863/03-pro.png/320x480bb.jpg" alt="動物遮臉 - 照片可愛打碼 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/82/12/f4/8212f475-9e99-072a-1542-e44c8fcec5df/04-headwear.png/320x480bb.jpg" alt="動物遮臉 - 照片可愛打碼 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/14/85/3114859c-e550-d56a-5052-d7cb3c86ac9e/05-cover.png/320x480bb.jpg" alt="動物遮臉 - 照片可愛打碼 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>簡介</h2>
-          <p>動物遮臉可以用可愛的動物貼圖遮住照片裡的臉。</p>
-          <p>打開照片，App 會找到每一張臉，自動貼上貓咪、小熊、兔子等動物。想露出哪張臉，點一下移除貼圖就好。把小孩的照片分享到社群、家庭相簿或幼兒園、學校群組之前，比起馬賽克和模糊，更能保留照片的氣氛，可愛又自然。</p>
-          <p>你可以： - 自動把臉變成動物：貓咪、小熊、兔子免費，開通 Pro 可用 15 種。「隨機」讓每張臉都是不同的動物 - 頭飾：貓耳朵、兔耳朵、熊耳朵、毛帽，戴在每個人頭上，臉部依然以霧面玻璃遮住 - 低調遮擋：融入背景、霧面玻璃、淡圓，名牌和地址可以用貼片蓋住 - 用手指移動、縮放、旋轉貼圖 - 找不到臉？也能手動貼上 - 還原一步或全部清除，都很簡單</p>
+      <p class="lead-para">動物遮臉可以用可愛的動物貼圖遮住照片裡的臉。</p>
+      <p>打開照片，App 會找到每一張臉，自動貼上貓咪、小熊、兔子等動物。想露出哪張臉，點一下移除貼圖就好。把小孩的照片分享到社群、家庭相簿或幼兒園、學校群組之前，比起馬賽克和模糊，更能保留照片的氣氛，可愛又自然。</p>
+      <p>你可以： - 自動把臉變成動物：貓咪、小熊、兔子免費，開通 Pro 可用 15 種。「隨機」讓每張臉都是不同的動物 - 頭飾：貓耳朵、兔耳朵、熊耳朵、毛帽，戴在每個人頭上，臉部依然以霧面玻璃遮住 - 低調遮擋：融入背景、霧面玻璃、淡圓，名牌和地址可以用貼片蓋住 - 用手指移動、縮放、旋轉貼圖 - 找不到臉？也能手動貼上 - 還原一步或全部清除，都很簡單</p>
     </section>
 
-    <section class="section">
-      <h2>截圖</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/34/3e/b5/343eb53e-f2be-5f64-7bf9-841faa64c1a7/01-faces.png/320x480bb.jpg" alt="動物遮臉 - 照片可愛打碼 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/33/39/c7/3339c75f-9335-9a53-a78d-c864e56adf2f/02-batch.png/320x480bb.jpg" alt="動物遮臉 - 照片可愛打碼 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/54/72/a1547230-2263-76c9-79ec-b40ee61d3863/03-pro.png/320x480bb.jpg" alt="動物遮臉 - 照片可愛打碼 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/82/12/f4/8212f475-9e99-072a-1542-e44c8fcec5df/04-headwear.png/320x480bb.jpg" alt="動物遮臉 - 照片可愛打碼 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/14/85/3114859c-e550-d56a-5052-d7cb3c86ac9e/05-cover.png/320x480bb.jpg" alt="動物遮臉 - 照片可愛打碼 的截圖" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>價格與隱私</h2>
       <p>價格、App 內購買與最新的隱私權資訊，請以 App Store 頁面為準。本頁的介紹文字取自 App Store 的 App 說明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/tw/app/animal-face-hide-photo-mask/id6789844199?uo=4">在 App Store 開啟 動物遮臉 - 照片可愛打碼</a></p>
+      <a class="button primary big" href="https://apps.apple.com/tw/app/animal-face-hide-photo-mask/id6789844199?uo=4">在 App Store 開啟 動物遮臉 - 照片可愛打碼</a>
       <p class="meta">最後更新: 2026-10-21</p>
     </section>
   </main>

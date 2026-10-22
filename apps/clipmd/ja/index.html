@@ -112,6 +112,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "仕事効率化アプリ",
+          "item": "https://zec-inc.jp/apps/productivity/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "ClipMD",
+          "item": "https://zec-inc.jp/apps/clipmd/ja/"
+        }
+      ]
     }
   ]
 }
@@ -133,7 +162,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li><li aria-current="page">ClipMD</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/91/2a/b3/912ab352-b2da-4ecd-bc59-c5cd2f52c4cd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="ClipMD のアプリアイコン" width="96" height="96">
       <div>
@@ -143,114 +173,125 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/clipmd/id6789844342?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">2言語に対応</li><li class="chip chip-link"><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4c/a8/d3/4ca8d336-b3a6-1633-9eee-5af144af76d9/01.png/320x480bb.jpg" alt="ClipMD のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c5/8b/8b/c58b8b3c-7950-fcb6-db38-5d9cafeb2c7e/02.png/320x480bb.jpg" alt="ClipMD のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c2/e4/0e/c2e40e19-0bc0-f9bf-cf3c-e39a48888d60/03.png/320x480bb.jpg" alt="ClipMD のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/10/73/d5/1073d50c-459c-b27c-fc28-a4df5ea9b2b8/04.png/320x480bb.jpg" alt="ClipMD のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/98/b1/5898b1d6-6c36-28fc-ce62-85a65ef16201/05.png/320x480bb.jpg" alt="ClipMD のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>ClipMDは、WebページやコピーしたテキストをきれいなMarkdownに変換し、端末内にクリップとして保存するアプリです。URLを貼り付けるか、共有シートからページをClipMDに送ると、記事本文を抽出して、見出し・箇条書き・リンクを保ったMarkdownに変換します。ノートアプリに貼り付けても、読み物のアーカイブとして残してもかまいません。</p>
-          <p>「あとで読む」サービスでもブラウザの代わりでもなく、クリップに特化した道具です。選んだフォルダやObsidianの保管庫へ.mdファイルで保存したり、要約と本文をまとめた「AI用」でコピーしたり、クリップを検索したり、ショートカットからURLやクリップボードを変換したりできます。アカウントもクラウド同期もテレメトリもなく、通信を行うのは、あなたが変換を指示したページを取得するときだけです。</p>
-          <p>Markdownでメモを取るすべての人のために。今クリップしておけば、あとでどこにでも貼り付けられます。</p>
+      <p class="lead-para">ClipMDは、WebページやコピーしたテキストをきれいなMarkdownに変換し、端末内にクリップとして保存するアプリです。URLを貼り付けるか、共有シートからページをClipMDに送ると、記事本文を抽出して、見出し・箇条書き・リンクを保ったMarkdownに変換します。ノートアプリに貼り付けても、読み物のアーカイブとして残してもかまいません。</p>
+      <p>「あとで読む」サービスでもブラウザの代わりでもなく、クリップに特化した道具です。選んだフォルダやObsidianの保管庫へ.mdファイルで保存したり、要約と本文をまとめた「AI用」でコピーしたり、クリップを検索したり、ショートカットからURLやクリップボードを変換したりできます。アカウントもクラウド同期もテレメトリもなく、通信を行うのは、あなたが変換を指示したページを取得するときだけです。</p>
+      <p>Markdownでメモを取るすべての人のために。今クリップしておけば、あとでどこにでも貼り付けられます。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>参考記事の抜粋を集めているライター・リサーチャーの方</li>
-            <li>メモやドキュメントをMarkdownで管理している開発者の方</li>
-            <li>ObsidianやBearなど、Markdownノートアプリに貼り付けるきれいなテキストがほしい方</li>
-            <li>Web記事のコピペで見出しや箇条書き、リンクが崩れるのにうんざりしている方</li>
-            <li>クリップを誰かのサーバーではなく手元に置いておきたい、プライバシー重視の方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>URLを貼り付けるだけでWebページをMarkdownに変換</li>
-            <li>Safariなどの共有シートから直接クリップ</li>
-            <li>コピーしたテキストのワンタップ変換</li>
-            <li>記事本文にフォーカスした抽出。見出し・箇条書き・リンクを保持</li>
-            <li>クリップ一覧と詳細表示から、コピー・共有・編集・削除が可能。タイトルと本文の検索にも対応</li>
-            <li>選んだフォルダやObsidianの保管庫へ.mdファイルで保存</li>
-            <li>要約と本文をまとめた「AI用」でコピー</li>
-            <li>ショートカットからURLやクリップボードをMarkdown化</li>
-            <li>クリップはすべて端末内に保存。通信は指定したページの取得のみ</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>URLを貼り付けるだけでWebページをMarkdownに変換</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Safariなどの共有シートから直接クリップ</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>コピーしたテキストのワンタップ変換</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>記事本文にフォーカスした抽出。見出し・箇条書き・リンクを保持</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>クリップ一覧と詳細表示から</strong>、コピー・共有・編集・削除が可能。タイトルと本文の検索にも対応</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>選んだフォルダやObsidianの保管庫へ.mdファイルで保存</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>要約と本文をまとめた「AI用」でコピー</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ショートカットからURLやクリップボードをMarkdown化</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>クリップはすべて端末内に保存。通信は指定したページの取得のみ</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>参考記事の抜粋を集めているライター・リサーチャーの方</li>
+        <li>メモやドキュメントをMarkdownで管理している開発者の方</li>
+        <li>ObsidianやBearなど、Markdownノートアプリに貼り付けるきれいなテキストがほしい方</li>
+        <li>Web記事のコピペで見出しや箇条書き、リンクが崩れるのにうんざりしている方</li>
+        <li>クリップを誰かのサーバーではなく手元に置いておきたい、プライバシー重視の方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>残しておきたいページを見つけたら、Safariの共有シートでClipMDを選ぶか、URLをコピーします。</li>
-            <li>アプリでURL（またはコピーしたテキスト）を貼り付けると、ClipMDが記事本文を抽出します。</li>
-            <li>生成されたMarkdownを確認します。見出し・箇条書き・リンクはそのまま残ります。</li>
-            <li>クリップとして保存し、必要なときにコピーや共有でノートアプリへ貼り付けます。</li>
-            <li>クリップは一覧から編集・削除できます。アーカイブは端末内に残り続けます。</li>
+      <ol class="steps">
+        <li><span>残しておきたいページを見つけたら、Safariの共有シートでClipMDを選ぶか、URLをコピーします。</span></li>
+        <li><span>アプリでURL（またはコピーしたテキスト）を貼り付けると、ClipMDが記事本文を抽出します。</span></li>
+        <li><span>生成されたMarkdownを確認します。見出し・箇条書き・リンクはそのまま残ります。</span></li>
+        <li><span>クリップとして保存し、必要なときにコピーや共有でノートアプリへ貼り付けます。</span></li>
+        <li><span>クリップは一覧から編集・削除できます。アーカイブは端末内に残り続けます。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>App Storeで無料で提供されており、広告はありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>App Storeで無料で提供されており、広告はありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>クリップ・タイトル・設定は端末内にのみ保存され、開発者や第三者にアップロードされることはありません。アカウント、アナリティクス、トラッキング、広告、クラッシュレポート、サードパーティSDKはいずれもなく、通信はあなたがURLを指定したときにそのページを直接取得するためだけに行われます。アプリを削除すると保存データもすべて削除されます。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>ClipMDは無料ですか？</summary>
+          <p>はい。広告なしで無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>クリップはどこに保存されますか？</summary>
+          <p>端末内だけです（共有エクステンションと共用するApp Group領域を含みます）。開発者や第三者にアップロードされることはなく、アプリを削除すると保存データもすべて消えます。.mdファイルをフォルダに保存した場合、そのファイルはあなたが選んだ場所に残ります。</p>
+        </details>
+        <details>
+          <summary>インターネット通信は行いますか？</summary>
+          <p>URLの変換を指示したときだけです。指定されたページをそのサイトから直接取得するのみで、それ以外の通信やテレメトリはありません。</p>
+        </details>
+        <details>
+          <summary>Safariからクリップできますか？</summary>
+          <p>できます。Safariや他のアプリの共有シートでClipMDを選ぶと、そのページがMarkdownに変換されます。</p>
+        </details>
+        <details>
+          <summary>ページのどこがMarkdownに残りますか？</summary>
+          <p>記事本文を抽出し、見出し・箇条書き・リンクといった構造を保ちます。そのため、Markdown対応のノートアプリにきれいに貼り付けられます。</p>
+        </details>
+        <details>
+          <summary>デバイス間で同期できますか？</summary>
+          <p>同期機能はありません。クラウドもアカウントもなく、クリップは保存した端末の中にあります。別の場所に移したいときは、クリップをコピー・共有するか、.mdファイルとして保存してください。</p>
+        </details>
+        <details>
+          <summary>保存したクリップを編集できますか？</summary>
+          <p>できます。クリップ一覧から、コピー・共有・編集・削除ができます。タイトルと本文での検索にも対応しています。</p>
+        </details>
+        <details>
+          <summary>ObsidianやAIツール、ショートカットと使えますか？</summary>
+          <p>はい。選んだフォルダやObsidianの保管庫へ.mdファイルで保存でき、要約と本文をまとめた「AI用」でコピーできます。ショートカットからURLやクリップボードを変換することもできます。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>クリップ・タイトル・設定は端末内にのみ保存され、開発者や第三者にアップロードされることはありません。アカウント、アナリティクス、トラッキング、広告、クラッシュレポート、サードパーティSDKはいずれもなく、通信はあなたがURLを指定したときにそのページを直接取得するためだけに行われます。アプリを削除すると保存データもすべて削除されます。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4c/a8/d3/4ca8d336-b3a6-1633-9eee-5af144af76d9/01.png/320x480bb.jpg" alt="ClipMD のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c5/8b/8b/c58b8b3c-7950-fcb6-db38-5d9cafeb2c7e/02.png/320x480bb.jpg" alt="ClipMD のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c2/e4/0e/c2e40e19-0bc0-f9bf-cf3c-e39a48888d60/03.png/320x480bb.jpg" alt="ClipMD のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/10/73/d5/1073d50c-459c-b27c-fc28-a4df5ea9b2b8/04.png/320x480bb.jpg" alt="ClipMD のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/98/b1/5898b1d6-6c36-28fc-ce62-85a65ef16201/05.png/320x480bb.jpg" alt="ClipMD のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>大きな文字メモ</h3><p>ひとつのメモを大きな文字で目の前の相手に見せるアプリ。読み上げや音声入力にも対応し、筆談の補助や窓口でのやりとりに使えます。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>ClipMDは無料ですか？</summary>
-            <p>はい。広告なしで無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>クリップはどこに保存されますか？</summary>
-            <p>端末内だけです（共有エクステンションと共用するApp Group領域を含みます）。開発者や第三者にアップロードされることはなく、アプリを削除すると保存データもすべて消えます。.mdファイルをフォルダに保存した場合、そのファイルはあなたが選んだ場所に残ります。</p>
-          </details>
-          <details>
-            <summary>インターネット通信は行いますか？</summary>
-            <p>URLの変換を指示したときだけです。指定されたページをそのサイトから直接取得するのみで、それ以外の通信やテレメトリはありません。</p>
-          </details>
-          <details>
-            <summary>Safariからクリップできますか？</summary>
-            <p>できます。Safariや他のアプリの共有シートでClipMDを選ぶと、そのページがMarkdownに変換されます。</p>
-          </details>
-          <details>
-            <summary>ページのどこがMarkdownに残りますか？</summary>
-            <p>記事本文を抽出し、見出し・箇条書き・リンクといった構造を保ちます。そのため、Markdown対応のノートアプリにきれいに貼り付けられます。</p>
-          </details>
-          <details>
-            <summary>デバイス間で同期できますか？</summary>
-            <p>同期機能はありません。クラウドもアカウントもなく、クリップは保存した端末の中にあります。別の場所に移したいときは、クリップをコピー・共有するか、.mdファイルとして保存してください。</p>
-          </details>
-          <details>
-            <summary>保存したクリップを編集できますか？</summary>
-            <p>できます。クリップ一覧から、コピー・共有・編集・削除ができます。タイトルと本文での検索にも対応しています。</p>
-          </details>
-          <details>
-            <summary>ObsidianやAIツール、ショートカットと使えますか？</summary>
-            <p>はい。選んだフォルダやObsidianの保管庫へ.mdファイルで保存でき、要約と本文をまとめた「AI用」でコピーできます。ショートカットからURLやクリップボードを変換することもできます。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/clipmd/id6789844342?uo=4">ClipMD をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/clipmd/id6789844342?uo=4">ClipMD をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-19</p>
     </section>
   </main>

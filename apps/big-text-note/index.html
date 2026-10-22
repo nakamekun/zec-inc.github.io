@@ -99,6 +99,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Productivity Apps",
+          "item": "https://zec-inc.jp/apps/productivity/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Big Text Note",
+          "item": "https://zec-inc.jp/apps/big-text-note/"
+        }
+      ]
     }
   ]
 }
@@ -123,7 +152,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/productivity/">Productivity Apps</a></li><li aria-current="page">Big Text Note</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Big Text Note app icon" width="96" height="96">
       <div>
@@ -133,104 +163,115 @@
           <a class="button primary" href="https://apps.apple.com/us/app/big-text-note/id6767796126?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">23 languages</li><li class="chip chip-link"><a href="/apps/productivity/">Productivity Apps</a></li><li class="chip chip-link"><a href="/apps/family/">Family Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2f/19/0c/2f190c98-6c1d-354a-e4eb-2a67fda28476/01_iphone_face-to-face.png/320x480bb.jpg" alt="Big Text Note screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/86/ae/7f/86ae7f9f-d84a-c930-69c8-b4d686aebb5d/01_iphone_hitsudan.png/320x480bb.jpg" alt="Big Text Note screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/74/d3/cf/74d3cfaf-b5e3-0fab-4521-0981f079e47e/02_iphone_flip.png/320x480bb.jpg" alt="Big Text Note screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/91/10/ea/9110ea74-15c1-86b5-56a0-63e7c02fa85d/02_iphone_quick-access.png/320x480bb.jpg" alt="Big Text Note screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a0/c8/cc/a0c8cca5-f1e7-52d4-2e01-2945b1ee4b6f/03_iphone_phrases.png/320x480bb.jpg" alt="Big Text Note screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Big Text Note shows one note in large, easy-to-read text so you can hold it up to the person in front of you. It works as a simple communication board: for talking with someone who is deaf or hard of hearing, for days when your own voice is not available, for noisy places like stations and event halls, or for a quick word at a counter or reception desk.</p>
-          <p>Type it, show it, and if needed, let the device say it. Read Aloud speaks the note with the voices built into your iPhone or iPad, and voice input turns what the other person says into text on the device. Audio is never saved; only the text you keep is stored.</p>
-          <p>Show mode makes the note a clear message board with adjustable size and colors, an upside-down flip for the person across the table, and landscape for one long line. Quick Phrases keeps four ready-made lines and up to 20 of your own, one tap away. It works with no ads, no account, and no internet connection, and the app is available in many languages.</p>
+      <p class="lead-para">Big Text Note shows one note in large, easy-to-read text so you can hold it up to the person in front of you. It works as a simple communication board: for talking with someone who is deaf or hard of hearing, for days when your own voice is not available, for noisy places like stations and event halls, or for a quick word at a counter or reception desk.</p>
+      <p>Type it, show it, and if needed, let the device say it. Read Aloud speaks the note with the voices built into your iPhone or iPad, and voice input turns what the other person says into text on the device. Audio is never saved; only the text you keep is stored.</p>
+      <p>Show mode makes the note a clear message board with adjustable size and colors, an upside-down flip for the person across the table, and landscape for one long line. Quick Phrases keeps four ready-made lines and up to 20 of your own, one tap away. It works with no ads, no account, and no internet connection, and the app is available in many languages.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who talk with someone who is deaf or hard of hearing and want a communication board</li>
-            <li>People whose own voice is not available, for example after surgery or when unwell</li>
-            <li>Anyone who needs to get a short message across in a noisy place such as a station or event hall</li>
-            <li>People who want a quick word at a counter or reception desk, or a note to show while traveling</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>One note shown in large, easy-to-read text</li>
-            <li>Show mode with Normal, Large, and Huge sizes, fine size adjustment, and text and background colors including high-contrast pairs</li>
-            <li>Flip the note upside down for the person across the table, or turn the iPhone sideways for one long line; the screen stays on in Show mode</li>
-            <li>Read Aloud with the voices built into your iPhone or iPad; the language is detected from the text and nothing is sent to a server</li>
-            <li>Voice input that turns the other person&#x27;s speech into text on the device, appended to or replacing the note; audio is never saved</li>
-            <li>Quick Phrases: four ready-made lines plus up to 20 of your own, which you can reorder</li>
-            <li>Home Screen widget, and quick opening from the Lock Screen and Control Center</li>
-            <li>No ads, no account, no internet connection needed; available in many languages</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One note shown in large, easy-to-read text</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Show mode with Normal</strong>, Large, and Huge sizes, fine size adjustment, and text and background colors including high-contrast pairs</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Flip the note upside down for the person across the table</strong>, or turn the iPhone sideways for one long line; the screen stays on in Show mode</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Read Aloud with the voices built into your iPhone or iPad; the language is detected from the text and nothing is sent to a server</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Voice input that turns the other person&#x27;s speech into text on the device, appended to or replacing the note; audio is never saved</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Quick Phrases</strong>: four ready-made lines plus up to 20 of your own, which you can reorder</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Home Screen widget</strong>, and quick opening from the Lock Screen and Control Center</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>No ads</strong>, no account, no internet connection needed; available in many languages</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who talk with someone who is deaf or hard of hearing and want a communication board</li>
+        <li>People whose own voice is not available, for example after surgery or when unwell</li>
+        <li>Anyone who needs to get a short message across in a noisy place such as a station or event hall</li>
+        <li>People who want a quick word at a counter or reception desk, or a note to show while traveling</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open Big Text Note and type the note you want to show, or use voice input to turn the other person&#x27;s words into text.</li>
-            <li>Open Show mode to display the note in large text. Pick Normal, Large, or Huge, then fine-tune the size and choose colors.</li>
-            <li>Flip the note upside down for the person across the table, or turn your iPhone sideways for one long line.</li>
-            <li>Use Read Aloud if you want the device to say the note, or tap a Quick Phrase for a ready-made line.</li>
-            <li>Add your own Quick Phrases (up to 20) and reorder them so the ones you use most are on top.</li>
+      <ol class="steps">
+        <li><span>Open Big Text Note and type the note you want to show, or use voice input to turn the other person&#x27;s words into text.</span></li>
+        <li><span>Open Show mode to display the note in large text. Pick Normal, Large, or Huge, then fine-tune the size and choose colors.</span></li>
+        <li><span>Flip the note upside down for the person across the table, or turn your iPhone sideways for one long line.</span></li>
+        <li><span>Use Read Aloud if you want the device to say the note, or tap a Quick Phrase for a ready-made line.</span></li>
+        <li><span>Add your own Quick Phrases (up to 20) and reorder them so the ones you use most are on top.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>Big Text Note is free on the App Store, with no ads. App Store pricing and availability can change, so check the store listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>Big Text Note is free on the App Store, with no ads. App Store pricing and availability can change, so check the store listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Big Text Note has no account, no ads, no tracking, and no server sync, and it needs no internet connection. The note stays on your device. Read Aloud uses the voices built into your iPhone or iPad and sends nothing to a server. Voice input turns speech into text on the device; audio is never saved, and only the text you keep is stored.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>What is Big Text Note for?</summary>
+          <p>It shows one note in large, easy-to-read text so you can hold it up to the person in front of you, as a simple communication board for conversations, noisy places, or quick words at a counter.</p>
+        </details>
+        <details>
+          <summary>Is it a full notes app replacement?</summary>
+          <p>No. Big Text Note is built around one note shown in large text rather than managing many notes or notebooks.</p>
+        </details>
+        <details>
+          <summary>Can it read the note aloud?</summary>
+          <p>Yes. Read Aloud speaks the note with the voices built into your iPhone or iPad. The language is detected from the text, and nothing is sent to a server.</p>
+        </details>
+        <details>
+          <summary>Does it have voice input?</summary>
+          <p>Yes. Voice input turns what the other person says into text on the device. You choose whether to append the result to the note or replace it. Audio is never saved.</p>
+        </details>
+        <details>
+          <summary>Does it require an account?</summary>
+          <p>No. There is no account, no ads, no tracking, and no server sync, and no internet connection is needed. The note stays on your device.</p>
+        </details>
+        <details>
+          <summary>What are Quick Phrases?</summary>
+          <p>Ready-made lines you can show with one tap: four are included, and you can add up to 20 of your own and reorder them.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Big Text Note has no account, no ads, no tracking, and no server sync, and it needs no internet connection. The note stays on your device. Read Aloud uses the voices built into your iPhone or iPad and sends nothing to a server. Voice input turns speech into text on the device; audio is never saved, and only the text you keep is stored.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2f/19/0c/2f190c98-6c1d-354a-e4eb-2a67fda28476/01_iphone_face-to-face.png/320x480bb.jpg" alt="Big Text Note screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/86/ae/7f/86ae7f9f-d84a-c930-69c8-b4d686aebb5d/01_iphone_hitsudan.png/320x480bb.jpg" alt="Big Text Note screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/74/d3/cf/74d3cfaf-b5e3-0fab-4521-0981f079e47e/02_iphone_flip.png/320x480bb.jpg" alt="Big Text Note screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/91/10/ea/9110ea74-15c1-86b5-56a0-63e7c02fa85d/02_iphone_quick-access.png/320x480bb.jpg" alt="Big Text Note screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a0/c8/cc/a0c8cca5-f1e7-52d4-2e01-2945b1ee4b6f/03_iphone_phrases.png/320x480bb.jpg" alt="Big Text Note screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
+        <a class="related-card" href="/apps/study-buddy-timer/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Study Buddy Timer</h3><p>A study timer with a chill buddy that grows with every minute you study....</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>What is Big Text Note for?</summary>
-            <p>It shows one note in large, easy-to-read text so you can hold it up to the person in front of you, as a simple communication board for conversations, noisy places, or quick words at a counter.</p>
-          </details>
-          <details>
-            <summary>Is it a full notes app replacement?</summary>
-            <p>No. Big Text Note is built around one note shown in large text rather than managing many notes or notebooks.</p>
-          </details>
-          <details>
-            <summary>Can it read the note aloud?</summary>
-            <p>Yes. Read Aloud speaks the note with the voices built into your iPhone or iPad. The language is detected from the text, and nothing is sent to a server.</p>
-          </details>
-          <details>
-            <summary>Does it have voice input?</summary>
-            <p>Yes. Voice input turns what the other person says into text on the device. You choose whether to append the result to the note or replace it. Audio is never saved.</p>
-          </details>
-          <details>
-            <summary>Does it require an account?</summary>
-            <p>No. There is no account, no ads, no tracking, and no server sync, and no internet connection is needed. The note stays on your device.</p>
-          </details>
-          <details>
-            <summary>What are Quick Phrases?</summary>
-            <p>Ready-made lines you can show with one tap: four are included, and you can add up to 20 of your own and reorder them.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/big-text-note/id6767796126?uo=4">Open Big Text Note on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/big-text-note/id6767796126?uo=4">Open Big Text Note on the App Store</a>
       <p class="meta">Last updated: 2026-10-19</p>
     </section>
   </main>

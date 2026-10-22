@@ -99,6 +99,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "仕事効率化アプリ",
+          "item": "https://zec-inc.jp/apps/productivity/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "大きな文字メモ",
+          "item": "https://zec-inc.jp/apps/big-text-note/ja/"
+        }
+      ]
     }
   ]
 }
@@ -123,7 +152,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li><li aria-current="page">大きな文字メモ</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="大きな文字メモ のアプリアイコン" width="96" height="96">
       <div>
@@ -133,104 +163,115 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/big-text-note/id6767796126?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">23言語に対応</li><li class="chip chip-link"><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li><li class="chip chip-link"><a href="/apps/family/ja/">家族向けアプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/29/e2/d3/29e2d327-04bd-5ca6-512a-d3db01044f94/01_iphone_face-to-face.png/320x480bb.jpg" alt="大きな文字メモ のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/4c/81/314c814c-7cd5-55db-1bee-bae0e536a5c8/01_iphone_hitsudan.png/320x480bb.jpg" alt="大きな文字メモ のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/01/fe/cb01feaa-4a41-d3f5-4315-aac74b6ec7c5/02_iphone_flip.png/320x480bb.jpg" alt="大きな文字メモ のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ba/45/6b/ba456b76-0b47-3e8b-6385-9aa3c6fbe6bb/02_iphone_quick-access.png/320x480bb.jpg" alt="大きな文字メモ のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/83/0c/be/830cbe54-44f3-3445-2b77-0d12adffa830/03_iphone_phrases.png/320x480bb.jpg" alt="大きな文字メモ のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>大きな文字メモは、ひとつのメモを大きく読みやすい文字で表示して、目の前の相手に見せるためのアプリです。聞こえにくい方との筆談、声が出しにくいとき、駅や会場のような騒がしい場所、窓口や受付での短いやりとりに使えます。</p>
-          <p>書いて、見せて、必要なら端末に話してもらえます。読み上げはiPhoneやiPadに内蔵された音声でメモを読み上げ、音声入力は相手が話した言葉を端末内で文字にします。音声は保存されず、メモに残した文字だけが保存されます。</p>
-          <p>表示モードではメモが伝言板のように大きく表示され、サイズや色を調整できます。向かいの相手のための上下反転や、iPhoneを横向きにして1行を長く見せることも可能です。定型文には4件の例文と自分の文を20件まで登録でき、1タップで表示できます。広告なし・アカウント不要・通信なしで使え、多くの言語に対応しています。</p>
+      <p class="lead-para">大きな文字メモは、ひとつのメモを大きく読みやすい文字で表示して、目の前の相手に見せるためのアプリです。聞こえにくい方との筆談、声が出しにくいとき、駅や会場のような騒がしい場所、窓口や受付での短いやりとりに使えます。</p>
+      <p>書いて、見せて、必要なら端末に話してもらえます。読み上げはiPhoneやiPadに内蔵された音声でメモを読み上げ、音声入力は相手が話した言葉を端末内で文字にします。音声は保存されず、メモに残した文字だけが保存されます。</p>
+      <p>表示モードではメモが伝言板のように大きく表示され、サイズや色を調整できます。向かいの相手のための上下反転や、iPhoneを横向きにして1行を長く見せることも可能です。定型文には4件の例文と自分の文を20件まで登録でき、1タップで表示できます。広告なし・アカウント不要・通信なしで使え、多くの言語に対応しています。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>聞こえにくい方との筆談・会話の補助に使いたい方</li>
-            <li>手術後や体調不良などで、声が出しにくいときに使いたい方</li>
-            <li>駅や会場など、騒がしい場所で短い用件を伝えたい方</li>
-            <li>窓口や受付での短いやりとりや、旅行先で見せるメモが欲しい方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>ひとつのメモを大きく読みやすい文字で表示</li>
-            <li>表示モード：標準・大・特大の文字サイズと細かな調整、高コントラストの組み合わせを含む文字色・背景色</li>
-            <li>向かいの相手のための上下反転、iPhoneを横向きにして1行を長く表示。表示モード中は画面が消えません</li>
-            <li>iPhoneやiPadに内蔵された音声での読み上げ。言語はメモの文字から自動で判定し、外部には送りません</li>
-            <li>相手の話を端末内で文字にする音声入力。メモへの追記・置き換えを選べ、音声は保存されません</li>
-            <li>定型文：4件の例文と自分の文を20件まで登録でき、並べ替えもできます</li>
-            <li>ホーム画面ウィジェット、ロック画面やコントロールセンターからのすぐ開ける起動</li>
-            <li>広告なし・アカウント不要・通信なし。多くの言語に対応</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ひとつのメモを大きく読みやすい文字で表示</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>表示モード</strong>：標準・大・特大の文字サイズと細かな調整、高コントラストの組み合わせを含む文字色・背景色</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>向かいの相手のための上下反転</strong>、iPhoneを横向きにして1行を長く表示。表示モード中は画面が消えません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>iPhoneやiPadに内蔵された音声での読み上げ。言語はメモの文字から自動で判定し、外部には送りません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>相手の話を端末内で文字にする音声入力</strong>。メモへの追記・置き換えを選べ、音声は保存されません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>定型文：4件の例文と自分の文を20件まで登録でき、並べ替えもできます</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>ホーム画面ウィジェット</strong>、ロック画面やコントロールセンターからのすぐ開ける起動</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>広告なし・アカウント不要・通信なし。多くの言語に対応</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>聞こえにくい方との筆談・会話の補助に使いたい方</li>
+        <li>手術後や体調不良などで、声が出しにくいときに使いたい方</li>
+        <li>駅や会場など、騒がしい場所で短い用件を伝えたい方</li>
+        <li>窓口や受付での短いやりとりや、旅行先で見せるメモが欲しい方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>アプリを開いて、見せたい文字を入力するか、音声入力で相手の言葉を文字にします。</li>
-            <li>表示モードに切り替えて、大きな文字で表示します。標準・大・特大から選び、サイズを細かく調整して色も選びます。</li>
-            <li>向かいの相手には上下反転で、1行を長く見せたいときはiPhoneを横向きにします。</li>
-            <li>端末に話してもらいたいときは読み上げを、決まった言葉は定型文をタップします。</li>
-            <li>自分の定型文を20件まで登録し、よく使うものが上にくるよう並べ替えます。</li>
+      <ol class="steps">
+        <li><span>アプリを開いて、見せたい文字を入力するか、音声入力で相手の言葉を文字にします。</span></li>
+        <li><span>表示モードに切り替えて、大きな文字で表示します。標準・大・特大から選び、サイズを細かく調整して色も選びます。</span></li>
+        <li><span>向かいの相手には上下反転で、1行を長く見せたいときはiPhoneを横向きにします。</span></li>
+        <li><span>端末に話してもらいたいときは読み上げを、決まった言葉は定型文をタップします。</span></li>
+        <li><span>自分の定型文を20件まで登録し、よく使うものが上にくるよう並べ替えます。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>大きな文字メモは無料で、広告もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>大きな文字メモは無料で、広告もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>アカウント不要で、広告・トラッキング・サーバー同期はなく、通信も必要ありません。メモは端末の中だけにあります。読み上げは端末内蔵の音声を使い、外部には送りません。音声入力は端末内で文字にし、音声は保存されず、メモに残した文字だけが保存されます。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>大きな文字メモはどんなアプリですか？</summary>
+          <p>ひとつのメモを大きく読みやすい文字で表示し、目の前の相手に見せるためのアプリです。会話や騒がしい場所、窓口での短いやりとりに使える筆談ボードのように使えます。</p>
+        </details>
+        <details>
+          <summary>普段のメモアプリの代わりになりますか？</summary>
+          <p>いいえ。多数のメモやノートの管理ではなく、ひとつのメモを大きく見せることに絞ったアプリです。</p>
+        </details>
+        <details>
+          <summary>メモを読み上げてもらえますか？</summary>
+          <p>はい。読み上げは、iPhoneやiPadに内蔵された音声でメモを読み上げます。言語はメモの文字から自動で判定し、外部には送りません。</p>
+        </details>
+        <details>
+          <summary>音声入力はできますか？</summary>
+          <p>はい。相手が話した言葉を端末内で文字にします。結果を今のメモに追記するか、置き換えるかを選べます。音声は保存されません。</p>
+        </details>
+        <details>
+          <summary>アカウント登録は必要ですか？</summary>
+          <p>不要です。広告・トラッキング・サーバー同期はなく、通信も必要ありません。メモは端末の中だけにあります。</p>
+        </details>
+        <details>
+          <summary>定型文とは何ですか？</summary>
+          <p>1タップで表示できる決まった言葉です。4件の例文があり、自分の文を20件まで追加して並べ替えられます。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>アカウント不要で、広告・トラッキング・サーバー同期はなく、通信も必要ありません。メモは端末の中だけにあります。読み上げは端末内蔵の音声を使い、外部には送りません。音声入力は端末内で文字にし、音声は保存されず、メモに残した文字だけが保存されます。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/29/e2/d3/29e2d327-04bd-5ca6-512a-d3db01044f94/01_iphone_face-to-face.png/320x480bb.jpg" alt="大きな文字メモ のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/4c/81/314c814c-7cd5-55db-1bee-bae0e536a5c8/01_iphone_hitsudan.png/320x480bb.jpg" alt="大きな文字メモ のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/01/fe/cb01feaa-4a41-d3f5-4315-aac74b6ec7c5/02_iphone_flip.png/320x480bb.jpg" alt="大きな文字メモ のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ba/45/6b/ba456b76-0b47-3e8b-6385-9aa3c6fbe6bb/02_iphone_quick-access.png/320x480bb.jpg" alt="大きな文字メモ のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/83/0c/be/830cbe54-44f3-3445-2b77-0d12adffa830/03_iphone_phrases.png/320x480bb.jpg" alt="大きな文字メモ のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
+        <a class="related-card" href="/apps/study-buddy-timer/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Study Buddy：勉強タイマー</h3><p>勉強した時間で、ゆるいバディが育つ勉強タイマー。ワンタップで開始・停止、予定、ポモドーロ、ウィジェット、ふたりで使うペアにも対応。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>大きな文字メモはどんなアプリですか？</summary>
-            <p>ひとつのメモを大きく読みやすい文字で表示し、目の前の相手に見せるためのアプリです。会話や騒がしい場所、窓口での短いやりとりに使える筆談ボードのように使えます。</p>
-          </details>
-          <details>
-            <summary>普段のメモアプリの代わりになりますか？</summary>
-            <p>いいえ。多数のメモやノートの管理ではなく、ひとつのメモを大きく見せることに絞ったアプリです。</p>
-          </details>
-          <details>
-            <summary>メモを読み上げてもらえますか？</summary>
-            <p>はい。読み上げは、iPhoneやiPadに内蔵された音声でメモを読み上げます。言語はメモの文字から自動で判定し、外部には送りません。</p>
-          </details>
-          <details>
-            <summary>音声入力はできますか？</summary>
-            <p>はい。相手が話した言葉を端末内で文字にします。結果を今のメモに追記するか、置き換えるかを選べます。音声は保存されません。</p>
-          </details>
-          <details>
-            <summary>アカウント登録は必要ですか？</summary>
-            <p>不要です。広告・トラッキング・サーバー同期はなく、通信も必要ありません。メモは端末の中だけにあります。</p>
-          </details>
-          <details>
-            <summary>定型文とは何ですか？</summary>
-            <p>1タップで表示できる決まった言葉です。4件の例文があり、自分の文を20件まで追加して並べ替えられます。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/big-text-note/id6767796126?uo=4">大きな文字メモ をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/big-text-note/id6767796126?uo=4">大きな文字メモ をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-19</p>
     </section>
   </main>

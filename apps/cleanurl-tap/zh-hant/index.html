@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/c8/c4/1cc8c40d-88e9-022b-a783-c9177f48af90/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.4.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "App",
+          "item": "https://zec-inc.jp/apps/zh-hant/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CleanURL Tap：移除追蹤",
+          "item": "https://zec-inc.jp/apps/cleanurl-tap/zh-hant/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/">首頁</a></li><li><a href="/apps/zh-hant/">App</a></li><li aria-current="page">CleanURL Tap：移除追蹤</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/c8/c4/1cc8c40d-88e9-022b-a783-c9177f48af90/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="CleanURL Tap：移除追蹤 的 App 圖示" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/tw/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hant/">ZEC App 一覽</a>
         </div>
+        <ul class="chips" aria-label="重點"><li class="chip">免費下載</li><li class="chip">iPhone 與 iPad</li><li class="chip">支援 7 種語言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截圖">
+      <h2 class="visually-hidden">截圖</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/13/31/ae/1331aea2-4455-0a54-53b6-15f0c9f24d56/01-iphone-result.png/320x480bb.jpg" alt="CleanURL Tap：移除追蹤 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/47/fc/ac/47fcacaa-6f0a-e8d9-6ab1-bca98798650e/02-iphone-share-sheet.png/320x480bb.jpg" alt="CleanURL Tap：移除追蹤 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e6/3a/02/e63a02e8-474d-0a8a-fb60-b303e4c48592/03-iphone-batch.png/320x480bb.jpg" alt="CleanURL Tap：移除追蹤 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/42/bd/91/42bd9124-f75a-fcf2-beac-324c9db5b978/04-iphone-shortcuts.png/320x480bb.jpg" alt="CleanURL Tap：移除追蹤 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/83/5b/64835b61-5a16-7d20-514b-2314aea66eb2/05-iphone-privacy.png/320x480bb.jpg" alt="CleanURL Tap：移除追蹤 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>簡介</h2>
-          <p>CleanURL Tap 可在傳送、儲存或發佈連結前移除追蹤參數。</p>
-          <p>iOS 的保護不會移除所有 UTM、聯盟標籤、廣告點擊 ID 和購物連結參數。貼上一個 URL 或整段文字，CleanURL Tap 會清理其中的每個連結，同時保留其他文字和換行。</p>
-          <p>主要功能 - 以刪除線標籤顯示已移除的參數名稱 - 一次清理文字中的所有 URL - 從分享選單和捷徑執行，無需開啟 App - 支援 Amazon、樂天、eBay、Etsy、AliExpress、社群和一般連結 - 保留款式、顏色、尺寸和數量等商品選項</p>
+      <p class="lead-para">CleanURL Tap 可在傳送、儲存或發佈連結前移除追蹤參數。</p>
+      <p>iOS 的保護不會移除所有 UTM、聯盟標籤、廣告點擊 ID 和購物連結參數。貼上一個 URL 或整段文字，CleanURL Tap 會清理其中的每個連結，同時保留其他文字和換行。</p>
+      <p>主要功能 - 以刪除線標籤顯示已移除的參數名稱 - 一次清理文字中的所有 URL - 從分享選單和捷徑執行，無需開啟 App - 支援 Amazon、樂天、eBay、Etsy、AliExpress、社群和一般連結 - 保留款式、顏色、尺寸和數量等商品選項</p>
     </section>
 
-    <section class="section">
-      <h2>截圖</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/13/31/ae/1331aea2-4455-0a54-53b6-15f0c9f24d56/01-iphone-result.png/320x480bb.jpg" alt="CleanURL Tap：移除追蹤 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/47/fc/ac/47fcacaa-6f0a-e8d9-6ab1-bca98798650e/02-iphone-share-sheet.png/320x480bb.jpg" alt="CleanURL Tap：移除追蹤 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e6/3a/02/e63a02e8-474d-0a8a-fb60-b303e4c48592/03-iphone-batch.png/320x480bb.jpg" alt="CleanURL Tap：移除追蹤 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/42/bd/91/42bd9124-f75a-fcf2-beac-324c9db5b978/04-iphone-shortcuts.png/320x480bb.jpg" alt="CleanURL Tap：移除追蹤 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/83/5b/64835b61-5a16-7d20-514b-2314aea66eb2/05-iphone-privacy.png/320x480bb.jpg" alt="CleanURL Tap：移除追蹤 的截圖" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>價格與隱私</h2>
       <p>價格、App 內購買與最新的隱私權資訊，請以 App Store 頁面為準。本頁的介紹文字取自 App Store 的 App 說明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/tw/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">在 App Store 開啟 CleanURL Tap：移除追蹤</a></p>
+      <a class="button primary big" href="https://apps.apple.com/tw/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">在 App Store 開啟 CleanURL Tap：移除追蹤</a>
       <p class="meta">最後更新: 2026-10-19</p>
     </section>
   </main>

@@ -120,6 +120,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tap Tools",
+          "item": "https://zec-inc.jp/apps/tap-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Moodwash – Feelings in Color",
+          "item": "https://zec-inc.jp/apps/taplog-mood-tracker/"
+        }
+      ]
     }
   ]
 }
@@ -141,7 +170,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">Moodwash – Feelings in Color</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7f/05/f6/7f05f655-b33c-1830-1b94-effc0757424c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Moodwash – Feelings in Color app icon" width="96" height="96">
       <div>
@@ -151,120 +181,131 @@
           <a class="button primary" href="https://apps.apple.com/us/app/moodwash-feelings-in-color/id6761535550?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">23 languages</li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li><li class="chip chip-link"><a href="/apps/productivity/">Productivity Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/00/c3/da/00c3daac-6bb0-9f1b-fd70-d7e7a1cc72c1/01_iphone65_feelings.png/320x480bb.jpg" alt="Moodwash – Feelings in Color screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d0/65/2d/d0652da6-27b0-6c83-c761-454e4a1e8fe9/02_iphone65_painting.png/320x480bb.jpg" alt="Moodwash – Feelings in Color screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/54/b1/58/54b15834-3bec-f77d-2da5-1eded2a77044/03_iphone65_calendar.png/320x480bb.jpg" alt="Moodwash – Feelings in Color screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/67/6f/a2/676fa27d-6a1c-611b-04ce-7ad5efba0cba/04_iphone65_recent.png/320x480bb.jpg" alt="Moodwash – Feelings in Color screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/6d/3e/646d3e48-ddc0-5ac8-325f-2bcfe6f2a5dc/05_iphone65_recentWeather.png/320x480bb.jpg" alt="Moodwash – Feelings in Color screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Moodwash (formerly TapLog) is a mood diary that lets mixed feelings become a painting of your day. Choose several feeling words at once, from happy and grateful to anxious and drained, or leave a moment wordless as a gentle wash of color. Log as often as you like, for free, and revisit each day&#x27;s painting in your calendar and Recent.</p>
-          <p>Your daily mood still takes one tap, with five familiar mood buttons. Notes, reminders, widgets, Siri and Shortcuts, a Face ID lock with Touch ID or passcode, and CSV export of dates, daily moods and notes are all free. No scores or averages are shown, and Moodwash does not diagnose, treat or promise health benefits.</p>
-          <p>No account is needed and entries are stored on your device. Optional Apple Health integration saves daily moods and supported momentary feelings to State of Mind and shows sleep, steps, daylight and cycle marks alongside your days. An optional Moodwash Pro subscription adds weather, temperatures, pressure and day length beside your moods.</p>
+      <p class="lead-para">Moodwash (formerly TapLog) is a mood diary that lets mixed feelings become a painting of your day. Choose several feeling words at once, from happy and grateful to anxious and drained, or leave a moment wordless as a gentle wash of color. Log as often as you like, for free, and revisit each day&#x27;s painting in your calendar and Recent.</p>
+      <p>Your daily mood still takes one tap, with five familiar mood buttons. Notes, reminders, widgets, Siri and Shortcuts, a Face ID lock with Touch ID or passcode, and CSV export of dates, daily moods and notes are all free. No scores or averages are shown, and Moodwash does not diagnose, treat or promise health benefits.</p>
+      <p>No account is needed and entries are stored on your device. Optional Apple Health integration saves daily moods and supported momentary feelings to State of Mind and shows sleep, steps, daylight and cycle marks alongside your days. An optional Moodwash Pro subscription adds weather, temperatures, pressure and day length beside your moods.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who feel more than one thing at once and want a mood diary that allows it</li>
-            <li>Anyone who wants to log a moment without finding the right words</li>
-            <li>Anyone who quit heavier mood trackers because logging took too long</li>
-            <li>People doing lightweight self-reflection who want to spot patterns without scores or averages</li>
-            <li>People who like seeing weather and pressure next to their moods (optional Pro)</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Choose several feeling words at once, or leave a moment wordless as a gentle wash of color</li>
-            <li>Log as often as you like, for free, and revisit each day&#x27;s painting in your calendar and Recent</li>
-            <li>One-tap daily mood with five mood buttons</li>
-            <li>Notes, reminders, and widgets</li>
-            <li>Siri and Shortcuts</li>
-            <li>Face ID lock with Touch ID or passcode</li>
-            <li>CSV export of dates, daily moods and notes</li>
-            <li>Optional Apple Health integration: saves moods to State of Mind and shows sleep, steps, daylight and cycle marks alongside your days</li>
-            <li>Optional Moodwash Pro subscription: weather, temperatures, pressure and day length beside your moods</li>
-            <li>No scores or averages, and no account needed</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Choose several feeling words at once</strong>, or leave a moment wordless as a gentle wash of color</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Log as often as you like</strong>, for free, and revisit each day&#x27;s painting in your calendar and Recent</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One-tap daily mood with five mood buttons</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Notes</strong>, reminders, and widgets</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Siri and Shortcuts</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Face ID lock with Touch ID or passcode</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>CSV export of dates, daily moods and notes</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Optional Apple Health integration</strong>: saves moods to State of Mind and shows sleep, steps, daylight and cycle marks alongside your days</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Optional Moodwash Pro subscription</strong>: weather, temperatures, pressure and day length beside your moods</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No scores or averages, and no account needed</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who feel more than one thing at once and want a mood diary that allows it</li>
+        <li>Anyone who wants to log a moment without finding the right words</li>
+        <li>Anyone who quit heavier mood trackers because logging took too long</li>
+        <li>People doing lightweight self-reflection who want to spot patterns without scores or averages</li>
+        <li>People who like seeing weather and pressure next to their moods (optional Pro)</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open Moodwash and tap one of the five mood buttons for your daily mood.</li>
-            <li>Or choose several feeling words that fit this moment, or none at all, to log it as a wash of color.</li>
-            <li>Optionally add a short note for context.</li>
-            <li>Log as often as you like during the day.</li>
-            <li>Revisit each day&#x27;s painting in your calendar and Recent.</li>
-            <li>Optionally set a reminder, add a widget, or turn on the Face ID lock in Settings.</li>
+      <ol class="steps">
+        <li><span>Open Moodwash and tap one of the five mood buttons for your daily mood.</span></li>
+        <li><span>Or choose several feeling words that fit this moment, or none at all, to log it as a wash of color.</span></li>
+        <li><span>Optionally add a short note for context.</span></li>
+        <li><span>Log as often as you like during the day.</span></li>
+        <li><span>Revisit each day&#x27;s painting in your calendar and Recent.</span></li>
+        <li><span>Optionally set a reminder, add a widget, or turn on the Face ID lock in Settings.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>Moodwash is free to download. Feeling entries and paintings, notes, reminders, widgets, Siri and Shortcuts, the Face ID lock and CSV export are free. Moodwash Pro is an optional auto-renewing subscription (monthly and yearly plans, with a 1-week trial on the yearly plan for eligible subscribers) for weather, temperatures, pressure and day length beside your moods. Check the App Store listing for current prices and details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>Moodwash is free to download. Feeling entries and paintings, notes, reminders, widgets, Siri and Shortcuts, the Face ID lock and CSV export are free. Moodwash Pro is an optional auto-renewing subscription (monthly and yearly plans, with a 1-week trial on the yearly plan for eligible subscribers) for weather, temperatures, pressure and day length beside your moods. Check the App Store listing for current prices and details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Moodwash needs no account, and your entries are stored on your device. Apple Health integration is optional: it saves daily moods and supported momentary feelings to State of Mind and shows sleep, steps, daylight and cycle marks alongside your days. Weather (Moodwash Pro only) uses a town you choose or, optionally, your approximate location. For the authoritative summary of data practices, see the privacy label on the app&#x27;s App Store page.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is Moodwash free?</summary>
+          <p>Yes. It is free to download, and logging feelings as often as you like, notes, reminders, widgets, Siri and Shortcuts, the Face ID lock and CSV export are free. An optional Moodwash Pro subscription adds weather beside your moods. Check the App Store listing for current prices.</p>
+        </details>
+        <details>
+          <summary>What happened to TapLog?</summary>
+          <p>TapLog is now Moodwash. Your daily mood still takes one tap, and you can now also choose several feeling words at once or log a moment with none.</p>
+        </details>
+        <details>
+          <summary>Where are my mood entries stored?</summary>
+          <p>Entries are stored on your device, and the app requires no account. See the App Store privacy label for the full summary of data practices.</p>
+        </details>
+        <details>
+          <summary>Do I have to write something every time?</summary>
+          <p>No. A daily mood takes one tap, and you can log a moment with several feeling words or with none at all. Notes are optional.</p>
+        </details>
+        <details>
+          <summary>Can Moodwash remind me to log my mood?</summary>
+          <p>Yes. The app includes reminders to help you build a check-in habit.</p>
+        </details>
+        <details>
+          <summary>Can I look back at past entries?</summary>
+          <p>Yes. Each day&#x27;s painting appears in your calendar and in Recent, and you can export dates, daily moods and notes as CSV.</p>
+        </details>
+        <details>
+          <summary>Does it connect to Apple Health?</summary>
+          <p>Optionally. When you turn it on, Moodwash saves daily moods and supported momentary feelings to State of Mind and shows sleep, steps, daylight and cycle marks alongside your days.</p>
+        </details>
+        <details>
+          <summary>What is Moodwash Pro?</summary>
+          <p>Moodwash Pro is an optional subscription that shows weather, temperatures, pressure and day length beside your moods. Weather uses your chosen town or, optionally, your approximate location. Monthly and yearly plans are available, and you can cancel in App Store subscription settings.</p>
+        </details>
+        <details>
+          <summary>Does it analyze my mental health?</summary>
+          <p>No. Moodwash shows no scores or averages, and it does not diagnose, treat or promise health benefits. It is a simple mood diary for self-reflection.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Moodwash needs no account, and your entries are stored on your device. Apple Health integration is optional: it saves daily moods and supported momentary feelings to State of Mind and shows sleep, steps, daylight and cycle marks alongside your days. Weather (Moodwash Pro only) uses a town you choose or, optionally, your approximate location. For the authoritative summary of data practices, see the privacy label on the app&#x27;s App Store page.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/00/c3/da/00c3daac-6bb0-9f1b-fd70-d7e7a1cc72c1/01_iphone65_feelings.png/320x480bb.jpg" alt="Moodwash – Feelings in Color screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d0/65/2d/d0652da6-27b0-6c83-c761-454e4a1e8fe9/02_iphone65_painting.png/320x480bb.jpg" alt="Moodwash – Feelings in Color screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/54/b1/58/54b15834-3bec-f77d-2da5-1eded2a77044/03_iphone65_calendar.png/320x480bb.jpg" alt="Moodwash – Feelings in Color screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/67/6f/a2/676fa27d-6a1c-611b-04ce-7ad5efba0cba/04_iphone65_recent.png/320x480bb.jpg" alt="Moodwash – Feelings in Color screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/6d/3e/646d3e48-ddc0-5ac8-325f-2bcfe6f2a5dc/05_iphone65_recentWeather.png/320x480bb.jpg" alt="Moodwash – Feelings in Color screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is Moodwash free?</summary>
-            <p>Yes. It is free to download, and logging feelings as often as you like, notes, reminders, widgets, Siri and Shortcuts, the Face ID lock and CSV export are free. An optional Moodwash Pro subscription adds weather beside your moods. Check the App Store listing for current prices.</p>
-          </details>
-          <details>
-            <summary>What happened to TapLog?</summary>
-            <p>TapLog is now Moodwash. Your daily mood still takes one tap, and you can now also choose several feeling words at once or log a moment with none.</p>
-          </details>
-          <details>
-            <summary>Where are my mood entries stored?</summary>
-            <p>Entries are stored on your device, and the app requires no account. See the App Store privacy label for the full summary of data practices.</p>
-          </details>
-          <details>
-            <summary>Do I have to write something every time?</summary>
-            <p>No. A daily mood takes one tap, and you can log a moment with several feeling words or with none at all. Notes are optional.</p>
-          </details>
-          <details>
-            <summary>Can Moodwash remind me to log my mood?</summary>
-            <p>Yes. The app includes reminders to help you build a check-in habit.</p>
-          </details>
-          <details>
-            <summary>Can I look back at past entries?</summary>
-            <p>Yes. Each day&#x27;s painting appears in your calendar and in Recent, and you can export dates, daily moods and notes as CSV.</p>
-          </details>
-          <details>
-            <summary>Does it connect to Apple Health?</summary>
-            <p>Optionally. When you turn it on, Moodwash saves daily moods and supported momentary feelings to State of Mind and shows sleep, steps, daylight and cycle marks alongside your days.</p>
-          </details>
-          <details>
-            <summary>What is Moodwash Pro?</summary>
-            <p>Moodwash Pro is an optional subscription that shows weather, temperatures, pressure and day length beside your moods. Weather uses your chosen town or, optionally, your approximate location. Monthly and yearly plans are available, and you can cancel in App Store subscription settings.</p>
-          </details>
-          <details>
-            <summary>Does it analyze my mental health?</summary>
-            <p>No. Moodwash shows no scores or averages, and it does not diagnose, treat or promise health benefits. It is a simple mood diary for self-reflection.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/moodwash-feelings-in-color/id6761535550?uo=4">Open Moodwash – Feelings in Color on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/moodwash-feelings-in-color/id6761535550?uo=4">Open Moodwash – Feelings in Color on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

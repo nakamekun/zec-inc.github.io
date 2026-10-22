@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/25/8e/ba/258eba7c-8744-8931-88f7-e726926d2d4d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.5.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "应用",
+          "item": "https://zec-inc.jp/apps/zh-hans/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "数字锻造坊 - 每日数字谜题",
+          "item": "https://zec-inc.jp/apps/number-forge-daily-puzzle/zh-hans/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="导航路径"><ol><li><a href="/">首页</a></li><li><a href="/apps/zh-hans/">应用</a></li><li aria-current="page">数字锻造坊 - 每日数字谜题</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/25/8e/ba/258eba7c-8744-8931-88f7-e726926d2d4d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="数字锻造坊 - 每日数字谜题 的应用图标" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/cn/app/number-forge-daily-puzzle/id6791862183?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hans/">ZEC 应用一览</a>
         </div>
+        <ul class="chips" aria-label="要点"><li class="chip">免费下载</li><li class="chip">iPhone 和 iPad</li><li class="chip">支持 11 种语言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截图">
+      <h2 class="visually-hidden">截图</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/13/90/2a/13902a85-cf76-3e4a-546f-0055f2667abe/01-iphone-forge.png/320x480bb.jpg" alt="数字锻造坊 - 每日数字谜题 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/77/b5/cc/77b5ccb3-14cd-cb59-fe58-373ec2297125/02-iphone-solved.png/320x480bb.jpg" alt="数字锻造坊 - 每日数字谜题 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/d5/75/d4d5753e-2580-9fec-c20b-d9471c6d835b/03-iphone-nearmiss.png/320x480bb.jpg" alt="数字锻造坊 - 每日数字谜题 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/67/d5/1667d5ab-9681-31af-69bf-b8c71107f0ca/04-iphone-ways.png/320x480bb.jpg" alt="数字锻造坊 - 每日数字谜题 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/c3/8d/c6c38da5-4032-3645-edf7-0ab192b3cd97/05-iphone-widgets.png/320x480bb.jpg" alt="数字锻造坊 - 每日数字谜题 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>简介</h2>
-          <p>数字锻造坊 是每天只出一题的数字谜题。用六个数字和 + - x / 组合出目标数。</p>
-          <p>玩法 - 选两个数字和一种运算，合成一个新数字。 - 用尽量少的步数达到目标数。 - Par 是理论最少步数，试试能否用同样的步数完成。</p>
-          <p>每天只有一题 - 所有人在同一天挑战同一道题。 - 记录已完成天数、当前连胜、最长连胜，以及达成 Par 的次数。 - 结果可以用不剧透的文字分享。</p>
+      <p class="lead-para">数字锻造坊 是每天只出一题的数字谜题。用六个数字和 + - x / 组合出目标数。</p>
+      <p>玩法 - 选两个数字和一种运算，合成一个新数字。 - 用尽量少的步数达到目标数。 - Par 是理论最少步数，试试能否用同样的步数完成。</p>
+      <p>每天只有一题 - 所有人在同一天挑战同一道题。 - 记录已完成天数、当前连胜、最长连胜，以及达成 Par 的次数。 - 结果可以用不剧透的文字分享。</p>
     </section>
 
-    <section class="section">
-      <h2>截图</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/13/90/2a/13902a85-cf76-3e4a-546f-0055f2667abe/01-iphone-forge.png/320x480bb.jpg" alt="数字锻造坊 - 每日数字谜题 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/77/b5/cc/77b5ccb3-14cd-cb59-fe58-373ec2297125/02-iphone-solved.png/320x480bb.jpg" alt="数字锻造坊 - 每日数字谜题 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/d5/75/d4d5753e-2580-9fec-c20b-d9471c6d835b/03-iphone-nearmiss.png/320x480bb.jpg" alt="数字锻造坊 - 每日数字谜题 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/67/d5/1667d5ab-9681-31af-69bf-b8c71107f0ca/04-iphone-ways.png/320x480bb.jpg" alt="数字锻造坊 - 每日数字谜题 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/c3/8d/c6c38da5-4032-3645-edf7-0ab192b3cd97/05-iphone-widgets.png/320x480bb.jpg" alt="数字锻造坊 - 每日数字谜题 的截图" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>价格与隐私</h2>
       <p>价格、App 内购买与最新的隐私信息，请以 App Store 页面为准。本页介绍文字来自 App Store 的应用说明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/cn/app/number-forge-daily-puzzle/id6791862183?uo=4">在 App Store 打开 数字锻造坊 - 每日数字谜题</a></p>
+      <a class="button primary big" href="https://apps.apple.com/cn/app/number-forge-daily-puzzle/id6791862183?uo=4">在 App Store 打开 数字锻造坊 - 每日数字谜题</a>
       <p class="meta">最后更新: 2026-10-18</p>
     </section>
   </main>

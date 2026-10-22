@@ -44,6 +44,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/4f/dd/444fdd0a-a5ef-6137-1c93-c0b8d302b620/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "3.11.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "앱",
+          "item": "https://zec-inc.jp/apps/ko/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "DailyAlbum - 하루 한 장 사진일기",
+          "item": "https://zec-inc.jp/apps/photo-day/ko/"
+        }
+      ]
     }
   ]
 }
@@ -66,7 +89,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/">홈</a></li><li><a href="/apps/ko/">앱</a></li><li aria-current="page">DailyAlbum - 하루 한 장 사진일기</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/4f/dd/444fdd0a-a5ef-6137-1c93-c0b8d302b620/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="DailyAlbum - 하루 한 장 사진일기 앱 아이콘" width="96" height="96">
       <div>
@@ -76,31 +100,32 @@
           <a class="button primary" href="https://apps.apple.com/kr/app/dailyalbum-one-photo-a-day/id6761641437?uo=4">App Store에서 보기</a>
           <a class="button" href="/apps/ko/">ZEC 앱 목록</a>
         </div>
+        <ul class="chips" aria-label="한눈에 보기"><li class="chip">무료 다운로드</li><li class="chip">iPhone·iPad</li><li class="chip">22개 언어 지원</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="스크린샷">
+      <h2 class="visually-hidden">스크린샷</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/37/a4/28/37a4288f-6e7c-d298-b570-7b4a727f44e7/iphone_01.png/320x480bb.jpg" alt="DailyAlbum - 하루 한 장 사진일기 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/5d/98/1c5d98f7-2c0b-9b15-a232-935d8e52c6ea/iphone_02.png/320x480bb.jpg" alt="DailyAlbum - 하루 한 장 사진일기 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/a4/81/16a4812a-3da7-8739-f860-9bf78639cf3d/iphone_03.png/320x480bb.jpg" alt="DailyAlbum - 하루 한 장 사진일기 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ce/32/34/ce323468-cb95-e291-4ecd-08370768781e/iphone_04.png/320x480bb.jpg" alt="DailyAlbum - 하루 한 장 사진일기 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/75/26/17/752617e4-d44f-f0e0-fac6-1e7029a7a603/iphone_05.png/320x480bb.jpg" alt="DailyAlbum - 하루 한 장 사진일기 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>소개</h2>
-          <p>1枚かざる는 하루에 사진 한 장을 액자에 넣어 보여 주는 앱입니다. 쓰지 않는 iPhone이나 iPad, 또는 TV가 그날의 한 장을 비추는 디지털 액자가 됩니다.</p>
-          <p>가족, 아이 성장, 반려동물, 여행, 일상, 식물, 창작 과정처럼 나중에 다시 보고 싶은 순간에 사용할 수 있습니다. 날짜를 열고 그날로 남기고 싶은 사진 한 장을 고르세요. 사진 편집이나 소셜 공유 없이 매일의 기록에 집중합니다. 비어 있는 날은 저절로 채워지기도 합니다. DailyAlbum가 사람과 반려동물이 담긴 사진을 우선하고 스크린샷이나 문서 같은 사진은 건너뛰며, 괜찮은 한 장을 조용히 추천합니다. 모든 처리는 기기 안에서 이루어집니다.</p>
-          <p>◆ 액자처럼 걸어두기 액자 모드는 오늘의 사진을 날짜·메모와 함께 화면 가득 보여줍니다. iPad나 안 쓰는 iPhone을 세워 두면 가족의 디지털 액자가 됩니다. 매달 초에는 지난달을 월간 앨범으로 돌아볼 수 있습니다.</p>
+      <p class="lead-para">1枚かざる는 하루에 사진 한 장을 액자에 넣어 보여 주는 앱입니다. 쓰지 않는 iPhone이나 iPad, 또는 TV가 그날의 한 장을 비추는 디지털 액자가 됩니다.</p>
+      <p>가족, 아이 성장, 반려동물, 여행, 일상, 식물, 창작 과정처럼 나중에 다시 보고 싶은 순간에 사용할 수 있습니다. 날짜를 열고 그날로 남기고 싶은 사진 한 장을 고르세요. 사진 편집이나 소셜 공유 없이 매일의 기록에 집중합니다. 비어 있는 날은 저절로 채워지기도 합니다. DailyAlbum가 사람과 반려동물이 담긴 사진을 우선하고 스크린샷이나 문서 같은 사진은 건너뛰며, 괜찮은 한 장을 조용히 추천합니다. 모든 처리는 기기 안에서 이루어집니다.</p>
+      <p>◆ 액자처럼 걸어두기 액자 모드는 오늘의 사진을 날짜·메모와 함께 화면 가득 보여줍니다. iPad나 안 쓰는 iPhone을 세워 두면 가족의 디지털 액자가 됩니다. 매달 초에는 지난달을 월간 앨범으로 돌아볼 수 있습니다.</p>
     </section>
 
-    <section class="section">
-      <h2>스크린샷</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/37/a4/28/37a4288f-6e7c-d298-b570-7b4a727f44e7/iphone_01.png/320x480bb.jpg" alt="DailyAlbum - 하루 한 장 사진일기 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/5d/98/1c5d98f7-2c0b-9b15-a232-935d8e52c6ea/iphone_02.png/320x480bb.jpg" alt="DailyAlbum - 하루 한 장 사진일기 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/a4/81/16a4812a-3da7-8739-f860-9bf78639cf3d/iphone_03.png/320x480bb.jpg" alt="DailyAlbum - 하루 한 장 사진일기 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ce/32/34/ce323468-cb95-e291-4ecd-08370768781e/iphone_04.png/320x480bb.jpg" alt="DailyAlbum - 하루 한 장 사진일기 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/75/26/17/752617e4-d44f-f0e0-fac6-1e7029a7a603/iphone_05.png/320x480bb.jpg" alt="DailyAlbum - 하루 한 장 사진일기 스크린샷" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>가격 및 개인정보</h2>
       <p>가격, 앱 내 구입, 최신 개인정보 처리 정보는 App Store 페이지에서 확인해 주세요. 이 페이지의 소개 문구는 App Store의 앱 설명에서 가져왔습니다.</p>
-      <p><a class="button primary" href="https://apps.apple.com/kr/app/dailyalbum-one-photo-a-day/id6761641437?uo=4">App Store에서 DailyAlbum - 하루 한 장 사진일기 열기</a></p>
+      <a class="button primary big" href="https://apps.apple.com/kr/app/dailyalbum-one-photo-a-day/id6761641437?uo=4">App Store에서 DailyAlbum - 하루 한 장 사진일기 열기</a>
       <p class="meta">최종 업데이트: 2026-10-21</p>
     </section>
   </main>

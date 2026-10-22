@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.5.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "应用",
+          "item": "https://zec-inc.jp/apps/zh-hans/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Laundry Tap：洗衣计时器",
+          "item": "https://zec-inc.jp/apps/laundrytap/zh-hans/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="导航路径"><ol><li><a href="/">首页</a></li><li><a href="/apps/zh-hans/">应用</a></li><li aria-current="page">Laundry Tap：洗衣计时器</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Laundry Tap：洗衣计时器 的应用图标" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/cn/app/laundry-tap-washer-timer/id6762600691?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hans/">ZEC 应用一览</a>
         </div>
+        <ul class="chips" aria-label="要点"><li class="chip">免费下载</li><li class="chip">iPhone 和 iPad</li><li class="chip">支持 23 种语言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截图">
+      <h2 class="visually-hidden">截图</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/48/0d/05480d87-68e2-7e9b-7658-6acd434b919f/01-timer-running.png/320x480bb.jpg" alt="Laundry Tap：洗衣计时器 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7e/f6/2f/7ef62f4f-a3f8-0a2c-3216-a7b627e82639/02-timer-done.png/320x480bb.jpg" alt="Laundry Tap：洗衣计时器 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/29/cb/5f29cb26-676d-7530-c066-7a3075365503/03-logged.png/320x480bb.jpg" alt="Laundry Tap：洗衣计时器 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ff/3f/88/ff3f8805-28a1-285a-b4e9-6691823472fc/04-history.png/320x480bb.jpg" alt="Laundry Tap：洗衣计时器 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/fa/b4/32fab42b-6878-329d-911a-deca19506347/05-settings.png/320x480bb.jpg" alt="Laundry Tap：洗衣计时器 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>简介</h2>
-          <p>衣服放进洗衣机后，设个计时器，再去忙别的。Laundry Tap 会在你设定的时间结束时提醒你。晾好后记一笔，下次就知道上回是什么时候洗的。</p>
-          <p>计时结束，顺手记录 选择“洗涤”或“烘干”，将时长设为 5–180 分钟。App 会记住上次用过的时长。锁定屏幕和灵动岛会显示剩余时间，计时结束后会收到通知。晾好衣服，轻点“已晾晒”即可记录今天的洗衣；也可以直接从通知中记录。</p>
-          <p>按自己的习惯安排 首页会显示距上次洗衣的天数，并提示是否快到下次洗衣的时间。这个提示以你设定的 1–7 天间隔为依据，不替你决定洗衣频率。月历中能查看洗过衣服的日子，轻点日期就能补记或移除记录。</p>
+      <p class="lead-para">衣服放进洗衣机后，设个计时器，再去忙别的。Laundry Tap 会在你设定的时间结束时提醒你。晾好后记一笔，下次就知道上回是什么时候洗的。</p>
+      <p>计时结束，顺手记录 选择“洗涤”或“烘干”，将时长设为 5–180 分钟。App 会记住上次用过的时长。锁定屏幕和灵动岛会显示剩余时间，计时结束后会收到通知。晾好衣服，轻点“已晾晒”即可记录今天的洗衣；也可以直接从通知中记录。</p>
+      <p>按自己的习惯安排 首页会显示距上次洗衣的天数，并提示是否快到下次洗衣的时间。这个提示以你设定的 1–7 天间隔为依据，不替你决定洗衣频率。月历中能查看洗过衣服的日子，轻点日期就能补记或移除记录。</p>
     </section>
 
-    <section class="section">
-      <h2>截图</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/48/0d/05480d87-68e2-7e9b-7658-6acd434b919f/01-timer-running.png/320x480bb.jpg" alt="Laundry Tap：洗衣计时器 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7e/f6/2f/7ef62f4f-a3f8-0a2c-3216-a7b627e82639/02-timer-done.png/320x480bb.jpg" alt="Laundry Tap：洗衣计时器 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/29/cb/5f29cb26-676d-7530-c066-7a3075365503/03-logged.png/320x480bb.jpg" alt="Laundry Tap：洗衣计时器 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ff/3f/88/ff3f8805-28a1-285a-b4e9-6691823472fc/04-history.png/320x480bb.jpg" alt="Laundry Tap：洗衣计时器 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/fa/b4/32fab42b-6878-329d-911a-deca19506347/05-settings.png/320x480bb.jpg" alt="Laundry Tap：洗衣计时器 的截图" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>价格与隐私</h2>
       <p>价格、App 内购买与最新的隐私信息，请以 App Store 页面为准。本页介绍文字来自 App Store 的应用说明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/cn/app/laundry-tap-washer-timer/id6762600691?uo=4">在 App Store 打开 Laundry Tap：洗衣计时器</a></p>
+      <a class="button primary big" href="https://apps.apple.com/cn/app/laundry-tap-washer-timer/id6762600691?uo=4">在 App Store 打开 Laundry Tap：洗衣计时器</a>
       <p class="meta">最后更新: 2026-10-21</p>
     </section>
   </main>

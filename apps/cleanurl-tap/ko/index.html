@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/c8/c4/1cc8c40d-88e9-022b-a783-c9177f48af90/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.4.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "앱",
+          "item": "https://zec-inc.jp/apps/ko/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CleanURL Tap: 추적 제거",
+          "item": "https://zec-inc.jp/apps/cleanurl-tap/ko/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/">홈</a></li><li><a href="/apps/ko/">앱</a></li><li aria-current="page">CleanURL Tap: 추적 제거</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/c8/c4/1cc8c40d-88e9-022b-a783-c9177f48af90/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="CleanURL Tap: 추적 제거 앱 아이콘" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/kr/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">App Store에서 보기</a>
           <a class="button" href="/apps/ko/">ZEC 앱 목록</a>
         </div>
+        <ul class="chips" aria-label="한눈에 보기"><li class="chip">무료 다운로드</li><li class="chip">iPhone·iPad</li><li class="chip">7개 언어 지원</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="스크린샷">
+      <h2 class="visually-hidden">스크린샷</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8b/73/7f/8b737fff-f620-a838-abc8-9fe40b179094/01-iphone-result.png/320x480bb.jpg" alt="CleanURL Tap: 추적 제거 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/df/82/97/df8297b1-3f75-b6a5-c748-6e2f0238a27f/02-iphone-share-sheet.png/320x480bb.jpg" alt="CleanURL Tap: 추적 제거 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/ba/fb/31bafbf0-e052-e15b-b6fa-725081f3d1ed/03-iphone-batch.png/320x480bb.jpg" alt="CleanURL Tap: 추적 제거 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/6a/82/9e6a822d-f368-87ae-4cbc-07d9f36cbf49/04-iphone-shortcuts.png/320x480bb.jpg" alt="CleanURL Tap: 추적 제거 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8b/9f/a5/8b9fa58a-99c8-9fa7-6a50-77daa226b0ae/05-iphone-privacy.png/320x480bb.jpg" alt="CleanURL Tap: 추적 제거 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>소개</h2>
-          <p>CleanURL Tap은 링크를 보내거나 저장하거나 게시하기 전에 추적 매개변수를 제거합니다.</p>
-          <p>iOS 보호 기능이 모든 UTM, 제휴 태그, 광고 클릭 ID, 쇼핑 링크 매개변수를 지우지는 않습니다. URL이나 텍스트 전체를 붙여 넣으면 다른 글과 줄바꿈은 그대로 두고 모든 링크를 정리합니다.</p>
-          <p>주요 기능 - 제거한 매개변수 이름을 취소선 태그로 표시 - 텍스트 속 여러 URL을 한 번에 정리 - 앱을 열지 않고 공유 메뉴와 단축어에서 실행 - Amazon, 라쿠텐, eBay, Etsy, AliExpress, 소셜 및 일반 링크 지원 - 옵션, 색상, 크기, 수량 같은 상품 정보 유지</p>
+      <p class="lead-para">CleanURL Tap은 링크를 보내거나 저장하거나 게시하기 전에 추적 매개변수를 제거합니다.</p>
+      <p>iOS 보호 기능이 모든 UTM, 제휴 태그, 광고 클릭 ID, 쇼핑 링크 매개변수를 지우지는 않습니다. URL이나 텍스트 전체를 붙여 넣으면 다른 글과 줄바꿈은 그대로 두고 모든 링크를 정리합니다.</p>
+      <p>주요 기능 - 제거한 매개변수 이름을 취소선 태그로 표시 - 텍스트 속 여러 URL을 한 번에 정리 - 앱을 열지 않고 공유 메뉴와 단축어에서 실행 - Amazon, 라쿠텐, eBay, Etsy, AliExpress, 소셜 및 일반 링크 지원 - 옵션, 색상, 크기, 수량 같은 상품 정보 유지</p>
     </section>
 
-    <section class="section">
-      <h2>스크린샷</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8b/73/7f/8b737fff-f620-a838-abc8-9fe40b179094/01-iphone-result.png/320x480bb.jpg" alt="CleanURL Tap: 추적 제거 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/df/82/97/df8297b1-3f75-b6a5-c748-6e2f0238a27f/02-iphone-share-sheet.png/320x480bb.jpg" alt="CleanURL Tap: 추적 제거 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/ba/fb/31bafbf0-e052-e15b-b6fa-725081f3d1ed/03-iphone-batch.png/320x480bb.jpg" alt="CleanURL Tap: 추적 제거 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/6a/82/9e6a822d-f368-87ae-4cbc-07d9f36cbf49/04-iphone-shortcuts.png/320x480bb.jpg" alt="CleanURL Tap: 추적 제거 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8b/9f/a5/8b9fa58a-99c8-9fa7-6a50-77daa226b0ae/05-iphone-privacy.png/320x480bb.jpg" alt="CleanURL Tap: 추적 제거 스크린샷" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>가격 및 개인정보</h2>
       <p>가격, 앱 내 구입, 최신 개인정보 처리 정보는 App Store 페이지에서 확인해 주세요. 이 페이지의 소개 문구는 App Store의 앱 설명에서 가져왔습니다.</p>
-      <p><a class="button primary" href="https://apps.apple.com/kr/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">App Store에서 CleanURL Tap: 추적 제거 열기</a></p>
+      <a class="button primary big" href="https://apps.apple.com/kr/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">App Store에서 CleanURL Tap: 추적 제거 열기</a>
       <p class="meta">최종 업데이트: 2026-10-19</p>
     </section>
   </main>

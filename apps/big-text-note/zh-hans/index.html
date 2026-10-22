@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.5.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "应用",
+          "item": "https://zec-inc.jp/apps/zh-hans/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "大字备忘",
+          "item": "https://zec-inc.jp/apps/big-text-note/zh-hans/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="导航路径"><ol><li><a href="/">首页</a></li><li><a href="/apps/zh-hans/">应用</a></li><li aria-current="page">大字备忘</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="大字备忘 的应用图标" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/cn/app/big-text-note/id6767796126?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hans/">ZEC 应用一览</a>
         </div>
+        <ul class="chips" aria-label="要点"><li class="chip">免费下载</li><li class="chip">iPhone 和 iPad</li><li class="chip">支持 23 种语言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截图">
+      <h2 class="visually-hidden">截图</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bb/9c/f4/bb9cf40e-53a5-3eb6-f52b-db92b430bd3f/01_iphone_face-to-face.png/320x480bb.jpg" alt="大字备忘 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d5/f8/be/d5f8be78-31b1-d9ee-0e16-f18fece2465b/01_iphone_hitsudan.png/320x480bb.jpg" alt="大字备忘 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/12/e3/e8/12e3e8ec-d442-7dd6-5111-3749e8a70cd1/02_iphone_flip.png/320x480bb.jpg" alt="大字备忘 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/37/ab/5a/37ab5a87-efc5-c8e0-5584-024fe04636fa/02_iphone_quick-access.png/320x480bb.jpg" alt="大字备忘 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/37/99/f6/3799f6c3-57d7-6a13-017c-904b94425b60/03_iphone_phrases.png/320x480bb.jpg" alt="大字备忘 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>简介</h2>
-          <p>无广告、无需账户、无需联网。</p>
-          <p>大字备忘用大而易读的文字显示一条备忘，让你直接举给面前的人看。</p>
-          <p>它是一块简单的笔谈板：与听障或听力不好的人交流、嗓子发不出声的日子、车站和活动现场这样嘈杂的地方，或是在柜台、前台说一句话时。写下来，展示出来，需要时让设备替你说。</p>
+      <p class="lead-para">无广告、无需账户、无需联网。</p>
+      <p>大字备忘用大而易读的文字显示一条备忘，让你直接举给面前的人看。</p>
+      <p>它是一块简单的笔谈板：与听障或听力不好的人交流、嗓子发不出声的日子、车站和活动现场这样嘈杂的地方，或是在柜台、前台说一句话时。写下来，展示出来，需要时让设备替你说。</p>
     </section>
 
-    <section class="section">
-      <h2>截图</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bb/9c/f4/bb9cf40e-53a5-3eb6-f52b-db92b430bd3f/01_iphone_face-to-face.png/320x480bb.jpg" alt="大字备忘 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d5/f8/be/d5f8be78-31b1-d9ee-0e16-f18fece2465b/01_iphone_hitsudan.png/320x480bb.jpg" alt="大字备忘 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/12/e3/e8/12e3e8ec-d442-7dd6-5111-3749e8a70cd1/02_iphone_flip.png/320x480bb.jpg" alt="大字备忘 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/37/ab/5a/37ab5a87-efc5-c8e0-5584-024fe04636fa/02_iphone_quick-access.png/320x480bb.jpg" alt="大字备忘 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/37/99/f6/3799f6c3-57d7-6a13-017c-904b94425b60/03_iphone_phrases.png/320x480bb.jpg" alt="大字备忘 的截图" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>价格与隐私</h2>
       <p>价格、App 内购买与最新的隐私信息，请以 App Store 页面为准。本页介绍文字来自 App Store 的应用说明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/cn/app/big-text-note/id6767796126?uo=4">在 App Store 打开 大字备忘</a></p>
+      <a class="button primary big" href="https://apps.apple.com/cn/app/big-text-note/id6767796126?uo=4">在 App Store 打开 大字备忘</a>
       <p class="meta">最后更新: 2026-10-19</p>
     </section>
   </main>

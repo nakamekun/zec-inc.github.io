@@ -104,6 +104,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "タップ記録ツール",
+          "item": "https://zec-inc.jp/apps/tap-tools/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "おくすりタップ - 毎日鳴るお薬リマインダー",
+          "item": "https://zec-inc.jp/apps/pilltap/ja/"
+        }
+      ]
     }
   ]
 }
@@ -125,7 +154,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li aria-current="page">おくすりタップ - 毎日鳴るお薬リマインダー</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d6/c9/b2/d6c9b2c6-3803-13a4-7dba-eee738aeb682/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のアプリアイコン" width="96" height="96">
       <div>
@@ -135,110 +165,121 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/pilltap/id6762545903?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">2言語に対応</li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li class="chip chip-link"><a href="/apps/widgets/ja/">ウィジェット対応アプリ</a></li><li class="chip chip-link"><a href="/apps/family/ja/">家族向けアプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/84/e3/2384e391-881b-2e8b-6cd3-f7899a829bba/iphone-01-home.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ff/5b/36/ff5b36ec-3728-6735-a69a-4b8399b5e07a/iphone-02-schedule.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/01/57/57/01575753-bae1-f599-43b9-a461be271cf0/iphone-03-history.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/4f/fd/034ffdc2-6342-905e-de71-c7a0d092d9c2/iphone-04-follow-up.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/15/29/92/152992e6-ac80-46c5-306a-df1e89a31648/iphone-05-how-it-works.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>おくすりタップ（PillTap）は、薬やサプリの飲み忘れを減らす手助けをする、毎日鳴るリマインダーです。薬ごとに朝・昼・夜・就寝前の時刻を決めるだけで、毎日同じ時刻に通知が届きます。</p>
-          <p>「飲んだ」を押すのは記録のためで、押さなくても翌日また鳴ります。通知のボタンから、アプリを開かずに記録できます。止めたいときは、その時間帯をオフにするか薬を削除します。15分後にもう一度通知する設定（オフにもできます）もあります。</p>
-          <p>ロック画面ウィジェットで次の服用を確認でき、服用時刻の少し前にはライブアクティビティでも表示されます。おくすりタップは医療アドバイスや病状の判断、薬の服用指導を行うものではありません。薬の服用は、医師や薬剤師の指示に従ってください。</p>
+      <p class="lead-para">おくすりタップ（PillTap）は、薬やサプリの飲み忘れを減らす手助けをする、毎日鳴るリマインダーです。薬ごとに朝・昼・夜・就寝前の時刻を決めるだけで、毎日同じ時刻に通知が届きます。</p>
+      <p>「飲んだ」を押すのは記録のためで、押さなくても翌日また鳴ります。通知のボタンから、アプリを開かずに記録できます。止めたいときは、その時間帯をオフにするか薬を削除します。15分後にもう一度通知する設定（オフにもできます）もあります。</p>
+      <p>ロック画面ウィジェットで次の服用を確認でき、服用時刻の少し前にはライブアクティビティでも表示されます。おくすりタップは医療アドバイスや病状の判断、薬の服用指導を行うものではありません。薬の服用は、医師や薬剤師の指示に従ってください。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>毎日の薬やサプリをつい飲み忘れてしまう方</li>
-            <li>複雑な健康管理アプリではなく、シンプルなリマインダーがほしい方</li>
-            <li>毎日同じ時間帯に薬を飲む方</li>
-            <li>アカウント登録やクラウド送信のない、プライベートなリマインダーを使いたい方</li>
-            <li>医療アプリではなく、リマインダーと個人の記録用だと理解したうえで使える方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>薬ごとに朝・昼・夜・就寝前の4つの時間帯で、毎日リマインダー通知</li>
-            <li>15分後にもう一度通知（設定でオフにできます）</li>
-            <li>通知のボタンから、アプリを開かずに「飲んだ」を記録</li>
-            <li>ロック画面ウィジェットで次の服用を確認</li>
-            <li>服用時刻の少し前にライブアクティビティで表示（5・15・30分前を選択）</li>
-            <li>集中モードや睡眠中でも、iOSの設定で許可していれば通知を表示（時間の指定が重要な通知）</li>
-            <li>今日・昨日・過去7日の履歴</li>
-            <li>スケジュールは毎日固定のみ。曜日指定、数日おき、服薬カレンダー、残薬管理、家族との共有はありません</li>
-            <li>アカウント登録なし・クラウド送信なし。データは端末の中だけに保存</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>薬ごとに朝・昼・夜・就寝前の4つの時間帯で、毎日リマインダー通知</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>15分後にもう一度通知（設定でオフにできます）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>通知のボタンから</strong>、アプリを開かずに「飲んだ」を記録</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ロック画面ウィジェットで次の服用を確認</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>服用時刻の少し前にライブアクティビティで表示（5・15・30分前を選択）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>集中モードや睡眠中でも</strong>、iOSの設定で許可していれば通知を表示（時間の指定が重要な通知）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>今日・昨日・過去7日の履歴</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>スケジュールは毎日固定のみ</strong>。曜日指定、数日おき、服薬カレンダー、残薬管理、家族との共有はありません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>アカウント登録なし・クラウド送信なし。データは端末の中だけに保存</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>毎日の薬やサプリをつい飲み忘れてしまう方</li>
+        <li>複雑な健康管理アプリではなく、シンプルなリマインダーがほしい方</li>
+        <li>毎日同じ時間帯に薬を飲む方</li>
+        <li>アカウント登録やクラウド送信のない、プライベートなリマインダーを使いたい方</li>
+        <li>医療アプリではなく、リマインダーと個人の記録用だと理解したうえで使える方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>薬を追加して、朝・昼・夜・就寝前の時間帯を選びます。</li>
-            <li>必要に応じて、15分後の再通知やライブアクティビティの表示タイミングを設定します。</li>
-            <li>通知が届いたら、医師や薬剤師の指示どおりに服用し、記録したいときは「飲んだ」をタップします。</li>
-            <li>ロック画面にウィジェットを追加すると、次の服用をひと目で確認できます。</li>
-            <li>今日・昨日・過去7日の履歴を確認できます。通知を止めたいときは、その時間帯をオフにするか薬を削除します。</li>
+      <ol class="steps">
+        <li><span>薬を追加して、朝・昼・夜・就寝前の時間帯を選びます。</span></li>
+        <li><span>必要に応じて、15分後の再通知やライブアクティビティの表示タイミングを設定します。</span></li>
+        <li><span>通知が届いたら、医師や薬剤師の指示どおりに服用し、記録したいときは「飲んだ」をタップします。</span></li>
+        <li><span>ロック画面にウィジェットを追加すると、次の服用をひと目で確認できます。</span></li>
+        <li><span>今日・昨日・過去7日の履歴を確認できます。通知を止めたいときは、その時間帯をオフにするか薬を削除します。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>ダウンロードは無料です。国や時期によって価格・提供状況が変わることがあるため、最新の情報はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>ダウンロードは無料です。国や時期によって価格・提供状況が変わることがあるため、最新の情報はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>アカウント登録なし、クラウド送信なし。App Storeの説明のとおり、薬の情報と記録は端末の中だけに保存されます。通知は端末内で行われます。リマインダーと個人の記録のためのアプリで、医療機関が管理する正式な服薬記録の代わりにはなりません。最新のプライバシーラベルはApp Storeでご確認ください。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>おくすりタップは医療上の助言を提供しますか？</summary>
+          <p>いいえ。診断、治療のすすめ、服薬指示は提供しません。薬の服用は、医師や薬剤師の指示に従ってください。</p>
+        </details>
+        <details>
+          <summary>正しく薬を飲めることを保証してくれますか？</summary>
+          <p>いいえ。あくまでリマインダーと個人の記録の補助であり、服薬遵守や安全性を保証するものではありません。</p>
+        </details>
+        <details>
+          <summary>「飲んだ」を押さなかったらどうなりますか？</summary>
+          <p>何も起きません。「飲んだ」を押すのは自分の記録のためで、任意です。押さなくても翌日また通知が鳴ります。</p>
+        </details>
+        <details>
+          <summary>毎日以外のスケジュールにできますか？</summary>
+          <p>できません。朝・昼・夜・就寝前の毎日固定のスケジュールです。曜日指定や数日おきには対応していません。</p>
+        </details>
+        <details>
+          <summary>睡眠中や集中モードでも通知は届きますか？</summary>
+          <p>iOSの設定で許可していれば、時間の指定が重要な通知として表示されます。</p>
+        </details>
+        <details>
+          <summary>データはどこに保存されますか？</summary>
+          <p>アカウント登録もクラウド送信もなく、App Storeの説明のとおり、薬の情報と記録は端末の中だけに保存されます。</p>
+        </details>
+        <details>
+          <summary>医師や薬剤師への相談の代わりになりますか？</summary>
+          <p>なりません。薬に関する疑問は、必ず資格を持つ医療の専門家の指示に従ってください。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>アカウント登録なし、クラウド送信なし。App Storeの説明のとおり、薬の情報と記録は端末の中だけに保存されます。通知は端末内で行われます。リマインダーと個人の記録のためのアプリで、医療機関が管理する正式な服薬記録の代わりにはなりません。最新のプライバシーラベルはApp Storeでご確認ください。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/84/e3/2384e391-881b-2e8b-6cd3-f7899a829bba/iphone-01-home.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ff/5b/36/ff5b36ec-3728-6735-a69a-4b8399b5e07a/iphone-02-schedule.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/01/57/57/01575753-bae1-f599-43b9-a461be271cf0/iphone-03-history.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/4f/fd/034ffdc2-6342-905e-de71-c7a0d092d9c2/iphone-04-follow-up.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/15/29/92/152992e6-ac80-46c5-306a-df1e89a31648/iphone-05-how-it-works.png/320x480bb.jpg" alt="おくすりタップ - 毎日鳴るお薬リマインダー のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>おくすりタップは医療上の助言を提供しますか？</summary>
-            <p>いいえ。診断、治療のすすめ、服薬指示は提供しません。薬の服用は、医師や薬剤師の指示に従ってください。</p>
-          </details>
-          <details>
-            <summary>正しく薬を飲めることを保証してくれますか？</summary>
-            <p>いいえ。あくまでリマインダーと個人の記録の補助であり、服薬遵守や安全性を保証するものではありません。</p>
-          </details>
-          <details>
-            <summary>「飲んだ」を押さなかったらどうなりますか？</summary>
-            <p>何も起きません。「飲んだ」を押すのは自分の記録のためで、任意です。押さなくても翌日また通知が鳴ります。</p>
-          </details>
-          <details>
-            <summary>毎日以外のスケジュールにできますか？</summary>
-            <p>できません。朝・昼・夜・就寝前の毎日固定のスケジュールです。曜日指定や数日おきには対応していません。</p>
-          </details>
-          <details>
-            <summary>睡眠中や集中モードでも通知は届きますか？</summary>
-            <p>iOSの設定で許可していれば、時間の指定が重要な通知として表示されます。</p>
-          </details>
-          <details>
-            <summary>データはどこに保存されますか？</summary>
-            <p>アカウント登録もクラウド送信もなく、App Storeの説明のとおり、薬の情報と記録は端末の中だけに保存されます。</p>
-          </details>
-          <details>
-            <summary>医師や薬剤師への相談の代わりになりますか？</summary>
-            <p>なりません。薬に関する疑問は、必ず資格を持つ医療の専門家の指示に従ってください。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/pilltap/id6762545903?uo=4">おくすりタップ - 毎日鳴るお薬リマインダー をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/pilltap/id6762545903?uo=4">おくすりタップ - 毎日鳴るお薬リマインダー をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

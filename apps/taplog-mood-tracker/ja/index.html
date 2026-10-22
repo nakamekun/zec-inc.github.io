@@ -120,6 +120,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "タップ記録ツール",
+          "item": "https://zec-inc.jp/apps/tap-tools/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "にじみ日記 – 気持ちが混ざる気分日記",
+          "item": "https://zec-inc.jp/apps/taplog-mood-tracker/ja/"
+        }
+      ]
     }
   ]
 }
@@ -141,7 +170,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li aria-current="page">にじみ日記 – 気持ちが混ざる気分日記</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7f/05/f6/7f05f655-b33c-1830-1b94-effc0757424c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="にじみ日記 – 気持ちが混ざる気分日記 のアプリアイコン" width="96" height="96">
       <div>
@@ -151,120 +181,131 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/moodwash-feelings-in-color/id6761535550?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">23言語に対応</li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li class="chip chip-link"><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/80/74/42/80744253-dca4-24d5-3016-8117e6814311/01_iphone65_feelings.png/320x480bb.jpg" alt="にじみ日記 – 気持ちが混ざる気分日記 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a5/f7/00/a5f700c7-e8fa-4ca4-0632-60a765577dd4/02_iphone65_painting.png/320x480bb.jpg" alt="にじみ日記 – 気持ちが混ざる気分日記 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/91/93/5c/91935c76-a790-958e-1d2e-7e675d00d412/03_iphone65_calendar.png/320x480bb.jpg" alt="にじみ日記 – 気持ちが混ざる気分日記 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/6e/c1/766ec10d-2f1a-3f67-aeec-7a8a49ff5ff1/04_iphone65_recent.png/320x480bb.jpg" alt="にじみ日記 – 気持ちが混ざる気分日記 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/38/81/57/38815740-96f9-0ed0-06aa-4f38779eb288/05_iphone65_recentWeather.png/320x480bb.jpg" alt="にじみ日記 – 気持ちが混ざる気分日記 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>にじみ日記（旧TapLog）は、いくつもの気持ちが混ざって今日だけの一枚になる気分日記です。「うれしい」「不安」「ほっとした」など、いまの気持ちをいくつでも選べます。言葉にしない記録も、淡いにじみになります。1日に何回でも無料で記録でき、気持ちの絵をカレンダーや「最近」で見返せます。</p>
-          <p>1日の気分は、これまでどおり5つのボタンからひとタップで。ひとこと、リマインダー、ウィジェット、Siri・ショートカット、Face ID・Touch ID・パスコードによるロック、日付・気分・ひとことのCSV書き出しも無料です。点数や平均は表示せず、診断・治療や効果の判定は行いません。</p>
-          <p>登録不要で、記録は端末に保存します。任意のヘルスケア連携では、その日の気分と対応する気持ちを「心の状態」に記録し、睡眠・歩数・日なたの時間・周期の印を並べて表示できます。任意のサブスクリプション「にじみ日記 Pro」では、気分の横に天気・気温・気圧・日の長さを並べられます。</p>
+      <p class="lead-para">にじみ日記（旧TapLog）は、いくつもの気持ちが混ざって今日だけの一枚になる気分日記です。「うれしい」「不安」「ほっとした」など、いまの気持ちをいくつでも選べます。言葉にしない記録も、淡いにじみになります。1日に何回でも無料で記録でき、気持ちの絵をカレンダーや「最近」で見返せます。</p>
+      <p>1日の気分は、これまでどおり5つのボタンからひとタップで。ひとこと、リマインダー、ウィジェット、Siri・ショートカット、Face ID・Touch ID・パスコードによるロック、日付・気分・ひとことのCSV書き出しも無料です。点数や平均は表示せず、診断・治療や効果の判定は行いません。</p>
+      <p>登録不要で、記録は端末に保存します。任意のヘルスケア連携では、その日の気分と対応する気持ちを「心の状態」に記録し、睡眠・歩数・日なたの時間・周期の印を並べて表示できます。任意のサブスクリプション「にじみ日記 Pro」では、気分の横に天気・気温・気圧・日の長さを並べられます。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>いくつもの気持ちが同時にある日を、そのまま記録したい方</li>
-            <li>ぴったりの言葉が見つからなくても、その瞬間を残したい方</li>
-            <li>多機能な気分トラッカーは記録が重くて続かなかった方</li>
-            <li>点数や平均なしで、気分の傾向にゆるく気づきたい方</li>
-            <li>気分の横に天気や気圧も並べて見たい方（任意のPro）</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>気持ちをいくつでも選べる。選ばない記録も淡いにじみに</li>
-            <li>1日に何回でも無料で記録でき、気持ちの絵をカレンダーや「最近」で見返せる</li>
-            <li>5つのボタンでひとタップの1日の気分</li>
-            <li>ひとこと、リマインダー、ウィジェット</li>
-            <li>Siri・ショートカット</li>
-            <li>Face ID・Touch ID・パスコードによるロック</li>
-            <li>日付・気分・ひとことのCSV書き出し</li>
-            <li>任意のヘルスケア連携：気分を「心の状態」に記録し、睡眠・歩数・日なたの時間・周期の印を並べて表示</li>
-            <li>任意のサブスクリプション「にじみ日記 Pro」：気分の横に天気・気温・気圧・日の長さを表示</li>
-            <li>点数や平均は表示せず、アカウント登録も不要</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>気持ちをいくつでも選べる。選ばない記録も淡いにじみに</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>1日に何回でも無料で記録でき</strong>、気持ちの絵をカレンダーや「最近」で見返せる</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>5つのボタンでひとタップの1日の気分</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>ひとこと</strong>、リマインダー、ウィジェット</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Siri・ショートカット</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Face ID・Touch ID・パスコードによるロック</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>日付・気分・ひとことのCSV書き出し</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>任意のヘルスケア連携</strong>：気分を「心の状態」に記録し、睡眠・歩数・日なたの時間・周期の印を並べて表示</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>任意のサブスクリプション「にじみ日記 Pro」：気分の横に天気・気温・気圧・日の長さを表示</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>点数や平均は表示せず、アカウント登録も不要</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>いくつもの気持ちが同時にある日を、そのまま記録したい方</li>
+        <li>ぴったりの言葉が見つからなくても、その瞬間を残したい方</li>
+        <li>多機能な気分トラッカーは記録が重くて続かなかった方</li>
+        <li>点数や平均なしで、気分の傾向にゆるく気づきたい方</li>
+        <li>気分の横に天気や気圧も並べて見たい方（任意のPro）</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>にじみ日記を開き、5つの気分ボタンのひとつをタップして1日の気分を記録します。</li>
-            <li>または、いまの気持ちに近い言葉をいくつでも選びます。選ばなくても、淡いにじみとして記録できます。</li>
-            <li>書きたいことがあれば、短いひとことを添えます（任意）。</li>
-            <li>1日に何回でも記録できます。</li>
-            <li>気持ちの絵をカレンダーや「最近」で見返します。</li>
-            <li>必要なら、設定でリマインダー、ウィジェット、Face IDロックを使えます。</li>
+      <ol class="steps">
+        <li><span>にじみ日記を開き、5つの気分ボタンのひとつをタップして1日の気分を記録します。</span></li>
+        <li><span>または、いまの気持ちに近い言葉をいくつでも選びます。選ばなくても、淡いにじみとして記録できます。</span></li>
+        <li><span>書きたいことがあれば、短いひとことを添えます（任意）。</span></li>
+        <li><span>1日に何回でも記録できます。</span></li>
+        <li><span>気持ちの絵をカレンダーや「最近」で見返します。</span></li>
+        <li><span>必要なら、設定でリマインダー、ウィジェット、Face IDロックを使えます。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>無料でダウンロードできます。気持ちの記録と絵、ひとこと、リマインダー、ウィジェット、Siri・ショートカット、Face IDロック、CSV書き出しは無料です。「にじみ日記 Pro」は、気分の横に天気・気温・気圧・日の長さを並べる任意の自動更新サブスクリプションです（月額・年額プラン。対象の方は年額に1週間の無料体験）。最新の価格・内容はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>無料でダウンロードできます。気持ちの記録と絵、ひとこと、リマインダー、ウィジェット、Siri・ショートカット、Face IDロック、CSV書き出しは無料です。「にじみ日記 Pro」は、気分の横に天気・気温・気圧・日の長さを並べる任意の自動更新サブスクリプションです（月額・年額プラン。対象の方は年額に1週間の無料体験）。最新の価格・内容はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>登録不要で、記録は端末に保存されます。ヘルスケア連携は任意で、その日の気分と対応する気持ちを「心の状態」に記録し、睡眠・歩数・日なたの時間・周期の印を並べて表示します。天気（Proのみ）は、選んだ街、または任意のおおよその現在地で取得します。正式なデータの取り扱いは、App Storeのプライバシーラベルをご確認ください。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>にじみ日記は無料ですか？</summary>
+          <p>はい。無料でダウンロードでき、気持ちを何回でも記録すること、ひとこと、リマインダー、ウィジェット、Siri・ショートカット、Face IDロック、CSV書き出しは無料です。任意のサブスクリプション「にじみ日記 Pro」では、気分の横に天気を並べられます。最新の価格はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>TapLogはどうなりましたか？</summary>
+          <p>TapLogは「にじみ日記」になりました。1日の気分はこれまでどおりひとタップで、気持ちをいくつでも選んだり、選ばずに記録したりもできるようになりました。</p>
+        </details>
+        <details>
+          <summary>記録はどこに保存されますか？</summary>
+          <p>端末に保存され、アカウント登録は不要です。データの取り扱いの詳細はApp Storeのプライバシーラベルをご覧ください。</p>
+        </details>
+        <details>
+          <summary>毎回何か書く必要がありますか？</summary>
+          <p>いいえ。1日の気分はひとタップで記録できます。気持ちをいくつでも選ぶことも、ひとつも選ばず記録することもできます。ひとことは任意です。</p>
+        </details>
+        <details>
+          <summary>記録を忘れないようにリマインドできますか？</summary>
+          <p>はい。リマインダーがあり、記録を習慣にする助けになります。</p>
+        </details>
+        <details>
+          <summary>過去の記録を見返せますか？</summary>
+          <p>はい。気持ちの絵をカレンダーや「最近」で見返せます。日付・気分・ひとことはCSVで書き出せます。</p>
+        </details>
+        <details>
+          <summary>ヘルスケアと連携できますか？</summary>
+          <p>任意で連携できます。オンにすると、その日の気分と対応する気持ちを「心の状態」に記録し、睡眠・歩数・日なたの時間・周期の印を並べて表示します。</p>
+        </details>
+        <details>
+          <summary>「にじみ日記 Pro」とは何ですか？</summary>
+          <p>気分の横に天気・気温・気圧・日の長さを並べて表示する任意のサブスクリプションです。天気は選んだ街、または任意のおおよその現在地で取得します。月額・年額プランがあり、App Storeのサブスクリプション設定から解約できます。</p>
+        </details>
+        <details>
+          <summary>メンタルヘルスの分析をしてくれますか？</summary>
+          <p>いいえ。点数や平均は表示せず、診断・治療や効果の判定は行いません。自己観察のためのシンプルな気分日記です。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>登録不要で、記録は端末に保存されます。ヘルスケア連携は任意で、その日の気分と対応する気持ちを「心の状態」に記録し、睡眠・歩数・日なたの時間・周期の印を並べて表示します。天気（Proのみ）は、選んだ街、または任意のおおよその現在地で取得します。正式なデータの取り扱いは、App Storeのプライバシーラベルをご確認ください。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/80/74/42/80744253-dca4-24d5-3016-8117e6814311/01_iphone65_feelings.png/320x480bb.jpg" alt="にじみ日記 – 気持ちが混ざる気分日記 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a5/f7/00/a5f700c7-e8fa-4ca4-0632-60a765577dd4/02_iphone65_painting.png/320x480bb.jpg" alt="にじみ日記 – 気持ちが混ざる気分日記 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/91/93/5c/91935c76-a790-958e-1d2e-7e675d00d412/03_iphone65_calendar.png/320x480bb.jpg" alt="にじみ日記 – 気持ちが混ざる気分日記 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/6e/c1/766ec10d-2f1a-3f67-aeec-7a8a49ff5ff1/04_iphone65_recent.png/320x480bb.jpg" alt="にじみ日記 – 気持ちが混ざる気分日記 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/38/81/57/38815740-96f9-0ed0-06aa-4f38779eb288/05_iphone65_recentWeather.png/320x480bb.jpg" alt="にじみ日記 – 気持ちが混ざる気分日記 のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>にじみ日記は無料ですか？</summary>
-            <p>はい。無料でダウンロードでき、気持ちを何回でも記録すること、ひとこと、リマインダー、ウィジェット、Siri・ショートカット、Face IDロック、CSV書き出しは無料です。任意のサブスクリプション「にじみ日記 Pro」では、気分の横に天気を並べられます。最新の価格はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>TapLogはどうなりましたか？</summary>
-            <p>TapLogは「にじみ日記」になりました。1日の気分はこれまでどおりひとタップで、気持ちをいくつでも選んだり、選ばずに記録したりもできるようになりました。</p>
-          </details>
-          <details>
-            <summary>記録はどこに保存されますか？</summary>
-            <p>端末に保存され、アカウント登録は不要です。データの取り扱いの詳細はApp Storeのプライバシーラベルをご覧ください。</p>
-          </details>
-          <details>
-            <summary>毎回何か書く必要がありますか？</summary>
-            <p>いいえ。1日の気分はひとタップで記録できます。気持ちをいくつでも選ぶことも、ひとつも選ばず記録することもできます。ひとことは任意です。</p>
-          </details>
-          <details>
-            <summary>記録を忘れないようにリマインドできますか？</summary>
-            <p>はい。リマインダーがあり、記録を習慣にする助けになります。</p>
-          </details>
-          <details>
-            <summary>過去の記録を見返せますか？</summary>
-            <p>はい。気持ちの絵をカレンダーや「最近」で見返せます。日付・気分・ひとことはCSVで書き出せます。</p>
-          </details>
-          <details>
-            <summary>ヘルスケアと連携できますか？</summary>
-            <p>任意で連携できます。オンにすると、その日の気分と対応する気持ちを「心の状態」に記録し、睡眠・歩数・日なたの時間・周期の印を並べて表示します。</p>
-          </details>
-          <details>
-            <summary>「にじみ日記 Pro」とは何ですか？</summary>
-            <p>気分の横に天気・気温・気圧・日の長さを並べて表示する任意のサブスクリプションです。天気は選んだ街、または任意のおおよその現在地で取得します。月額・年額プランがあり、App Storeのサブスクリプション設定から解約できます。</p>
-          </details>
-          <details>
-            <summary>メンタルヘルスの分析をしてくれますか？</summary>
-            <p>いいえ。点数や平均は表示せず、診断・治療や効果の判定は行いません。自己観察のためのシンプルな気分日記です。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/moodwash-feelings-in-color/id6761535550?uo=4">にじみ日記 – 気持ちが混ざる気分日記 をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/moodwash-feelings-in-color/id6761535550?uo=4">にじみ日記 – 気持ちが混ざる気分日記 をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

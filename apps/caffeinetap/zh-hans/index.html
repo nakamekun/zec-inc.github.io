@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1b/8a/37/1b8a3748-78b3-be61-b9fb-6d8b2f58bd3b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.5",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "应用",
+          "item": "https://zec-inc.jp/apps/zh-hans/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "孕期哺乳期咖啡因记录 - Caffeine Tap",
+          "item": "https://zec-inc.jp/apps/caffeinetap/zh-hans/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="导航路径"><ol><li><a href="/">首页</a></li><li><a href="/apps/zh-hans/">应用</a></li><li aria-current="page">孕期哺乳期咖啡因记录 - Caffeine Tap</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1b/8a/37/1b8a3748-78b3-be61-b9fb-6d8b2f58bd3b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="孕期哺乳期咖啡因记录 - Caffeine Tap 的应用图标" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/cn/app/pregnancy-caffeine-tracker/id6769219576?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hans/">ZEC 应用一览</a>
         </div>
+        <ul class="chips" aria-label="要点"><li class="chip">免费下载</li><li class="chip">iPhone 和 iPad</li><li class="chip">支持 22 种语言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截图">
+      <h2 class="visually-hidden">截图</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/48/0c/43480cff-31b3-821e-ab24-bc3c99ca445e/69-01-home.png/320x480bb.jpg" alt="孕期哺乳期咖啡因记录 - Caffeine Tap 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/d1/49/50d1497d-74b2-69bf-ce47-28c169cde3be/69-02-stats.png/320x480bb.jpg" alt="孕期哺乳期咖啡因记录 - Caffeine Tap 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/91/24/91912422-42fb-a38e-4621-61ec9719f865/69-03-lifestage.png/320x480bb.jpg" alt="孕期哺乳期咖啡因记录 - Caffeine Tap 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f9/e6/09/f9e609a1-20f4-cbaa-9f70-6ec1204dd80d/69-04-presets.png/320x480bb.jpg" alt="孕期哺乳期咖啡因记录 - Caffeine Tap 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4d/c9/c5/4dc9c594-bde2-c81d-aff9-ef2a8a158305/69-05-widgets.png/320x480bb.jpg" alt="孕期哺乳期咖啡因记录 - Caffeine Tap 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>简介</h2>
-          <p>Caffeine Tap 帮助您记录孕期、哺乳期每天摄入的咖啡因。查看今日总量，以及距离您设定的每日参考量还剩多少。</p>
-          <p>初次使用时，选择孕期、哺乳期或两者都不是。选择孕期或哺乳期后，应用会根据您所在的地区设置参考量，并显示来源机构。各国、各机构的参考量不同，例如欧洲食品安全局（EFSA）为每天200mg，加拿大卫生部为每天300mg。您可以自行调整参考量；选择两者都不是，也可以使用自己设定的数值。</p>
-          <p>轻点预设饮品即可记录。最多保存12个预设，并调整每种饮品的咖啡因含量。半杯、一杯半、两杯都能记录，也能指定饮用时间、修改记录或撤销添加。含量为标准估计值，会因产品及冲泡方式而变化。</p>
+      <p class="lead-para">Caffeine Tap 帮助您记录孕期、哺乳期每天摄入的咖啡因。查看今日总量，以及距离您设定的每日参考量还剩多少。</p>
+      <p>初次使用时，选择孕期、哺乳期或两者都不是。选择孕期或哺乳期后，应用会根据您所在的地区设置参考量，并显示来源机构。各国、各机构的参考量不同，例如欧洲食品安全局（EFSA）为每天200mg，加拿大卫生部为每天300mg。您可以自行调整参考量；选择两者都不是，也可以使用自己设定的数值。</p>
+      <p>轻点预设饮品即可记录。最多保存12个预设，并调整每种饮品的咖啡因含量。半杯、一杯半、两杯都能记录，也能指定饮用时间、修改记录或撤销添加。含量为标准估计值，会因产品及冲泡方式而变化。</p>
     </section>
 
-    <section class="section">
-      <h2>截图</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/48/0c/43480cff-31b3-821e-ab24-bc3c99ca445e/69-01-home.png/320x480bb.jpg" alt="孕期哺乳期咖啡因记录 - Caffeine Tap 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/d1/49/50d1497d-74b2-69bf-ce47-28c169cde3be/69-02-stats.png/320x480bb.jpg" alt="孕期哺乳期咖啡因记录 - Caffeine Tap 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/91/24/91912422-42fb-a38e-4621-61ec9719f865/69-03-lifestage.png/320x480bb.jpg" alt="孕期哺乳期咖啡因记录 - Caffeine Tap 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f9/e6/09/f9e609a1-20f4-cbaa-9f70-6ec1204dd80d/69-04-presets.png/320x480bb.jpg" alt="孕期哺乳期咖啡因记录 - Caffeine Tap 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4d/c9/c5/4dc9c594-bde2-c81d-aff9-ef2a8a158305/69-05-widgets.png/320x480bb.jpg" alt="孕期哺乳期咖啡因记录 - Caffeine Tap 的截图" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>价格与隐私</h2>
       <p>价格、App 内购买与最新的隐私信息，请以 App Store 页面为准。本页介绍文字来自 App Store 的应用说明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/cn/app/pregnancy-caffeine-tracker/id6769219576?uo=4">在 App Store 打开 孕期哺乳期咖啡因记录 - Caffeine Tap</a></p>
+      <a class="button primary big" href="https://apps.apple.com/cn/app/pregnancy-caffeine-tracker/id6769219576?uo=4">在 App Store 打开 孕期哺乳期咖啡因记录 - Caffeine Tap</a>
       <p class="meta">最后更新: 2026-10-21</p>
     </section>
   </main>

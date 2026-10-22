@@ -104,6 +104,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Travel Apps",
+          "item": "https://zec-inc.jp/apps/travel/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Hong Kong Phrase Card",
+          "item": "https://zec-inc.jp/apps/hong-kong-phrase-card/"
+        }
+      ]
     }
   ]
 }
@@ -125,7 +154,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/travel/">Travel Apps</a></li><li aria-current="page">Hong Kong Phrase Card</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/0c/cb/990ccbe1-f5ec-ef23-38cb-2959c4eb2f27/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Hong Kong Phrase Card app icon" width="96" height="96">
       <div>
@@ -135,111 +165,121 @@
           <a class="button primary" href="https://apps.apple.com/us/app/hong-kong-phrase-card/id6772096993?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip chip-link"><a href="/apps/travel/">Travel Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f7/7f/a1/f77fa1e2-ba9e-9488-7496-7b9fc05be91a/01-iphone-home.png/320x480bb.jpg" alt="Hong Kong Phrase Card screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/33/30/9a33306e-4963-2323-29f9-4a332db66002/02-iphone-my-cards.png/320x480bb.jpg" alt="Hong Kong Phrase Card screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b2/28/6d/b2286d42-533a-da9f-4c70-df3da6c6520e/03-iphone-search.png/320x480bb.jpg" alt="Hong Kong Phrase Card screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/45/d2/b5/45d2b51d-152b-9227-83de-1e619b878065/04-iphone-category-rank.png/320x480bb.jpg" alt="Hong Kong Phrase Card screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7e/7f/3e/7e7f3ea0-4366-d75e-433d-cb4bbd90f504/05-iphone-phrase-detail.png/320x480bb.jpg" alt="Hong Kong Phrase Card screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Hong Kong Phrase Card is a practical travel phrase card app for visiting Hong Kong, designed primarily for Japanese travelers. Search or browse ready-made phrases, open one, and show the large Traditional Chinese text directly to a local person. When showing text is not enough, the app can speak the phrase, at normal speed or slowly, using the iPhone&#x27;s built-in text-to-speech.</p>
-          <p>Unlike live translation apps, Hong Kong Phrase Card uses fixed, reliable phrase cards that work completely offline — no typing under pressure, no waiting for a network connection, and no external translation API. The phrases are written in everyday spoken Cantonese as used in Hong Kong, and each card pairs the Traditional Chinese phrase with English text and a katakana pronunciation guide for Japanese speakers. The app does not translate text you enter, but you can save your own text, such as a hotel name or address, as a personal card.</p>
-          <p>The 160 phrases cover real travel situations: airports, hotels, taxis, trains, restaurants, cafes, shopping, convenience stores, sightseeing, payment, illness, allergies, trouble, and emergencies. Phrases are ranked by practical usefulness so the ones you are most likely to need appear first.</p>
+      <p class="lead-para">Hong Kong Phrase Card is a practical travel phrase card app for visiting Hong Kong, designed primarily for Japanese travelers. Search or browse ready-made phrases, open one, and show the large Traditional Chinese text directly to a local person. When showing text is not enough, the app can speak the phrase, at normal speed or slowly, using the iPhone&#x27;s built-in text-to-speech.</p>
+      <p>Unlike live translation apps, Hong Kong Phrase Card uses fixed, reliable phrase cards that work completely offline — no typing under pressure, no waiting for a network connection, and no external translation API. The phrases are written in everyday spoken Cantonese as used in Hong Kong, and each card pairs the Traditional Chinese phrase with English text and a katakana pronunciation guide for Japanese speakers. The app does not translate text you enter, but you can save your own text, such as a hotel name or address, as a personal card.</p>
+      <p>The 160 phrases cover real travel situations: airports, hotels, taxis, trains, restaurants, cafes, shopping, convenience stores, sightseeing, payment, illness, allergies, trouble, and emergencies. Phrases are ranked by practical usefulness so the ones you are most likely to need appear first.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>Japanese travelers visiting Hong Kong who do not speak Cantonese</li>
-            <li>Travelers who prefer fixed, reliable phrase cards over live translation apps</li>
-            <li>Visitors who need to communicate quickly in taxis, restaurants, shops, and hotels</li>
-            <li>Anyone who wants an offline communication backup for illness, allergies, or trouble situations</li>
-            <li>Travelers to other regions where Cantonese or Traditional Chinese is useful</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>160 travel phrases across 15 categories, all available offline</li>
-            <li>Search in Japanese, English, or Cantonese/Traditional Chinese</li>
-            <li>Show mode: large Traditional Chinese text with English shown together; the screen stays on while a card is shown</li>
-            <li>Turn your iPhone sideways to show the phrase even larger</li>
-            <li>Personal cards: save text you type or paste, such as a hotel name or address, and reorder them on your device</li>
-            <li>Speech playback using the iPhone text-to-speech system, with slow playback when a Hong Kong Chinese voice is available</li>
-            <li>Katakana pronunciation guides for Japanese travelers</li>
-            <li>Favorites saved locally on your device</li>
-            <li>Category lists sorted by practical usefulness rank, with rank filtering</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>160 travel phrases across 15 categories, all available offline</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Search in Japanese</strong>, English, or Cantonese/Traditional Chinese</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Show mode</strong>: large Traditional Chinese text with English shown together; the screen stays on while a card is shown</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Turn your iPhone sideways to show the phrase even larger</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Personal cards</strong>: save text you type or paste, such as a hotel name or address, and reorder them on your device</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Speech playback using the iPhone text-to-speech system, with slow playback when a Hong Kong Chinese voice is available</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Katakana pronunciation guides for Japanese travelers</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Favorites saved locally on your device</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Category lists sorted by practical usefulness rank, with rank filtering</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>Japanese travelers visiting Hong Kong who do not speak Cantonese</li>
+        <li>Travelers who prefer fixed, reliable phrase cards over live translation apps</li>
+        <li>Visitors who need to communicate quickly in taxis, restaurants, shops, and hotels</li>
+        <li>Anyone who wants an offline communication backup for illness, allergies, or trouble situations</li>
+        <li>Travelers to other regions where Cantonese or Traditional Chinese is useful</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open the app and search for a phrase, or browse by category (airport, taxi, restaurant, and more).</li>
-            <li>Filter a category by usefulness rank if you want only the essential phrases.</li>
-            <li>Tap a phrase to open its card with Traditional Chinese, English, and pronunciation guide.</li>
-            <li>Show the large Traditional Chinese text to the person you are talking to. Turn your iPhone sideways to make it even larger.</li>
-            <li>Tap play to speak the phrase aloud, at normal speed or slowly, if showing text is not enough.</li>
-            <li>Save your own text, such as a hotel name or address, as a personal card, and add frequently used phrases to Favorites for quick access.</li>
+      <ol class="steps">
+        <li><span>Open the app and search for a phrase, or browse by category (airport, taxi, restaurant, and more).</span></li>
+        <li><span>Filter a category by usefulness rank if you want only the essential phrases.</span></li>
+        <li><span>Tap a phrase to open its card with Traditional Chinese, English, and pronunciation guide.</span></li>
+        <li><span>Show the large Traditional Chinese text to the person you are talking to. Turn your iPhone sideways to make it even larger.</span></li>
+        <li><span>Tap play to speak the phrase aloud, at normal speed or slowly, if showing text is not enough.</span></li>
+        <li><span>Save your own text, such as a hotel name or address, as a personal card, and add frequently used phrases to Favorites for quick access.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>Hong Kong Phrase Card is free on the App Store, with no in-app purchases or ads. App Store pricing and availability can change, so check the store listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>Hong Kong Phrase Card is free on the App Store, with no in-app purchases or ads. App Store pricing and availability can change, so check the store listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>The app collects no personal information. There is no account, no tracking, and no external translation API — all phrase data is built into the app. Favorites and your personal cards are stored only on your device, and the app requests no location, camera, photo, contact, or microphone permissions. Speech playback uses the device text-to-speech system and does not record or transmit audio.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is Hong Kong Phrase Card free?</summary>
+          <p>Yes. The app is free with no in-app purchases or ads. App Store pricing can change, so check the listing for current details.</p>
+        </details>
+        <details>
+          <summary>Does it work offline?</summary>
+          <p>Yes. All 160 phrases are included inside the app, so search, phrase cards, and Show mode work without any internet connection.</p>
+        </details>
+        <details>
+          <summary>What data does the app collect?</summary>
+          <p>None. There is no account, no tracking, and no external translation API. Favorites are stored only on your device.</p>
+        </details>
+        <details>
+          <summary>Do I need to speak Cantonese to use it?</summary>
+          <p>No. The core workflow is showing large Traditional Chinese text to a local person. You can also play the phrase aloud with text-to-speech, and each card includes a katakana pronunciation guide.</p>
+        </details>
+        <details>
+          <summary>What situations do the phrases cover?</summary>
+          <p>15 categories including airports, hotels, transportation, taxis, trains, restaurants, cafes, shopping, convenience stores, sightseeing, payment, illness, allergies, trouble, and emergencies.</p>
+        </details>
+        <details>
+          <summary>Can I rely on it for emergencies or official matters?</summary>
+          <p>The app supports simple travel communication only. For emergencies, medical, legal, immigration, or official matters, confirm with local authorities or qualified professionals.</p>
+        </details>
+        <details>
+          <summary>Is it a language learning app?</summary>
+          <p>No. It is a practical communication tool for travelers — phrase cards to show and play, not lessons or study features.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>The app collects no personal information. There is no account, no tracking, and no external translation API — all phrase data is built into the app. Favorites and your personal cards are stored only on your device, and the app requests no location, camera, photo, contact, or microphone permissions. Speech playback uses the device text-to-speech system and does not record or transmit audio.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f7/7f/a1/f77fa1e2-ba9e-9488-7496-7b9fc05be91a/01-iphone-home.png/320x480bb.jpg" alt="Hong Kong Phrase Card screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/33/30/9a33306e-4963-2323-29f9-4a332db66002/02-iphone-my-cards.png/320x480bb.jpg" alt="Hong Kong Phrase Card screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b2/28/6d/b2286d42-533a-da9f-4c70-df3da6c6520e/03-iphone-search.png/320x480bb.jpg" alt="Hong Kong Phrase Card screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/45/d2/b5/45d2b51d-152b-9227-83de-1e619b878065/04-iphone-category-rank.png/320x480bb.jpg" alt="Hong Kong Phrase Card screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7e/7f/3e/7e7f3ea0-4366-d75e-433d-cb4bbd90f504/05-iphone-phrase-detail.png/320x480bb.jpg" alt="Hong Kong Phrase Card screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/packed/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/bd/d2/dbbdd28b-532f-37bc-c671-ed10601d8936/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Packed - Daily Packing List</h3><p>A daily packing list and forgotten-items check for the door: check keys...</p></span></a>
+        <a class="related-card" href="/apps/korean-travel-phrase-card/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/36/9b/58369b4b-1172-fbab-9915-087f7bb1e571/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Korean Travel Phrase Card</h3><p>Offline Korean phrase cards for travelers: search in Japanese, show big...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is Hong Kong Phrase Card free?</summary>
-            <p>Yes. The app is free with no in-app purchases or ads. App Store pricing can change, so check the listing for current details.</p>
-          </details>
-          <details>
-            <summary>Does it work offline?</summary>
-            <p>Yes. All 160 phrases are included inside the app, so search, phrase cards, and Show mode work without any internet connection.</p>
-          </details>
-          <details>
-            <summary>What data does the app collect?</summary>
-            <p>None. There is no account, no tracking, and no external translation API. Favorites are stored only on your device.</p>
-          </details>
-          <details>
-            <summary>Do I need to speak Cantonese to use it?</summary>
-            <p>No. The core workflow is showing large Traditional Chinese text to a local person. You can also play the phrase aloud with text-to-speech, and each card includes a katakana pronunciation guide.</p>
-          </details>
-          <details>
-            <summary>What situations do the phrases cover?</summary>
-            <p>15 categories including airports, hotels, transportation, taxis, trains, restaurants, cafes, shopping, convenience stores, sightseeing, payment, illness, allergies, trouble, and emergencies.</p>
-          </details>
-          <details>
-            <summary>Can I rely on it for emergencies or official matters?</summary>
-            <p>The app supports simple travel communication only. For emergencies, medical, legal, immigration, or official matters, confirm with local authorities or qualified professionals.</p>
-          </details>
-          <details>
-            <summary>Is it a language learning app?</summary>
-            <p>No. It is a practical communication tool for travelers — phrase cards to show and play, not lessons or study features.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/hong-kong-phrase-card/id6772096993?uo=4">Open Hong Kong Phrase Card on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/hong-kong-phrase-card/id6772096993?uo=4">Open Hong Kong Phrase Card on the App Store</a>
       <p class="meta">Last updated: 2026-10-19</p>
     </section>
   </main>

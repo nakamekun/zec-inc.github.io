@@ -96,6 +96,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Family Apps",
+          "item": "https://zec-inc.jp/apps/family/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Silly Word Beat - Word Play",
+          "item": "https://zec-inc.jp/apps/sillycombovoice/"
+        }
+      ]
     }
   ]
 }
@@ -117,7 +146,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/family/">Family Apps</a></li><li aria-current="page">Silly Word Beat - Word Play</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a7/23/04/a72304f4-adff-064b-b927-a75826cac502/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="Silly Word Beat - Word Play app icon" width="96" height="96">
       <div>
@@ -127,104 +157,115 @@
           <a class="button primary" href="https://apps.apple.com/us/app/silly-word-beat-word-play/id6765821915?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">2 languages</li><li class="chip chip-link"><a href="/apps/family/">Family Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fb/52/ed/fb52ed47-a7e7-e70b-5bfa-8ae726fdb826/01-pop.png/320x480bb.jpg" alt="Silly Word Beat - Word Play screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/43/dc/2e43dcb0-1a47-9314-4e4a-26fb0d34c995/02-tap.png/320x480bb.jpg" alt="Silly Word Beat - Word Play screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e1/eb/a3/e1eba3d3-8155-2b39-639b-1b806447bc7b/03-click.png/320x480bb.jpg" alt="Silly Word Beat - Word Play screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6f/53/74/6f5374ed-428e-0fe7-06d5-5d1826dc054c/04-reading.png/320x480bb.jpg" alt="Silly Word Beat - Word Play screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ff/70/12/ff7012ba-1d23-4165-b393-e4f8fcfebdd6/05-choose.png/320x480bb.jpg" alt="Silly Word Beat - Word Play screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Silly Word Beat is a playful word-sound app for kids and families. You pick three English word cards from a sound group, and a serious, textbook-style synthesized voice reads out a sequence of nonsense word combos. The fun comes from the gap between plain educational sentences and the meaningless compound words the app builds from the chosen cards.</p>
-          <p>There are three sound groups to play with, each with its own sentence pattern and exclamation: Pop Words (&quot;I have a/an...&quot; + &quot;Boom!&quot;), Tap Words (&quot;This is a/an...&quot; + &quot;Ta-da!&quot;), and Click Words (&quot;I like a/an...&quot; + &quot;Click!&quot;). Every combination generates an eight-line script, previewed on screen and then read aloud at Normal or Slow speed. Save your favorite combos to play again, delete, or reorder them.</p>
-          <p>The whole app is built for quick play with no setup: no accounts, no ads, no tracking, and no microphone. Speech is generated on your device and everything works offline. The app screens are available in English and Japanese, while the word cards and spoken sentences stay in English.</p>
+      <p class="lead-para">Silly Word Beat is a playful word-sound app for kids and families. You pick three English word cards from a sound group, and a serious, textbook-style synthesized voice reads out a sequence of nonsense word combos. The fun comes from the gap between plain educational sentences and the meaningless compound words the app builds from the chosen cards.</p>
+      <p>There are three sound groups to play with, each with its own sentence pattern and exclamation: Pop Words (&quot;I have a/an...&quot; + &quot;Boom!&quot;), Tap Words (&quot;This is a/an...&quot; + &quot;Ta-da!&quot;), and Click Words (&quot;I like a/an...&quot; + &quot;Click!&quot;). Every combination generates an eight-line script, previewed on screen and then read aloud at Normal or Slow speed. Save your favorite combos to play again, delete, or reorder them.</p>
+      <p>The whole app is built for quick play with no setup: no accounts, no ads, no tracking, and no microphone. Speech is generated on your device and everything works offline. The app screens are available in English and Japanese, while the word cards and spoken sentences stay in English.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>Kids who love silly wordplay and funny sounds</li>
-            <li>Parents looking for a simple, safe app to hand to a child — no network, no accounts, no ads</li>
-            <li>Families playing together and competing to invent the silliest combo</li>
-            <li>Young learners getting playful exposure to simple English sentence patterns</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Three sound groups — Pop, Tap, and Click — each with its own sentence pattern and exclamation</li>
-            <li>Pick three word cards (Base word, Word A, Word B) to build a nonsense combo</li>
-            <li>Eight-line script preview generated from your picks</li>
-            <li>Text-to-speech reading at Normal or Slow speed, one line at a time with pauses and current-line highlighting</li>
-            <li>Save favorite combos to play again, delete, or reorder</li>
-            <li>Shuffle button that picks a ready-made three-word set for instant fun</li>
-            <li>Automatic a/an grammar handling for every word</li>
-            <li>App screens in English and Japanese; no account, no ads, works offline</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Three sound groups — Pop</strong>, Tap, and Click — each with its own sentence pattern and exclamation</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Pick three word cards (Base word</strong>, Word A, Word B) to build a nonsense combo</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Eight-line script preview generated from your picks</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Text-to-speech reading at Normal or Slow speed</strong>, one line at a time with pauses and current-line highlighting</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Save favorite combos to play again, delete, or reorder</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Shuffle button that picks a ready-made three-word set for instant fun</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Automatic a/an grammar handling for every word</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>App screens in English and Japanese; no account, no ads, works offline</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>Kids who love silly wordplay and funny sounds</li>
+        <li>Parents looking for a simple, safe app to hand to a child — no network, no accounts, no ads</li>
+        <li>Families playing together and competing to invent the silliest combo</li>
+        <li>Young learners getting playful exposure to simple English sentence patterns</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Pick a sound group: Pop, Tap, or Click</li>
-            <li>Choose three word cards for the Base word, Word A, and Word B</li>
-            <li>Watch the app generate an eight-line silly script preview</li>
-            <li>Tap Read and listen as the deadpan voice reads each line aloud at Normal or Slow speed</li>
-            <li>Save combos you like to play them again later, or hit Shuffle for a ready-made combination</li>
+      <ol class="steps">
+        <li><span>Pick a sound group: Pop, Tap, or Click</span></li>
+        <li><span>Choose three word cards for the Base word, Word A, and Word B</span></li>
+        <li><span>Watch the app generate an eight-line silly script preview</span></li>
+        <li><span>Tap Read and listen as the deadpan voice reads each line aloud at Normal or Slow speed</span></li>
+        <li><span>Save combos you like to play them again later, or hit Shuffle for a ready-made combination</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>SillyComboVoice is free to download and use on the App Store. App Store pricing and availability can change, so check the store listing for the latest details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>SillyComboVoice is free to download and use on the App Store. App Store pricing and availability can change, so check the store listing for the latest details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>The app is local-only: it has no accounts, no ads, no tracking, no network features, and no microphone access. Speech is generated on your device. The only data it stores is on your device: a count of combos you have created and your saved favorite combos. See the App Store privacy label for details.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is Silly Word Beat free?</summary>
+          <p>Yes, it is free to download and use. Check the App Store listing for current pricing details.</p>
+        </details>
+        <details>
+          <summary>Is it safe for kids? Does it collect any data?</summary>
+          <p>The app is local-only, with no accounts, no ads, and no tracking. The data it stores stays on your device: a counter of created combos and your saved favorite combos.</p>
+        </details>
+        <details>
+          <summary>Does it work offline?</summary>
+          <p>Yes. The app works completely offline, so everything works without an internet connection.</p>
+        </details>
+        <details>
+          <summary>How does the voice reading work?</summary>
+          <p>The app uses the iPhone&#x27;s built-in speech synthesizer, generated on your device. Each line of the generated script is spoken separately with pauses, at Normal or Slow speed, and the line being read is highlighted on screen.</p>
+        </details>
+        <details>
+          <summary>What are the sound groups?</summary>
+          <p>Pop Words use &quot;I have a/an ...&quot; with &quot;Boom!&quot;, Tap Words use &quot;This is a/an ...&quot; with &quot;Ta-da!&quot;, and Click Words use &quot;I like a/an ...&quot; with &quot;Click!&quot;. Each group has its own word cards.</p>
+        </details>
+        <details>
+          <summary>Does my child need to read English to use it?</summary>
+          <p>The word cards show emoji alongside the words, the sentences are very simple, and the app reads everything aloud, so it works well even for kids still learning to read.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>The app is local-only: it has no accounts, no ads, no tracking, no network features, and no microphone access. Speech is generated on your device. The only data it stores is on your device: a count of combos you have created and your saved favorite combos. See the App Store privacy label for details.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fb/52/ed/fb52ed47-a7e7-e70b-5bfa-8ae726fdb826/01-pop.png/320x480bb.jpg" alt="Silly Word Beat - Word Play screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/43/dc/2e43dcb0-1a47-9314-4e4a-26fb0d34c995/02-tap.png/320x480bb.jpg" alt="Silly Word Beat - Word Play screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e1/eb/a3/e1eba3d3-8155-2b39-639b-1b806447bc7b/03-click.png/320x480bb.jpg" alt="Silly Word Beat - Word Play screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6f/53/74/6f5374ed-428e-0fe7-06d5-5d1826dc054c/04-reading.png/320x480bb.jpg" alt="Silly Word Beat - Word Play screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ff/70/12/ff7012ba-1d23-4165-b393-e4f8fcfebdd6/05-choose.png/320x480bb.jpg" alt="Silly Word Beat - Word Play screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Big Text Note</h3><p>Show one note in large, easy-to-read text to the person in front of you...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is Silly Word Beat free?</summary>
-            <p>Yes, it is free to download and use. Check the App Store listing for current pricing details.</p>
-          </details>
-          <details>
-            <summary>Is it safe for kids? Does it collect any data?</summary>
-            <p>The app is local-only, with no accounts, no ads, and no tracking. The data it stores stays on your device: a counter of created combos and your saved favorite combos.</p>
-          </details>
-          <details>
-            <summary>Does it work offline?</summary>
-            <p>Yes. The app works completely offline, so everything works without an internet connection.</p>
-          </details>
-          <details>
-            <summary>How does the voice reading work?</summary>
-            <p>The app uses the iPhone&#x27;s built-in speech synthesizer, generated on your device. Each line of the generated script is spoken separately with pauses, at Normal or Slow speed, and the line being read is highlighted on screen.</p>
-          </details>
-          <details>
-            <summary>What are the sound groups?</summary>
-            <p>Pop Words use &quot;I have a/an ...&quot; with &quot;Boom!&quot;, Tap Words use &quot;This is a/an ...&quot; with &quot;Ta-da!&quot;, and Click Words use &quot;I like a/an ...&quot; with &quot;Click!&quot;. Each group has its own word cards.</p>
-          </details>
-          <details>
-            <summary>Does my child need to read English to use it?</summary>
-            <p>The word cards show emoji alongside the words, the sentences are very simple, and the app reads everything aloud, so it works well even for kids still learning to read.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/silly-word-beat-word-play/id6765821915?uo=4">Open Silly Word Beat - Word Play on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/silly-word-beat-word-play/id6765821915?uo=4">Open Silly Word Beat - Word Play on the App Store</a>
       <p class="meta">Last updated: 2026-10-18</p>
     </section>
   </main>

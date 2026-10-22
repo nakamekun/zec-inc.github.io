@@ -104,6 +104,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "仕事効率化アプリ",
+          "item": "https://zec-inc.jp/apps/productivity/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "BaroNote",
+          "item": "https://zec-inc.jp/apps/baronote/ja/"
+        }
+      ]
     }
   ]
 }
@@ -125,7 +154,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li><li aria-current="page">BaroNote</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e3/a3/6a/e3a36a3a-a0de-e2d7-1621-f8dddae350d3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="BaroNote のアプリアイコン" width="96" height="96">
       <div>
@@ -135,111 +165,122 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/baronote/id6767775689?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">22言語に対応</li><li class="chip chip-link"><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li><li class="chip chip-link"><a href="/apps/widgets/ja/">ウィジェット対応アプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/ad/8a/8dad8a53-153a-bb3e-0028-2d4e3a510603/01-home.png/320x480bb.jpg" alt="BaroNote のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/87/50/11/87501171-623c-ca37-e51e-fc393a634688/02-log-entry.png/320x480bb.jpg" alt="BaroNote のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/13/6e/5a/136e5aeb-3ad0-5496-1d3c-e23f9fb31d54/03-history.png/320x480bb.jpg" alt="BaroNote のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/89/db/f5/89dbf520-7f0f-a26e-260e-0bcbbc90ab84/04-widgets.png/320x480bb.jpg" alt="BaroNote のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/06/ef/9c/06ef9c16-4cfc-8767-4cf0-49fe1cf8e43f/05-settings.png/320x480bb.jpg" alt="BaroNote のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>BaroNoteは、iPhoneの内蔵気圧センサーで測った「今の気圧」と、そのときの体調・気分を1画面で記録するシンプルな気圧計＆メモアプリです。気圧が上がっているのか、横ばいか、下がっているのかの傾向も合わせて表示します。</p>
-          <p>多くの天気アプリでは、気圧の数字は予報や広告の奥に埋もれがちです。BaroNoteはその逆で、実測値とシンプルな傾向、そして軽い記録だけに絞りました。予報はせず、アカウントも追跡も広告もサーバーへのアップロードもなく、記録は端末の中にだけ残ります。医療的な助言・診断・治療・予報は行わず、あくまで個人の記録のためのアプリです。</p>
-          <p>履歴では、記録までの6時間の気圧の変化を各記録のそばに並べて表示します（原因の判断はしません）。ヘルスケア連携は任意で、初期設定ではオフです。オンにしたときだけ、頭痛・疲れと気分（iOS 18以降）をAppleヘルスケアにも記録します。ヘルスケアのデータは読み込みません。</p>
-          <p>ホーム画面・ロック画面のウィジェットで現在の気圧と傾向をひと目で確認でき、アプリを開かなくても気圧をチェックできます。</p>
+      <p class="lead-para">BaroNoteは、iPhoneの内蔵気圧センサーで測った「今の気圧」と、そのときの体調・気分を1画面で記録するシンプルな気圧計＆メモアプリです。気圧が上がっているのか、横ばいか、下がっているのかの傾向も合わせて表示します。</p>
+      <p>多くの天気アプリでは、気圧の数字は予報や広告の奥に埋もれがちです。BaroNoteはその逆で、実測値とシンプルな傾向、そして軽い記録だけに絞りました。予報はせず、アカウントも追跡も広告もサーバーへのアップロードもなく、記録は端末の中にだけ残ります。医療的な助言・診断・治療・予報は行わず、あくまで個人の記録のためのアプリです。</p>
+      <p>履歴では、記録までの6時間の気圧の変化を各記録のそばに並べて表示します（原因の判断はしません）。ヘルスケア連携は任意で、初期設定ではオフです。オンにしたときだけ、頭痛・疲れと気分（iOS 18以降）をAppleヘルスケアにも記録します。ヘルスケアのデータは読み込みません。</p>
+      <p>ホーム画面・ロック画面のウィジェットで現在の気圧と傾向をひと目で確認でき、アプリを開かなくても気圧をチェックできます。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>天気や気圧が変わるときの自分の調子をメモしておきたい方</li>
-            <li>本格的な天気アプリを開かずに、気圧の実測値だけをシンプルに見たい方</li>
-            <li>体調・気分のかんたんな記録を日々つけている方</li>
-            <li>記録をクラウドに出したくない、プライバシー重視の方</li>
-            <li>ホーム画面やロック画面で気圧を確認したいウィジェット派の方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>iPhoneの気圧センサーによる実測値の表示（対応機種）</li>
-            <li>上昇・横ばい・下降の傾向表示</li>
-            <li>気分・体調（よい/ふつう/よくない）、頭痛・眠い・疲れなどの症状タグ、ひとことメモの記録</li>
-            <li>記録のそばに、記録までの6時間の気圧の変化を並べて見られる履歴</li>
-            <li>任意のAppleヘルスケア連携（初期設定はオフ）。頭痛・疲れと、iOS 18以降は気分を書き込みます。読み込みはしません</li>
-            <li>hPa / mb / inHg / mmHg の単位切り替え</li>
-            <li>ホーム画面ウィジェットとロック画面ウィジェット</li>
-            <li>記録は端末内に保存。設定から全データ削除も可能</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>iPhoneの気圧センサーによる実測値の表示（対応機種）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>上昇・横ばい・下降の傾向表示</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>気分・体調（よい/ふつう/よくない）</strong>、頭痛・眠い・疲れなどの症状タグ、ひとことメモの記録</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>記録のそばに</strong>、記録までの6時間の気圧の変化を並べて見られる履歴</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>任意のAppleヘルスケア連携（初期設定はオフ）</strong>。頭痛・疲れと、iOS 18以降は気分を書き込みます。読み込みはしません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>hPa / mb / inHg / mmHg の単位切り替え</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ホーム画面ウィジェットとロック画面ウィジェット</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>記録は端末内に保存</strong>。設定から全データ削除も可能</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>天気や気圧が変わるときの自分の調子をメモしておきたい方</li>
+        <li>本格的な天気アプリを開かずに、気圧の実測値だけをシンプルに見たい方</li>
+        <li>体調・気分のかんたんな記録を日々つけている方</li>
+        <li>記録をクラウドに出したくない、プライバシー重視の方</li>
+        <li>ホーム画面やロック画面で気圧を確認したいウィジェット派の方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>アプリを開くと、ホーム画面に現在の気圧と傾向が表示されます。</li>
-            <li>記録ボタンをタップして、今日の記録を追加します。</li>
-            <li>気分・体調（よい/ふつう/よくない）を選び、症状タグを付け、必要ならメモを入力します。</li>
-            <li>履歴で過去の記録と気圧の変化を見返します。</li>
-            <li>必要に応じて、設定で気圧の単位（hPa / mb / inHg / mmHg）を変更します。</li>
-            <li>ウィジェットをホーム画面やロック画面に追加すると、アプリを開かずに気圧を確認できます。</li>
+      <ol class="steps">
+        <li><span>アプリを開くと、ホーム画面に現在の気圧と傾向が表示されます。</span></li>
+        <li><span>記録ボタンをタップして、今日の記録を追加します。</span></li>
+        <li><span>気分・体調（よい/ふつう/よくない）を選び、症状タグを付け、必要ならメモを入力します。</span></li>
+        <li><span>履歴で過去の記録と気圧の変化を見返します。</span></li>
+        <li><span>必要に応じて、設定で気圧の単位（hPa / mb / inHg / mmHg）を変更します。</span></li>
+        <li><span>ウィジェットをホーム画面やロック画面に追加すると、アプリを開かずに気圧を確認できます。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>BaroNoteは無料で、広告もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>BaroNoteは無料で、広告もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>気圧の記録、体調・気分のメモ、症状タグ、設定はすべて端末内に保存され、サーバーへアップロードされることはありません。アカウント・クラウド同期・トラッキング・広告・解析SDKもありません。ウィジェットは、アプリとウィジェットの間だけで共有する端末内のデータを読み取ります。ヘルスケア連携は任意で初期設定はオフ。オンにしても書き込むのは対応項目（頭痛・疲れ、iOS 18以降は気分）だけで、ヘルスケアのデータは読み込みません。設定からすべてのデータをいつでも削除できます。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>BaroNoteは無料ですか？</summary>
+          <p>はい。無料で、広告もありません。最新の価格はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>記録したデータはどこに保存されますか？</summary>
+          <p>記録は端末内に保存されます。アカウント・クラウド同期・サーバーへのアップロード・トラッキングはなく、設定からすべてのデータを削除することもできます。</p>
+        </details>
+        <details>
+          <summary>どのiPhoneでも使えますか？</summary>
+          <p>気圧の表示にはiPhone内蔵の気圧センサーを使用します。センサーを搭載していない端末では、測定できない旨が表示されます。iOS 17以降が必要です。</p>
+        </details>
+        <details>
+          <summary>ウィジェットはありますか？</summary>
+          <p>はい。ホーム画面とロック画面のウィジェットで、現在の気圧と傾向を確認できます。</p>
+        </details>
+        <details>
+          <summary>天気予報や頭痛の予測はできますか？</summary>
+          <p>いいえ。表示するのは実測した気圧と、上昇・横ばい・下降のシンプルな傾向だけです。予報や診断、医療的な助言は行いません。個人の記録と振り返りのためのアプリです。</p>
+        </details>
+        <details>
+          <summary>記録にはどんな項目がありますか？</summary>
+          <p>気分と体調（よい/ふつう/よくない）、頭痛・眠い・疲れ・集中できない・肩こりなどの症状タグ、ひとことメモを記録できます。そのときの気圧も一緒に保存されます。</p>
+        </details>
+        <details>
+          <summary>Appleヘルスケアと連携できますか？</summary>
+          <p>任意で連携できます。初期設定はオフです。オンにすると、頭痛と疲れ、iOS 18以降は気分をヘルスケアに書き込みます。ヘルスケアのデータは読み込まず、眠気・集中できない・肩こり・気圧・メモは書き込みません。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>気圧の記録、体調・気分のメモ、症状タグ、設定はすべて端末内に保存され、サーバーへアップロードされることはありません。アカウント・クラウド同期・トラッキング・広告・解析SDKもありません。ウィジェットは、アプリとウィジェットの間だけで共有する端末内のデータを読み取ります。ヘルスケア連携は任意で初期設定はオフ。オンにしても書き込むのは対応項目（頭痛・疲れ、iOS 18以降は気分）だけで、ヘルスケアのデータは読み込みません。設定からすべてのデータをいつでも削除できます。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/ad/8a/8dad8a53-153a-bb3e-0028-2d4e3a510603/01-home.png/320x480bb.jpg" alt="BaroNote のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/87/50/11/87501171-623c-ca37-e51e-fc393a634688/02-log-entry.png/320x480bb.jpg" alt="BaroNote のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/13/6e/5a/136e5aeb-3ad0-5496-1d3c-e23f9fb31d54/03-history.png/320x480bb.jpg" alt="BaroNote のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/89/db/f5/89dbf520-7f0f-a26e-260e-0bcbbc90ab84/04-widgets.png/320x480bb.jpg" alt="BaroNote のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/06/ef/9c/06ef9c16-4cfc-8767-4cf0-49fe1cf8e43f/05-settings.png/320x480bb.jpg" alt="BaroNote のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>大きな文字メモ</h3><p>ひとつのメモを大きな文字で目の前の相手に見せるアプリ。読み上げや音声入力にも対応し、筆談の補助や窓口でのやりとりに使えます。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>BaroNoteは無料ですか？</summary>
-            <p>はい。無料で、広告もありません。最新の価格はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>記録したデータはどこに保存されますか？</summary>
-            <p>記録は端末内に保存されます。アカウント・クラウド同期・サーバーへのアップロード・トラッキングはなく、設定からすべてのデータを削除することもできます。</p>
-          </details>
-          <details>
-            <summary>どのiPhoneでも使えますか？</summary>
-            <p>気圧の表示にはiPhone内蔵の気圧センサーを使用します。センサーを搭載していない端末では、測定できない旨が表示されます。iOS 17以降が必要です。</p>
-          </details>
-          <details>
-            <summary>ウィジェットはありますか？</summary>
-            <p>はい。ホーム画面とロック画面のウィジェットで、現在の気圧と傾向を確認できます。</p>
-          </details>
-          <details>
-            <summary>天気予報や頭痛の予測はできますか？</summary>
-            <p>いいえ。表示するのは実測した気圧と、上昇・横ばい・下降のシンプルな傾向だけです。予報や診断、医療的な助言は行いません。個人の記録と振り返りのためのアプリです。</p>
-          </details>
-          <details>
-            <summary>記録にはどんな項目がありますか？</summary>
-            <p>気分と体調（よい/ふつう/よくない）、頭痛・眠い・疲れ・集中できない・肩こりなどの症状タグ、ひとことメモを記録できます。そのときの気圧も一緒に保存されます。</p>
-          </details>
-          <details>
-            <summary>Appleヘルスケアと連携できますか？</summary>
-            <p>任意で連携できます。初期設定はオフです。オンにすると、頭痛と疲れ、iOS 18以降は気分をヘルスケアに書き込みます。ヘルスケアのデータは読み込まず、眠気・集中できない・肩こり・気圧・メモは書き込みません。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/baronote/id6767775689?uo=4">BaroNote をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/baronote/id6767775689?uo=4">BaroNote をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

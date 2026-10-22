@@ -115,6 +115,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "写真・思い出のアプリ",
+          "item": "https://zec-inc.jp/apps/photo-memory/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "どうぶつかくし - 顔をスタンプで隠す",
+          "item": "https://zec-inc.jp/apps/cute-privacy-stamp/ja/"
+        }
+      ]
     }
   ]
 }
@@ -139,7 +168,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/photo-memory/ja/">写真・思い出のアプリ</a></li><li aria-current="page">どうぶつかくし - 顔をスタンプで隠す</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c7/f9/49/c7f94995-d42b-9492-eca3-7a4eee10eb5e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="どうぶつかくし - 顔をスタンプで隠す のアプリアイコン" width="96" height="96">
       <div>
@@ -149,113 +179,124 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/animal-face-hide-photo-mask/id6789844199?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">22言語に対応</li><li class="chip chip-link"><a href="/apps/photo-memory/ja/">写真・思い出のアプリ</a></li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/68/9d/f4/689df4a5-4f3b-6ee9-c286-f248af8d12e6/01-faces.png/320x480bb.jpg" alt="どうぶつかくし - 顔をスタンプで隠す のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0a/ce/7c/0ace7cb3-8f11-1e6a-9afe-54fe297a7f52/02-batch.png/320x480bb.jpg" alt="どうぶつかくし - 顔をスタンプで隠す のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/08/ba/02/08ba0246-6a92-2558-f6a8-50dc18d89138/03-pro.png/320x480bb.jpg" alt="どうぶつかくし - 顔をスタンプで隠す のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/05/42/5b/05425bca-3a79-0872-d6de-44b1c550ed33/04-headwear.png/320x480bb.jpg" alt="どうぶつかくし - 顔をスタンプで隠す のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/c9/de/05c9deb2-31fb-9690-825e-8c7b2b884ff8/05-cover.png/320x480bb.jpg" alt="どうぶつかくし - 顔をスタンプで隠す のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>どうぶつかくしは、写真の顔をかわいいどうぶつのスタンプで隠すアプリです。写真を開くと、写っている顔を見つけて、ねこ・くま・うさぎなどのどうぶつを自動で貼ります。出したい顔はタップして外すだけ。隠した写真は保存・共有できます。</p>
-          <p>ぼかしやモザイクとちがって、どうぶつのスタンプなら写真の楽しい雰囲気を壊しません。子どもの写真をSNSや家族のアルバム、園や学校の連絡に出す前に特にぴったりです。ねこ・くま・うさぎ・りす・いぬ・パンダ・ひよこから選べるほか、顔ごとに違うどうぶつにする「おまかせ」も。ねこ耳・うさ耳・くま耳・ニット帽のかぶりものや、すりガラス、名札や宛名にはパッチなど、さりげなく隠す方法も選べます。</p>
-          <p>処理はすべて端末内で完結し、アップロードはしません。元の写真はそのままで、隠した写真は新しい画像として保存され、元の写真の位置情報は含まれません。顔の自動検出は、横顔や小さく写った顔を見落とすことがあるので、保存や共有の前に写真全体を確かめてください。</p>
+      <p class="lead-para">どうぶつかくしは、写真の顔をかわいいどうぶつのスタンプで隠すアプリです。写真を開くと、写っている顔を見つけて、ねこ・くま・うさぎなどのどうぶつを自動で貼ります。出したい顔はタップして外すだけ。隠した写真は保存・共有できます。</p>
+      <p>ぼかしやモザイクとちがって、どうぶつのスタンプなら写真の楽しい雰囲気を壊しません。子どもの写真をSNSや家族のアルバム、園や学校の連絡に出す前に特にぴったりです。ねこ・くま・うさぎ・りす・いぬ・パンダ・ひよこから選べるほか、顔ごとに違うどうぶつにする「おまかせ」も。ねこ耳・うさ耳・くま耳・ニット帽のかぶりものや、すりガラス、名札や宛名にはパッチなど、さりげなく隠す方法も選べます。</p>
+      <p>処理はすべて端末内で完結し、アップロードはしません。元の写真はそのままで、隠した写真は新しい画像として保存され、元の写真の位置情報は含まれません。顔の自動検出は、横顔や小さく写った顔を見落とすことがあるので、保存や共有の前に写真全体を確かめてください。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>子どもの顔を隠してから、SNSや家族のアルバム、園や学校の連絡に写真を出したい保護者の方</li>
-            <li>出品写真に写り込んだ名前・住所などの個人情報を隠したいフリマ利用者の方</li>
-            <li>グループ写真を共有する際、ほかの人の顔にさりげなく配慮したい方</li>
-            <li>ぼかしやモザイクでは味気なくて、写真をかわいいまま仕上げたい方</li>
-            <li>写真を編集のためにサーバーへ送りたくない、プライバシー重視の方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>顔を自動でどうぶつに: ねこ・くま・うさぎ・りす・いぬ・パンダ・ひよこ、顔ごとに違うどうぶつにする「おまかせ」も</li>
-            <li>出したい顔はタップして外せます。顔が見つからない写真も、手でペタッと貼れます</li>
-            <li>かぶりもの: ねこ耳・うさ耳・くま耳・ニット帽。顔はすりガラスでぼかしたまま</li>
-            <li>さりげなく隠す: まわりの色になじむ・すりガラス・うすい丸。名札や宛名にはパッチ</li>
-            <li>スタンプは指で動かして、大きさや向きを調整</li>
-            <li>ひとつ戻す・ぜんぶ消すもかんたん</li>
-            <li>元の写真はそのまま。隠した写真は新しい画像として保存され、元の写真の位置情報は含まれません</li>
-            <li>処理は端末内で完結・アカウント不要・広告なし</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>顔を自動でどうぶつに</strong>: ねこ・くま・うさぎ・りす・いぬ・パンダ・ひよこ、顔ごとに違うどうぶつにする「おまかせ」も</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>出したい顔はタップして外せます</strong>。顔が見つからない写真も、手でペタッと貼れます</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>かぶりもの</strong>: ねこ耳・うさ耳・くま耳・ニット帽。顔はすりガラスでぼかしたまま</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>さりげなく隠す</strong>: まわりの色になじむ・すりガラス・うすい丸。名札や宛名にはパッチ</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>スタンプは指で動かして、大きさや向きを調整</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ひとつ戻す・ぜんぶ消すもかんたん</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>元の写真はそのまま</strong>。隠した写真は新しい画像として保存され、元の写真の位置情報は含まれません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>処理は端末内で完結・アカウント不要・広告なし</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>子どもの顔を隠してから、SNSや家族のアルバム、園や学校の連絡に写真を出したい保護者の方</li>
+        <li>出品写真に写り込んだ名前・住所などの個人情報を隠したいフリマ利用者の方</li>
+        <li>グループ写真を共有する際、ほかの人の顔にさりげなく配慮したい方</li>
+        <li>ぼかしやモザイクでは味気なくて、写真をかわいいまま仕上げたい方</li>
+        <li>写真を編集のためにサーバーへ送りたくない、プライバシー重視の方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>アプリを開き、写真を選びます。</li>
-            <li>顔を自動で見つけて、どうぶつのスタンプを貼ります。お好みでどうぶつやかぶりもの、隠し方を変えられます。</li>
-            <li>出したい顔はタップしてスタンプを外します。顔が見つからないときは、手でスタンプを貼ります。</li>
-            <li>スタンプは指で動かして、大きさや向きを調整します。ひとつ戻す・ぜんぶ消すもできます。</li>
-            <li>写真全体を確かめてから、新しい画像として保存するか、共有します。元の写真は変更されません。</li>
+      <ol class="steps">
+        <li><span>アプリを開き、写真を選びます。</span></li>
+        <li><span>顔を自動で見つけて、どうぶつのスタンプを貼ります。お好みでどうぶつやかぶりもの、隠し方を変えられます。</span></li>
+        <li><span>出したい顔はタップしてスタンプを外します。顔が見つからないときは、手でスタンプを貼ります。</span></li>
+        <li><span>スタンプは指で動かして、大きさや向きを調整します。ひとつ戻す・ぜんぶ消すもできます。</span></li>
+        <li><span>写真全体を確かめてから、新しい画像として保存するか、共有します。元の写真は変更されません。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>App Storeで無料で提供されており、広告はありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>App Storeで無料で提供されており、広告はありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>写真の加工はすべて端末の中で行い、アップロードはしません。アカウント不要・広告なしです。元の写真は変更されず、隠した写真は新しい画像として保存されます。保存した画像には、元の写真の位置情報は含まれません。データの取り扱いの正式な内容は、App Storeページのプライバシーラベルをご確認ください。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>どうぶつかくしは無料ですか？</summary>
+          <p>はい。広告なしで無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>写真はどこかにアップロードされますか？</summary>
+          <p>いいえ。処理はすべて端末の中で行い、アップロードはしません。</p>
+        </details>
+        <details>
+          <summary>元の写真は変更されますか？</summary>
+          <p>変更されません。元の写真はそのままで、隠した写真は新しい画像として保存されます。</p>
+        </details>
+        <details>
+          <summary>保存した写真に位置情報は残りますか？</summary>
+          <p>残りません。保存した画像には元の写真の位置情報は含まれないため、撮影場所を知られずに共有できます。</p>
+        </details>
+        <details>
+          <summary>ぼかしやモザイクのアプリと何がちがいますか？</summary>
+          <p>ぼかす代わりに、ねこ・くま・うさぎなどのかわいいどうぶつスタンプで顔を隠すので、写真の明るい雰囲気がそのまま残ります。子どもの写真には特に相性がよい方法です。</p>
+        </details>
+        <details>
+          <summary>スタンプを置いたあとで調整できますか？</summary>
+          <p>できます。指で動かして、大きさや向きを変えられます。ひとつ戻す・ぜんぶ消すもでき、顔が見つからない写真では手でスタンプを貼れます。</p>
+        </details>
+        <details>
+          <summary>すべての顔を見つけてくれますか？</summary>
+          <p>いつもとは限りません。顔の自動検出は、横顔や小さく写った顔を見落とすことがあります。保存や共有の前に、写真全体を見て確かめてください。</p>
+        </details>
+        <details>
+          <summary>アカウント登録は必要ですか？</summary>
+          <p>いいえ。アカウントや登録は不要です。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>写真の加工はすべて端末の中で行い、アップロードはしません。アカウント不要・広告なしです。元の写真は変更されず、隠した写真は新しい画像として保存されます。保存した画像には、元の写真の位置情報は含まれません。データの取り扱いの正式な内容は、App Storeページのプライバシーラベルをご確認ください。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/68/9d/f4/689df4a5-4f3b-6ee9-c286-f248af8d12e6/01-faces.png/320x480bb.jpg" alt="どうぶつかくし - 顔をスタンプで隠す のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0a/ce/7c/0ace7cb3-8f11-1e6a-9afe-54fe297a7f52/02-batch.png/320x480bb.jpg" alt="どうぶつかくし - 顔をスタンプで隠す のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/08/ba/02/08ba0246-6a92-2558-f6a8-50dc18d89138/03-pro.png/320x480bb.jpg" alt="どうぶつかくし - 顔をスタンプで隠す のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/05/42/5b/05425bca-3a79-0872-d6de-44b1c550ed33/04-headwear.png/320x480bb.jpg" alt="どうぶつかくし - 顔をスタンプで隠す のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/c9/de/05c9deb2-31fb-9690-825e-8c7b2b884ff8/05-cover.png/320x480bb.jpg" alt="どうぶつかくし - 顔をスタンプで隠す のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/photo-day/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/4f/dd/444fdd0a-a5ef-6137-1c93-c0b8d302b620/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>1枚かざる - 1日1枚の写真日記</h3><p>1日1枚の写真日記。子どもの成長や家族、ペット、旅行の思い出をカレンダーに残し、フレームモードで飾って見返せます。</p></span></a>
+        <a class="related-card" href="/apps/mute-video-before-share/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/31/26/62/3126628d-786f-294f-5828-7e5e67ea8829/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>動画の音消し</h3><p>動画の音を消してから共有。ワンタップでミュートした無音コピーを作成し、一部だけピー音にすることも。画質劣化ゼロ・透かしなし。</p></span></a>
+        <a class="related-card" href="/apps/undocam/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/b0/0c/b6b00c26-cd26-398e-53e7-ecf9ba70a63e/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>動画の逆再生 - UndoCam</h3><p>動画を音ごと逆再生。逆再生したい部分を選んで、巻き戻しクリップを作り、そのまま保存・共有できるiPhoneアプリです。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>どうぶつかくしは無料ですか？</summary>
-            <p>はい。広告なしで無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>写真はどこかにアップロードされますか？</summary>
-            <p>いいえ。処理はすべて端末の中で行い、アップロードはしません。</p>
-          </details>
-          <details>
-            <summary>元の写真は変更されますか？</summary>
-            <p>変更されません。元の写真はそのままで、隠した写真は新しい画像として保存されます。</p>
-          </details>
-          <details>
-            <summary>保存した写真に位置情報は残りますか？</summary>
-            <p>残りません。保存した画像には元の写真の位置情報は含まれないため、撮影場所を知られずに共有できます。</p>
-          </details>
-          <details>
-            <summary>ぼかしやモザイクのアプリと何がちがいますか？</summary>
-            <p>ぼかす代わりに、ねこ・くま・うさぎなどのかわいいどうぶつスタンプで顔を隠すので、写真の明るい雰囲気がそのまま残ります。子どもの写真には特に相性がよい方法です。</p>
-          </details>
-          <details>
-            <summary>スタンプを置いたあとで調整できますか？</summary>
-            <p>できます。指で動かして、大きさや向きを変えられます。ひとつ戻す・ぜんぶ消すもでき、顔が見つからない写真では手でスタンプを貼れます。</p>
-          </details>
-          <details>
-            <summary>すべての顔を見つけてくれますか？</summary>
-            <p>いつもとは限りません。顔の自動検出は、横顔や小さく写った顔を見落とすことがあります。保存や共有の前に、写真全体を見て確かめてください。</p>
-          </details>
-          <details>
-            <summary>アカウント登録は必要ですか？</summary>
-            <p>いいえ。アカウントや登録は不要です。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/animal-face-hide-photo-mask/id6789844199?uo=4">どうぶつかくし - 顔をスタンプで隠す をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/animal-face-hide-photo-mask/id6789844199?uo=4">どうぶつかくし - 顔をスタンプで隠す をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

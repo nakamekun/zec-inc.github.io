@@ -99,6 +99,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "タップ記録ツール",
+          "item": "https://zec-inc.jp/apps/tap-tools/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "CleanURL Tap - 追跡パラメータを消す",
+          "item": "https://zec-inc.jp/apps/cleanurl-tap/ja/"
+        }
+      ]
     }
   ]
 }
@@ -123,7 +152,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li aria-current="page">CleanURL Tap - 追跡パラメータを消す</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/c8/c4/1cc8c40d-88e9-022b-a783-c9177f48af90/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="CleanURL Tap - 追跡パラメータを消す のアプリアイコン" width="96" height="96">
       <div>
@@ -133,103 +163,114 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">7言語に対応</li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li class="chip chip-link"><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/13/e0/45/13e0454f-f283-5f33-12e9-1403e2eea93b/01-iphone-result.png/320x480bb.jpg" alt="CleanURL Tap - 追跡パラメータを消す のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/13/7b/03137b97-b294-ffbc-2fea-bb7c31eeed04/02-iphone-share-sheet.png/320x480bb.jpg" alt="CleanURL Tap - 追跡パラメータを消す のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/06/fb/c4/06fbc441-2664-fa32-1fb9-8fb272844996/03-iphone-batch.png/320x480bb.jpg" alt="CleanURL Tap - 追跡パラメータを消す のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fb/d5/47/fbd54761-8f9d-13f8-85ad-a311464eb13d/04-iphone-shortcuts.png/320x480bb.jpg" alt="CleanURL Tap - 追跡パラメータを消す のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3f/10/a6/3f10a649-5cb6-7d16-e8eb-e110b0d7f455/05-iphone-privacy.png/320x480bb.jpg" alt="CleanURL Tap - 追跡パラメータを消す のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>CleanURL Tapは、コピーしたURLに付いている追跡パラメータやキャンペーンタグなどの「余計な部分」を取り除く、リンク整理専用アプリです。iOSの追跡防止で消えないUTM、アフィリエイトタグ、広告クリックID、ショップの長い引数は、コピーしたリンクに残ることがあります。</p>
-          <p>URLだけでなく文章をまるごと貼り付けても、中のリンクをすべてきれいにし、URL以外の文字はそのまま残します。消したパラメータ名は取り消し線つきの札で確認でき、色・サイズ・数量など商品の選択情報は残します。共有メニューやショートカットから、アプリを開かずに整理することもできます。</p>
-          <p>処理は端末内で完結し、無料で広告もありません。あらゆるパラメータを完全に除去できると約束するものではないため、機密性の高いリンクを送る前には、整理後のURLをご自身でも確認することをおすすめします。</p>
+      <p class="lead-para">CleanURL Tapは、コピーしたURLに付いている追跡パラメータやキャンペーンタグなどの「余計な部分」を取り除く、リンク整理専用アプリです。iOSの追跡防止で消えないUTM、アフィリエイトタグ、広告クリックID、ショップの長い引数は、コピーしたリンクに残ることがあります。</p>
+      <p>URLだけでなく文章をまるごと貼り付けても、中のリンクをすべてきれいにし、URL以外の文字はそのまま残します。消したパラメータ名は取り消し線つきの札で確認でき、色・サイズ・数量など商品の選択情報は残します。共有メニューやショートカットから、アプリを開かずに整理することもできます。</p>
+      <p>処理は端末内で完結し、無料で広告もありません。あらゆるパラメータを完全に除去できると約束するものではないため、機密性の高いリンクを送る前には、整理後のURLをご自身でも確認することをおすすめします。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>リンクをコピーして共有する機会が多い方</li>
-            <li>追跡パラメータの少ない、すっきりしたURLを好む方</li>
-            <li>あとで読むためにリンクを保存する、書き手・調べもの好き・ネットショッピング利用者</li>
-            <li>小さな専用ツールでリンクを整えたい、プライバシー意識の高い方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>リンクからUTM・アフィリエイトタグ・広告クリックIDなどの追跡パラメータを削除</li>
-            <li>文章内の複数URLをまとめて整理（URL以外の文字と改行はそのまま）</li>
-            <li>消したパラメータ名を、取り消し線つきの札で確認</li>
-            <li>共有メニューとショートカットから、アプリを開かずに実行</li>
-            <li>Amazon、楽天、eBay、Etsy、AliExpress、SNS、一般的なリンクに対応。色・サイズ・数量など商品の選択情報は保持</li>
-            <li>消す種類を自分でON・OFF</li>
-            <li>処理は端末内で完結。アカウント、広告、解析、URL履歴はありません</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>リンクからUTM・アフィリエイトタグ・広告クリックIDなどの追跡パラメータを削除</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>文章内の複数URLをまとめて整理（URL以外の文字と改行はそのまま）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>消したパラメータ名を</strong>、取り消し線つきの札で確認</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>共有メニューとショートカットから、アプリを開かずに実行</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Amazon</strong>、楽天、eBay、Etsy、AliExpress、SNS、一般的なリンクに対応。色・サイズ・数量など商品の選択情報は保持</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>消す種類を自分でON・OFF</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>処理は端末内で完結</strong>。アカウント、広告、解析、URL履歴はありません</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>リンクをコピーして共有する機会が多い方</li>
+        <li>追跡パラメータの少ない、すっきりしたURLを好む方</li>
+        <li>あとで読むためにリンクを保存する、書き手・調べもの好き・ネットショッピング利用者</li>
+        <li>小さな専用ツールでリンクを整えたい、プライバシー意識の高い方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>App StoreからCleanURL Tapをインストールします。</li>
-            <li>Safariや他のアプリで、リンク（またはリンクを含む文章）をコピーします。</li>
-            <li>CleanURL Tapに貼り付けるか、共有メニューやショートカットから、アプリを開かずに整理します。</li>
-            <li>整理後のリンクと、消したパラメータの札を確認してから、共有または保存します。</li>
-            <li>消す種類は、アプリの設定でON・OFFを選べます。</li>
+      <ol class="steps">
+        <li><span>App StoreからCleanURL Tapをインストールします。</span></li>
+        <li><span>Safariや他のアプリで、リンク（またはリンクを含む文章）をコピーします。</span></li>
+        <li><span>CleanURL Tapに貼り付けるか、共有メニューやショートカットから、アプリを開かずに整理します。</span></li>
+        <li><span>整理後のリンクと、消したパラメータの札を確認してから、共有または保存します。</span></li>
+        <li><span>消す種類は、アプリの設定でON・OFFを選べます。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>CleanURL TapはApp Storeで無料で、広告もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>CleanURL TapはApp Storeで無料で、広告もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>処理は端末内で完結します。App Storeの説明のとおり、アカウント、広告、解析、URL履歴、クリーン処理のための通信はありません。データの取り扱いの正式な内容は、App Storeページのプライバシーラベルをご確認ください。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>CleanURL Tapは何をするアプリですか？</summary>
+          <p>UTM、アフィリエイトタグ、広告クリックIDなどの追跡パラメータをリンクから取り除き、送る・保存する・投稿する前にリンクをきれいに整えるアプリです。文章内のリンクをまとめて整理することもできます。</p>
+        </details>
+        <details>
+          <summary>すべての追跡パラメータを削除できますか？</summary>
+          <p>あらゆる追跡の仕組みを完全に除去できると保証できるアプリはありません。CleanURL Tapはよく使われるURLのノイズを対象としていて、どのパラメータを消したかも確認できます。機密性の高いリンクは、送る前にご自身でも確認してください。</p>
+        </details>
+        <details>
+          <summary>どんな人に向いていますか？</summary>
+          <p>リンクをコピーして共有する機会が多く、送る・保存する・投稿する前にサッとURLを整えたい方に向いています。</p>
+        </details>
+        <details>
+          <summary>ブラウザの代わりになりますか？</summary>
+          <p>いいえ。CleanURL TapはURLを整理するための小さなユーティリティで、ブラウザを置き換えるものではありません。共有メニューやショートカットから、アプリを開かずに使えます。</p>
+        </details>
+        <details>
+          <summary>リンクはどこかに送信されますか？</summary>
+          <p>いいえ。処理は端末内で完結し、アカウント、解析、URL履歴、クリーン処理のための通信はありません。データの取り扱いの正式な情報は、App Storeのプライバシーラベルをご確認ください。</p>
+        </details>
+        <details>
+          <summary>どこからダウンロードできますか？</summary>
+          <p>このページのApp Storeリンクから、CleanURL Tapの公式ページを開けます。無料でダウンロードできます。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>処理は端末内で完結します。App Storeの説明のとおり、アカウント、広告、解析、URL履歴、クリーン処理のための通信はありません。データの取り扱いの正式な内容は、App Storeページのプライバシーラベルをご確認ください。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/13/e0/45/13e0454f-f283-5f33-12e9-1403e2eea93b/01-iphone-result.png/320x480bb.jpg" alt="CleanURL Tap - 追跡パラメータを消す のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/13/7b/03137b97-b294-ffbc-2fea-bb7c31eeed04/02-iphone-share-sheet.png/320x480bb.jpg" alt="CleanURL Tap - 追跡パラメータを消す のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/06/fb/c4/06fbc441-2664-fa32-1fb9-8fb272844996/03-iphone-batch.png/320x480bb.jpg" alt="CleanURL Tap - 追跡パラメータを消す のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fb/d5/47/fbd54761-8f9d-13f8-85ad-a311464eb13d/04-iphone-shortcuts.png/320x480bb.jpg" alt="CleanURL Tap - 追跡パラメータを消す のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3f/10/a6/3f10a649-5cb6-7d16-e8eb-e110b0d7f455/05-iphone-privacy.png/320x480bb.jpg" alt="CleanURL Tap - 追跡パラメータを消す のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>CleanURL Tapは何をするアプリですか？</summary>
-            <p>UTM、アフィリエイトタグ、広告クリックIDなどの追跡パラメータをリンクから取り除き、送る・保存する・投稿する前にリンクをきれいに整えるアプリです。文章内のリンクをまとめて整理することもできます。</p>
-          </details>
-          <details>
-            <summary>すべての追跡パラメータを削除できますか？</summary>
-            <p>あらゆる追跡の仕組みを完全に除去できると保証できるアプリはありません。CleanURL Tapはよく使われるURLのノイズを対象としていて、どのパラメータを消したかも確認できます。機密性の高いリンクは、送る前にご自身でも確認してください。</p>
-          </details>
-          <details>
-            <summary>どんな人に向いていますか？</summary>
-            <p>リンクをコピーして共有する機会が多く、送る・保存する・投稿する前にサッとURLを整えたい方に向いています。</p>
-          </details>
-          <details>
-            <summary>ブラウザの代わりになりますか？</summary>
-            <p>いいえ。CleanURL TapはURLを整理するための小さなユーティリティで、ブラウザを置き換えるものではありません。共有メニューやショートカットから、アプリを開かずに使えます。</p>
-          </details>
-          <details>
-            <summary>リンクはどこかに送信されますか？</summary>
-            <p>いいえ。処理は端末内で完結し、アカウント、解析、URL履歴、クリーン処理のための通信はありません。データの取り扱いの正式な情報は、App Storeのプライバシーラベルをご確認ください。</p>
-          </details>
-          <details>
-            <summary>どこからダウンロードできますか？</summary>
-            <p>このページのApp Storeリンクから、CleanURL Tapの公式ページを開けます。無料でダウンロードできます。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">CleanURL Tap - 追跡パラメータを消す をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/cleanurl-tap-remove-tracking/id6767538573?uo=4">CleanURL Tap - 追跡パラメータを消す をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-19</p>
     </section>
   </main>

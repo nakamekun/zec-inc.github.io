@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/1f/4b/4a1f4b23-0ef9-f17c-1dae-36fabc21c9cf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.6",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "应用",
+          "item": "https://zec-inc.jp/apps/zh-hans/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "拍照饮食日记",
+          "item": "https://zec-inc.jp/apps/foodsnapquest/zh-hans/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="导航路径"><ol><li><a href="/">首页</a></li><li><a href="/apps/zh-hans/">应用</a></li><li aria-current="page">拍照饮食日记</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/1f/4b/4a1f4b23-0ef9-f17c-1dae-36fabc21c9cf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="拍照饮食日记 的应用图标" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/cn/app/food-photo-diary-gohansnap/id6789844298?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hans/">ZEC 应用一览</a>
         </div>
+        <ul class="chips" aria-label="要点"><li class="chip">免费下载</li><li class="chip">iPhone 和 iPad</li><li class="chip">支持 22 种语言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截图">
+      <h2 class="visually-hidden">截图</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/88/57/1d/88571d47-9ffe-1475-a75c-9bcaf446ef4c/01-home.png/320x480bb.jpg" alt="拍照饮食日记 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/8a/72/8f8a72ae-305d-0954-81c8-6684caa4bf61/02-day.png/320x480bb.jpg" alt="拍照饮食日记 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9d/15/05/9d1505a5-b652-7376-d316-b8d9ba182846/03-myitems.png/320x480bb.jpg" alt="拍照饮食日记 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/8c/6a/3c8c6afa-d12e-4e89-7959-4ad3942f5d61/04-caption.png/320x480bb.jpg" alt="拍照饮食日记 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f6/4b/a8/f64ba834-774f-f32a-b22d-1af52595c9ca/05-import.png/320x480bb.jpg" alt="拍照饮食日记 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>简介</h2>
-          <p>拍照饮食日记用照片留住你吃过的每一餐。拍张照片，日历里就多了一份日常。菜品和热量，想记的时候再填。</p>
-          <p>从相机或照片图库添加，时间自动采用照片的拍摄时间，并据此选择早餐、午餐、晚餐或零食，之后可以修改。「从照片添加」会在设备内查找美食照片，让你选好后一次记录多餐。 忘记拍照时，也可以不带照片，只记菜品或备注。在支持 Apple Intelligence 的 iPhone 上，保存的照片还会配上一句在设备上生成的简短描述。不会估算卡路里，也可以关闭。</p>
-          <p>轻点照片，就能补上或修改菜品、热量、备注、日期和时间。也可以重新选择照片。「我的菜单」现在可以保存照片和备注。轻点菜品，就能再次记录同样的餐食。每日热量合计只计算你填入的数值。可以输入自己决定的每日热量目标，与当天合计对照。应用不会推荐目标值。可为记录添加「自炊」「外食」「外带」标签。也可以从已有记录中选择菜品，添加到「我的菜单」。还可以按菜品或备注搜索记录，导出 CSV。</p>
+      <p class="lead-para">拍照饮食日记用照片留住你吃过的每一餐。拍张照片，日历里就多了一份日常。菜品和热量，想记的时候再填。</p>
+      <p>从相机或照片图库添加，时间自动采用照片的拍摄时间，并据此选择早餐、午餐、晚餐或零食，之后可以修改。「从照片添加」会在设备内查找美食照片，让你选好后一次记录多餐。 忘记拍照时，也可以不带照片，只记菜品或备注。在支持 Apple Intelligence 的 iPhone 上，保存的照片还会配上一句在设备上生成的简短描述。不会估算卡路里，也可以关闭。</p>
+      <p>轻点照片，就能补上或修改菜品、热量、备注、日期和时间。也可以重新选择照片。「我的菜单」现在可以保存照片和备注。轻点菜品，就能再次记录同样的餐食。每日热量合计只计算你填入的数值。可以输入自己决定的每日热量目标，与当天合计对照。应用不会推荐目标值。可为记录添加「自炊」「外食」「外带」标签。也可以从已有记录中选择菜品，添加到「我的菜单」。还可以按菜品或备注搜索记录，导出 CSV。</p>
     </section>
 
-    <section class="section">
-      <h2>截图</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/88/57/1d/88571d47-9ffe-1475-a75c-9bcaf446ef4c/01-home.png/320x480bb.jpg" alt="拍照饮食日记 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/8a/72/8f8a72ae-305d-0954-81c8-6684caa4bf61/02-day.png/320x480bb.jpg" alt="拍照饮食日记 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9d/15/05/9d1505a5-b652-7376-d316-b8d9ba182846/03-myitems.png/320x480bb.jpg" alt="拍照饮食日记 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/8c/6a/3c8c6afa-d12e-4e89-7959-4ad3942f5d61/04-caption.png/320x480bb.jpg" alt="拍照饮食日记 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f6/4b/a8/f64ba834-774f-f32a-b22d-1af52595c9ca/05-import.png/320x480bb.jpg" alt="拍照饮食日记 的截图" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>价格与隐私</h2>
       <p>价格、App 内购买与最新的隐私信息，请以 App Store 页面为准。本页介绍文字来自 App Store 的应用说明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/cn/app/food-photo-diary-gohansnap/id6789844298?uo=4">在 App Store 打开 拍照饮食日记</a></p>
+      <a class="button primary big" href="https://apps.apple.com/cn/app/food-photo-diary-gohansnap/id6789844298?uo=4">在 App Store 打开 拍照饮食日记</a>
       <p class="meta">最后更新: 2026-10-18</p>
     </section>
   </main>

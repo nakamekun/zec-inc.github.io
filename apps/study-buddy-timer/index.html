@@ -107,6 +107,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Productivity Apps",
+          "item": "https://zec-inc.jp/apps/productivity/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Study Buddy Timer",
+          "item": "https://zec-inc.jp/apps/study-buddy-timer/"
+        }
+      ]
     }
   ]
 }
@@ -131,7 +160,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/productivity/">Productivity Apps</a></li><li aria-current="page">Study Buddy Timer</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Study Buddy Timer app icon" width="96" height="96">
       <div>
@@ -141,109 +171,120 @@
           <a class="button primary" href="https://apps.apple.com/us/app/study-buddy-timer/id6764601072?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">10 languages</li><li class="chip chip-link"><a href="/apps/productivity/">Productivity Apps</a></li><li class="chip chip-link"><a href="/apps/widgets/">Widget-Friendly Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7f/68/28/7f68284d-ab1f-8c04-a33f-8d2ab99f9cba/iphone-01-talk.png/320x480bb.jpg" alt="Study Buddy Timer screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/09/ae/9f/09ae9f61-734d-5db9-7a3e-0868d1107f72/iphone-02-pair.png/320x480bb.jpg" alt="Study Buddy Timer screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bb/62/a9/bb62a96c-004f-5cac-e4f5-59125a52baae/iphone-03-share.png/320x480bb.jpg" alt="Study Buddy Timer screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/f1/1e/0ef11ed3-ae44-3584-aaa5-a5e28d725521/iphone-04-lock.png/320x480bb.jpg" alt="Study Buddy Timer screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8c/e3/cc/8ce3cc97-b429-14e8-a009-d3aeef8e1066/iphone-05-pomodoro.png/320x480bb.jpg" alt="Study Buddy Timer screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Study Buddy Timer is a simple study timer. Tap Start when you begin, tap Stop when you are done — no session length to set up. The timer keeps running even if you close the app, and you can pause anytime. Daily study time, session counts, and totals show how your hours add up.</p>
-          <p>What makes it different is the buddy: every minute of study earns EXP (with a small bonus for your first session of the day), leveling up a low-key companion that talks when you tap it. Taking a break never shrinks your buddy. It is deliberately a study timer first and a character second — the timer, elapsed time, and totals stay front and center, and the buddy is light motivation rather than a game.</p>
-          <p>You can time your study without opening the app: the elapsed time and your buddy appear on the Lock Screen and in the Dynamic Island, and you can start and stop from a Home Screen widget, Control Center, or the Action button. Beyond the timer there are study plans, Pomodoro, ambient sounds, a daily goal, exam countdowns, subject charts, CSV export, and optional iCloud sync. You can also pair with one friend or family member in Study Pair (no rankings).</p>
+      <p class="lead-para">Study Buddy Timer is a simple study timer. Tap Start when you begin, tap Stop when you are done — no session length to set up. The timer keeps running even if you close the app, and you can pause anytime. Daily study time, session counts, and totals show how your hours add up.</p>
+      <p>What makes it different is the buddy: every minute of study earns EXP (with a small bonus for your first session of the day), leveling up a low-key companion that talks when you tap it. Taking a break never shrinks your buddy. It is deliberately a study timer first and a character second — the timer, elapsed time, and totals stay front and center, and the buddy is light motivation rather than a game.</p>
+      <p>You can time your study without opening the app: the elapsed time and your buddy appear on the Lock Screen and in the Dynamic Island, and you can start and stop from a Home Screen widget, Control Center, or the Action button. Beyond the timer there are study plans, Pomodoro, ambient sounds, a daily goal, exam countdowns, subject charts, CSV export, and optional iCloud sync. You can also pair with one friend or family member in Study Pair (no rankings).</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>Students who want to log study hours without setting up a timer each time</li>
-            <li>Working adults studying for certifications or exams</li>
-            <li>Readers who want to track daily reading time</li>
-            <li>People building a study habit who respond to small progress rewards</li>
-            <li>Anyone who finds full task managers too heavy for simple time tracking</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>One-tap Start / Stop study timer that keeps running when you close the app, with pause</li>
-            <li>Lock Screen and Dynamic Island display while the timer runs; Home Screen widget, Control Center, Action button, and Focus-triggered start</li>
-            <li>EXP and level progress: 1 minute = 1 EXP, plus a first-session-of-the-day bonus</li>
-            <li>Buddy that grows with your study time and talks when you tap it — it never shrinks when you rest</li>
-            <li>Study plans (including pasting a plan made with AI, calendar events, and a Reminders list), subjects, and textbooks</li>
-            <li>Pomodoro, daily study-time goal, exam countdown with reminders, and ambient sounds</li>
-            <li>Weekly and monthly charts by subject, a study calendar, a weekly review, and CSV export</li>
-            <li>Optional iCloud sync and backup; Study Pair for studying together without rankings (creating a pair needs Study Buddy Pro)</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One-tap Start / Stop study timer that keeps running when you close the app, with pause</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lock Screen and Dynamic Island display while the timer runs; Home Screen widget, Control Center, Action button, and Focus-triggered start</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>EXP and level progress</strong>: 1 minute = 1 EXP, plus a first-session-of-the-day bonus</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Buddy that grows with your study time and talks when you tap it — it never shrinks when you rest</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Study plans (including pasting a plan made with AI</strong>, calendar events, and a Reminders list), subjects, and textbooks</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Pomodoro</strong>, daily study-time goal, exam countdown with reminders, and ambient sounds</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Weekly and monthly charts by subject</strong>, a study calendar, a weekly review, and CSV export</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Optional iCloud sync and backup; Study Pair for studying together without rankings (creating a pair needs Study Buddy Pro)</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>Students who want to log study hours without setting up a timer each time</li>
+        <li>Working adults studying for certifications or exams</li>
+        <li>Readers who want to track daily reading time</li>
+        <li>People building a study habit who respond to small progress rewards</li>
+        <li>Anyone who finds full task managers too heavy for simple time tracking</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open Study Buddy Timer and tap Start when you begin studying (choose a subject or plan first if you like).</li>
-            <li>Study — the elapsed time is shown live, including on the Lock Screen and in the Dynamic Island, and the timer keeps running if you close the app.</li>
-            <li>Tap Stop when you finish; the session is saved and you earn EXP.</li>
-            <li>Check your daily study time, charts, calendar, and your buddy&#x27;s level on the app&#x27;s screens.</li>
-            <li>Add a Home Screen widget or a Control Center control to start and stop without opening the app.</li>
+      <ol class="steps">
+        <li><span>Open Study Buddy Timer and tap Start when you begin studying (choose a subject or plan first if you like).</span></li>
+        <li><span>Study — the elapsed time is shown live, including on the Lock Screen and in the Dynamic Island, and the timer keeps running if you close the app.</span></li>
+        <li><span>Tap Stop when you finish; the session is saved and you earn EXP.</span></li>
+        <li><span>Check your daily study time, charts, calendar, and your buddy&#x27;s level on the app&#x27;s screens.</span></li>
+        <li><span>Add a Home Screen widget or a Control Center control to start and stop without opening the app.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>Study Buddy Timer is free to download on the App Store. Study Buddy Pro is an optional one-time purchase (no monthly fee) that adds past weeks and months, Study Pair creation, extra ambient sounds, and up to 5 exams. The timer, Pomodoro, plans, records, widgets, CSV export, and iCloud sync are free. App Store pricing can change, so check the store listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>Study Buddy Timer is free to download on the App Store. Study Buddy Pro is an optional one-time purchase (no monthly fee) that adds past weeks and months, Study Pair creation, extra ambient sounds, and up to 5 exams. The timer, Pomodoro, plans, records, widgets, CSV export, and iCloud sync are free. App Store pricing can change, so check the store listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>There are no ads. Your study records are saved on your iPhone and never sent to the developer&#x27;s servers, and the app works without an account. If you turn on iCloud sync, they are also saved in your own iCloud, which the developer cannot see. Data shared in a Study Pair is stored in the pair creator&#x27;s iCloud, and your partner sees only study-time totals. For the authoritative summary of data practices, see the privacy label on the app&#x27;s App Store page.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is Study Buddy Timer free?</summary>
+          <p>Yes, it is free to download and the core features are free. Study Buddy Pro is an optional one-time purchase (no monthly fee) for extras such as past weeks and months, creating a Study Pair, and more exams. Check the App Store listing for current details.</p>
+        </details>
+        <details>
+          <summary>Where is my study data stored?</summary>
+          <p>Study records are saved on your iPhone and are not sent to the developer&#x27;s servers. If you turn on iCloud sync, they are also saved in your own iCloud. See the App Store privacy label for the full summary of data practices.</p>
+        </details>
+        <details>
+          <summary>Does it have widgets?</summary>
+          <p>Yes. A Home Screen widget lets you start and stop and see your study time without opening the app. While the timer runs, the elapsed time and your buddy also appear on the Lock Screen and in the Dynamic Island.</p>
+        </details>
+        <details>
+          <summary>How does the EXP and level system work?</summary>
+          <p>Each minute of study earns 1 EXP, and your first valid session of the day earns a small bonus. EXP levels up your buddy, and the app shows how many minutes remain until the next level. Taking a break never shrinks your buddy.</p>
+        </details>
+        <details>
+          <summary>Do I have to set a timer length before starting?</summary>
+          <p>No. It works as a stopwatch: tap Start when you begin and Stop when you finish, so there is no barrier to just starting. Pomodoro mode is also available if you prefer 25 minutes of focus and 5 minutes of rest.</p>
+        </details>
+        <details>
+          <summary>What happens if I close the app during a session?</summary>
+          <p>The timer keeps running even if you close the app. If you forget to stop, you get one reminder after 3 hours, and you can adjust the end time later.</p>
+        </details>
+        <details>
+          <summary>Is it a game?</summary>
+          <p>No. It is designed as a practical study timer first — the buddy is a light motivational touch, not a full pet-raising game.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>There are no ads. Your study records are saved on your iPhone and never sent to the developer&#x27;s servers, and the app works without an account. If you turn on iCloud sync, they are also saved in your own iCloud, which the developer cannot see. Data shared in a Study Pair is stored in the pair creator&#x27;s iCloud, and your partner sees only study-time totals. For the authoritative summary of data practices, see the privacy label on the app&#x27;s App Store page.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7f/68/28/7f68284d-ab1f-8c04-a33f-8d2ab99f9cba/iphone-01-talk.png/320x480bb.jpg" alt="Study Buddy Timer screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/09/ae/9f/09ae9f61-734d-5db9-7a3e-0868d1107f72/iphone-02-pair.png/320x480bb.jpg" alt="Study Buddy Timer screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bb/62/a9/bb62a96c-004f-5cac-e4f5-59125a52baae/iphone-03-share.png/320x480bb.jpg" alt="Study Buddy Timer screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/f1/1e/0ef11ed3-ae44-3584-aaa5-a5e28d725521/iphone-04-lock.png/320x480bb.jpg" alt="Study Buddy Timer screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8c/e3/cc/8ce3cc97-b429-14e8-a009-d3aeef8e1066/iphone-05-pomodoro.png/320x480bb.jpg" alt="Study Buddy Timer screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Big Text Note</h3><p>Show one note in large, easy-to-read text to the person in front of you...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is Study Buddy Timer free?</summary>
-            <p>Yes, it is free to download and the core features are free. Study Buddy Pro is an optional one-time purchase (no monthly fee) for extras such as past weeks and months, creating a Study Pair, and more exams. Check the App Store listing for current details.</p>
-          </details>
-          <details>
-            <summary>Where is my study data stored?</summary>
-            <p>Study records are saved on your iPhone and are not sent to the developer&#x27;s servers. If you turn on iCloud sync, they are also saved in your own iCloud. See the App Store privacy label for the full summary of data practices.</p>
-          </details>
-          <details>
-            <summary>Does it have widgets?</summary>
-            <p>Yes. A Home Screen widget lets you start and stop and see your study time without opening the app. While the timer runs, the elapsed time and your buddy also appear on the Lock Screen and in the Dynamic Island.</p>
-          </details>
-          <details>
-            <summary>How does the EXP and level system work?</summary>
-            <p>Each minute of study earns 1 EXP, and your first valid session of the day earns a small bonus. EXP levels up your buddy, and the app shows how many minutes remain until the next level. Taking a break never shrinks your buddy.</p>
-          </details>
-          <details>
-            <summary>Do I have to set a timer length before starting?</summary>
-            <p>No. It works as a stopwatch: tap Start when you begin and Stop when you finish, so there is no barrier to just starting. Pomodoro mode is also available if you prefer 25 minutes of focus and 5 minutes of rest.</p>
-          </details>
-          <details>
-            <summary>What happens if I close the app during a session?</summary>
-            <p>The timer keeps running even if you close the app. If you forget to stop, you get one reminder after 3 hours, and you can adjust the end time later.</p>
-          </details>
-          <details>
-            <summary>Is it a game?</summary>
-            <p>No. It is designed as a practical study timer first — the buddy is a light motivational touch, not a full pet-raising game.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/study-buddy-timer/id6764601072?uo=4">Open Study Buddy Timer on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/study-buddy-timer/id6764601072?uo=4">Open Study Buddy Timer on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

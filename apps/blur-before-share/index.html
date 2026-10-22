@@ -107,6 +107,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tap Tools",
+          "item": "https://zec-inc.jp/apps/tap-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Blur Before Share",
+          "item": "https://zec-inc.jp/apps/blur-before-share/"
+        }
+      ]
     }
   ]
 }
@@ -131,7 +160,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">Blur Before Share</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e3/98/21/e398213c-554f-dbb6-0330-609d15460aaf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Blur Before Share app icon" width="96" height="96">
       <div>
@@ -141,110 +171,121 @@
           <a class="button primary" href="https://apps.apple.com/us/app/blur-before-share/id6789844137?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">22 languages</li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li><li class="chip chip-link"><a href="/apps/photo-memory/">Photo and Memory Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/68/16/0f681621-d0bd-050a-757b-071894472022/01.png/320x480bb.jpg" alt="Blur Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b3/61/99/b361991a-822d-8120-5fe5-ff13eb8eb3e8/02.png/320x480bb.jpg" alt="Blur Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/6a/d1/9a6ad19b-87b6-027a-8926-61dd66337da7/03.png/320x480bb.jpg" alt="Blur Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/12/bb/79/12bb79c4-9f16-94c9-9f9a-0a20925c7f7f/04-ipad.png/360x480bb.jpg" alt="Blur Before Share screenshot" width="360" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/35/f7/d6/35f7d664-0c1e-6d99-92a9-70d1691743f7/05-ipad.png/360x480bb.jpg" alt="Blur Before Share screenshot" width="360" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Blur Before Share hides faces, names, addresses, license plates, and anything else you do not want to show, right before you share a photo. Draw with your finger over the parts to hide, pick an effect, and save or share the result. Your original photo is never changed.</p>
-          <p>Pick the effect that fits what you are hiding: blur to softly hide faces and backgrounds, mosaic with large pixel blocks that keep the photo looking natural, or a solid black cover, the surest choice for text. You can mix all three in one photo. When you open a photo, Cover Faces finds faces on your device and covers them automatically; tap the × to uncover any one of them.</p>
-          <p>The copy you save or share is re-rendered from scratch, so it carries no location (GPS) or camera metadata from the original. There is no account, no upload, and no ads. Every tool is free, and you can save or share up to 3 blurred photos a day for free. Blur Before Share Pro removes the daily limit. The app is available in 25 languages.</p>
+      <p class="lead-para">Blur Before Share hides faces, names, addresses, license plates, and anything else you do not want to show, right before you share a photo. Draw with your finger over the parts to hide, pick an effect, and save or share the result. Your original photo is never changed.</p>
+      <p>Pick the effect that fits what you are hiding: blur to softly hide faces and backgrounds, mosaic with large pixel blocks that keep the photo looking natural, or a solid black cover, the surest choice for text. You can mix all three in one photo. When you open a photo, Cover Faces finds faces on your device and covers them automatically; tap the × to uncover any one of them.</p>
+      <p>The copy you save or share is re-rendered from scratch, so it carries no location (GPS) or camera metadata from the original. There is no account, no upload, and no ads. Every tool is free, and you can save or share up to 3 blurred photos a day for free. Blur Before Share Pro removes the daily limit. The app is available in 25 languages.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People posting screenshots that contain names, chats, or account details</li>
-            <li>Parents sharing photos of their kids who want other faces hidden</li>
-            <li>Anyone sharing tickets, receipts, or documents where personal information must stay private</li>
-            <li>Sellers and social media users who want addresses, license plates, or bystanders hidden</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Three effects: blur, mosaic, and black, mixed freely in one photo</li>
-            <li>Draw over the parts to hide with your finger</li>
-            <li>Cover Faces finds and covers faces automatically on your device; tap × to uncover any one, or search again</li>
-            <li>Undo and reset (Undo even brings everything back after a reset)</li>
-            <li>Touch and hold to compare with the original</li>
-            <li>Saved and shared copies contain no location or camera metadata</li>
-            <li>Your original photo is never modified</li>
-            <li>No account, no upload, no ads; everything runs on your device</li>
-            <li>Free to use up to 3 saved or shared photos a day, with an optional Pro subscription for no daily limit</li>
-            <li>Available in 25 languages</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Three effects</strong>: blur, mosaic, and black, mixed freely in one photo</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Draw over the parts to hide with your finger</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cover Faces finds and covers faces automatically on your device; tap × to uncover any one, or search again</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Undo and reset (Undo even brings everything back after a reset)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Touch and hold to compare with the original</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Saved and shared copies contain no location or camera metadata</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Your original photo is never modified</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>No account</strong>, no upload, no ads; everything runs on your device</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Free to use up to 3 saved or shared photos a day, with an optional Pro subscription for no daily limit</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Available in 25 languages</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People posting screenshots that contain names, chats, or account details</li>
+        <li>Parents sharing photos of their kids who want other faces hidden</li>
+        <li>Anyone sharing tickets, receipts, or documents where personal information must stay private</li>
+        <li>Sellers and social media users who want addresses, license plates, or bystanders hidden</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open the app and pick a photo.</li>
-            <li>Faces are found on your device and covered automatically; tap × to uncover any you do not want hidden.</li>
-            <li>Draw with your finger over faces, names, addresses, or anything else to hide, and choose blur, mosaic, or black.</li>
-            <li>Mix effects, or use undo and reset until it looks right. Touch and hold to compare with the original.</li>
-            <li>Save the copy or share it directly.</li>
+      <ol class="steps">
+        <li><span>Open the app and pick a photo.</span></li>
+        <li><span>Faces are found on your device and covered automatically; tap × to uncover any you do not want hidden.</span></li>
+        <li><span>Draw with your finger over faces, names, addresses, or anything else to hide, and choose blur, mosaic, or black.</span></li>
+        <li><span>Mix effects, or use undo and reset until it looks right. Touch and hold to compare with the original.</span></li>
+        <li><span>Save the copy or share it directly.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>Blur Before Share is free to download and has no ads. Every tool is free, and you can save or share up to 3 blurred photos a day for free. Blur Before Share Pro removes the daily limit, with a yearly subscription that includes a 1-week free trial or a monthly one; people who used the app before version 1.4 keep unlimited saving and sharing without Pro. Check the App Store listing for current prices and details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>Blur Before Share is free to download and has no ads. Every tool is free, and you can save or share up to 3 blurred photos a day for free. Blur Before Share Pro removes the daily limit, with a yearly subscription that includes a 1-week free trial or a monthly one; people who used the app before version 1.4 keep unlimited saving and sharing without Pro. Check the App Store listing for current prices and details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Everything runs on your device: no account, no upload, no ads. The copy you save or share is re-rendered from scratch, so it carries no location (GPS) or camera metadata from the original, and your original photo is never modified. Faces are found on your device.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is Blur Before Share free?</summary>
+          <p>Yes. Every tool is free, with no ads, and you can save or share up to 3 blurred photos a day for free. An optional Pro subscription removes the daily limit. Check the App Store listing for current details.</p>
+        </details>
+        <details>
+          <summary>Are my photos uploaded anywhere?</summary>
+          <p>No. Everything runs on your device. There is no account and no upload.</p>
+        </details>
+        <details>
+          <summary>Which effect should I use for text?</summary>
+          <p>Black is the surest choice for text. Blur softly hides faces and backgrounds, and mosaic uses large pixel blocks that keep the photo looking natural.</p>
+        </details>
+        <details>
+          <summary>Does it change my original photo?</summary>
+          <p>No. Your original photo is never modified; the app saves or shares a new copy.</p>
+        </details>
+        <details>
+          <summary>Does the shared copy include location data?</summary>
+          <p>No. The copy is re-rendered from scratch, so it carries no location (GPS) or camera metadata from the original.</p>
+        </details>
+        <details>
+          <summary>Does it automatically detect faces?</summary>
+          <p>Yes. When you open a photo, Cover Faces finds faces on your device and covers them automatically. Tap × to uncover any one of them, or tap to search again. You can also draw over anything else with your finger.</p>
+        </details>
+        <details>
+          <summary>What does Pro do?</summary>
+          <p>Blur Before Share Pro removes the daily limit of 3 saved or shared photos. It is a yearly subscription with a 1-week free trial, or a monthly one. People who used the app before version 1.4 keep unlimited saving and sharing without Pro.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Everything runs on your device: no account, no upload, no ads. The copy you save or share is re-rendered from scratch, so it carries no location (GPS) or camera metadata from the original, and your original photo is never modified. Faces are found on your device.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/68/16/0f681621-d0bd-050a-757b-071894472022/01.png/320x480bb.jpg" alt="Blur Before Share screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b3/61/99/b361991a-822d-8120-5fe5-ff13eb8eb3e8/02.png/320x480bb.jpg" alt="Blur Before Share screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/6a/d1/9a6ad19b-87b6-027a-8926-61dd66337da7/03.png/320x480bb.jpg" alt="Blur Before Share screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/12/bb/79/12bb79c4-9f16-94c9-9f9a-0a20925c7f7f/04-ipad.png/360x480bb.jpg" alt="Blur Before Share screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/35/f7/d6/35f7d664-0c1e-6d99-92a9-70d1691743f7/05-ipad.png/360x480bb.jpg" alt="Blur Before Share screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is Blur Before Share free?</summary>
-            <p>Yes. Every tool is free, with no ads, and you can save or share up to 3 blurred photos a day for free. An optional Pro subscription removes the daily limit. Check the App Store listing for current details.</p>
-          </details>
-          <details>
-            <summary>Are my photos uploaded anywhere?</summary>
-            <p>No. Everything runs on your device. There is no account and no upload.</p>
-          </details>
-          <details>
-            <summary>Which effect should I use for text?</summary>
-            <p>Black is the surest choice for text. Blur softly hides faces and backgrounds, and mosaic uses large pixel blocks that keep the photo looking natural.</p>
-          </details>
-          <details>
-            <summary>Does it change my original photo?</summary>
-            <p>No. Your original photo is never modified; the app saves or shares a new copy.</p>
-          </details>
-          <details>
-            <summary>Does the shared copy include location data?</summary>
-            <p>No. The copy is re-rendered from scratch, so it carries no location (GPS) or camera metadata from the original.</p>
-          </details>
-          <details>
-            <summary>Does it automatically detect faces?</summary>
-            <p>Yes. When you open a photo, Cover Faces finds faces on your device and covers them automatically. Tap × to uncover any one of them, or tap to search again. You can also draw over anything else with your finger.</p>
-          </details>
-          <details>
-            <summary>What does Pro do?</summary>
-            <p>Blur Before Share Pro removes the daily limit of 3 saved or shared photos. It is a yearly subscription with a 1-week free trial, or a monthly one. People who used the app before version 1.4 keep unlimited saving and sharing without Pro.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/blur-before-share/id6789844137?uo=4">Open Blur Before Share on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/blur-before-share/id6789844137?uo=4">Open Blur Before Share on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

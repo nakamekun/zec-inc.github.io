@@ -107,6 +107,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "タップ記録ツール",
+          "item": "https://zec-inc.jp/apps/tap-tools/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "洗濯タップ：洗濯タイマーと記録",
+          "item": "https://zec-inc.jp/apps/laundrytap/ja/"
+        }
+      ]
     }
   ]
 }
@@ -131,7 +160,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li aria-current="page">洗濯タップ：洗濯タイマーと記録</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="洗濯タップ：洗濯タイマーと記録 のアプリアイコン" width="96" height="96">
       <div>
@@ -141,109 +171,120 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/laundry-tap-washer-timer/id6762600691?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">23言語に対応</li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li class="chip chip-link"><a href="/apps/family/ja/">家族向けアプリ</a></li><li class="chip chip-link"><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9b/4b/f6/9b4bf647-f781-9ed1-8689-f11e6266edfa/01-timer-running.png/320x480bb.jpg" alt="洗濯タップ：洗濯タイマーと記録 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/10/02/32/10023237-50b7-883f-c772-dff2c332b6e4/02-timer-done.png/320x480bb.jpg" alt="洗濯タップ：洗濯タイマーと記録 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/7f/df/467fdff3-8003-1668-3698-4e6016fee1e5/03-logged.png/320x480bb.jpg" alt="洗濯タップ：洗濯タイマーと記録 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/09/46/3f/09463fb7-c696-0269-7678-18eda249a814/04-history.png/320x480bb.jpg" alt="洗濯タップ：洗濯タイマーと記録 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ba/23/da/ba23da68-5aca-ec03-2c72-4ffe9d9187b3/05-settings.png/320x480bb.jpg" alt="洗濯タップ：洗濯タイマーと記録 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>洗濯タップは、洗濯が終わったら知らせてくれて、最後にいつ洗濯したかを覚えておいてくれるアプリです。洗濯・乾燥のタイマーをセットしたら、スマホを置いて大丈夫。終わると通知でお知らせし、残り時間はロック画面とダイナミックアイランドにも表示されます。</p>
-          <p>干し終わったら「干した」をタップするだけで、今日の洗濯を記録できます。ホームには「前回の洗濯から何日か」とそろそろ洗濯の目安が出て、月カレンダーで洗濯した日も見返せます。</p>
-          <p>家事全体を管理する大きなアプリではなく、洗濯に絞った小さな道具です。洗濯機とは接続せず、タイマーは設定した時間でお知らせします。コインランドリーの支払いや天気予報の機能はありません。</p>
+      <p class="lead-para">洗濯タップは、洗濯が終わったら知らせてくれて、最後にいつ洗濯したかを覚えておいてくれるアプリです。洗濯・乾燥のタイマーをセットしたら、スマホを置いて大丈夫。終わると通知でお知らせし、残り時間はロック画面とダイナミックアイランドにも表示されます。</p>
+      <p>干し終わったら「干した」をタップするだけで、今日の洗濯を記録できます。ホームには「前回の洗濯から何日か」とそろそろ洗濯の目安が出て、月カレンダーで洗濯した日も見返せます。</p>
+      <p>家事全体を管理する大きなアプリではなく、洗濯に絞った小さな道具です。洗濯機とは接続せず、タイマーは設定した時間でお知らせします。コインランドリーの支払いや天気予報の機能はありません。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>洗濯機のそばを離れても、終わったことを通知で知りたい方</li>
-            <li>最後にいつ洗濯したか、よく忘れてしまう方</li>
-            <li>洗濯した日をかんたんに残しておきたいご家庭</li>
-            <li>大きな家事管理アプリではなく、洗濯専用の小さな道具がほしい方</li>
-            <li>仕事や用事の合間に洗濯をこなす忙しい方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>5〜180分の洗濯・乾燥タイマー（前回の時間を記憶）</li>
-            <li>ロック画面とダイナミックアイランドに残り時間を表示（ライブアクティビティ）</li>
-            <li>終わりを通知でお知らせ。通知からそのまま今日の洗濯を記録</li>
-            <li>「干した」をタップするだけの記録と、「前回の洗濯から何日」・目安の状態表示（洗濯の間隔は1〜7日で設定）</li>
-            <li>月カレンダーで洗濯した日を見返し、日付をタップして付け外し</li>
-            <li>時刻ごとのリマインダーを5件まで（毎日・平日・週末・曜日指定）。洗濯した日は鳴らさない設定も</li>
-            <li>ショートカット（Siri）、ホーム画面・ロック画面のウィジェット、コントロールセンター、watchOS 26のApple Watchから、アプリを開かずに記録</li>
-            <li>25言語に対応</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>5〜180分の洗濯・乾燥タイマー（前回の時間を記憶）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ロック画面とダイナミックアイランドに残り時間を表示（ライブアクティビティ）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>終わりを通知でお知らせ</strong>。通知からそのまま今日の洗濯を記録</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>「干した」をタップするだけの記録と</strong>、「前回の洗濯から何日」・目安の状態表示（洗濯の間隔は1〜7日で設定）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>月カレンダーで洗濯した日を見返し、日付をタップして付け外し</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>時刻ごとのリマインダーを5件まで（毎日・平日・週末・曜日指定）。洗濯した日は鳴らさない設定も</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>ショートカット（Siri）</strong>、ホーム画面・ロック画面のウィジェット、コントロールセンター、watchOS 26のApple Watchから、アプリを開かずに記録</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>25言語に対応</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>洗濯機のそばを離れても、終わったことを通知で知りたい方</li>
+        <li>最後にいつ洗濯したか、よく忘れてしまう方</li>
+        <li>洗濯した日をかんたんに残しておきたいご家庭</li>
+        <li>大きな家事管理アプリではなく、洗濯専用の小さな道具がほしい方</li>
+        <li>仕事や用事の合間に洗濯をこなす忙しい方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>「洗濯 45分」「乾燥 60分」をタップしてタイマーを開始します（時間は自分で決められます）。</li>
-            <li>スマホを置いて大丈夫。残り時間はロック画面とダイナミックアイランドに表示されます。</li>
-            <li>通知が届いたら洗濯物を干して、「干した」をタップして今日の洗濯を記録します。</li>
-            <li>ホームで前回の洗濯からの日数を確認したり、月カレンダーで過去の記録を見返して修正したりできます。</li>
-            <li>必要に応じてリマインダー（5件まで）を設定し、ウィジェットやコントロールセンターから記録すると、さらに手早く使えます。</li>
+      <ol class="steps">
+        <li><span>「洗濯 45分」「乾燥 60分」をタップしてタイマーを開始します（時間は自分で決められます）。</span></li>
+        <li><span>スマホを置いて大丈夫。残り時間はロック画面とダイナミックアイランドに表示されます。</span></li>
+        <li><span>通知が届いたら洗濯物を干して、「干した」をタップして今日の洗濯を記録します。</span></li>
+        <li><span>ホームで前回の洗濯からの日数を確認したり、月カレンダーで過去の記録を見返して修正したりできます。</span></li>
+        <li><span>必要に応じてリマインダー（5件まで）を設定し、ウィジェットやコントロールセンターから記録すると、さらに手早く使えます。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>ダウンロードは無料です。App Storeの説明では、広告もアプリ内課金もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>ダウンロードは無料です。App Storeの説明では、広告もアプリ内課金もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>アカウント登録は不要で、広告もありません。App Storeの説明のとおり、データはすべてiPhoneの中だけに保存され、サーバーには送りません。タイマーとリマインダーのために通知を使用します。最新のプライバシーラベルはApp Storeでご確認ください。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>洗濯タップは何のためのアプリですか？</summary>
+          <p>洗濯・乾燥のタイマーと通知で終わりを知らせ、最後にいつ洗濯したかを記録して、そろそろ洗濯の時期かをひと目で確認するためのアプリです。</p>
+        </details>
+        <details>
+          <summary>家事管理アプリですか？</summary>
+          <p>いいえ。家中のタスクを管理するのではなく、あえて洗濯のタイマーと記録だけに絞った小さなアプリです。</p>
+        </details>
+        <details>
+          <summary>洗濯機とつながりますか？</summary>
+          <p>いいえ。タイマーは設定した時間をカウントダウンするだけです。コインランドリーの支払いや天気予報の機能もありません。</p>
+        </details>
+        <details>
+          <summary>リマインダーの代わりになりますか？</summary>
+          <p>アプリ自身にリマインダーがあります。時刻ごとに5件まで、毎日・平日・週末・曜日指定で設定でき、洗濯した日は鳴らさない設定も選べます。</p>
+        </details>
+        <details>
+          <summary>アプリを開かずに記録できますか？</summary>
+          <p>できます。タイマー終了の通知、ショートカット（Siri）、ホーム画面・ロック画面のウィジェット、コントロールセンター、watchOS 26のApple Watchから記録できます。</p>
+        </details>
+        <details>
+          <summary>データはどこかに送られますか？</summary>
+          <p>App Storeの説明のとおり、データはすべてiPhoneの中だけに保存され、サーバーには送りません。アカウント登録もありません。</p>
+        </details>
+        <details>
+          <summary>どこからダウンロードできますか？</summary>
+          <p>このページのApp Storeリンクから、洗濯タップの公式ページを開けます。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>アカウント登録は不要で、広告もありません。App Storeの説明のとおり、データはすべてiPhoneの中だけに保存され、サーバーには送りません。タイマーとリマインダーのために通知を使用します。最新のプライバシーラベルはApp Storeでご確認ください。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9b/4b/f6/9b4bf647-f781-9ed1-8689-f11e6266edfa/01-timer-running.png/320x480bb.jpg" alt="洗濯タップ：洗濯タイマーと記録 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/10/02/32/10023237-50b7-883f-c772-dff2c332b6e4/02-timer-done.png/320x480bb.jpg" alt="洗濯タップ：洗濯タイマーと記録 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/7f/df/467fdff3-8003-1668-3698-4e6016fee1e5/03-logged.png/320x480bb.jpg" alt="洗濯タップ：洗濯タイマーと記録 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/09/46/3f/09463fb7-c696-0269-7678-18eda249a814/04-history.png/320x480bb.jpg" alt="洗濯タップ：洗濯タイマーと記録 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ba/23/da/ba23da68-5aca-ec03-2c72-4ffe9d9187b3/05-settings.png/320x480bb.jpg" alt="洗濯タップ：洗濯タイマーと記録 のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/mute-video-before-share/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/31/26/62/3126628d-786f-294f-5828-7e5e67ea8829/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>動画の音消し</h3><p>動画の音を消してから共有。ワンタップでミュートした無音コピーを作成し、一部だけピー音にすることも。画質劣化ゼロ・透かしなし。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>洗濯タップは何のためのアプリですか？</summary>
-            <p>洗濯・乾燥のタイマーと通知で終わりを知らせ、最後にいつ洗濯したかを記録して、そろそろ洗濯の時期かをひと目で確認するためのアプリです。</p>
-          </details>
-          <details>
-            <summary>家事管理アプリですか？</summary>
-            <p>いいえ。家中のタスクを管理するのではなく、あえて洗濯のタイマーと記録だけに絞った小さなアプリです。</p>
-          </details>
-          <details>
-            <summary>洗濯機とつながりますか？</summary>
-            <p>いいえ。タイマーは設定した時間をカウントダウンするだけです。コインランドリーの支払いや天気予報の機能もありません。</p>
-          </details>
-          <details>
-            <summary>リマインダーの代わりになりますか？</summary>
-            <p>アプリ自身にリマインダーがあります。時刻ごとに5件まで、毎日・平日・週末・曜日指定で設定でき、洗濯した日は鳴らさない設定も選べます。</p>
-          </details>
-          <details>
-            <summary>アプリを開かずに記録できますか？</summary>
-            <p>できます。タイマー終了の通知、ショートカット（Siri）、ホーム画面・ロック画面のウィジェット、コントロールセンター、watchOS 26のApple Watchから記録できます。</p>
-          </details>
-          <details>
-            <summary>データはどこかに送られますか？</summary>
-            <p>App Storeの説明のとおり、データはすべてiPhoneの中だけに保存され、サーバーには送りません。アカウント登録もありません。</p>
-          </details>
-          <details>
-            <summary>どこからダウンロードできますか？</summary>
-            <p>このページのApp Storeリンクから、洗濯タップの公式ページを開けます。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/laundry-tap-washer-timer/id6762600691?uo=4">洗濯タップ：洗濯タイマーと記録 をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/laundry-tap-washer-timer/id6762600691?uo=4">洗濯タップ：洗濯タイマーと記録 をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

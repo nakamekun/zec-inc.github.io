@@ -131,6 +131,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "タップ記録ツール",
+          "item": "https://zec-inc.jp/apps/tap-tools/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "かず鍛冶 - 毎日1問の数字パズル",
+          "item": "https://zec-inc.jp/apps/number-forge-daily-puzzle/ja/"
+        }
+      ]
     }
   ]
 }
@@ -155,7 +184,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li aria-current="page">かず鍛冶 - 毎日1問の数字パズル</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/25/8e/ba/258eba7c-8744-8931-88f7-e726926d2d4d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="かず鍛冶 - 毎日1問の数字パズル のアプリアイコン" width="96" height="96">
       <div>
@@ -165,125 +195,136 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/number-forge-daily-puzzle/id6791862183?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">11言語に対応</li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li class="chip chip-link"><a href="/apps/widgets/ja/">ウィジェット対応アプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7d/8d/14/7d8d14a1-c2a8-adaa-cbf4-958126ed8695/01-iphone-forge.png/320x480bb.jpg" alt="かず鍛冶 - 毎日1問の数字パズル のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2f/f6/f8/2ff6f844-1ec5-a04f-3ea5-712bb4c8f221/02-iphone-solved.png/320x480bb.jpg" alt="かず鍛冶 - 毎日1問の数字パズル のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2f/5f/a3/2f5fa37f-1cbd-fd44-81d2-625b28602331/03-iphone-nearmiss.png/320x480bb.jpg" alt="かず鍛冶 - 毎日1問の数字パズル のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1f/53/63/1f536356-a4e8-cc84-3101-ec32eb3ba33e/04-iphone-ways.png/320x480bb.jpg" alt="かず鍛冶 - 毎日1問の数字パズル のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8d/4d/11/8d4d1137-2052-704b-97cd-5e08beb69dbe/05-iphone-widgets.png/320x480bb.jpg" alt="かず鍛冶 - 毎日1問の数字パズル のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>かず鍛冶は、1日1問だけの数字パズルです。毎日新しい問題が1問届き、6つの数字を足す・引く・掛ける・割るで組み合わせて目標の数を作ります。数字を2つ選んで演算を選ぶと新しい数字が生まれるので、できるだけ少ない手数で目標にたどり着きましょう。</p>
-          <p>問題は毎日1問だけで、世界中のプレイヤーが同じ問題に挑戦します。だらだら遊び続けるゲームではなく、短い「毎日の頭の体操」として続けられる設計です。「パー」は理論上の最少手数。解けたあとも「パーで解けるか」というもうひと粘りの楽しみがあります。解いたあとは、任意のGame Centerで「きょうのランキング」の順位（2000点満点）を確かめたり、ほかの作り方を探して今日の称号を上げたりできます。連続記録やパー達成数の記録、ネタバレなしの結果シェアが習慣を後押しします。</p>
-          <p>惜しくても大丈夫。いつでも「ここで終える」ことができ、目標との差が10以内なら星2つ、25以内なら星1つ、星がつけば連続記録は続きます。終えたあとは答えの例を見られ、今日の問題を終えると前の日付の問題も練習できます。ホーム画面ウィジェット（小・中サイズ）では、解く前は今日の目標の数を、クリア後は結果をひと目で確認でき、任意の1日1回リマインダーにも対応します。アプリとウィジェットはストアと同じ13言語に対応しています。</p>
+      <p class="lead-para">かず鍛冶は、1日1問だけの数字パズルです。毎日新しい問題が1問届き、6つの数字を足す・引く・掛ける・割るで組み合わせて目標の数を作ります。数字を2つ選んで演算を選ぶと新しい数字が生まれるので、できるだけ少ない手数で目標にたどり着きましょう。</p>
+      <p>問題は毎日1問だけで、世界中のプレイヤーが同じ問題に挑戦します。だらだら遊び続けるゲームではなく、短い「毎日の頭の体操」として続けられる設計です。「パー」は理論上の最少手数。解けたあとも「パーで解けるか」というもうひと粘りの楽しみがあります。解いたあとは、任意のGame Centerで「きょうのランキング」の順位（2000点満点）を確かめたり、ほかの作り方を探して今日の称号を上げたりできます。連続記録やパー達成数の記録、ネタバレなしの結果シェアが習慣を後押しします。</p>
+      <p>惜しくても大丈夫。いつでも「ここで終える」ことができ、目標との差が10以内なら星2つ、25以内なら星1つ、星がつけば連続記録は続きます。終えたあとは答えの例を見られ、今日の問題を終えると前の日付の問題も練習できます。ホーム画面ウィジェット（小・中サイズ）では、解く前は今日の目標の数を、クリア後は結果をひと目で確認でき、任意の1日1回リマインダーにも対応します。アプリとウィジェットはストアと同じ13言語に対応しています。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>WordleやNYT Digitsのようなデイリーパズルが好きで、数字版を探している方</li>
-            <li>朝のコーヒータイムや通勤時間に、短くて手応えのある計算トレーニングをしたい方</li>
-            <li>ただ解くだけでなく、最少手数の解を追いかけたいパズル好きの方</li>
-            <li>連続記録を途切れさせずに積み上げるのが好きな方</li>
-            <li>広告なし・アカウント不要・トラッキングなしの脳トレアプリを求めている方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>毎日1問の新しい問題。世界中のプレイヤーが同じ問題に挑戦</li>
-            <li>数字を2つ選んで+−×÷で合成する「フォージ」操作。やり直し・リセットにも対応</li>
-            <li>理論上の最少手数「パー」を表示。同じ手数でのクリアに挑戦できる</li>
-            <li>Game Centerの「今日のフォージ」ランキング。2000点満点で、パー超過は1手ごとに−200点、時間は1秒ごとに−1点（20分で打ち切り）。サインインは任意</li>
-            <li>いつでも「ここで終える」: 目標との差が10以内なら星2つ、25以内なら星1つで、連続記録は続きます。終えたあとは答えの例を表示</li>
-            <li>解いたあとにほかの作り方を探すと、今日の称号が上がります（見習い → 職人 → 名工 → 刀匠）</li>
-            <li>今日の問題を終えると、前の日付の問題を端末内で練習できます。順位・連続・称号・統計には数えません</li>
-            <li>クリア日数・現在の連続記録・最長連続記録・パー達成数を記録</li>
-            <li>問題番号・手数・連続記録だけを載せたネタバレなしのシェアテキスト</li>
-            <li>今日の目標やクリア結果を表示するホーム画面ウィジェット（小・中）</li>
-            <li>通知は任意の1日1回リマインダーのみ。アカウント登録不要・広告なし・トラッキングなしで、アプリとウィジェットは13言語に対応</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>毎日1問の新しい問題</strong>。世界中のプレイヤーが同じ問題に挑戦</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>数字を2つ選んで+−×÷で合成する「フォージ」操作。やり直し・リセットにも対応</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>理論上の最少手数「パー」を表示。同じ手数でのクリアに挑戦できる</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Game Centerの「今日のフォージ」ランキング</strong>。2000点満点で、パー超過は1手ごとに−200点、時間は1秒ごとに−1点（20分で打ち切り）。サインインは任意</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>いつでも「ここで終える」</strong>: 目標との差が10以内なら星2つ、25以内なら星1つで、連続記録は続きます。終えたあとは答えの例を表示</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>解いたあとにほかの作り方を探すと</strong>、今日の称号が上がります（見習い → 職人 → 名工 → 刀匠）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>今日の問題を終えると</strong>、前の日付の問題を端末内で練習できます。順位・連続・称号・統計には数えません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>クリア日数・現在の連続記録・最長連続記録・パー達成数を記録</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>問題番号・手数・連続記録だけを載せたネタバレなしのシェアテキスト</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>今日の目標やクリア結果を表示するホーム画面ウィジェット（小・中）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>通知は任意の1日1回リマインダーのみ</strong>。アカウント登録不要・広告なし・トラッキングなしで、アプリとウィジェットは13言語に対応</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>WordleやNYT Digitsのようなデイリーパズルが好きで、数字版を探している方</li>
+        <li>朝のコーヒータイムや通勤時間に、短くて手応えのある計算トレーニングをしたい方</li>
+        <li>ただ解くだけでなく、最少手数の解を追いかけたいパズル好きの方</li>
+        <li>連続記録を途切れさせずに積み上げるのが好きな方</li>
+        <li>広告なし・アカウント不要・トラッキングなしの脳トレアプリを求めている方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>アプリを開くと、今日の問題がすぐに表示されます。オンボーディングもメニュー画面もありません。</li>
-            <li>数字タイルを2つ選び、演算を選んで新しい数字を作ります。</li>
-            <li>目標の数になるまで組み合わせを続けます。間違えたらやり直し・リセットで戻れます。届かないときも、いつでも終えて星を獲得できます。</li>
-            <li>理論上の最少手数「パー」と同じ手数でのクリアに挑戦してみましょう。</li>
-            <li>解いたら「きょうのランキング」で順位を確認（Game Centerのサインインは任意）し、ほかの作り方を探したり、結果をネタバレなしのテキストでシェアしたりできます。</li>
-            <li>翌日また新しい問題に挑戦して連続記録をつなぎましょう。ウィジェットで新しい目標の数がひと目でわかります。</li>
+      <ol class="steps">
+        <li><span>アプリを開くと、今日の問題がすぐに表示されます。オンボーディングもメニュー画面もありません。</span></li>
+        <li><span>数字タイルを2つ選び、演算を選んで新しい数字を作ります。</span></li>
+        <li><span>目標の数になるまで組み合わせを続けます。間違えたらやり直し・リセットで戻れます。届かないときも、いつでも終えて星を獲得できます。</span></li>
+        <li><span>理論上の最少手数「パー」と同じ手数でのクリアに挑戦してみましょう。</span></li>
+        <li><span>解いたら「きょうのランキング」で順位を確認（Game Centerのサインインは任意）し、ほかの作り方を探したり、結果をネタバレなしのテキストでシェアしたりできます。</span></li>
+        <li><span>翌日また新しい問題に挑戦して連続記録をつなぎましょう。ウィジェットで新しい目標の数がひと目でわかります。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>無料で、広告もアプリ内課金もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>無料で、広告もアプリ内課金もありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>アカウント登録は不要で、広告もトラッキングもありません。クリア日数・連続記録・設定などの記録は端末内にのみ保存され（ウィジェットとの共有も端末内のApp Group経由）、iCloud同期や独自のサーバーはありません。Game Centerへのサインインは任意で、サインインした場合にのみ、きょうのランキング用に当日のスコアがGame Centerへ送られます。それ以外はサインインなしで使えます。リマインダーは任意のローカル通知です。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>かず鍛冶は無料ですか？</summary>
+          <p>はい。広告なし・アプリ内課金なしで無料です。価格は変わる可能性があるため、最新の情報はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>毎日の問題はどういう仕組みですか？</summary>
+          <p>問題は日付から生成され、毎日1問だけ。世界中のプレイヤーが同じ問題に挑戦します。6つの数字を+−×÷で組み合わせて目標の数を作ります。</p>
+        </details>
+        <details>
+          <summary>「パー」とは何ですか？</summary>
+          <p>その日の問題を解くのに必要な理論上の最少手数です。解くだけでなくパーと同じ手数でクリアできるかが本当の挑戦で、パー達成数はアプリが記録してくれます。</p>
+        </details>
+        <details>
+          <summary>きょうのランキングはどういう仕組みですか？</summary>
+          <p>今日の問題を解くと、Game Centerの「今日のフォージ」で「今日 N位 / M人」と表示されます。2000点満点で、パー超過は1手ごとに−200点、時間は1秒ごとに−1点（20分で打ち切り）です。サインインは任意で、しなくても全機能を使えます。</p>
+        </details>
+        <details>
+          <summary>目標に届かないときはどうなりますか？</summary>
+          <p>いつでも「ここで終える」ことができます。目標との差が10以内なら星2つ、25以内なら星1つで、星がつけば連続記録は続きます。終えたあとは答えの例を見られます。</p>
+        </details>
+        <details>
+          <summary>過去の問題も遊べますか？</summary>
+          <p>はい。今日の問題を終えると、前の日付の問題を端末内で練習できます。順位・連続・称号・統計には数えません。</p>
+        </details>
+        <details>
+          <summary>オフラインでも遊べますか？</summary>
+          <p>問題は端末内で生成されるので、オフラインでも遊べます。通信が必要なのは、任意のGame Centerランキングだけです。</p>
+        </details>
+        <details>
+          <summary>ウィジェットはありますか？</summary>
+          <p>はい、小・中サイズがあります。解く前は今日の目標の数を、解いたあとは結果を表示し、日付が変わると次の問題に更新されます。</p>
+        </details>
+        <details>
+          <summary>アプリはどんなデータを集めますか？</summary>
+          <p>アカウントも広告もトラッキングもありません。連続記録や結果は端末内にのみ保存されます。Game Centerにサインインした場合にのみ、ランキング用に当日のスコアがGame Centerへ送られます。</p>
+        </details>
+        <details>
+          <summary>通知は届きますか？</summary>
+          <p>任意の1日1回リマインダーをオンにした場合のみ届きます。通知なしでも全機能を使えます。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>アカウント登録は不要で、広告もトラッキングもありません。クリア日数・連続記録・設定などの記録は端末内にのみ保存され（ウィジェットとの共有も端末内のApp Group経由）、iCloud同期や独自のサーバーはありません。Game Centerへのサインインは任意で、サインインした場合にのみ、きょうのランキング用に当日のスコアがGame Centerへ送られます。それ以外はサインインなしで使えます。リマインダーは任意のローカル通知です。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7d/8d/14/7d8d14a1-c2a8-adaa-cbf4-958126ed8695/01-iphone-forge.png/320x480bb.jpg" alt="かず鍛冶 - 毎日1問の数字パズル のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2f/f6/f8/2ff6f844-1ec5-a04f-3ea5-712bb4c8f221/02-iphone-solved.png/320x480bb.jpg" alt="かず鍛冶 - 毎日1問の数字パズル のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2f/5f/a3/2f5fa37f-1cbd-fd44-81d2-625b28602331/03-iphone-nearmiss.png/320x480bb.jpg" alt="かず鍛冶 - 毎日1問の数字パズル のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1f/53/63/1f536356-a4e8-cc84-3101-ec32eb3ba33e/04-iphone-ways.png/320x480bb.jpg" alt="かず鍛冶 - 毎日1問の数字パズル のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8d/4d/11/8d4d1137-2052-704b-97cd-5e08beb69dbe/05-iphone-widgets.png/320x480bb.jpg" alt="かず鍛冶 - 毎日1問の数字パズル のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>かず鍛冶は無料ですか？</summary>
-            <p>はい。広告なし・アプリ内課金なしで無料です。価格は変わる可能性があるため、最新の情報はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>毎日の問題はどういう仕組みですか？</summary>
-            <p>問題は日付から生成され、毎日1問だけ。世界中のプレイヤーが同じ問題に挑戦します。6つの数字を+−×÷で組み合わせて目標の数を作ります。</p>
-          </details>
-          <details>
-            <summary>「パー」とは何ですか？</summary>
-            <p>その日の問題を解くのに必要な理論上の最少手数です。解くだけでなくパーと同じ手数でクリアできるかが本当の挑戦で、パー達成数はアプリが記録してくれます。</p>
-          </details>
-          <details>
-            <summary>きょうのランキングはどういう仕組みですか？</summary>
-            <p>今日の問題を解くと、Game Centerの「今日のフォージ」で「今日 N位 / M人」と表示されます。2000点満点で、パー超過は1手ごとに−200点、時間は1秒ごとに−1点（20分で打ち切り）です。サインインは任意で、しなくても全機能を使えます。</p>
-          </details>
-          <details>
-            <summary>目標に届かないときはどうなりますか？</summary>
-            <p>いつでも「ここで終える」ことができます。目標との差が10以内なら星2つ、25以内なら星1つで、星がつけば連続記録は続きます。終えたあとは答えの例を見られます。</p>
-          </details>
-          <details>
-            <summary>過去の問題も遊べますか？</summary>
-            <p>はい。今日の問題を終えると、前の日付の問題を端末内で練習できます。順位・連続・称号・統計には数えません。</p>
-          </details>
-          <details>
-            <summary>オフラインでも遊べますか？</summary>
-            <p>問題は端末内で生成されるので、オフラインでも遊べます。通信が必要なのは、任意のGame Centerランキングだけです。</p>
-          </details>
-          <details>
-            <summary>ウィジェットはありますか？</summary>
-            <p>はい、小・中サイズがあります。解く前は今日の目標の数を、解いたあとは結果を表示し、日付が変わると次の問題に更新されます。</p>
-          </details>
-          <details>
-            <summary>アプリはどんなデータを集めますか？</summary>
-            <p>アカウントも広告もトラッキングもありません。連続記録や結果は端末内にのみ保存されます。Game Centerにサインインした場合にのみ、ランキング用に当日のスコアがGame Centerへ送られます。</p>
-          </details>
-          <details>
-            <summary>通知は届きますか？</summary>
-            <p>任意の1日1回リマインダーをオンにした場合のみ届きます。通知なしでも全機能を使えます。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/number-forge-daily-puzzle/id6791862183?uo=4">かず鍛冶 - 毎日1問の数字パズル をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/number-forge-daily-puzzle/id6791862183?uo=4">かず鍛冶 - 毎日1問の数字パズル をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-18</p>
     </section>
   </main>

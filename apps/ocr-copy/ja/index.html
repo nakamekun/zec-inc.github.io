@@ -123,6 +123,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "仕事効率化アプリ",
+          "item": "https://zec-inc.jp/apps/productivity/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "OCRコピー - 画像を文字起こし",
+          "item": "https://zec-inc.jp/apps/ocr-copy/ja/"
+        }
+      ]
     }
   ]
 }
@@ -147,7 +176,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li><li aria-current="page">OCRコピー - 画像を文字起こし</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="OCRコピー - 画像を文字起こし のアプリアイコン" width="96" height="96">
       <div>
@@ -157,122 +187,133 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/ocr-copy-image-to-text/id6780724192?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">22言語に対応</li><li class="chip chip-link"><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/88/58/02885863-9573-f7e5-58d8-2121484aa4ac/01-batch-ocr.png/320x480bb.jpg" alt="OCRコピー - 画像を文字起こし のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/2a/e7/022ae7f3-584a-3504-7cd0-4b5ffe0b982e/02-share-to-text.png/320x480bb.jpg" alt="OCRコピー - 画像を文字起こし のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4a/e4/64/4ae46417-3798-1cf0-8e1f-f376bb53552d/03-table-csv.png/320x480bb.jpg" alt="OCRコピー - 画像を文字起こし のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6c/ab/05/6cab05ca-96c2-c985-82a1-d29f5c72fa64/04-live-scan.png/320x480bb.jpg" alt="OCRコピー - 画像を文字起こし のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/78/77/bd/7877bd12-ad6c-780c-4010-ed5fa64157ea/05-saved-text.png/320x480bb.jpg" alt="OCRコピー - 画像を文字起こし のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>OCRコピーは、画像や目の前の文字をすばやくコピーするためのローカル完結型OCRアプリです。写真やスクリーンショットを最大20枚まとめて選ぶと、選んだ順に読み取って1つのテキストにまとめます。ライブスキャンやカメラ撮影のほか、写真アプリや撮ったスクショの「共有」から選んでも、読み取った文字はすぐクリップボードに入ります。レシート、本、荷物のラベル、スクリーンショット、看板など、日常の文字に使えます。</p>
-          <p>重いドキュメント管理アプリやクラウドOCRサービスではなく、「読み取って、コピーして、終わり」という小さな仕事に絞りました。文字の読み取りはApple Visionで iPhone の中だけで行い、写真やテキストを外部サーバーへ送信しません。認識結果が完璧でないときは、コピーする前に行単位で修正・削除できます。信頼度や文字位置は、必要な人だけが見られる詳細情報として用意しています。表が写った画像は行と列のままCSVファイルに書き出せ（iOS 26以降）、ショートカットの「画像の文字を読む」アクションで画像の文字を受け取ることもできます。</p>
-          <p>保存したテキストは端末内に残り、後から開いてもう一度コピーできます。「自動」は端末の言語を優先して読み取り、読み取り言語として日本語・英語・韓国語・中国語・ヨーロッパの言語・ロシア語・ウクライナ語・タイ語・ベトナム語も選べます。無料では1日5回まで読み取れ、OCRコピー Pro で1日の回数制限がなくなります。</p>
+      <p class="lead-para">OCRコピーは、画像や目の前の文字をすばやくコピーするためのローカル完結型OCRアプリです。写真やスクリーンショットを最大20枚まとめて選ぶと、選んだ順に読み取って1つのテキストにまとめます。ライブスキャンやカメラ撮影のほか、写真アプリや撮ったスクショの「共有」から選んでも、読み取った文字はすぐクリップボードに入ります。レシート、本、荷物のラベル、スクリーンショット、看板など、日常の文字に使えます。</p>
+      <p>重いドキュメント管理アプリやクラウドOCRサービスではなく、「読み取って、コピーして、終わり」という小さな仕事に絞りました。文字の読み取りはApple Visionで iPhone の中だけで行い、写真やテキストを外部サーバーへ送信しません。認識結果が完璧でないときは、コピーする前に行単位で修正・削除できます。信頼度や文字位置は、必要な人だけが見られる詳細情報として用意しています。表が写った画像は行と列のままCSVファイルに書き出せ（iOS 26以降）、ショートカットの「画像の文字を読む」アクションで画像の文字を受け取ることもできます。</p>
+      <p>保存したテキストは端末内に残り、後から開いてもう一度コピーできます。「自動」は端末の言語を優先して読み取り、読み取り言語として日本語・英語・韓国語・中国語・ヨーロッパの言語・ロシア語・ウクライナ語・タイ語・ベトナム語も選べます。無料では1日5回まで読み取れ、OCRコピー Pro で1日の回数制限がなくなります。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>レシートや荷物、本、紙の書類の文字を打ち直すことが多い方</li>
-            <li>スクリーンショットや写真の文字を、クラウドサービスを使わずに、まとめて取り出したい方</li>
-            <li>多言語の文字を扱うため、OCRの対象言語を選びたい方</li>
-            <li>画像に写った表をCSVファイルにしたい方</li>
-            <li>写真やテキストをサーバーに送りたくない、プライバシー重視の方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>まとめて文字起こし: 写真やスクショを最大20枚選んで、選んだ順に1つのテキストに</li>
-            <li>共有からすぐ文字に: 写真アプリや撮ったスクショの「共有」からOCRコピーを選ぶと、その場で文字にしてコピー</li>
-            <li>表をCSVに: 表が写った画像を、行と列のままCSVファイルに書き出し（iOS 26以降）</li>
-            <li>ショートカット: 「画像の文字を読む」アクションで、画像の文字をテキストとして受け取れる</li>
-            <li>ライブスキャン: カメラをかざして文字をコピー。カメラで撮影して文字をコピーすることも</li>
-            <li>Apple Visionによる端末内の文字認識。オフラインで使え、サーバーは使いません</li>
-            <li>コピーする前に、必要な行だけ修正・削除</li>
-            <li>認識したテキストを端末内に保存し、後からもう一度コピー</li>
-            <li>読み取り言語: 「自動」は端末の言語を優先。日本語・英語・韓国語・中国語・ヨーロッパの言語・ロシア語・ウクライナ語・タイ語・ベトナム語も選べる</li>
-            <li>信頼度・文字位置の詳細表示（任意）</li>
-            <li>無料は1日5回まで。OCRコピー Pro（年額は1週間の無料体験つき、月額もあり）で回数制限なし</li>
-            <li>アプリの表示は25言語に対応</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>まとめて文字起こし</strong>: 写真やスクショを最大20枚選んで、選んだ順に1つのテキストに</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>共有からすぐ文字に</strong>: 写真アプリや撮ったスクショの「共有」からOCRコピーを選ぶと、その場で文字にしてコピー</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>表をCSVに</strong>: 表が写った画像を、行と列のままCSVファイルに書き出し（iOS 26以降）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>ショートカット</strong>: 「画像の文字を読む」アクションで、画像の文字をテキストとして受け取れる</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>ライブスキャン</strong>: カメラをかざして文字をコピー。カメラで撮影して文字をコピーすることも</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Apple Visionによる端末内の文字認識。オフラインで使え、サーバーは使いません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>コピーする前に</strong>、必要な行だけ修正・削除</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>認識したテキストを端末内に保存し、後からもう一度コピー</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>読み取り言語</strong>: 「自動」は端末の言語を優先。日本語・英語・韓国語・中国語・ヨーロッパの言語・ロシア語・ウクライナ語・タイ語・ベトナム語も選べる</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>信頼度・文字位置の詳細表示（任意）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>無料は1日5回まで</strong>。OCRコピー Pro（年額は1週間の無料体験つき、月額もあり）で回数制限なし</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>アプリの表示は25言語に対応</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>レシートや荷物、本、紙の書類の文字を打ち直すことが多い方</li>
+        <li>スクリーンショットや写真の文字を、クラウドサービスを使わずに、まとめて取り出したい方</li>
+        <li>多言語の文字を扱うため、OCRの対象言語を選びたい方</li>
+        <li>画像に写った表をCSVファイルにしたい方</li>
+        <li>写真やテキストをサーバーに送りたくない、プライバシー重視の方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>アプリを開き、写真・スクショ（一度に最大20枚）、ライブスキャン、カメラ撮影のいずれかを選びます。写真アプリや撮ったスクショの「共有」からOCRコピーを選ぶこともできます。</li>
-            <li>端末内で文字認識が実行されるのを待ちます。読み取った文字はすぐクリップボードに入ります。</li>
-            <li>メモやメッセージ、検索にそのまま貼り付けます。</li>
-            <li>必要ならコピーする前に行をタップして修正・削除します。</li>
-            <li>テキストを保存しておくと、ホーム画面から後で開いて再コピーできます。表はCSVとして書き出せます。</li>
-            <li>うまく読み取れないときは、設定で読み取り言語や認識精度を変更します。</li>
+      <ol class="steps">
+        <li><span>アプリを開き、写真・スクショ（一度に最大20枚）、ライブスキャン、カメラ撮影のいずれかを選びます。写真アプリや撮ったスクショの「共有」からOCRコピーを選ぶこともできます。</span></li>
+        <li><span>端末内で文字認識が実行されるのを待ちます。読み取った文字はすぐクリップボードに入ります。</span></li>
+        <li><span>メモやメッセージ、検索にそのまま貼り付けます。</span></li>
+        <li><span>必要ならコピーする前に行をタップして修正・削除します。</span></li>
+        <li><span>テキストを保存しておくと、ホーム画面から後で開いて再コピーできます。表はCSVとして書き出せます。</span></li>
+        <li><span>うまく読み取れないときは、設定で読み取り言語や認識精度を変更します。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>ダウンロードは無料で、1日5回まで読み取れます。OCRコピー Pro（自動更新の購読。年額は1週間の無料体験つき、月額もあり）にすると、アプリ・共有シート・ショートカットのすべてで1日の回数制限がなくなります。コピー・保存・CSVの書き出しは回数に数えません。1.5より前からお使いの方は、これまでどおり制限なしで読み取れます。最新の価格・詳細はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>ダウンロードは無料で、1日5回まで読み取れます。OCRコピー Pro（自動更新の購読。年額は1週間の無料体験つき、月額もあり）にすると、アプリ・共有シート・ショートカットのすべてで1日の回数制限がなくなります。コピー・保存・CSVの書き出しは回数に数えません。1.5より前からお使いの方は、これまでどおり制限なしで読み取れます。最新の価格・詳細はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>文字の読み取りはApple Visionを使ってすべて iPhone の中で実行され、オフラインで使えます。写真やテキストを外部サーバーへ送信することはありません。認識テキスト、行の修正内容、信頼度、サムネイルはアプリ内にローカル保存されます。アカウント登録・広告・トラッキングもなく、テキストの共有はiOSの共有シートから自分で操作したときだけ行われます。購読のお支払いはApp StoreとApple アカウントで処理されます。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>OCRコピーは無料ですか？</summary>
+          <p>ダウンロードは無料で、1日5回まで読み取れます。OCRコピー Pro（自動更新の年額・1週間の無料体験つき、または月額）で、1日の回数制限がなくなります。1.5より前からお使いの方は、これまでどおり制限なしです。最新の価格はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>OCRコピー Pro では何ができますか？</summary>
+          <p>アプリ・共有シート・ショートカットのすべてで、1日5回の読み取り制限がなくなります。コピー・保存・CSVの書き出しは回数に数えず、回数は0時に戻ります。</p>
+        </details>
+        <details>
+          <summary>写真や読み取ったテキストはアップロードされますか？</summary>
+          <p>いいえ。文字認識は iPhone の中のApple Visionで実行され、写真やテキストを外部サーバーへ送信することはありません。アカウント登録・広告・トラッキングもありません。</p>
+        </details>
+        <details>
+          <summary>複数の画像をまとめて読み取れますか？</summary>
+          <p>はい。写真やスクショを最大20枚まで選ぶと、選んだ順に読み取って1つのテキストにまとめます。</p>
+        </details>
+        <details>
+          <summary>どの言語を読み取れますか？</summary>
+          <p>「自動」は端末の言語を優先して読み取ります。日本語・英語・韓国語・中国語・ヨーロッパの言語・ロシア語・ウクライナ語・タイ語・ベトナム語も選べます。アプリの表示は25言語に対応しています。</p>
+        </details>
+        <details>
+          <summary>認識結果に間違いがあったらどうなりますか？</summary>
+          <p>コピーする前に行単位で修正・削除できます。詳細表示を有効にすると、信頼度が低い行が確認対象として示されます。</p>
+        </details>
+        <details>
+          <summary>読み取ったテキストを保存して、あとから使えますか？</summary>
+          <p>はい。保存したテキストは端末内に残り、ホーム画面からいつでも開いてもう一度コピーできます。</p>
+        </details>
+        <details>
+          <summary>手書きや縦書きの日本語も読めますか？</summary>
+          <p>印刷された文字が主な対象です。縦書きの日本語や複雑なレイアウトは、正しく読み取れない場合があります。</p>
+        </details>
+        <details>
+          <summary>カメラへのアクセスは必要ですか？</summary>
+          <p>ライブスキャンとカメラ撮影にはカメラへのアクセスが必要ですが、写真ライブラリの画像を選んだり、共有からOCRコピーに送ったりして使うこともできます。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>文字の読み取りはApple Visionを使ってすべて iPhone の中で実行され、オフラインで使えます。写真やテキストを外部サーバーへ送信することはありません。認識テキスト、行の修正内容、信頼度、サムネイルはアプリ内にローカル保存されます。アカウント登録・広告・トラッキングもなく、テキストの共有はiOSの共有シートから自分で操作したときだけ行われます。購読のお支払いはApp StoreとApple アカウントで処理されます。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/88/58/02885863-9573-f7e5-58d8-2121484aa4ac/01-batch-ocr.png/320x480bb.jpg" alt="OCRコピー - 画像を文字起こし のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/2a/e7/022ae7f3-584a-3504-7cd0-4b5ffe0b982e/02-share-to-text.png/320x480bb.jpg" alt="OCRコピー - 画像を文字起こし のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4a/e4/64/4ae46417-3798-1cf0-8e1f-f376bb53552d/03-table-csv.png/320x480bb.jpg" alt="OCRコピー - 画像を文字起こし のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6c/ab/05/6cab05ca-96c2-c985-82a1-d29f5c72fa64/04-live-scan.png/320x480bb.jpg" alt="OCRコピー - 画像を文字起こし のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/78/77/bd/7877bd12-ad6c-780c-4010-ed5fa64157ea/05-saved-text.png/320x480bb.jpg" alt="OCRコピー - 画像を文字起こし のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>大きな文字メモ</h3><p>ひとつのメモを大きな文字で目の前の相手に見せるアプリ。読み上げや音声入力にも対応し、筆談の補助や窓口でのやりとりに使えます。</p></span></a>
+        <a class="related-card" href="/apps/study-buddy-timer/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Study Buddy：勉強タイマー</h3><p>勉強した時間で、ゆるいバディが育つ勉強タイマー。ワンタップで開始・停止、予定、ポモドーロ、ウィジェット、ふたりで使うペアにも対応。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>OCRコピーは無料ですか？</summary>
-            <p>ダウンロードは無料で、1日5回まで読み取れます。OCRコピー Pro（自動更新の年額・1週間の無料体験つき、または月額）で、1日の回数制限がなくなります。1.5より前からお使いの方は、これまでどおり制限なしです。最新の価格はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>OCRコピー Pro では何ができますか？</summary>
-            <p>アプリ・共有シート・ショートカットのすべてで、1日5回の読み取り制限がなくなります。コピー・保存・CSVの書き出しは回数に数えず、回数は0時に戻ります。</p>
-          </details>
-          <details>
-            <summary>写真や読み取ったテキストはアップロードされますか？</summary>
-            <p>いいえ。文字認識は iPhone の中のApple Visionで実行され、写真やテキストを外部サーバーへ送信することはありません。アカウント登録・広告・トラッキングもありません。</p>
-          </details>
-          <details>
-            <summary>複数の画像をまとめて読み取れますか？</summary>
-            <p>はい。写真やスクショを最大20枚まで選ぶと、選んだ順に読み取って1つのテキストにまとめます。</p>
-          </details>
-          <details>
-            <summary>どの言語を読み取れますか？</summary>
-            <p>「自動」は端末の言語を優先して読み取ります。日本語・英語・韓国語・中国語・ヨーロッパの言語・ロシア語・ウクライナ語・タイ語・ベトナム語も選べます。アプリの表示は25言語に対応しています。</p>
-          </details>
-          <details>
-            <summary>認識結果に間違いがあったらどうなりますか？</summary>
-            <p>コピーする前に行単位で修正・削除できます。詳細表示を有効にすると、信頼度が低い行が確認対象として示されます。</p>
-          </details>
-          <details>
-            <summary>読み取ったテキストを保存して、あとから使えますか？</summary>
-            <p>はい。保存したテキストは端末内に残り、ホーム画面からいつでも開いてもう一度コピーできます。</p>
-          </details>
-          <details>
-            <summary>手書きや縦書きの日本語も読めますか？</summary>
-            <p>印刷された文字が主な対象です。縦書きの日本語や複雑なレイアウトは、正しく読み取れない場合があります。</p>
-          </details>
-          <details>
-            <summary>カメラへのアクセスは必要ですか？</summary>
-            <p>ライブスキャンとカメラ撮影にはカメラへのアクセスが必要ですが、写真ライブラリの画像を選んだり、共有からOCRコピーに送ったりして使うこともできます。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/ocr-copy-image-to-text/id6780724192?uo=4">OCRコピー - 画像を文字起こし をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/ocr-copy-image-to-text/id6780724192?uo=4">OCRコピー - 画像を文字起こし をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

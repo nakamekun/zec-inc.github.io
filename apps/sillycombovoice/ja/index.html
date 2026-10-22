@@ -96,6 +96,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "家族向けアプリ",
+          "item": "https://zec-inc.jp/apps/family/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Silly Word Beat - 英単語あそび",
+          "item": "https://zec-inc.jp/apps/sillycombovoice/ja/"
+        }
+      ]
     }
   ]
 }
@@ -117,7 +146,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/family/ja/">家族向けアプリ</a></li><li aria-current="page">Silly Word Beat - 英単語あそび</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a7/23/04/a72304f4-adff-064b-b927-a75826cac502/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="Silly Word Beat - 英単語あそび のアプリアイコン" width="96" height="96">
       <div>
@@ -127,104 +157,115 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/silly-word-beat-word-play/id6765821915?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">2言語に対応</li><li class="chip chip-link"><a href="/apps/family/ja/">家族向けアプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f3/a1/58/f3a158a7-21f2-3486-b6eb-230b434b70af/01-pop.png/320x480bb.jpg" alt="Silly Word Beat - 英単語あそび のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/e3/ea/4fe3ea4c-629f-c436-7c43-52409a00c638/02-tap.png/320x480bb.jpg" alt="Silly Word Beat - 英単語あそび のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/9b/e1/0b9be13e-4d9d-e232-8fdb-32ecd3ca13d3/03-click.png/320x480bb.jpg" alt="Silly Word Beat - 英単語あそび のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/60/bf/e7/60bfe7e9-8b50-2a21-84f4-b289e8f3fe42/04-reading.png/320x480bb.jpg" alt="Silly Word Beat - 英単語あそび のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/67/b4/1467b4bf-588a-a08f-348a-78e50ce293ef/05-choose.png/320x480bb.jpg" alt="Silly Word Beat - 英単語あそび のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>Silly Word Beatは、子どもや家族で楽しめる英単語音あそびアプリです。音のグループから英単語カードを3まい選ぶと、まじめな教科書口調の合成音声が、意味のないヘンテコな合成語のコンボを読み上げてくれます。きちんとした文と、カードから生まれる無意味な合成語とのギャップが笑いのポイントです。</p>
-          <p>音のグループは3つ。それぞれに文のパターンとかけ声があります。Pop Wordsは「I have a/an...」と元気な「Boom!」、Tap Wordsは「This is a/an...」と楽しい「Ta-da!」、Click Wordsは「I like a/an...」と軽快な「Click!」。組み合わせが決まると8行の台本が画面にプレビューされ、「ふつう」または「ゆっくり」で読み上げられます。気に入ったコンボは保存して、もう一度再生・削除・並べ替えができます。</p>
-          <p>準備なしですぐ遊べます。アカウント登録も広告もトラッキングもなく、マイクも使いません。読み上げは端末の中だけで行われ、オフラインで動きます。アプリの画面は日本語と英語に対応していて、単語カードと読み上げる英文は英語のままです。</p>
+      <p class="lead-para">Silly Word Beatは、子どもや家族で楽しめる英単語音あそびアプリです。音のグループから英単語カードを3まい選ぶと、まじめな教科書口調の合成音声が、意味のないヘンテコな合成語のコンボを読み上げてくれます。きちんとした文と、カードから生まれる無意味な合成語とのギャップが笑いのポイントです。</p>
+      <p>音のグループは3つ。それぞれに文のパターンとかけ声があります。Pop Wordsは「I have a/an...」と元気な「Boom!」、Tap Wordsは「This is a/an...」と楽しい「Ta-da!」、Click Wordsは「I like a/an...」と軽快な「Click!」。組み合わせが決まると8行の台本が画面にプレビューされ、「ふつう」または「ゆっくり」で読み上げられます。気に入ったコンボは保存して、もう一度再生・削除・並べ替えができます。</p>
+      <p>準備なしですぐ遊べます。アカウント登録も広告もトラッキングもなく、マイクも使いません。読み上げは端末の中だけで行われ、オフラインで動きます。アプリの画面は日本語と英語に対応していて、単語カードと読み上げる英文は英語のままです。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>ヘンテコな言葉あそびや楽しい音が大好きなお子さん</li>
-            <li>通信なし・アカウントなし・広告なしの、安心して子どもに渡せるアプリを探している保護者の方</li>
-            <li>いちばんおかしな組み合わせを競って、親子で一緒に笑いたいご家庭</li>
-            <li>英語の音やかんたんな文に、遊びながらふれさせたい方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>Pop・Tap・Clickの3つの音グループ。それぞれに文のパターンとかけ声つき</li>
-            <li>ベース単語+単語A+単語Bの3まいのカードでヘンテコ合成語を作成</li>
-            <li>選んだカードから自動生成される8行の台本プレビュー</li>
-            <li>「ふつう」「ゆっくり」の速さで、1行ずつ間をあけて読み上げ。読んでいる行をハイライト表示</li>
-            <li>気に入ったコンボを保存して、もう一度再生・削除・並べ替え</li>
-            <li>用意ずみの3語セットにすぐ入れ替わるシャッフルボタン</li>
-            <li>すべての単語で「a/an」を自動で正しく使い分け</li>
-            <li>アプリの画面は日本語と英語に対応。アカウント登録・広告なし、オフラインで動作</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Pop・Tap・Clickの3つの音グループ。それぞれに文のパターンとかけ声つき</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ベース単語+単語A+単語Bの3まいのカードでヘンテコ合成語を作成</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>選んだカードから自動生成される8行の台本プレビュー</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>「ふつう」「ゆっくり」の速さで</strong>、1行ずつ間をあけて読み上げ。読んでいる行をハイライト表示</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>気に入ったコンボを保存して、もう一度再生・削除・並べ替え</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>用意ずみの3語セットにすぐ入れ替わるシャッフルボタン</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>すべての単語で「a/an」を自動で正しく使い分け</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>アプリの画面は日本語と英語に対応</strong>。アカウント登録・広告なし、オフラインで動作</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>ヘンテコな言葉あそびや楽しい音が大好きなお子さん</li>
+        <li>通信なし・アカウントなし・広告なしの、安心して子どもに渡せるアプリを探している保護者の方</li>
+        <li>いちばんおかしな組み合わせを競って、親子で一緒に笑いたいご家庭</li>
+        <li>英語の音やかんたんな文に、遊びながらふれさせたい方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>Pop・Tap・Clickから音のグループを選びます。</li>
-            <li>ベース単語・単語A・単語Bの3まいのカードを選びます。</li>
-            <li>できあがった8行のヘンテコ台本のプレビューを確認します。</li>
-            <li>「読み上げ」をタップして、「ふつう」または「ゆっくり」の速さで大まじめな声の読み上げを聞きます。</li>
-            <li>気に入ったコンボは保存してあとで再生したり、シャッフルで用意ずみの組み合わせに切り替えたりします。</li>
+      <ol class="steps">
+        <li><span>Pop・Tap・Clickから音のグループを選びます。</span></li>
+        <li><span>ベース単語・単語A・単語Bの3まいのカードを選びます。</span></li>
+        <li><span>できあがった8行のヘンテコ台本のプレビューを確認します。</span></li>
+        <li><span>「読み上げ」をタップして、「ふつう」または「ゆっくり」の速さで大まじめな声の読み上げを聞きます。</span></li>
+        <li><span>気に入ったコンボは保存してあとで再生したり、シャッフルで用意ずみの組み合わせに切り替えたりします。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>Silly Word BeatはApp Storeで無料でダウンロード・利用できます。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>Silly Word BeatはApp Storeで無料でダウンロード・利用できます。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>端末内で完結するアプリです。アカウント登録・広告・トラッキング・通信機能はなく、マイクも使いません。読み上げは端末の中で生成されます。保存されるのは、作ったコンボの回数と、保存したお気に入りのコンボで、どちらも端末内にだけ残ります。詳細はApp Storeのプライバシーラベルをご確認ください。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>Silly Word Beatは無料ですか？</summary>
+          <p>はい、無料でダウンロード・利用できます。最新の価格はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>子どもに使わせても安全ですか？データは収集されますか？</summary>
+          <p>アカウント登録・広告・トラッキングのない、端末内で完結するアプリです。保存されるのは、作ったコンボの回数と保存したお気に入りのコンボだけで、端末の中に残ります。</p>
+        </details>
+        <details>
+          <summary>オフラインでも使えますか？</summary>
+          <p>はい。完全にオフラインで動くので、インターネット接続がなくてもすべての機能が使えます。</p>
+        </details>
+        <details>
+          <summary>読み上げはどういう仕組みですか？</summary>
+          <p>iPhoneに内蔵された音声合成を使い、端末の中で読み上げます。生成された台本を1行ずつ間をあけて、「ふつう」または「ゆっくり」の速さで読み上げ、いま読んでいる行が画面上でハイライトされます。</p>
+        </details>
+        <details>
+          <summary>音のグループにはどんなものがありますか？</summary>
+          <p>Pop Wordsは「I have a/an ...」と「Boom!」、Tap Wordsは「This is a/an ...」と「Ta-da!」、Click Wordsは「I like a/an ...」と「Click!」です。グループごとに単語カードがちがいます。</p>
+        </details>
+        <details>
+          <summary>英語が読めない子どもでも遊べますか？</summary>
+          <p>はい。単語カードには絵文字が添えられ、文はとてもかんたんで、アプリがすべて読み上げてくれます。操作もカードを選んでタップするだけなので、文字を読めないお子さんでも楽しめます。なお、単語カードと読み上げる英文は英語です。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>端末内で完結するアプリです。アカウント登録・広告・トラッキング・通信機能はなく、マイクも使いません。読み上げは端末の中で生成されます。保存されるのは、作ったコンボの回数と、保存したお気に入りのコンボで、どちらも端末内にだけ残ります。詳細はApp Storeのプライバシーラベルをご確認ください。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f3/a1/58/f3a158a7-21f2-3486-b6eb-230b434b70af/01-pop.png/320x480bb.jpg" alt="Silly Word Beat - 英単語あそび のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/e3/ea/4fe3ea4c-629f-c436-7c43-52409a00c638/02-tap.png/320x480bb.jpg" alt="Silly Word Beat - 英単語あそび のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/9b/e1/0b9be13e-4d9d-e232-8fdb-32ecd3ca13d3/03-click.png/320x480bb.jpg" alt="Silly Word Beat - 英単語あそび のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/60/bf/e7/60bfe7e9-8b50-2a21-84f4-b289e8f3fe42/04-reading.png/320x480bb.jpg" alt="Silly Word Beat - 英単語あそび のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/14/67/b4/1467b4bf-588a-a08f-348a-78e50ce293ef/05-choose.png/320x480bb.jpg" alt="Silly Word Beat - 英単語あそび のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>大きな文字メモ</h3><p>ひとつのメモを大きな文字で目の前の相手に見せるアプリ。読み上げや音声入力にも対応し、筆談の補助や窓口でのやりとりに使えます。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>Silly Word Beatは無料ですか？</summary>
-            <p>はい、無料でダウンロード・利用できます。最新の価格はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>子どもに使わせても安全ですか？データは収集されますか？</summary>
-            <p>アカウント登録・広告・トラッキングのない、端末内で完結するアプリです。保存されるのは、作ったコンボの回数と保存したお気に入りのコンボだけで、端末の中に残ります。</p>
-          </details>
-          <details>
-            <summary>オフラインでも使えますか？</summary>
-            <p>はい。完全にオフラインで動くので、インターネット接続がなくてもすべての機能が使えます。</p>
-          </details>
-          <details>
-            <summary>読み上げはどういう仕組みですか？</summary>
-            <p>iPhoneに内蔵された音声合成を使い、端末の中で読み上げます。生成された台本を1行ずつ間をあけて、「ふつう」または「ゆっくり」の速さで読み上げ、いま読んでいる行が画面上でハイライトされます。</p>
-          </details>
-          <details>
-            <summary>音のグループにはどんなものがありますか？</summary>
-            <p>Pop Wordsは「I have a/an ...」と「Boom!」、Tap Wordsは「This is a/an ...」と「Ta-da!」、Click Wordsは「I like a/an ...」と「Click!」です。グループごとに単語カードがちがいます。</p>
-          </details>
-          <details>
-            <summary>英語が読めない子どもでも遊べますか？</summary>
-            <p>はい。単語カードには絵文字が添えられ、文はとてもかんたんで、アプリがすべて読み上げてくれます。操作もカードを選んでタップするだけなので、文字を読めないお子さんでも楽しめます。なお、単語カードと読み上げる英文は英語です。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/silly-word-beat-word-play/id6765821915?uo=4">Silly Word Beat - 英単語あそび をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/silly-word-beat-word-play/id6765821915?uo=4">Silly Word Beat - 英単語あそび をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-18</p>
     </section>
   </main>

@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/34/29/1834290f-84b0-155f-af6a-b108f78bec07/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.9.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "应用",
+          "item": "https://zec-inc.jp/apps/zh-hans/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "DoneToday：每天一件事打卡",
+          "item": "https://zec-inc.jp/apps/donetoday-daily-log/zh-hans/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="导航路径"><ol><li><a href="/">首页</a></li><li><a href="/apps/zh-hans/">应用</a></li><li aria-current="page">DoneToday：每天一件事打卡</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/34/29/1834290f-84b0-155f-af6a-b108f78bec07/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="DoneToday：每天一件事打卡 的应用图标" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/cn/app/donetoday-daily-log/id6761447413?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hans/">ZEC 应用一览</a>
         </div>
+        <ul class="chips" aria-label="要点"><li class="chip">免费下载</li><li class="chip">iPhone 和 iPad</li><li class="chip">支持 9 种语言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截图">
+      <h2 class="visually-hidden">截图</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bb/ef/f6/bbeff6d4-1053-b56c-9c41-06c4604437cd/iphone-01-home.png/320x480bb.jpg" alt="DoneToday：每天一件事打卡 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/68/ab/32/68ab32b3-6380-c65b-c52f-6480451c82e6/iphone-02-done.png/320x480bb.jpg" alt="DoneToday：每天一件事打卡 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/59/72/cc/5972cc79-743f-e71b-7782-ec4a84005bf9/iphone-03-calendar.png/320x480bb.jpg" alt="DoneToday：每天一件事打卡 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1e/46/a0/1e46a017-358d-32f4-bd9b-abe5c0a540cf/iphone-04-first-run.png/320x480bb.jpg" alt="DoneToday：每天一件事打卡 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f6/c5/b0/f6c5b0ea-6612-531c-a1c7-6b2c7171de0f/iphone-05-settings.png/320x480bb.jpg" alt="DoneToday：每天一件事打卡 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>简介</h2>
-          <p>无需打开 App，即可从主屏幕、锁定屏幕、控制中心或 Apple Watch 轻点一下，完成每天的一件事。</p>
-          <p>不需要待办清单，也不用做计划。给你的“一件事”取个名字，每天做到后点一下“完成”，连续天数和日历就会慢慢填满。</p>
-          <p>- 只有一个任务，点一下即可完成 - 当前连续天数、最长纪录和月历 - 主屏幕小组件：“完成”按钮和最近 7 天 - 锁定屏幕小组件和控制中心开关（iOS 18） - Siri 与快捷指令：标记今天完成、查询今天状态或连续天数 - 可选的每日提醒，完成当天不会响 - 忘了记录昨天？在日历中补记 - 开始新任务时，之前的记录会保留在“过去的任务” - 完成后写一行小记，记下今天做到的事 - 导出备份文件，在新 iPhone 上恢复</p>
+      <p class="lead-para">无需打开 App，即可从主屏幕、锁定屏幕、控制中心或 Apple Watch 轻点一下，完成每天的一件事。</p>
+      <p>不需要待办清单，也不用做计划。给你的“一件事”取个名字，每天做到后点一下“完成”，连续天数和日历就会慢慢填满。</p>
+      <p>- 只有一个任务，点一下即可完成 - 当前连续天数、最长纪录和月历 - 主屏幕小组件：“完成”按钮和最近 7 天 - 锁定屏幕小组件和控制中心开关（iOS 18） - Siri 与快捷指令：标记今天完成、查询今天状态或连续天数 - 可选的每日提醒，完成当天不会响 - 忘了记录昨天？在日历中补记 - 开始新任务时，之前的记录会保留在“过去的任务” - 完成后写一行小记，记下今天做到的事 - 导出备份文件，在新 iPhone 上恢复</p>
     </section>
 
-    <section class="section">
-      <h2>截图</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bb/ef/f6/bbeff6d4-1053-b56c-9c41-06c4604437cd/iphone-01-home.png/320x480bb.jpg" alt="DoneToday：每天一件事打卡 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/68/ab/32/68ab32b3-6380-c65b-c52f-6480451c82e6/iphone-02-done.png/320x480bb.jpg" alt="DoneToday：每天一件事打卡 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/59/72/cc/5972cc79-743f-e71b-7782-ec4a84005bf9/iphone-03-calendar.png/320x480bb.jpg" alt="DoneToday：每天一件事打卡 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1e/46/a0/1e46a017-358d-32f4-bd9b-abe5c0a540cf/iphone-04-first-run.png/320x480bb.jpg" alt="DoneToday：每天一件事打卡 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f6/c5/b0/f6c5b0ea-6612-531c-a1c7-6b2c7171de0f/iphone-05-settings.png/320x480bb.jpg" alt="DoneToday：每天一件事打卡 的截图" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>价格与隐私</h2>
       <p>价格、App 内购买与最新的隐私信息，请以 App Store 页面为准。本页介绍文字来自 App Store 的应用说明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/cn/app/donetoday-daily-log/id6761447413?uo=4">在 App Store 打开 DoneToday：每天一件事打卡</a></p>
+      <a class="button primary big" href="https://apps.apple.com/cn/app/donetoday-daily-log/id6761447413?uo=4">在 App Store 打开 DoneToday：每天一件事打卡</a>
       <p class="meta">最后更新: 2026-10-21</p>
     </section>
   </main>

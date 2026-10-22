@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "softwareVersion": "2.22",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "App",
+          "item": "https://zec-inc.jp/apps/zh-hant/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Foot Size Check 量腳長",
+          "item": "https://zec-inc.jp/apps/foot-size-check/zh-hant/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/">首頁</a></li><li><a href="/apps/zh-hant/">App</a></li><li aria-current="page">Foot Size Check 量腳長</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Foot Size Check 量腳長 的 App 圖示" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/tw/app/foot-size-check/id6789844290?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hant/">ZEC App 一覽</a>
         </div>
+        <ul class="chips" aria-label="重點"><li class="chip">免費下載</li><li class="chip">iPhone 與 iPad</li><li class="chip">支援 23 種語言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截圖">
+      <h2 class="visually-hidden">截圖</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/74/5a/fd/745afd54-1414-c306-5f9b-2118a6bb7c9d/01.png/320x480bb.jpg" alt="Foot Size Check 量腳長 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/90/f2/ce90f235-f12a-bdbe-8d7a-f21412ca2678/02.png/320x480bb.jpg" alt="Foot Size Check 量腳長 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d2/95/c2/d295c296-b8b4-0cc7-256e-64b763fe9016/03.png/320x480bb.jpg" alt="Foot Size Check 量腳長 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8b/9d/7b/8b9d7bc7-6e83-3604-d46b-824f892e0794/04.png/320x480bb.jpg" alt="Foot Size Check 量腳長 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/78/bb/6d/78bb6d5c-ec2b-34f4-a9d7-5bce6e5c590c/05.png/320x480bb.jpg" alt="Foot Size Check 量腳長 的截圖" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>簡介</h2>
-          <p>在 A4 紙上用筆描出腳的輪廓，移開腳拍一張照片，就能量出腳長和腳寬，並得到鞋號參考值。不需要專用墊子或其他道具。</p>
-          <p>孩子的腳幾個月就換一個樣子。想知道現在幾公分的時候，把腳放到 A4 紙上描一圈，再拍下那張紙。App 會讀出描好的輪廓，自動找到腳跟、腳尖和最寬的地方，算出腳長、腳寬，同時把腳型以實際尺寸留下來。不必自己一個點一個點慢慢對。</p>
-          <p>測量與調整 - 以 A4 紙為基準，從照片量出腳長與腳寬 - 描邊法的誤差約 ±3mm；直接拍腳的簡易法約 ±1cm - 自動校正只修正紙面的變形，因此結果都是參考值，不是精密測量 - 自動判讀之後，四個點仍然可以手動微調 - 左腳右腳分開記錄，也可以手動輸入數值 - 每量一次就留下一個實際尺寸的腳型</p>
+      <p class="lead-para">在 A4 紙上用筆描出腳的輪廓，移開腳拍一張照片，就能量出腳長和腳寬，並得到鞋號參考值。不需要專用墊子或其他道具。</p>
+      <p>孩子的腳幾個月就換一個樣子。想知道現在幾公分的時候，把腳放到 A4 紙上描一圈，再拍下那張紙。App 會讀出描好的輪廓，自動找到腳跟、腳尖和最寬的地方，算出腳長、腳寬，同時把腳型以實際尺寸留下來。不必自己一個點一個點慢慢對。</p>
+      <p>測量與調整 - 以 A4 紙為基準，從照片量出腳長與腳寬 - 描邊法的誤差約 ±3mm；直接拍腳的簡易法約 ±1cm - 自動校正只修正紙面的變形，因此結果都是參考值，不是精密測量 - 自動判讀之後，四個點仍然可以手動微調 - 左腳右腳分開記錄，也可以手動輸入數值 - 每量一次就留下一個實際尺寸的腳型</p>
     </section>
 
-    <section class="section">
-      <h2>截圖</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/74/5a/fd/745afd54-1414-c306-5f9b-2118a6bb7c9d/01.png/320x480bb.jpg" alt="Foot Size Check 量腳長 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/90/f2/ce90f235-f12a-bdbe-8d7a-f21412ca2678/02.png/320x480bb.jpg" alt="Foot Size Check 量腳長 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d2/95/c2/d295c296-b8b4-0cc7-256e-64b763fe9016/03.png/320x480bb.jpg" alt="Foot Size Check 量腳長 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8b/9d/7b/8b9d7bc7-6e83-3604-d46b-824f892e0794/04.png/320x480bb.jpg" alt="Foot Size Check 量腳長 的截圖" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/78/bb/6d/78bb6d5c-ec2b-34f4-a9d7-5bce6e5c590c/05.png/320x480bb.jpg" alt="Foot Size Check 量腳長 的截圖" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>價格與隱私</h2>
       <p>價格、App 內購買與最新的隱私權資訊，請以 App Store 頁面為準。本頁的介紹文字取自 App Store 的 App 說明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/tw/app/foot-size-check/id6789844290?uo=4">在 App Store 開啟 Foot Size Check 量腳長</a></p>
+      <a class="button primary big" href="https://apps.apple.com/tw/app/foot-size-check/id6789844290?uo=4">在 App Store 開啟 Foot Size Check 量腳長</a>
       <p class="meta">最後更新: 2026-10-20</p>
     </section>
   </main>

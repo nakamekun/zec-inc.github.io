@@ -104,6 +104,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tap Tools",
+          "item": "https://zec-inc.jp/apps/tap-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "PillTap",
+          "item": "https://zec-inc.jp/apps/pilltap/"
+        }
+      ]
     }
   ]
 }
@@ -125,7 +154,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">PillTap</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d6/c9/b2/d6c9b2c6-3803-13a4-7dba-eee738aeb682/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PillTap app icon" width="96" height="96">
       <div>
@@ -135,110 +165,121 @@
           <a class="button primary" href="https://apps.apple.com/us/app/pilltap/id6762545903?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">2 languages</li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li><li class="chip chip-link"><a href="/apps/widgets/">Widget-Friendly Apps</a></li><li class="chip chip-link"><a href="/apps/family/">Family Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d8/ea/42d8eab6-86b5-c04c-d53e-1362833203cc/iphone-01-home.png/320x480bb.jpg" alt="PillTap screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/c8/a0/9cc8a083-88db-d448-204e-f579d057eae5/iphone-02-schedule.png/320x480bb.jpg" alt="PillTap screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ed/33/79/ed3379d9-1682-3a8a-e26c-1f8aa2b6cfc5/iphone-03-history.png/320x480bb.jpg" alt="PillTap screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/a3/fc/23a3fcd4-bb9b-867b-943a-cf9093ae1a15/iphone-04-follow-up.png/320x480bb.jpg" alt="PillTap screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/00/85/50008564-6448-8e88-8017-cf14c5dd741e/iphone-05-how-it-works.png/320x480bb.jpg" alt="PillTap screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>PillTap helps you avoid missed doses with simple daily medication reminders. Set your medication times once, and PillTap will remind you every day at the times you choose — morning, noon, night, and bedtime. It is built for medicines and supplements you take at the same times every day.</p>
-          <p>Marking a dose as taken is optional and used only for your own record. You can tap Taken right from the notification without opening the app. Reminders continue to repeat unless you turn off a scheduled time or delete the medication. An optional follow-up reminder can sound 15 minutes later.</p>
-          <p>A Lock Screen widget shows your next dose, and a Live Activity appears shortly before it is time. PillTap does not provide medical advice, assess conditions, or recommend how to take medication; always follow instructions from your doctor, pharmacist, or healthcare provider.</p>
+      <p class="lead-para">PillTap helps you avoid missed doses with simple daily medication reminders. Set your medication times once, and PillTap will remind you every day at the times you choose — morning, noon, night, and bedtime. It is built for medicines and supplements you take at the same times every day.</p>
+      <p>Marking a dose as taken is optional and used only for your own record. You can tap Taken right from the notification without opening the app. Reminders continue to repeat unless you turn off a scheduled time or delete the medication. An optional follow-up reminder can sound 15 minutes later.</p>
+      <p>A Lock Screen widget shows your next dose, and a Live Activity appears shortly before it is time. PillTap does not provide medical advice, assess conditions, or recommend how to take medication; always follow instructions from your doctor, pharmacist, or healthcare provider.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who tend to forget daily medicines or supplements</li>
-            <li>Users who want a simple reminder rather than a complex health tracking system</li>
-            <li>People who take medication at the same times every day</li>
-            <li>Anyone who wants a private reminder with no account and no cloud</li>
-            <li>People who understand that the app is not medical advice</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Daily medication reminders at morning, noon, night, and bedtime, set per medication</li>
-            <li>Optional follow-up reminder 15 minutes later (can be turned off in settings)</li>
-            <li>One tap to mark a dose as taken, right from the notification</li>
-            <li>Lock Screen widget showing your next dose</li>
-            <li>Live Activity shortly before it is time (choose 5, 15, or 30 minutes before)</li>
-            <li>Time Sensitive reminders that can appear during Sleep or other Focus modes, based on your iOS settings</li>
-            <li>Recent history: today, yesterday, and the last 7 days</li>
-            <li>Daily schedule only: no weekday or every-few-days schedules, medication calendar, remaining-supply tracking, or family sharing</li>
-            <li>No account and no cloud; your medications and records stay on your device</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Daily medication reminders at morning</strong>, noon, night, and bedtime, set per medication</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Optional follow-up reminder 15 minutes later (can be turned off in settings)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One tap to mark a dose as taken, right from the notification</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lock Screen widget showing your next dose</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Live Activity shortly before it is time (choose 5, 15, or 30 minutes before)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Time Sensitive reminders that can appear during Sleep or other Focus modes, based on your iOS settings</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Recent history</strong>: today, yesterday, and the last 7 days</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Daily schedule only</strong>: no weekday or every-few-days schedules, medication calendar, remaining-supply tracking, or family sharing</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No account and no cloud; your medications and records stay on your device</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who tend to forget daily medicines or supplements</li>
+        <li>Users who want a simple reminder rather than a complex health tracking system</li>
+        <li>People who take medication at the same times every day</li>
+        <li>Anyone who wants a private reminder with no account and no cloud</li>
+        <li>People who understand that the app is not medical advice</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Add a medication and choose its times: morning, noon, night, and bedtime.</li>
-            <li>Optionally turn on the follow-up reminder and the Live Activity lead time.</li>
-            <li>When the notification arrives, take your medication as directed by your doctor or pharmacist, then tap Taken if you want to record it.</li>
-            <li>Add the Lock Screen widget to see your next dose at a glance.</li>
-            <li>Check the recent history for today, yesterday, and the last 7 days. To stop reminders, turn off that time or delete the medication.</li>
+      <ol class="steps">
+        <li><span>Add a medication and choose its times: morning, noon, night, and bedtime.</span></li>
+        <li><span>Optionally turn on the follow-up reminder and the Live Activity lead time.</span></li>
+        <li><span>When the notification arrives, take your medication as directed by your doctor or pharmacist, then tap Taken if you want to record it.</span></li>
+        <li><span>Add the Lock Screen widget to see your next dose at a glance.</span></li>
+        <li><span>Check the recent history for today, yesterday, and the last 7 days. To stop reminders, turn off that time or delete the medication.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>PillTap is free to download. App Store pricing and availability may vary by country and can change over time, so check the listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>PillTap is free to download. App Store pricing and availability may vary by country and can change over time, so check the listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>PillTap needs no account and has no cloud. According to the App Store listing, your medications and records stay on your device. Reminders are notifications on your device. PillTap is a reminder and personal record aid, not a substitute for medical records kept by a healthcare provider. See the App Store page for Apple&#x27;s current privacy label.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is PillTap medical advice?</summary>
+          <p>No. PillTap does not provide medical advice, diagnosis, treatment recommendations, or medication instructions. Always follow instructions from your doctor, pharmacist, or healthcare provider.</p>
+        </details>
+        <details>
+          <summary>Does PillTap guarantee that I take medicine correctly?</summary>
+          <p>No. PillTap is a reminder and personal record aid and cannot guarantee medication adherence or safety.</p>
+        </details>
+        <details>
+          <summary>What do I do if I do not tap Taken?</summary>
+          <p>Nothing. Tapping Taken is optional and only for your own record. Reminders repeat the next day anyway.</p>
+        </details>
+        <details>
+          <summary>Can I use it on a schedule other than every day?</summary>
+          <p>No. The schedule is a fixed daily one: morning, noon, night, and bedtime. There are no weekday or every-few-days schedules.</p>
+        </details>
+        <details>
+          <summary>Can reminders appear during Sleep or Focus modes?</summary>
+          <p>They can appear as Time Sensitive notifications, depending on your iOS settings.</p>
+        </details>
+        <details>
+          <summary>Where is my data stored?</summary>
+          <p>There is no account and no cloud. According to the App Store listing, your medications and records stay on your device.</p>
+        </details>
+        <details>
+          <summary>Should I use PillTap instead of talking to a doctor or pharmacist?</summary>
+          <p>No. Always follow guidance from qualified healthcare professionals for medication questions.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>PillTap needs no account and has no cloud. According to the App Store listing, your medications and records stay on your device. Reminders are notifications on your device. PillTap is a reminder and personal record aid, not a substitute for medical records kept by a healthcare provider. See the App Store page for Apple&#x27;s current privacy label.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/d8/ea/42d8eab6-86b5-c04c-d53e-1362833203cc/iphone-01-home.png/320x480bb.jpg" alt="PillTap screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/c8/a0/9cc8a083-88db-d448-204e-f579d057eae5/iphone-02-schedule.png/320x480bb.jpg" alt="PillTap screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ed/33/79/ed3379d9-1682-3a8a-e26c-1f8aa2b6cfc5/iphone-03-history.png/320x480bb.jpg" alt="PillTap screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/a3/fc/23a3fcd4-bb9b-867b-943a-cf9093ae1a15/iphone-04-follow-up.png/320x480bb.jpg" alt="PillTap screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/00/85/50008564-6448-8e88-8017-cf14c5dd741e/iphone-05-how-it-works.png/320x480bb.jpg" alt="PillTap screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is PillTap medical advice?</summary>
-            <p>No. PillTap does not provide medical advice, diagnosis, treatment recommendations, or medication instructions. Always follow instructions from your doctor, pharmacist, or healthcare provider.</p>
-          </details>
-          <details>
-            <summary>Does PillTap guarantee that I take medicine correctly?</summary>
-            <p>No. PillTap is a reminder and personal record aid and cannot guarantee medication adherence or safety.</p>
-          </details>
-          <details>
-            <summary>What do I do if I do not tap Taken?</summary>
-            <p>Nothing. Tapping Taken is optional and only for your own record. Reminders repeat the next day anyway.</p>
-          </details>
-          <details>
-            <summary>Can I use it on a schedule other than every day?</summary>
-            <p>No. The schedule is a fixed daily one: morning, noon, night, and bedtime. There are no weekday or every-few-days schedules.</p>
-          </details>
-          <details>
-            <summary>Can reminders appear during Sleep or Focus modes?</summary>
-            <p>They can appear as Time Sensitive notifications, depending on your iOS settings.</p>
-          </details>
-          <details>
-            <summary>Where is my data stored?</summary>
-            <p>There is no account and no cloud. According to the App Store listing, your medications and records stay on your device.</p>
-          </details>
-          <details>
-            <summary>Should I use PillTap instead of talking to a doctor or pharmacist?</summary>
-            <p>No. Always follow guidance from qualified healthcare professionals for medication questions.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/pilltap/id6762545903?uo=4">Open PillTap on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/pilltap/id6762545903?uo=4">Open PillTap on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

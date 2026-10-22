@@ -99,6 +99,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "タップ記録ツール",
+          "item": "https://zec-inc.jp/apps/tap-tools/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Access Lens - 色覚・見え方",
+          "item": "https://zec-inc.jp/apps/accesslens/ja/"
+        }
+      ]
     }
   ]
 }
@@ -123,7 +152,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li aria-current="page">Access Lens - 色覚・見え方</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bb/57/30/bb573072-bc6b-0aff-2633-977a38b278ef/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="Access Lens - 色覚・見え方 のアプリアイコン" width="96" height="96">
       <div>
@@ -133,104 +163,115 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/access-lens-color-compare/id6767727517?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">22言語に対応</li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li class="chip chip-link"><a href="/apps/photo-memory/ja/">写真・思い出のアプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/2c/bf/562cbf8e-d729-15e2-26e5-415558748642/01_iphone65.png/320x480bb.jpg" alt="Access Lens - 色覚・見え方 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/6f/72/746f7239-6c98-e6e3-d9c3-6cc3ec8e1c5c/02_iphone65.png/320x480bb.jpg" alt="Access Lens - 色覚・見え方 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d9/46/4b/d9464b3a-1d7e-c72a-c8b2-990744a8bd74/03_iphone65.png/320x480bb.jpg" alt="Access Lens - 色覚・見え方 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/1c/da/f11cdab6-a260-e45e-6c59-342394cafacc/04_iphone65.png/320x480bb.jpg" alt="Access Lens - 色覚・見え方 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/68/f7/7e/68f77e92-2cb1-9bc0-9e5c-ebb2306dfaf9/05_iphone65.png/320x480bb.jpg" alt="Access Lens - 色覚・見え方 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>Access Lensは、元の画像と、色覚や見え方を簡略化した近似を左右で見比べるアプリです。ライブカメラ、選んだ写真、または5枚の内蔵見本を使い、縦の境目を動かして元の画像とフィルタ側の表示範囲を変えられます。</p>
-          <p>色覚の近似は1型（P型）、2型（D型）、3型（T型）とグレイスケールで、論文で公開された変換方法（Machado 2009）を使っています。見え方のフィルタには、ぼかし・かすみ、視野を狭める・中央のスポット、低コントラストがあり、対応するものは強さを調整できます。</p>
-          <p>気づきやアクセシビリティの話し合いに使うためのアプリです。表示は近似であり、個人の見え方を正確に再現するものではなく、Access Lensは医療用ではありません。保存・共有は選んだときだけ行われ、すべての機能が無料です。</p>
+      <p class="lead-para">Access Lensは、元の画像と、色覚や見え方を簡略化した近似を左右で見比べるアプリです。ライブカメラ、選んだ写真、または5枚の内蔵見本を使い、縦の境目を動かして元の画像とフィルタ側の表示範囲を変えられます。</p>
+      <p>色覚の近似は1型（P型）、2型（D型）、3型（T型）とグレイスケールで、論文で公開された変換方法（Machado 2009）を使っています。見え方のフィルタには、ぼかし・かすみ、視野を狭める・中央のスポット、低コントラストがあり、対応するものは強さを調整できます。</p>
+      <p>気づきやアクセシビリティの話し合いに使うためのアプリです。表示は近似であり、個人の見え方を正確に再現するものではなく、Access Lensは医療用ではありません。保存・共有は選んだときだけ行われ、すべての機能が無料です。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>アクセシビリティや読みやすさを手早く確認したいデザイナー・開発者</li>
-            <li>視覚のアクセシビリティを題材に学ぶ先生・生徒</li>
-            <li>啓発活動でデモンストレーションを用意するアクセシビリティ担当者</li>
-            <li>色覚の違いや見えにくさがあると、色・文字・看板・デザインがどう見え得るのか知りたい方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>縦の境目をドラッグして動かす、左右の見比べ表示</li>
-            <li>ライブカメラ・写真の選択・5枚の内蔵見本（カメラなしでも試せる）</li>
-            <li>色覚の近似: 1型（P型）、2型（D型）、3型（T型）、グレイスケール（Machado 2009の変換方法）</li>
-            <li>見え方のフィルタ: ぼかし・かすみ、視野を狭める・中央のスポット、低コントラスト</li>
-            <li>対応するフィルタは強さを調整可能</li>
-            <li>「元だけ」「フィルタだけ」のボタン</li>
-            <li>VoiceOverで境目を10%ずつ調整でき、Dynamic Typeの最大サイズにも対応するレイアウト</li>
-            <li>結果の保存・共有は、選んだときだけ</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>縦の境目をドラッグして動かす、左右の見比べ表示</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ライブカメラ・写真の選択・5枚の内蔵見本（カメラなしでも試せる）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>色覚の近似</strong>: 1型（P型）、2型（D型）、3型（T型）、グレイスケール（Machado 2009の変換方法）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>見え方のフィルタ</strong>: ぼかし・かすみ、視野を狭める・中央のスポット、低コントラスト</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>対応するフィルタは強さを調整可能</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>「元だけ」「フィルタだけ」のボタン</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>VoiceOverで境目を10%ずつ調整でき</strong>、Dynamic Typeの最大サイズにも対応するレイアウト</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>結果の保存・共有は、選んだときだけ</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>アクセシビリティや読みやすさを手早く確認したいデザイナー・開発者</li>
+        <li>視覚のアクセシビリティを題材に学ぶ先生・生徒</li>
+        <li>啓発活動でデモンストレーションを用意するアクセシビリティ担当者</li>
+        <li>色覚の違いや見えにくさがあると、色・文字・看板・デザインがどう見え得るのか知りたい方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>Access Lensを開き、ライブカメラ、写真、5枚の内蔵見本のいずれかを選びます。</li>
-            <li>色覚の近似（1型・2型・3型・グレイスケール）か、見え方のフィルタ（ぼかし・視野を狭める・低コントラスト）を選びます。</li>
-            <li>縦の境目をドラッグして元の画像とフィルタ側の表示範囲を変えるか、「元だけ」「フィルタだけ」のボタンで切り替えます。</li>
-            <li>対応するフィルタでは、効果の強さを調整します。</li>
-            <li>必要に応じて、結果を保存したり共有したりします。</li>
+      <ol class="steps">
+        <li><span>Access Lensを開き、ライブカメラ、写真、5枚の内蔵見本のいずれかを選びます。</span></li>
+        <li><span>色覚の近似（1型・2型・3型・グレイスケール）か、見え方のフィルタ（ぼかし・視野を狭める・低コントラスト）を選びます。</span></li>
+        <li><span>縦の境目をドラッグして元の画像とフィルタ側の表示範囲を変えるか、「元だけ」「フィルタだけ」のボタンで切り替えます。</span></li>
+        <li><span>対応するフィルタでは、効果の強さを調整します。</span></li>
+        <li><span>必要に応じて、結果を保存したり共有したりします。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>Access Lensは無料で、すべての機能を無料で使えます。広告はなく、アカウント登録も不要です。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>Access Lensは無料で、すべての機能を無料で使えます。広告はなく、アカウント登録も不要です。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>カメラ映像と選んだ写真は端末の中で処理されます。Access Lensには、アカウント、分析、広告、サーバーがありません。保存・共有は、選んだときだけ行われます。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>Access Lensは無料ですか？</summary>
+          <p>はい。すべての機能が無料で、広告もアカウント登録もありません。最新の価格はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>カメラの映像や写真はどこかにアップロードされますか？</summary>
+          <p>いいえ。カメラ映像と選んだ写真は端末の中で処理されます。サーバー、分析、アカウントはなく、保存・共有も選んだときだけ行われます。</p>
+        </details>
+        <details>
+          <summary>フィルタは実際の見え方を正確に再現していますか？</summary>
+          <p>いいえ。気づきやアクセシビリティの話し合いに使う近似です。個人の見え方を正確に再現するものではなく、Access Lensは医療用ではありません。</p>
+        </details>
+        <details>
+          <summary>どんなフィルタがありますか？</summary>
+          <p>色覚の近似として1型（P型）、2型（D型）、3型（T型）、グレイスケール、見え方のフィルタとしてぼかし・かすみ、視野を狭める・中央のスポット、低コントラストがあります。対応するものは強さを調整できます。</p>
+        </details>
+        <details>
+          <summary>カメラがなくても使えますか？</summary>
+          <p>はい。ライブカメラの代わりに、写真を選ぶか、5枚の内蔵見本から始められます。</p>
+        </details>
+        <details>
+          <summary>結果の保存や共有はできますか？</summary>
+          <p>はい。保存・共有は、選んだときだけ行われます。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>カメラ映像と選んだ写真は端末の中で処理されます。Access Lensには、アカウント、分析、広告、サーバーがありません。保存・共有は、選んだときだけ行われます。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/2c/bf/562cbf8e-d729-15e2-26e5-415558748642/01_iphone65.png/320x480bb.jpg" alt="Access Lens - 色覚・見え方 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/6f/72/746f7239-6c98-e6e3-d9c3-6cc3ec8e1c5c/02_iphone65.png/320x480bb.jpg" alt="Access Lens - 色覚・見え方 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d9/46/4b/d9464b3a-1d7e-c72a-c8b2-990744a8bd74/03_iphone65.png/320x480bb.jpg" alt="Access Lens - 色覚・見え方 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/1c/da/f11cdab6-a260-e45e-6c59-342394cafacc/04_iphone65.png/320x480bb.jpg" alt="Access Lens - 色覚・見え方 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/68/f7/7e/68f77e92-2cb1-9bc0-9e5c-ebb2306dfaf9/05_iphone65.png/320x480bb.jpg" alt="Access Lens - 色覚・見え方 のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>Access Lensは無料ですか？</summary>
-            <p>はい。すべての機能が無料で、広告もアカウント登録もありません。最新の価格はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>カメラの映像や写真はどこかにアップロードされますか？</summary>
-            <p>いいえ。カメラ映像と選んだ写真は端末の中で処理されます。サーバー、分析、アカウントはなく、保存・共有も選んだときだけ行われます。</p>
-          </details>
-          <details>
-            <summary>フィルタは実際の見え方を正確に再現していますか？</summary>
-            <p>いいえ。気づきやアクセシビリティの話し合いに使う近似です。個人の見え方を正確に再現するものではなく、Access Lensは医療用ではありません。</p>
-          </details>
-          <details>
-            <summary>どんなフィルタがありますか？</summary>
-            <p>色覚の近似として1型（P型）、2型（D型）、3型（T型）、グレイスケール、見え方のフィルタとしてぼかし・かすみ、視野を狭める・中央のスポット、低コントラストがあります。対応するものは強さを調整できます。</p>
-          </details>
-          <details>
-            <summary>カメラがなくても使えますか？</summary>
-            <p>はい。ライブカメラの代わりに、写真を選ぶか、5枚の内蔵見本から始められます。</p>
-          </details>
-          <details>
-            <summary>結果の保存や共有はできますか？</summary>
-            <p>はい。保存・共有は、選んだときだけ行われます。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/access-lens-color-compare/id6767727517?uo=4">Access Lens - 色覚・見え方 をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/access-lens-color-compare/id6767727517?uo=4">Access Lens - 色覚・見え方 をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

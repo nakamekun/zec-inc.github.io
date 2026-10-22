@@ -115,6 +115,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "タップ記録ツール",
+          "item": "https://zec-inc.jp/apps/tap-tools/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "動画の音消し",
+          "item": "https://zec-inc.jp/apps/mute-video-before-share/ja/"
+        }
+      ]
     }
   ]
 }
@@ -139,7 +168,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li aria-current="page">動画の音消し</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/31/26/62/3126628d-786f-294f-5828-7e5e67ea8829/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="動画の音消し のアプリアイコン" width="96" height="96">
       <div>
@@ -149,113 +179,124 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/mute-video-before-share/id6789844158?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">22言語に対応</li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li class="chip chip-link"><a href="/apps/photo-memory/ja/">写真・思い出のアプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1b/30/4e/1b304e24-353c-db83-23ae-ddd5fe4317c9/01.png/320x480bb.jpg" alt="動画の音消し のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/0c/05/df0c0518-bcf7-1394-3b5d-d1234fd4dcda/02.png/320x480bb.jpg" alt="動画の音消し のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3a/82/1a/3a821acb-0e92-1331-d3bc-e3f211e2e185/03.png/320x480bb.jpg" alt="動画の音消し のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/03/75/43037572-2a2d-c49e-0b0f-d697718b239e/04.png/320x480bb.jpg" alt="動画の音消し のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/d0/9f/55d09f81-a469-fc42-0c51-322e91739430/05.png/320x480bb.jpg" alt="動画の音消し のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>「動画の音消し」は、動画から音声トラックだけを取り除き、無音のコピーを作るアプリです。後ろの会話や生活音、風の音が入ってしまった動画も、動画を選んでワンタップするだけで、そのままSNSに投稿したり送ったりできる状態になります。元の動画は一切変更されません。共有メニューから「音を消して共有」を選べば、アプリを開かずに無音コピーを作れます。</p>
-          <p>一般的な動画編集アプリとちがい、映像を再エンコードせずにそのままコピーして音声だけを外す方式のため、画質の劣化はゼロです。長い動画でも高速に処理でき、長さ制限も透かし（ウォーターマーク）もありません。一部の音だけ隠したいときは、選んだ区間をピー音に置き換えられ、音の波形を見ながら話し声の位置を探せます。</p>
-          <p>作成された無音コピーには、元動画の位置情報や撮影情報が引き継がれません。どこで撮影したかを知られずに共有できるという点でも、投稿前のひと手間として役立ちます。25言語に対応し、iPhoneでは縦向き・横向きどちらでも、iPadでも使えます。</p>
+      <p class="lead-para">「動画の音消し」は、動画から音声トラックだけを取り除き、無音のコピーを作るアプリです。後ろの会話や生活音、風の音が入ってしまった動画も、動画を選んでワンタップするだけで、そのままSNSに投稿したり送ったりできる状態になります。元の動画は一切変更されません。共有メニューから「音を消して共有」を選べば、アプリを開かずに無音コピーを作れます。</p>
+      <p>一般的な動画編集アプリとちがい、映像を再エンコードせずにそのままコピーして音声だけを外す方式のため、画質の劣化はゼロです。長い動画でも高速に処理でき、長さ制限も透かし（ウォーターマーク）もありません。一部の音だけ隠したいときは、選んだ区間をピー音に置き換えられ、音の波形を見ながら話し声の位置を探せます。</p>
+      <p>作成された無音コピーには、元動画の位置情報や撮影情報が引き継がれません。どこで撮影したかを知られずに共有できるという点でも、投稿前のひと手間として役立ちます。25言語に対応し、iPhoneでは縦向き・横向きどちらでも、iPadでも使えます。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>SNSに動画を投稿する際、背景の会話や生活音を消したい方</li>
-            <li>家族の声や名前が音声に入らないよう配慮して、子どもの動画を共有したい方</li>
-            <li>フリマやマーケットプレイスの出品動画から周囲の雑音を取り除きたい方</li>
-            <li>職場・学校・家族に動画を送るとき、音声のプライバシーが気になる方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>ワンタップで動画の音をすべて削除</li>
-            <li>共有メニューの「音を消して共有」から、アプリを開かずに無音コピーを作成</li>
-            <li>選んだ区間の音をピー音に置き換え。波形を見ながら話し声の位置を探せます</li>
-            <li>映像は再エンコードせずそのままコピーするため、画質劣化ゼロ</li>
-            <li>長さ制限なし。長い動画でも高速に処理</li>
-            <li>無音コピーに透かし（ウォーターマーク）は入りません</li>
-            <li>無音コピーには元動画の位置情報・撮影情報が含まれません</li>
-            <li>結果をプレビューしてから、写真アプリへの保存や共有シートでの共有が可能</li>
-            <li>25言語に対応。iPhoneは縦向き・横向き、iPadでも利用可能</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ワンタップで動画の音をすべて削除</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>共有メニューの「音を消して共有」から、アプリを開かずに無音コピーを作成</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>選んだ区間の音をピー音に置き換え。波形を見ながら話し声の位置を探せます</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>映像は再エンコードせずそのままコピーするため、画質劣化ゼロ</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>長さ制限なし</strong>。長い動画でも高速に処理</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>無音コピーに透かし（ウォーターマーク）は入りません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>無音コピーには元動画の位置情報・撮影情報が含まれません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>結果をプレビューしてから</strong>、写真アプリへの保存や共有シートでの共有が可能</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>25言語に対応</strong>。iPhoneは縦向き・横向き、iPadでも利用可能</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>SNSに動画を投稿する際、背景の会話や生活音を消したい方</li>
+        <li>家族の声や名前が音声に入らないよう配慮して、子どもの動画を共有したい方</li>
+        <li>フリマやマーケットプレイスの出品動画から周囲の雑音を取り除きたい方</li>
+        <li>職場・学校・家族に動画を送るとき、音声のプライバシーが気になる方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>アプリを開いて写真ライブラリから動画を選ぶか、他のアプリの共有メニューから「音を消して共有」を選びます。</li>
-            <li>選んだ動画をプレビューで確認します。</li>
-            <li>音声を削除すると、端末内で無音コピーが作成されます。一部の音だけ隠したいときは、ピー音に置き換える区間を選びます。</li>
-            <li>仕上がりをプレビューで確認します。</li>
-            <li>写真アプリに保存するか、共有シートからそのまま共有します。</li>
+      <ol class="steps">
+        <li><span>アプリを開いて写真ライブラリから動画を選ぶか、他のアプリの共有メニューから「音を消して共有」を選びます。</span></li>
+        <li><span>選んだ動画をプレビューで確認します。</span></li>
+        <li><span>音声を削除すると、端末内で無音コピーが作成されます。一部の音だけ隠したいときは、ピー音に置き換える区間を選びます。</span></li>
+        <li><span>仕上がりをプレビューで確認します。</span></li>
+        <li><span>写真アプリに保存するか、共有シートからそのまま共有します。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>App Storeで無料で提供されており、広告や透かしはありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>App Storeで無料で提供されており、広告や透かしはありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>処理はすべて端末内で行われ、アカウント登録・アップロード・サーバー処理・広告・トラッキングはありません。写真へのアクセスは、動画の選択と無音コピーの保存にのみ使われます。作成された無音コピーには、元動画の位置情報や撮影情報も含まれません。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>「動画の音消し」は無料ですか？</summary>
+          <p>はい。広告も透かしもなく無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>動画はどこかにアップロードされますか？</summary>
+          <p>いいえ。音声の削除はすべて端末内で行われます。アカウントもアップロードもサーバー処理もトラッキングもありません。</p>
+        </details>
+        <details>
+          <summary>音を消すと画質は落ちますか？</summary>
+          <p>落ちません。映像トラックは再エンコードせずそのままコピーするため、無音コピーの画質は元の動画とまったく同じです。</p>
+        </details>
+        <details>
+          <summary>動画の長さに制限はありますか？</summary>
+          <p>ありません。再エンコードを行わない方式のため、長い動画でも高速に処理が完了します。</p>
+        </details>
+        <details>
+          <summary>動画の一部だけ音を消せますか？</summary>
+          <p>はい。選んだ区間の音をピー音に置き換えられます。波形を見ながら、話し声が入っている位置を探せます。</p>
+        </details>
+        <details>
+          <summary>共有メニューから使えますか？</summary>
+          <p>はい。共有メニューから「音を消して共有」を選ぶと、アプリを開かずに無音コピーを作れます。</p>
+        </details>
+        <details>
+          <summary>元の動画は変更されますか？</summary>
+          <p>変更されません。アプリは新しい無音コピーを作成するだけで、ライブラリ内の元の動画はそのまま残ります。</p>
+        </details>
+        <details>
+          <summary>無音コピーに位置情報は含まれますか？</summary>
+          <p>含まれません。無音コピーには元動画の位置情報や撮影情報が引き継がれないため、公開の場で共有しても安心です。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>処理はすべて端末内で行われ、アカウント登録・アップロード・サーバー処理・広告・トラッキングはありません。写真へのアクセスは、動画の選択と無音コピーの保存にのみ使われます。作成された無音コピーには、元動画の位置情報や撮影情報も含まれません。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1b/30/4e/1b304e24-353c-db83-23ae-ddd5fe4317c9/01.png/320x480bb.jpg" alt="動画の音消し のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/0c/05/df0c0518-bcf7-1394-3b5d-d1234fd4dcda/02.png/320x480bb.jpg" alt="動画の音消し のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3a/82/1a/3a821acb-0e92-1331-d3bc-e3f211e2e185/03.png/320x480bb.jpg" alt="動画の音消し のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/03/75/43037572-2a2d-c49e-0b0f-d697718b239e/04.png/320x480bb.jpg" alt="動画の音消し のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/d0/9f/55d09f81-a469-fc42-0c51-322e91739430/05.png/320x480bb.jpg" alt="動画の音消し のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>「動画の音消し」は無料ですか？</summary>
-            <p>はい。広告も透かしもなく無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>動画はどこかにアップロードされますか？</summary>
-            <p>いいえ。音声の削除はすべて端末内で行われます。アカウントもアップロードもサーバー処理もトラッキングもありません。</p>
-          </details>
-          <details>
-            <summary>音を消すと画質は落ちますか？</summary>
-            <p>落ちません。映像トラックは再エンコードせずそのままコピーするため、無音コピーの画質は元の動画とまったく同じです。</p>
-          </details>
-          <details>
-            <summary>動画の長さに制限はありますか？</summary>
-            <p>ありません。再エンコードを行わない方式のため、長い動画でも高速に処理が完了します。</p>
-          </details>
-          <details>
-            <summary>動画の一部だけ音を消せますか？</summary>
-            <p>はい。選んだ区間の音をピー音に置き換えられます。波形を見ながら、話し声が入っている位置を探せます。</p>
-          </details>
-          <details>
-            <summary>共有メニューから使えますか？</summary>
-            <p>はい。共有メニューから「音を消して共有」を選ぶと、アプリを開かずに無音コピーを作れます。</p>
-          </details>
-          <details>
-            <summary>元の動画は変更されますか？</summary>
-            <p>変更されません。アプリは新しい無音コピーを作成するだけで、ライブラリ内の元の動画はそのまま残ります。</p>
-          </details>
-          <details>
-            <summary>無音コピーに位置情報は含まれますか？</summary>
-            <p>含まれません。無音コピーには元動画の位置情報や撮影情報が引き継がれないため、公開の場で共有しても安心です。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/mute-video-before-share/id6789844158?uo=4">動画の音消し をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/mute-video-before-share/id6789844158?uo=4">動画の音消し をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

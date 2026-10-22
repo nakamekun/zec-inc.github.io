@@ -120,6 +120,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "家族向けアプリ",
+          "item": "https://zec-inc.jp/apps/family/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "年齢プロフィール - 和暦・厄年・数え年",
+          "item": "https://zec-inc.jp/apps/warekiyakudoshichecker/ja/"
+        }
+      ]
     }
   ]
 }
@@ -141,7 +170,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/family/ja/">家族向けアプリ</a></li><li aria-current="page">年齢プロフィール - 和暦・厄年・数え年</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/99/6b/4f/996b4fec-5139-aacf-bdb2-b8722caf292d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のアプリアイコン" width="96" height="96">
       <div>
@@ -151,120 +181,131 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/%E5%B9%B4%E9%BD%A2%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB-%E5%AE%B6%E6%97%8F%E3%81%A8%E6%8E%A8%E3%81%97%E3%81%AE%E8%A8%98%E5%BF%B5%E6%97%A5/id6770047182?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">2言語に対応</li><li class="chip chip-link"><a href="/apps/family/ja/">家族向けアプリ</a></li><li class="chip chip-link"><a href="/apps/productivity/ja/">仕事効率化アプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/af/7b/8aaf7bfc-e44f-edb1-4a6e-c3b53c9f72db/00-oshi-days.png/320x480bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a3/02/e4/a302e4ff-f88b-0bc2-bdf2-216b58246220/00b-oshi.png/320x480bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/54/33/ba/5433bacc-c174-3b2e-08c2-d6b1c36754e4/00c-koyomi.png/320x480bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/31/bf/1531bfdc-9e83-baa3-9b7a-767772e644d2/01-profiles.png/320x480bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6c/9d/bf/6c9dbf29-caa1-156b-446c-790ec8e89a49/01b-timeline.png/320x480bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>年齢プロフィールは、家族や親族の生年月日をまとめて管理できる日本向けのプロフィール帳アプリです。父母・祖父母・子ども・親族のプロフィールを登録すると、満年齢、数え年、生年月日と今年の和暦（明治・大正・昭和・平成・令和）、干支、星座、一般的な厄年の目安、還暦（60歳）・古希（70歳）などの長寿祝いをひと目で確認できます。</p>
-          <p>「おじいちゃんは今年何歳？」「自分の厄年はいつ？」「還暦のお祝いは何年？」——こうした確認が、早見表を探さなくてもこのアプリひとつで済みます。「誕生日」タブでは、これから1年の家族の誕生日を日付順に並べ、次は誰か、何歳・数え何歳になるか、厄年にあたるかがひと目でわかります。西暦・和暦の変換ツールも内蔵しており、履歴書や申請書、役所での手続きの確認に便利です。改元の境目にあたる日付も正しく扱い、平成32年・昭和100年のような存在しない和暦表記も正しい西暦と元号に読み替えます。子どもの今の学年と、小学校から大学までの入学・卒業年も確認できます。</p>
-          <p>ホーム画面・ロック画面のウィジェットで、今年の和暦と次の誕生日・節目を確認できます。データはすべて端末内に保存され、アカウント登録は不要、広告もなく、プロフィールを自動で外部送信することもありません。厄年や長寿祝いは一般的な慣習の目安として表示するもので、運勢や健康について何かを断定するアプリではありません。</p>
+      <p class="lead-para">年齢プロフィールは、家族や親族の生年月日をまとめて管理できる日本向けのプロフィール帳アプリです。父母・祖父母・子ども・親族のプロフィールを登録すると、満年齢、数え年、生年月日と今年の和暦（明治・大正・昭和・平成・令和）、干支、星座、一般的な厄年の目安、還暦（60歳）・古希（70歳）などの長寿祝いをひと目で確認できます。</p>
+      <p>「おじいちゃんは今年何歳？」「自分の厄年はいつ？」「還暦のお祝いは何年？」——こうした確認が、早見表を探さなくてもこのアプリひとつで済みます。「誕生日」タブでは、これから1年の家族の誕生日を日付順に並べ、次は誰か、何歳・数え何歳になるか、厄年にあたるかがひと目でわかります。西暦・和暦の変換ツールも内蔵しており、履歴書や申請書、役所での手続きの確認に便利です。改元の境目にあたる日付も正しく扱い、平成32年・昭和100年のような存在しない和暦表記も正しい西暦と元号に読み替えます。子どもの今の学年と、小学校から大学までの入学・卒業年も確認できます。</p>
+      <p>ホーム画面・ロック画面のウィジェットで、今年の和暦と次の誕生日・節目を確認できます。データはすべて端末内に保存され、アカウント登録は不要、広告もなく、プロフィールを自動で外部送信することもありません。厄年や長寿祝いは一般的な慣習の目安として表示するもので、運勢や健康について何かを断定するアプリではありません。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>家族全員の年齢・干支・お祝いの年をひとつの場所で確認したい方</li>
-            <li>還暦・古希・喜寿など、親や祖父母の長寿祝いを計画している方</li>
-            <li>履歴書や公的な書類で和暦の記入が必要な方</li>
-            <li>自分の厄年の目安をさっと確認しておきたい方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>家族のプロフィール帳: 生年月日に加えて血液型やメモも登録可能</li>
-            <li>各プロフィールの満年齢・数え年・干支・星座を表示</li>
-            <li>「誕生日」タブで、これから1年の家族の誕生日を日付順に表示。何歳になるかと厄年の印つき</li>
-            <li>明治から令和まで対応した和暦表示と西暦・和暦変換（改元の境目も正しく処理。平成32年のような存在しない表記も読み替え）</li>
-            <li>性別（男性・女性・指定なし）に応じた厄年の目安を表示。大厄にも対応</li>
-            <li>数え年にもとづく還暦・古希などの長寿祝いの判定</li>
-            <li>誕生日・長寿祝いの通知</li>
-            <li>今年の和暦と次の誕生日・節目を表示するホーム画面・ロック画面のウィジェット</li>
-            <li>子どもの今の学年と、小学校から大学までの入学・卒業年</li>
-            <li>データはすべて端末内に保存。アカウント不要・広告なし・自動の外部送信なし</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>家族のプロフィール帳</strong>: 生年月日に加えて血液型やメモも登録可能</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>各プロフィールの満年齢・数え年・干支・星座を表示</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>「誕生日」タブで</strong>、これから1年の家族の誕生日を日付順に表示。何歳になるかと厄年の印つき</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>明治から令和まで対応した和暦表示と西暦・和暦変換（改元の境目も正しく処理。平成32年のような存在しない表記も読み替え）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>性別（男性・女性・指定なし）に応じた厄年の目安を表示。大厄にも対応</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>数え年にもとづく還暦・古希などの長寿祝いの判定</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>誕生日・長寿祝いの通知</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>今年の和暦と次の誕生日・節目を表示するホーム画面・ロック画面のウィジェット</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>子どもの今の学年と</strong>、小学校から大学までの入学・卒業年</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>データはすべて端末内に保存</strong>。アカウント不要・広告なし・自動の外部送信なし</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>家族全員の年齢・干支・お祝いの年をひとつの場所で確認したい方</li>
+        <li>還暦・古希・喜寿など、親や祖父母の長寿祝いを計画している方</li>
+        <li>履歴書や公的な書類で和暦の記入が必要な方</li>
+        <li>自分の厄年の目安をさっと確認しておきたい方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>日付ピッカーで家族・親族の生年月日を登録します。</li>
-            <li>プロフィール一覧で、それぞれの年齢・和暦・干支・星座を確認します。</li>
-            <li>「誕生日」タブで、次は誰の誕生日か、厄年にあたる人がいるかを確認します。</li>
-            <li>各プロフィールに表示される厄年や長寿祝いの目安をチェックします。</li>
-            <li>誕生日や還暦などのお祝いを忘れないよう、通知を設定します。</li>
-            <li>ホーム画面やロック画面にウィジェットを追加して、今年の和暦と次の節目を確認します。</li>
-            <li>書類の記入時は、変換ツールで西暦と和暦を相互に変換します。</li>
+      <ol class="steps">
+        <li><span>日付ピッカーで家族・親族の生年月日を登録します。</span></li>
+        <li><span>プロフィール一覧で、それぞれの年齢・和暦・干支・星座を確認します。</span></li>
+        <li><span>「誕生日」タブで、次は誰の誕生日か、厄年にあたる人がいるかを確認します。</span></li>
+        <li><span>各プロフィールに表示される厄年や長寿祝いの目安をチェックします。</span></li>
+        <li><span>誕生日や還暦などのお祝いを忘れないよう、通知を設定します。</span></li>
+        <li><span>ホーム画面やロック画面にウィジェットを追加して、今年の和暦と次の節目を確認します。</span></li>
+        <li><span>書類の記入時は、変換ツールで西暦と和暦を相互に変換します。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>ダウンロードと基本利用は無料で、無料版ではプロフィールを2件まで保存できます。買い切りのPlus（サブスクリプションではありません）を購入すると保存数が無制限になります。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>ダウンロードと基本利用は無料で、無料版ではプロフィールを2件まで保存できます。買い切りのPlus（サブスクリプションではありません）を購入すると保存数が無制限になります。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>プロフィール、生年月日、メモ、血液型、通知設定などのデータはすべて端末内（ウィジェットと共有する端末内のApp Groupを含む）に保存され、外部サーバーへ送信されることはありません。アカウント登録・トラッキング・広告や解析SDKはなく、連絡先へのアクセスも行いません。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>アプリは無料ですか？</summary>
+          <p>はい。無料でダウンロードでき、無料版ではプロフィールを2件まで保存できます。買い切りのPlus（サブスクリプションではありません）を購入すると保存数が無制限になります。最新の価格はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>家族のデータはどこに保存されますか？</summary>
+          <p>すべて端末内に保存されます。プロフィールが外部サーバーへ送信されることはなく、アカウントも不要で、広告・トラッキング・解析SDKも使用していません。</p>
+        </details>
+        <details>
+          <summary>どの元号に対応していますか？</summary>
+          <p>明治・大正・昭和・平成・令和の5つの元号に対応し、改元の境目にあたる日付も正しく変換します。平成32年や昭和100年のような存在しない表記も、正しい西暦と元号に読み替えます。履歴書や役所の書類の確認に使えます。</p>
+        </details>
+        <details>
+          <summary>厄年や数え年はどのように表示されますか？</summary>
+          <p>厄年は男女で異なる一般的な慣習上の目安として、数え年は生まれた年を1歳とする伝統的な数え方として表示します。運勢や吉凶、健康効果を断定するものではありません。</p>
+        </details>
+        <details>
+          <summary>誕生日や長寿祝いを通知してもらえますか？</summary>
+          <p>はい。誕生日と、還暦（60歳）・古希（70歳）などの長寿祝いの通知を設定できます。</p>
+        </details>
+        <details>
+          <summary>次に誰の誕生日か、わかりますか？</summary>
+          <p>はい。「誕生日」タブに、これから1年の家族の誕生日が日付順に並びます。次は誰か、何歳・数え何歳になるかがわかり、厄年にあたる人には印が付きます。</p>
+        </details>
+        <details>
+          <summary>ウィジェットはありますか？</summary>
+          <p>はい。ホーム画面・ロック画面のウィジェットで、今年の和暦と次の誕生日・節目を確認できます。</p>
+        </details>
+        <details>
+          <summary>オフラインでも使えますか？</summary>
+          <p>はい。アプリ本体は外部APIを使用していないため、インターネット接続がなくてもすべての機能が動作します。</p>
+        </details>
+        <details>
+          <summary>占いのアプリですか？</summary>
+          <p>いいえ。厄年や長寿祝いの年は、広く知られた慣習上の目安として表示するだけで、運勢・吉凶・健康・宗教的な効果について何かを述べるものではありません。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>プロフィール、生年月日、メモ、血液型、通知設定などのデータはすべて端末内（ウィジェットと共有する端末内のApp Groupを含む）に保存され、外部サーバーへ送信されることはありません。アカウント登録・トラッキング・広告や解析SDKはなく、連絡先へのアクセスも行いません。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/af/7b/8aaf7bfc-e44f-edb1-4a6e-c3b53c9f72db/00-oshi-days.png/320x480bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a3/02/e4/a302e4ff-f88b-0bc2-bdf2-216b58246220/00b-oshi.png/320x480bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/54/33/ba/5433bacc-c174-3b2e-08c2-d6b1c36754e4/00c-koyomi.png/320x480bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/31/bf/1531bfdc-9e83-baa3-9b7a-767772e644d2/01-profiles.png/320x480bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6c/9d/bf/6c9dbf29-caa1-156b-446c-790ec8e89a49/01b-timeline.png/320x480bb.jpg" alt="年齢プロフィール - 和暦・厄年・数え年 のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>大きな文字メモ</h3><p>ひとつのメモを大きな文字で目の前の相手に見せるアプリ。読み上げや音声入力にも対応し、筆談の補助や窓口でのやりとりに使えます。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>アプリは無料ですか？</summary>
-            <p>はい。無料でダウンロードでき、無料版ではプロフィールを2件まで保存できます。買い切りのPlus（サブスクリプションではありません）を購入すると保存数が無制限になります。最新の価格はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>家族のデータはどこに保存されますか？</summary>
-            <p>すべて端末内に保存されます。プロフィールが外部サーバーへ送信されることはなく、アカウントも不要で、広告・トラッキング・解析SDKも使用していません。</p>
-          </details>
-          <details>
-            <summary>どの元号に対応していますか？</summary>
-            <p>明治・大正・昭和・平成・令和の5つの元号に対応し、改元の境目にあたる日付も正しく変換します。平成32年や昭和100年のような存在しない表記も、正しい西暦と元号に読み替えます。履歴書や役所の書類の確認に使えます。</p>
-          </details>
-          <details>
-            <summary>厄年や数え年はどのように表示されますか？</summary>
-            <p>厄年は男女で異なる一般的な慣習上の目安として、数え年は生まれた年を1歳とする伝統的な数え方として表示します。運勢や吉凶、健康効果を断定するものではありません。</p>
-          </details>
-          <details>
-            <summary>誕生日や長寿祝いを通知してもらえますか？</summary>
-            <p>はい。誕生日と、還暦（60歳）・古希（70歳）などの長寿祝いの通知を設定できます。</p>
-          </details>
-          <details>
-            <summary>次に誰の誕生日か、わかりますか？</summary>
-            <p>はい。「誕生日」タブに、これから1年の家族の誕生日が日付順に並びます。次は誰か、何歳・数え何歳になるかがわかり、厄年にあたる人には印が付きます。</p>
-          </details>
-          <details>
-            <summary>ウィジェットはありますか？</summary>
-            <p>はい。ホーム画面・ロック画面のウィジェットで、今年の和暦と次の誕生日・節目を確認できます。</p>
-          </details>
-          <details>
-            <summary>オフラインでも使えますか？</summary>
-            <p>はい。アプリ本体は外部APIを使用していないため、インターネット接続がなくてもすべての機能が動作します。</p>
-          </details>
-          <details>
-            <summary>占いのアプリですか？</summary>
-            <p>いいえ。厄年や長寿祝いの年は、広く知られた慣習上の目安として表示するだけで、運勢・吉凶・健康・宗教的な効果について何かを述べるものではありません。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/%E5%B9%B4%E9%BD%A2%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB-%E5%AE%B6%E6%97%8F%E3%81%A8%E6%8E%A8%E3%81%97%E3%81%AE%E8%A8%98%E5%BF%B5%E6%97%A5/id6770047182?uo=4">年齢プロフィール - 和暦・厄年・数え年 をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/%E5%B9%B4%E9%BD%A2%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB-%E5%AE%B6%E6%97%8F%E3%81%A8%E6%8E%A8%E3%81%97%E3%81%AE%E8%A8%98%E5%BF%B5%E6%97%A5/id6770047182?uo=4">年齢プロフィール - 和暦・厄年・数え年 をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>

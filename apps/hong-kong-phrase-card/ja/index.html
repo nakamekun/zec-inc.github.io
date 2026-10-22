@@ -104,6 +104,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "旅行のアプリ",
+          "item": "https://zec-inc.jp/apps/travel/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "香港フレーズカード",
+          "item": "https://zec-inc.jp/apps/hong-kong-phrase-card/ja/"
+        }
+      ]
     }
   ]
 }
@@ -125,7 +154,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/travel/ja/">旅行のアプリ</a></li><li aria-current="page">香港フレーズカード</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/0c/cb/990ccbe1-f5ec-ef23-38cb-2959c4eb2f27/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="香港フレーズカード のアプリアイコン" width="96" height="96">
       <div>
@@ -135,110 +165,120 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/hong-kong-phrase-card/id6772096993?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip chip-link"><a href="/apps/travel/ja/">旅行のアプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/31/c5/68/31c56884-2b9c-4ceb-d74b-bcc5b50f00c3/01-iphone-home.png/320x480bb.jpg" alt="香港フレーズカード のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0f/f1/4c/0ff14ca1-205c-dbbd-758e-2ef437c85ec6/02-iphone-my-cards.png/320x480bb.jpg" alt="香港フレーズカード のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/70/08/05700882-ec1e-aa53-c77f-5a5539cfffc6/03-iphone-search.png/320x480bb.jpg" alt="香港フレーズカード のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/b7/4d/7bb74de0-54f4-9550-74dd-2f2fa606c29e/04-iphone-category-rank.png/320x480bb.jpg" alt="香港フレーズカード のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8c/3c/dc/8c3cdc1a-70f5-a9cc-5acb-bdfe246a5407/05-iphone-phrase-detail.png/320x480bb.jpg" alt="香港フレーズカード のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>香港フレーズカードは、香港旅行で現地の人に画面を見せて使える旅行会話アプリです。あらかじめ用意されたフレーズを検索またはカテゴリから選び、大きく表示された広東語・繁体字をそのまま相手に見せられます。見せるだけでは伝わりにくいときは、iPhoneの読み上げ機能で通常の速さまたはゆっくり音声再生もできます。</p>
-          <p>リアルタイム翻訳アプリとは違い、内容が固定されたフレーズカード方式なので、その場で入力に迷うことも、通信を待つこともありません。完全オフラインで動作し、外部の翻訳APIも使いません。載っているのは香港でふだん話される口語の広東語の文で、各カードには繁体字に加えて英語とカタカナ読みを併記しており、日本人旅行者がそのまま使えるつくりです。入力した文を翻訳するアプリではありませんが、ホテル名や住所など自分で入力した文は、マイカードとして保存できます。</p>
-          <p>収録フレーズは160。空港、ホテル、タクシー、鉄道、レストラン、カフェ、買い物、コンビニ、観光、支払い、体調不良、アレルギー、トラブル、緊急時など、旅行中の実際の場面をカバーします。実用度の高い順に並ぶため、使う可能性が高いフレーズから先に見つかります。</p>
+      <p class="lead-para">香港フレーズカードは、香港旅行で現地の人に画面を見せて使える旅行会話アプリです。あらかじめ用意されたフレーズを検索またはカテゴリから選び、大きく表示された広東語・繁体字をそのまま相手に見せられます。見せるだけでは伝わりにくいときは、iPhoneの読み上げ機能で通常の速さまたはゆっくり音声再生もできます。</p>
+      <p>リアルタイム翻訳アプリとは違い、内容が固定されたフレーズカード方式なので、その場で入力に迷うことも、通信を待つこともありません。完全オフラインで動作し、外部の翻訳APIも使いません。載っているのは香港でふだん話される口語の広東語の文で、各カードには繁体字に加えて英語とカタカナ読みを併記しており、日本人旅行者がそのまま使えるつくりです。入力した文を翻訳するアプリではありませんが、ホテル名や住所など自分で入力した文は、マイカードとして保存できます。</p>
+      <p>収録フレーズは160。空港、ホテル、タクシー、鉄道、レストラン、カフェ、買い物、コンビニ、観光、支払い、体調不良、アレルギー、トラブル、緊急時など、旅行中の実際の場面をカバーします。実用度の高い順に並ぶため、使う可能性が高いフレーズから先に見つかります。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>広東語を話せないまま香港を旅行する日本人旅行者</li>
-            <li>翻訳アプリよりも、内容が固定された確実なフレーズカードを使いたい方</li>
-            <li>タクシー・レストラン・お店・ホテルで手早く意思を伝えたい方</li>
-            <li>体調不良やアレルギー、トラブル時に備えてオフラインの伝達手段を持っておきたい方</li>
-            <li>香港以外でも、広東語や繁体字が役立つ地域へ旅行する方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>15カテゴリ・160フレーズをすべてオフライン収録</li>
-            <li>日本語・英語・広東語（繁体字）で検索</li>
-            <li>相手に見せるための大きな繁体字表示（英語も併記）。表示中は画面が消えません</li>
-            <li>横向きにすると広東語の文をさらに大きく表示</li>
-            <li>ホテル名や住所など、自分で入力・貼り付けた文をカードとして端末内に保存・並べ替え</li>
-            <li>iPhoneの読み上げ機能による音声再生（広東語の声がある端末ではゆっくり再生にも対応）</li>
-            <li>日本人旅行者向けのカタカナ読みガイド</li>
-            <li>お気に入り登録（端末内に保存）と、実用度ランクによる絞り込み</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>15カテゴリ・160フレーズをすべてオフライン収録</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>日本語・英語・広東語（繁体字）で検索</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>相手に見せるための大きな繁体字表示（英語も併記）。表示中は画面が消えません</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>横向きにすると広東語の文をさらに大きく表示</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>ホテル名や住所など</strong>、自分で入力・貼り付けた文をカードとして端末内に保存・並べ替え</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>iPhoneの読み上げ機能による音声再生（広東語の声がある端末ではゆっくり再生にも対応）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>日本人旅行者向けのカタカナ読みガイド</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>お気に入り登録（端末内に保存）と、実用度ランクによる絞り込み</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>広東語を話せないまま香港を旅行する日本人旅行者</li>
+        <li>翻訳アプリよりも、内容が固定された確実なフレーズカードを使いたい方</li>
+        <li>タクシー・レストラン・お店・ホテルで手早く意思を伝えたい方</li>
+        <li>体調不良やアレルギー、トラブル時に備えてオフラインの伝達手段を持っておきたい方</li>
+        <li>香港以外でも、広東語や繁体字が役立つ地域へ旅行する方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>アプリを開いてフレーズを検索するか、空港・タクシー・レストランなどのカテゴリから探します。</li>
-            <li>必要に応じて、実用度ランクで必須フレーズだけに絞り込みます。</li>
-            <li>フレーズをタップして、繁体字・英語・カタカナ読みが載ったカードを開きます。</li>
-            <li>大きく表示された繁体字を、伝えたい相手にそのまま見せます。横向きにするとさらに大きく表示されます。</li>
-            <li>見せるだけで伝わらないときは、再生ボタンで通常またはゆっくりの速さで音声を流します。</li>
-            <li>ホテル名や住所など自分の文はマイカードに保存し、よく使うフレーズはお気に入りに登録しておきます。</li>
+      <ol class="steps">
+        <li><span>アプリを開いてフレーズを検索するか、空港・タクシー・レストランなどのカテゴリから探します。</span></li>
+        <li><span>必要に応じて、実用度ランクで必須フレーズだけに絞り込みます。</span></li>
+        <li><span>フレーズをタップして、繁体字・英語・カタカナ読みが載ったカードを開きます。</span></li>
+        <li><span>大きく表示された繁体字を、伝えたい相手にそのまま見せます。横向きにするとさらに大きく表示されます。</span></li>
+        <li><span>見せるだけで伝わらないときは、再生ボタンで通常またはゆっくりの速さで音声を流します。</span></li>
+        <li><span>ホテル名や住所など自分の文はマイカードに保存し、よく使うフレーズはお気に入りに登録しておきます。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>香港フレーズカードは無料で、アプリ内課金や広告はありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>香港フレーズカードは無料で、アプリ内課金や広告はありません。最新の価格・提供状況はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>個人情報の収集はありません。アカウントやトラッキング、外部翻訳APIは使わず、フレーズデータはすべてアプリに内蔵されています。お気に入りと自分で保存したカードは端末内にのみ保存され、位置情報・カメラ・写真・連絡先・マイクの権限も要求しません。音声再生は端末の読み上げ機能を使い、録音や送信は行いません。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>アプリは無料ですか？</summary>
+          <p>はい。無料で、アプリ内課金や広告はありません。最新の価格はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>オフラインでも使えますか？</summary>
+          <p>はい。160フレーズすべてがアプリに内蔵されているため、検索もカード表示も見せる画面も、インターネット接続なしで動作します。</p>
+        </details>
+        <details>
+          <summary>アプリはどんなデータを集めますか？</summary>
+          <p>集めません。アカウントもトラッキングも外部翻訳APIもありません。お気に入りと自分で保存したカードは端末内にのみ保存されます。</p>
+        </details>
+        <details>
+          <summary>広東語が話せなくても使えますか？</summary>
+          <p>はい。基本の使い方は、大きく表示された繁体字を相手に見せることです。読み上げによる音声再生と、カタカナ読みのガイドも用意しています。</p>
+        </details>
+        <details>
+          <summary>どんな場面のフレーズがありますか？</summary>
+          <p>空港、ホテル、移動、タクシー、鉄道、レストラン、カフェ、買い物、コンビニ、観光、支払い、体調不良、アレルギー、トラブル、緊急時の15カテゴリです。</p>
+        </details>
+        <details>
+          <summary>緊急時や公的な手続きにも頼っていいですか？</summary>
+          <p>本アプリは旅行中の簡易的な意思表示を補助するものです。緊急時や医療・法律・出入国に関する事項は、必ず現地の公的機関や専門機関にご確認ください。</p>
+        </details>
+        <details>
+          <summary>語学学習アプリですか？</summary>
+          <p>いいえ。旅行者のための実用的な伝達ツールで、見せたり再生したりするフレーズカードです。レッスンや学習機能はありません。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>個人情報の収集はありません。アカウントやトラッキング、外部翻訳APIは使わず、フレーズデータはすべてアプリに内蔵されています。お気に入りと自分で保存したカードは端末内にのみ保存され、位置情報・カメラ・写真・連絡先・マイクの権限も要求しません。音声再生は端末の読み上げ機能を使い、録音や送信は行いません。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/31/c5/68/31c56884-2b9c-4ceb-d74b-bcc5b50f00c3/01-iphone-home.png/320x480bb.jpg" alt="香港フレーズカード のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0f/f1/4c/0ff14ca1-205c-dbbd-758e-2ef437c85ec6/02-iphone-my-cards.png/320x480bb.jpg" alt="香港フレーズカード のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/70/08/05700882-ec1e-aa53-c77f-5a5539cfffc6/03-iphone-search.png/320x480bb.jpg" alt="香港フレーズカード のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/b7/4d/7bb74de0-54f4-9550-74dd-2f2fa606c29e/04-iphone-category-rank.png/320x480bb.jpg" alt="香港フレーズカード のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8c/3c/dc/8c3cdc1a-70f5-a9cc-5acb-bdfe246a5407/05-iphone-phrase-detail.png/320x480bb.jpg" alt="香港フレーズカード のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/packed/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/bd/d2/dbbdd28b-532f-37bc-c671-ed10601d8936/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>忘れ物チェック・持ち物リスト Packed</h3><p>毎朝の「鍵、持った？財布は？」を玄関で3秒で。ウィジェットから持ち物をチェックできる、忘れ物チェックの持ち物リストです。</p></span></a>
+        <a class="related-card" href="/apps/korean-travel-phrase-card/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/36/9b/58369b4b-1172-fbab-9915-087f7bb1e571/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>韓国旅行フレーズカード</h3><p>韓国旅行で使える106の韓国語フレーズをオフライン収録。ハングルを大きく見せるだけの指さし会話カードで、音声再生にも対応。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>アプリは無料ですか？</summary>
-            <p>はい。無料で、アプリ内課金や広告はありません。最新の価格はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>オフラインでも使えますか？</summary>
-            <p>はい。160フレーズすべてがアプリに内蔵されているため、検索もカード表示も見せる画面も、インターネット接続なしで動作します。</p>
-          </details>
-          <details>
-            <summary>アプリはどんなデータを集めますか？</summary>
-            <p>集めません。アカウントもトラッキングも外部翻訳APIもありません。お気に入りと自分で保存したカードは端末内にのみ保存されます。</p>
-          </details>
-          <details>
-            <summary>広東語が話せなくても使えますか？</summary>
-            <p>はい。基本の使い方は、大きく表示された繁体字を相手に見せることです。読み上げによる音声再生と、カタカナ読みのガイドも用意しています。</p>
-          </details>
-          <details>
-            <summary>どんな場面のフレーズがありますか？</summary>
-            <p>空港、ホテル、移動、タクシー、鉄道、レストラン、カフェ、買い物、コンビニ、観光、支払い、体調不良、アレルギー、トラブル、緊急時の15カテゴリです。</p>
-          </details>
-          <details>
-            <summary>緊急時や公的な手続きにも頼っていいですか？</summary>
-            <p>本アプリは旅行中の簡易的な意思表示を補助するものです。緊急時や医療・法律・出入国に関する事項は、必ず現地の公的機関や専門機関にご確認ください。</p>
-          </details>
-          <details>
-            <summary>語学学習アプリですか？</summary>
-            <p>いいえ。旅行者のための実用的な伝達ツールで、見せたり再生したりするフレーズカードです。レッスンや学習機能はありません。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/hong-kong-phrase-card/id6772096993?uo=4">香港フレーズカード をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/hong-kong-phrase-card/id6772096993?uo=4">香港フレーズカード をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-19</p>
     </section>
   </main>

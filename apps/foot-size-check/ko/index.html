@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
       "softwareVersion": "2.22",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "앱",
+          "item": "https://zec-inc.jp/apps/ko/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Foot Size Check 발 사이즈 측정",
+          "item": "https://zec-inc.jp/apps/foot-size-check/ko/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/">홈</a></li><li><a href="/apps/ko/">앱</a></li><li aria-current="page">Foot Size Check 발 사이즈 측정</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Foot Size Check 발 사이즈 측정 앱 아이콘" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/kr/app/foot-size-check/id6789844290?uo=4">App Store에서 보기</a>
           <a class="button" href="/apps/ko/">ZEC 앱 목록</a>
         </div>
+        <ul class="chips" aria-label="한눈에 보기"><li class="chip">무료 다운로드</li><li class="chip">iPhone·iPad</li><li class="chip">23개 언어 지원</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="스크린샷">
+      <h2 class="visually-hidden">스크린샷</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bf/38/ee/bf38eed3-e417-3900-8692-b897c729d82d/01.png/320x480bb.jpg" alt="Foot Size Check 발 사이즈 측정 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/ce/7d/f5ce7d18-5d92-bfbf-0019-bb9a3b7347d7/02.png/320x480bb.jpg" alt="Foot Size Check 발 사이즈 측정 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3b/88/da/3b88da60-c58c-13d3-a4ef-99e761e88289/03.png/320x480bb.jpg" alt="Foot Size Check 발 사이즈 측정 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e6/8a/31/e68a319d-6955-e426-284e-379ad994a147/04.png/320x480bb.jpg" alt="Foot Size Check 발 사이즈 측정 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d4/be/52/d4be52b5-bda0-99b8-1dc2-0a005f19e39d/05.png/320x480bb.jpg" alt="Foot Size Check 발 사이즈 측정 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>소개</h2>
-          <p>Foot Size Check는 A4 용지 한 장과 사진 한 장으로 아이 발을 재는 앱이에요. 종이에 발을 대고 펜으로 윤곽을 따라 그린 뒤, 발을 치우고 용지만 찍으면 끝이에요. 앱이 그 윤곽을 읽어 발 길이와 발 너비, 신발 사이즈 참고값을 알려 드려요. 자를 대거나 점을 하나하나 맞출 필요가 없어요.</p>
-          <p>아이 발은 몇 달 사이에 훌쩍 커요. &quot;지금 몇 센티지?&quot; 싶을 때, 집에 있는 A4 용지 한 장이면 바로 확인할 수 있어요.</p>
-          <p>재는 순서 1. A4 용지에 한쪽 발을 올려요 2. 펜을 되도록 수직으로 세워 발 둘레를 빙 둘러 따라 그려요 3. 발을 치우고 용지 전체가 나오게 사진을 찍어요</p>
+      <p class="lead-para">Foot Size Check는 A4 용지 한 장과 사진 한 장으로 아이 발을 재는 앱이에요. 종이에 발을 대고 펜으로 윤곽을 따라 그린 뒤, 발을 치우고 용지만 찍으면 끝이에요. 앱이 그 윤곽을 읽어 발 길이와 발 너비, 신발 사이즈 참고값을 알려 드려요. 자를 대거나 점을 하나하나 맞출 필요가 없어요.</p>
+      <p>아이 발은 몇 달 사이에 훌쩍 커요. &quot;지금 몇 센티지?&quot; 싶을 때, 집에 있는 A4 용지 한 장이면 바로 확인할 수 있어요.</p>
+      <p>재는 순서 1. A4 용지에 한쪽 발을 올려요 2. 펜을 되도록 수직으로 세워 발 둘레를 빙 둘러 따라 그려요 3. 발을 치우고 용지 전체가 나오게 사진을 찍어요</p>
     </section>
 
-    <section class="section">
-      <h2>스크린샷</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bf/38/ee/bf38eed3-e417-3900-8692-b897c729d82d/01.png/320x480bb.jpg" alt="Foot Size Check 발 사이즈 측정 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/ce/7d/f5ce7d18-5d92-bfbf-0019-bb9a3b7347d7/02.png/320x480bb.jpg" alt="Foot Size Check 발 사이즈 측정 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3b/88/da/3b88da60-c58c-13d3-a4ef-99e761e88289/03.png/320x480bb.jpg" alt="Foot Size Check 발 사이즈 측정 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e6/8a/31/e68a319d-6955-e426-284e-379ad994a147/04.png/320x480bb.jpg" alt="Foot Size Check 발 사이즈 측정 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d4/be/52/d4be52b5-bda0-99b8-1dc2-0a005f19e39d/05.png/320x480bb.jpg" alt="Foot Size Check 발 사이즈 측정 스크린샷" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>가격 및 개인정보</h2>
       <p>가격, 앱 내 구입, 최신 개인정보 처리 정보는 App Store 페이지에서 확인해 주세요. 이 페이지의 소개 문구는 App Store의 앱 설명에서 가져왔습니다.</p>
-      <p><a class="button primary" href="https://apps.apple.com/kr/app/foot-size-check/id6789844290?uo=4">App Store에서 Foot Size Check 발 사이즈 측정 열기</a></p>
+      <a class="button primary big" href="https://apps.apple.com/kr/app/foot-size-check/id6789844290?uo=4">App Store에서 Foot Size Check 발 사이즈 측정 열기</a>
       <p class="meta">최종 업데이트: 2026-10-20</p>
     </section>
   </main>

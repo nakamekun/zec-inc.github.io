@@ -122,6 +122,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tap Tools",
+          "item": "https://zec-inc.jp/apps/tap-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "PinLog Text Notes",
+          "item": "https://zec-inc.jp/apps/pinlog-text-notes/"
+        }
+      ]
     }
   ]
 }
@@ -145,7 +174,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">PinLog Text Notes</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c8/c3/c7/c8c3c7d7-630c-b44d-db8b-2f32cc663afb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="PinLog Text Notes app icon" width="96" height="96">
       <div>
@@ -155,121 +185,132 @@
           <a class="button primary" href="https://apps.apple.com/us/app/pinlog-text-notes/id6763267903?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">9 languages</li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li><li class="chip chip-link"><a href="/apps/widgets/">Widget-Friendly Apps</a></li><li class="chip chip-link"><a href="/apps/productivity/">Productivity Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9f/b3/b8/9fb3b83d-d74e-ae29-ea0e-a69dc9eadd8b/01-iphone-home.png/320x480bb.jpg" alt="PinLog Text Notes screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/0c/93/2e0c931d-ffea-8e9a-13da-31367294a2a0/02-iphone-remind.png/320x480bb.jpg" alt="PinLog Text Notes screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/01/43/39/0143398a-ecc7-262f-b092-07717bb18a58/03-iphone-image.png/320x480bb.jpg" alt="PinLog Text Notes screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/29/cd/dc/29cddc4f-c375-1939-1832-6889ec304d35/04-iphone-widget.png/320x480bb.jpg" alt="PinLog Text Notes screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/ab/ab/58ababc0-8049-61cf-985f-120ff642d31f/05-iphone-done.png/320x480bb.jpg" alt="PinLog Text Notes screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>PinLog Text Notes is a memo app that brings back the text and links you want to return to later. Type a note, dictate it with voice input, paste from the clipboard, import a file, pin a screenshot or photo, or send content from another app through the share sheet. Pins saved a few days ago, or not viewed for a while, return on the home screen and in the widget.</p>
-          <p>PinLog is intentionally small: no tags, no folders, and no complicated note system. Instead of turning into a full notes app, it focuses on one job — capturing something now so you can act on it later. Mark a pin Done and it stops coming back, but it stays saved so you can restore it. Saved URL pins open directly in your browser, and links inside notes are tappable from the detail view.</p>
-          <p>Pins are stored only on this iPhone. No account is required, and there are no ads. The app, widget, and share extension share the same local storage so a pin saved from anywhere shows up everywhere.</p>
+      <p class="lead-para">PinLog Text Notes is a memo app that brings back the text and links you want to return to later. Type a note, dictate it with voice input, paste from the clipboard, import a file, pin a screenshot or photo, or send content from another app through the share sheet. Pins saved a few days ago, or not viewed for a while, return on the home screen and in the widget.</p>
+      <p>PinLog is intentionally small: no tags, no folders, and no complicated note system. Instead of turning into a full notes app, it focuses on one job — capturing something now so you can act on it later. Mark a pin Done and it stops coming back, but it stays saved so you can restore it. Saved URL pins open directly in your browser, and links inside notes are tappable from the detail view.</p>
+      <p>Pins are stored only on this iPhone. No account is required, and there are no ads. The app, widget, and share extension share the same local storage so a pin saved from anywhere shows up everywhere.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who collect short notes, prompts, links, and reminders throughout the day</li>
-            <li>Readers who save articles and URLs to come back to later</li>
-            <li>Makers and writers capturing product ideas and launch notes before they slip away</li>
-            <li>Anyone who wants quick capture from the iOS share sheet without a heavyweight notes app</li>
-            <li>Users who like being reminded of saved items via a Home Screen widget</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Save text and links quickly as pins</li>
-            <li>Pin screenshots and photos, and search for words inside images (read on your device only)</li>
-            <li>Dictate notes with voice input</li>
-            <li>Paste directly from the clipboard</li>
-            <li>Import text, Markdown, and JSON files</li>
-            <li>Save from other apps with the share extension, Siri, Control Center, or the Shortcuts app</li>
-            <li>See the page title on pins that contain links</li>
-            <li>Home screen widget that brings saved pins back</li>
-            <li>Reminders for Tonight, Tomorrow morning, the Weekend, or a date and time you choose, plus an optional daily pin notification</li>
-            <li>Mark pins Done from the app, widget, or a notification, and search everything you have saved</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Save text and links quickly as pins</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Pin screenshots and photos</strong>, and search for words inside images (read on your device only)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Dictate notes with voice input</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Paste directly from the clipboard</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Import text</strong>, Markdown, and JSON files</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Save from other apps with the share extension, Siri, Control Center, or the Shortcuts app</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>See the page title on pins that contain links</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Home screen widget that brings saved pins back</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Reminders for Tonight</strong>, Tomorrow morning, the Weekend, or a date and time you choose, plus an optional daily pin notification</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Mark pins Done from the app</strong>, widget, or a notification, and search everything you have saved</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who collect short notes, prompts, links, and reminders throughout the day</li>
+        <li>Readers who save articles and URLs to come back to later</li>
+        <li>Makers and writers capturing product ideas and launch notes before they slip away</li>
+        <li>Anyone who wants quick capture from the iOS share sheet without a heavyweight notes app</li>
+        <li>Users who like being reminded of saved items via a Home Screen widget</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open PinLog and add a note by typing, dictating, or pasting from the clipboard</li>
-            <li>In other apps, use the share sheet and choose PinLog to save text, a link, or an image as a pin</li>
-            <li>Review your pins in the main list and open one for the full detail view</li>
-            <li>Tap a URL pin to open it in your browser, or tap links inside a note</li>
-            <li>Add the widget to your home screen so saved pins come back on their own</li>
-            <li>Use a pin&#x27;s bell to set a reminder, or turn on the daily pin notification in Settings</li>
-            <li>Mark a pin Done once you have acted on it; it stays saved and can be restored later</li>
+      <ol class="steps">
+        <li><span>Open PinLog and add a note by typing, dictating, or pasting from the clipboard</span></li>
+        <li><span>In other apps, use the share sheet and choose PinLog to save text, a link, or an image as a pin</span></li>
+        <li><span>Review your pins in the main list and open one for the full detail view</span></li>
+        <li><span>Tap a URL pin to open it in your browser, or tap links inside a note</span></li>
+        <li><span>Add the widget to your home screen so saved pins come back on their own</span></li>
+        <li><span>Use a pin&#x27;s bell to set a reminder, or turn on the daily pin notification in Settings</span></li>
+        <li><span>Mark a pin Done once you have acted on it; it stays saved and can be restored later</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>PinLog Text Notes is free to download and use, with no ads. The features described here are available without a purchase. App Store pricing and availability can change, so check the store listing for the latest details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>PinLog Text Notes is free to download and use, with no ads. The features described here are available without a purchase. App Store pricing and availability can change, so check the store listing for the latest details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>PinLog does not require an account. Pins are stored only on your iPhone, and the app uses no analytics, ads, or tracking. For link pins, the app loads the saved page directly from your iPhone to show its title, which sends a request to the website you saved. Text in images is read on your device only. Microphone and speech recognition are used only when you start voice input, and clipboard text is read only when you tap the clipboard import action.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is PinLog Text Notes free?</summary>
+          <p>Yes. PinLog is free to download and use, and there are no ads. Check the App Store listing for current pricing details.</p>
+        </details>
+        <details>
+          <summary>Where are my notes stored? Do I need an account?</summary>
+          <p>No account is needed. Pins are stored only on your iPhone, and the app uses no analytics, ads, or tracking.</p>
+        </details>
+        <details>
+          <summary>Can I save links from Safari or other apps?</summary>
+          <p>Yes. PinLog includes a share extension, so you can send text or links from other apps through the iOS share sheet and they are saved as pins. You can also save by Siri, Control Center, or the Shortcuts app.</p>
+        </details>
+        <details>
+          <summary>Does PinLog have a widget?</summary>
+          <p>Yes. Pins saved a few days ago, or not viewed for a while, return on the home screen and in the widget, so you remember to act on them without opening the app.</p>
+        </details>
+        <details>
+          <summary>Can I import existing files?</summary>
+          <p>Yes. PinLog can import text, Markdown, and JSON files as pins.</p>
+        </details>
+        <details>
+          <summary>Can I pin screenshots and photos?</summary>
+          <p>Yes. You can pin images straight from Photos or a screenshot&#x27;s Share button, and search finds words inside your images. The text is read on your device only.</p>
+        </details>
+        <details>
+          <summary>Can PinLog remind me about a pin?</summary>
+          <p>Yes. Use a pin&#x27;s bell to set a reminder for Tonight, Tomorrow morning, the Weekend, or a date and time you choose. You can also turn on a daily notification that brings back one pin at your chosen time.</p>
+        </details>
+        <details>
+          <summary>Is PinLog a full notes app with folders and sync?</summary>
+          <p>No, and that is by design. PinLog is a small capture tool — no tags, no folders, and no sync. It is built for saving something quickly and coming back to it later.</p>
+        </details>
+        <details>
+          <summary>Does PinLog read my clipboard automatically?</summary>
+          <p>No. Clipboard text is read only when you explicitly tap the clipboard import action.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>PinLog does not require an account. Pins are stored only on your iPhone, and the app uses no analytics, ads, or tracking. For link pins, the app loads the saved page directly from your iPhone to show its title, which sends a request to the website you saved. Text in images is read on your device only. Microphone and speech recognition are used only when you start voice input, and clipboard text is read only when you tap the clipboard import action.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9f/b3/b8/9fb3b83d-d74e-ae29-ea0e-a69dc9eadd8b/01-iphone-home.png/320x480bb.jpg" alt="PinLog Text Notes screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/0c/93/2e0c931d-ffea-8e9a-13da-31367294a2a0/02-iphone-remind.png/320x480bb.jpg" alt="PinLog Text Notes screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/01/43/39/0143398a-ecc7-262f-b092-07717bb18a58/03-iphone-image.png/320x480bb.jpg" alt="PinLog Text Notes screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/29/cd/dc/29cddc4f-c375-1939-1832-6889ec304d35/04-iphone-widget.png/320x480bb.jpg" alt="PinLog Text Notes screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/ab/ab/58ababc0-8049-61cf-985f-120ff642d31f/05-iphone-done.png/320x480bb.jpg" alt="PinLog Text Notes screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is PinLog Text Notes free?</summary>
-            <p>Yes. PinLog is free to download and use, and there are no ads. Check the App Store listing for current pricing details.</p>
-          </details>
-          <details>
-            <summary>Where are my notes stored? Do I need an account?</summary>
-            <p>No account is needed. Pins are stored only on your iPhone, and the app uses no analytics, ads, or tracking.</p>
-          </details>
-          <details>
-            <summary>Can I save links from Safari or other apps?</summary>
-            <p>Yes. PinLog includes a share extension, so you can send text or links from other apps through the iOS share sheet and they are saved as pins. You can also save by Siri, Control Center, or the Shortcuts app.</p>
-          </details>
-          <details>
-            <summary>Does PinLog have a widget?</summary>
-            <p>Yes. Pins saved a few days ago, or not viewed for a while, return on the home screen and in the widget, so you remember to act on them without opening the app.</p>
-          </details>
-          <details>
-            <summary>Can I import existing files?</summary>
-            <p>Yes. PinLog can import text, Markdown, and JSON files as pins.</p>
-          </details>
-          <details>
-            <summary>Can I pin screenshots and photos?</summary>
-            <p>Yes. You can pin images straight from Photos or a screenshot&#x27;s Share button, and search finds words inside your images. The text is read on your device only.</p>
-          </details>
-          <details>
-            <summary>Can PinLog remind me about a pin?</summary>
-            <p>Yes. Use a pin&#x27;s bell to set a reminder for Tonight, Tomorrow morning, the Weekend, or a date and time you choose. You can also turn on a daily notification that brings back one pin at your chosen time.</p>
-          </details>
-          <details>
-            <summary>Is PinLog a full notes app with folders and sync?</summary>
-            <p>No, and that is by design. PinLog is a small capture tool — no tags, no folders, and no sync. It is built for saving something quickly and coming back to it later.</p>
-          </details>
-          <details>
-            <summary>Does PinLog read my clipboard automatically?</summary>
-            <p>No. Clipboard text is read only when you explicitly tap the clipboard import action.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/pinlog-text-notes/id6763267903?uo=4">Open PinLog Text Notes on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/pinlog-text-notes/id6763267903?uo=4">Open PinLog Text Notes on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

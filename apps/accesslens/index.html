@@ -99,6 +99,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tap Tools",
+          "item": "https://zec-inc.jp/apps/tap-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Access Lens: Color Compare",
+          "item": "https://zec-inc.jp/apps/accesslens/"
+        }
+      ]
     }
   ]
 }
@@ -123,7 +152,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">Access Lens: Color Compare</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bb/57/30/bb573072-bc6b-0aff-2633-977a38b278ef/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="Access Lens: Color Compare app icon" width="96" height="96">
       <div>
@@ -133,104 +163,115 @@
           <a class="button primary" href="https://apps.apple.com/us/app/access-lens-color-compare/id6767727517?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">22 languages</li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li><li class="chip chip-link"><a href="/apps/photo-memory/">Photo and Memory Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/58/0d/36/580d3617-c405-2595-adba-e391c810f6c0/01_iphone65.png/320x480bb.jpg" alt="Access Lens: Color Compare screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7c/20/b5/7c20b5ca-575c-c200-2bb4-574599b06305/02_iphone65.png/320x480bb.jpg" alt="Access Lens: Color Compare screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/27/f9/3c27f99f-53c2-1a87-5f86-e3d17c3e343a/03_iphone65.png/320x480bb.jpg" alt="Access Lens: Color Compare screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/57/99/c1/5799c111-169d-297d-f49a-ec9f75e3d78a/04_iphone65.png/320x480bb.jpg" alt="Access Lens: Color Compare screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/43/71/8f437119-e6e7-68ce-326f-592fbf0ae240/05_iphone65.png/320x480bb.jpg" alt="Access Lens: Color Compare screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>Access Lens lets you compare an original image with simplified color and visual approximations, side by side. Use the live camera, choose a photo, or start with one of five built-in samples, then drag the vertical divider to reveal more of the original or the filtered side.</p>
-          <p>The color approximations cover Type 1 (P), Type 2 (D), and Type 3 (T), plus grayscale, using a published research method (Machado 2009). Visual filters include blur and cloudy view, narrow field and center spot, and low contrast, with adjustable strength where supported.</p>
-          <p>The app is built for awareness and accessibility discussions. The results are approximations: they do not exactly reproduce any individual experience, and Access Lens is not a medical tool. Saving and sharing happen only when you choose them, and every feature is free.</p>
+      <p class="lead-para">Access Lens lets you compare an original image with simplified color and visual approximations, side by side. Use the live camera, choose a photo, or start with one of five built-in samples, then drag the vertical divider to reveal more of the original or the filtered side.</p>
+      <p>The color approximations cover Type 1 (P), Type 2 (D), and Type 3 (T), plus grayscale, using a published research method (Machado 2009). Visual filters include blur and cloudy view, narrow field and center spot, and low contrast, with adjustable strength where supported.</p>
+      <p>The app is built for awareness and accessibility discussions. The results are approximations: they do not exactly reproduce any individual experience, and Access Lens is not a medical tool. Saving and sharing happen only when you choose them, and every feature is free.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>Designers and developers doing quick accessibility and readability checks</li>
-            <li>Teachers and students exploring visual accessibility topics</li>
-            <li>Accessibility advocates preparing awareness demonstrations</li>
-            <li>Anyone curious how colors, signs, text, and layouts may look with color vision differences or reduced vision</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Side-by-side comparison with a draggable vertical divider</li>
-            <li>Live camera, photo selection, or five built-in samples (no camera needed)</li>
-            <li>Color approximations: Type 1 (P), Type 2 (D), Type 3 (T), and grayscale (Machado 2009 method)</li>
-            <li>Visual filters: blur and cloudy view, narrow field and center spot, low contrast</li>
-            <li>Adjustable strength where supported</li>
-            <li>Original-only and filter-only buttons</li>
-            <li>VoiceOver can adjust the divider in 10% steps; layouts adapt to the largest Dynamic Type sizes</li>
-            <li>Save or share a result, only when you choose</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Side-by-side comparison with a draggable vertical divider</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Live camera</strong>, photo selection, or five built-in samples (no camera needed)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Color approximations</strong>: Type 1 (P), Type 2 (D), Type 3 (T), and grayscale (Machado 2009 method)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Visual filters</strong>: blur and cloudy view, narrow field and center spot, low contrast</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Adjustable strength where supported</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Original-only and filter-only buttons</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>VoiceOver can adjust the divider in 10% steps; layouts adapt to the largest Dynamic Type sizes</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Save or share a result, only when you choose</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>Designers and developers doing quick accessibility and readability checks</li>
+        <li>Teachers and students exploring visual accessibility topics</li>
+        <li>Accessibility advocates preparing awareness demonstrations</li>
+        <li>Anyone curious how colors, signs, text, and layouts may look with color vision differences or reduced vision</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open Access Lens and choose the live camera, a photo, or one of the five built-in samples.</li>
-            <li>Select a color approximation (Type 1, Type 2, Type 3, or grayscale) or a visual filter (blur, narrow field, low contrast).</li>
-            <li>Drag the vertical divider to reveal more of the original or the filtered side, or use the original-only and filter-only buttons.</li>
-            <li>Where supported, adjust the strength of the effect.</li>
-            <li>Optionally save or share the result.</li>
+      <ol class="steps">
+        <li><span>Open Access Lens and choose the live camera, a photo, or one of the five built-in samples.</span></li>
+        <li><span>Select a color approximation (Type 1, Type 2, Type 3, or grayscale) or a visual filter (blur, narrow field, low contrast).</span></li>
+        <li><span>Drag the vertical divider to reveal more of the original or the filtered side, or use the original-only and filter-only buttons.</span></li>
+        <li><span>Where supported, adjust the strength of the effect.</span></li>
+        <li><span>Optionally save or share the result.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>Access Lens is free on the App Store and every feature is free; there are no ads and no account is needed. App Store pricing and availability can change, so check the store listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>Access Lens is free on the App Store and every feature is free; there are no ads and no account is needed. App Store pricing and availability can change, so check the store listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Camera frames and selected photos are processed on your device. Access Lens has no account, no analytics, no ads, and no server. Saving and sharing happen only when you choose them.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is Access Lens free?</summary>
+          <p>Yes. Every feature is free, with no ads and no account. App Store pricing can change, so check the listing for current details.</p>
+        </details>
+        <details>
+          <summary>Are my camera images or photos uploaded anywhere?</summary>
+          <p>No. Camera frames and selected photos are processed on your device. Access Lens has no server, no analytics, and no account, and saving and sharing happen only when you choose them.</p>
+        </details>
+        <details>
+          <summary>Do the filters accurately reproduce vision conditions?</summary>
+          <p>No. The results are approximations for awareness and accessibility discussions. They do not exactly reproduce any individual experience, and Access Lens is not a medical tool.</p>
+        </details>
+        <details>
+          <summary>What filters are included?</summary>
+          <p>Color approximations for Type 1 (P), Type 2 (D), Type 3 (T), and grayscale, plus visual filters for blur and cloudy view, narrow field and center spot, and low contrast. Strength is adjustable where supported.</p>
+        </details>
+        <details>
+          <summary>Can I use it without a camera?</summary>
+          <p>Yes. You can choose a photo or start with one of the five built-in samples instead of using the live camera.</p>
+        </details>
+        <details>
+          <summary>Can I save or share the result?</summary>
+          <p>Yes. Saving and sharing happen only when you choose them.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Camera frames and selected photos are processed on your device. Access Lens has no account, no analytics, no ads, and no server. Saving and sharing happen only when you choose them.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/58/0d/36/580d3617-c405-2595-adba-e391c810f6c0/01_iphone65.png/320x480bb.jpg" alt="Access Lens: Color Compare screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7c/20/b5/7c20b5ca-575c-c200-2bb4-574599b06305/02_iphone65.png/320x480bb.jpg" alt="Access Lens: Color Compare screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/27/f9/3c27f99f-53c2-1a87-5f86-e3d17c3e343a/03_iphone65.png/320x480bb.jpg" alt="Access Lens: Color Compare screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/57/99/c1/5799c111-169d-297d-f49a-ec9f75e3d78a/04_iphone65.png/320x480bb.jpg" alt="Access Lens: Color Compare screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/43/71/8f437119-e6e7-68ce-326f-592fbf0ae240/05_iphone65.png/320x480bb.jpg" alt="Access Lens: Color Compare screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is Access Lens free?</summary>
-            <p>Yes. Every feature is free, with no ads and no account. App Store pricing can change, so check the listing for current details.</p>
-          </details>
-          <details>
-            <summary>Are my camera images or photos uploaded anywhere?</summary>
-            <p>No. Camera frames and selected photos are processed on your device. Access Lens has no server, no analytics, and no account, and saving and sharing happen only when you choose them.</p>
-          </details>
-          <details>
-            <summary>Do the filters accurately reproduce vision conditions?</summary>
-            <p>No. The results are approximations for awareness and accessibility discussions. They do not exactly reproduce any individual experience, and Access Lens is not a medical tool.</p>
-          </details>
-          <details>
-            <summary>What filters are included?</summary>
-            <p>Color approximations for Type 1 (P), Type 2 (D), Type 3 (T), and grayscale, plus visual filters for blur and cloudy view, narrow field and center spot, and low contrast. Strength is adjustable where supported.</p>
-          </details>
-          <details>
-            <summary>Can I use it without a camera?</summary>
-            <p>Yes. You can choose a photo or start with one of the five built-in samples instead of using the live camera.</p>
-          </details>
-          <details>
-            <summary>Can I save or share the result?</summary>
-            <p>Yes. Saving and sharing happen only when you choose them.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/access-lens-color-compare/id6767727517?uo=4">Open Access Lens: Color Compare on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/access-lens-color-compare/id6767727517?uo=4">Open Access Lens: Color Compare on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/b0/0c/b6b00c26-cd26-398e-53e7-ecf9ba70a63e/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.4.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "앱",
+          "item": "https://zec-inc.jp/apps/ko/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "동영상 거꾸로 재생",
+          "item": "https://zec-inc.jp/apps/undocam/ko/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/">홈</a></li><li><a href="/apps/ko/">앱</a></li><li aria-current="page">동영상 거꾸로 재생</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/b0/0c/b6b00c26-cd26-398e-53e7-ecf9ba70a63e/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="동영상 거꾸로 재생 앱 아이콘" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/kr/app/reverse-video-maker-undocam/id6765842391?uo=4">App Store에서 보기</a>
           <a class="button" href="/apps/ko/">ZEC 앱 목록</a>
         </div>
+        <ul class="chips" aria-label="한눈에 보기"><li class="chip">무료 다운로드</li><li class="chip">iPhone·iPad</li><li class="chip">22개 언어 지원</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="스크린샷">
+      <h2 class="visually-hidden">스크린샷</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/39/5a/32395a80-842d-e960-ac56-5349d83b125a/01-preview.png/320x480bb.jpg" alt="동영상 거꾸로 재생 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/95/f6/3195f6a5-de19-2ba1-8e82-162a780a8617/02-speed.png/320x480bb.jpg" alt="동영상 거꾸로 재생 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/bc/48/51bc4893-3cf9-b77d-05a9-9af9b7d06f9d/03-boomerang.png/320x480bb.jpg" alt="동영상 거꾸로 재생 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/af/cb/b2/afcbb2e2-404b-44c2-2fef-2dd9025c41d6/04-range.png/320x480bb.jpg" alt="동영상 거꾸로 재생 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/61/64/9f/61649f86-645e-7746-7ada-907d8d3305bd/05-free.png/320x480bb.jpg" alt="동영상 거꾸로 재생 스크린샷" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>소개</h2>
-          <p>동영상 거꾸로 재생은 동영상을 끝에서 처음으로, 소리까지 거꾸로 흐르는 새 영상으로 만들어 주는 앱입니다. 동영상을 고르고 원하는 부분을 정한 뒤 탭 한 번이면 완성되고, 바로 저장하거나 공유할 수 있습니다.</p>
-          <p>쏟아진 물이 컵 안으로 되돌아가고, 수영장에 뛰어든 사람이 물 밖으로 솟아오릅니다. 무너진 블록은 저절로 다시 쌓입니다. 늘 보던 장면도 거꾸로 돌리면 색다른 재미가 생기고, 거꾸로 흐르는 소리가 묘한 느낌을 더해 줍니다.</p>
-          <p>사용 방법 1. 사진에서 동영상을 고릅니다(길이 제한 없음) 2. 시작 위치와 길이(최대 15초)를 정합니다 3. 거꾸로 재생 버튼을 탭한 뒤 미리 보고, 사진에 저장하거나 공유합니다</p>
+      <p class="lead-para">동영상 거꾸로 재생은 동영상을 끝에서 처음으로, 소리까지 거꾸로 흐르는 새 영상으로 만들어 주는 앱입니다. 동영상을 고르고 원하는 부분을 정한 뒤 탭 한 번이면 완성되고, 바로 저장하거나 공유할 수 있습니다.</p>
+      <p>쏟아진 물이 컵 안으로 되돌아가고, 수영장에 뛰어든 사람이 물 밖으로 솟아오릅니다. 무너진 블록은 저절로 다시 쌓입니다. 늘 보던 장면도 거꾸로 돌리면 색다른 재미가 생기고, 거꾸로 흐르는 소리가 묘한 느낌을 더해 줍니다.</p>
+      <p>사용 방법 1. 사진에서 동영상을 고릅니다(길이 제한 없음) 2. 시작 위치와 길이(최대 15초)를 정합니다 3. 거꾸로 재생 버튼을 탭한 뒤 미리 보고, 사진에 저장하거나 공유합니다</p>
     </section>
 
-    <section class="section">
-      <h2>스크린샷</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/32/39/5a/32395a80-842d-e960-ac56-5349d83b125a/01-preview.png/320x480bb.jpg" alt="동영상 거꾸로 재생 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/31/95/f6/3195f6a5-de19-2ba1-8e82-162a780a8617/02-speed.png/320x480bb.jpg" alt="동영상 거꾸로 재생 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/bc/48/51bc4893-3cf9-b77d-05a9-9af9b7d06f9d/03-boomerang.png/320x480bb.jpg" alt="동영상 거꾸로 재생 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/af/cb/b2/afcbb2e2-404b-44c2-2fef-2dd9025c41d6/04-range.png/320x480bb.jpg" alt="동영상 거꾸로 재생 스크린샷" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/61/64/9f/61649f86-645e-7746-7ada-907d8d3305bd/05-free.png/320x480bb.jpg" alt="동영상 거꾸로 재생 스크린샷" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>가격 및 개인정보</h2>
       <p>가격, 앱 내 구입, 최신 개인정보 처리 정보는 App Store 페이지에서 확인해 주세요. 이 페이지의 소개 문구는 App Store의 앱 설명에서 가져왔습니다.</p>
-      <p><a class="button primary" href="https://apps.apple.com/kr/app/reverse-video-maker-undocam/id6765842391?uo=4">App Store에서 동영상 거꾸로 재생 열기</a></p>
+      <a class="button primary big" href="https://apps.apple.com/kr/app/reverse-video-maker-undocam/id6765842391?uo=4">App Store에서 동영상 거꾸로 재생 열기</a>
       <p class="meta">최종 업데이트: 2026-10-21</p>
     </section>
   </main>

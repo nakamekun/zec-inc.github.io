@@ -104,6 +104,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Productivity Apps",
+          "item": "https://zec-inc.jp/apps/productivity/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "BaroNote",
+          "item": "https://zec-inc.jp/apps/baronote/"
+        }
+      ]
     }
   ]
 }
@@ -125,7 +154,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/productivity/">Productivity Apps</a></li><li aria-current="page">BaroNote</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e3/a3/6a/e3a36a3a-a0de-e2d7-1621-f8dddae350d3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="BaroNote app icon" width="96" height="96">
       <div>
@@ -135,111 +165,122 @@
           <a class="button primary" href="https://apps.apple.com/us/app/baronote/id6767775689?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">22 languages</li><li class="chip chip-link"><a href="/apps/productivity/">Productivity Apps</a></li><li class="chip chip-link"><a href="/apps/widgets/">Widget-Friendly Apps</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/86/4d/08/864d08a3-3aaa-054a-3c0a-ed3ee61dd7d3/01-home.png/320x480bb.jpg" alt="BaroNote screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c7/a8/9d/c7a89df7-9ad4-7aff-d7e0-5efeed55414c/02-log-entry.png/320x480bb.jpg" alt="BaroNote screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/40/ed/90/40ed9018-b3a7-7b9f-1ef2-e2a8b1408a4c/03-history.png/320x480bb.jpg" alt="BaroNote screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ca/90/2a/ca902a2c-6de3-6fae-4f56-b53da2ea00d7/04-widgets.png/320x480bb.jpg" alt="BaroNote screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/00/0d/77/000d773f-4bb5-bf5c-246e-fa9451b68d7d/05-settings.png/320x480bb.jpg" alt="BaroNote screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>BaroNote is a simple barometer and personal log for iPhone. It reads the current air pressure from your iPhone&#x27;s built-in pressure sensor, shows whether pressure is rising, steady, or falling, and lets you save a quick private note about your mood and physical condition alongside the reading.</p>
-          <p>Many weather apps bury pressure data under forecasts and ads. BaroNote does the opposite: one clear pressure reading, a simple trend, and a lightweight log, with no forecast, no account, no tracking, no ads, and no server upload. Your records stay on your device, and the app deliberately avoids medical claims: it is for personal logging only and does not provide medical advice, diagnosis, treatment, or forecasts.</p>
-          <p>In History, BaroNote places the available six-hour pressure movement beside each log without judging the cause. Health linking is optional and off by default: when you turn it on, BaroNote writes your headache, fatigue, and (on iOS 18 or later) mood records to Apple Health. It does not read Health data.</p>
-          <p>Home Screen and Lock Screen widgets show the current pressure and trend at a glance, so you can check pressure without opening the app.</p>
+      <p class="lead-para">BaroNote is a simple barometer and personal log for iPhone. It reads the current air pressure from your iPhone&#x27;s built-in pressure sensor, shows whether pressure is rising, steady, or falling, and lets you save a quick private note about your mood and physical condition alongside the reading.</p>
+      <p>Many weather apps bury pressure data under forecasts and ads. BaroNote does the opposite: one clear pressure reading, a simple trend, and a lightweight log, with no forecast, no account, no tracking, no ads, and no server upload. Your records stay on your device, and the app deliberately avoids medical claims: it is for personal logging only and does not provide medical advice, diagnosis, treatment, or forecasts.</p>
+      <p>In History, BaroNote places the available six-hour pressure movement beside each log without judging the cause. Health linking is optional and off by default: when you turn it on, BaroNote writes your headache, fatigue, and (on iOS 18 or later) mood records to Apple Health. It does not read Health data.</p>
+      <p>Home Screen and Lock Screen widgets show the current pressure and trend at a glance, so you can check pressure without opening the app.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who like to note how they feel when the weather and air pressure change</li>
-            <li>Anyone who wants a plain barometer reading without a full weather app</li>
-            <li>Users who keep simple daily mood and condition records</li>
-            <li>Privacy-conscious users who want their personal logs kept off the cloud</li>
-            <li>Widget users who want pressure and trend visible on the Home or Lock Screen</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>Current air pressure from the iPhone pressure sensor (when available)</li>
-            <li>Rising, steady, and falling trend display</li>
-            <li>Quick logs: mood, condition, symptom tags (headache, sleepy, tired, low focus, stiff shoulders), and an optional note</li>
-            <li>History showing each log with the available six-hour pressure movement beside it</li>
-            <li>Optional Apple Health link (off by default) that writes headache, fatigue, and mood on iOS 18 or later; it does not read Health data</li>
-            <li>Unit switching between hPa, mb, inHg, and mmHg</li>
-            <li>Home Screen and Lock Screen widgets</li>
-            <li>Records stay on this device, with a delete-all-data option in Settings</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Current air pressure from the iPhone pressure sensor (when available)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Rising</strong>, steady, and falling trend display</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Quick logs</strong>: mood, condition, symptom tags (headache, sleepy, tired, low focus, stiff shoulders), and an optional note</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>History showing each log with the available six-hour pressure movement beside it</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Optional Apple Health link (off by default) that writes headache, fatigue, and mood on iOS 18 or later; it does not read Health data</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Unit switching between hPa, mb, inHg, and mmHg</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Home Screen and Lock Screen widgets</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Records stay on this device</strong>, with a delete-all-data option in Settings</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who like to note how they feel when the weather and air pressure change</li>
+        <li>Anyone who wants a plain barometer reading without a full weather app</li>
+        <li>Users who keep simple daily mood and condition records</li>
+        <li>Privacy-conscious users who want their personal logs kept off the cloud</li>
+        <li>Widget users who want pressure and trend visible on the Home or Lock Screen</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Open BaroNote to see the current air pressure and its trend on the Home screen.</li>
-            <li>Tap the add-log button to record today&#x27;s entry.</li>
-            <li>Pick your mood and condition (good / normal / bad), add symptom tags, and optionally type a note.</li>
-            <li>Review past entries in the History list.</li>
-            <li>Change the pressure unit (hPa, mb, inHg, mmHg) in Settings if needed.</li>
-            <li>Add a Home Screen or Lock Screen widget to check pressure and trend at a glance.</li>
+      <ol class="steps">
+        <li><span>Open BaroNote to see the current air pressure and its trend on the Home screen.</span></li>
+        <li><span>Tap the add-log button to record today&#x27;s entry.</span></li>
+        <li><span>Pick your mood and condition (good / normal / bad), add symptom tags, and optionally type a note.</span></li>
+        <li><span>Review past entries in the History list.</span></li>
+        <li><span>Change the pressure unit (hPa, mb, inHg, mmHg) in Settings if needed.</span></li>
+        <li><span>Add a Home Screen or Lock Screen widget to check pressure and trend at a glance.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>BaroNote is free on the App Store, with no ads. App Store pricing and availability can change, so check the store listing for current details.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>BaroNote is free on the App Store, with no ads. App Store pricing and availability can change, so check the store listing for current details.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Your BaroNote records stay on this device: pressure readings, mood and condition logs, symptom tags, notes, and settings are stored locally and never uploaded to a server. There is no account, no cloud sync, no tracking, no ads, and no analytics SDKs. Widgets read a local snapshot shared only between the app and its widget extension. Apple Health linking is optional and off by default; it only writes the supported items (headache, fatigue, and mood on iOS 18 or later) and never reads Health data. You can delete all local data from Settings at any time.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>Is BaroNote free?</summary>
+          <p>Yes. BaroNote is free with no ads. App Store pricing can change, so check the listing for current details.</p>
+        </details>
+        <details>
+          <summary>Where is my data stored?</summary>
+          <p>Your records stay on this device. BaroNote has no account, no cloud sync, no server upload, and no tracking. You can delete all local data from Settings.</p>
+        </details>
+        <details>
+          <summary>Does BaroNote work on every iPhone?</summary>
+          <p>The pressure reading uses the iPhone&#x27;s built-in barometric sensor. On devices without a pressure sensor, the app shows an unavailable state. BaroNote requires iOS 17 or later.</p>
+        </details>
+        <details>
+          <summary>Does it have widgets?</summary>
+          <p>Yes. Home Screen and Lock Screen widgets show the current pressure and trend.</p>
+        </details>
+        <details>
+          <summary>Does BaroNote forecast the weather or predict headaches?</summary>
+          <p>No. BaroNote shows measured pressure and a simple rising/steady/falling trend. It provides no forecasts, no diagnosis, and no medical advice. It is for personal logging only.</p>
+        </details>
+        <details>
+          <summary>What can I record in a log?</summary>
+          <p>Each entry can include mood and condition (good/normal/bad), symptom tags such as headache, sleepy, tired, low focus, and stiff shoulders, plus an optional note. The current pressure is saved with the entry.</p>
+        </details>
+        <details>
+          <summary>Does BaroNote connect to Apple Health?</summary>
+          <p>Optionally. Health linking is off by default. When you turn it on, BaroNote writes headache and fatigue records, plus mood on iOS 18 or later. It does not read Health data, and sleepiness, low focus, stiff shoulders, pressure, and notes are not written to Health.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Your BaroNote records stay on this device: pressure readings, mood and condition logs, symptom tags, notes, and settings are stored locally and never uploaded to a server. There is no account, no cloud sync, no tracking, no ads, and no analytics SDKs. Widgets read a local snapshot shared only between the app and its widget extension. Apple Health linking is optional and off by default; it only writes the supported items (headache, fatigue, and mood on iOS 18 or later) and never reads Health data. You can delete all local data from Settings at any time.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/86/4d/08/864d08a3-3aaa-054a-3c0a-ed3ee61dd7d3/01-home.png/320x480bb.jpg" alt="BaroNote screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c7/a8/9d/c7a89df7-9ad4-7aff-d7e0-5efeed55414c/02-log-entry.png/320x480bb.jpg" alt="BaroNote screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/40/ed/90/40ed9018-b3a7-7b9f-1ef2-e2a8b1408a4c/03-history.png/320x480bb.jpg" alt="BaroNote screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ca/90/2a/ca902a2c-6de3-6fae-4f56-b53da2ea00d7/04-widgets.png/320x480bb.jpg" alt="BaroNote screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/00/0d/77/000d773f-4bb5-bf5c-246e-fa9451b68d7d/05-settings.png/320x480bb.jpg" alt="BaroNote screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Big Text Note</h3><p>Show one note in large, easy-to-read text to the person in front of you...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>Is BaroNote free?</summary>
-            <p>Yes. BaroNote is free with no ads. App Store pricing can change, so check the listing for current details.</p>
-          </details>
-          <details>
-            <summary>Where is my data stored?</summary>
-            <p>Your records stay on this device. BaroNote has no account, no cloud sync, no server upload, and no tracking. You can delete all local data from Settings.</p>
-          </details>
-          <details>
-            <summary>Does BaroNote work on every iPhone?</summary>
-            <p>The pressure reading uses the iPhone&#x27;s built-in barometric sensor. On devices without a pressure sensor, the app shows an unavailable state. BaroNote requires iOS 17 or later.</p>
-          </details>
-          <details>
-            <summary>Does it have widgets?</summary>
-            <p>Yes. Home Screen and Lock Screen widgets show the current pressure and trend.</p>
-          </details>
-          <details>
-            <summary>Does BaroNote forecast the weather or predict headaches?</summary>
-            <p>No. BaroNote shows measured pressure and a simple rising/steady/falling trend. It provides no forecasts, no diagnosis, and no medical advice. It is for personal logging only.</p>
-          </details>
-          <details>
-            <summary>What can I record in a log?</summary>
-            <p>Each entry can include mood and condition (good/normal/bad), symptom tags such as headache, sleepy, tired, low focus, and stiff shoulders, plus an optional note. The current pressure is saved with the entry.</p>
-          </details>
-          <details>
-            <summary>Does BaroNote connect to Apple Health?</summary>
-            <p>Optionally. Health linking is off by default. When you turn it on, BaroNote writes headache and fatigue records, plus mood on iOS 18 or later. It does not read Health data, and sleepiness, low focus, stiff shoulders, pressure, and notes are not written to Health.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/baronote/id6767775689?uo=4">Open BaroNote on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/baronote/id6767775689?uo=4">Open BaroNote on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

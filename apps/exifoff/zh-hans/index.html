@@ -46,6 +46,29 @@
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/21/89/822189d9-2163-7736-34a3-f237e278e90d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "softwareVersion": "1.5.0",
       "contentRating": "4+"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "应用",
+          "item": "https://zec-inc.jp/apps/zh-hans/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "删除照片位置信息 - ExifOff",
+          "item": "https://zec-inc.jp/apps/exifoff/zh-hans/"
+        }
+      ]
     }
   ]
 }
@@ -70,7 +93,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="导航路径"><ol><li><a href="/">首页</a></li><li><a href="/apps/zh-hans/">应用</a></li><li aria-current="page">删除照片位置信息 - ExifOff</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/21/89/822189d9-2163-7736-34a3-f237e278e90d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="删除照片位置信息 - ExifOff 的应用图标" width="96" height="96">
       <div>
@@ -80,31 +104,32 @@
           <a class="button primary" href="https://apps.apple.com/cn/app/exifoff-remove-photo-location/id6789844259?uo=4">在 App Store 查看</a>
           <a class="button" href="/apps/zh-hans/">ZEC 应用一览</a>
         </div>
+        <ul class="chips" aria-label="要点"><li class="chip">免费下载</li><li class="chip">iPhone 和 iPad</li><li class="chip">支持 22 种语言</li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="截图">
+      <h2 class="visually-hidden">截图</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/30/ae/a8/30aea8a7-6ee3-171a-2d84-4d0b18a8e9b8/01.png/320x480bb.jpg" alt="删除照片位置信息 - ExifOff 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/13/bb/b4/13bbb4e9-de73-9f41-b5d8-d3dd8fc52290/02.png/320x480bb.jpg" alt="删除照片位置信息 - ExifOff 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/29/9e/53/299e5312-cf7b-56ca-28f1-8c7eebb3ed48/03.png/320x480bb.jpg" alt="删除照片位置信息 - ExifOff 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5d/0c/5c/5d0c5c94-8e4c-278f-3fb3-9921fd57431f/04.png/320x480bb.jpg" alt="删除照片位置信息 - ExifOff 的截图" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/42/c8/8a42c8f9-9591-c386-373d-6d924c499732/ipad-01.png/360x480bb.jpg" alt="删除照片位置信息 - ExifOff 的截图" width="360" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>简介</h2>
-          <p>视频也双重检查。 生成的无信息视频副本，在保存或分享之前，会再次确认不含位置、拍摄时间、相机和软件信息。 画质和声音保持不变。</p>
-          <p>照片里除了画面，还可能带有拍摄地点（GPS坐标）、拍摄时间、相机型号等元数据。ExifOff 在发送前帮你查看这些信息，并生成一份不带元数据的新副本，用于存储或共享。</p>
-          <p>也支持视频 选择视频，查看其中是否带有位置、拍摄时间、相机或软件信息，再保存或分享去除后的副本。画质和声音保持不变。</p>
+      <p class="lead-para">视频也双重检查。 生成的无信息视频副本，在保存或分享之前，会再次确认不含位置、拍摄时间、相机和软件信息。 画质和声音保持不变。</p>
+      <p>照片里除了画面，还可能带有拍摄地点（GPS坐标）、拍摄时间、相机型号等元数据。ExifOff 在发送前帮你查看这些信息，并生成一份不带元数据的新副本，用于存储或共享。</p>
+      <p>也支持视频 选择视频，查看其中是否带有位置、拍摄时间、相机或软件信息，再保存或分享去除后的副本。画质和声音保持不变。</p>
     </section>
 
-    <section class="section">
-      <h2>截图</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/30/ae/a8/30aea8a7-6ee3-171a-2d84-4d0b18a8e9b8/01.png/320x480bb.jpg" alt="删除照片位置信息 - ExifOff 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/13/bb/b4/13bbb4e9-de73-9f41-b5d8-d3dd8fc52290/02.png/320x480bb.jpg" alt="删除照片位置信息 - ExifOff 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/29/9e/53/299e5312-cf7b-56ca-28f1-8c7eebb3ed48/03.png/320x480bb.jpg" alt="删除照片位置信息 - ExifOff 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5d/0c/5c/5d0c5c94-8e4c-278f-3fb3-9921fd57431f/04.png/320x480bb.jpg" alt="删除照片位置信息 - ExifOff 的截图" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/42/c8/8a42c8f9-9591-c386-373d-6d924c499732/ipad-01.png/360x480bb.jpg" alt="删除照片位置信息 - ExifOff 的截图" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>价格与隐私</h2>
       <p>价格、App 内购买与最新的隐私信息，请以 App Store 页面为准。本页介绍文字来自 App Store 的应用说明。</p>
-      <p><a class="button primary" href="https://apps.apple.com/cn/app/exifoff-remove-photo-location/id6789844259?uo=4">在 App Store 打开 删除照片位置信息 - ExifOff</a></p>
+      <a class="button primary big" href="https://apps.apple.com/cn/app/exifoff-remove-photo-location/id6789844259?uo=4">在 App Store 打开 删除照片位置信息 - ExifOff</a>
       <p class="meta">最后更新: 2026-10-21</p>
     </section>
   </main>

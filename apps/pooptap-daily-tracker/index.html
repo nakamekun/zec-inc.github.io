@@ -112,6 +112,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zec-inc.jp/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://zec-inc.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tap Tools",
+          "item": "https://zec-inc.jp/apps/tap-tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "PoopTap: Poop Tracker & Log",
+          "item": "https://zec-inc.jp/apps/pooptap-daily-tracker/"
+        }
+      ]
     }
   ]
 }
@@ -133,7 +162,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">PoopTap: Poop Tracker &amp; Log</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/20/61/17206132-2826-1bcf-6f55-99cde45ce80f/AppIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/512x512bb.jpg" alt="PoopTap: Poop Tracker &amp; Log app icon" width="96" height="96">
       <div>
@@ -143,113 +173,124 @@
           <a class="button primary" href="https://apps.apple.com/us/app/pooptap-poop-tracker-log/id6762576578?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
         </div>
+        <ul class="chips" aria-label="At a glance"><li class="chip">Free download</li><li class="chip">iPhone &amp; iPad</li><li class="chip">2 languages</li><li class="chip chip-link"><a href="/apps/tap-tools/">Tap Tools</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="Screenshots">
+      <h2 class="visually-hidden">Screenshots</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/61/cf/84/61cf848f-9765-0f5a-1a46-fa229b3cfba2/iphone-01-home.png/320x480bb.jpg" alt="PoopTap: Poop Tracker &amp; Log screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cf/40/88/cf4088dd-c14b-ae61-d0aa-670034d9237f/iphone-02-growth.png/320x480bb.jpg" alt="PoopTap: Poop Tracker &amp; Log screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/31/5b/c8315b66-d34b-637c-b232-264340234b93/iphone-03-calendar.png/320x480bb.jpg" alt="PoopTap: Poop Tracker &amp; Log screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cf/18/33/cf1833b6-2fdc-68b6-8383-e521c55785d6/iphone-04-symptoms.png/320x480bb.jpg" alt="PoopTap: Poop Tracker &amp; Log screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9e/39/cf/9e39cf22-0dd0-7594-0daa-23f3ef8a18d1/iphone-05-settings.png/320x480bb.jpg" alt="PoopTap: Poop Tracker &amp; Log screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>Overview</h2>
-          <p>PoopTap is a one-tap poop tracker with no ads, no account, and no subscription. Tap once after you go, and your log lands on a private calendar on your device. Your streak grows, and your poop buddy evolves through stages from Tiny Poop to Legendary, while the Throne Keeper comments on your progress, whether you asked or not.</p>
-          <p>Under the humor is a useful bowel movement log: shape and color details, optional symptom marks, a short note per entry, a monthly calendar view, and optional reminders when your record goes quiet. A Home Screen and Lock Screen widget lets you log without opening the app. Only a limited daily growth bonus counts toward evolution, so consistency is rewarded, not spam.</p>
-          <p>PoopTap is for personal tracking and entertainment. It is not a medical app and does not provide medical advice, diagnosis, or treatment.</p>
+      <p class="lead-para">PoopTap is a one-tap poop tracker with no ads, no account, and no subscription. Tap once after you go, and your log lands on a private calendar on your device. Your streak grows, and your poop buddy evolves through stages from Tiny Poop to Legendary, while the Throne Keeper comments on your progress, whether you asked or not.</p>
+      <p>Under the humor is a useful bowel movement log: shape and color details, optional symptom marks, a short note per entry, a monthly calendar view, and optional reminders when your record goes quiet. A Home Screen and Lock Screen widget lets you log without opening the app. Only a limited daily growth bonus counts toward evolution, so consistency is rewarded, not spam.</p>
+      <p>PoopTap is for personal tracking and entertainment. It is not a medical app and does not provide medical advice, diagnosis, or treatment.</p>
     </section>
 
-    <section class="section">
-      <h2>Who It Is For</h2>
-      <ul>
-            <li>People who want a simple daily bowel movement tracker or stool log</li>
-            <li>Users who want a private poop diary with no account and no ads</li>
-            <li>People who want to keep shape, color, symptom marks, or short notes about digestion and constipation for their own reference</li>
-            <li>Users who prefer a playful, habit-building log over a medical-style app</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>Main Features</h2>
-      <ul>
-            <li>One-tap logging, including from a Home Screen or Lock Screen widget</li>
-            <li>Shape and color details, optional symptom marks, and a short note per entry</li>
-            <li>Monthly calendar view of your history and a growing streak</li>
-            <li>A poop buddy that evolves from Tiny Poop to Legendary, watched over by the Throne Keeper</li>
-            <li>Optional reminders when your record goes quiet</li>
-            <li>Optional Apple Health linking that writes only the constipation, diarrhea, and bloating marks you choose</li>
-            <li>Free iCloud Backup to your own iCloud Drive, with restore after reinstalling</li>
-            <li>Optional PoopTap Plus one-time purchase: extra evolution forms, premium trivia, extra achievements, premium share cards, Annoying reminder mode, themes, and discreet app icons</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>One-tap logging</strong>, including from a Home Screen or Lock Screen widget</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Shape and color details</strong>, optional symptom marks, and a short note per entry</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Monthly calendar view of your history and a growing streak</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A poop buddy that evolves from Tiny Poop to Legendary, watched over by the Throne Keeper</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Optional reminders when your record goes quiet</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Optional Apple Health linking that writes only the constipation, diarrhea, and bloating marks you choose</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Free iCloud Backup to your own iCloud Drive, with restore after reinstalling</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Optional PoopTap Plus one-time purchase</strong>: extra evolution forms, premium trivia, extra achievements, premium share cards, Annoying reminder mode, themes, and discreet app icons</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>Who It Is For</h2>
+      <ul class="audience-grid">
+        <li>People who want a simple daily bowel movement tracker or stool log</li>
+        <li>Users who want a private poop diary with no account and no ads</li>
+        <li>People who want to keep shape, color, symptom marks, or short notes about digestion and constipation for their own reference</li>
+        <li>Users who prefer a playful, habit-building log over a medical-style app</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>How to Use</h2>
-      <ol>
-            <li>Install PoopTap from the App Store.</li>
-            <li>Tap after you go to add a quick log, or use the Home Screen or Lock Screen widget.</li>
-            <li>Add optional shape, color, symptom marks, or a short note when useful.</li>
-            <li>Review your history on the monthly calendar and watch your poop buddy evolve.</li>
-            <li>Optionally turn on reminders, iCloud Backup, or Apple Health linking in settings.</li>
-            <li>Use PoopTap as a personal log, not as medical advice or analysis.</li>
+      <ol class="steps">
+        <li><span>Install PoopTap from the App Store.</span></li>
+        <li><span>Tap after you go to add a quick log, or use the Home Screen or Lock Screen widget.</span></li>
+        <li><span>Add optional shape, color, symptom marks, or a short note when useful.</span></li>
+        <li><span>Review your history on the monthly calendar and watch your poop buddy evolve.</span></li>
+        <li><span>Optionally turn on reminders, iCloud Backup, or Apple Health linking in settings.</span></li>
+        <li><span>Use PoopTap as a personal log, not as medical advice or analysis.</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>Pricing</h2>
-      <p>PoopTap is free to download and use, with no ads and no subscription. iCloud Backup is free. PoopTap Plus is an optional one-time purchase, not a subscription. App Store pricing and availability may vary by country and can change over time.</p>
-      <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>Pricing</h2>
+        <p>PoopTap is free to download and use, with no ads and no subscription. iCloud Backup is free. PoopTap Plus is an optional one-time purchase, not a subscription. App Store pricing and availability may vary by country and can change over time.</p>
+        <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
+      </section>
+      <section class="info-card">
+        <h2>Privacy</h2>
+        <p>Your logs stay on your device. PoopTap has no accounts, no ads, and no analytics. If you turn on Apple Health linking, PoopTap writes only the constipation, diarrhea, and bloating marks you choose; it does not infer symptoms or read Health data. If you use iCloud Backup, a copy of your logs and settings is saved to your own iCloud Drive. Check the App Store product page for Apple&#x27;s current privacy label.</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>FAQ</h2>
+        <details>
+          <summary>What is PoopTap?</summary>
+          <p>PoopTap is a one-tap poop tracker and bowel movement log with a private calendar and a poop buddy that grows and evolves as you log. It has no ads, no account, and no subscription.</p>
+        </details>
+        <details>
+          <summary>Is PoopTap a medical app?</summary>
+          <p>No. PoopTap is for personal tracking and entertainment. It does not provide medical advice, diagnosis, treatment, analysis, or recommendations.</p>
+        </details>
+        <details>
+          <summary>What can I track with PoopTap?</summary>
+          <p>You can log each bowel movement with shape and color details, optional symptom marks, and a short note, then review your history on a monthly calendar.</p>
+        </details>
+        <details>
+          <summary>Is my data private?</summary>
+          <p>Your logs stay on your device. There are no accounts, no ads, and no analytics. Optional iCloud Backup saves a copy only to your own iCloud Drive.</p>
+        </details>
+        <details>
+          <summary>Does PoopTap connect to Apple Health?</summary>
+          <p>Optionally. If you turn it on, PoopTap writes only the constipation, diarrhea, and bloating marks you choose. It does not infer symptoms or read Health data.</p>
+        </details>
+        <details>
+          <summary>Is iCloud Backup free?</summary>
+          <p>Yes. iCloud Backup is free. You can save a copy of your logs and settings to your own iCloud Drive and restore it after reinstalling the app.</p>
+        </details>
+        <details>
+          <summary>What is PoopTap Plus?</summary>
+          <p>PoopTap Plus is an optional one-time purchase, not a subscription. It unlocks extra evolution forms, premium trivia, extra achievements, premium share cards, Annoying reminder mode, themes, and discreet app icons.</p>
+        </details>
+        <details>
+          <summary>Does logging many times make my poop evolve faster?</summary>
+          <p>Not really. Only a limited daily growth bonus counts toward evolution, so steady daily logging is rewarded, not spam.</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>Privacy</h2>
-      <p>Your logs stay on your device. PoopTap has no accounts, no ads, and no analytics. If you turn on Apple Health linking, PoopTap writes only the constipation, diarrhea, and bloating marks you choose; it does not infer symptoms or read Health data. If you use iCloud Backup, a copy of your logs and settings is saved to your own iCloud Drive. Check the App Store product page for Apple&#x27;s current privacy label.</p>
-    </section>
-
-    <section class="section">
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/61/cf/84/61cf848f-9765-0f5a-1a46-fa229b3cfba2/iphone-01-home.png/320x480bb.jpg" alt="PoopTap: Poop Tracker &amp; Log screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cf/40/88/cf4088dd-c14b-ae61-d0aa-670034d9237f/iphone-02-growth.png/320x480bb.jpg" alt="PoopTap: Poop Tracker &amp; Log screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/31/5b/c8315b66-d34b-637c-b232-264340234b93/iphone-03-calendar.png/320x480bb.jpg" alt="PoopTap: Poop Tracker &amp; Log screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cf/18/33/cf1833b6-2fdc-68b6-8383-e521c55785d6/iphone-04-symptoms.png/320x480bb.jpg" alt="PoopTap: Poop Tracker &amp; Log screenshot" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9e/39/cf/9e39cf22-0dd0-7594-0daa-23f3ef8a18d1/iphone-05-settings.png/320x480bb.jpg" alt="PoopTap: Poop Tracker &amp; Log screenshot" loading="lazy"></figure>
+    <section class="block">
+      <h2>More apps in this category</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>FAQ</h2>
-          <details>
-            <summary>What is PoopTap?</summary>
-            <p>PoopTap is a one-tap poop tracker and bowel movement log with a private calendar and a poop buddy that grows and evolves as you log. It has no ads, no account, and no subscription.</p>
-          </details>
-          <details>
-            <summary>Is PoopTap a medical app?</summary>
-            <p>No. PoopTap is for personal tracking and entertainment. It does not provide medical advice, diagnosis, treatment, analysis, or recommendations.</p>
-          </details>
-          <details>
-            <summary>What can I track with PoopTap?</summary>
-            <p>You can log each bowel movement with shape and color details, optional symptom marks, and a short note, then review your history on a monthly calendar.</p>
-          </details>
-          <details>
-            <summary>Is my data private?</summary>
-            <p>Your logs stay on your device. There are no accounts, no ads, and no analytics. Optional iCloud Backup saves a copy only to your own iCloud Drive.</p>
-          </details>
-          <details>
-            <summary>Does PoopTap connect to Apple Health?</summary>
-            <p>Optionally. If you turn it on, PoopTap writes only the constipation, diarrhea, and bloating marks you choose. It does not infer symptoms or read Health data.</p>
-          </details>
-          <details>
-            <summary>Is iCloud Backup free?</summary>
-            <p>Yes. iCloud Backup is free. You can save a copy of your logs and settings to your own iCloud Drive and restore it after reinstalling the app.</p>
-          </details>
-          <details>
-            <summary>What is PoopTap Plus?</summary>
-            <p>PoopTap Plus is an optional one-time purchase, not a subscription. It unlocks extra evolution forms, premium trivia, extra achievements, premium share cards, Annoying reminder mode, themes, and discreet app icons.</p>
-          </details>
-          <details>
-            <summary>Does logging many times make my poop evolve faster?</summary>
-            <p>Not really. Only a limited daily growth bonus counts toward evolution, so steady daily logging is rewarded, not spam.</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/us/app/pooptap-poop-tracker-log/id6762576578?uo=4">Open PoopTap: Poop Tracker &amp; Log on the App Store</a></p>
+      <a class="button primary big" href="https://apps.apple.com/us/app/pooptap-poop-tracker-log/id6762576578?uo=4">Open PoopTap: Poop Tracker &amp; Log on the App Store</a>
       <p class="meta">Last updated: 2026-10-21</p>
     </section>
   </main>

@@ -107,6 +107,35 @@
           }
         }
       ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://zec-inc.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "アプリ",
+          "item": "https://zec-inc.jp/apps/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "タップ記録ツール",
+          "item": "https://zec-inc.jp/apps/tap-tools/ja/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "モザイク・ぼかし - Blur Before Share",
+          "item": "https://zec-inc.jp/apps/blur-before-share/ja/"
+        }
+      ]
     }
   ]
 }
@@ -131,7 +160,8 @@
     </div>
   </header>
 
-  <main>
+  <main class="detail">
+    <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/apps/ja/">アプリ</a></li><li><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li aria-current="page">モザイク・ぼかし - Blur Before Share</li></ol></nav>
     <section class="hero">
       <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e3/98/21/e398213c-554f-dbb6-0330-609d15460aaf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="モザイク・ぼかし - Blur Before Share のアプリアイコン" width="96" height="96">
       <div>
@@ -141,110 +171,121 @@
           <a class="button primary" href="https://apps.apple.com/jp/app/blur-before-share/id6789844137?uo=4">App Storeで見る</a>
           <a class="button" href="/apps/ja/">ZECアプリ一覧</a>
         </div>
+        <ul class="chips" aria-label="ひと目でわかるポイント"><li class="chip">ダウンロード無料</li><li class="chip">iPhone・iPad</li><li class="chip">22言語に対応</li><li class="chip chip-link"><a href="/apps/tap-tools/ja/">タップ記録ツール</a></li><li class="chip chip-link"><a href="/apps/photo-memory/ja/">写真・思い出のアプリ</a></li></ul>
       </div>
     </section>
 
-    <section class="section">
+    <section class="shots" aria-label="スクリーンショット">
+      <h2 class="visually-hidden">スクリーンショット</h2>
+      <div class="shot-strip">
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fc/62/6c/fc626caa-f129-5061-1e3b-53d6874583bb/01.png/320x480bb.jpg" alt="モザイク・ぼかし - Blur Before Share のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/80/15/ca/8015caf3-73d9-b478-a9c4-6c3e731da930/02.png/320x480bb.jpg" alt="モザイク・ぼかし - Blur Before Share のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f1/ce/63/f1ce6319-16fd-ec38-a02f-ab2cd4cc6e4f/03.png/320x480bb.jpg" alt="モザイク・ぼかし - Blur Before Share のスクリーンショット" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/48/29/15/48291590-571c-3ea3-67e2-40dc8fc18ce2/04-ipad.png/360x480bb.jpg" alt="モザイク・ぼかし - Blur Before Share のスクリーンショット" width="360" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/d1/44/8ad144b4-78d5-6a53-ef8b-8b04b0f37671/05-ipad.png/360x480bb.jpg" alt="モザイク・ぼかし - Blur Before Share のスクリーンショット" width="360" height="480" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="block prose">
       <h2>概要</h2>
-          <p>モザイク・ぼかし - Blur Before Shareは、写真に写った顔・名前・住所・車のナンバーなど、見せたくない部分を共有の前にサッと隠すアプリです。隠したい場所を指でなぞって効果を選び、保存または共有するだけ。元の写真は変更されません。</p>
-          <p>隠す対象に合わせて効果を選べます。顔や背景をやわらかく隠すぼかし、大きな四角で写真の雰囲気を残して隠すモザイク、完全に見えなくする黒塗り（文字を隠すならいちばん確実）の3種類で、1枚の中で自由に併用できます。写真を開くと「顔を隠す」が端末の中で顔を見つけて自動で隠し、隠さなくていい顔は×で外せます。</p>
-          <p>保存・共有するコピーは一から描き直すため、元の写真の位置情報（GPS）や撮影情報は含まれません。アカウント不要・アップロードなし・広告なしです。道具はすべて無料で、隠した写真の保存・共有は1日3枚まで無料。Blur Before Share Proなら1日の枚数制限がなくなります。25言語に対応しています。</p>
+      <p class="lead-para">モザイク・ぼかし - Blur Before Shareは、写真に写った顔・名前・住所・車のナンバーなど、見せたくない部分を共有の前にサッと隠すアプリです。隠したい場所を指でなぞって効果を選び、保存または共有するだけ。元の写真は変更されません。</p>
+      <p>隠す対象に合わせて効果を選べます。顔や背景をやわらかく隠すぼかし、大きな四角で写真の雰囲気を残して隠すモザイク、完全に見えなくする黒塗り（文字を隠すならいちばん確実）の3種類で、1枚の中で自由に併用できます。写真を開くと「顔を隠す」が端末の中で顔を見つけて自動で隠し、隠さなくていい顔は×で外せます。</p>
+      <p>保存・共有するコピーは一から描き直すため、元の写真の位置情報（GPS）や撮影情報は含まれません。アカウント不要・アップロードなし・広告なしです。道具はすべて無料で、隠した写真の保存・共有は1日3枚まで無料。Blur Before Share Proなら1日の枚数制限がなくなります。25言語に対応しています。</p>
     </section>
 
-    <section class="section">
-      <h2>こんな方に</h2>
-      <ul>
-            <li>名前・チャット・アカウント情報が写ったスクリーンショットを投稿する方</li>
-            <li>子どもの写真を共有するとき、ほかの人の顔を隠したい保護者の方</li>
-            <li>チケット・レシート・書類など、個人情報が写った画像を送る方</li>
-            <li>フリマやSNSで、住所・車のナンバー・写り込んだ人を隠したい方</li>
-      </ul>
-    </section>
-
-    <section class="section">
+    <section class="block">
       <h2>主な機能</h2>
-      <ul>
-            <li>ぼかし・モザイク・黒塗りを1枚の中で自由に併用</li>
-            <li>隠したい場所を指でなぞって隠せる</li>
-            <li>「顔を隠す」で端末内の顔を自動で見つけて隠す。×で外す、タップで探し直しもできる</li>
-            <li>ひとつ戻す・リセット（リセットしても「ひとつ戻す」で元どおり）</li>
-            <li>長押しで元の写真と見比べ</li>
-            <li>保存・共有するコピーに位置情報・撮影情報なし</li>
-            <li>元の写真は変更しない</li>
-            <li>アカウント不要・アップロードなし・広告なし。すべて端末内で処理</li>
-            <li>保存・共有は1日3枚まで無料。制限をなくすPro（サブスクリプション）は任意</li>
-            <li>25言語に対応</li>
+      <ul class="feature-grid">
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ぼかし・モザイク・黒塗りを1枚の中で自由に併用</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>隠したい場所を指でなぞって隠せる</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>「顔を隠す」で端末内の顔を自動で見つけて隠す。×で外す、タップで探し直しもできる</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ひとつ戻す・リセット（リセットしても「ひとつ戻す」で元どおり）</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>長押しで元の写真と見比べ</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>保存・共有するコピーに位置情報・撮影情報なし</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>元の写真は変更しない</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>アカウント不要・アップロードなし・広告なし。すべて端末内で処理</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>保存・共有は1日3枚まで無料</strong>。制限をなくすPro（サブスクリプション）は任意</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>25言語に対応</span></li>
       </ul>
     </section>
 
-    <section class="section">
+    <section class="block">
+      <h2>こんな方に</h2>
+      <ul class="audience-grid">
+        <li>名前・チャット・アカウント情報が写ったスクリーンショットを投稿する方</li>
+        <li>子どもの写真を共有するとき、ほかの人の顔を隠したい保護者の方</li>
+        <li>チケット・レシート・書類など、個人情報が写った画像を送る方</li>
+        <li>フリマやSNSで、住所・車のナンバー・写り込んだ人を隠したい方</li>
+      </ul>
+    </section>
+
+    <section class="block">
       <h2>使い方</h2>
-      <ol>
-            <li>アプリを開き、写真を選びます。</li>
-            <li>顔は端末の中で見つけて自動で隠されます。隠さなくていい顔は×で外します。</li>
-            <li>顔・名前・住所など隠したい部分を指でなぞり、ぼかし・モザイク・黒塗りから効果を選びます。</li>
-            <li>効果を併用したり、ひとつ戻す・リセットで整えます。長押しで元の写真と見比べられます。</li>
-            <li>コピーを保存するか、そのまま共有します。</li>
+      <ol class="steps">
+        <li><span>アプリを開き、写真を選びます。</span></li>
+        <li><span>顔は端末の中で見つけて自動で隠されます。隠さなくていい顔は×で外します。</span></li>
+        <li><span>顔・名前・住所など隠したい部分を指でなぞり、ぼかし・モザイク・黒塗りから効果を選びます。</span></li>
+        <li><span>効果を併用したり、ひとつ戻す・リセットで整えます。長押しで元の写真と見比べられます。</span></li>
+        <li><span>コピーを保存するか、そのまま共有します。</span></li>
       </ol>
     </section>
 
-    <section class="section">
-      <h2>価格</h2>
-      <p>Blur Before Shareは無料でダウンロードでき、広告もありません。道具はすべて無料で、隠した写真の保存・共有は1日3枚まで無料です。Blur Before Share Proなら1日の枚数制限がなくなります（年額は1週間の無料体験つき、または月額）。1.4より前からお使いの方は、Proなしでも制限なく保存・共有できます。最新の価格・内容はApp Storeでご確認ください。</p>
-      <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+    <div class="info-pair">
+      <section class="info-card">
+        <h2>価格</h2>
+        <p>Blur Before Shareは無料でダウンロードでき、広告もありません。道具はすべて無料で、隠した写真の保存・共有は1日3枚まで無料です。Blur Before Share Proなら1日の枚数制限がなくなります（年額は1週間の無料体験つき、または月額）。1.4より前からお使いの方は、Proなしでも制限なく保存・共有できます。最新の価格・内容はApp Storeでご確認ください。</p>
+        <p class="meta">価格・提供状況は国や地域によって異なり、App Store上で変更される場合があります。</p>
+      </section>
+      <section class="info-card">
+        <h2>プライバシー</h2>
+        <p>処理はすべて端末内で行い、アカウント登録・アップロード・広告はありません。保存・共有するコピーは一から描き直すため、元の写真の位置情報（GPS）や撮影情報は含まれず、元の写真も変更されません。顔の検出も端末の中で行います。</p>
+      </section>
+    </div>
+
+    <section class="block faq">
+      <h2>よくある質問</h2>
+        <details>
+          <summary>Blur Before Shareは無料ですか？</summary>
+          <p>はい。道具はすべて無料で広告もなく、隠した写真の保存・共有は1日3枚まで無料です。制限をなくすProは任意のサブスクリプションです。最新の内容はApp Storeでご確認ください。</p>
+        </details>
+        <details>
+          <summary>写真はどこかにアップロードされますか？</summary>
+          <p>いいえ。処理はすべて端末内で行われます。アカウント登録もアップロードもありません。</p>
+        </details>
+        <details>
+          <summary>文字を隠すにはどの効果がよいですか？</summary>
+          <p>文字を隠すなら黒塗りがいちばん確実です。ぼかしは顔や背景をやわらかく、モザイクは大きな四角で写真の雰囲気を残して隠します。</p>
+        </details>
+        <details>
+          <summary>元の写真は変更されますか？</summary>
+          <p>いいえ。元の写真は変更されません。アプリは新しいコピーを保存・共有します。</p>
+        </details>
+        <details>
+          <summary>共有する写真に位置情報は残りますか？</summary>
+          <p>いいえ。コピーは一から描き直すため、元の写真の位置情報（GPS）や撮影情報は含まれません。</p>
+        </details>
+        <details>
+          <summary>顔は自動で検出されますか？</summary>
+          <p>はい。写真を開くと、「顔を隠す」が端末の中で顔を見つけて自動で隠します。隠さなくていい顔は×で外せ、タップすると探し直します。ほかの部分は指でなぞって隠せます。</p>
+        </details>
+        <details>
+          <summary>Proでは何ができますか？</summary>
+          <p>Blur Before Share Proでは、保存・共有の1日3枚の制限がなくなります。年額（1週間の無料体験つき）または月額から選べます。1.4より前からお使いの方は、Proなしでも制限なく保存・共有できます。</p>
+        </details>
     </section>
 
-    <section class="section">
-      <h2>プライバシー</h2>
-      <p>処理はすべて端末内で行い、アカウント登録・アップロード・広告はありません。保存・共有するコピーは一から描き直すため、元の写真の位置情報（GPS）や撮影情報は含まれず、元の写真も変更されません。顔の検出も端末の中で行います。</p>
-    </section>
-
-    <section class="section">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fc/62/6c/fc626caa-f129-5061-1e3b-53d6874583bb/01.png/320x480bb.jpg" alt="モザイク・ぼかし - Blur Before Share のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/80/15/ca/8015caf3-73d9-b478-a9c4-6c3e731da930/02.png/320x480bb.jpg" alt="モザイク・ぼかし - Blur Before Share のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f1/ce/63/f1ce6319-16fd-ec38-a02f-ab2cd4cc6e4f/03.png/320x480bb.jpg" alt="モザイク・ぼかし - Blur Before Share のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/48/29/15/48291590-571c-3ea3-67e2-40dc8fc18ce2/04-ipad.png/360x480bb.jpg" alt="モザイク・ぼかし - Blur Before Share のスクリーンショット" loading="lazy"></figure>
-        <figure class="screenshot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/d1/44/8ad144b4-78d5-6a53-ef8b-8b04b0f37671/05-ipad.png/360x480bb.jpg" alt="モザイク・ぼかし - Blur Before Share のスクリーンショット" loading="lazy"></figure>
+    <section class="block">
+      <h2>同じカテゴリのアプリ</h2>
+      <div class="related">
+        <a class="related-card" href="/apps/foot-size-check/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>足はかる</h3><p>A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。</p></span></a>
+        <a class="related-card" href="/apps/ocr-copy/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/39/cd/a739cdfc-f268-aadd-2b88-6bd956655399/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCRコピー - 画像を文字起こし</h3><p>写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/ja/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>洗濯タップ：洗濯タイマーと記録</h3><p>洗濯・乾燥のタイマーで終わりを通知し、「前回の洗濯から何日」もわかる、洗濯専用のアプリ。ロック画面にも残り時間を表示します。</p></span></a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>よくある質問</h2>
-          <details>
-            <summary>Blur Before Shareは無料ですか？</summary>
-            <p>はい。道具はすべて無料で広告もなく、隠した写真の保存・共有は1日3枚まで無料です。制限をなくすProは任意のサブスクリプションです。最新の内容はApp Storeでご確認ください。</p>
-          </details>
-          <details>
-            <summary>写真はどこかにアップロードされますか？</summary>
-            <p>いいえ。処理はすべて端末内で行われます。アカウント登録もアップロードもありません。</p>
-          </details>
-          <details>
-            <summary>文字を隠すにはどの効果がよいですか？</summary>
-            <p>文字を隠すなら黒塗りがいちばん確実です。ぼかしは顔や背景をやわらかく、モザイクは大きな四角で写真の雰囲気を残して隠します。</p>
-          </details>
-          <details>
-            <summary>元の写真は変更されますか？</summary>
-            <p>いいえ。元の写真は変更されません。アプリは新しいコピーを保存・共有します。</p>
-          </details>
-          <details>
-            <summary>共有する写真に位置情報は残りますか？</summary>
-            <p>いいえ。コピーは一から描き直すため、元の写真の位置情報（GPS）や撮影情報は含まれません。</p>
-          </details>
-          <details>
-            <summary>顔は自動で検出されますか？</summary>
-            <p>はい。写真を開くと、「顔を隠す」が端末の中で顔を見つけて自動で隠します。隠さなくていい顔は×で外せ、タップすると探し直します。ほかの部分は指でなぞって隠せます。</p>
-          </details>
-          <details>
-            <summary>Proでは何ができますか？</summary>
-            <p>Blur Before Share Proでは、保存・共有の1日3枚の制限がなくなります。年額（1週間の無料体験つき）または月額から選べます。1.4より前からお使いの方は、Proなしでも制限なく保存・共有できます。</p>
-          </details>
-    </section>
-
-    <section class="section">
+    <section class="cta">
       <h2>App Store</h2>
-      <p><a class="button primary" href="https://apps.apple.com/jp/app/blur-before-share/id6789844137?uo=4">モザイク・ぼかし - Blur Before Share をApp Storeで開く</a></p>
+      <a class="button primary big" href="https://apps.apple.com/jp/app/blur-before-share/id6789844137?uo=4">モザイク・ぼかし - Blur Before Share をApp Storeで開く</a>
       <p class="meta">最終更新日: 2026-10-21</p>
     </section>
   </main>
