@@ -176,8 +176,8 @@ def main(argv: list[str] | None = None) -> int:
         for slug in sorted(category_slugs - expected_category_slugs):
             errors.append(f"unexpected category page apps/{slug}/index.html (not in apps manifest)")
 
-    pages = [ROOT_DIR / "index.html", APPS_DIR / "index.html"] + detail_pages + category_pages + locale_pages
-    expected_sitemap_urls = {SITE_ORIGIN + "/", SITE_ORIGIN + "/apps/"}
+    pages = [ROOT_DIR / "index.html", ROOT_DIR / "en" / "index.html", APPS_DIR / "index.html"] + detail_pages + category_pages + locale_pages
+    expected_sitemap_urls = {SITE_ORIGIN + "/", SITE_ORIGIN + "/en/", SITE_ORIGIN + "/apps/"}
     for path in detail_pages + category_pages + locale_pages:
         rel = path.parent.relative_to(ROOT_DIR).as_posix()
         expected_sitemap_urls.add(f"{SITE_ORIGIN}/{rel}/")

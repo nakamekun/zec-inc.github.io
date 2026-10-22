@@ -75,6 +75,18 @@ CATEGORY_MARKER = ".generated-app-category"
 LOCALE_INDEX_MARKER = ".generated-app-locale-index"
 
 DEFAULT_LOCALE = "en"
+HOME_PAGE_EN = ROOT_DIR / "en" / "index.html"
+
+# Lightweight localized pages built only from the App Store's own localized listing (name, description,
+# screenshots). An app gets a page in one of these languages only when its storefront listing is really
+# written in that language (see localized_listing_ok).
+LIGHT_LOCALES = {
+    "zh-hans": {"country": "cn", "lang": "zh_cn", "html": "zh-Hans", "store_lang": "ZH"},
+    "zh-hant": {"country": "tw", "lang": "zh_tw", "html": "zh-Hant", "store_lang": "ZH"},
+    "ko": {"country": "kr", "lang": "ko_kr", "html": "ko", "store_lang": "KO"},
+}
+HTML_LANG = {code: value["html"] for code, value in LIGHT_LOCALES.items()}
+LANGUAGE_NAMES = {"en": "English", "ja": "日本語", "zh-hans": "简体中文", "zh-hant": "繁體中文", "ko": "한국어"}
 
 CATEGORY_DEFINITIONS = {
     "photo-memory": {
@@ -160,7 +172,8 @@ UI_STRINGS = {
         "app_store_link": "App Store →",
         "apps_nav": "Apps",
         "apps_heading": "Apps",
-        "language_names": {"en": "English", "ja": "日本語"},
+        "language_names": LANGUAGE_NAMES,
+        "home_nav": "Home",
         "apps_index_title": "ZEC Apps",
         "apps_index_description": "Official list of iPhone apps from ZEC Inc. Small, focused tools for daily records, quick checks, travel, family routines, and widgets.",
         "icon_alt": "{name} app icon",
@@ -186,13 +199,79 @@ UI_STRINGS = {
         "app_store_link": "App Store →",
         "apps_nav": "アプリ",
         "apps_heading": "アプリ一覧",
-        "language_names": {"en": "English", "ja": "日本語"},
+        "language_names": LANGUAGE_NAMES,
+        "home_nav": "ホーム",
         "apps_index_title": "ZECのアプリ一覧",
         "apps_index_description": "合同会社ゼク（ZEC Inc.）が開発するiPhoneアプリの公式一覧です。毎日の記録・すばやい確認・旅行・家族の習慣・ウィジェットのための、小さくて目的のはっきりした道具を揃えています。",
         "icon_alt": "{name} のアプリアイコン",
         "screenshot_alt": "{name} のスクリーンショット",
     },
 }
+UI_STRINGS.update({
+    "zh-hans": {
+        "overview": "简介",
+        "screenshots": "截图",
+        "app_store": "App Store",
+        "view_on_app_store": "在 App Store 查看",
+        "open_on_app_store": "在 App Store 打开 {name}",
+        "all_apps": "ZEC 应用一览",
+        "last_updated": "最后更新",
+        "details": "详情",
+        "app_store_link": "App Store →",
+        "apps_nav": "应用",
+        "home_nav": "首页",
+        "apps_heading": "应用一览",
+        "language_names": LANGUAGE_NAMES,
+        "apps_index_title": "ZEC 的 iPhone 应用",
+        "apps_index_description": "ZEC Inc.（合同会社ゼク）开发的 iPhone 应用官方一览。这里列出已提供简体中文版的应用，都是专注于一件小事、简单好用的工具。",
+        "store_note_heading": "价格与隐私",
+        "store_note": "价格、App 内购买与最新的隐私信息，请以 App Store 页面为准。本页介绍文字来自 App Store 的应用说明。",
+        "icon_alt": "{name} 的应用图标",
+        "screenshot_alt": "{name} 的截图",
+    },
+    "zh-hant": {
+        "overview": "簡介",
+        "screenshots": "截圖",
+        "app_store": "App Store",
+        "view_on_app_store": "在 App Store 查看",
+        "open_on_app_store": "在 App Store 開啟 {name}",
+        "all_apps": "ZEC App 一覽",
+        "last_updated": "最後更新",
+        "details": "詳情",
+        "app_store_link": "App Store →",
+        "apps_nav": "App",
+        "home_nav": "首頁",
+        "apps_heading": "App 一覽",
+        "language_names": LANGUAGE_NAMES,
+        "apps_index_title": "ZEC 的 iPhone App",
+        "apps_index_description": "ZEC Inc.（合同会社ゼク）開發的 iPhone App 官方一覽。這裡列出已提供繁體中文版的 App，每一款都專注於一件小事，簡單好用。",
+        "store_note_heading": "價格與隱私",
+        "store_note": "價格、App 內購買與最新的隱私權資訊，請以 App Store 頁面為準。本頁的介紹文字取自 App Store 的 App 說明。",
+        "icon_alt": "{name} 的 App 圖示",
+        "screenshot_alt": "{name} 的截圖",
+    },
+    "ko": {
+        "overview": "소개",
+        "screenshots": "스크린샷",
+        "app_store": "App Store",
+        "view_on_app_store": "App Store에서 보기",
+        "open_on_app_store": "App Store에서 {name} 열기",
+        "all_apps": "ZEC 앱 목록",
+        "last_updated": "최종 업데이트",
+        "details": "자세히",
+        "app_store_link": "App Store →",
+        "apps_nav": "앱",
+        "home_nav": "홈",
+        "apps_heading": "앱 목록",
+        "language_names": LANGUAGE_NAMES,
+        "apps_index_title": "ZEC의 iPhone 앱",
+        "apps_index_description": "ZEC Inc.(合同会社ゼク)가 만든 iPhone 앱 공식 목록입니다. 한국어를 지원하는 앱만 모았으며, 모두 한 가지 일에 집중한 간단한 도구입니다.",
+        "store_note_heading": "가격 및 개인정보",
+        "store_note": "가격, 앱 내 구입, 최신 개인정보 처리 정보는 App Store 페이지에서 확인해 주세요. 이 페이지의 소개 문구는 App Store의 앱 설명에서 가져왔습니다.",
+        "icon_alt": "{name} 앱 아이콘",
+        "screenshot_alt": "{name} 스크린샷",
+    },
+})
 
 APP_OVERRIDE_FIELDS = {
     "slug",
@@ -318,7 +397,46 @@ def fetch_apps() -> list[dict[str, Any]]:
 
     if not apps:
         raise RuntimeError("No ZEC Inc. software apps were found in the App Store payload.")
+    attach_localized_listings(apps)
     return apps
+
+
+KANA_RE = re.compile(r"[\u3040-\u30ff]")
+HAN_RE = re.compile(r"[\u4e00-\u9fff]")
+HANGUL_RE = re.compile(r"[\uac00-\ud7af]")
+
+
+def localized_listing_ok(description: str, store_lang: str) -> bool:
+    """True when a storefront description is really written in that language (not the ja/en fallback)."""
+    if store_lang == "ZH":
+        return len(HAN_RE.findall(description)) >= 30 and len(KANA_RE.findall(description)) < 3
+    if store_lang == "KO":
+        return len(HANGUL_RE.findall(description)) >= 30
+    return False
+
+
+def attach_localized_listings(apps: list[dict[str, Any]]) -> None:
+    for code, spec in LIGHT_LOCALES.items():
+        url = LOOKUP_URL.replace("country=us", f"country={spec['country']}&lang={spec['lang']}")
+        cache = ROOT_DIR / "data" / f"app-store-lookup-cache-{code}.json"
+        try:
+            payload = fetch_lookup_payload(url, cache)
+        except RuntimeError as exc:
+            print(f"note: {code} storefront lookup unavailable: {exc}", file=sys.stderr)
+            continue
+        by_id = {str(item.get("trackId", "")): item for item in payload.get("results", [])}
+        for app in apps:
+            item = by_id.get(app["trackId"])
+            if not item or spec["store_lang"] not in app.get("languages", []):
+                continue
+            description = str(item.get("description", "")).strip()
+            if not localized_listing_ok(description, spec["store_lang"]):
+                continue
+            app.setdefault("l10n", {})[code] = {
+                "trackName": str(item.get("trackName", "")).strip() or app["trackName"],
+                "description": description,
+                "screenshotUrls": [u for u in (item.get("screenshotUrls") or []) + (item.get("ipadScreenshotUrls") or []) if isinstance(u, str) and u.startswith("https://")],
+            }
 
 
 def slugify(text: str, fallback: str = "") -> str:
@@ -431,7 +549,8 @@ def app_locales(app: dict[str, Any], overrides: dict[str, Any]) -> list[str]:
             for locale, value in locales.items()
             if locale != DEFAULT_LOCALE and isinstance(value, dict) and locale in UI_STRINGS
         )
-    return [DEFAULT_LOCALE] + extra
+    light = [code for code in LIGHT_LOCALES if code in app.get("l10n", {})]
+    return [DEFAULT_LOCALE] + extra + light
 
 
 def site_locales(overrides: dict[str, Any]) -> list[str]:
@@ -578,6 +697,12 @@ def app_name(app: dict[str, Any]) -> str:
     return str(app.get("trackName") or "ZEC App").strip() or "ZEC App"
 
 
+def display_name(app: dict[str, Any], overrides: dict[str, Any], locale: str = DEFAULT_LOCALE) -> str:
+    if locale in LIGHT_LOCALES:
+        return str(app.get("l10n", {}).get(locale, {}).get("trackName") or app_name(app))
+    return override_string(localized_override(app, overrides, locale).get("name"), app_name(app))
+
+
 def override_string(value: Any, fallback: str) -> str:
     if isinstance(value, str) and value.strip():
         return value.strip()
@@ -659,7 +784,7 @@ def apps_index_url(locale: str = DEFAULT_LOCALE) -> str:
 def hreflang_alternates(locales: list[str], url_for) -> list[tuple[str, str]]:
     if len(locales) < 2:
         return []
-    alternates = [(locale, url_for(locale)) for locale in locales]
+    alternates = [(HTML_LANG.get(locale, locale), url_for(locale)) for locale in locales]
     alternates.append(("x-default", url_for(DEFAULT_LOCALE)))
     return alternates
 
@@ -782,7 +907,7 @@ def html_paragraphs(items: list[str]) -> str:
     return "\n".join(f"          <p>{html.escape(item)}</p>" for item in items)
 
 
-APP_STORE_STOREFRONTS = {"ja": "jp"}
+APP_STORE_STOREFRONTS = {"ja": "jp", **{code: spec["country"] for code, spec in LIGHT_LOCALES.items()}}
 
 
 def app_store_url(app: dict[str, Any], locale: str = DEFAULT_LOCALE) -> str:
@@ -812,7 +937,7 @@ def json_ld(app: dict[str, Any], content: dict[str, Any], locale: str) -> str:
             "url": app_store_url(app, locale),
         },
         "url": page_url(app, locale),
-        "inLanguage": locale,
+        "inLanguage": HTML_LANG.get(locale, locale),
         "downloadUrl": app_store_url(app, locale),
         "publisher": {
             "@type": "Organization",
@@ -956,14 +1081,14 @@ def render_shell(
 """
     strings = ui_strings(lang)
     nav_items = [
-        '<a href="/">' + ("ホーム" if lang == "ja" else "Home") + "</a>",
+        f'<a href="{"/" if lang == "ja" else "/en/"}">{html.escape(str(strings.get("home_nav", "Home")))}</a>',
         f'<a href="{html.escape(apps_index_href(lang), quote=True)}">{html.escape(str(strings["apps_nav"]))}</a>'
     ]
     for href, label in lang_links or []:
         nav_items.append(f'<a href="{html.escape(href, quote=True)}">{html.escape(label)}</a>')
     nav_html = "\n        ".join(nav_items)
     return f"""<!DOCTYPE html>
-<html lang="{html.escape(lang)}">
+<html lang="{html.escape(HTML_LANG.get(lang, lang))}">
 <head>
 {render_head(title, description, canonical, og_image, alternates)}{json_block}  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -982,8 +1107,8 @@ def render_shell(
 def render_cards(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> str:
     lines = [START_MARKER]
     for app in apps:
-        name = html.escape(app_name(app))
-        alt = html.escape(f"{app_name(app)} app icon", quote=True)
+        name = html.escape(display_name(app, overrides))
+        alt = html.escape(f"{display_name(app, overrides)} app icon", quote=True)
         desc = html.escape(short_description(app, overrides))
         url = html.escape(app_store_url(app), quote=True)
         detail_url = html.escape(f"{app['slug']}/", quote=True)
@@ -1130,9 +1255,95 @@ def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: Buil
     )
 
 
+def light_paragraphs(app: dict[str, Any], locale: str, limit: int = 3) -> list[str]:
+    listing = app.get("l10n", {}).get(locale, {})
+    name = str(listing.get("trackName", "")).strip()
+    parts = [clean_text(part) for part in re.split(r"\n\s*\n", str(listing.get("description", ""))) if clean_text(part)]
+    return [part for part in parts if part.casefold() != name.casefold()][:limit]
+
+
+def light_short_description(app: dict[str, Any], locale: str) -> str:
+    for paragraph in light_paragraphs(app, locale):
+        sentences = [part.strip() for part in re.split(r"(?<=[。！？.!?])\s*", paragraph) if part.strip()]
+        for sentence in sentences:
+            if len(sentence) >= 18:
+                return truncate_text(sentence, 110)
+    return display_name(app, {}, locale)
+
+
+def render_light_detail_page(app: dict[str, Any], overrides: dict[str, Any], locale: str) -> str:
+    """Detail page for a LIGHT_LOCALES language, built only from the App Store's localized listing."""
+    strings = ui_strings(locale)
+    listing = app["l10n"][locale]
+    name = display_name(app, overrides, locale)
+    tagline = light_short_description(app, locale)
+    overview = light_paragraphs(app, locale)
+    screenshots = listing.get("screenshotUrls", [])[:5]
+    locales = app_locales(app, overrides)
+    alternates = hreflang_alternates(locales, lambda loc: page_url(app, loc))
+    lang_links = language_links(locales, locale, lambda loc: page_href(app, loc))
+    img = icon_url(app)
+    store_url = app_store_url(app, locale)
+    icon_alt = str(strings["icon_alt"]).format(name=name)
+    screenshot_alt = str(strings["screenshot_alt"]).format(name=name)
+    screenshot_html = ""
+    if screenshots:
+        figures = "\n".join(
+            f'        <figure class="screenshot"><img src="{html.escape(url, quote=True)}" alt="{html.escape(screenshot_alt, quote=True)}" loading="lazy"></figure>'
+            for url in screenshots
+        )
+        screenshot_html = f"""
+    <section class="section">
+      <h2>{html.escape(str(strings['screenshots']))}</h2>
+      <div class="screenshots">
+{figures}
+      </div>
+    </section>
+"""
+    body = f"""
+  <main>
+    <section class="hero">
+      {f'<img class="app-icon" src="{html.escape(img, quote=True)}" alt="{html.escape(icon_alt, quote=True)}" width="96" height="96">' if img else ''}
+      <div>
+        <h1>{html.escape(name)}</h1>
+        <p class="tagline">{html.escape(tagline)}</p>
+        <div class="actions">
+          <a class="button primary" href="{html.escape(store_url, quote=True)}">{html.escape(str(strings['view_on_app_store']))}</a>
+          <a class="button" href="{html.escape(apps_index_href(locale), quote=True)}">{html.escape(str(strings['all_apps']))}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>{html.escape(str(strings['overview']))}</h2>
+{html_paragraphs(overview)}
+    </section>
+{screenshot_html}
+    <section class="section">
+      <h2>{html.escape(str(strings['store_note_heading']))}</h2>
+      <p>{html.escape(str(strings['store_note']))}</p>
+      <p><a class="button primary" href="{html.escape(store_url, quote=True)}">{html.escape(str(strings['open_on_app_store']).format(name=name))}</a></p>
+      <p class="meta">{html.escape(str(strings['last_updated']))}: {html.escape(last_updated(app))}</p>
+    </section>
+  </main>
+"""
+    content = {"name": name, "meta_description": truncate_text(tagline, 120), "faq": []}
+    return render_shell(
+        f"{name} | ZEC Apps",
+        content["meta_description"],
+        page_url(app, locale),
+        body,
+        img,
+        locale,
+        json_ld(app, content, locale),
+        alternates,
+        lang_links,
+    )
+
+
 def render_app_mini_card(app: dict[str, Any], overrides: dict[str, Any], locale: str = DEFAULT_LOCALE) -> str:
     strings = ui_strings(locale)
-    localized_name = override_string(localized_override(app, overrides, locale).get("name"), app_name(app))
+    localized_name = display_name(app, overrides, locale)
     icon_alt = str(strings["icon_alt"]).format(name=localized_name)
     img = icon_url(app)
     icon = f'<img class="mini-icon" src="{html.escape(img, quote=True)}" alt="{html.escape(icon_alt, quote=True)}" loading="lazy">' if img else ""
@@ -1140,7 +1351,7 @@ def render_app_mini_card(app: dict[str, Any], overrides: dict[str, Any], locale:
     return f"""        <article class="app-mini-card">
           {icon}
           <h2><a href="{detail_href}">{html.escape(localized_name)}</a></h2>
-          <p>{html.escape(short_description(app, overrides, locale))}</p>
+          <p>{html.escape(light_short_description(app, locale) if locale in LIGHT_LOCALES else short_description(app, overrides, locale))}</p>
           <div class="app-actions">
             <a class="app-link primary" href="{detail_href}">{html.escape(str(strings['details']))}</a>
             <a class="app-link" href="{html.escape(app_store_url(app, locale), quote=True)}">{html.escape(str(strings['app_store_link']))}</a>
@@ -1289,7 +1500,8 @@ def write_detail_pages(apps: list[dict[str, Any]], overrides: dict[str, Any], ct
         for locale in extra_locales:
             locale_dir = app_dir / locale
             locale_dir.mkdir(parents=True, exist_ok=True)
-            write_page(locale_dir / "index.html", render_detail_page(app, overrides, ctx, locale))
+            page = render_light_detail_page(app, overrides, locale) if locale in LIGHT_LOCALES else render_detail_page(app, overrides, ctx, locale)
+            write_page(locale_dir / "index.html", page)
             generated_urls.append(page_url(app, locale))
     return generated_urls
 
@@ -1330,18 +1542,23 @@ def write_category_pages(
     return generated_urls
 
 
+def light_index_locales(apps: list[dict[str, Any]]) -> list[str]:
+    return [code for code in LIGHT_LOCALES if any(code in app.get("l10n", {}) for app in apps)]
+
+
 def write_locale_indexes(apps: list[dict[str, Any]], overrides: dict[str, Any], locales: list[str]) -> list[str]:
-    extra_locales = [locale for locale in locales if locale != DEFAULT_LOCALE]
+    extra_locales = [locale for locale in locales if locale != DEFAULT_LOCALE] + light_index_locales(apps)
     remove_generated_dirs(set(extra_locales), LOCALE_INDEX_MARKER)
     generated_urls: list[str] = []
     page_locales = [DEFAULT_LOCALE] + extra_locales
     for locale in extra_locales:
+        locale_apps = [app for app in apps if locale in app.get("l10n", {})] if locale in LIGHT_LOCALES else apps
         locale_dir = APPS_DIR / locale
         locale_dir.mkdir(parents=True, exist_ok=True)
         (locale_dir / LOCALE_INDEX_MARKER).write_text("Generated by scripts/update_apps_page.py\n", encoding="utf-8")
         write_page(
             locale_dir / "index.html",
-            render_locale_apps_index(apps, overrides, locale, page_locales),
+            render_locale_apps_index(locale_apps, overrides, locale, page_locales),
         )
         generated_urls.append(apps_index_url(locale))
     return generated_urls
@@ -1361,45 +1578,54 @@ def update_apps_index(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> 
 
 
 def update_home_featured(apps: list[dict[str, Any]], ctx: "BuildContext") -> None:
-    """Fill the top page's featured-app cards and app count from the App Store lookup."""
-    if not HOME_PAGE.exists() or not HOME_FEATURED_JSON.exists():
+    """Fill the top pages' featured-app cards and app count from the App Store lookup."""
+    if not HOME_FEATURED_JSON.exists():
         return
-    html_text = HOME_PAGE.read_text(encoding="utf-8")
-    if HOME_FEATURED_START not in html_text:
-        return
+    entries = json.loads(HOME_FEATURED_JSON.read_text(encoding="utf-8"))
     by_bundle = {str(app.get("bundleId", "")).strip(): app for app in apps}
-    items = []
-    for entry in json.loads(HOME_FEATURED_JSON.read_text(encoding="utf-8")):
-        app = by_bundle.get(entry["bundleId"])
-        if not app:
-            ctx.warnings.append(f"home featured app not on the App Store: {entry['bundleId']}")
+    for page, locale in ((HOME_PAGE, "ja"), (HOME_PAGE_EN, DEFAULT_LOCALE)):
+        if not page.exists():
             continue
-        items.append({"name": entry["name"], "q": entry["q"], "d": entry["d"],
-                      "icon": icon_url(app), "url": app_store_url(app, "ja")})
-    cards = []
-    for it in items:
-        e = {k: html.escape(v, quote=True) for k, v in it.items()}
-        cards.append(
-            f'      <a class="work" href="{e["url"]}" target="_blank" rel="noopener">'
-            f'<img alt="" src="{e["icon"]}" width="64" height="64" loading="lazy">'
-            f'<q>{e["q"]}</q><b>{e["name"]}</b><p>{e["d"]}</p><span class="go">App Store ↗</span></a>'
-        )
-    data = json.dumps(items, ensure_ascii=False).replace("</", "<\\/")
-    block = "\n".join([HOME_FEATURED_START, '    <div class="works">', *cards, "    </div>",
-                         f'    <script type="application/json" id="featured-data">{data}</script>',
-                         f"    {HOME_FEATURED_END}"])
-    updated = re.sub(rf"{re.escape(HOME_FEATURED_START)}.*?{re.escape(HOME_FEATURED_END)}", lambda _: block, html_text, count=1, flags=re.DOTALL)
-    updated = re.sub(rf"{re.escape(HOME_COUNT_START)}.*?{re.escape(HOME_COUNT_END)}",
-                     lambda _: f"{HOME_COUNT_START}{len(apps)}{HOME_COUNT_END}", updated, flags=re.DOTALL)
-    if updated != html_text:
-        CHANGED_PAGES.add(HOME_PAGE)
-        HOME_PAGE.write_text(updated, encoding="utf-8", newline="\n")
+        html_text = page.read_text(encoding="utf-8")
+        if HOME_FEATURED_START not in html_text:
+            continue
+        items = []
+        for entry in entries:
+            app = by_bundle.get(entry["bundleId"])
+            if not app:
+                if locale == "ja":
+                    ctx.warnings.append(f"home featured app not on the App Store: {entry['bundleId']}")
+                continue
+            text = entry if locale == "ja" else entry.get(locale)
+            if not isinstance(text, dict):
+                ctx.warnings.append(f"home featured app has no {locale} text: {entry['bundleId']}")
+                continue
+            items.append({"name": text["name"], "q": text["q"], "d": text["d"],
+                          "icon": icon_url(app), "url": app_store_url(app, locale)})
+        cards = []
+        for it in items:
+            e = {k: html.escape(v, quote=True) for k, v in it.items()}
+            cards.append(
+                f'      <a class="work" href="{e["url"]}" target="_blank" rel="noopener">'
+                f'<img alt="" src="{e["icon"]}" width="64" height="64" loading="lazy">'
+                f'<q>{e["q"]}</q><b>{e["name"]}</b><p>{e["d"]}</p><span class="go">App Store ↗</span></a>'
+            )
+        data = json.dumps(items, ensure_ascii=False).replace("</", "<\\/")
+        block = "\n".join([HOME_FEATURED_START, '    <div class="works">', *cards, "    </div>",
+                             f'    <script type="application/json" id="featured-data">{data}</script>',
+                             f"    {HOME_FEATURED_END}"])
+        updated = re.sub(rf"{re.escape(HOME_FEATURED_START)}.*?{re.escape(HOME_FEATURED_END)}", lambda _: block, html_text, count=1, flags=re.DOTALL)
+        updated = re.sub(rf"{re.escape(HOME_COUNT_START)}.*?{re.escape(HOME_COUNT_END)}",
+                         lambda _: f"{HOME_COUNT_START}{len(apps)}{HOME_COUNT_END}", updated, flags=re.DOTALL)
+        if updated != html_text:
+            CHANGED_PAGES.add(page)
+            page.write_text(updated, encoding="utf-8", newline="\n")
 
 
 def write_sitemap(urls: list[str]) -> None:
     unique_urls = []
     seen: set[str] = set()
-    for url in [SITE_ORIGIN + "/", SITE_ORIGIN + "/apps/", SITE_ORIGIN + "/works/"] + urls:
+    for url in [SITE_ORIGIN + "/", SITE_ORIGIN + "/en/", SITE_ORIGIN + "/apps/", SITE_ORIGIN + "/works/"] + urls:
         if url not in seen:
             seen.add(url)
             unique_urls.append(url)
@@ -1472,6 +1698,9 @@ def write_llms(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> None:
     for slug in CATEGORY_DEFINITIONS:
         definition = category_definition(slug, DEFAULT_LOCALE)
         lines.append(f"- {definition['title']}: https://zec-inc.jp/apps/{slug}/")
+    lines.extend(["", "## Localized App Indexes"])
+    for locale in ["ja"] + light_index_locales(apps):
+        lines.append(f"- {LANGUAGE_NAMES[locale]}: {apps_index_url(locale)}")
     lines.extend(
         [
             "",
