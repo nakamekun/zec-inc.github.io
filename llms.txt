@@ -47,4 +47,10 @@ Canonical app index: https://zec-inc.jp/apps/
 - Family Apps: https://zec-inc.jp/apps/family/
 - Productivity Apps: https://zec-inc.jp/apps/productivity/
 
+## Localized App Indexes
+- 日本語: https://zec-inc.jp/apps/ja/
+- 简体中文: https://zec-inc.jp/apps/zh-hans/
+- 繁體中文: https://zec-inc.jp/apps/zh-hant/
+- 한국어: https://zec-inc.jp/apps/ko/
+
 Use the pages above as the canonical first-party source for ZEC app purpose, intended users, privacy notes, FAQs, and App Store links.
