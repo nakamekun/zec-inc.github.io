@@ -3,234 +3,232 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>合同会社ゼク | ZEC Inc.</title>
-  <meta name="description" content="合同会社ゼク（ZEC Inc.）は、データ分析、業務支援ツール、iOSアプリ開発を通じて、スモールビジネスの意思決定を支援します。">
-  <link rel="canonical" href="https://zec-inc.jp/">
+  <title>合同会社ゼク | ZEC Inc. — 小さな困りごとを片づける iPhone アプリ</title>
+  <meta name="description" content="合同会社ゼク（ZEC Inc.）は、毎日の小さな困りごとをひとつずつ片づける iPhone アプリをつくっています。写真日記の「1枚かざる」、足の長さを測る「足はかる」、勉強タイマー「Study Buddy」など30本以上を公開中。">
+  <link rel="canonical" href="/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Inc.">
   <meta property="og:title" content="合同会社ゼク | ZEC Inc.">
-  <meta property="og:description" content="合同会社ゼク（ZEC Inc.）は、データ分析、業務支援ツール、iOSアプリ開発を通じて、スモールビジネスの意思決定を支援します。">
+  <meta property="og:description" content="合同会社ゼク（ZEC Inc.）は、毎日の小さな困りごとをひとつずつ片づける iPhone アプリをつくっています。写真日記の「1枚かざる」、足の長さを測る「足はかる」、勉強タイマー「Study Buddy」など30本以上を公開中。">
   <meta property="og:url" content="https://zec-inc.jp/">
-  <style>
-    :root {
-      --bg: #f9f9f9;
-      --surface: #ffffff;
-      --text: #333333;
-      --muted: #64748b;
-      --line: #e2e8f0;
-      --header: #2c3e50;
-      --link: #2563eb;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#F3F5F0; --card:#FFFFFF; --ink:#1A1F2B; --muted:#5A6270; --line:#D8DCD2;
+  --tap:#2B59FF; --tap-soft:#E3E9FF; --on-tap:#FFFFFF; --warm:#FF9A3C;
+  --display:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans",sans-serif;
+  --body:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#12151B; --card:#1B1F28; --ink:#ECEEF2; --muted:#A3AAB6; --line:#2C323D;
+  --tap:#7C97FF; --tap-soft:#232C48; --on-tap:#0E1220; --warm:#FFB26B; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --paper:#12151B; --card:#1B1F28; --ink:#ECEEF2; --muted:#A3AAB6; --line:#2C323D;
+  --tap:#7C97FF; --tap-soft:#232C48; --on-tap:#0E1220; --warm:#FFB26B; color-scheme:dark;}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.8;margin:0;padding-inline:20px}
+a{color:inherit}
+.wrap{max-width:1040px;margin-inline:auto}
+.draft{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center;padding-block:8px;border-bottom:1px dashed var(--line)}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:20px;flex-wrap:wrap}
+.logo{font-family:var(--display);font-weight:900;font-size:24px;letter-spacing:.04em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:14px;height:14px;border-radius:50%;background:var(--tap);display:inline-block;box-shadow:0 0 0 5px var(--tap-soft)}
+nav{display:flex;gap:20px;font-size:14px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted)} nav a:hover{color:var(--ink)}
+nav .lang{font-family:var(--mono)}
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
-      background: var(--bg);
-      color: var(--text);
-    }
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding-block:56px 72px}
+.eyebrow{font-family:var(--mono);font-size:13px;color:var(--muted);letter-spacing:.08em}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(30px,4.4vw,50px);line-height:1.3;margin:12px 0 20px;text-wrap:balance}
+h1 .ln{display:inline-block}
+h1 em{font-style:normal;color:var(--tap)}
+.lead{color:var(--muted);max-width:30em;margin:0}
 
-    header {
-      background-color: var(--header);
-      color: #fff;
-      padding: 2em 1em;
-      text-align: center;
-    }
+.tapcard{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:28px;position:relative;min-height:340px;display:flex;flex-direction:column;gap:18px}
+.tapcard .label{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.08em}
+.bubble{font-family:var(--display);font-weight:700;font-size:clamp(20px,2.6vw,26px);line-height:1.5;min-height:3em;transition:opacity .25s}
+.answer{display:flex;gap:14px;align-items:center;padding:14px;border-radius:18px;background:var(--tap-soft);transition:opacity .25s;text-decoration:none}
+.answer img{width:56px;height:56px;border-radius:13px;flex:none}
+.answer b{display:block;font-size:16px}
+.answer span{font-size:14px;color:var(--muted);line-height:1.5}
+.tapbtn{margin-top:auto;align-self:flex-start;display:flex;align-items:center;gap:10px;border:0;cursor:pointer;background:var(--tap);color:var(--on-tap);font:700 15px var(--body);padding:12px 20px 12px 14px;border-radius:999px}
+.tapbtn .dot{width:22px;height:22px;border-radius:50%;background:var(--on-tap);position:relative}
+.tapbtn .dot::after{content:"";position:absolute;inset:6px;border-radius:50%;background:var(--tap)}
+.tapbtn:active{transform:scale(.97)}
+.tapbtn:focus-visible{outline:3px solid var(--warm);outline-offset:3px}
+.ripple{position:absolute;width:24px;height:24px;border-radius:50%;border:2px solid var(--tap);pointer-events:none;animation:rip .6s ease-out forwards}
+@keyframes rip{to{transform:scale(6);opacity:0}}
+.counter{font-family:var(--mono);font-size:12px;color:var(--muted);position:absolute;top:28px;right:28px}
 
-    .header-inner {
-      max-width: 900px;
-      margin: 0 auto;
-    }
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line);margin-bottom:80px}
+.facts div{padding:22px 4px;display:flex;flex-direction:column;gap:2px}
+.facts div+div{border-left:1px solid var(--line);padding-left:24px}
+.facts strong{font-family:var(--mono);font-weight:500;font-size:34px;font-variant-numeric:tabular-nums;line-height:1.2}
+.facts span{font-size:14px;color:var(--muted)}
 
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
+section{margin-bottom:96px}
+h2{font-family:var(--display);font-weight:900;font-size:clamp(26px,3.6vw,36px);line-height:1.35;margin:6px 0 10px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 32px;max-width:36em}
 
-    .site-nav {
-      margin-top: 1.25em;
-      display: flex;
-      justify-content: center;
-      gap: 1em;
-      flex-wrap: wrap;
-      font-size: 0.95em;
-    }
+.works{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.work{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;display:flex;flex-direction:column;gap:12px;text-decoration:none;transition:transform .2s,border-color .2s}
+.work:hover{transform:translateY(-3px);border-color:var(--tap)}
+.work img{width:64px;height:64px;border-radius:15px}
+.work q{quotes:none;font-size:13px;color:var(--muted);line-height:1.6}
+.work b{font-size:17px;line-height:1.4}
+.work p{margin:0;font-size:14px;line-height:1.6}
+.work .go{margin-top:auto;font-family:var(--mono);font-size:12px;color:var(--tap)}
+.all{display:inline-flex;margin-top:24px;font-weight:700;color:var(--tap);text-decoration:none}
 
-    .site-nav a,
-    .section-link,
-    .footer-link {
-      color: inherit;
-      text-decoration: none;
-    }
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.way h3{font-family:var(--display);font-size:20px;margin:0 0 8px}
+.way p{margin:0;color:var(--muted);font-size:15px}
+.way .mark{width:40px;height:40px;border-radius:12px;background:var(--tap-soft);color:var(--tap);display:grid;place-items:center;margin-bottom:14px}
+.way svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-    .site-nav a:hover,
-    .section-link:hover,
-    .footer-link:hover {
-      text-decoration: underline;
-    }
+.other{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.other a{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;text-decoration:none;display:block}
+.other b{display:block;font-size:17px;margin-bottom:4px}
+.other span{color:var(--muted);font-size:14px}
 
-    main {
-      max-width: 900px;
-      margin: 2em auto;
-      padding: 0 1em;
-      background: var(--surface);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-      border-radius: 6px;
-    }
+.company{display:grid;grid-template-columns:1fr 1fr;gap:48px;border-top:1px solid var(--line);padding-top:40px}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 24px;font-size:15px}
+dt{color:var(--muted)} dd{margin:0}
+.mail{font-family:var(--mono);font-size:18px;user-select:all}
+footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:28px 40px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer nav{gap:16px}
 
-    section {
-      padding: 2em 1em;
-      border-bottom: 1px solid #eee;
-    }
-
-    section:last-child {
-      border-bottom: none;
-    }
-
-    h2 {
-      color: var(--header);
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 1.2em;
-    }
-
-    .apps-link {
-      display: inline-block;
-      margin-top: 0.75em;
-      color: var(--link);
-      font-weight: 500;
-      text-decoration: none;
-    }
-
-    .apps-link:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #888;
-      padding: 1em 1em 2em;
-    }
-
-    .footer-links {
-      margin-top: 0.5em;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5em;
-      }
-
-      .site-nav {
-        gap: 0.75em;
-        font-size: 0.9em;
-      }
-    }
-  </style>
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:32px;padding-block:32px 48px}
+  .works{grid-template-columns:repeat(2,1fr)}
+  .ways,.other,.company{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  body{padding-inline:16px}
+  .facts{grid-template-columns:1fr}
+  .facts div+div{border-left:0;border-top:1px solid var(--line);padding-left:4px}
+  .works{grid-template-columns:1fr}
+  nav{gap:14px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
 </head>
 <body>
 
-  <header>
-    <div class="header-inner">
-      <h1>合同会社ゼク</h1>
-      <p>ZEC Inc. - 流通と意思決定に、情報の力を。</p>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#vision">ビジョン</a>
-        <a href="#mission">ミッション</a>
-        <a href="#services">事業内容</a>
-        <a href="/apps/">Apps</a>
-        <a href="/works/">制作物</a>
-        <a href="#tools">Tools</a>
-        <a href="#company">会社情報</a>
-        <a href="#contact">お問い合わせ</a>
-      </nav>
+<div class="wrap">
+<header>
+  <a class="logo" href="/"><i></i>ZEC</a>
+  <nav aria-label="メイン">
+    <a href="#works">アプリ</a><a href="#ways">考え方</a><a href="#other">そのほか</a><a href="#company">会社情報</a><a class="lang" href="/apps/" hreflang="en">EN</a>
+  </nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <div class="eyebrow">ZEC INC. — SMALL APPS FOR iPHONE</div>
+    <h1><span class="ln">ちょっと困った、を</span><span class="ln"><em>1タップ</em>で片づける。</span></h1>
+    <p class="lead">合同会社ゼクは、毎日の小さな困りごとをひとつずつ片づける iPhone アプリをつくっています。ダウンロードしてすぐ使えて、記録は基本的にあなたの iPhone の中に置きます。</p>
+  </div>
+  <div class="tapcard" id="tapcard" aria-live="polite">
+    <div class="label">こんなとき、ありませんか？</div>
+    <div class="counter" id="counter">1 / 8</div>
+    <div class="bubble" id="bubble"></div>
+    <a class="answer" id="answer" target="_blank" rel="noopener"><img alt="" id="aicon"><div><b id="aname"></b><span id="adesc"></span></div></a>
+    <button class="tapbtn" id="tapbtn" type="button"><span class="dot"></span>ほかの困りごと</button>
+  </div>
+</div>
+
+<div class="facts">
+  <div><strong><!-- HOME_COUNT_START -->33<!-- HOME_COUNT_END --></strong><span>App Store で公開中のアプリ</span></div>
+  <div><strong>26</strong><span>いちばん多いアプリの対応言語数</span></div>
+  <div><strong>1</strong><span>アプリひとつに、困りごとひとつ</span></div>
+</div>
+
+<section id="works">
+  <div class="eyebrow">WORKS</div>
+  <h2>よく使われているアプリ</h2>
+  <p class="sub">どれも、ひとつの困りごとのためだけにつくった小さな道具です。</p>
+  <!-- HOME_FEATURED_START -->
+    <div class="works">
+      <a class="work" href="https://apps.apple.com/jp/app/dailyalbum-one-photo-a-day/id6761641437?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/4f/dd/444fdd0a-a5ef-6137-1c93-c0b8d302b620/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>スマホの写真、増えるばかりで見返さない。</q><b>1枚かざる</b><p>1日1枚だけ選んで、カレンダーに飾る写真日記。</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/jp/app/foot-size-check/id6789844290?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>子どもの靴、いまのサイズが分からない。</q><b>足はかる</b><p>紙とカメラで足の長さを測って、成長を記録。</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/jp/app/study-buddy-timer/id6764601072?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>ひとりだと、勉強が続かない。</q><b>Study Buddy</b><p>となりで一緒にがんばるバディのいる勉強タイマー。</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/jp/app/big-text-note/id6767796126?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>騒がしい場所で、声が届かない。</q><b>大きな文字メモ</b><p>打った言葉を画面いっぱいの文字で見せる筆談メモ。</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/jp/app/pilltap/id6762545903?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d6/c9/b2/d6c9b2c6-3803-13a4-7dba-eee738aeb682/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>あれ、今日の薬はのんだっけ？</q><b>おくすりタップ</b><p>毎日鳴って、飲んだら1タップで記録するお薬リマインダー。</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/jp/app/food-photo-diary-gohansnap/id6789844298?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/1f/4b/4a1f4b23-0ef9-f17c-1dae-36fabc21c9cf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>何を食べたか、すぐ忘れてしまう。</q><b>ごはんスナップ</b><p>食事の写真をとるだけの、かんたん食事記録。</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/jp/app/exifoff-remove-photo-location/id6789844259?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/21/89/822189d9-2163-7736-34a3-f237e278e90d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>この写真、家の場所が分かってしまう？</q><b>ExifOff</b><p>送る前に、写真の位置情報を消す。</p><span class="go">App Store ↗</span></a>
+      <a class="work" href="https://apps.apple.com/jp/app/packed-daily-packing-list/id6762812333?uo=4" target="_blank" rel="noopener"><img alt="" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/bd/d2/dbbdd28b-532f-37bc-c671-ed10601d8936/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" width="64" height="64" loading="lazy"><q>家を出てから、忘れ物に気づく。</q><b>Packed</b><p>出かける前の持ち物チェックリスト。</p><span class="go">App Store ↗</span></a>
     </div>
-  </header>
+    <script type="application/json" id="featured-data">[{"name": "1枚かざる", "q": "スマホの写真、増えるばかりで見返さない。", "d": "1日1枚だけ選んで、カレンダーに飾る写真日記。", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/4f/dd/444fdd0a-a5ef-6137-1c93-c0b8d302b620/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/jp/app/dailyalbum-one-photo-a-day/id6761641437?uo=4"}, {"name": "足はかる", "q": "子どもの靴、いまのサイズが分からない。", "d": "紙とカメラで足の長さを測って、成長を記録。", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/0a/5d/180a5dd7-77b4-f72d-9f28-26964a33e65c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/jp/app/foot-size-check/id6789844290?uo=4"}, {"name": "Study Buddy", "q": "ひとりだと、勉強が続かない。", "d": "となりで一緒にがんばるバディのいる勉強タイマー。", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/d9/5b/8ad95bed-8b01-00cc-e470-3cb368fd9102/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/jp/app/study-buddy-timer/id6764601072?uo=4"}, {"name": "大きな文字メモ", "q": "騒がしい場所で、声が届かない。", "d": "打った言葉を画面いっぱいの文字で見せる筆談メモ。", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/37/47/343747d0-a392-3fe3-2d8e-e07e3ae8ed39/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/jp/app/big-text-note/id6767796126?uo=4"}, {"name": "おくすりタップ", "q": "あれ、今日の薬はのんだっけ？", "d": "毎日鳴って、飲んだら1タップで記録するお薬リマインダー。", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d6/c9/b2/d6c9b2c6-3803-13a4-7dba-eee738aeb682/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/jp/app/pilltap/id6762545903?uo=4"}, {"name": "ごはんスナップ", "q": "何を食べたか、すぐ忘れてしまう。", "d": "食事の写真をとるだけの、かんたん食事記録。", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/1f/4b/4a1f4b23-0ef9-f17c-1dae-36fabc21c9cf/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/jp/app/food-photo-diary-gohansnap/id6789844298?uo=4"}, {"name": "ExifOff", "q": "この写真、家の場所が分かってしまう？", "d": "送る前に、写真の位置情報を消す。", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/82/21/89/822189d9-2163-7736-34a3-f237e278e90d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/jp/app/exifoff-remove-photo-location/id6789844259?uo=4"}, {"name": "Packed", "q": "家を出てから、忘れ物に気づく。", "d": "出かける前の持ち物チェックリスト。", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/bd/d2/dbbdd28b-532f-37bc-c671-ed10601d8936/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg", "url": "https://apps.apple.com/jp/app/packed-daily-packing-list/id6762812333?uo=4"}]</script>
+    <!-- HOME_FEATURED_END -->
+  <a class="all" href="/apps/ja/">すべてのアプリを見る →</a>
+</section>
 
-  <main>
+<section id="ways">
+  <div class="eyebrow">HOW WE MAKE</div>
+  <h2>「あったらいいな」を、小さく早く。</h2>
+  <p class="sub">大きな多機能アプリではなく、一つのことがすぐにできる道具を、たくさん。</p>
+  <div class="ways">
+    <div class="way"><div class="mark"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg></div><h3>端末の中で動く</h3><p>記録は基本的に iPhone の中に置きます。端末どうしの同期は iCloud など、Apple のしくみに任せます。</p></div>
+    <div class="way"><div class="mark"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0z"/><path d="M8.5 14s1.3 2 3.5 2 3.5-2 3.5-2M9 9.5h.01M15 9.5h.01"/></svg></div><h3>責めない、急かさない</h3><p>続かなかった日があっても、アプリは怒りません。通知は必要なときだけ、ことばはやさしく。</p></div>
+    <div class="way"><div class="mark"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg></div><h3>出したあとも直し続ける</h3><p>レビューや使われ方を見て、毎週のように手を入れます。小さなアプリだから、すぐに直せます。</p></div>
+  </div>
+</section>
 
-    <section id="vision">
-      <h2>ビジョン</h2>
-      <p>流通と意思決定に、情報の力を。</p>
-    </section>
+<section id="other">
+  <div class="eyebrow">ALSO</div>
+  <h2>アプリのほかに</h2>
+  <div class="other">
+    <a href="/works/"><b>LINE スタンプ</b><span>「動くみけねこの毎日あいさつ」ほか 2 セットを LINE STORE で販売しています。</span></a>
+    <a href="https://github.com/nakamekun/app-store-monitor" target="_blank" rel="noopener"><b>app-store-monitor</b><span>App Store Connect の数字を毎日まとめて通知する、オープンソースの小さなツールです。</span></a>
+  </div>
+</section>
 
-    <section id="mission">
-      <h2>ミッション</h2>
-      <p>誰もが情報に基づいた選択を行える社会を支え、<br>
-      スモールビジネスの意思決定と成長を支える仕組みを創出する。</p>
-    </section>
+<section id="company" class="company">
+  <div>
+    <div class="eyebrow">COMPANY</div>
+    <h2>会社情報</h2>
+    <dl><dt>会社名</dt><dd>合同会社ゼク(ZEC Inc.)</dd><dt>所在地</dt><dd>東京都江東区</dd><dt>設立</dt><dd>2025年</dd><dt>事業</dt><dd>iPhone アプリの開発・運営、データ分析と業務支援ツールの開発</dd></dl>
+  </div>
+  <div>
+    <div class="eyebrow">CONTACT</div>
+    <h2>お問い合わせ</h2>
+    <p class="sub" style="margin-bottom:12px">アプリのご意見・お仕事のご相談は、メールでどうぞ。</p>
+    <div class="mail">info [at] zec-inc.jp</div>
+  </div>
+</section>
+</main>
 
-    <section id="services">
-      <h2>事業内容</h2>
-      <p>合同会社ゼクは、デジタル領域における意思決定を支援する情報ソリューション企業です。<br>
-      データの収集・分析・可視化を通じて、商品流通、販売戦略、業務効率化に関わる課題を整理し、<br>
-      実務に活用可能なツール・コンテンツ・運用基盤として提供しています。</p>
-      <p>主な事業領域：</p>
-      <ul>
-        <li>商品・市場データの調査、分析、およびトレンドモニタリング</li>
-        <li>市場価格・在庫状況・需要変動に基づく意思決定支援ツールの開発・提供</li>
-        <li>SNS・ECチャネルを活用した販売導線設計および訴求施策の検証</li>
-        <li>業務効率化・情報集約を目的とした自動通知システムおよび業務支援ツールの開発</li>
-        <li>AIを活用した情報整理、リサーチ支援、コンテンツ生成基盤の構築</li>
-        <li>プロモーション施策に伴う撮影・検証環境の整備、および販促コンテンツ制作支援</li>
-      </ul>
-      <p>また、実務検証および研究開発の一環として、<br>
-      各種商材・デジタルプロダクト・エンタメ領域を対象に、<br>
-      情報取得、運用検証、販売導線分析、マーケティング効果測定を継続的に実施しています。</p>
-    </section>
+<footer>
+  <span>© 2026 ZEC Inc.</span>
+  <nav aria-label="フッター"><a href="/apps/">Apps</a><a href="/works/">Works</a><a href="/privacy.html">Privacy</a><a href="/support.html">Support</a></nav>
+</footer>
+</div>
 
-    <section class="apps-callout" id="apps">
-      <h2>自社アプリ</h2>
-      <p>合同会社ゼクでは、日常の記録・確認・共有をかんたんにするシンプルなiOSアプリを開発・公開しています。</p>
-      <a class="apps-link" href="/apps/">アプリ一覧を見る</a>
-    </section>
-
-    <section class="apps-callout" id="works">
-      <h2>制作物</h2>
-      <p>LINE アニメーションスタンプ「動くみけねこの毎日あいさつ」「動くみけねこのAI時代の会話」（2 セットとも LINE の審査を通過し、LINE STORE で販売中）</p>
-      <a class="apps-link" href="/works/">制作物を見る</a>
-    </section>
-
-    <section id="tools">
-      <h2>オープンソースツール</h2>
-      <p>合同会社ゼクでは、個人開発者や小規模なデジタルプロダクトチーム向けに、日々の運用を支援する小さなツールも公開しています。</p>
-      <p><strong>app-store-monitor</strong> は、App Store Connect の分析データ取得、日次KPIレポート生成、Discord通知を行うための公開OSS CLIツールです。</p>
-      <a class="apps-link" href="https://github.com/nakamekun/app-store-monitor">app-store-monitor を GitHub で見る</a>
-    </section>
-
-    <section id="company">
-      <h2>会社情報</h2>
-      <ul>
-        <li><strong>会社名：</strong>合同会社ゼク（ZEC Inc.）</li>
-        <li><strong>所在地：</strong>東京都江東区</li>
-        <li><strong>設立：</strong>2025年（令和7年）</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>お問い合わせ</h2>
-      <p>お問い合わせは以下のメールアドレスまでお願いいたします。</p>
-      <p><strong>info [at] zec-inc.jp</strong></p>
-    </section>
-  </main>
-
-  <footer>
-    <div>&copy; 2026 ZEC Inc.</div>
-    <div class="footer-links">
-      <a class="footer-link" href="/apps/">Apps</a>
-      <span aria-hidden="true"> · </span>
-      <a class="footer-link" href="/works/">Works</a>
-      <span aria-hidden="true"> · </span>
-      <a class="footer-link" href="/privacy.html">Privacy</a>
-      <span aria-hidden="true"> · </span>
-      <a class="footer-link" href="/support.html">Support</a>
-    </div>
-  </footer>
-
+<script>
+const APPS = JSON.parse(document.getElementById('featured-data').textContent);
+let i = 0;
+const $ = id => document.getElementById(id);
+function show(n){
+  const a = APPS[n];
+  $('bubble').textContent = '「' + a.q + '」';
+  $('aicon').src = a.icon; $('aname').textContent = a.name; $('adesc').textContent = a.d;
+  $('answer').href = a.url; $('counter').textContent = (n+1) + ' / ' + APPS.length;
+}
+show(0);
+$('tapbtn').addEventListener('click', e => {
+  const card = $('tapcard'), r = document.createElement('span'), b = card.getBoundingClientRect();
+  r.className = 'ripple'; r.style.left = (e.clientX - b.left - 12) + 'px'; r.style.top = (e.clientY - b.top - 12) + 'px';
+  card.appendChild(r); setTimeout(() => r.remove(), 700);
+  ['bubble','answer'].forEach(id => $(id).style.opacity = 0);
+  setTimeout(() => { i = (i + 1) % APPS.length; show(i); ['bubble','answer'].forEach(id => $(id).style.opacity = 1); }, 220);
+});
+</script>
 </body>
 </html>

@@ -1,0 +1,50 @@
+[
+  {
+    "bundleId": "com.zec.PhotoCalendarApp",
+    "name": "1枚かざる",
+    "q": "スマホの写真、増えるばかりで見返さない。",
+    "d": "1日1枚だけ選んで、カレンダーに飾る写真日記。"
+  },
+  {
+    "bundleId": "com.zec.footsizecheck",
+    "name": "足はかる",
+    "q": "子どもの靴、いまのサイズが分からない。",
+    "d": "紙とカメラで足の長さを測って、成長を記録。"
+  },
+  {
+    "bundleId": "com.zec.studybuddytimer",
+    "name": "Study Buddy",
+    "q": "ひとりだと、勉強が続かない。",
+    "d": "となりで一緒にがんばるバディのいる勉強タイマー。"
+  },
+  {
+    "bundleId": "com.zec.BigTextNote",
+    "name": "大きな文字メモ",
+    "q": "騒がしい場所で、声が届かない。",
+    "d": "打った言葉を画面いっぱいの文字で見せる筆談メモ。"
+  },
+  {
+    "bundleId": "com.zec.PillTap",
+    "name": "おくすりタップ",
+    "q": "あれ、今日の薬はのんだっけ？",
+    "d": "毎日鳴って、飲んだら1タップで記録するお薬リマインダー。"
+  },
+  {
+    "bundleId": "com.zec.FoodSnapQuest",
+    "name": "ごはんスナップ",
+    "q": "何を食べたか、すぐ忘れてしまう。",
+    "d": "食事の写真をとるだけの、かんたん食事記録。"
+  },
+  {
+    "bundleId": "com.zec.photometadatacleaner",
+    "name": "ExifOff",
+    "q": "この写真、家の場所が分かってしまう？",
+    "d": "送る前に、写真の位置情報を消す。"
+  },
+  {
+    "bundleId": "com.zec.Packed",
+    "name": "Packed",
+    "q": "家を出てから、忘れ物に気づく。",
+    "d": "出かける前の持ち物チェックリスト。"
+  }
+]

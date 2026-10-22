@@ -44,6 +44,12 @@ LOOKUP_CACHE = ROOT_DIR / "data" / "app-store-lookup-cache.json"
 LOOKUP_CACHE_JP = ROOT_DIR / "data" / "app-store-lookup-cache-jp.json"
 APPS_MANIFEST = ROOT_DIR / "data" / "apps-manifest.json"
 SITEMAP_XML = ROOT_DIR / "sitemap.xml"
+HOME_PAGE = ROOT_DIR / "index.html"
+HOME_FEATURED_JSON = ROOT_DIR / "data" / "home-featured.json"
+HOME_FEATURED_START = "<!-- HOME_FEATURED_START -->"
+HOME_FEATURED_END = "<!-- HOME_FEATURED_END -->"
+HOME_COUNT_START = "<!-- HOME_COUNT_START -->"
+HOME_COUNT_END = "<!-- HOME_COUNT_END -->"
 ROBOTS_TXT = ROOT_DIR / "robots.txt"
 LLMS_TXT = ROOT_DIR / "llms.txt"
 START_MARKER = "<!-- APPS_LIST_START -->"
@@ -1345,6 +1351,42 @@ def update_apps_index(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> 
         APPS_PAGE.write_text(updated, encoding="utf-8", newline="\n")
 
 
+def update_home_featured(apps: list[dict[str, Any]], ctx: "BuildContext") -> None:
+    """Fill the top page's featured-app cards and app count from the App Store lookup."""
+    if not HOME_PAGE.exists() or not HOME_FEATURED_JSON.exists():
+        return
+    html_text = HOME_PAGE.read_text(encoding="utf-8")
+    if HOME_FEATURED_START not in html_text:
+        return
+    by_bundle = {str(app.get("bundleId", "")).strip(): app for app in apps}
+    items = []
+    for entry in json.loads(HOME_FEATURED_JSON.read_text(encoding="utf-8")):
+        app = by_bundle.get(entry["bundleId"])
+        if not app:
+            ctx.warnings.append(f"home featured app not on the App Store: {entry['bundleId']}")
+            continue
+        items.append({"name": entry["name"], "q": entry["q"], "d": entry["d"],
+                      "icon": icon_url(app), "url": app_store_url(app, "ja")})
+    cards = []
+    for it in items:
+        e = {k: html.escape(v, quote=True) for k, v in it.items()}
+        cards.append(
+            f'      <a class="work" href="{e["url"]}" target="_blank" rel="noopener">'
+            f'<img alt="" src="{e["icon"]}" width="64" height="64" loading="lazy">'
+            f'<q>{e["q"]}</q><b>{e["name"]}</b><p>{e["d"]}</p><span class="go">App Store ↗</span></a>'
+        )
+    data = json.dumps(items, ensure_ascii=False).replace("</", "<\\/")
+    block = "\n".join([HOME_FEATURED_START, '    <div class="works">', *cards, "    </div>",
+                         f'    <script type="application/json" id="featured-data">{data}</script>',
+                         f"    {HOME_FEATURED_END}"])
+    updated = re.sub(rf"{re.escape(HOME_FEATURED_START)}.*?{re.escape(HOME_FEATURED_END)}", lambda _: block, html_text, count=1, flags=re.DOTALL)
+    updated = re.sub(rf"{re.escape(HOME_COUNT_START)}.*?{re.escape(HOME_COUNT_END)}",
+                     lambda _: f"{HOME_COUNT_START}{len(apps)}{HOME_COUNT_END}", updated, flags=re.DOTALL)
+    if updated != html_text:
+        CHANGED_PAGES.add(HOME_PAGE)
+        HOME_PAGE.write_text(updated, encoding="utf-8", newline="\n")
+
+
 def write_sitemap(urls: list[str]) -> None:
     unique_urls = []
     seen: set[str] = set()
@@ -1456,6 +1498,7 @@ def run_build(strict: bool = False) -> tuple[list[dict[str, Any]], list[str]]:
     apps = assign_slugs(fetch_apps(), overrides, ctx)
     locales = [DEFAULT_LOCALE] + site_locales(overrides)
     update_apps_index(apps, overrides)
+    update_home_featured(apps, ctx)
     detail_urls = write_detail_pages(apps, overrides, ctx)
     locale_index_urls = write_locale_indexes(apps, overrides, locales)
     category_urls = write_category_pages(apps, overrides, ctx, locales)
