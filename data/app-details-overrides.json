@@ -3396,7 +3396,7 @@
       "If text isn't reading well, change the OCR language or accuracy in Settings."
     ],
     "pricing": "OCR Copy is free to download and read up to 5 times a day. OCR Copy Pro, an auto-renewing subscription (yearly with a 1-week free trial, or monthly), removes the daily limit in the app, the share sheet, and Shortcuts. Copying, saving, and CSV export never count toward the limit, and if you used OCR Copy before version 1.5, reading stays unlimited. See the App Store listing for current prices and details.",
-    "privacy": "OCR runs entirely on your iPhone with Apple Vision, works offline, and photos and text are never sent to a server. Recognized text, line corrections, confidence values, and thumbnails are stored locally in the app. There is no account, no ads, and no tracking. Sharing text is always user-initiated through the iOS share sheet. Subscription purchases are handled by the App Store and your Apple Account.",
+    "privacy": "OCR runs entirely on your iPhone with Apple Vision, works offline, and photos and text are never sent to a server. From version 1.8, images you are working on (including straightened document images) are kept temporarily on your device and deleted when they are no longer needed: when a read fails or is redone, when you close the result, or when you delete it from history; anything left over is removed the next time the app starts. Suggested fixes for misread text are made by Apple's on-device AI on supported iPhones, and neither photos nor text leave your device. Saved history keeps recognized text, line corrections, confidence values, and thumbnails locally in the app. There is no account, no ads, and no tracking. Sharing text is always user-initiated through the iOS share sheet. Subscription purchases are handled by the App Store and your Apple Account.",
     "faq": [
       {
         "question": "Is OCR Copy free?",
@@ -3475,7 +3475,7 @@
           "うまく読み取れないときは、設定で読み取り言語や認識精度を変更します。"
         ],
         "pricing": "ダウンロードは無料で、1日5回まで読み取れます。OCRコピー Pro（自動更新の購読。年額は1週間の無料体験つき、月額もあり）にすると、アプリ・共有シート・ショートカットのすべてで1日の回数制限がなくなります。コピー・保存・CSVの書き出しは回数に数えません。1.5より前からお使いの方は、これまでどおり制限なしで読み取れます。最新の価格・詳細はApp Storeでご確認ください。",
-        "privacy": "文字の読み取りはApple Visionを使ってすべて iPhone の中で実行され、オフラインで使えます。写真やテキストを外部サーバーへ送信することはありません。認識テキスト、行の修正内容、信頼度、サムネイルはアプリ内にローカル保存されます。アカウント登録・広告・トラッキングもなく、テキストの共有はiOSの共有シートから自分で操作したときだけ行われます。購読のお支払いはApp StoreとApple アカウントで処理されます。",
+        "privacy": "文字の読み取りはApple Visionを使ってすべて iPhone の中で実行され、オフラインで使えます。写真やテキストを外部サーバーへ送信することはありません。1.8 からは、作業中の画像（まっすぐに整えた書類の画像を含む）を端末内に一時的に置き、読み取りの失敗や読み直しで不要になったとき、結果を閉じたとき、履歴を削除したときに消します。残ったものは次にアプリを開いたときに消します。読み間違いの直し案は、対応する iPhone で Apple の端末内 AI が作り、写真もテキストも端末の外へは出ません。保存した履歴には、認識テキスト、行の修正内容、信頼度、サムネイルだけがアプリ内に残ります。アカウント登録・広告・トラッキングもなく、テキストの共有はiOSの共有シートから自分で操作したときだけ行われます。購読のお支払いはApp StoreとApple アカウントで処理されます。",
         "faq": [
           {
             "question": "OCRコピーは無料ですか？",
