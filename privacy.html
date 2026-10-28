@@ -58,6 +58,9 @@
       <p>Body Rhythm Log では、オンにした場合に限り、ヘルスケアの「周期の記録（月経のあった日）」を読み、カレンダーに細い輪として表示します（読んだ内容は保存も送信もしません）。また「Save Intimacy to Health」をオンにした場合に限り、Intimacy を記録した日を「性行為（Sexual Activity）」としてヘルスケアに書き込みます。Release と Cycle は書き込まず、避妊に関する情報も書き込みません。スイッチをオフにすると、まだ始まっていない書き込みはすぐに止まります（進行中の 1 件だけは完了して残ることがあります）。設定の「Delete All Data」では、進行中の書き込みを待ってから、アプリが書き込んだ記録をヘルスケアからも削除します。削除に失敗した場合は、次に削除を試すために必要な管理情報だけを端末に残します。</p>
       <p class="en">In Body Rhythm Log, only if you turn it on, the app reads cycle (menstrual flow) days from Apple Health to draw a thin ring on the calendar; what it reads is not stored or sent. Only if you turn on "Save Intimacy to Health", the app writes the days you log Intimacy to Health as Sexual Activity. Release and Cycle are never written, and no contraceptive information is written. When you turn the switch off, writes that have not started stop immediately (one save already in progress may finish and remain). Settings &gt; Delete All Data waits for any save in progress, then also removes the records the app wrote to Health. If Health rejects the deletion, only the tracking needed to retry is kept on the device.</p>
 
+      <h2>リンクの行き先を確かめる機能</h2>
+      <p>CleanURL Tap の「行き先を確かめる」は、利用者がボタンを押したときだけ、bit.ly などのよく知られた短縮 URL サービスに HTTPS で 1 回問い合わせ（短縮リンクが続く場合は最大 3 回）、転送先の住所だけを読み取ります。行き先のページそのものは開きません。問い合わせ先は短縮サービスだけで、当社のサーバーには何も送りません。短縮サービス側には、通常どおりリンクを開いたときと同様に、アクセスの記録（IP アドレスや時刻など）が残ることがあります。リンクから追跡用の文字を外す処理は、これまでどおり端末の中だけで行います。</p>
+      <p class="en">In CleanURL Tap, "Check destination" contacts a well-known short-link service (such as bit.ly) over HTTPS only when you tap the button: once, or up to three times if short links are chained. It reads only the redirect address and never opens the destination page. Nothing is sent to our servers. The short-link service may keep an access record (such as your IP address and the time), just as when you open the link normally. Removing tracking parameters from links still happens only on your device.</p>
       <h2>端末内の AI と作業用の画像</h2>
       <p>一部のアプリ（例: OCR Copy の読み間違いの直し案）は、対応する iPhone で Apple の端末内 AI（Apple Intelligence）を使います。処理は iPhone の中だけで行い、写真やテキストを当社のサーバーや外部へ送信しません。AI の結果は案として表示し、利用者が確認して適用したものだけが使われます。</p>
       <p class="en">Some of our apps (for example, suggested fixes for misread text in OCR Copy) use Apple's on-device AI (Apple Intelligence) on supported iPhones. Processing happens only on your iPhone; photos and text are not sent to our servers or anywhere else. AI results are shown as suggestions, and only what you review and apply is used.</p>
@@ -76,7 +79,7 @@
 
       <h2>制定日</h2>
       <p>2026年7月</p>
-      <p>改定日: 2026年10月（「端末内の AI と作業用の画像」を追記、体調・健康に関わる記録を iCloud に保存しないことを明記、Body Rhythm Log のヘルスケアの読み書き・オフ時の扱い・全削除の扱いを追記、ヘルスケア連携の対象アプリに WaterDone を追加、ヘルスケア連携の対象アプリ表記を実態に合わせて修正、「ヘルスケア（Apple Health）を使う機能」、アプリ内の「ご意見・お問い合わせ」の扱いを追記）／2026年9月（「iCloud を使う機能」を追記）</p>
+      <p>改定日: 2026年10月（「リンクの行き先を確かめる機能」を追記、「端末内の AI と作業用の画像」を追記、体調・健康に関わる記録を iCloud に保存しないことを明記、Body Rhythm Log のヘルスケアの読み書き・オフ時の扱い・全削除の扱いを追記、ヘルスケア連携の対象アプリに WaterDone を追加、ヘルスケア連携の対象アプリ表記を実態に合わせて修正、「ヘルスケア（Apple Health）を使う機能」、アプリ内の「ご意見・お問い合わせ」の扱いを追記）／2026年9月（「iCloud を使う機能」を追記）</p>
     </section>
   </main>
   <footer class="site-foot">

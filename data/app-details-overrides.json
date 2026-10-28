@@ -1003,7 +1003,7 @@
       "Choose which cleanup categories are enabled in the app's settings."
     ],
     "pricing": "CleanURL Tap is free on the App Store, with no ads. App Store pricing can change, so check the store listing for current details.",
-    "privacy": "Cleanup happens on your device. According to the App Store listing, there is no account, advertising, analytics, link history, or network request for cleanup. For the authoritative summary of data practices, see the privacy label on the app's App Store page.",
+    "privacy": "Cleanup happens on your device. According to the App Store listing, there is no account, advertising, analytics, link history, or network request for cleanup. From version 1.5, only when you tap \"Check destination\" on a short link, the app asks that well-known short-link service once over HTTPS for the redirect address; it never opens the destination page. For the authoritative summary of data practices, see the privacy label on the app's App Store page.",
     "faq": [
       {
         "question": "What does CleanURL Tap do?",
@@ -1063,7 +1063,7 @@
           "消す種類は、アプリの設定でON・OFFを選べます。"
         ],
         "pricing": "CleanURL TapはApp Storeで無料で、広告もありません。最新の価格・提供状況はApp Storeでご確認ください。",
-        "privacy": "処理は端末内で完結します。App Storeの説明のとおり、アカウント、広告、解析、URL履歴、クリーン処理のための通信はありません。データの取り扱いの正式な内容は、App Storeページのプライバシーラベルをご確認ください。",
+        "privacy": "処理は端末内で完結します。App Storeの説明のとおり、アカウント、広告、解析、URL履歴、クリーン処理のための通信はありません。1.5 からは、短縮リンクで「行き先を確かめる」を押したときだけ、そのよく知られた短縮サービスに HTTPS で 1 回問い合わせて転送先の住所を読み取ります。行き先のページは開きません。データの取り扱いの正式な内容は、App Storeページのプライバシーラベルをご確認ください。",
         "faq": [
           {
             "question": "CleanURL Tapは何をするアプリですか？",
