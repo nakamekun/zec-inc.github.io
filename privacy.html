@@ -16,6 +16,11 @@
     .en{color:var(--muted);font-size:14px}
     .box{background:var(--accent-soft);border-radius:16px;padding:16px 20px;margin:20px 0}
     .box p{margin:0;font-weight:700}
+    details.app{border:1px solid var(--line, rgba(0,0,0,.12));border-radius:12px;margin:10px 0;padding:0 16px}
+    details.app summary{cursor:pointer;font-weight:700;padding:12px 0;list-style-position:inside}
+    details.app[open] summary{border-bottom:1px solid var(--line, rgba(0,0,0,.08));margin-bottom:8px}
+    details.app p, details.app ul{font-size:15px}
+    details.history summary{cursor:pointer;color:var(--muted);font-size:14px}
   </style>
 </head>
 <body>
@@ -29,51 +34,86 @@
     <section class="card">
       <div class="eyebrow">ZEC Inc.</div>
       <h1>プライバシーポリシー</h1>
-      <p class="lead">本ページは、合同会社ゼク（ZEC Inc.）が提供するWebサイト、アプリケーション、デジタルツールに関する基本的なプライバシーポリシーです。</p>
-      <p class="en">This page describes the general privacy policy for websites, applications, and digital tools provided by ZEC Inc.</p>
+      <p class="lead">本ページは、合同会社ゼク（ZEC Inc.）が提供するWebサイト、アプリケーション、デジタルツールに関する基本的なプライバシーポリシーです。アプリごとの細かな扱いは、下の「アプリごとの補足」にまとめています。</p>
+      <p class="en">This page describes the general privacy policy for websites, applications, and digital tools provided by ZEC Inc. App-specific details are listed under "App-specific notes" below.</p>
 
       <h2>基本方針</h2>
-      <p>当社は、利用者のプライバシーを尊重し、サービス提供に必要な範囲を超えて個人情報を取得しないよう努めます。</p>
-      <p class="en">We respect user privacy and aim to minimize data collection wherever possible.</p>
+      <p>当社は、利用者のプライバシーを尊重し、サービス提供に必要な範囲を超えて個人情報を取得しないよう努めます。当社のアプリはアカウント登録を求めず、広告やトラッキングのための情報を集めません。</p>
+      <p class="en">We respect user privacy and aim to minimize data collection. Our apps do not require an account and do not collect data for advertising or tracking.</p>
 
       <h2>取得する情報</h2>
-      <p>当社のアプリケーションでは、利用者が入力した情報は原則として端末内に保存され、外部へ送信されません。アプリごとに外部送信や追加の取得が必要な機能がある場合は、当該アプリ内または関連ページで明示します。</p>
-      <ul>
-        <li>アプリ内で利用者が入力・保存する記録、設定、メモ等</li>
-        <li>お問い合わせ時に利用者から提供されるメールアドレス、本文等</li>
-      </ul>
-      <p>アプリ内の「ご意見・お問い合わせ」から送られた内容（アプリ名・版・端末の種類・言語を含む）は Google フォームに保存され、アプリの改善とお問い合わせへの返信のためにだけ使います。</p>
-      <p class="en">Messages sent from "Feedback &amp; Contact" in our apps (including the app name, version, device type and language) are stored in Google Forms and used only to improve our apps and to reply to you.</p>
-      <p class="en">In general, data entered into our applications remains on your device and is not transmitted externally unless a specific feature clearly states otherwise.</p>
+      <p>アプリで利用者が入力・保存する記録、設定、写真、メモ等は、原則として利用者の端末の中に保存され、当社のサーバーには送信されません。外部と通信する機能がある場合は、その機能を使ったときだけ、必要な範囲で行います（下の「アプリごとの補足」を参照）。</p>
+      <p>アプリ内の「ご意見・お問い合わせ」から送られた内容（アプリ名・版・端末の種類・言語を含む）は Google フォームに保存され、アプリの改善とお問い合わせへの返信のためにだけ使います。お問い合わせの際に利用者から提供されたメールアドレス・本文も同様です。</p>
+      <p class="en">Records, settings, photos and notes you create in our apps are, in principle, stored on your device and are not sent to our servers. Features that communicate externally do so only when you use them and only as needed (see the app-specific notes). Messages sent from "Feedback &amp; Contact" (including the app name, version, device type and language) are stored in Google Forms and used only to improve our apps and to reply to you.</p>
+
+      <h2>端末への保存とバックアップ</h2>
+      <p>端末の中に保存したデータは、アプリを削除すると消えます。また、iPhone のバックアップ（iCloud バックアップやパソコンへのバックアップ）の対象になることがあり、その扱いは利用者の端末の設定と Apple の方針に従います。一部のアプリは、端末がロックされている間は開けない方式でデータを保存します。</p>
+      <p class="en">Data stored on your device is deleted when you delete the app. It may be included in your iPhone backup (iCloud Backup or a computer backup), which follows your device settings and Apple's policies. Some apps store data so that it cannot be opened while the device is locked.</p>
 
       <h2>iCloud を使う機能</h2>
-      <p>一部のアプリには、記録の同期・バックアップや、招待した相手との共有のために、Apple の iCloud（CloudKit）を使う機能があります。これらの機能を利用者がオンにした場合、データは利用者自身の iCloud アカウント（共有の場合は共有を作成した利用者の iCloud）に保存されます。当社のサーバーには送信されず、当社がその内容を閲覧することはできません。iCloud でのデータの取り扱いには、Apple のプライバシーポリシーが適用されます。</p>
-      <p class="en">Some of our apps offer features that use Apple's iCloud (CloudKit) to sync or back up your records, or to share them with people you invite. When you turn these features on, the data is stored in your own iCloud account (or, for sharing, in the iCloud account of the person who created the share). It is not sent to our servers, and we cannot view it. Apple's privacy policy applies to data stored in iCloud.</p>
-      <p>ただし、体調や健康に関わる記録（例: PoopTap の排便・症状の記録、PillTap の服薬の記録と処方箋などの写真、Body Rhythm Log の記録、ごはんスナップのカロリー欄）は、アプリが iCloud に保存することはありません。端末の中に保存し、バックアップが必要な場合は、利用者が書き出したファイルを自分で選んだ場所に保存します。</p>
-      <p class="en">However, records related to your health or condition (for example, bowel and symptom logs in PoopTap, medication logs and prescription photos in PillTap, logs in Body Rhythm Log, and the calorie field in GohanSnap) are never stored in iCloud by our apps. They are kept on your device; if you want a backup, you export a file and save it wherever you choose.</p>
+      <p>一部のアプリには、記録の同期・バックアップや、招待した相手との共有のために、Apple の iCloud（CloudKit）を使う機能があります。利用者がオンにした場合、データは利用者自身の iCloud アカウント（共有の場合は共有を作成した利用者の iCloud）に保存されます。当社のサーバーには送信されず、当社がその内容を閲覧することはできません。iCloud でのデータの取り扱いには、Apple のプライバシーポリシーが適用されます。体調や健康に関わる記録は、アプリが iCloud に保存することはありません。</p>
+      <p class="en">Some apps can use Apple's iCloud (CloudKit) to sync, back up, or share records with people you invite. When you turn this on, data is stored in your own iCloud account (for sharing, in the account of the person who created the share). It is not sent to our servers and we cannot view it. Apple's privacy policy applies. Records about your health or condition are never stored in iCloud by our apps.</p>
 
       <h2>ヘルスケア（Apple Health）を使う機能</h2>
-      <p>一部のアプリ（例: Sheep to Sleep、Moodwash、WaterDone）には、Apple のヘルスケアと連携する機能があります。この機能は初期状態ではオフで、利用者がオンにし、iPhone の画面で許可した種類のデータだけを読み書きします（例: マインドフルネスの時間、睡眠、歩数、心の状態、周期の記録、水分）。ヘルスケアから読んだデータは画面への表示や、アプリで記録した内容の修正のために端末の中で使うだけで、当社のサーバーには送信せず、iCloud にも保存しません。広告や第三者への提供には一切使いません。許可は iPhone の「設定」→「ヘルスケア」→「データアクセスとデバイス」からいつでも取り消せます。ヘルスケアのデータの取り扱いには、Apple のプライバシーポリシーも適用されます。</p>
-      <p class="en">Some of our apps (for example, Sheep to Sleep, Moodwash and WaterDone) can connect to Apple Health. This feature is off by default. When you turn it on, the app reads or writes only the data types you allow on your iPhone (for example, mindful minutes, sleep, steps, state of mind, cycle records or water). Data read from Health is used on your device only to show it to you or to correct records you made in the app. It is not sent to our servers, not stored in iCloud, and never used for advertising or shared with third parties. You can revoke access at any time in Settings &gt; Health &gt; Data Access &amp; Devices. Apple's privacy policy also applies to Health data.</p>
-      <p>Body Rhythm Log では、オンにした場合に限り、ヘルスケアの「周期の記録（月経のあった日）」を読み、カレンダーに細い輪として表示します（読んだ内容は保存も送信もしません）。また「Save Intimacy to Health」をオンにした場合に限り、Intimacy を記録した日を「性行為（Sexual Activity）」としてヘルスケアに書き込みます。Release と Cycle は書き込まず、避妊に関する情報も書き込みません。スイッチをオフにすると、まだ始まっていない書き込みはすぐに止まります（進行中の 1 件だけは完了して残ることがあります）。設定の「Delete All Data」では、進行中の書き込みを待ってから、アプリが書き込んだ記録をヘルスケアからも削除します。削除に失敗した場合は、次に削除を試すために必要な管理情報だけを端末に残します。</p>
-      <p class="en">In Body Rhythm Log, only if you turn it on, the app reads cycle (menstrual flow) days from Apple Health to draw a thin ring on the calendar; what it reads is not stored or sent. Only if you turn on "Save Intimacy to Health", the app writes the days you log Intimacy to Health as Sexual Activity. Release and Cycle are never written, and no contraceptive information is written. When you turn the switch off, writes that have not started stop immediately (one save already in progress may finish and remain). Settings &gt; Delete All Data waits for any save in progress, then also removes the records the app wrote to Health. If Health rejects the deletion, only the tracking needed to retry is kept on the device.</p>
+      <p>一部のアプリは Apple のヘルスケアと連携できます。初期状態ではオフで、利用者がオンにし、iPhone の画面で許可した種類のデータだけを読み書きします。読んだデータは端末の中で表示や記録の修正に使うだけで、当社のサーバーには送信せず、iCloud にも保存せず、広告や第三者への提供には使いません。許可は iPhone の「設定」→「ヘルスケア」→「データアクセスとデバイス」からいつでも取り消せます。</p>
+      <p class="en">Some apps can connect to Apple Health. It is off by default and reads or writes only the data types you allow. Data read from Health is used on your device only; it is not sent to our servers, not stored in iCloud, and never used for advertising or shared with third parties. You can revoke access in Settings &gt; Health &gt; Data Access &amp; Devices.</p>
 
-      <h2>記録を見てもらう共有（ごはんスナップ）</h2>
-      <p>ごはんスナップの「見てもらう共有」は、利用者が招待した人だけが、食事の記録を見るだけの形で閲覧できる機能です（無料）。共有されるのは、食事の写真（位置情報などのメタデータは取り除きます）、日時、料理名、メモ、自炊／外食の区別だけです。カロリー欄、気分、ヘルスケアのデータ、場所、MYアイテムは共有しません。共有用のコピーは共有を作成した利用者の iCloud に保存され、当社のサーバーには送信されません。共有を作成した利用者はいつでも参加者を外したり共有をやめたりでき、見る側はいつでも退出できます。ただし、相手が自分の端末に保存した画面のスクリーンショットなどを、こちらから消すことはできません。</p>
-      <p class="en">GohanSnap's meal sharing lets only the people you invite view your meal records, read-only (free). Only the meal photo (with location and other metadata removed), date and time, dish name, note, and home-cooked/eating-out are shared. Calories, mood, Health data, places and My Items are never shared. The shared copy is stored in the iCloud account of the person who created the share and is not sent to our servers. The owner can remove participants or stop sharing at any time, and viewers can leave at any time. We cannot delete screenshots or copies that someone has saved on their own device.</p>
+      <h2>端末内の処理と AI</h2>
+      <p>写真・動画・文字の解析（顔や文字の検出、文字の読み取り、端末内 AI による直し案など）は、利用者の iPhone の中だけで行い、当社のサーバーや外部へ送信しません。作業中の画像を一時的に端末内に置くことがありますが、不要になったときに削除します。</p>
+      <p class="en">Analysis of photos, videos and text (face and text detection, text recognition, on-device AI suggestions) happens only on your iPhone and is not sent to our servers or anywhere else. Temporary working images may be kept on your device and are deleted when no longer needed.</p>
 
-      <h2>写真・動画を加工する機能</h2>
-      <p>写真や動画の顔・文字などを隠すアプリ（例: どうぶつかくし、Blur Before Share）は、選んだ写真・動画を端末の中だけで処理します。顔の検出、文字の検出、動画の中で顔や範囲を追いかける処理の結果は、編集中だけ端末の中で使い、当社のサーバーや外部へは送信せず、保存もしません。元の写真・動画は変更せず、保存・共有のときに新しいコピーを作ります。書き出したコピーには、位置情報、撮影日時、機種などの情報を残しません（動画の音、長さ、向きはそのまま残します）。</p>
-      <p class="en">Apps that hide faces or text in photos and videos (for example, Dobutsu Kakushi / Cute Privacy Stamp and Blur Before Share) process the photos and videos you choose only on your device. Results of face detection, text detection and tracking faces or areas in a video are used on your device only while you edit; they are not sent to our servers or anywhere else, and they are not stored. The original photo or video is not changed; saving or sharing creates a new copy. Exported copies do not keep location, capture date or device details (a video keeps its sound, length and orientation).</p>
+      <h2>アプリごとの補足</h2>
+      <p>タップすると開きます。<span class="en">Tap to expand.</span></p>
 
-      <h2>リンクの行き先を確かめる機能</h2>
-      <p>CleanURL Tap の「行き先を確かめる」は、利用者がボタンを押したときだけ、bit.ly などのよく知られた短縮 URL サービスに HTTPS で 1 回問い合わせ（短縮リンクが続く場合は最大 3 回）、転送先の住所だけを読み取ります。行き先のページそのものは開きません。問い合わせ先は短縮サービスだけで、当社のサーバーには何も送りません。短縮サービス側には、通常どおりリンクを開いたときと同様に、アクセスの記録（IP アドレスや時刻など）が残ることがあります。リンクから追跡用の文字を外す処理は、これまでどおり端末の中だけで行います。</p>
-      <p class="en">In CleanURL Tap, "Check destination" contacts a well-known short-link service (such as bit.ly) over HTTPS only when you tap the button: once, or up to three times if short links are chained. It reads only the redirect address and never opens the destination page. Nothing is sent to our servers. The short-link service may keep an access record (such as your IP address and the time), just as when you open the link normally. Removing tracking parameters from links still happens only on your device.</p>
-      <h2>端末内の AI と作業用の画像</h2>
-      <p>一部のアプリ（例: OCR Copy の読み間違いの直し案）は、対応する iPhone で Apple の端末内 AI（Apple Intelligence）を使います。処理は iPhone の中だけで行い、写真やテキストを当社のサーバーや外部へ送信しません。AI の結果は案として表示し、利用者が確認して適用したものだけが使われます。</p>
-      <p class="en">Some of our apps (for example, suggested fixes for misread text in OCR Copy) use Apple's on-device AI (Apple Intelligence) on supported iPhones. Processing happens only on your iPhone; photos and text are not sent to our servers or anywhere else. AI results are shown as suggestions, and only what you review and apply is used.</p>
-      <p>写真から文字を読み取るアプリでは、作業中の画像（まっすぐに整えた書類の画像を含む）を端末内に一時的に置くことがあります。これらは不要になったとき（読み直し・結果を閉じたとき・履歴の削除時など）に削除し、残ったものも次にアプリを開いたときに削除します。</p>
-      <p class="en">Apps that read text from photos may keep the images you are working on (including straightened document images) temporarily on your device. They are deleted when no longer needed (for example, when you redo a read, close the result, or delete history), and anything left over is deleted the next time the app starts.</p>
+      <details class="app">
+        <summary>OCR Copy（OCRコピー）</summary>
+        <p>読み取った文字と画像は、アプリ内の「保管庫」に端末の中だけで保存し、外部のサーバーには送りません。保管庫の画像と記録は、端末がロックされている間は開けない方式で保存します。読み間違いの直し案は、対応する iPhone で Apple の端末内 AI を使い、利用者が確認して適用したものだけを反映します。</p>
+        <p>「iPhone の検索に表示」を選んだ場合、保管庫のタイトル（「タイトルと本文」を選んだ場合は本文の先頭部分も検索の手がかりとして）を iPhone の中の検索索引に登録します。検索結果に本文は表示しません。Face ID のロックがオンの間はタイトルだけを使います。オフにすると索引を削除します。PDF の読み取り・書き出しも端末の中で行います。</p>
+        <p class="en">Text and images you read are saved only on your device in the app's Library and are not sent to any server. Library images and records are stored so that they cannot be opened while the device is locked. Suggested fixes use Apple's on-device AI on supported iPhones and apply only after you review them. If you choose "Show in iPhone Search", titles (and, with "Title and Text", the beginning of the text as a search hint) are added to the on-device search index; body text is never shown in results, only titles are used while Face ID lock is on, and turning it off removes the index.</p>
+      </details>
+
+      <details class="app">
+        <summary>ペタスタンプ（Photo Stamp Cutout）</summary>
+        <p>作ったスタンプ（画像、作成日、テンプレート、文字、グループ名）は「スタンプ帳」として端末の中に保存します。保存場所は、このアプリと共有メニュー用の拡張だけが使える領域です。撮影日の表示のために写真の撮影日を端末の中で読みますが、外部には送りません。写真への保存は「追加のみ」の許可で行います。</p>
+        <p class="en">Stickers you make (image, date, template, text and group names) are kept on your device in the Sticker Book, in storage shared only with the app's share extension. The photo's capture date is read on device for the optional date stamp and is not sent anywhere. Saving to Photos uses add-only access.</p>
+      </details>
+
+      <details class="app">
+        <summary>Access Lens（拡大鏡）</summary>
+        <p>拡大鏡のカメラ映像と、止めて読むための画像は、写真に保存せず、外部にも送りません。止めた画像は、閉じたりアプリを離れたりすると破棄します。「見え方を比べる」で利用者が保存・共有を選んだ場合だけ、比較した画像を写真に保存・共有します。</p>
+        <p class="en">The magnifier's camera view and frozen images are never saved to Photos or sent anywhere; a frozen image is discarded when you close it or leave the app. Only when you choose Save or Share in Compare Views is the compared image saved or shared.</p>
+      </details>
+
+      <details class="app">
+        <summary>ごはんスナップ（見てもらう共有）</summary>
+        <p>「見てもらう共有」は、利用者が招待した人だけが食事の記録を見るだけの形で閲覧できる機能です（無料）。共有されるのは、食事の写真（位置情報などのメタデータを取り除いたもの）、日時、料理名、メモ、自炊／外食の区別だけで、カロリー欄・気分・ヘルスケアのデータ・場所・MYアイテムは共有しません。共有用のコピーは共有を作成した利用者の iCloud に保存されます。共有はいつでもやめられ、見る側はいつでも退出できます。相手が自分の端末に保存したスクリーンショットなどを、こちらから消すことはできません。</p>
+        <p class="en">Meal sharing lets only people you invite view your meals, read-only (free). Only the photo (metadata removed), date and time, dish name, note and home-cooked/eating-out are shared; calories, mood, Health data, places and My Items are not. The shared copy lives in the iCloud account of the person who created the share. Sharing can be stopped and viewers can leave at any time. We cannot delete screenshots someone saved on their own device.</p>
+      </details>
+
+      <details class="app">
+        <summary>体調・健康の記録（PoopTap・PillTap・Body Rhythm Log・ごはんスナップのカロリー欄）</summary>
+        <p>排便・症状、服薬と処方箋などの写真、体のリズム、カロリーの記録は、アプリが iCloud に保存することはありません。端末の中に保存し、バックアップが必要な場合は、利用者が書き出したファイルを自分で選んだ場所に保存します。</p>
+        <p class="en">Bowel and symptom logs, medication logs and prescription photos, body-rhythm logs and calorie entries are never stored in iCloud by our apps. They stay on your device; for a backup, export a file and save it wherever you choose.</p>
+      </details>
+
+      <details class="app">
+        <summary>ヘルスケア連携の詳細（Sheep to Sleep・Moodwash・WaterDone・Body Rhythm Log）</summary>
+        <p>扱うデータの例は、マインドフルネスの時間、睡眠、歩数、心の状態、水分です。Body Rhythm Log は、オンにした場合に限り「周期の記録（月経のあった日）」を読んでカレンダーに表示し（保存も送信もしません）、「Save Intimacy to Health」をオンにした場合に限り Intimacy を記録した日を「性行為」として書き込みます。Release と Cycle、避妊に関する情報は書き込みません。オフにすると、まだ始まっていない書き込みはすぐに止まります（進行中の 1 件だけは完了して残ることがあります）。「Delete All Data」では、進行中の書き込みを待ってから、アプリが書き込んだ記録をヘルスケアからも削除します。削除に失敗した場合は、次に削除を試すために必要な管理情報だけを端末に残します。</p>
+        <p class="en">Data types include mindful minutes, sleep, steps, state of mind and water. Body Rhythm Log reads cycle days only if you turn it on (not stored or sent) and writes Sexual Activity only if you turn on "Save Intimacy to Health"; Release, Cycle and contraceptive information are never written. Turning it off stops pending writes (one save in progress may finish), and Delete All Data waits for it, then also removes what the app wrote to Health; if Health rejects the deletion, only the tracking needed to retry is kept on the device.</p>
+      </details>
+
+      <details class="app">
+        <summary>写真・動画を加工するアプリ（どうぶつかくし・Blur Before Share など）</summary>
+        <p>顔や文字の検出、動画の中で顔や範囲を追いかける処理の結果は、編集中だけ端末の中で使い、保存も送信もしません。元の写真・動画は変更せず、保存・共有のときに新しいコピーを作ります。コピーには位置情報、撮影日時、機種などの情報を残しません（動画の音・長さ・向きはそのまま残します）。</p>
+        <p class="en">Face and text detection and tracking results are used on device only while you edit and are neither stored nor sent. Originals are not changed; saving or sharing creates a new copy without location, capture date or device details (a video keeps its sound, length and orientation).</p>
+      </details>
+
+      <details class="app">
+        <summary>CleanURL Tap（リンクの行き先を確かめる）</summary>
+        <p>「行き先を確かめる」は、利用者がボタンを押したときだけ、bit.ly などのよく知られた短縮 URL サービスに HTTPS で問い合わせ（短縮が続く場合は最大 3 回）、転送先の住所だけを読み取ります。行き先のページは開かず、当社のサーバーには何も送りません。短縮サービス側には、通常どおりリンクを開いたときと同様にアクセスの記録が残ることがあります。追跡用の文字を外す処理は端末の中だけで行います。</p>
+        <p class="en">"Check destination" contacts a well-known short-link service over HTTPS only when you tap it (up to three times for chained links) and reads only the redirect address, without opening the page. Nothing is sent to our servers; the short-link service may log the access as usual. Removing tracking parameters happens only on your device.</p>
+      </details>
+
       <h2>利用目的</h2>
       <p>取得した情報は、お問い合わせへの対応、サービスの提供・保守、不具合調査、利用者への必要な連絡のために利用します。</p>
 
@@ -86,8 +126,13 @@
       <p>Email: <a href="mailto:info@zec-inc.jp">info@zec-inc.jp</a></p>
 
       <h2>制定日</h2>
-      <p>2026年7月</p>
-      <p>改定日: 2026年10月（「記録を見てもらう共有（ごはんスナップ）」「写真・動画を加工する機能」を追記、「リンクの行き先を確かめる機能」を追記、「端末内の AI と作業用の画像」を追記、体調・健康に関わる記録を iCloud に保存しないことを明記、Body Rhythm Log のヘルスケアの読み書き・オフ時の扱い・全削除の扱いを追記、ヘルスケア連携の対象アプリに WaterDone を追加、ヘルスケア連携の対象アプリ表記を実態に合わせて修正、「ヘルスケア（Apple Health）を使う機能」、アプリ内の「ご意見・お問い合わせ」の扱いを追記）／2026年9月（「iCloud を使う機能」を追記）</p>
+      <p>2026年7月（最終改定: 2026年11月）</p>
+      <details class="history">
+        <summary>改定の履歴</summary>
+        <p>2026年11月: 構成を「共通の方針」と「アプリごとの補足」に整理。「端末への保存とバックアップ」を追記。OCR Copy の保管庫・iPhone の検索・ロック、ペタスタンプのスタンプ帳、Access Lens の拡大鏡の扱いを追記。</p>
+        <p>2026年10月: 「記録を見てもらう共有（ごはんスナップ）」「写真・動画を加工する機能」「リンクの行き先を確かめる機能」「端末内の AI と作業用の画像」を追記。体調・健康に関わる記録を iCloud に保存しないことを明記。Body Rhythm Log のヘルスケアの読み書き・オフ時の扱い・全削除の扱いを追記。ヘルスケア連携の対象に WaterDone を追加。「ヘルスケア（Apple Health）を使う機能」、アプリ内の「ご意見・お問い合わせ」の扱いを追記。</p>
+        <p>2026年9月: 「iCloud を使う機能」を追記。</p>
+      </details>
     </section>
   </main>
   <footer class="site-foot">

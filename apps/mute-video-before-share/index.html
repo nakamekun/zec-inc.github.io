@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mute Video Before Share | ZEC Apps</title>
-  <meta name="description" content="Mute Video Before Share removes sound from a video in one tap, even from the share sheet, or beeps out selected parts. No quality loss, no watermark.">
+  <meta name="description" content="Mute Video Before Share removes sound from videos in one tap, mutes up to 20 at once, and beeps out or lowers selected parts, even from the share sheet.">
   <link rel="canonical" href="https://zec-inc.jp/apps/mute-video-before-share/">
   <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/mute-video-before-share/">
   <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/mute-video-before-share/ja/">
@@ -16,9 +16,9 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
   <meta property="og:title" content="Mute Video Before Share | ZEC Apps">
-  <meta property="og:description" content="Mute Video Before Share removes sound from a video in one tap, even from the share sheet, or beeps out selected parts. No quality loss, no watermark.">
+  <meta property="og:description" content="Mute Video Before Share removes sound from videos in one tap, mutes up to 20 at once, and beeps out or lowers selected parts, even from the share sheet.">
   <meta property="og:url" content="https://zec-inc.jp/apps/mute-video-before-share/">
-  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a2/97/e3/a297e3bb-b6af-ea41-fcdf-d758e0c72e1e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
+  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f8/e7/44/f8e744bd-d3bc-8d6b-57f2-36aaaddacde1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -26,7 +26,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "Mute Video Before Share",
-      "description": "Mute Video Before Share removes sound from a video in one tap, even from the share sheet, or beeps out selected parts. No quality loss, no watermark.",
+      "description": "Mute Video Before Share removes sound from videos in one tap, mutes up to 20 at once, and beeps out or lowers selected parts, even from the share sheet.",
       "operatingSystem": "iOS",
       "applicationCategory": "Photo & Video",
       "offers": {
@@ -43,8 +43,8 @@
         "name": "ZEC Inc.",
         "url": "https://zec-inc.jp"
       },
-      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a2/97/e3/a297e3bb-b6af-ea41-fcdf-d758e0c72e1e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-      "softwareVersion": "1.7.0",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f8/e7/44/f8e744bd-d3bc-8d6b-57f2-36aaaddacde1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "softwareVersion": "1.11.0",
       "contentRating": "4+"
     },
     {
@@ -55,7 +55,15 @@
           "name": "Is Mute Video Before Share free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The app is free with no ads and no watermark. App Store pricing can change, so check the listing for current details."
+            "text": "Yes. The app is free with no ads, and removing audio, Part, beep, and the share sheet are free. Free copies get a small watermark in the bottom right; Mute Video Pro, an optional subscription, removes it. App Store pricing can change, so check the listing for current details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is there a watermark on my copy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the free version, copies you make get a small watermark (the app's icon and name) in the bottom right. Your original video never gets one. With Mute Video Pro, copies have no watermark. If you used the app before version 1.5, no watermark is added."
           }
         },
         {
@@ -71,7 +79,7 @@
           "name": "Does removing the audio reduce video quality?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. The video track is copied as-is without re-encoding, so the picture quality of the silent copy is identical to the original."
+            "text": "Copies without the watermark (Mute Video Pro) copy the video track as-is without re-encoding, so the picture quality is identical to the original and even long videos finish fast."
           }
         },
         {
@@ -79,7 +87,15 @@
           "name": "Is there a video length limit?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Because the video is not re-encoded, even long videos finish fast."
+            "text": "There is no length limit when you mute one video at a time. Batch mute supports videos up to 60 seconds each; longer videos are skipped and the rest continue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I mute several videos at once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Choose up to 20 videos. They are muted one at a time in the order you selected them, and you can save or share them all together."
           }
         },
         {
@@ -87,7 +103,15 @@
           "name": "Can I mute only part of a video?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. You can replace the sound in selected parts with a beep, and the waveform helps you spot where people are talking."
+            "text": "Yes. Choose Part to remove, lower, or beep out just the parts you pick. The waveform helps you spot where people are talking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I hear it before making the copy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. With Part, play the preview: removed parts go silent, lowered parts get quieter, and beeps play, just as in the copy. After the copy is made, tap Edit Again to change it with the same settings."
           }
         },
         {
@@ -171,10 +195,10 @@
   <main class="detail">
     <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/tap-tools/">Tap Tools</a></li><li aria-current="page">Mute Video Before Share</li></ol></nav>
     <section class="hero">
-      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a2/97/e3/a297e3bb-b6af-ea41-fcdf-d758e0c72e1e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Mute Video Before Share app icon" width="96" height="96">
+      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f8/e7/44/f8e744bd-d3bc-8d6b-57f2-36aaaddacde1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Mute Video Before Share app icon" width="96" height="96">
       <div>
         <h1>Mute Video Before Share</h1>
-        <p class="tagline">Remove sound from any video in one tap, or beep out selected parts — from the share sheet too. No re-encoding, no watermark.</p>
+        <p class="tagline">Remove sound from a video in one tap, mute up to 20 videos at once, or beep out or lower just the parts you pick — from the share sheet too. Everything runs on your device.</p>
         <div class="actions">
           <a class="button primary" href="https://apps.apple.com/us/app/mute-video-before-share/id6789844158?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
@@ -186,34 +210,34 @@
     <section class="shots" aria-label="Screenshots">
       <h2 class="visually-hidden">Screenshots</h2>
       <div class="shot-strip">
-        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c2/58/1a/c2581a40-d6be-b39b-be11-552a3ebc7b35/01.png/320x480bb.jpg" alt="Mute Video Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
-        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/5a/3b/655a3b60-d4a3-7572-f8ef-6b8d4c5b8d4a/02.png/320x480bb.jpg" alt="Mute Video Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
-        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bd/d8/0a/bdd80a21-ce2e-b1d6-33d6-f5a44c75cc26/03.png/320x480bb.jpg" alt="Mute Video Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
-        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d7/7f/7b/d77f7bbd-8890-2065-30bf-ab1acde87349/04.png/320x480bb.jpg" alt="Mute Video Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
-        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/4b/1d/fa4b1d58-1f08-2da7-6576-e74d2798733d/05.png/320x480bb.jpg" alt="Mute Video Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c7/8a/16/c78a16f7-56fb-8ec3-8793-f6b3e2a130ef/01.png/320x480bb.jpg" alt="Mute Video Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e1/f1/6c/e1f16c5e-587d-55ac-4bba-c03187d34526/02.png/320x480bb.jpg" alt="Mute Video Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2c/b8/91/2cb8914a-6705-7734-09ef-5c81629054b0/03.png/320x480bb.jpg" alt="Mute Video Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e1/68/28/e1682830-933e-47ad-bad5-13b682cbb33a/04.png/320x480bb.jpg" alt="Mute Video Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c0/52/05/c0520589-607f-19f9-2726-ea1b5e81708d/05.png/320x480bb.jpg" alt="Mute Video Before Share screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
       </div>
     </section>
 
     <section class="block prose">
       <h2>Overview</h2>
-      <p class="lead-para">Mute Video Before Share removes the audio track from a video so you can share it without background voices, conversations, or noise. Pick a video, tap once, and get a silent copy ready to post or send — while your original video stays completely unchanged. You can also choose Mute &amp; Share straight from the share sheet to make a silent copy without opening the app.</p>
-      <p>Unlike video editors that re-encode everything, this app copies the video track as-is and simply drops the audio. That means zero picture-quality loss, fast results even on long videos, no length limit, and no watermark. If you only need to hide part of the sound, you can replace selected parts with a beep, using the sound&#x27;s waveform to spot where people are talking.</p>
-      <p>The silent copy is also cleaner than the original in one important way: it contains no location or camera metadata from the source video, so you are not leaking where a clip was filmed when you share it. The app is available in 25 languages and works in portrait and landscape on iPhone, and on iPad.</p>
+      <p class="lead-para">Mute Video Before Share removes the audio track from a video so you can share it without background voices, conversations, or noise. Pick a video, tap once, and get a silent copy ready to post or send — while your original video stays completely unchanged. You can also choose Mute &amp; Share straight from the share sheet to make a silent copy without opening the app, or choose up to 20 videos, mute them in order, and save or share them all together.</p>
+      <p>If you only need to hide part of the sound, choose Part and remove, lower, or beep out just the parts you pick, using the sound&#x27;s waveform to spot where people are talking. The preview sounds exactly the way the copy will, and after the copy is made you can tap Edit Again to adjust it with the same settings. On a wide unfolded iPhone Duo screen, the video and the editor sit side by side.</p>
+      <p>Free copies get a small watermark in the corner. With Mute Video Pro (an optional subscription), copies have no watermark and keep the video exactly as it is, with no re-encoding, so the picture quality stays the same and even long videos finish fast. The silent copy contains no location or camera metadata from the source video. The app is available in 25 languages and works in portrait and landscape on iPhone, and on iPad.</p>
     </section>
 
     <section class="block">
       <h2>Main Features</h2>
       <ul class="feature-grid">
         <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Remove all sound from a video in one tap</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Batch mute</strong>: choose up to 20 videos, mute them in order, and save or share them together (up to 60 seconds each)</span></li>
         <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mute &amp; Share from the share sheet to make a silent copy without opening the app</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Replace sound with a beep in selected parts</strong>, with a waveform to help you find where people are talking</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No quality loss — the video track is copied as-is, not re-encoded</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No length limit and fast processing even for long videos</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No watermark on the silent copy</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Part</strong>: remove, lower, or beep out selected parts, with a waveform to help you find where people are talking</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>The preview sounds the way the copy will; Edit Again lets you adjust a finished copy with the same settings</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No length limit when muting one video at a time</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Mute Video Pro (optional subscription)</strong>: no watermark, and the video track is copied as-is without re-encoding, so quality stays the same</span></li>
         <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Silent copy contains no location or camera metadata from the original</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Preview the result</strong>, then save to Photos or share directly</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Original video stays unchanged — everything runs on your device</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Available in 25 languages; works in portrait and landscape on iPhone, and on iPad</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Original video stays unchanged — everything runs on your device, with no account, no upload, and no ads</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Supports the inner and outer displays of iPhone Duo; available in 25 languages, in portrait and landscape on iPhone, and on iPad</span></li>
       </ul>
     </section>
 
@@ -230,10 +254,10 @@
     <section class="block">
       <h2>How to Use</h2>
       <ol class="steps">
-        <li><span>Open the app and choose a video from your Photos library, or choose Mute &amp; Share from the share sheet in another app.</span></li>
+        <li><span>Open the app and choose a video from your Photos library (or up to 20 for batch mute), or choose Mute &amp; Share from the share sheet in another app.</span></li>
         <li><span>Preview the selected video.</span></li>
-        <li><span>Remove the audio and wait a moment while the silent copy is created on your device. To hide only part of the sound, choose the parts to replace with a beep instead.</span></li>
-        <li><span>Preview the result to confirm it looks and sounds right.</span></li>
+        <li><span>Remove all the sound, or choose Part to remove, lower, or beep out just the parts you pick.</span></li>
+        <li><span>Preview the result — it sounds the way the copy will. Tap Edit Again if you want to change it.</span></li>
         <li><span>Save it to Photos or share it directly with the share sheet.</span></li>
       </ol>
     </section>
@@ -241,12 +265,12 @@
     <div class="info-pair">
       <section class="info-card">
         <h2>Pricing</h2>
-        <p>Mute Video Before Share is free on the App Store, with no ads and no watermark. App Store pricing and availability can change, so check the store listing for current details.</p>
+        <p>Mute Video Before Share is free on the App Store, with no ads. Free copies get a small watermark in the corner. Mute Video Pro is an optional subscription that removes the watermark. Removing audio, Part, beep, the waveform, and the share sheet stay free. App Store pricing and availability can change, so check the store listing for current details.</p>
         <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
       </section>
       <section class="info-card">
         <h2>Privacy</h2>
-        <p>Everything runs on your device: no account, no upload, no server processing, no ads, and no tracking. Photos access is used only to select a video and save the silent copy. As a bonus, the exported silent copy carries no location or camera metadata from the original video.</p>
+        <p>Everything runs on your device: no account, no upload, no server processing, no ads, and no tracking. Photos access is used only to select videos and save the silent copies. As a bonus, the exported silent copy carries no location or camera metadata from the original video.</p>
       </section>
     </div>
 
@@ -254,7 +278,11 @@
       <h2>FAQ</h2>
         <details>
           <summary>Is Mute Video Before Share free?</summary>
-          <p>Yes. The app is free with no ads and no watermark. App Store pricing can change, so check the listing for current details.</p>
+          <p>Yes. The app is free with no ads, and removing audio, Part, beep, and the share sheet are free. Free copies get a small watermark in the bottom right; Mute Video Pro, an optional subscription, removes it. App Store pricing can change, so check the listing for current details.</p>
+        </details>
+        <details>
+          <summary>Why is there a watermark on my copy?</summary>
+          <p>In the free version, copies you make get a small watermark (the app&#x27;s icon and name) in the bottom right. Your original video never gets one. With Mute Video Pro, copies have no watermark. If you used the app before version 1.5, no watermark is added.</p>
         </details>
         <details>
           <summary>Are my videos uploaded anywhere?</summary>
@@ -262,15 +290,23 @@
         </details>
         <details>
           <summary>Does removing the audio reduce video quality?</summary>
-          <p>No. The video track is copied as-is without re-encoding, so the picture quality of the silent copy is identical to the original.</p>
+          <p>Copies without the watermark (Mute Video Pro) copy the video track as-is without re-encoding, so the picture quality is identical to the original and even long videos finish fast.</p>
         </details>
         <details>
           <summary>Is there a video length limit?</summary>
-          <p>No. Because the video is not re-encoded, even long videos finish fast.</p>
+          <p>There is no length limit when you mute one video at a time. Batch mute supports videos up to 60 seconds each; longer videos are skipped and the rest continue.</p>
+        </details>
+        <details>
+          <summary>Can I mute several videos at once?</summary>
+          <p>Yes. Choose up to 20 videos. They are muted one at a time in the order you selected them, and you can save or share them all together.</p>
         </details>
         <details>
           <summary>Can I mute only part of a video?</summary>
-          <p>Yes. You can replace the sound in selected parts with a beep, and the waveform helps you spot where people are talking.</p>
+          <p>Yes. Choose Part to remove, lower, or beep out just the parts you pick. The waveform helps you spot where people are talking.</p>
+        </details>
+        <details>
+          <summary>Can I hear it before making the copy?</summary>
+          <p>Yes. With Part, play the preview: removed parts go silent, lowered parts get quieter, and beeps play, just as in the copy. After the copy is made, tap Edit Again to change it with the same settings.</p>
         </details>
         <details>
           <summary>Can I use it from the share sheet?</summary>
@@ -289,16 +325,16 @@
     <section class="block">
       <h2>More apps in this category</h2>
       <div class="related">
-        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/a5/1c/b8a51c3f-3513-c5cf-05c0-ea1fca76deca/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
-        <a class="related-card" href="/apps/ocr-copy/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/bf/e2/04bfe247-0ca9-c48b-904a-e65cc482de9e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>OCR Copy: Image to Text</h3><p>Image to text: batch-scan up to 20 photos or screenshots, or use the...</p></span></a>
-        <a class="related-card" href="/apps/undocam/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/b0/0c/b6b00c26-cd26-398e-53e7-ecf9ba70a63e/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Reverse Video Maker: UndoCam</h3><p>Reverse video maker for iPhone: play any clip backwards, sound included....</p></span></a>
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/dd/88/b2dd8895-b921-c67c-1a6a-4d4d09dafced/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/exifoff/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7d/00/b5/7d00b5a3-9c2d-3b06-b55f-4fe6344fefa9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>ExifOff: Remove Photo Location</h3><p>Remove photo location and other EXIF metadata. See where a photo was taken...</p></span></a>
+        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/f8/66/7ff86661-2956-d653-6705-476f94e0c0f0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
       </div>
     </section>
 
     <section class="cta">
       <h2>App Store</h2>
       <a class="button primary big" href="https://apps.apple.com/us/app/mute-video-before-share/id6789844158?uo=4">Open Mute Video Before Share on the App Store</a>
-      <p class="meta">Last updated: 2026-10-24</p>
+      <p class="meta">Last updated: 2026-11-06</p>
     </section>
   </main>
 

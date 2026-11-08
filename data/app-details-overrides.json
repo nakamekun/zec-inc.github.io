@@ -1,18 +1,18 @@
 {
   "6761641437": {
     "slug": "photo-day",
-    "short_description": "Keep one photo a day as a simple photo diary and memory calendar, with notes, widgets, Frame Mode, and free optional iCloud sync.",
-    "meta_description": "DailyAlbum is a one-photo-a-day photo diary and digital photo frame app: memory calendar, 300-character notes, widget, family sharing and free iCloud sync.",
+    "short_description": "Keep one photo a day as a simple photo diary and memory calendar, then hang it in a frame: a spare iPhone, iPad, or your TV shows today's photo. Free optional iCloud sync.",
+    "meta_description": "DailyAlbum is a one-photo-a-day photo diary and digital photo frame: memory calendar, notes, widgets, TV frame, recap video, and free iCloud sync.",
     "categories": [
       "photo-memory",
       "widgets",
       "family"
     ],
     "overview": [
-      "DailyAlbum keeps a small, steady photo record without turning it into a photo management task. Open a date, choose one photo that captures the day, and the daily choices grow into a memory calendar.",
-      "It fits family life, kids growing up, pets, trips, plants, creative projects, and ordinary days worth remembering. Empty days can even fill themselves: DailyAlbum quietly suggests one good photo, favoring people and pets and skipping screenshots and document shots, with all processing done on the device.",
-      "Each day can hold a note of up to 300 characters, and you can search notes later to find a day again. Frame Mode shows today's photo full screen with its date and note, so a spare iPad or an old iPhone can work as a family photo frame. With the optional DailyAlbum Family subscription, invited family can view your days like a photo frame in their own home.",
-      "Full details, guides and the video are on the app's own site: https://dailyalbum.app/"
+      "DailyAlbum keeps one photo a day and hangs it in a frame, without turning it into a photo management task. Open a date, choose one photo that captures the day, and the daily choices grow into a memory calendar.",
+      "It fits everyday moments, your own life, trips, plants, creative work, pets, and family. Empty days can even fill themselves: DailyAlbum quietly suggests one good photo, favoring people and pets and skipping screenshots and document shots, with all processing done on the device.",
+      "Each day can hold a note of up to 300 characters, and you can search notes later to find a day again. Frame Mode shows today's photo full screen with its date and note, so a spare iPad or an old iPhone becomes a photo frame for your room, and you can also show it on a TV with AirPlay or an HDMI adapter. At the start of each month, replay last month as a monthly album, and save or share the monthly recap as a vertical video for free. On iPhone Duo, a full month sits on the left and the selected day's photos on the right.",
+      "With the optional DailyAlbum Premium subscription, you can also invite family to view one shared photo per day in DailyAlbum; viewing is always free for them. Full details, guides and the video are on the app's own site: https://dailyalbum.app/"
     ],
     "target_users": [
       "Parents and families who want a gentle daily photo habit for kids, pets, and everyday moments",
@@ -24,22 +24,23 @@
       "One-photo-a-day memory calendar, with a monthly album replay at the start of each month",
       "On-device photo suggestions that can fill empty days automatically",
       "Notes up to 300 characters per day, with note search",
-      "Frame Mode: today's photo full screen with its date and note",
-      "Share any day as a card with its photo, date, and note",
-      "Home Screen widget and gentle 'on this day in past years' notices",
-      "Free optional iCloud sync that restores your records after a phone change or reinstall",
-      "Optional DailyAlbum Family subscription: invited family view your days, view-only and free for them"
+      "Frame Mode: today's photo full screen with its date and note, on a spare iPhone or iPad, or on a TV via AirPlay or HDMI",
+      "Share any day as a card with its photo, date, and note, and save the monthly recap as a vertical video for free",
+      "Home Screen and StandBy widgets and gentle 'on this day in past years' notices",
+      "Free optional iCloud sync that restores your records after a phone change or reinstall, plus a free ZIP export of every day's photo and note",
+      "Wide two-pane view on iPhone Duo: a full month on the left, the selected day's photos on the right",
+      "Optional DailyAlbum Premium subscription: Archive, unlimited Frame Mode and monthly album replays, photo copy sync, year images, extra designs, and family sharing (view-only and free for family)"
     ],
     "how_to_use": [
       "Install DailyAlbum from the App Store.",
       "Open a date and choose one photo that captures the day.",
       "Add a short note if you want (up to 300 characters per day).",
       "Turn on iCloud Sync (free, optional) so your records survive a new phone or a reinstall.",
-      "Add the widget or use Frame Mode to revisit saved days without opening the app.",
-      "Share a favorite day as a card - photo, date, and note - whenever you choose to."
+      "Add the widget, or open Frame Mode on a spare iPhone, iPad, or TV, to revisit saved days without opening the app.",
+      "Share a favorite day as a card - photo, date, and note - or a month as a recap video, whenever you choose to."
     ],
-    "pricing": "The core app is free: the calendar, photo picking, notes, note search, and iCloud Sync. DailyAlbum Plus is a one-time purchase (not a subscription) that adds DailyAlbum Archive, unlimited Frame Mode, unlimited monthly album replays, and multi-device sync. DailyAlbum Family is an optional auto-renewing subscription (monthly or yearly) that lets invited family view your days; viewing is always free for them, and all Plus features are included while it is active. See the App Store for current prices and availability.",
-    "privacy": "No account is required. Photos are processed on your device and are not sent anywhere by default. With iCloud Sync on (free), only your day choices and notes are stored in your personal iCloud. Only if you turn on photo sync (DailyAlbum Plus) or family sharing (DailyAlbum Family) is a copy of the photo you chose stored in your own iCloud, where the developer cannot read it. Full policy: https://dailyalbum.app/privacy/",
+    "pricing": "The core app is free: the calendar, photo picking, notes, note search, iCloud sync for choices and notes, and saving the monthly recap as a video. DailyAlbum Premium is an optional auto-renewing subscription (monthly or yearly) that adds Archive, unlimited Frame Mode, unlimited monthly album replays, photo copy sync, year images and extra designs, and lets invited family view one shared photo per day; viewing is always free for them. Plus is no longer sold, and people who already own it keep all their Plus benefits permanently. See the App Store for current prices and availability.",
+    "privacy": "No account is required. By default DailyAlbum shows photos straight from your photo library and does not upload them. With iCloud Sync on (free), your day choices and notes are stored in your personal iCloud. Only if you turn on photo sync or share with family is a copy of just those photos kept in your own iCloud too — never on the developer's servers, and never readable by the developer. Full policy: https://dailyalbum.app/privacy/",
     "faq": [
       {
         "question": "What is DailyAlbum for?",
@@ -55,7 +56,7 @@
       },
       {
         "question": "How much of DailyAlbum is free?",
-        "answer": "The calendar, photo picking, notes up to 300 characters, note search, and iCloud Sync are free. DailyAlbum Plus, a one-time purchase, adds DailyAlbum Archive, unlimited Frame Mode, unlimited monthly album replays, and multi-device sync. DailyAlbum Family is an optional subscription for sharing with family and includes all Plus features while it is active."
+        "answer": "The calendar, photo picking, notes up to 300 characters, note search, iCloud sync for choices and notes, and saving the monthly recap as a video are free. Frame Mode is free for 5 minutes at a time. DailyAlbum Premium, an optional subscription, adds Archive, unlimited Frame Mode, unlimited monthly album replays, photo copy sync, year images and extra designs, and family sharing."
       },
       {
         "question": "Where are my photos stored?",
@@ -71,23 +72,27 @@
       },
       {
         "question": "What's the difference between the two iCloud Sync options?",
-        "answer": "iCloud Sync keeps your day choices and notes safe in your personal iCloud, so they survive a new phone or reinstall and appear on your other devices — for free. The photos themselves aren't uploaded; each device shows them from its own photo library.\n\nIf you use iCloud Photos, that's usually all you need: the photos you keep are already on your other devices, so even a spare iPad can become a photo frame at no extra cost.\n\nIf you don't use iCloud Photos, turn on Sync this day's photo (DailyAlbum Plus). For a little iCloud storage, DailyAlbum keeps a private copy of each day's photo in your own iCloud, so your days still appear on your other devices — and an old iPhone or iPad can become a family photo frame. Only you can open them; the developer cannot read your data."
+        "answer": "iCloud Sync keeps your day choices and notes safe in your personal iCloud, so they survive a new phone or reinstall and appear on your other devices — for free. The photos themselves aren't uploaded; each device shows them from its own photo library.\n\nIf you use iCloud Photos, that's usually all you need: the photos you keep are already on your other devices, so even a spare iPad can become a photo frame at no extra cost.\n\nIf you don't use iCloud Photos, turn on Sync this day's photo. For a little iCloud storage, DailyAlbum keeps a private copy of each day's photo in your own iCloud, so your days still appear on your other devices — and an old iPhone or iPad can become a family photo frame. Only you can open them; the developer cannot read your data. Photo sync is included with DailyAlbum Premium, or with Plus if you already own it."
       },
       {
         "question": "What happens if I delete a photo from Photos?",
         "answer": "If you delete the original photo from the Photos app, it may no longer be available in DailyAlbum. Photos saved with DailyAlbum Archive will still be shown."
       },
       {
-        "question": "What is DailyAlbum Plus?",
-        "answer": "DailyAlbum Plus is a one-time purchase that adds four things: DailyAlbum Archive (saves a copy of each day's chosen photo inside DailyAlbum), unlimited Frame Mode (the free version has a 5-minute preview), unlimited Monthly Recap replays (the free version includes one full playback), and multi-device sync (your choices and notes appear on your other devices right away). Photos are shown from each device's own photo library (such as iCloud Photos). By default DailyAlbum does not upload your photos. If you turn on Sync this day's photo, DailyAlbum also keeps a small copy of each chosen photo in your personal iCloud so it can appear on devices that don't use iCloud Photos — only you can open it, and the developer still cannot read your data. Your calendar, photo picking, notes, and iCloud Sync stay free."
+        "question": "What does DailyAlbum Premium include?",
+        "answer": "DailyAlbum Premium is one optional auto-renewing subscription (monthly or yearly) for your own album and optional family sharing. It includes Archive (a copy of each day's chosen photo saved inside DailyAlbum), unlimited Frame Mode (the free version plays for 5 minutes at a time), unlimited monthly album replays, photo copy sync, year images and extra designs. Invited family can also view one shared photo per day. The calendar, photo choices, notes and iCloud sync for choices and notes stay free. Manage or cancel it anytime in your Apple Account settings."
       },
       {
-        "question": "What is DailyAlbum Family?",
-        "answer": "DailyAlbum Family is an optional auto-renewing subscription (monthly or yearly). Invited family can view your days in DailyAlbum - one photo per day, like a photo frame in their home. You choose what to share: all daily photos, or only days with a tag you pick. It is view-only and always free for the family you invite, and all Plus features are included while the subscription is active. Manage or cancel it anytime in your Apple Account settings."
+        "question": "What if I already own DailyAlbum Plus?",
+        "answer": "Plus is no longer sold, but if you already own it, all your Plus benefits stay yours permanently. New Premium benefits require a subscription."
+      },
+      {
+        "question": "How does family sharing work?",
+        "answer": "Family sharing is part of DailyAlbum Premium. You choose what to share before inviting anyone: all daily photos, or only days with tags you pick. Then send the invite link. Family members open it on an iPhone or iPad with DailyAlbum installed and see one photo per day with its date. It's view-only and always free for them, and you can stop sharing at any time in Settings."
       },
       {
         "question": "What is DailyAlbum Archive?",
-        "answer": "DailyAlbum Archive is a DailyAlbum Plus feature that saves a copy of the photo you chose for each day inside DailyAlbum. Even if the original is later deleted from your photo library, DailyAlbum can still show the saved copy. It also makes browsing steadier and faster: archived copies display instantly, even when the original lives in iCloud and would otherwise need to download first. You can choose whether auto-picked photos are saved too. You can see everything that's been saved in Settings > Archived photos."
+        "answer": "DailyAlbum Archive saves a copy of the photo you chose for each day inside DailyAlbum. Even if the original is later deleted from your photo library, DailyAlbum can still show the saved copy. It also makes browsing steadier and faster: archived copies display instantly, even when the original lives in iCloud and would otherwise need to download first. You can choose whether auto-picked photos are saved too, and see everything that's been saved in Settings > Archived photos. Archive is included with DailyAlbum Premium, or with Plus if you already own it."
       },
       {
         "question": "Does DailyAlbum Archive copy my entire photo library?",
@@ -103,7 +108,11 @@
       },
       {
         "question": "Can I use an iPad or old iPhone as a photo frame?",
-        "answer": "Yes. Open Frame Mode to show your chosen photo full screen with its date; the controls fade away after a few seconds, leaving just the photo. Stand an iPad or a spare iPhone on a shelf and it becomes a family photo frame. The free version plays for 5 minutes at a time; DailyAlbum Plus removes the time limit. With Plus multi-device sync, a photo you pick on your phone appears on the frame right away."
+        "answer": "Yes. Open Frame Mode to show your chosen photo full screen with its date and note; the controls fade away after a few seconds, leaving just the photo. Stand an iPad or a spare iPhone on a shelf and it becomes a family photo frame. Frame Mode is free for 5 minutes at a time; DailyAlbum Premium removes the time limit and adds a sleep schedule, so the frame goes dark at night and wakes by itself in the morning."
+      },
+      {
+        "question": "Can I show the frame on a TV?",
+        "answer": "Yes. Connect your iPhone or iPad to a TV with AirPlay or an HDMI adapter, then open Frame Mode. The TV shows only the framed photo with its date and note, while your device works as the remote."
       },
       {
         "question": "Can I search my notes?",
@@ -115,15 +124,15 @@
       },
       {
         "question": "Can I share a day or a month?",
-        "answer": "Yes. From a day, tap the share button to create a card with that photo, its date, and note. After a monthly album plays, you can share the whole month as a single card too. Sharing happens through the normal share sheet — nothing is posted automatically, and DailyAlbum never uploads your photos in the background."
+        "answer": "Yes. From a day, tap the share button to create a card with that photo, its date, and note. A month can be shared as one calendar image, and the monthly recap can be saved and shared as a vertical video — both free. DailyAlbum Premium adds a whole year in one image and more designs. Sharing happens through the normal share sheet — nothing is posted automatically, and DailyAlbum never uploads your photos in the background."
       },
       {
         "question": "How do I restore my purchase?",
-        "answer": "If you bought DailyAlbum Plus before — on another device or after reinstalling — open Settings > DailyAlbum Plus and tap Restore Purchases. Make sure you're signed in with the same Apple Account you used for the purchase."
+        "answer": "In Settings, open your plan and tap Restore Purchases. Use the same Apple Account as before. This restores existing Plus purchases as well as active subscriptions."
       },
       {
         "question": "Why does the widget show a different photo depending on the widget size?",
-        "answer": "Each widget size can have its own selected photo.\n\nFor example, the small, medium, and large widgets may each show a different photo because they are managed separately.\n\nIf you want the same photo to appear, please set or update the photo for each widget size."
+        "answer": "That's the Memories widget: it picks a random saved day on its own for each size, so a small, medium, and large widget next to each other can show different photos. If you'd rather see the same photo everywhere, use the Today's Photo widget — it shows your photo of the day in every size."
       },
       {
         "question": "Why can I keep only one photo per day?",
@@ -137,13 +146,13 @@
     "locales": {
       "ja": {
         "name": "1枚かざる - 1日1枚の写真日記",
-        "short_description": "1日1枚の写真日記。子どもの成長や家族、ペット、旅行の思い出をカレンダーに残し、フレームモードで飾って見返せます。",
-        "meta_description": "1枚かざるは1日1枚の写真日記アプリ。子どもの成長や家族、ペットの思い出をカレンダーに残し、デジタルフォトフレームやウィジェットで見返せます。",
+        "short_description": "1日1枚の写真日記。その日の1枚をカレンダーに残し、使わなくなったiPhoneやiPad、テレビをフォトフレームにして飾れます。iCloud同期は無料。",
+        "meta_description": "1枚かざるは1日1枚の写真日記アプリ。思い出カレンダーに残した写真を、iPadや古いiPhone、テレビのフォトフレームやウィジェットで飾って見返せます。",
         "overview": [
-          "1枚かざるは、大切な毎日を1日1枚の写真で残すシンプルな記録アプリです。写真を大量に整理するのではなく、「今日の1枚」を選ぶだけ。その積み重ねが、そのまま思い出のタイムラインになります。",
-          "子どもの成長、家族の時間、ペット、旅行、趣味や仕事のプロジェクトなど、長い日記を書かなくても1枚の写真が多くを語ってくれる場面にぴったりです。空いた日は自動でも埋まります。人やペットの写った写真を優先し、スクリーンショットのような写真は避けて、端末の中だけの処理でその日の1枚をそっとおすすめします。",
-          "1日300字までのメモを添えられて、あとから言葉で検索してあの日をすぐに見つけられます。フレームモードで今日の1枚を日付・メモと一緒に画面いっぱいに飾ったり、ウィジェットでホーム画面に置いたり、アプリを開かなくても思い出に触れられる作りです。サブスクリプション「1枚かざる Family」を使えば、招待した家族が自宅のフォトフレームのようにあなたの毎日を見られます。",
-          "詳しい説明・ガイド・動画は、アプリの公式サイト https://dailyalbum.app/ja/ にあります。"
+          "1枚かざるは、1日1枚の写真を額に入れて飾るアプリです。写真を大量に整理するのではなく、日付を開いて「今日の1枚」を選ぶだけ。その積み重ねが、そのまま思い出のカレンダーになります。",
+          "日常、自分の暮らし、旅行、植物、作品づくり、ペット、家族など、あとで見返したい日を1枚で残せます。空いた日は自動でも埋まります。人やペットの写った写真を優先し、スクリーンショットや書類のような写真は避けて、端末の中だけの処理でその日の1枚をそっとおすすめします。",
+          "1日300字までのメモを添えられて、あとから言葉で検索してあの日をすぐに見つけられます。フレームモードでは今日の1枚を日付・メモと一緒に画面いっぱいに飾れて、iPadや使わなくなったiPhoneが部屋のフォトフレームに。AirPlayやHDMIアダプタでテレビに映すこともできます。月のはじめには先月の写真を月間アルバムとしてふりかえれて、月のふりかえりは無料で縦型動画に保存・共有できます。iPhone Duoでは、広い画面の左にひと月、右に選んだ日の写真が並びます。",
+          "サブスクリプション「1枚かざる プレミアム」では、招待した家族へ1日1枚を共有することもでき、家族側の閲覧はずっと無料です。詳しい説明・ガイド・動画は、アプリの公式サイト https://dailyalbum.app/ja/ にあります。"
         ],
         "target_users": [
           "子どもの成長や家族の毎日をゆるやかに残したい方",
@@ -155,22 +164,24 @@
           "1日1枚を選ぶだけのシンプルな写真記録",
           "毎日の1枚が並ぶ思い出のカレンダーと、月のはじめの月間アルバム",
           "空いた日は自動でも埋まる、端末内だけで動くおすすめ機能（人・ペットの写真を優先）",
-          "フレームモードで日付・メモと一緒に写真を飾れる（iPadや古いiPhoneがフォトフレームに）",
-          "気に入った日を写真・日付・メモのカードにして共有",
-          "ホーム画面ウィジェットと、過去の同じ日のお知らせ",
+          "フレームモードで日付・メモと一緒に写真を飾れる（iPadや古いiPhone、AirPlay・HDMIでテレビにも）",
+          "気に入った日を写真・日付・メモのカードにして共有。月のふりかえりは無料で縦型動画に",
+          "ホーム画面・スタンバイのウィジェットと、過去の同じ日のお知らせ",
           "1日300字までのメモと、あとからのメモ検索",
-          "iCloud同期（無料・任意）で機種変更後も記録を復元",
-          "任意のサブスクリプション「1枚かざる Family」で、招待した家族があなたの毎日を閲覧（閲覧専用・家族側は無料）"
+          "iCloud同期（無料・任意）で機種変更後も記録を復元。全部の写真とメモをZIPで書き出すことも無料",
+          "iPhone Duoの広い画面で、左にひと月・右に選んだ日の写真",
+          "任意のサブスクリプション「1枚かざる プレミアム」：Archive、時間制限のないフレーム、月間アルバムの再生、写真コピー同期、年の画像と追加デザイン、家族への共有（閲覧専用・家族側は無料）"
         ],
         "how_to_use": [
           "App Storeから1枚かざるをインストールします。",
           "日付を開いて、その日を代表する1枚を選びます。",
           "必要に応じてメモを添えます（1日300字まで）。",
-          "毎日続けて、カレンダーに並んでいく写真を見返します。",
-          "ウィジェットやフレームモードを使えば、アプリを開かなくても思い出に触れられます。"
+          "iCloud同期（無料・任意）をONにして、機種変更やアプリの入れ直しに備えます。",
+          "ウィジェットを置いたり、使わなくなったiPhone・iPad・テレビでフレームモードを開いたりして、アプリを開かなくても思い出に触れられます。",
+          "気に入った日はカードに、ひと月は縦型動画にして、好きなときに共有します。"
         ],
-        "pricing": "カレンダー・写真選び・1日300字のメモ・メモ検索・iCloud同期は無料です。買い切りの1枚かざる Plus（サブスクリプションではありません）では、時間制限のないフレームモードや複数端末での同期などが加わります。1枚かざる Familyは任意の自動更新サブスクリプション（月額または年額）で、招待した家族があなたの毎日を閲覧できます。家族側の閲覧はずっと無料で、有効な間はPlusの全機能も使えます。最新の価格・提供状況はApp Storeでご確認ください。",
-        "privacy": "アカウントは不要です。写真は端末内で処理され、標準ではどこにも送りません。iCloud 同期（無料）をオンにすると、その日の選択とメモだけがあなた自身の iCloud に保存されます。写真の同期（1枚かざる Plus）や家族共有（1枚かざる Family）をオンにしたときだけ、選んだ写真のコピーがあなた自身の iCloud に保存されます。開発者がその中身を見ることはできません。詳細: https://dailyalbum.app/ja/privacy/",
+        "pricing": "カレンダー・写真選び・1日300字のメモ・メモ検索・選択とメモのiCloud同期・月のふりかえり動画の保存は無料です。「1枚かざる プレミアム」は任意の自動更新サブスクリプション（月額または年額）で、Archive、時間制限のないフレーム、月間アルバムの再生、写真コピー同期、年の画像と追加デザインが加わり、招待した家族へ1日1枚を共有できます。家族側の閲覧はずっと無料です。Plusの新規販売は終了しましたが、すでにお持ちの方はこれまでの特典をずっと使えます。最新の価格・提供状況はApp Storeでご確認ください。",
+        "privacy": "アカウントは不要です。1枚かざるは写真を端末のライブラリからそのまま表示し、標準ではアップロードしません。iCloud同期（無料）をオンにすると、その日の選択とメモがあなた自身のiCloudに保存されます。写真の同期や家族との共有をオンにしたときだけ、その写真のコピーもあなた自身のiCloudに保存されます。開発者のサーバーに送られることはなく、開発者がその中身を見ることもできません。詳細: https://dailyalbum.app/ja/privacy/",
         "faq": [
           {
             "question": "1枚かざるはどんなアプリですか？",
@@ -186,7 +197,7 @@
           },
           {
             "question": "無料でどこまで使えますか？",
-            "answer": "カレンダー・写真選び・1日300字のメモ・メモ検索・iCloud同期は無料で使えます。買い切りの1枚かざる Plusを購入すると、選んだ写真のコピーをアプリ内に保存する1枚かざる Archive、時間制限のないフレームモード、月間アルバムの何度でも再生、複数端末での同期が加わります。家族と共有できる任意のサブスクリプション「1枚かざる Family」では、有効な間Plusの全機能も使えます。"
+            "answer": "カレンダー・写真選び・1日300字のメモ・メモ検索・選択とメモのiCloud同期・月のふりかえり動画の保存は無料で使えます。フレームモードは1回5分まで無料です。任意のサブスクリプション「1枚かざる プレミアム」では、Archive、時間制限のないフレーム、月間アルバムの再生、写真コピー同期、年の画像と追加デザイン、家族への共有が加わります。"
           },
           {
             "question": "写真はどこに保存されていますか？",
@@ -202,23 +213,27 @@
           },
           {
             "question": "2つのiCloud同期はどう違いますか？",
-            "answer": "iCloud同期は、選んだ日の記録とメモをあなたのiCloudに保存します。機種変更やアプリの入れ直しでも消えず、ほかの端末にも無料で表示されます。写真そのものはアップロードされず、各端末の写真ライブラリから表示されます。\n\niCloud写真を使っている場合は、通常これだけで十分です。その日の1枚はすでにほかの端末にもあるため、追加料金なしで、使っていないiPadをフォトフレームにすることもできます。\n\niCloud写真を使っていない場合は、「この日の1枚を同期」（1枚かざる Plus）をONにしてください。わずかなiCloud容量で、その日の1枚のプライベートなコピーをあなた自身のiCloudに保存し、ほかの端末にも選んだ日を表示できます。古いiPhoneやiPadを家族のフォトフレームにすることもできます。開けるのはあなただけで、開発者はデータを読めません。"
+            "answer": "iCloud同期は、選んだ日の記録とメモをあなたのiCloudに保存します。機種変更やアプリの入れ直しでも消えず、ほかの端末にも無料で表示されます。写真そのものはアップロードされず、各端末の写真ライブラリから表示されます。\n\niCloud写真を使っている場合は、通常これだけで十分です。その日の1枚はすでにほかの端末にもあるため、追加料金なしで、使っていないiPadをフォトフレームにすることもできます。\n\niCloud写真を使っていない場合は、「この日の1枚を同期」をONにしてください。わずかなiCloud容量で、その日の1枚のプライベートなコピーをあなた自身のiCloudに保存し、ほかの端末にも選んだ日を表示できます。古いiPhoneやiPadを家族のフォトフレームにすることもできます。開けるのはあなただけで、開発者はデータを読めません。写真の同期は1枚かざる プレミアムに含まれます（Plusをお持ちの方も使えます）。"
           },
           {
             "question": "写真アプリから写真を削除するとどうなりますか？",
             "answer": "写真アプリで元の写真を削除すると、1枚かざるで利用できなくなる場合があります。1枚かざる Archiveで保存済みの写真は、引き続き表示できます。"
           },
           {
-            "question": "1枚かざる Plus とは何ですか？",
-            "answer": "1枚かざる Plusは買い切りの追加機能です。①1枚かざる Archive：選んだ1枚のコピーを1枚かざる内にも保存 ②フレームモード：時間制限なし（無料版は5分間のプレビュー）③月のふりかえり：いつでも何度でも再生（無料版は最初の1回を最後まで再生できます）④複数端末で同期：選んだ写真とメモが、他の端末にもすぐ反映されます。写真は各端末の写真ライブラリ（iCloudフォトなど）から表示されます。初期設定では、1枚かざるが写真をアップロードすることはありません。「この日の1枚を同期」をONにすると、選んだ写真の小さなコピーをあなたのiCloudにも保存し、iCloud写真を使っていない端末でも表示できるようにします。開いて見られるのはあなただけで、開発者がデータを読むことはできません。カレンダー・写真選び・メモ・iCloud同期は今後も無料で使えます。"
+            "question": "1枚かざる プレミアムには何が含まれますか？",
+            "answer": "自分のアルバムをもっと楽しむための、任意の自動更新サブスクリプション（月額または年額）です。Archive（選んだ1枚のコピーをアプリ内にも保存）、時間制限のないフレーム（無料版は1回5分まで）、月間アルバムの再生、写真コピー同期、年の画像と追加デザインが含まれます。招待した家族へ1日1枚を共有することもできます。カレンダー・写真選び・メモ・選択とメモのiCloud同期は無料のままです。管理・解約はいつでもApple Accountの設定から行えます。"
           },
           {
-            "question": "1枚かざる Family とは何ですか？",
-            "answer": "任意の自動更新サブスクリプション（月額または年額）です。招待した家族が、あなたの毎日を1枚かざるで見られます。1日1枚、家に置いたフォトフレームのように。共有する範囲は自分で選べます。すべての日の写真、または選んだタグの付いた日だけ。閲覧専用で、招待した家族側はずっと無料です。有効な間はPlusの全機能も使えます。管理・解約はいつでもApple Accountの設定から行えます。"
+            "question": "1枚かざる Plus を持っている場合はどうなりますか？",
+            "answer": "Plusの新規販売は終了しましたが、すでにお持ちの方は、これまでの特典をずっと使えます。新しいプレミアム特典にはサブスクが必要です。"
+          },
+          {
+            "question": "家族との共有はどのように使いますか？",
+            "answer": "家族への共有は1枚かざる プレミアムの特典です。招待する前に、共有する範囲（すべての日、または選んだタグの付いた日だけ）を選び、招待リンクを送ります。家族は1枚かざるを入れたiPhoneやiPadでリンクを開くと、1日1枚の写真を日付と一緒に見られます。閲覧専用で、家族側はずっと無料です。共有はいつでも設定から止められます。"
           },
           {
             "question": "1枚かざる Archive とは何ですか？",
-            "answer": "各日に選んだ写真のコピーを1枚かざる内にも保存する、1枚かざる Plusの機能です。あとで元の写真がライブラリから削除されても、保存したコピーを表示できます。また、閲覧が安定して速くなります。保存したコピーはすぐに表示されるため、元の写真がiCloudにあって先にダウンロードが必要な場合でも待たされません。自動で選ばれた写真も保存するかは設定で選べます。保存済みの写真は、設定の「保存済みの写真」からいつでも確認できます。"
+            "answer": "各日に選んだ写真のコピーを1枚かざる内にも保存する機能です。あとで元の写真がライブラリから削除されても、保存したコピーを表示できます。また、閲覧が安定して速くなります。保存したコピーはすぐに表示されるため、元の写真がiCloudにあって先にダウンロードが必要な場合でも待たされません。自動で選ばれた写真も保存するかは設定で選べ、保存済みの写真は設定の「保存済みの写真」からいつでも確認できます。1枚かざる プレミアムに含まれます（Plusをお持ちの方も使えます）。"
           },
           {
             "question": "1枚かざる Archiveは写真ライブラリ全体をコピーしますか？",
@@ -234,7 +249,11 @@
           },
           {
             "question": "iPadや古いiPhoneをフォトフレームにできますか？",
-            "answer": "はい。フレームモードを開くと、選んだ写真が日付とともに画面いっぱいに表示され、数秒たつと操作ボタンが消えて写真だけになります。iPadや使わなくなったiPhoneを棚に立てておけば、家族のフォトフレームになります。無料版は1回5分まで、1枚かざる Plusにすると時間制限がなくなります。Plusの複数端末同期を使えば、スマホで選んだ写真がすぐにフレームにも反映されます。"
+            "answer": "はい。フレームモードを開くと、選んだ写真が日付・メモとともに画面いっぱいに表示され、数秒たつと操作ボタンが消えて写真だけになります。iPadや使わなくなったiPhoneを棚に立てておけば、家族のフォトフレームになります。フレームモードは1回5分まで無料で、1枚かざる プレミアムにすると時間制限がなくなり、夜は暗くなって朝に自動で戻る「消灯スケジュール」も使えます。"
+          },
+          {
+            "question": "テレビに映せますか？",
+            "answer": "はい。AirPlayやHDMIアダプタでiPhoneやiPadをテレビにつなぎ、フレームモードを開きます。テレビには額に入った写真と日付・メモだけが映り、手元の端末はリモコンとして使えます。"
           },
           {
             "question": "メモを検索できますか？",
@@ -246,15 +265,15 @@
           },
           {
             "question": "1日や1ヶ月を共有できますか？",
-            "answer": "はい。日付の画面で共有ボタンを押すと、その写真・日付・メモを1枚のカードにできます。月間アルバムを見終わったあとは、その月をまとめて1枚のカードとして共有することもできます。共有は通常の共有シートから行われ、自動で投稿されることはありません。1枚かざるが写真をバックグラウンドでアップロードすることもありません。"
+            "answer": "はい。日付の画面で共有ボタンを押すと、その写真・日付・メモを1枚のカードにできます。ひと月はカレンダーの1枚画像にでき、月のふりかえりは縦型動画として保存・共有できます。どちらも無料です。1枚かざる プレミアムでは、1年を1枚にした画像や追加デザインも使えます。共有は通常の共有シートから行われ、自動で投稿されることはありません。1枚かざるが写真をバックグラウンドでアップロードすることもありません。"
           },
           {
             "question": "購入を復元するには？",
-            "answer": "別の端末や再インストール後などで1枚かざる Plusが反映されていない場合は、設定 > 1枚かざる Plus の「購入を復元」をタップしてください。購入時と同じApple Accountでのサインインが必要です。"
+            "answer": "設定でご利用中のプランを開き、「購入を復元」をタップしてください。購入時と同じApple Accountでのサインインが必要です。以前購入したPlusも、有効なサブスクリプションも復元されます。"
           },
           {
             "question": "なぜウィジェットのサイズによって違う写真が表示されるのですか？",
-            "answer": "各ウィジェットサイズには、それぞれ別の選択写真を設定できます。\n\nたとえば、小・中・大のウィジェットは別々に管理されているため、それぞれ違う写真が表示される場合があります。\n\n同じ写真を表示したい場合は、各ウィジェットサイズごとに写真を設定または更新してください。"
+            "answer": "ランダムに思い出を出すウィジェットは、サイズごとに保存済みの日をランダムに選ぶため、小・中・大を並べるとそれぞれ違う写真が出ることがあります。どのサイズでも同じ写真を出したい場合は、その日の1枚を表示する「今日の1枚」ウィジェットをお使いください。"
           },
           {
             "question": "なぜ1日1枚だけなのですか？",
@@ -416,15 +435,15 @@
   },
   "6762576578": {
     "slug": "pooptap-daily-tracker",
-    "short_description": "A one-tap poop tracker and bowel movement log with no ads and no account. Private calendar, optional symptom marks, and a poop buddy that grows as you log.",
-    "meta_description": "PoopTap is a one-tap poop tracker and stool log with a private calendar and a poop buddy that evolves as you log. No ads, no account, no subscription.",
+    "short_description": "A one-tap poop tracker and bowel movement log with no ads and no account. Pick shape and color on the home screen, tap once, and watch your poop buddy grow.",
+    "meta_description": "PoopTap is a one-tap poop tracker and stool log: shape and color on the home screen, a private calendar, and a poop buddy that grows. No ads, no account.",
     "categories": [
       "tap-tools"
     ],
     "overview": [
-      "PoopTap is a one-tap poop tracker with no ads, no account, and no subscription. Tap once after you go, and your log lands on a private calendar on your device. Your streak grows, and your poop buddy evolves through stages from Tiny Poop to Legendary, while the Throne Keeper comments on your progress, whether you asked or not.",
-      "Under the humor is a useful bowel movement log: shape and color details, optional symptom marks, a short note per entry, a monthly calendar view, and optional reminders when your record goes quiet. A Home Screen and Lock Screen widget lets you log without opening the app. Only a limited daily growth bonus counts toward evolution, so consistency is rewarded, not spam.",
-      "PoopTap is for personal tracking and entertainment. It is not a medical app and does not provide medical advice, diagnosis, or treatment."
+      "PoopTap is a one-tap poop tracker with no ads, no account, and no subscription. Pick the shape and color right on the home screen, then tap Record Log once. Tapped by mistake? Undo within 8 seconds. Your log lands on a private calendar on your device, your streak grows, and your poop buddy evolves through stages from Tiny Poop to Legendary, while the Throne Keeper comments on your progress, whether you asked or not.",
+      "Growth fits on one screen, and tapping your buddy brings a bit of toilet trivia once a day. In Dress up, every look shows how to unlock it, and the empty throne is a look you can keep; future forms stay a surprise until you earn them. Only a limited daily growth bonus counts toward evolution, so consistency is rewarded, not spam.",
+      "Under the humor is a useful bowel movement log: shape and color, optional symptom marks, a short note per entry, a monthly calendar view, and optional reminders when your record goes quiet. A Home Screen and Lock Screen widget lets you log without opening the app, and the large inner display on iPhone Duo is supported. PoopTap is for personal tracking and entertainment. It is not a medical app and does not provide medical advice, diagnosis, or treatment."
     ],
     "target_users": [
       "People who want a simple daily bowel movement tracker or stool log",
@@ -433,25 +452,28 @@
       "Users who prefer a playful, habit-building log over a medical-style app"
     ],
     "features": [
-      "One-tap logging, including from a Home Screen or Lock Screen widget",
-      "Shape and color details, optional symptom marks, and a short note per entry",
+      "One-tap logging: pick shape and color on the home screen, then tap Record Log; undo within 8 seconds",
+      "Log from a Home Screen or Lock Screen widget without opening the app",
+      "Optional symptom marks and a short note per entry",
       "Monthly calendar view of your history and a growing streak",
-      "A poop buddy that evolves from Tiny Poop to Legendary, watched over by the Throne Keeper",
+      "A poop buddy that evolves from Tiny Poop to Legendary, watched over by the Throne Keeper; growth on one screen and daily trivia when you tap your buddy",
+      "Dress up: see how to unlock each look, and keep the empty throne as a look",
       "Optional reminders when your record goes quiet",
       "Optional Apple Health linking that writes only the constipation, diarrhea, and bloating marks you choose",
-      "Free iCloud Backup to your own iCloud Drive, with restore after reinstalling",
+      "Free backup: export your logs and settings to a place you choose, and restore from the Files app",
       "Optional PoopTap Plus one-time purchase: extra evolution forms, premium trivia, extra achievements, premium share cards, Annoying reminder mode, themes, and discreet app icons"
     ],
     "how_to_use": [
       "Install PoopTap from the App Store.",
-      "Tap after you go to add a quick log, or use the Home Screen or Lock Screen widget.",
-      "Add optional shape, color, symptom marks, or a short note when useful.",
-      "Review your history on the monthly calendar and watch your poop buddy evolve.",
-      "Optionally turn on reminders, iCloud Backup, or Apple Health linking in settings.",
+      "After you go, pick the shape and color on the home screen and tap Record Log, or log from the Home Screen or Lock Screen widget.",
+      "Tapped by mistake? Tap Undo within 8 seconds.",
+      "Add optional symptom marks or a short note when useful.",
+      "Review your history on the monthly calendar, check your buddy's growth, and change its look in Dress up.",
+      "Optionally turn on reminders or Apple Health linking, and export a backup, in settings.",
       "Use PoopTap as a personal log, not as medical advice or analysis."
     ],
-    "pricing": "PoopTap is free to download and use, with no ads and no subscription. iCloud Backup is free. PoopTap Plus is an optional one-time purchase, not a subscription. App Store pricing and availability may vary by country and can change over time.",
-    "privacy": "Your logs stay on your device. PoopTap has no accounts, no ads, and no analytics. If you turn on Apple Health linking, PoopTap writes only the constipation, diarrhea, and bloating marks you choose; it does not infer symptoms or read Health data. If you use iCloud Backup, a copy of your logs and settings is saved to your own iCloud Drive. Check the App Store product page for Apple's current privacy label.",
+    "pricing": "PoopTap is free to download and use, with no ads and no subscription. Backup is free. PoopTap Plus is an optional one-time purchase, not a subscription. App Store pricing and availability may vary by country and can change over time.",
+    "privacy": "Your logs stay on your device. PoopTap has no accounts, no ads, and no analytics. If you turn on Apple Health linking, PoopTap writes only the constipation, diarrhea, and bloating marks you choose; it does not infer symptoms or read Health data. A backup is created only when you export one, and you choose where to save it with the share sheet. Check the App Store product page for Apple's current privacy label.",
     "faq": [
       {
         "question": "What is PoopTap?",
@@ -462,20 +484,28 @@
         "answer": "No. PoopTap is for personal tracking and entertainment. It does not provide medical advice, diagnosis, treatment, analysis, or recommendations."
       },
       {
+        "question": "How do I log?",
+        "answer": "Pick the shape and color on the home screen, then tap Record Log once. If you tapped by mistake, tap Undo within 8 seconds. You can also log from the Home Screen or Lock Screen widget."
+      },
+      {
         "question": "What can I track with PoopTap?",
-        "answer": "You can log each bowel movement with shape and color details, optional symptom marks, and a short note, then review your history on a monthly calendar."
+        "answer": "You can log each bowel movement with shape and color, optional symptom marks, and a short note, then review your history on a monthly calendar."
       },
       {
         "question": "Is my data private?",
-        "answer": "Your logs stay on your device. There are no accounts, no ads, and no analytics. Optional iCloud Backup saves a copy only to your own iCloud Drive."
+        "answer": "Your logs stay on your device. There are no accounts, no ads, and no analytics. A backup is made only when you export one yourself."
       },
       {
         "question": "Does PoopTap connect to Apple Health?",
         "answer": "Optionally. If you turn it on, PoopTap writes only the constipation, diarrhea, and bloating marks you choose. It does not infer symptoms or read Health data."
       },
       {
-        "question": "Is iCloud Backup free?",
-        "answer": "Yes. iCloud Backup is free. You can save a copy of your logs and settings to your own iCloud Drive and restore it after reinstalling the app."
+        "question": "How do I back up my logs?",
+        "answer": "Backup is free. Export a copy of your logs and settings, choose where to save it using the share sheet, and restore it later by selecting the backup in the Files app."
+      },
+      {
+        "question": "What is Dress up?",
+        "answer": "Dress up shows every look your buddy can wear and how to unlock it. The empty throne is also a look you can keep. Future evolution forms stay a surprise until you earn them."
       },
       {
         "question": "What is PoopTap Plus?",
@@ -489,12 +519,12 @@
     "locales": {
       "ja": {
         "name": "PoopTap うんち記録・便通カレンダー",
-        "short_description": "広告なし・アカウント不要。ワンタップで記録できるうんち記録アプリ。月ごとのカレンダーと任意の症状の印、記録するたびに育つ相棒のうんち付き。",
-        "meta_description": "PoopTapは、ワンタップで記録できるうんち記録・便通カレンダー。広告なし・アカウント不要で、記録するたびに相棒のうんちが育つ、続けやすい排便日記アプリです。",
+        "short_description": "広告なし・アカウント不要。ホームで形と色を選んで、ワンタップで記録できるうんち記録アプリ。記録するたびにうんちくんが話し、育って進化します。",
+        "meta_description": "PoopTapは、ホームで形と色を選んでワンタップで記録できるうんち記録・便通カレンダー。広告なし・アカウント不要で、うんちくんが話して育つ排便日記アプリです。",
         "overview": [
-          "PoopTapは、広告・アカウント登録・サブスクのない、ワンタップのうんち記録アプリです。トイレのあとにタップするだけで、記録は端末内のカレンダーに残ります。連続記録が伸び、相棒のうんちは「ちいさなうんち」から「伝説のうんち」まで進化。少しおせっかいな「玉座の番人」が、頼んでいなくても進み具合にひとこと添えてきます。",
-          "ふざけた見た目の下には、実用的な記録機能がそろっています。形と色の記録、任意の症状の印、ひとことメモ、月ごとのカレンダー表示、記録が途切れたときのリマインダー。ホーム画面・ロック画面のウィジェットから、アプリを開かずに記録することもできます。進化に数えられるのは1日3回までの「成長ボーナス」だけなので、連投ではなく毎日の継続が報われます。",
-          "PoopTapは個人の記録と娯楽のためのアプリであり、医療上の助言、診断、治療は提供しません。"
+          "PoopTapは、広告・アカウント登録・サブスクのない、ワンタップのうんち記録アプリです。トイレのあとは、ホームで形と色を選んで「記録する」をひとタップ。押し間違えても「取り消す」で8秒以内なら戻せます。記録は端末内のカレンダーに残り、連続記録が伸び、うんちくんは「ちいさなうんち」から「伝説のうんち」まで進化します。記録するたびに、うんちくん本人が「どうも、本日のうんちです」のような口ぶりでひとこと。少しとぼけた、ゆかいな相棒です。",
+          "成長は1画面にまとまっていて、うんちくんを押すと1日1回の豆知識が出ます。「着替え」には全部の姿と解放条件が並び、便座も選べます。先の姿は、育ててからのお楽しみです。進化に数えられるのは1日3回までの「成長ボーナス」だけなので、連投ではなく毎日の継続が報われます。",
+          "ふざけた見た目の下には、実用的な記録機能がそろっています。形と色の記録、任意の症状の印、ひとことメモ、月ごとのカレンダー表示、記録が途切れたときのリマインダー。ホーム画面・ロック画面のウィジェットから、アプリを開かずに記録することもでき、iPhone Duoの大きな内側画面にも対応しています。PoopTapは個人の記録と娯楽のためのアプリであり、医療上の助言、診断、治療は提供しません。"
         ],
         "target_users": [
           "毎日のお通じ・便通をかんたんに記録したい方",
@@ -503,33 +533,40 @@
           "医療っぽいアプリよりも、遊び心のある習慣づくりの記録を続けたい方"
         ],
         "features": [
-          "ワンタップで記録。ホーム画面・ロック画面のウィジェットからも記録できる",
-          "形・色の記録、任意の症状の印、ひとことメモ",
+          "ホームで形と色を選んで「記録する」をひとタップ。押し間違えても8秒以内なら「取り消す」で戻せる",
+          "ホーム画面・ロック画面のウィジェットから、アプリを開かずに記録",
+          "任意の症状の印と、ひとことメモ",
           "月ごとのカレンダー表示と、伸びていく連続記録",
-          "「ちいさなうんち」から「伝説のうんち」へ進化する相棒と、見守る「玉座の番人」",
+          "「ちいさなうんち」から「伝説のうんち」へ進化し、本人の口ぶりで話すうんちくん。成長は1画面、押すと1日1回の豆知識",
+          "「着替え」で全部の姿と解放条件を確認。便座も選べる",
           "記録が途切れたときのリマインダー（任意）",
           "Appleヘルスケア連携（任意）：自分で選んだ便秘・下痢・おなかの張りの印だけを書き込み",
-          "無料のiCloudバックアップ。ご自身のiCloud Driveに保存し、入れ直したあとに復元可能",
+          "無料のバックアップ。記録と設定を書き出して好きな保存先へ、復元は「ファイル」から",
           "買い切りの「PoopTap Plus」（任意）：追加の進化フォーム、プレミアムトリビア、追加実績、プレミアムシェアカード、「おせっかい」リマインダー、テーマ、目立たないアプリアイコン"
         ],
         "how_to_use": [
           "App StoreからPoopTapをインストールします。",
-          "トイレのあとにタップして記録します。ホーム画面・ロック画面のウィジェットからも記録できます。",
-          "必要に応じて形・色、症状の印、ひとことメモを添えます。",
-          "月ごとのカレンダーで履歴をふりかえり、相棒のうんちの進化を楽しみます。",
-          "必要なら設定で、リマインダー、iCloudバックアップ、Appleヘルスケア連携をオンにします。",
+          "トイレのあとに、ホームで形と色を選んで「記録する」をタップします。ホーム画面・ロック画面のウィジェットからも記録できます。",
+          "押し間違えたときは、8秒以内に「取り消す」をタップします。",
+          "必要に応じて症状の印やひとことメモを添えます。",
+          "月ごとのカレンダーで履歴をふりかえり、うんちくんの成長を見て、「着替え」で姿を選びます。",
+          "必要なら設定で、リマインダーやAppleヘルスケア連携をオンにし、バックアップを書き出します。",
           "医療上の判断には使わず、自分用の記録として活用します。"
         ],
-        "pricing": "無料でダウンロード・利用でき、広告やサブスクはありません。iCloudバックアップは無料です。買い切りの「PoopTap Plus」は任意で、サブスクではありません。最新の価格・提供状況はApp Storeでご確認ください。",
-        "privacy": "記録は端末の中に保存されます。アカウント登録も広告も解析もありません。Appleヘルスケア連携をオンにした場合は、自分で選んだ便秘・下痢・おなかの張りの印だけを書き込み、症状の推定やヘルスケアデータの読み込みはしません。iCloudバックアップを使う場合は、記録と設定のコピーがご自身のiCloud Driveに保存されます。最新のプライバシーラベルはApp Storeでご確認ください。",
+        "pricing": "無料でダウンロード・利用でき、広告やサブスクはありません。バックアップは無料です。買い切りの「PoopTap Plus」は任意で、サブスクではありません。最新の価格・提供状況はApp Storeでご確認ください。",
+        "privacy": "記録は端末の中に保存されます。アカウント登録も広告も解析もありません。Appleヘルスケア連携をオンにした場合は、自分で選んだ便秘・下痢・おなかの張りの印だけを書き込み、症状の推定やヘルスケアデータの読み込みはしません。バックアップは自分で書き出したときだけ作られ、保存先は共有画面から自分で選びます。最新のプライバシーラベルはApp Storeでご確認ください。",
         "faq": [
           {
             "question": "PoopTapとはどんなアプリですか？",
-            "answer": "ワンタップで記録できるうんち記録・便通カレンダーのアプリです。記録するたびに相棒のうんちが育ち、進化します。広告・アカウント登録・サブスクはありません。"
+            "answer": "ワンタップで記録できるうんち記録・便通カレンダーのアプリです。記録するたびにうんちくんが話し、育って進化します。広告・アカウント登録・サブスクはありません。"
           },
           {
             "question": "PoopTapは医療アプリですか？",
             "answer": "いいえ。個人の記録と娯楽のためのアプリで、医療上の助言、診断、治療、分析、おすすめの提示は行いません。"
+          },
+          {
+            "question": "どうやって記録しますか？",
+            "answer": "ホームで形と色を選んで「記録する」をひとタップするだけです。押し間違えたときは、8秒以内に「取り消す」で戻せます。ホーム画面・ロック画面のウィジェットからも記録できます。"
           },
           {
             "question": "何を記録できますか？",
@@ -537,15 +574,19 @@
           },
           {
             "question": "記録は他の人に見られませんか？",
-            "answer": "記録は端末の中に保存されます。アカウント登録も広告も解析もありません。任意のiCloudバックアップも、ご自身のiCloud Driveにのみ保存されます。"
+            "answer": "記録は端末の中に保存されます。アカウント登録も広告も解析もありません。バックアップも、自分で書き出したときだけ作られます。"
           },
           {
             "question": "Appleヘルスケアと連携できますか？",
             "answer": "任意で連携できます。オンにすると、自分で選んだ便秘・下痢・おなかの張りの印だけを書き込みます。症状の推定やヘルスケアデータの読み込みはしません。"
           },
           {
-            "question": "iCloudバックアップは無料ですか？",
-            "answer": "はい、無料です。記録と設定のコピーをご自身のiCloud Driveに保存し、アプリを入れ直したあとに復元できます。"
+            "question": "バックアップはできますか？",
+            "answer": "はい、無料でできます。記録と設定を書き出し、共有画面から好きな保存先を選びます。復元するときは「ファイル」からバックアップを選びます。"
+          },
+          {
+            "question": "「着替え」とは何ですか？",
+            "answer": "うんちくんの全部の姿と、その解放条件が並ぶ画面です。便座も選べます。先の進化の姿は、育ててからのお楽しみです。"
           },
           {
             "question": "PoopTap Plusとは何ですか？",
@@ -1825,59 +1866,69 @@
   },
   "6764601072": {
     "slug": "study-buddy-timer",
-    "short_description": "A study timer with a chill buddy that grows with every minute you study. One-tap start and stop, plans, Pomodoro, widgets, and a gentle Study Pair.",
-    "meta_description": "Study Buddy Timer: a one-tap study timer for iPhone with a buddy that grows as you study. Lock Screen, widgets, Pomodoro, plans, charts and iCloud sync.",
+    "short_description": "A study timer with a chill buddy that grows with every minute you study and talks when you tap it. One-tap start and stop, plans, Pomodoro, widgets, and a Study Pair with no rankings.",
+    "meta_description": "Study Buddy Timer: a one-tap study timer with a buddy that grows and talks. Lock Screen, widgets, Pomodoro, plans, charts, Study Pair and free iCloud sync.",
     "categories": [
       "productivity",
       "widgets"
     ],
     "overview": [
       "Study Buddy Timer is a simple study timer. Tap Start when you begin, tap Stop when you are done — no session length to set up. The timer keeps running even if you close the app, and you can pause anytime. Daily study time, session counts, and totals show how your hours add up.",
-      "What makes it different is the buddy: every minute of study earns EXP (with a small bonus for your first session of the day), leveling up a low-key companion that talks when you tap it. Taking a break never shrinks your buddy. It is deliberately a study timer first and a character second — the timer, elapsed time, and totals stay front and center, and the buddy is light motivation rather than a game.",
-      "You can time your study without opening the app: the elapsed time and your buddy appear on the Lock Screen and in the Dynamic Island, and you can start and stop from a Home Screen widget, Control Center, or the Action button. Beyond the timer there are study plans, Pomodoro, ambient sounds, a daily goal, exam countdowns, subject charts, CSV export, and optional iCloud sync. You can also pair with one friend or family member in Study Pair (no rankings)."
+      "What makes it different is the buddy: every minute you study earns EXP and levels up a laid-back companion that chats when you tap it, and can even call you by the name you set (the name stays on your device and never appears in notifications). Taking a break never shrinks your buddy. It is deliberately a study timer first and a character second — the timer, elapsed time, and totals stay front and center, and the buddy is light motivation rather than a game.",
+      "You can time your study without opening the app: the elapsed time and your buddy appear on the Lock Screen and in the Dynamic Island, and you can start and stop from a Home Screen widget, Control Center, the Action button, an NFC tag on your desk (via Shortcuts), or a Focus. Beyond the timer there are study plans, Pomodoro, ambient sounds, a daily goal, exam countdowns, subject charts, CSV export, and free iCloud sync and backup.",
+      "With Study Pair you connect with one friend or family member through an invite link and grow one buddy together, with no rankings. Days when both of you do your part become pair days, and a partner can choose to cheer instead of study. Your partner sees only study-time totals, never your subjects, notes, or when you studied."
     ],
     "target_users": [
       "Students who want to log study hours without setting up a timer each time",
       "Working adults studying for certifications or exams",
-      "Readers who want to track daily reading time",
+      "Friends or family who want to study together, or cheer someone on, without rankings",
       "People building a study habit who respond to small progress rewards",
       "Anyone who finds full task managers too heavy for simple time tracking"
     ],
     "features": [
-      "One-tap Start / Stop study timer that keeps running when you close the app, with pause",
-      "Lock Screen and Dynamic Island display while the timer runs; Home Screen widget, Control Center, Action button, and Focus-triggered start",
-      "EXP and level progress: 1 minute = 1 EXP, plus a first-session-of-the-day bonus",
-      "Buddy that grows with your study time and talks when you tap it — it never shrinks when you rest",
+      "One-tap Start / Stop study timer that keeps running when you close the app, with pause; one reminder if you forget to stop for 3 hours",
+      "Lock Screen and Dynamic Island display while the timer runs; start and stop from a Home Screen widget, Control Center, the Action button, an NFC tag (Shortcuts), or a Focus",
+      "A buddy that grows with every minute you study, talks when you tap it, and can call you by name — it never shrinks when you rest",
       "Study plans (including pasting a plan made with AI, calendar events, and a Reminders list), subjects, and textbooks",
-      "Pomodoro, daily study-time goal, exam countdown with reminders, and ambient sounds",
-      "Weekly and monthly charts by subject, a study calendar, a weekly review, and CSV export",
-      "Optional iCloud sync and backup; Study Pair for studying together without rankings (creating a pair needs Study Buddy Pro)"
+      "Pomodoro, daily study-time goal, a one-line current goal, exam countdown with reminders, and ambient sounds that unlock as your buddy levels up",
+      "Summary card after each session, focus rating, study calendar, weekly review, weekly and monthly charts by subject, and CSV export",
+      "Free iCloud sync and backup: switch iPhones and get your sessions and buddy back with the same Apple ID",
+      "Study Pair: grow one buddy with one partner, with pair days and a cheer role; creating a pair needs Study Buddy Premium, and invited partners join for free"
     ],
     "how_to_use": [
       "Open Study Buddy Timer and tap Start when you begin studying (choose a subject or plan first if you like).",
       "Study — the elapsed time is shown live, including on the Lock Screen and in the Dynamic Island, and the timer keeps running if you close the app.",
-      "Tap Stop when you finish; the session is saved and you earn EXP.",
-      "Check your daily study time, charts, calendar, and your buddy's level on the app's screens.",
-      "Add a Home Screen widget or a Control Center control to start and stop without opening the app."
+      "Tap Stop when you finish; the session is saved, you earn EXP, and a summary card shows today's total and your streak.",
+      "Check your daily study time, charts, calendar, and your buddy's level, and tap your buddy to chat.",
+      "Add a Home Screen widget or a Control Center control to start and stop without opening the app.",
+      "To study with someone, create a Study Pair and send the invite link."
     ],
-    "pricing": "Study Buddy Timer is free to download on the App Store. Study Buddy Pro is an optional one-time purchase (no monthly fee) that adds past weeks and months, Study Pair creation, extra ambient sounds, and up to 5 exams. The timer, Pomodoro, plans, records, widgets, CSV export, and iCloud sync are free. App Store pricing can change, so check the store listing for current details.",
-    "privacy": "There are no ads. Your study records are saved on your iPhone and never sent to the developer's servers, and the app works without an account. If you turn on iCloud sync, they are also saved in your own iCloud, which the developer cannot see. Data shared in a Study Pair is stored in the pair creator's iCloud, and your partner sees only study-time totals. For the authoritative summary of data practices, see the privacy label on the app's App Store page.",
+    "pricing": "Study Buddy Timer is free to download on the App Store. Study Buddy Premium is an optional auto-renewing monthly or yearly subscription that adds Apple Watch timing, past weeks and monthly charts, earlier calendars, Study Pair creation, two extra ambient sounds, and up to 5 exams. The timer, records, buddy, and iCloud sync stay free, and invited partners join a Study Pair for free. Existing Study Buddy Pro owners keep all their benefits permanently. App Store pricing can change, so check the store listing for current details.",
+    "privacy": "There are no ads. Your study records are saved on your iPhone and never sent to the developer's servers, and the app works without an account. If you turn on iCloud sync, they are also saved in your own iCloud, which the developer cannot see. Data shared in a Study Pair is stored in the pair creator's iCloud, and your partner sees only study-time totals — not when you studied, your subjects, or your notes. The name your buddy calls you stays on your device. For the authoritative summary of data practices, see the privacy label on the app's App Store page.",
     "faq": [
       {
         "question": "Is Study Buddy Timer free?",
-        "answer": "Yes, it is free to download and the core features are free. Study Buddy Pro is an optional one-time purchase (no monthly fee) for extras such as past weeks and months, creating a Study Pair, and more exams. Check the App Store listing for current details."
+        "answer": "Yes, it is free to download, and the timer, records, buddy, and iCloud sync are free. Study Buddy Premium is an optional monthly or yearly subscription for extras such as Apple Watch timing, past weeks and months, creating a Study Pair, and more exams. If you bought Study Buddy Pro before, you keep all its benefits without subscribing. Check the App Store listing for current details."
       },
       {
         "question": "Where is my study data stored?",
         "answer": "Study records are saved on your iPhone and are not sent to the developer's servers. If you turn on iCloud sync, they are also saved in your own iCloud. See the App Store privacy label for the full summary of data practices."
       },
       {
-        "question": "Does it have widgets?",
-        "answer": "Yes. A Home Screen widget lets you start and stop and see your study time without opening the app. While the timer runs, the elapsed time and your buddy also appear on the Lock Screen and in the Dynamic Island."
+        "question": "Is iCloud sync free?",
+        "answer": "Yes. iCloud sync and backup are free for everyone. When you switch iPhones, turn on sync with the same Apple ID to get your sessions and buddy back."
       },
       {
-        "question": "How does the EXP and level system work?",
-        "answer": "Each minute of study earns 1 EXP, and your first valid session of the day earns a small bonus. EXP levels up your buddy, and the app shows how many minutes remain until the next level. Taking a break never shrinks your buddy."
+        "question": "Does it have widgets?",
+        "answer": "Yes. A Home Screen widget lets you start and stop and see your study time without opening the app. While the timer runs, the elapsed time and your buddy also appear on the Lock Screen and in the Dynamic Island. You can also start and stop from Control Center or the Action button."
+      },
+      {
+        "question": "How does the buddy grow?",
+        "answer": "Every minute you study earns EXP, which levels up your buddy, and the app shows how far it is to the next level. Taking a break never shrinks your buddy. Tap your buddy to chat; if you set a name in Settings, it sometimes calls you by it."
+      },
+      {
+        "question": "What is Study Pair?",
+        "answer": "Connect with one partner through an invite link and grow one buddy with the time you both put in. You can see each other's study time today and whether the other person is studying right now. On days when both of you do your part, it's a pair day and your buddy grows more. You can choose a cheer role instead of studying. Your partner sees only study-time totals. Only the person who creates the pair needs Premium; invited partners join for free."
       },
       {
         "question": "Do I have to set a timer length before starting?",
@@ -1889,61 +1940,71 @@
       },
       {
         "question": "Is it a game?",
-        "answer": "No. It is designed as a practical study timer first — the buddy is a light motivational touch, not a full pet-raising game."
+        "answer": "No. It is designed as a practical study timer first — the buddy is a light motivational touch, not a full pet-raising game, and there are no rankings."
       }
     ],
     "locales": {
       "ja": {
         "name": "Study Buddy：勉強タイマー",
-        "short_description": "勉強した時間で、ゆるいバディが育つ勉強タイマー。ワンタップで開始・停止、予定、ポモドーロ、ウィジェット、ふたりで使うペアにも対応。",
-        "meta_description": "Study Buddy：勉強タイマーは、勉強した時間でバディが育つiPhone向けの勉強タイマー。ロック画面・ウィジェット・ポモドーロ・予定・グラフ・iCloud同期に対応。",
+        "short_description": "勉強した時間で、ゆるいバディが育つ勉強タイマー。さわるとしゃべります。ワンタップで開始・停止、予定、ポモドーロ、ウィジェット、ランキングなしのスタディペアにも対応。",
+        "meta_description": "Study Buddy：勉強タイマーは、勉強した時間でバディが育ち、さわるとしゃべる勉強タイマー。ロック画面・ウィジェット・ポモドーロ・予定・スタディペア・無料のiCloud同期に対応。",
         "overview": [
-          "Study Buddy：勉強タイマーは、勉強時間をシンプルに記録するためのタイマーです。始めるときに開始、終わったら停止を押すだけで、事前にタイマーの長さを設定する必要はありません。アプリを閉じても測り続け、途中で一時停止もできます。今日の勉強時間、セッション数、累計時間が記録されるので、積み重ねた時間が目に見える形で残ります。",
-          "特徴は「バディ」の存在です。勉強1分ごとに1EXPが貯まり（その日最初のセッションには少しボーナスがつきます）、控えめなバディがレベルアップして、さわるとしゃべってくれます。休んでも、育ったバディは縮みません。あくまで勉強タイマーが主役で、タイマー・経過時間・累計が画面の中心。バディはゲームではなく、続けるためのささやかな動機づけとして設計されています。",
-          "アプリを開かなくても測れます。計測中はロック画面とDynamic Islandに経過時間とバディが表示され、ホーム画面のウィジェット、コントロールセンター、アクションボタンから開始・停止もできます。ほかにも、勉強予定、ポモドーロ、環境音、1日の目標、試験カウントダウン、科目ごとのグラフ、CSV書き出し、iCloud同期（任意）を備えています。ランキングなしで、ひとりの相手といっしょに育てるスタディペアも使えます。"
+          "Study Buddy：勉強タイマーは、勉強時間をシンプルに記録するためのタイマーです。始めるときに「開始」、終わったら「停止」を押すだけで、事前にタイマーの長さを設定する必要はありません。アプリを閉じても測り続け、途中で一時停止もできます。今日の勉強時間、セッション数、累計時間が記録されるので、積み重ねた時間が目に見える形で残ります。",
+          "特徴は「バディ」の存在です。測った時間はそのままバディの成長になり、レベルが上がっていきます。さわるとしゃべり、「設定」で呼び名を入れておけば、始めたときや終わったときに名前で呼んでくれることも（呼び名は端末内だけに保存され、通知には出ません）。休んでも、育ったバディは縮みません。あくまで勉強タイマーが主役で、タイマー・経過時間・累計が画面の中心。バディはゲームではなく、続けるためのささやかな動機づけとして設計されています。",
+          "アプリを開かなくても測れます。計測中はロック画面とDynamic Islandに経過時間とバディが表示され、ホーム画面のウィジェット、コントロールセンター、アクションボタン、机に貼ったNFCタグ（「ショートカット」のオートメーション）、集中モードから開始・停止できます。ほかにも、勉強予定、ポモドーロ、環境音、1日の目標、試験カウントダウン、科目ごとのグラフ、CSV書き出し、無料のiCloud同期とバックアップを備えています。",
+          "スタディペアでは、招待リンクでひとりの相手とつながり、ランキングなしで2人の勉強時間でひとつのバディを育てます。2人とも自分の役割を果たした日は「ふたりの日」。勉強のかわりに「応援する」役割も選べるので、家族の見守りにも使えます。相手に見えるのは勉強時間などの集計だけで、勉強した時刻・科目・メモは見えません。"
         ],
         "target_users": [
           "毎回タイマーを設定せずに勉強時間だけ記録したい学生の方",
           "資格や試験に向けて勉強している社会人の方",
-          "毎日の読書時間を記録したい方",
+          "友だちや家族と、ランキングなしでいっしょに勉強したい・応援したい方",
           "小さなごほうびがあると習慣が続きやすい方",
           "本格的なタスク管理アプリは重すぎると感じる方"
         ],
         "features": [
-          "ワンタップで開始・停止できる勉強タイマー（アプリを閉じても計測が続き、一時停止もできます）",
-          "計測中はロック画面とDynamic Islandに表示。ホーム画面ウィジェット、コントロールセンター、アクションボタン、集中モード連動の開始にも対応",
-          "1分=1EXP+その日最初のセッションのボーナスで貯まるEXPとレベル",
-          "勉強時間で育ち、さわるとしゃべるバディ（休んでも縮みません）",
+          "ワンタップで開始・停止できる勉強タイマー（アプリを閉じても計測が続き、一時停止も可能。止め忘れは3時間後に1回だけお知らせ）",
+          "計測中はロック画面とDynamic Islandに表示。ホーム画面ウィジェット、コントロールセンター、アクションボタン、NFCタグ（ショートカット）、集中モードから開始・停止",
+          "勉強時間で育ち、さわるとしゃべり、呼び名で呼んでくれるバディ（休んでも縮みません）",
           "勉強予定（AIで作った計画の貼り付け、カレンダーの予定、リマインダー連携にも対応）、科目、教材の登録",
-          "ポモドーロ、1日の目標勉強時間、お知らせつきの試験カウントダウン、環境音",
-          "科目ごとの週・月グラフ、勉強量カレンダー、週のまとめ、CSV書き出し",
-          "iCloud同期とバックアップ（任意）。ランキングなしでいっしょに勉強するスタディペア（ペアを作る人はStudy Buddy Proが必要）"
+          "ポモドーロ、1日の目標勉強時間、1行の「いまの目標」、お知らせつきの試験カウントダウン、バディのレベルで解放される環境音",
+          "止めたあとのふりかえりカード、集中度、勉強量カレンダー、週のまとめ、科目ごとの週・月グラフ、CSV書き出し",
+          "無料のiCloud同期とバックアップ。機種変更しても、同じApple IDでオンにすれば記録とバディが戻ります",
+          "スタディペア：ひとりの相手とひとつのバディを育てる。「ふたりの日」と「応援する」役割つき（ペアを作る人はStudy Buddy プレミアムが必要、招待された人は無料）"
         ],
         "how_to_use": [
-          "アプリを開き、勉強を始めるタイミングで開始をタップします（先に科目や予定を選ぶこともできます）。",
+          "アプリを開き、勉強を始めるタイミングで「開始」をタップします（先に科目や予定を選ぶこともできます）。",
           "そのまま勉強します。経過時間はリアルタイムで表示され、ロック画面やDynamic Islandにも出ます。アプリを閉じても計測は続きます。",
-          "終わったら停止をタップすると、セッションが保存されEXPが貯まります。",
-          "今日の勉強時間、グラフ、カレンダー、バディのレベルをアプリ内の各画面で確認します。",
-          "ホーム画面のウィジェットやコントロールセンターのコントロールを追加すれば、アプリを開かずに開始・停止できます。"
+          "終わったら「停止」をタップすると、セッションが保存されEXPが貯まり、ふりかえりカードに今日の合計と続けた日数が出ます。",
+          "今日の勉強時間、グラフ、カレンダー、バディのレベルを確認し、バディにさわって話しかけます。",
+          "ホーム画面のウィジェットやコントロールセンターのコントロールを追加すれば、アプリを開かずに開始・停止できます。",
+          "だれかといっしょに勉強するときは、スタディペアを作って招待リンクを送ります。"
         ],
-        "pricing": "Study Buddy：勉強タイマーはApp Storeで無料でダウンロードできます。任意の買い切り「Study Buddy Pro」（月額なし）で、過去の週・月の記録、スタディペアの作成、環境音の追加、試験5件までの登録が使えます。タイマー、ポモドーロ、勉強予定、記録、ウィジェット、CSV書き出し、iCloud同期は無料です。最新の価格・提供状況はApp Storeでご確認ください。",
-        "privacy": "広告は表示しません。勉強の記録はお使いのiPhone内に保存し、開発者のサーバーには送りません。アカウント登録なしで利用できます。iCloud同期をオンにしたときは、あなた自身のiCloudにも保存され、開発者は見られません。スタディペアで共有する分は、ペアを作った人のiCloudに保存され、相手に見えるのは勉強時間の集計だけです。データの取り扱いの正式な内容は、App Storeページのプライバシーラベルをご確認ください。",
+        "pricing": "Study Buddy：勉強タイマーはApp Storeで無料でダウンロードできます。任意の「Study Buddy プレミアム」は月額または年額の自動更新サブスクリプションで、Apple Watchのタイマー、過去の週・月の統計と過去月のカレンダー、スタディペアの作成、環境音2つ、試験5件までの登録が使えます。基本のタイマー・記録・バディ・iCloud同期は無料のままで、招待からのペア参加も無料です。以前「Study Buddy Pro」を購入した方は、登録なしで特典をずっと使えます。最新の価格・提供状況はApp Storeでご確認ください。",
+        "privacy": "広告は表示しません。勉強の記録はお使いのiPhone内に保存し、開発者のサーバーには送りません。アカウント登録なしで利用できます。iCloud同期をオンにしたときは、あなた自身のiCloudにも保存され、開発者は見られません。スタディペアで共有する分は、ペアを作った人のiCloudに保存され、相手に見えるのは勉強時間などの集計だけで、勉強した時刻・科目・メモは見えません。バディの呼び名は端末内だけに保存されます。データの取り扱いの正式な内容は、App Storeページのプライバシーラベルをご確認ください。",
         "faq": [
           {
             "question": "Study Buddy：勉強タイマーは無料ですか？",
-            "answer": "はい、無料でダウンロードでき、基本の機能は無料で使えます。任意の買い切り「Study Buddy Pro」（月額なし）で、過去の週・月の記録、スタディペアの作成、試験の追加登録などが使えます。最新の情報はApp Storeでご確認ください。"
+            "answer": "はい、無料でダウンロードでき、タイマー・記録・バディ・iCloud同期は無料で使えます。任意の「Study Buddy プレミアム」（月額または年額のサブスクリプション）で、Apple Watchのタイマー、過去の週・月の統計、スタディペアの作成、試験の追加登録などが使えます。以前Study Buddy Proを購入した方は、登録なしで特典をずっと使えます。最新の情報はApp Storeでご確認ください。"
           },
           {
             "question": "勉強データはどこに保存されますか？",
             "answer": "勉強の記録はiPhone内に保存し、開発者のサーバーには送りません。iCloud同期をオンにしたときは、あなた自身のiCloudにも保存されます。データの取り扱いの詳細は、App Storeのプライバシーラベルをご確認ください。"
           },
           {
-            "question": "ウィジェットはありますか？",
-            "answer": "はい。ホーム画面のウィジェットから、アプリを開かずに開始・停止や勉強時間の確認ができます。計測中は、ロック画面とDynamic Islandにも経過時間とバディが表示されます。"
+            "question": "iCloud同期は無料ですか？",
+            "answer": "はい。iCloud同期とバックアップは誰でも無料で使えます。機種変更しても、同じApple IDでオンにすれば記録とバディが戻ります。"
           },
           {
-            "question": "EXPとレベルの仕組みを教えてください。",
-            "answer": "勉強1分ごとに1EXPが貯まり、その日最初の有効なセッションには少しボーナスがつきます。EXPが貯まるとバディがレベルアップし、次のレベルまであと何分かも表示されます。休んでもバディは縮みません。"
+            "question": "ウィジェットはありますか？",
+            "answer": "はい。ホーム画面のウィジェットから、アプリを開かずに開始・停止や勉強時間の確認ができます。計測中は、ロック画面とDynamic Islandにも経過時間とバディが表示されます。コントロールセンターやアクションボタンからも開始・停止できます。"
+          },
+          {
+            "question": "バディはどうやって育ちますか？",
+            "answer": "測った時間がそのままEXPになり、バディのレベルが上がります。次のレベルまでの進み具合も表示されます。休んでもバディは縮みません。さわるとしゃべり、「設定」で呼び名を入れておくと、ときどき名前で呼んでくれます。"
+          },
+          {
+            "question": "スタディペアとは何ですか？",
+            "answer": "招待リンクでひとりの相手とつながり、2人の勉強時間でひとつのバディを育てる機能です。相手の今日の勉強時間と、いま勉強中かどうかが見えます。2人とも自分の役割を果たした日は「ふたりの日」になり、バディが大きく育ちます。勉強のかわりに「応援する」役割も選べます。相手に見えるのは集計だけです。ペアを作る人だけプレミアムが必要で、招待された人は無料で参加できます。"
           },
           {
             "question": "始める前にタイマーの長さを設定する必要はありますか？",
@@ -1955,7 +2016,7 @@
           },
           {
             "question": "ゲームですか？",
-            "answer": "いいえ。まず実用的な勉強タイマーとして設計されていて、バディは続けるためのささやかな動機づけです。育成ゲームではありません。"
+            "answer": "いいえ。まず実用的な勉強タイマーとして設計されていて、バディは続けるためのささやかな動機づけです。育成ゲームではなく、ランキングもありません。"
           }
         ]
       }
@@ -3054,55 +3115,68 @@
   "6770047182": {
     "slug": "warekiyakudoshichecker",
     "name": "Age Profile - Wareki, Yakudoshi & Kazoedoshi",
-    "short_description": "A family profile book for Japan: age, wareki dates, kazoedoshi, zodiac, yakudoshi, and longevity milestones.",
-    "meta_description": "Age Profile keeps family birthdays and shows age, Japanese era (wareki) dates, kazoedoshi, zodiac, yakudoshi and longevity years, with a year converter.",
+    "short_description": "A profile book for Japan that keeps family, oshi, and friends in one place: birthdays, anniversaries, age, wareki, kazoedoshi, yakudoshi, and memorial years.",
+    "meta_description": "Age Profile keeps birthdays for family, oshi and friends: age, wareki, kazoedoshi, yakudoshi, longevity and memorial years, a Today screen and widgets.",
     "categories": [
       "family",
       "productivity"
     ],
     "overview": [
-      "Age Profile is a Japanese family profile book for iPhone. Save the birthdays of parents, grandparents, children, and relatives, and see at a glance each person's current age, kazoedoshi (traditional East Asian age counting), birth date and current year in wareki (Japanese era calendar: Meiji, Taisho, Showa, Heisei, Reiwa), Chinese zodiac animal, star sign, common yakudoshi (traditionally inauspicious years) guidance, and longevity celebrations such as kanreki (60th) and koki (70th).",
-      "Questions like \"How old is grandpa this year?\", \"When is my yakudoshi?\", or \"Which year is the kanreki celebration?\" are answered in one place, without looking up conversion tables. The Birthdays tab lists your family's birthdays for the coming year in date order, showing who is next, what age (and kazoedoshi age) they turn, and who is in a yakudoshi year. A built-in converter switches dates between the Western calendar and wareki across all five modern eras — handy for Japanese resumes, application forms, and paperwork at government offices — and can read non-existent era dates such as Heisei 32 or Showa 100 as the correct Western year and era. It also shows a child's current school year and the entrance and graduation years from elementary school through university.",
-      "Home Screen and Lock Screen widgets show this year's wareki and the next birthday or milestone. Everything is stored on your device: no account, no ads, and profiles are never sent to external servers automatically. The app presents yakudoshi and celebration years as common cultural guidance only — it makes no claims about fortune, misfortune, or health."
+      "Age Profile is a Japanese profile book for iPhone that keeps the birthdays, anniversaries, and age milestones of your family, your oshi (favorite idols or artists), and friends in one place. Open the app and the Today screen shows today's calendar notes (the day's zodiac sign and rokuyo), whose birthday, anniversary, or memorial day it is today, and what is coming up next.",
+      "Each profile shows full age, kazoedoshi (traditional East Asian age counting), birth date in wareki (Japanese era calendar: Meiji, Taisho, Showa, Heisei, Reiwa), Chinese zodiac animal, star sign, common yakudoshi (traditionally inauspicious years) guidance, and longevity celebrations such as kanreki (60th) and koki (70th). The list switches between All, Family, Oshi, and Friends. An oshi can be a person or a group: for a group, the app counts down to the next anniversary of its formation or debut instead of a birthday, and a person's birthday can be saved with just the month and day. Family members who have passed away can stay in the book too, with their age at death (full and kazoedoshi), how old they would be today, the next memorial day, and memorial-service years such as the first and third anniversaries.",
+      "Add any number of anniversaries, such as debut dates, formation dates, wedding anniversaries, or the day you met, and see how many days have passed and how many remain until the next 100-day milestone. Birthday, longevity, memorial, and anniversary notifications can be turned on or off per person, and an oshi's birthday or anniversary can be shared as a washi-paper card image. The Birthdays view lists the coming year's birthdays and anniversaries in date order. A built-in converter switches dates between the Western calendar and wareki across the five modern eras, and can read non-existent era dates such as Heisei 32 or Showa 100 as the correct Western year and era. Home Screen and Lock Screen widgets are included.",
+      "Profiles, notes, and notification settings are stored on your device: no account, no ads, and profiles are never sent to external servers automatically. Yakudoshi, longevity, and memorial years are shown as common guidance, and rokuyo and zodiac compatibility as traditional calendar lore. The app makes no claims about fortune, misfortune, or health, and includes no information about celebrities."
     ],
     "target_users": [
       "Families in Japan who want one place to check everyone's age, zodiac, and celebration years",
+      "Fans who want to keep their oshi's birthday and a group's formation or debut anniversaries",
+      "People who want to remember memorial days and memorial-service years for family members who have passed away",
       "People planning kanreki, koki, kiju, and other longevity celebrations for parents and grandparents",
-      "Anyone filling out Japanese resumes or official forms that require wareki (era calendar) dates",
-      "People who want a quick reference for their own yakudoshi years",
-      "Expats and international residents in Japan who need help with era dates and traditional age customs"
+      "Anyone filling out Japanese resumes or official forms that require wareki (era calendar) dates"
     ],
     "features": [
-      "Family profile book: save birthdays with blood type and notes per person",
-      "Shows full age, kazoedoshi (counted age), Chinese zodiac, and star sign for each profile",
-      "Birthdays tab: your family's birthdays for the coming year in date order, with the age they turn and a mark for yakudoshi years",
-      "Wareki display and converter covering Meiji, Taisho, Showa, Heisei, and Reiwa, with correct era-boundary handling, including non-existent dates such as Heisei 32",
-      "Yakudoshi guidance by gender (male, female, or unspecified), including major yakudoshi (taiyaku)",
-      "Longevity celebration detection based on kazoedoshi, such as kanreki and koki",
-      "Notifications for birthdays and longevity celebrations",
-      "Home Screen and Lock Screen widgets showing this year's wareki and the next birthday or milestone",
+      "Today screen: the day's zodiac sign and rokuyo, whose birthday, anniversary, or memorial day it is today, and what is coming up next",
+      "Separate Family, Oshi, and Friends lists; an oshi can be a person or a group, and a birthday can be saved with only the month and day",
+      "Full age, kazoedoshi, wareki birth date, Chinese zodiac, and star sign for each profile, with a compact detail screen that shows the key points first",
+      "Common yakudoshi guidance (honyaku, maeyaku, atoyaku) and longevity celebrations such as kanreki, koki, and kiju",
+      "For family members who have passed away: age at death (full and kazoedoshi), how old they would be today, the next memorial day, and memorial-service years",
+      "Unlimited anniversaries per person, with days elapsed and the next 100-day milestone",
+      "Birthday, longevity, memorial, and anniversary notifications, on or off per person; share an oshi's birthday or anniversary as a washi-paper card",
+      "Zodiac circle diagram showing which signs traditionally pair well with today's sign, and a written explanation of two people's zodiac compatibility (no scores)",
+      "Wareki converter covering Meiji to Reiwa, including non-existent dates such as Heisei 32",
       "A child's current school year, plus entrance and graduation years from elementary school to university",
-      "All data stored on device — no account, no ads, no automatic external transmission"
+      "Home Screen and Lock Screen widgets; all data stored on device with no account and no ads"
     ],
     "how_to_use": [
-      "Add family members and relatives with their birth dates using the date picker",
-      "Open the profile list to see each person's age, wareki dates, zodiac, and star sign at a glance",
-      "Open the Birthdays tab to see who is next and whether anyone is in a yakudoshi year",
-      "Check the yakudoshi and longevity celebration guidance shown for each profile",
-      "Set notifications so you do not miss birthdays or milestone celebrations like kanreki",
-      "Add a Home Screen or Lock Screen widget to see this year's wareki and the next milestone",
-      "Use the converter to switch any date between the Western calendar and wareki for forms and paperwork"
+      "Add family members, oshi (a person or a group), and friends with their birthdays or anniversaries",
+      "Open the Today screen to see today's calendar notes and whose birthday, anniversary, or memorial day it is",
+      "Open a profile to see age, wareki, zodiac, yakudoshi, and longevity or memorial-year guidance at a glance",
+      "Add anniversaries such as a debut or wedding date and count the days to the next milestone",
+      "Turn on notifications per person so you do not miss birthdays, anniversaries, or memorial days",
+      "Add a Home Screen or Lock Screen widget, and use the converter to switch dates between the Western calendar and wareki"
     ],
-    "pricing": "The app is free to download and use. The free version stores up to 2 profiles; a one-time Plus in-app purchase (no subscription) unlocks unlimited profiles. App Store pricing can change, so check the store listing for current details.",
-    "privacy": "Profiles, birth dates, notes, blood types, and notification settings are stored locally on your device (and in an on-device App Group shared only with the widget), and are not sent to external servers. There is no account registration, no tracking, and no ad or analytics SDKs. The app does not access your Contacts.",
+    "pricing": "The app is free to download and use. The free version stores up to 2 family members, 1 oshi, and 1 friend; a one-time Plus in-app purchase (no subscription) removes these limits. App Store pricing can change, so check the store listing for current details.",
+    "privacy": "Profiles, birth dates, anniversaries, notes, and notification settings are stored locally on your device (and in an on-device App Group shared only with the widget), and are not sent to external servers automatically. There is no account registration, no tracking, and no ad or analytics SDKs. The app does not access your Contacts and includes no celebrity data.",
     "faq": [
       {
         "question": "Is the app free?",
-        "answer": "Yes, it is free to download and use, with up to 2 saved profiles in the free version. A one-time Plus purchase (not a subscription) unlocks unlimited profiles. Check the App Store listing for current pricing."
+        "answer": "Yes, it is free to download and use. The free version stores up to 2 family members, 1 oshi, and 1 friend. A one-time Plus purchase (not a subscription) removes these limits. Check the App Store listing for current pricing."
       },
       {
-        "question": "Where is my family's data stored?",
-        "answer": "Everything is stored locally on your device. Profiles are not sent to external servers, there is no account, and the app uses no ads, tracking, or analytics SDKs."
+        "question": "Where is my data stored?",
+        "answer": "Everything is stored locally on your device. Profiles are not sent to external servers automatically, there is no account, and the app uses no ads, tracking, or analytics SDKs."
+      },
+      {
+        "question": "What does the Today screen show?",
+        "answer": "Today's calendar notes (the day's zodiac sign and rokuyo), whose birthday, anniversary, or memorial day it is today, and what is coming up next."
+      },
+      {
+        "question": "Can I save my oshi or a group?",
+        "answer": "Yes. Choose Oshi and then a person or a group. For a person, you can save the birthday with only the month and day. For a group, the app counts down to the next anniversary of its formation or debut. The app does not include any celebrity information, so you enter it yourself."
+      },
+      {
+        "question": "Can I keep family members who have passed away?",
+        "answer": "Yes. The app shows their age at death (full and kazoedoshi), how old they would be today, the next memorial day, and memorial-service years such as the first and third anniversaries. How these years are counted can differ by religious tradition and region, so treat them as general guidance."
       },
       {
         "question": "What is wareki and which eras does the app support?",
@@ -3113,73 +3187,79 @@
         "answer": "Yakudoshi are years traditionally considered inauspicious in Japan, which differ for men and women. Kazoedoshi is the traditional age counting where you are 1 at birth. The app shows both as common cultural guidance, without any claims about fortune or misfortune."
       },
       {
-        "question": "Can it remind me about birthdays and celebrations?",
-        "answer": "Yes. You can set notifications for birthdays and for longevity celebrations such as kanreki (60th) and koki (70th)."
-      },
-      {
-        "question": "Can I see whose birthday is next?",
-        "answer": "Yes. The Birthdays tab lists your family's birthdays for the coming year in date order, showing who is next, what age and kazoedoshi age they turn, and marking anyone in a yakudoshi year."
+        "question": "Can it remind me about birthdays and anniversaries?",
+        "answer": "Yes. You can turn notifications for birthdays, longevity celebrations, memorial days and memorial-service years, and anniversaries on or off for each person."
       },
       {
         "question": "Does it have a widget?",
-        "answer": "Yes. Home Screen and Lock Screen widgets show this year's wareki and the next birthday or milestone."
-      },
-      {
-        "question": "Does it work offline?",
-        "answer": "Yes. The app itself uses no external APIs, so everything works without an internet connection."
+        "answer": "Yes. Home Screen and Lock Screen widgets are available."
       },
       {
         "question": "Is this a fortune-telling app?",
-        "answer": "No. Yakudoshi and celebration years are shown only as widely used cultural reference points. The app makes no statements about luck, misfortune, health, or religious effect."
+        "answer": "No. Yakudoshi, longevity, and memorial years are shown as widely used reference points, and rokuyo and zodiac compatibility are explained as traditional calendar lore without scores. The app makes no statements about luck, misfortune, health, or religious effect."
       }
     ],
     "locales": {
       "ja": {
         "name": "年齢プロフィール - 和暦・厄年・数え年",
-        "short_description": "家族の生年月日をまとめて登録し、満年齢・数え年・和暦・干支・厄年の目安・長寿祝いをひと目で確認できるプロフィール帳アプリです。",
-        "meta_description": "年齢プロフィールは家族の誕生日を管理するiPhoneアプリ。満年齢・数え年・和暦・干支、厄年の目安や還暦などの長寿祝い、西暦・和暦変換（令和・昭和）も確認できます。",
+        "short_description": "家族・推し・知人の誕生日と記念日、年齢の節目をひとつにまとめるプロフィール帳アプリ。満年齢・数え年・和暦・厄年・長寿祝い・年忌の目安をひと目で確認できます。",
+        "meta_description": "年齢プロフィールは家族・推し・知人の誕生日と記念日をまとめるiPhoneアプリ。満年齢・数え年・和暦・厄年・長寿祝い、故人の享年と年忌、西暦・和暦変換も。",
         "overview": [
-          "年齢プロフィールは、家族や親族の生年月日をまとめて管理できる日本向けのプロフィール帳アプリです。父母・祖父母・子ども・親族のプロフィールを登録すると、満年齢、数え年、生年月日と今年の和暦（明治・大正・昭和・平成・令和）、干支、星座、一般的な厄年の目安、還暦（60歳）・古希（70歳）などの長寿祝いをひと目で確認できます。",
-          "「おじいちゃんは今年何歳？」「自分の厄年はいつ？」「還暦のお祝いは何年？」——こうした確認が、早見表を探さなくてもこのアプリひとつで済みます。「誕生日」タブでは、これから1年の家族の誕生日を日付順に並べ、次は誰か、何歳・数え何歳になるか、厄年にあたるかがひと目でわかります。西暦・和暦の変換ツールも内蔵しており、履歴書や申請書、役所での手続きの確認に便利です。改元の境目にあたる日付も正しく扱い、平成32年・昭和100年のような存在しない和暦表記も正しい西暦と元号に読み替えます。子どもの今の学年と、小学校から大学までの入学・卒業年も確認できます。",
-          "ホーム画面・ロック画面のウィジェットで、今年の和暦と次の誕生日・節目を確認できます。データはすべて端末内に保存され、アカウント登録は不要、広告もなく、プロフィールを自動で外部送信することもありません。厄年や長寿祝いは一般的な慣習の目安として表示するもので、運勢や健康について何かを断定するアプリではありません。"
+          "年齢プロフィールは、家族・推し・知人の誕生日と記念日、年齢の節目をひとつにまとめる、日本向けのプロフィール帳アプリです。開くと「今日」の画面。今日の暦（日の干支・六曜）と、今日が誰の誕生日・記念日・命日か、次の予定がひと目でわかります。",
+          "それぞれのプロフィールでは、満年齢、数え年、生年月日の和暦（明治・大正・昭和・平成・令和）、干支、星座、一般的な厄年の目安（本厄・前厄・後厄）、還暦（60歳）・古希（70歳）などの長寿祝いを確認できます。一覧は「全部／家族／推し／知人」で切り替え。推しは「人」と「グループ」から選べて、グループは誕生日の代わりに結成日・デビュー日を「◯周年まであと◯日」で数えます。推しの誕生日は、生まれ年がわからなくても月日だけで登録できます。亡くなったご家族も一緒に残せて、享年（満・数え）と今も生きていたら何歳か、次の命日と一周忌・三回忌などの年忌の目安が出ます。",
+          "デビュー日・結成日・結婚記念日・出会った日などの記念日はいくつでも登録でき、「◯日（◯年◯か月）」と次の100日刻みの節目まであと何日かがわかります。誕生日・長寿祝い・命日と年忌・記念日の通知は人ごとにオン・オフでき、推しの誕生日や記念日は和紙のカード画像にして共有できます。「誕生日の並び」では、これから1年の誕生日と記念日を日付順に表示。西暦・和暦の変換ツールも内蔵し、平成32年・昭和100年のような存在しない和暦表記も正しい西暦と元号に読み替えます。ホーム画面・ロック画面のウィジェットにも対応しています。",
+          "プロフィール、メモ、通知設定はすべて端末内に保存され、アカウント登録は不要、広告もなく、プロフィールを自動で外部送信することもありません。厄年・長寿祝い・年忌は一般的な目安として、六曜や干支の相性は暦の言い伝えとして表示するもので、吉凶や健康について何かを断定するアプリではありません。有名人の情報はアプリに含まれていません。"
         ],
         "target_users": [
           "家族全員の年齢・干支・お祝いの年をひとつの場所で確認したい方",
+          "推しの誕生日や、グループの結成日・デビュー日の周年を数えたい方",
+          "亡くなった家族の命日や年忌を忘れずにおきたい方",
           "還暦・古希・喜寿など、親や祖父母の長寿祝いを計画している方",
-          "履歴書や公的な書類で和暦の記入が必要な方",
-          "自分の厄年の目安をさっと確認しておきたい方"
+          "履歴書や公的な書類で和暦の記入が必要な方"
         ],
         "features": [
-          "家族のプロフィール帳: 生年月日に加えて血液型やメモも登録可能",
-          "各プロフィールの満年齢・数え年・干支・星座を表示",
-          "「誕生日」タブで、これから1年の家族の誕生日を日付順に表示。何歳になるかと厄年の印つき",
-          "明治から令和まで対応した和暦表示と西暦・和暦変換（改元の境目も正しく処理。平成32年のような存在しない表記も読み替え）",
-          "性別（男性・女性・指定なし）に応じた厄年の目安を表示。大厄にも対応",
-          "数え年にもとづく還暦・古希などの長寿祝いの判定",
-          "誕生日・長寿祝いの通知",
-          "今年の和暦と次の誕生日・節目を表示するホーム画面・ロック画面のウィジェット",
+          "「今日」の画面: 今日の暦（日の干支・六曜）と、今日が誰の誕生日・記念日・命日か、次の予定",
+          "家族・推し・知人を分けて登録。推しは「人」と「グループ」を選べ、誕生日は月日だけでも登録可能",
+          "各プロフィールの満年齢・数え年・生年月日の和暦・干支・星座。詳細画面はカードをたたんで要点を先に表示",
+          "一般的な厄年の目安（本厄・前厄・後厄）と、還暦・古希・喜寿などの長寿祝い",
+          "亡くなったご家族の享年（満・数え）、今も生きていたら何歳か、次の命日と年忌の目安",
+          "記念日をいくつでも登録。経過日数と、次の100日刻みの節目まであと何日か",
+          "誕生日・長寿祝い・命日と年忌・記念日の通知を人ごとにオン・オフ。推しの誕生日や記念日を和紙のカード画像で共有",
+          "今日の日の干支と相性のよい人を十二支の円の図で紹介（三合・支合）。二人の干支の相性は言い伝えを文章で紹介（点数で判定はしません）",
+          "明治から令和まで対応した西暦・和暦変換（平成32年のような存在しない表記も読み替え）",
           "子どもの今の学年と、小学校から大学までの入学・卒業年",
-          "データはすべて端末内に保存。アカウント不要・広告なし・自動の外部送信なし"
+          "ホーム画面・ロック画面のウィジェット。データはすべて端末内に保存、アカウント不要・広告なし"
         ],
         "how_to_use": [
-          "日付ピッカーで家族・親族の生年月日を登録します。",
-          "プロフィール一覧で、それぞれの年齢・和暦・干支・星座を確認します。",
-          "「誕生日」タブで、次は誰の誕生日か、厄年にあたる人がいるかを確認します。",
-          "各プロフィールに表示される厄年や長寿祝いの目安をチェックします。",
-          "誕生日や還暦などのお祝いを忘れないよう、通知を設定します。",
-          "ホーム画面やロック画面にウィジェットを追加して、今年の和暦と次の節目を確認します。",
-          "書類の記入時は、変換ツールで西暦と和暦を相互に変換します。"
+          "家族・推し（人またはグループ）・知人を、誕生日や記念日と一緒に登録します。",
+          "「今日」の画面で、今日の暦と、今日が誰の誕生日・記念日・命日かを確認します。",
+          "プロフィールを開いて、年齢・和暦・干支・厄年・長寿祝いや年忌の目安を確認します。",
+          "デビュー日や結婚記念日などの記念日を登録して、次の節目までの日数を数えます。",
+          "誕生日・記念日・命日を忘れないよう、人ごとに通知をオンにします。",
+          "ホーム画面やロック画面にウィジェットを追加し、書類の記入時は変換ツールで西暦と和暦を変換します。"
         ],
-        "pricing": "ダウンロードと基本利用は無料で、無料版ではプロフィールを2件まで保存できます。買い切りのPlus（サブスクリプションではありません）を購入すると保存数が無制限になります。最新の価格・提供状況はApp Storeでご確認ください。",
-        "privacy": "プロフィール、生年月日、メモ、血液型、通知設定などのデータはすべて端末内（ウィジェットと共有する端末内のApp Groupを含む）に保存され、外部サーバーへ送信されることはありません。アカウント登録・トラッキング・広告や解析SDKはなく、連絡先へのアクセスも行いません。",
+        "pricing": "ダウンロードと基本利用は無料で、無料版では家族を2人、推しを1件、知人を1人まで保存できます。買い切りのPlus（サブスクリプションではありません）を購入すると人数の上限がなくなります。最新の価格・提供状況はApp Storeでご確認ください。",
+        "privacy": "プロフィール、生年月日、記念日、メモ、通知設定などのデータはすべて端末内（ウィジェットと共有する端末内のApp Groupを含む）に保存され、自動で外部サーバーへ送信されることはありません。アカウント登録・トラッキング・広告や解析SDKはなく、連絡先へのアクセスも行いません。有名人の情報はアプリに含まれていません。",
         "faq": [
           {
             "question": "アプリは無料ですか？",
-            "answer": "はい。無料でダウンロードでき、無料版ではプロフィールを2件まで保存できます。買い切りのPlus（サブスクリプションではありません）を購入すると保存数が無制限になります。最新の価格はApp Storeでご確認ください。"
+            "answer": "はい。無料でダウンロードでき、無料版では家族を2人、推しを1件、知人を1人まで保存できます。買い切りのPlus（サブスクリプションではありません）を購入すると人数の上限がなくなります。最新の価格はApp Storeでご確認ください。"
           },
           {
-            "question": "家族のデータはどこに保存されますか？",
-            "answer": "すべて端末内に保存されます。プロフィールが外部サーバーへ送信されることはなく、アカウントも不要で、広告・トラッキング・解析SDKも使用していません。"
+            "question": "データはどこに保存されますか？",
+            "answer": "すべて端末内に保存されます。プロフィールが自動で外部サーバーへ送信されることはなく、アカウントも不要で、広告・トラッキング・解析SDKも使用していません。"
+          },
+          {
+            "question": "「今日」の画面には何が出ますか？",
+            "answer": "今日の暦（日の干支・六曜）と、今日が誰の誕生日・記念日・命日か、次の予定が出ます。"
+          },
+          {
+            "question": "推しやグループも登録できますか？",
+            "answer": "はい。「推し」で「人」か「グループ」を選べます。人の誕生日は、生まれ年がわからなくても月日だけで登録できます。グループは結成日・デビュー日を「◯周年まであと◯日」で数えます。有名人の情報はアプリに含まれていないので、ご自身で入力します。"
+          },
+          {
+            "question": "亡くなった家族も登録できますか？",
+            "answer": "はい。享年（満・数え）と、今も生きていたら何歳か、次の命日と、一周忌・三回忌などの年忌の目安が出ます。年忌の数え方は宗派・地域で異なることがあるため、一般的な目安としてご覧ください。"
           },
           {
             "question": "どの元号に対応していますか？",
@@ -3190,24 +3270,16 @@
             "answer": "厄年は男女で異なる一般的な慣習上の目安として、数え年は生まれた年を1歳とする伝統的な数え方として表示します。運勢や吉凶、健康効果を断定するものではありません。"
           },
           {
-            "question": "誕生日や長寿祝いを通知してもらえますか？",
-            "answer": "はい。誕生日と、還暦（60歳）・古希（70歳）などの長寿祝いの通知を設定できます。"
-          },
-          {
-            "question": "次に誰の誕生日か、わかりますか？",
-            "answer": "はい。「誕生日」タブに、これから1年の家族の誕生日が日付順に並びます。次は誰か、何歳・数え何歳になるかがわかり、厄年にあたる人には印が付きます。"
+            "question": "誕生日や記念日を通知してもらえますか？",
+            "answer": "はい。誕生日・長寿祝い・命日と年忌・記念日の通知を、人ごとにオン・オフできます。"
           },
           {
             "question": "ウィジェットはありますか？",
-            "answer": "はい。ホーム画面・ロック画面のウィジェットで、今年の和暦と次の誕生日・節目を確認できます。"
-          },
-          {
-            "question": "オフラインでも使えますか？",
-            "answer": "はい。アプリ本体は外部APIを使用していないため、インターネット接続がなくてもすべての機能が動作します。"
+            "answer": "はい。ホーム画面・ロック画面のウィジェットがあります。"
           },
           {
             "question": "占いのアプリですか？",
-            "answer": "いいえ。厄年や長寿祝いの年は、広く知られた慣習上の目安として表示するだけで、運勢・吉凶・健康・宗教的な効果について何かを述べるものではありません。"
+            "answer": "いいえ。厄年・長寿祝い・年忌は広く知られた目安として、六曜や干支の相性は暦の言い伝えとして表示するだけで、点数での判定もしません。運勢・吉凶・健康・宗教的な効果について何かを述べるものではありません。"
           }
         ]
       }
@@ -3659,16 +3731,16 @@
   },
   "6789844158": {
     "slug": "mute-video-before-share",
-    "short_description": "Remove sound from any video in one tap, or beep out selected parts — from the share sheet too. No re-encoding, no watermark.",
-    "meta_description": "Mute Video Before Share removes sound from a video in one tap, even from the share sheet, or beeps out selected parts. No quality loss, no watermark.",
+    "short_description": "Remove sound from a video in one tap, mute up to 20 videos at once, or beep out or lower just the parts you pick — from the share sheet too. Everything runs on your device.",
+    "meta_description": "Mute Video Before Share removes sound from videos in one tap, mutes up to 20 at once, and beeps out or lowers selected parts, even from the share sheet.",
     "categories": [
       "tap-tools",
       "photo-memory"
     ],
     "overview": [
-      "Mute Video Before Share removes the audio track from a video so you can share it without background voices, conversations, or noise. Pick a video, tap once, and get a silent copy ready to post or send — while your original video stays completely unchanged. You can also choose Mute & Share straight from the share sheet to make a silent copy without opening the app.",
-      "Unlike video editors that re-encode everything, this app copies the video track as-is and simply drops the audio. That means zero picture-quality loss, fast results even on long videos, no length limit, and no watermark. If you only need to hide part of the sound, you can replace selected parts with a beep, using the sound's waveform to spot where people are talking.",
-      "The silent copy is also cleaner than the original in one important way: it contains no location or camera metadata from the source video, so you are not leaking where a clip was filmed when you share it. The app is available in 25 languages and works in portrait and landscape on iPhone, and on iPad."
+      "Mute Video Before Share removes the audio track from a video so you can share it without background voices, conversations, or noise. Pick a video, tap once, and get a silent copy ready to post or send — while your original video stays completely unchanged. You can also choose Mute & Share straight from the share sheet to make a silent copy without opening the app, or choose up to 20 videos, mute them in order, and save or share them all together.",
+      "If you only need to hide part of the sound, choose Part and remove, lower, or beep out just the parts you pick, using the sound's waveform to spot where people are talking. The preview sounds exactly the way the copy will, and after the copy is made you can tap Edit Again to adjust it with the same settings. On a wide unfolded iPhone Duo screen, the video and the editor sit side by side.",
+      "Free copies get a small watermark in the corner. With Mute Video Pro (an optional subscription), copies have no watermark and keep the video exactly as it is, with no re-encoding, so the picture quality stays the same and even long videos finish fast. The silent copy contains no location or camera metadata from the source video. The app is available in 25 languages and works in portrait and landscape on iPhone, and on iPad."
     ],
     "target_users": [
       "People posting videos to social media who want background conversations muted",
@@ -3678,29 +3750,33 @@
     ],
     "features": [
       "Remove all sound from a video in one tap",
+      "Batch mute: choose up to 20 videos, mute them in order, and save or share them together (up to 60 seconds each)",
       "Mute & Share from the share sheet to make a silent copy without opening the app",
-      "Replace sound with a beep in selected parts, with a waveform to help you find where people are talking",
-      "No quality loss — the video track is copied as-is, not re-encoded",
-      "No length limit and fast processing even for long videos",
-      "No watermark on the silent copy",
+      "Part: remove, lower, or beep out selected parts, with a waveform to help you find where people are talking",
+      "The preview sounds the way the copy will; Edit Again lets you adjust a finished copy with the same settings",
+      "No length limit when muting one video at a time",
+      "Mute Video Pro (optional subscription): no watermark, and the video track is copied as-is without re-encoding, so quality stays the same",
       "Silent copy contains no location or camera metadata from the original",
-      "Preview the result, then save to Photos or share directly",
-      "Original video stays unchanged — everything runs on your device",
-      "Available in 25 languages; works in portrait and landscape on iPhone, and on iPad"
+      "Original video stays unchanged — everything runs on your device, with no account, no upload, and no ads",
+      "Supports the inner and outer displays of iPhone Duo; available in 25 languages, in portrait and landscape on iPhone, and on iPad"
     ],
     "how_to_use": [
-      "Open the app and choose a video from your Photos library, or choose Mute & Share from the share sheet in another app.",
+      "Open the app and choose a video from your Photos library (or up to 20 for batch mute), or choose Mute & Share from the share sheet in another app.",
       "Preview the selected video.",
-      "Remove the audio and wait a moment while the silent copy is created on your device. To hide only part of the sound, choose the parts to replace with a beep instead.",
-      "Preview the result to confirm it looks and sounds right.",
+      "Remove all the sound, or choose Part to remove, lower, or beep out just the parts you pick.",
+      "Preview the result — it sounds the way the copy will. Tap Edit Again if you want to change it.",
       "Save it to Photos or share it directly with the share sheet."
     ],
-    "pricing": "Mute Video Before Share is free on the App Store, with no ads and no watermark. App Store pricing and availability can change, so check the store listing for current details.",
-    "privacy": "Everything runs on your device: no account, no upload, no server processing, no ads, and no tracking. Photos access is used only to select a video and save the silent copy. As a bonus, the exported silent copy carries no location or camera metadata from the original video.",
+    "pricing": "Mute Video Before Share is free on the App Store, with no ads. Free copies get a small watermark in the corner. Mute Video Pro is an optional subscription that removes the watermark. Removing audio, Part, beep, the waveform, and the share sheet stay free. App Store pricing and availability can change, so check the store listing for current details.",
+    "privacy": "Everything runs on your device: no account, no upload, no server processing, no ads, and no tracking. Photos access is used only to select videos and save the silent copies. As a bonus, the exported silent copy carries no location or camera metadata from the original video.",
     "faq": [
       {
         "question": "Is Mute Video Before Share free?",
-        "answer": "Yes. The app is free with no ads and no watermark. App Store pricing can change, so check the listing for current details."
+        "answer": "Yes. The app is free with no ads, and removing audio, Part, beep, and the share sheet are free. Free copies get a small watermark in the bottom right; Mute Video Pro, an optional subscription, removes it. App Store pricing can change, so check the listing for current details."
+      },
+      {
+        "question": "Why is there a watermark on my copy?",
+        "answer": "In the free version, copies you make get a small watermark (the app's icon and name) in the bottom right. Your original video never gets one. With Mute Video Pro, copies have no watermark. If you used the app before version 1.5, no watermark is added."
       },
       {
         "question": "Are my videos uploaded anywhere?",
@@ -3708,15 +3784,23 @@
       },
       {
         "question": "Does removing the audio reduce video quality?",
-        "answer": "No. The video track is copied as-is without re-encoding, so the picture quality of the silent copy is identical to the original."
+        "answer": "Copies without the watermark (Mute Video Pro) copy the video track as-is without re-encoding, so the picture quality is identical to the original and even long videos finish fast."
       },
       {
         "question": "Is there a video length limit?",
-        "answer": "No. Because the video is not re-encoded, even long videos finish fast."
+        "answer": "There is no length limit when you mute one video at a time. Batch mute supports videos up to 60 seconds each; longer videos are skipped and the rest continue."
+      },
+      {
+        "question": "Can I mute several videos at once?",
+        "answer": "Yes. Choose up to 20 videos. They are muted one at a time in the order you selected them, and you can save or share them all together."
       },
       {
         "question": "Can I mute only part of a video?",
-        "answer": "Yes. You can replace the sound in selected parts with a beep, and the waveform helps you spot where people are talking."
+        "answer": "Yes. Choose Part to remove, lower, or beep out just the parts you pick. The waveform helps you spot where people are talking."
+      },
+      {
+        "question": "Can I hear it before making the copy?",
+        "answer": "Yes. With Part, play the preview: removed parts go silent, lowered parts get quieter, and beeps play, just as in the copy. After the copy is made, tap Edit Again to change it with the same settings."
       },
       {
         "question": "Can I use it from the share sheet?",
@@ -3734,12 +3818,12 @@
     "locales": {
       "ja": {
         "name": "動画の音消し",
-        "short_description": "動画の音を消してから共有。ワンタップでミュートした無音コピーを作成し、一部だけピー音にすることも。画質劣化ゼロ・透かしなし。",
-        "meta_description": "「動画の音消し」は、動画の音を消して無音にするミュートアプリ。共有メニューからワンタップで使え、選んだ区間のピー音化も。画質劣化ゼロ・透かしなし。",
+        "short_description": "動画の音を消してから共有。ワンタップで無音コピーを作成し、最大20本をまとめて消音、選んだ区間だけ消す・小さく・ピー音にも。共有メニューからも使え、処理は端末内です。",
+        "meta_description": "「動画の音消し」は、動画の音をワンタップで消すミュートアプリ。最大20本をまとめて消音、選んだ区間だけ消す・小さく・ピー音にも。共有メニューから使えます。",
         "overview": [
-          "「動画の音消し」は、動画から音声トラックだけを取り除き、無音のコピーを作るアプリです。後ろの会話や生活音、風の音が入ってしまった動画も、動画を選んでワンタップするだけで、そのままSNSに投稿したり送ったりできる状態になります。元の動画は一切変更されません。共有メニューから「音を消して共有」を選べば、アプリを開かずに無音コピーを作れます。",
-          "一般的な動画編集アプリとちがい、映像を再エンコードせずにそのままコピーして音声だけを外す方式のため、画質の劣化はゼロです。長い動画でも高速に処理でき、長さ制限も透かし（ウォーターマーク）もありません。一部の音だけ隠したいときは、選んだ区間をピー音に置き換えられ、音の波形を見ながら話し声の位置を探せます。",
-          "作成された無音コピーには、元動画の位置情報や撮影情報が引き継がれません。どこで撮影したかを知られずに共有できるという点でも、投稿前のひと手間として役立ちます。25言語に対応し、iPhoneでは縦向き・横向きどちらでも、iPadでも使えます。"
+          "「動画の音消し」は、動画から音声だけを取り除き、無音のコピーを作るアプリです。後ろの会話や生活音、風の音が入ってしまった動画も、動画を選んでワンタップするだけで、そのままSNSに投稿したり送ったりできる状態になります。元の動画は一切変更されません。共有メニューから「音を消して共有」を選べば、アプリを開かずに無音コピーを作れます。旅行や行事で撮った動画は、最大20本を選んだ順に消音し、全部まとめて写真に保存・共有できます。",
+          "一部の音だけ隠したいときは、選んだ区間だけ音を消す・小さくする・ピー音に置き換えることができ、音の波形を見ながら話し声の位置を探せます。編集中のプレビューは書き出しと同じ聞こえ方なので、ピー音も「小さく」もその場で確かめられます。できあがったあとも「やり直す」で、同じ設定のまま直せます。iPhone Duoを開いた大きな画面では、動画と編集が左右に並びます。",
+          "無料版のコピーには、右下に小さな透かしが入ります。透かしなしのコピー（動画の音消し Pro・サブスクリプション・任意）は映像を再エンコードせずそのまま使うため、画質はまったく劣化せず、長い動画でも高速に処理できます。作成された無音コピーには、元動画の位置情報や撮影情報が引き継がれません。25言語に対応し、iPhoneでは縦向き・横向きどちらでも、iPadでも使えます。"
         ],
         "target_users": [
           "SNSに動画を投稿する際、背景の会話や生活音を消したい方",
@@ -3749,28 +3833,33 @@
         ],
         "features": [
           "ワンタップで動画の音をすべて削除",
+          "まとめて消音：最大20本を選んだ順に消音し、全部まとめて保存・共有（1本60秒まで）",
           "共有メニューの「音を消して共有」から、アプリを開かずに無音コピーを作成",
-          "選んだ区間の音をピー音に置き換え。波形を見ながら話し声の位置を探せます",
-          "映像は再エンコードせずそのままコピーするため、画質劣化ゼロ",
-          "長さ制限なし。長い動画でも高速に処理",
-          "無音コピーに透かし（ウォーターマーク）は入りません",
+          "選んだ区間だけ音を消す・小さくする・ピー音に置き換え。波形を見ながら話し声の位置を探せます",
+          "プレビューは書き出しと同じ聞こえ方。できあがったあとも「やり直す」で同じ設定のまま直せる",
+          "1本ずつなら長さ制限なし",
+          "動画の音消し Pro（サブスクリプション・任意）：透かしなし。映像は再エンコードせずそのままコピーするため画質劣化ゼロ",
           "無音コピーには元動画の位置情報・撮影情報が含まれません",
-          "結果をプレビューしてから、写真アプリへの保存や共有シートでの共有が可能",
-          "25言語に対応。iPhoneは縦向き・横向き、iPadでも利用可能"
+          "元の動画はそのまま。アカウント不要・アップロードなし・広告なしで、すべて端末内で処理",
+          "iPhone Duoの内側・外側の画面に対応。25言語、iPhoneは縦向き・横向き、iPadでも利用可能"
         ],
         "how_to_use": [
-          "アプリを開いて写真ライブラリから動画を選ぶか、他のアプリの共有メニューから「音を消して共有」を選びます。",
+          "アプリを開いて写真ライブラリから動画を選ぶ（まとめて消音なら最大20本）か、他のアプリの共有メニューから「音を消して共有」を選びます。",
           "選んだ動画をプレビューで確認します。",
-          "音声を削除すると、端末内で無音コピーが作成されます。一部の音だけ隠したいときは、ピー音に置き換える区間を選びます。",
-          "仕上がりをプレビューで確認します。",
+          "音を全部消すか、区間を選んで、その部分だけ消す・小さくする・ピー音にします。",
+          "仕上がりをプレビューで確認します。書き出しと同じ聞こえ方です。直したいときは「やり直す」をタップします。",
           "写真アプリに保存するか、共有シートからそのまま共有します。"
         ],
-        "pricing": "App Storeで無料で提供されており、広告や透かしはありません。最新の価格・提供状況はApp Storeでご確認ください。",
+        "pricing": "App Storeで無料で提供されており、広告はありません。無料版のコピーには右下に小さな透かしが入ります。任意のサブスクリプション「動画の音消し Pro」で透かしなしになります。音の削除、区間の編集、ピー音、波形、共有メニューからの利用は無料のままです。最新の価格・提供状況はApp Storeでご確認ください。",
         "privacy": "処理はすべて端末内で行われ、アカウント登録・アップロード・サーバー処理・広告・トラッキングはありません。写真へのアクセスは、動画の選択と無音コピーの保存にのみ使われます。作成された無音コピーには、元動画の位置情報や撮影情報も含まれません。",
         "faq": [
           {
             "question": "「動画の音消し」は無料ですか？",
-            "answer": "はい。広告も透かしもなく無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。"
+            "answer": "はい。広告はなく、音の削除・区間の編集・ピー音・共有メニューからの利用は無料です。無料版のコピーには右下に小さな透かしが入り、任意のサブスクリプション「動画の音消し Pro」で透かしなしになります。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。"
+          },
+          {
+            "question": "コピーに透かしが入るのはなぜですか？",
+            "answer": "無料版で作ったコピーには、右下に小さな透かし（アプリのアイコンと名前）が入ります。元の動画には入りません。動画の音消し Proでは透かしなしになります。バージョン1.5より前から使っている方のコピーには、透かしは入りません。"
           },
           {
             "question": "動画はどこかにアップロードされますか？",
@@ -3778,15 +3867,23 @@
           },
           {
             "question": "音を消すと画質は落ちますか？",
-            "answer": "落ちません。映像トラックは再エンコードせずそのままコピーするため、無音コピーの画質は元の動画とまったく同じです。"
+            "answer": "透かしなしのコピー（動画の音消し Pro）は、映像を再エンコードせずそのままコピーするため、画質は元の動画とまったく同じで、長い動画でも高速に処理できます。"
           },
           {
             "question": "動画の長さに制限はありますか？",
-            "answer": "ありません。再エンコードを行わない方式のため、長い動画でも高速に処理が完了します。"
+            "answer": "1本ずつなら長さ制限はありません。まとめて消音は1本60秒までで、それより長い動画は飛ばして残りを続けます。"
+          },
+          {
+            "question": "何本かまとめて音を消せますか？",
+            "answer": "はい。最大20本を選べます。選んだ順に1本ずつ消音し、全部まとめて保存・共有できます。"
           },
           {
             "question": "動画の一部だけ音を消せますか？",
-            "answer": "はい。選んだ区間の音をピー音に置き換えられます。波形を見ながら、話し声が入っている位置を探せます。"
+            "answer": "はい。選んだ区間だけ、音を消す・小さくする・ピー音に置き換えることができます。波形を見ながら、話し声が入っている位置を探せます。"
+          },
+          {
+            "question": "書き出す前に聞いて確かめられますか？",
+            "answer": "はい。編集中のプレビューでは、消した区間は無音に、「小さく」は書き出しと同じ大きさに、ピー音もそのまま聞こえます。できあがったあとも「やり直す」で、同じ設定のまま直せます。"
           },
           {
             "question": "共有メニューから使えますか？",

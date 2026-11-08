@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi | ZEC Apps</title>
-  <meta name="description" content="Age Profile keeps family birthdays and shows age, Japanese era (wareki) dates, kazoedoshi, zodiac, yakudoshi and longevity years, with a year converter.">
+  <meta name="description" content="Age Profile keeps birthdays for family, oshi and friends: age, wareki, kazoedoshi, yakudoshi, longevity and memorial years, a Today screen and widgets.">
   <link rel="canonical" href="https://zec-inc.jp/apps/warekiyakudoshichecker/">
   <link rel="alternate" hreflang="en" href="https://zec-inc.jp/apps/warekiyakudoshichecker/">
   <link rel="alternate" hreflang="ja" href="https://zec-inc.jp/apps/warekiyakudoshichecker/ja/">
@@ -13,9 +13,9 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ZEC Apps">
   <meta property="og:title" content="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi | ZEC Apps">
-  <meta property="og:description" content="Age Profile keeps family birthdays and shows age, Japanese era (wareki) dates, kazoedoshi, zodiac, yakudoshi and longevity years, with a year converter.">
+  <meta property="og:description" content="Age Profile keeps birthdays for family, oshi and friends: age, wareki, kazoedoshi, yakudoshi, longevity and memorial years, a Today screen and widgets.">
   <meta property="og:url" content="https://zec-inc.jp/apps/warekiyakudoshichecker/">
-  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a4/84/56/a484565b-7c9c-da72-b3f4-4b9d6e298c57/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
+  <meta property="og:image" content="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/17/ef/8517eff9-87cd-3a00-6dfd-b84a5b144633/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -23,7 +23,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "Age Profile - Wareki, Yakudoshi & Kazoedoshi",
-      "description": "Age Profile keeps family birthdays and shows age, Japanese era (wareki) dates, kazoedoshi, zodiac, yakudoshi and longevity years, with a year converter.",
+      "description": "Age Profile keeps birthdays for family, oshi and friends: age, wareki, kazoedoshi, yakudoshi, longevity and memorial years, a Today screen and widgets.",
       "operatingSystem": "iOS",
       "applicationCategory": "Lifestyle",
       "offers": {
@@ -40,8 +40,8 @@
         "name": "ZEC Inc.",
         "url": "https://zec-inc.jp"
       },
-      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a4/84/56/a484565b-7c9c-da72-b3f4-4b9d6e298c57/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-      "softwareVersion": "1.8.0",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/17/ef/8517eff9-87cd-3a00-6dfd-b84a5b144633/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "softwareVersion": "1.10.0",
       "contentRating": "4+"
     },
     {
@@ -52,15 +52,39 @@
           "name": "Is the app free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, it is free to download and use, with up to 2 saved profiles in the free version. A one-time Plus purchase (not a subscription) unlocks unlimited profiles. Check the App Store listing for current pricing."
+            "text": "Yes, it is free to download and use. The free version stores up to 2 family members, 1 oshi, and 1 friend. A one-time Plus purchase (not a subscription) removes these limits. Check the App Store listing for current pricing."
           }
         },
         {
           "@type": "Question",
-          "name": "Where is my family's data stored?",
+          "name": "Where is my data stored?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Everything is stored locally on your device. Profiles are not sent to external servers, there is no account, and the app uses no ads, tracking, or analytics SDKs."
+            "text": "Everything is stored locally on your device. Profiles are not sent to external servers automatically, there is no account, and the app uses no ads, tracking, or analytics SDKs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Today screen show?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Today's calendar notes (the day's zodiac sign and rokuyo), whose birthday, anniversary, or memorial day it is today, and what is coming up next."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I save my oshi or a group?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Choose Oshi and then a person or a group. For a person, you can save the birthday with only the month and day. For a group, the app counts down to the next anniversary of its formation or debut. The app does not include any celebrity information, so you enter it yourself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I keep family members who have passed away?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The app shows their age at death (full and kazoedoshi), how old they would be today, the next memorial day, and memorial-service years such as the first and third anniversaries. How these years are counted can differ by religious tradition and region, so treat them as general guidance."
           }
         },
         {
@@ -81,18 +105,10 @@
         },
         {
           "@type": "Question",
-          "name": "Can it remind me about birthdays and celebrations?",
+          "name": "Can it remind me about birthdays and anniversaries?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. You can set notifications for birthdays and for longevity celebrations such as kanreki (60th) and koki (70th)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I see whose birthday is next?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The Birthdays tab lists your family's birthdays for the coming year in date order, showing who is next, what age and kazoedoshi age they turn, and marking anyone in a yakudoshi year."
+            "text": "Yes. You can turn notifications for birthdays, longevity celebrations, memorial days and memorial-service years, and anniversaries on or off for each person."
           }
         },
         {
@@ -100,15 +116,7 @@
           "name": "Does it have a widget?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Home Screen and Lock Screen widgets show this year's wareki and the next birthday or milestone."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does it work offline?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The app itself uses no external APIs, so everything works without an internet connection."
+            "text": "Yes. Home Screen and Lock Screen widgets are available."
           }
         },
         {
@@ -116,7 +124,7 @@
           "name": "Is this a fortune-telling app?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Yakudoshi and celebration years are shown only as widely used cultural reference points. The app makes no statements about luck, misfortune, health, or religious effect."
+            "text": "No. Yakudoshi, longevity, and memorial years are shown as widely used reference points, and rokuyo and zodiac compatibility are explained as traditional calendar lore without scores. The app makes no statements about luck, misfortune, health, or religious effect."
           }
         }
       ]
@@ -173,10 +181,10 @@
   <main class="detail">
     <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/apps/family/">Family Apps</a></li><li aria-current="page">Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi</li></ol></nav>
     <section class="hero">
-      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a4/84/56/a484565b-7c9c-da72-b3f4-4b9d6e298c57/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi app icon" width="96" height="96">
+      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/17/ef/8517eff9-87cd-3a00-6dfd-b84a5b144633/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi app icon" width="96" height="96">
       <div>
         <h1>Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi</h1>
-        <p class="tagline">A family profile book for Japan: age, wareki dates, kazoedoshi, zodiac, yakudoshi, and longevity milestones.</p>
+        <p class="tagline">A profile book for Japan that keeps family, oshi, and friends in one place: birthdays, anniversaries, age, wareki, kazoedoshi, yakudoshi, and memorial years.</p>
         <div class="actions">
           <a class="button primary" href="https://apps.apple.com/us/app/%E5%B9%B4%E9%BD%A2%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB-%E5%AE%B6%E6%97%8F%E3%81%A8%E6%8E%A8%E3%81%97%E3%81%AE%E8%A8%98%E5%BF%B5%E6%97%A5/id6770047182?uo=4">View on the App Store</a>
           <a class="button" href="/apps/">All ZEC Apps</a>
@@ -188,34 +196,36 @@
     <section class="shots" aria-label="Screenshots">
       <h2 class="visually-hidden">Screenshots</h2>
       <div class="shot-strip">
-        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8a/af/7b/8aaf7bfc-e44f-edb1-4a6e-c3b53c9f72db/00-oshi-days.png/320x480bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
-        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a3/02/e4/a302e4ff-f88b-0bc2-bdf2-216b58246220/00b-oshi.png/320x480bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
-        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/54/33/ba/5433bacc-c174-3b2e-08c2-d6b1c36754e4/00c-koyomi.png/320x480bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
-        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/31/bf/1531bfdc-9e83-baa3-9b7a-767772e644d2/01-profiles.png/320x480bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
-        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6c/9d/bf/6c9dbf29-caa1-156b-446c-790ec8e89a49/01b-timeline.png/320x480bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e8/e8/92/e8e892d7-802d-90f1-fbe2-bb426512c3f2/00-oshi-days.png/320x480bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d8/05/24/d8052482-2d23-1efe-e8d0-2a5b8775c373/00b-oshi.png/320x480bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f2/7f/51/f27f510f-ef63-e666-c03f-94beda6deca0/00c-koyomi.png/320x480bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/71/4a/18/714a18c3-8633-81b3-3ef2-c5eb992c39ad/01-profiles.png/320x480bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
+        <figure class="shot"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/00/34/750034ca-1c71-ada2-9be7-d5286d9db0ed/01b-timeline.png/320x480bb.jpg" alt="Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi screenshot" width="320" height="480" loading="lazy" decoding="async"></figure>
       </div>
     </section>
 
     <section class="block prose">
       <h2>Overview</h2>
-      <p class="lead-para">Age Profile is a Japanese family profile book for iPhone. Save the birthdays of parents, grandparents, children, and relatives, and see at a glance each person&#x27;s current age, kazoedoshi (traditional East Asian age counting), birth date and current year in wareki (Japanese era calendar: Meiji, Taisho, Showa, Heisei, Reiwa), Chinese zodiac animal, star sign, common yakudoshi (traditionally inauspicious years) guidance, and longevity celebrations such as kanreki (60th) and koki (70th).</p>
-      <p>Questions like &quot;How old is grandpa this year?&quot;, &quot;When is my yakudoshi?&quot;, or &quot;Which year is the kanreki celebration?&quot; are answered in one place, without looking up conversion tables. The Birthdays tab lists your family&#x27;s birthdays for the coming year in date order, showing who is next, what age (and kazoedoshi age) they turn, and who is in a yakudoshi year. A built-in converter switches dates between the Western calendar and wareki across all five modern eras — handy for Japanese resumes, application forms, and paperwork at government offices — and can read non-existent era dates such as Heisei 32 or Showa 100 as the correct Western year and era. It also shows a child&#x27;s current school year and the entrance and graduation years from elementary school through university.</p>
-      <p>Home Screen and Lock Screen widgets show this year&#x27;s wareki and the next birthday or milestone. Everything is stored on your device: no account, no ads, and profiles are never sent to external servers automatically. The app presents yakudoshi and celebration years as common cultural guidance only — it makes no claims about fortune, misfortune, or health.</p>
+      <p class="lead-para">Age Profile is a Japanese profile book for iPhone that keeps the birthdays, anniversaries, and age milestones of your family, your oshi (favorite idols or artists), and friends in one place. Open the app and the Today screen shows today&#x27;s calendar notes (the day&#x27;s zodiac sign and rokuyo), whose birthday, anniversary, or memorial day it is today, and what is coming up next.</p>
+      <p>Each profile shows full age, kazoedoshi (traditional East Asian age counting), birth date in wareki (Japanese era calendar: Meiji, Taisho, Showa, Heisei, Reiwa), Chinese zodiac animal, star sign, common yakudoshi (traditionally inauspicious years) guidance, and longevity celebrations such as kanreki (60th) and koki (70th). The list switches between All, Family, Oshi, and Friends. An oshi can be a person or a group: for a group, the app counts down to the next anniversary of its formation or debut instead of a birthday, and a person&#x27;s birthday can be saved with just the month and day. Family members who have passed away can stay in the book too, with their age at death (full and kazoedoshi), how old they would be today, the next memorial day, and memorial-service years such as the first and third anniversaries.</p>
+      <p>Add any number of anniversaries, such as debut dates, formation dates, wedding anniversaries, or the day you met, and see how many days have passed and how many remain until the next 100-day milestone. Birthday, longevity, memorial, and anniversary notifications can be turned on or off per person, and an oshi&#x27;s birthday or anniversary can be shared as a washi-paper card image. The Birthdays view lists the coming year&#x27;s birthdays and anniversaries in date order. A built-in converter switches dates between the Western calendar and wareki across the five modern eras, and can read non-existent era dates such as Heisei 32 or Showa 100 as the correct Western year and era. Home Screen and Lock Screen widgets are included.</p>
+      <p>Profiles, notes, and notification settings are stored on your device: no account, no ads, and profiles are never sent to external servers automatically. Yakudoshi, longevity, and memorial years are shown as common guidance, and rokuyo and zodiac compatibility as traditional calendar lore. The app makes no claims about fortune, misfortune, or health, and includes no information about celebrities.</p>
     </section>
 
     <section class="block">
       <h2>Main Features</h2>
       <ul class="feature-grid">
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Family profile book</strong>: save birthdays with blood type and notes per person</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Shows full age</strong>, kazoedoshi (counted age), Chinese zodiac, and star sign for each profile</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Birthdays tab</strong>: your family&#x27;s birthdays for the coming year in date order, with the age they turn and a mark for yakudoshi years</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Wareki display and converter covering Meiji</strong>, Taisho, Showa, Heisei, and Reiwa, with correct era-boundary handling, including non-existent dates such as Heisei 32</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Yakudoshi guidance by gender (male</strong>, female, or unspecified), including major yakudoshi (taiyaku)</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Longevity celebration detection based on kazoedoshi, such as kanreki and koki</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Notifications for birthdays and longevity celebrations</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Home Screen and Lock Screen widgets showing this year&#x27;s wareki and the next birthday or milestone</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Today screen</strong>: the day&#x27;s zodiac sign and rokuyo, whose birthday, anniversary, or memorial day it is today, and what is coming up next</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Separate Family</strong>, Oshi, and Friends lists; an oshi can be a person or a group, and a birthday can be saved with only the month and day</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Full age</strong>, kazoedoshi, wareki birth date, Chinese zodiac, and star sign for each profile, with a compact detail screen that shows the key points first</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Common yakudoshi guidance (honyaku</strong>, maeyaku, atoyaku) and longevity celebrations such as kanreki, koki, and kiju</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>For family members who have passed away</strong>: age at death (full and kazoedoshi), how old they would be today, the next memorial day, and memorial-service years</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Unlimited anniversaries per person</strong>, with days elapsed and the next 100-day milestone</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Birthday</strong>, longevity, memorial, and anniversary notifications, on or off per person; share an oshi&#x27;s birthday or anniversary as a washi-paper card</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zodiac circle diagram showing which signs traditionally pair well with today&#x27;s sign, and a written explanation of two people&#x27;s zodiac compatibility (no scores)</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Wareki converter covering Meiji to Reiwa, including non-existent dates such as Heisei 32</span></li>
         <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>A child&#x27;s current school year</strong>, plus entrance and graduation years from elementary school to university</span></li>
-        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>All data stored on device — no account, no ads, no automatic external transmission</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3.2L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Home Screen and Lock Screen widgets; all data stored on device with no account and no ads</span></li>
       </ul>
     </section>
 
@@ -223,35 +233,34 @@
       <h2>Who It Is For</h2>
       <ul class="audience-grid">
         <li>Families in Japan who want one place to check everyone&#x27;s age, zodiac, and celebration years</li>
+        <li>Fans who want to keep their oshi&#x27;s birthday and a group&#x27;s formation or debut anniversaries</li>
+        <li>People who want to remember memorial days and memorial-service years for family members who have passed away</li>
         <li>People planning kanreki, koki, kiju, and other longevity celebrations for parents and grandparents</li>
         <li>Anyone filling out Japanese resumes or official forms that require wareki (era calendar) dates</li>
-        <li>People who want a quick reference for their own yakudoshi years</li>
-        <li>Expats and international residents in Japan who need help with era dates and traditional age customs</li>
       </ul>
     </section>
 
     <section class="block">
       <h2>How to Use</h2>
       <ol class="steps">
-        <li><span>Add family members and relatives with their birth dates using the date picker</span></li>
-        <li><span>Open the profile list to see each person&#x27;s age, wareki dates, zodiac, and star sign at a glance</span></li>
-        <li><span>Open the Birthdays tab to see who is next and whether anyone is in a yakudoshi year</span></li>
-        <li><span>Check the yakudoshi and longevity celebration guidance shown for each profile</span></li>
-        <li><span>Set notifications so you do not miss birthdays or milestone celebrations like kanreki</span></li>
-        <li><span>Add a Home Screen or Lock Screen widget to see this year&#x27;s wareki and the next milestone</span></li>
-        <li><span>Use the converter to switch any date between the Western calendar and wareki for forms and paperwork</span></li>
+        <li><span>Add family members, oshi (a person or a group), and friends with their birthdays or anniversaries</span></li>
+        <li><span>Open the Today screen to see today&#x27;s calendar notes and whose birthday, anniversary, or memorial day it is</span></li>
+        <li><span>Open a profile to see age, wareki, zodiac, yakudoshi, and longevity or memorial-year guidance at a glance</span></li>
+        <li><span>Add anniversaries such as a debut or wedding date and count the days to the next milestone</span></li>
+        <li><span>Turn on notifications per person so you do not miss birthdays, anniversaries, or memorial days</span></li>
+        <li><span>Add a Home Screen or Lock Screen widget, and use the converter to switch dates between the Western calendar and wareki</span></li>
       </ol>
     </section>
 
     <div class="info-pair">
       <section class="info-card">
         <h2>Pricing</h2>
-        <p>The app is free to download and use. The free version stores up to 2 profiles; a one-time Plus in-app purchase (no subscription) unlocks unlimited profiles. App Store pricing can change, so check the store listing for current details.</p>
+        <p>The app is free to download and use. The free version stores up to 2 family members, 1 oshi, and 1 friend; a one-time Plus in-app purchase (no subscription) removes these limits. App Store pricing can change, so check the store listing for current details.</p>
         <p class="meta">Pricing and availability can vary by country and may change on the App Store.</p>
       </section>
       <section class="info-card">
         <h2>Privacy</h2>
-        <p>Profiles, birth dates, notes, blood types, and notification settings are stored locally on your device (and in an on-device App Group shared only with the widget), and are not sent to external servers. There is no account registration, no tracking, and no ad or analytics SDKs. The app does not access your Contacts.</p>
+        <p>Profiles, birth dates, anniversaries, notes, and notification settings are stored locally on your device (and in an on-device App Group shared only with the widget), and are not sent to external servers automatically. There is no account registration, no tracking, and no ad or analytics SDKs. The app does not access your Contacts and includes no celebrity data.</p>
       </section>
     </div>
 
@@ -259,11 +268,23 @@
       <h2>FAQ</h2>
         <details>
           <summary>Is the app free?</summary>
-          <p>Yes, it is free to download and use, with up to 2 saved profiles in the free version. A one-time Plus purchase (not a subscription) unlocks unlimited profiles. Check the App Store listing for current pricing.</p>
+          <p>Yes, it is free to download and use. The free version stores up to 2 family members, 1 oshi, and 1 friend. A one-time Plus purchase (not a subscription) removes these limits. Check the App Store listing for current pricing.</p>
         </details>
         <details>
-          <summary>Where is my family&#x27;s data stored?</summary>
-          <p>Everything is stored locally on your device. Profiles are not sent to external servers, there is no account, and the app uses no ads, tracking, or analytics SDKs.</p>
+          <summary>Where is my data stored?</summary>
+          <p>Everything is stored locally on your device. Profiles are not sent to external servers automatically, there is no account, and the app uses no ads, tracking, or analytics SDKs.</p>
+        </details>
+        <details>
+          <summary>What does the Today screen show?</summary>
+          <p>Today&#x27;s calendar notes (the day&#x27;s zodiac sign and rokuyo), whose birthday, anniversary, or memorial day it is today, and what is coming up next.</p>
+        </details>
+        <details>
+          <summary>Can I save my oshi or a group?</summary>
+          <p>Yes. Choose Oshi and then a person or a group. For a person, you can save the birthday with only the month and day. For a group, the app counts down to the next anniversary of its formation or debut. The app does not include any celebrity information, so you enter it yourself.</p>
+        </details>
+        <details>
+          <summary>Can I keep family members who have passed away?</summary>
+          <p>Yes. The app shows their age at death (full and kazoedoshi), how old they would be today, the next memorial day, and memorial-service years such as the first and third anniversaries. How these years are counted can differ by religious tradition and region, so treat them as general guidance.</p>
         </details>
         <details>
           <summary>What is wareki and which eras does the app support?</summary>
@@ -274,40 +295,32 @@
           <p>Yakudoshi are years traditionally considered inauspicious in Japan, which differ for men and women. Kazoedoshi is the traditional age counting where you are 1 at birth. The app shows both as common cultural guidance, without any claims about fortune or misfortune.</p>
         </details>
         <details>
-          <summary>Can it remind me about birthdays and celebrations?</summary>
-          <p>Yes. You can set notifications for birthdays and for longevity celebrations such as kanreki (60th) and koki (70th).</p>
-        </details>
-        <details>
-          <summary>Can I see whose birthday is next?</summary>
-          <p>Yes. The Birthdays tab lists your family&#x27;s birthdays for the coming year in date order, showing who is next, what age and kazoedoshi age they turn, and marking anyone in a yakudoshi year.</p>
+          <summary>Can it remind me about birthdays and anniversaries?</summary>
+          <p>Yes. You can turn notifications for birthdays, longevity celebrations, memorial days and memorial-service years, and anniversaries on or off for each person.</p>
         </details>
         <details>
           <summary>Does it have a widget?</summary>
-          <p>Yes. Home Screen and Lock Screen widgets show this year&#x27;s wareki and the next birthday or milestone.</p>
-        </details>
-        <details>
-          <summary>Does it work offline?</summary>
-          <p>Yes. The app itself uses no external APIs, so everything works without an internet connection.</p>
+          <p>Yes. Home Screen and Lock Screen widgets are available.</p>
         </details>
         <details>
           <summary>Is this a fortune-telling app?</summary>
-          <p>No. Yakudoshi and celebration years are shown only as widely used cultural reference points. The app makes no statements about luck, misfortune, health, or religious effect.</p>
+          <p>No. Yakudoshi, longevity, and memorial years are shown as widely used reference points, and rokuyo and zodiac compatibility are explained as traditional calendar lore without scores. The app makes no statements about luck, misfortune, health, or religious effect.</p>
         </details>
     </section>
 
     <section class="block">
       <h2>More apps in this category</h2>
       <div class="related">
-        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/a5/1c/b8a51c3f-3513-c5cf-05c0-ea1fca76deca/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
-        <a class="related-card" href="/apps/laundrytap/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/6f/28/8e6f2887-4013-b97c-cfc3-102d32ee80e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Laundry Tap: Washer Timer</h3><p>A wash and dry timer with a Lock Screen countdown and reminders, plus a...</p></span></a>
-        <a class="related-card" href="/apps/photo-day/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4c/98/ea/4c98ea9d-4280-746f-8236-21c96befca9c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>DailyAlbum: One Photo a Day</h3><p>Keep one photo a day as a simple photo diary and memory calendar, with...</p></span></a>
+        <a class="related-card" href="/apps/foot-size-check/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/dd/88/b2dd8895-b921-c67c-1a6a-4d4d09dafced/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Foot Size Check</h3><p>Measure kids&#x27; feet with just a sheet of Letter or A4 paper and a photo. Get...</p></span></a>
+        <a class="related-card" href="/apps/photo-day/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4b/3e/67/4b3e6765-923b-aa1d-5077-94880b330110/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>DailyAlbum: One Photo a Day</h3><p>Keep one photo a day as a simple photo diary and memory calendar, then hang...</p></span></a>
+        <a class="related-card" href="/apps/big-text-note/"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4b/66/f2/4b66f206-c35d-5211-e40c-778958d5dcd4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="" width="56" height="56" loading="lazy"><span><h3>Big Text Note</h3><p>Show one note in large, easy-to-read text to the person in front of you...</p></span></a>
       </div>
     </section>
 
     <section class="cta">
       <h2>App Store</h2>
       <a class="button primary big" href="https://apps.apple.com/us/app/%E5%B9%B4%E9%BD%A2%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB-%E5%AE%B6%E6%97%8F%E3%81%A8%E6%8E%A8%E3%81%97%E3%81%AE%E8%A8%98%E5%BF%B5%E6%97%A5/id6770047182?uo=4">Open Age Profile - Wareki, Yakudoshi &amp; Kazoedoshi on the App Store</a>
-      <p class="meta">Last updated: 2026-10-23</p>
+      <p class="meta">Last updated: 2026-11-07</p>
     </section>
   </main>
 
