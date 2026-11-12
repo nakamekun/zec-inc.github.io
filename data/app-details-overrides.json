@@ -3631,32 +3631,44 @@
     "privacy": "Everything runs on your device: no account, no upload, no ads. The copy you save or share is re-rendered from scratch, so it carries no location (GPS) or camera metadata from the original, and your original photo is never modified. Faces are found on your device.",
     "faq": [
       {
-        "question": "Is Blur Before Share free?",
-        "answer": "Yes. Every tool is free, with no ads, and you can save or share up to 3 blurred photos a day for free. An optional Pro subscription removes the daily limit. Check the App Store listing for current details."
+        "question": "How do I blur a face in a video so the blur follows it?",
+        "answer": "Tap the film button and pick a video up to 3 minutes. Put an oval or box cover on the face, tap Follow Face, and the cover moves with the face through the clip (found on your device with Apple's Vision). Check it by stepping through, then tap Make Video. The sound is kept."
       },
       {
-        "question": "Are my photos uploaded anywhere?",
+        "question": "How do I blur or pixelate faces in a photo?",
+        "answer": "Open the photo and faces are found and covered automatically. Choose blur, mosaic (pixelate) or black, and tap × on any face you want to leave visible. Draw with your finger over anything else you want to hide."
+      },
+      {
+        "question": "How do I black out names, addresses or text in a screenshot?",
+        "answer": "Tap Find Text. Text the app recognizes appears as suggestions; choose the ones to hide and confirm, and only those become black boxes. Recognition can miss text, so look over the whole picture and draw over anything that was missed."
+      },
+      {
+        "question": "How do I blur a license plate in a photo or video?",
+        "answer": "In a photo, draw over the plate. In a video, put a box cover on the plate and tap Track Area: it follows that area to the end of the clip and stops where it loses it, so you can move the cover and continue."
+      },
+      {
+        "question": "Blur, mosaic or black: which should I use?",
+        "answer": "Black is the surest choice for text. Blur softly hides faces, and mosaic uses large pixel blocks that keep the photo looking natural. You can mix all three in one photo."
+      },
+      {
+        "question": "Is Blur Before Share free?",
+        "answer": "Yes. Every tool is free, with no ads, and you can save or share up to 3 covered photos or videos a day for free. An optional Pro subscription removes the daily limit. Check the App Store listing for current details."
+      },
+      {
+        "question": "Are my photos and videos uploaded anywhere?",
         "answer": "No. Everything runs on your device. There is no account and no upload."
       },
       {
-        "question": "Which effect should I use for text?",
-        "answer": "Black is the surest choice for text. Blur softly hides faces and backgrounds, and mosaic uses large pixel blocks that keep the photo looking natural."
+        "question": "Does the shared copy include location data?",
+        "answer": "No. Photos are re-rendered from scratch and videos are written without location metadata, so the copy you share does not carry where it was taken."
       },
       {
         "question": "Does it change my original photo?",
         "answer": "No. Your original photo is never modified; the app saves or shares a new copy."
       },
       {
-        "question": "Does the shared copy include location data?",
-        "answer": "No. The copy is re-rendered from scratch, so it carries no location (GPS) or camera metadata from the original."
-      },
-      {
-        "question": "Does it automatically detect faces?",
-        "answer": "Yes. When you open a photo, Cover Faces finds faces on your device and covers them automatically. Tap × to uncover any one of them, or tap to search again. You can also draw over anything else with your finger."
-      },
-      {
         "question": "What does Pro do?",
-        "answer": "Blur Before Share Pro removes the daily limit of 3 saved or shared photos. It is a yearly subscription with a 1-week free trial, or a monthly one. People who used the app before version 1.4 keep unlimited saving and sharing without Pro."
+        "answer": "Blur Before Share Pro removes the daily limit of 3 saved or shared photos or videos. It is a yearly subscription with a 1-week free trial, or a monthly one. People who used the app before version 1.4 keep unlimited saving and sharing without Pro."
       }
     ],
     "locales": {
@@ -3698,32 +3710,44 @@
         "privacy": "処理はすべて端末内で行い、アカウント登録・アップロード・広告はありません。保存・共有するコピーは一から描き直すため、元の写真の位置情報（GPS）や撮影情報は含まれず、元の写真も変更されません。顔の検出も端末の中で行います。",
         "faq": [
           {
-            "question": "Blur Before Shareは無料ですか？",
-            "answer": "はい。道具はすべて無料で広告もなく、隠した写真の保存・共有は1日3枚まで無料です。制限をなくすProは任意のサブスクリプションです。最新の内容はApp Storeでご確認ください。"
+            "question": "動画の顔にモザイクをかけて、動いても追いかけるには？",
+            "answer": "フィルムのボタンから3分までの動画を選び、顔に楕円か四角のカバーを置いて「顔を追いかける」をタップすると、カバーが顔に合わせて動きます（顔の検出は端末の中で行います）。コマ送りで確かめてから「動画を作る」で書き出します。音声はそのまま残ります。"
           },
           {
-            "question": "写真はどこかにアップロードされますか？",
+            "question": "写真の顔をぼかす・モザイクをかけるには？",
+            "answer": "写真を開くと顔が自動で見つかり、隠されます。ぼかし・モザイク・黒塗りから選び、隠さなくていい顔は×で外せます。ほかの部分は指でなぞって隠せます。"
+          },
+          {
+            "question": "スクショの名前や住所を黒塗りするには？",
+            "answer": "「文字を見つける」をタップすると、読み取った文字が候補として出ます。隠すものを選んで確定すると、その部分だけが黒塗りになります。読み取りには漏れがあるので、全体を見て、残っている部分は指でなぞって隠してください。"
+          },
+          {
+            "question": "車のナンバープレートをぼかすには？",
+            "answer": "写真ならナンバーの上を指でなぞります。動画ならナンバーに四角のカバーを置いて「範囲を追う」をタップすると、動画の最後まで追いかけます。見失ったところで止まるので、カバーを合わせ直して続けられます。"
+          },
+          {
+            "question": "ぼかし・モザイク・黒塗りはどう使い分けますか？",
+            "answer": "文字を隠すなら黒塗りがいちばん確実です。ぼかしは顔をやわらかく、モザイクは大きな四角で写真の雰囲気を残して隠します。1枚の中で混ぜて使えます。"
+          },
+          {
+            "question": "Blur Before Shareは無料ですか？",
+            "answer": "はい。道具はすべて無料で広告もなく、隠した写真・動画の保存・共有は1日3件まで無料です。制限をなくすProは任意のサブスクリプションです。最新の内容はApp Storeでご確認ください。"
+          },
+          {
+            "question": "写真や動画はどこかにアップロードされますか？",
             "answer": "いいえ。処理はすべて端末内で行われます。アカウント登録もアップロードもありません。"
           },
           {
-            "question": "文字を隠すにはどの効果がよいですか？",
-            "answer": "文字を隠すなら黒塗りがいちばん確実です。ぼかしは顔や背景をやわらかく、モザイクは大きな四角で写真の雰囲気を残して隠します。"
+            "question": "共有する写真や動画に位置情報は残りますか？",
+            "answer": "いいえ。写真は一から描き直し、動画は位置情報を入れずに書き出すため、撮影場所は共有先に伝わりません。"
           },
           {
             "question": "元の写真は変更されますか？",
             "answer": "いいえ。元の写真は変更されません。アプリは新しいコピーを保存・共有します。"
           },
           {
-            "question": "共有する写真に位置情報は残りますか？",
-            "answer": "いいえ。コピーは一から描き直すため、元の写真の位置情報（GPS）や撮影情報は含まれません。"
-          },
-          {
-            "question": "顔は自動で検出されますか？",
-            "answer": "はい。写真を開くと、「顔を隠す」が端末の中で顔を見つけて自動で隠します。隠さなくていい顔は×で外せ、タップすると探し直します。ほかの部分は指でなぞって隠せます。"
-          },
-          {
             "question": "Proでは何ができますか？",
-            "answer": "Blur Before Share Proでは、保存・共有の1日3枚の制限がなくなります。年額（1週間の無料体験つき）または月額から選べます。1.4より前からお使いの方は、Proなしでも制限なく保存・共有できます。"
+            "answer": "Blur Before Share Proでは、保存・共有の1日3件の制限がなくなります。年額（1週間の無料体験つき）または月額から選べます。1.4より前からお使いの方は、Proなしでも制限なく保存・共有できます。"
           }
         ]
       }
