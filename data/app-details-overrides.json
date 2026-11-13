@@ -920,28 +920,44 @@
     "privacy": "Big Text Note has no account, no ads, no tracking, and no server sync, and it needs no internet connection. The note stays on your device. Read Aloud uses the voices built into your iPhone or iPad and sends nothing to a server. Voice input turns speech into text on the device; audio is never saved, and only the text you keep is stored.",
     "faq": [
       {
-        "question": "What is Big Text Note for?",
-        "answer": "It shows one note in large, easy-to-read text so you can hold it up to the person in front of you, as a simple communication board for conversations, noisy places, or quick words at a counter."
+        "question": "How do I show text in big letters on my iPhone?",
+        "answer": "Type a note and tap Show. The note fills the screen in Normal, Large, or Huge text, in the Text and Background colors you pick, and the screen stays on while it is shown. Turn the iPhone sideways to show one long line."
+      },
+      {
+        "question": "How do I use my iPhone as a communication board with someone who is deaf or hard of hearing?",
+        "answer": "Write what you want to say and tap Show so they can read it; tap the up-and-down arrows to flip the note toward them. To get their side, tap the microphone and their speech is turned into text on your device. Ready-made Quick Phrases such as \"I'm hard of hearing\" and \"Please write it down\" are one tap away."
+      },
+      {
+        "question": "How do I see what someone is saying as text, like captions?",
+        "answer": "Tap the microphone, and the words heard so far appear in the note as they speak; tap the stop button when they finish. Speech is recognized on the device and the audio is not saved. It is start-and-stop, not an always-on caption."
+      },
+      {
+        "question": "Can my iPhone speak what I typed when I cannot use my voice?",
+        "answer": "Yes. Tap Read note aloud on the show screen. It uses the voices built into your iPhone or iPad, reads in the language of the note, and sends nothing to a server. If you have set up a Personal Voice, turn on Use a voice close to my own in Settings."
+      },
+      {
+        "question": "How do I flip the text so the person across the table can read it?",
+        "answer": "On the show screen, tap the button with the up and down arrows. The note turns upside down for the person facing you; tap again for Face to face, which shows the note on both halves of the screen, and once more to turn it back."
+      },
+      {
+        "question": "Can I use it as a cue card or a sign to hold up?",
+        "answer": "Yes. Show the note in Huge text, or turn the iPhone sideways for one long line, and the screen will not dim or lock while it is shown. Maximum brightness while showing is on by default and can be turned off in Settings. The text does not scroll like a ticker."
+      },
+      {
+        "question": "How do I keep phrases I use often?",
+        "answer": "Open Quick Phrases. Four Recommended phrases are included, and Save current note keeps up to 20 of your own under My Phrases, with their colors and text size. Choosing one replaces the note and shows it right away; tap Edit to reorder or delete."
+      },
+      {
+        "question": "How do I open it quickly from the Lock Screen or Home Screen?",
+        "answer": "Add the Home Screen widget to see your latest note, or the Lock Screen widget and the Control Center control to jump straight into showing. On an iPhone with an Action button, assign the app's Show in large text control. If the widget looks out of date, tap Reload Widget in Settings."
+      },
+      {
+        "question": "Is Big Text Note free, and where is my note stored?",
+        "answer": "It is free with no ads, no account, and no in-app purchases. The note stays on your device, nothing is sent to the developer, and no internet connection is needed. Turn on Open with a blank note in Settings if you want each session to start empty."
       },
       {
         "question": "Is it a full notes app replacement?",
-        "answer": "No. Big Text Note is built around one note shown in large text rather than managing many notes or notebooks."
-      },
-      {
-        "question": "Can it read the note aloud?",
-        "answer": "Yes. Read Aloud speaks the note with the voices built into your iPhone or iPad. The language is detected from the text, and nothing is sent to a server."
-      },
-      {
-        "question": "Does it have voice input?",
-        "answer": "Yes. Voice input turns what the other person says into text on the device. You choose whether to append the result to the note or replace it. Audio is never saved."
-      },
-      {
-        "question": "Does it require an account?",
-        "answer": "No. There is no account, no ads, no tracking, and no server sync, and no internet connection is needed. The note stays on your device."
-      },
-      {
-        "question": "What are Quick Phrases?",
-        "answer": "Ready-made lines you can show with one tap: four are included, and you can add up to 20 of your own and reorder them."
+        "answer": "No. Big Text Note keeps one note and is built around showing it in large text, not managing many notes or notebooks."
       }
     ],
     "locales": {
@@ -981,28 +997,44 @@
         "privacy": "アカウント不要で、広告・トラッキング・サーバー同期はなく、通信も必要ありません。メモは端末の中だけにあります。読み上げは端末内蔵の音声を使い、外部には送りません。音声入力は端末内で文字にし、音声は保存されず、メモに残した文字だけが保存されます。",
         "faq": [
           {
-            "question": "大きな文字メモはどんなアプリですか？",
-            "answer": "ひとつのメモを大きく読みやすい文字で表示し、目の前の相手に見せるためのアプリです。会話や騒がしい場所、窓口での短いやりとりに使える筆談ボードのように使えます。"
+            "question": "iPhoneで文字を大きく表示して相手に見せるには？",
+            "answer": "メモを書いて「見せる」をタップするだけです。文字の大きさは「標準」「大」「特大」から選べ、「文字」と「背景」の色も変えられます。見せている間は画面が消えません。iPhoneを横向きにすると1行を長く表示できます。"
+          },
+          {
+            "question": "耳が聞こえにくい人や声が出ないときにiPhoneで筆談するには？",
+            "answer": "伝えたいことを書いて「見せる」で相手に読んでもらい、上下の矢印のボタンで相手の向きに反転できます。相手の話はマイクのボタンを押すと端末内で文字になります。「筆談でお願いします」「耳が聞こえにくいです」などの定型文も1タップで出せます。"
+          },
+          {
+            "question": "相手が話した言葉を字幕のように文字で見るには？",
+            "answer": "マイクのボタンを押すと、聞き取った言葉がその場でメモに入っていきます。話し終わったら停止ボタンを押してください。音声認識は端末内で行い、音声は保存しません。押している間だけ聞き取る方式で、常時字幕ではありません。"
+          },
+          {
+            "question": "声が出ないとき、書いた文字をiPhoneに読み上げてもらうには？",
+            "answer": "表示の画面で「メモを読み上げ」のボタンを押します。iPhoneやiPadに入っている音声でメモの言語に合わせて読み上げ、外部には何も送りません。パーソナルボイスを作ってあれば、設定の「自分の声に近い音声を使う」で自分の声に近い読み上げもできます。"
+          },
+          {
+            "question": "向かいの人に文字を向ける（上下反転する）には？",
+            "answer": "表示の画面で上下の矢印のボタンを押すと、メモが上下反転して向かいの人が読める向きになります。もう一度押すと「向かい合わせ」になり、画面の上下両方に表示します。さらに押すと元に戻ります。"
+          },
+          {
+            "question": "カンペや掲示板のように掲げて使えますか？",
+            "answer": "使えます。「特大」で表示するか、iPhoneを横向きにして1行を長く見せられ、表示中は画面が暗くなったりロックされたりしません。「表示中は明るさを最大にする」は設定でオフにできます。電光掲示板のように文字が流れる機能はありません。"
+          },
+          {
+            "question": "よく使う言葉を1タップで出すには？",
+            "answer": "「定型文」を開きます。「おすすめ」が4件入っていて、「今のメモを保存」で自分の文を「マイ定型文」に色と文字サイズごと20件まで保存できます。選ぶと今のメモが置き換わってすぐ表示され、「編集」で並べ替えや削除ができます。"
+          },
+          {
+            "question": "ロック画面やホーム画面からすぐ開くには？",
+            "answer": "ホーム画面ウィジェットで最新のメモを表示でき、ロック画面ウィジェットやコントロールセンターから表示モードをすぐ開けます。アクションボタンのあるiPhoneでは、このアプリの「大きく見せる」を割り当てられます。ウィジェットの表示が古いときは設定の「ウィジェットを更新」を押してください。"
+          },
+          {
+            "question": "大きい文字メモは無料ですか？メモはどこに保存されますか？",
+            "answer": "無料で、広告・アカウント・アプリ内課金はありません。メモは端末の中だけに保存され、開発者には何も送られず、通信も必要ありません。毎回まっさらから始めたいときは設定の「開いたら白紙にする」をオンにしてください。"
           },
           {
             "question": "普段のメモアプリの代わりになりますか？",
-            "answer": "いいえ。多数のメモやノートの管理ではなく、ひとつのメモを大きく見せることに絞ったアプリです。"
-          },
-          {
-            "question": "メモを読み上げてもらえますか？",
-            "answer": "はい。読み上げは、iPhoneやiPadに内蔵された音声でメモを読み上げます。言語はメモの文字から自動で判定し、外部には送りません。"
-          },
-          {
-            "question": "音声入力はできますか？",
-            "answer": "はい。相手が話した言葉を端末内で文字にします。結果を今のメモに追記するか、置き換えるかを選べます。音声は保存されません。"
-          },
-          {
-            "question": "アカウント登録は必要ですか？",
-            "answer": "不要です。広告・トラッキング・サーバー同期はなく、通信も必要ありません。メモは端末の中だけにあります。"
-          },
-          {
-            "question": "定型文とは何ですか？",
-            "answer": "1タップで表示できる決まった言葉です。4件の例文があり、自分の文を20件まで追加して並べ替えられます。"
+            "answer": "なりません。メモはひとつだけで、多数のメモやノートの管理ではなく、ひとつのメモを大きく見せることに絞ったアプリです。"
           }
         ]
       }
@@ -3471,40 +3503,44 @@
     "privacy": "OCR runs entirely on your iPhone with Apple Vision, works offline, and photos and text are never sent to a server. From version 1.8, images you are working on (including straightened document images) are kept temporarily on your device and deleted when they are no longer needed: when a read fails or is redone, when you close the result, or when you delete it from history; anything left over is removed the next time the app starts. Suggested fixes for misread text are made by Apple's on-device AI on supported iPhones, and neither photos nor text leave your device. Saved history keeps recognized text, line corrections, confidence values, and thumbnails locally in the app. There is no account, no ads, and no tracking. Sharing text is always user-initiated through the iOS share sheet. Subscription purchases are handled by the App Store and your Apple Account.",
     "faq": [
       {
-        "question": "Is OCR Copy free?",
-        "answer": "It is free to download and lets you read text up to 5 times a day. OCR Copy Pro, an auto-renewing yearly (with a 1-week free trial) or monthly subscription, removes the daily limit. If you used OCR Copy before version 1.5, reading stays unlimited. Check the App Store listing for current prices."
+        "question": "How do I copy text from an image or photo on iPhone?",
+        "answer": "Open the OCR tab and tap Photos to pick the image, or Snap & Read to take one. The text is recognized on your device and copied automatically when you read one image; tap Copy to copy it again, or Keep in Library to save it. Links, emails, and phone numbers in the text can be tapped to open."
       },
       {
-        "question": "What does OCR Copy Pro add?",
-        "answer": "It removes the daily limit of 5 reads in the app, the share sheet, and Shortcuts. Copying, saving, and CSV export never count toward the limit, and the count starts over at midnight."
+        "question": "How do I turn a screenshot into text?",
+        "answer": "Right after taking a screenshot, or from the Photos app, tap Share and choose OCR Copy: the text is read and copied on the spot, without opening the app. Choose Read Text with OCR Copy instead to also keep the result in the app's Library."
+      },
+      {
+        "question": "How do I scan a document to text with the camera?",
+        "answer": "Tap Scan Documents. The camera finds the page and shoots automatically, you can keep going for several pages, and you can fix the four corners afterward with Apply and Read Again. To grab text off a sign or label, tap Live, point the camera, and copy what you see."
+      },
+      {
+        "question": "Can I convert many photos to text at once?",
+        "answer": "Yes. Pick several images under Photos and choose Combine into One or Separate Each Page; results come out in the order you picked. OCR Copy Pro lets you select up to 100 at a time in the app, free use up to the day's remaining reads. The share sheet and Shortcuts accept up to 20 images."
+      },
+      {
+        "question": "Can it read a PDF, or make a PDF I can search?",
+        "answer": "Both. Tap Files to open a PDF: pages with a text layer are extracted directly and scanned pages are read with OCR, up to the first 50 pages per import. From any result, tap Export and choose Share Searchable PDF or Save to Files to get a PDF with selectable, searchable text."
+      },
+      {
+        "question": "How do I get a table from an image into Excel or Numbers?",
+        "answer": "When a table is found in the image (iOS 26 or later), Export Table as CSV appears under Export on the result screen. Rows and columns are kept as they are, so the CSV opens in Numbers or Excel."
+      },
+      {
+        "question": "How do I save recognized text and find it again later?",
+        "answer": "Tap Keep in Library. The Saved Text tab keeps results with their original images on your device, sorted into groups (3 groups free, unlimited with Pro) and searchable with Search Library or from iPhone search. You can turn on a Face ID lock in Settings, and Export All gives you text, a searchable PDF, or a ZIP of the whole library for free."
+      },
+      {
+        "question": "What if some text is read wrong, and can it read handwriting or translate?",
+        "answer": "Tap Show details, then tap a line to use Edit Line or Delete This Line before copying. On devices with Apple Intelligence, AI Suggestions proposes fixes you can apply one by one. Auto puts your device's language first, and OCR Language lets you choose Japanese, English, Korean, Chinese, European languages, Russian, Thai, or Vietnamese. Printed text is the target: handwriting and vertical text may not be read correctly, and there is no translation feature."
+      },
+      {
+        "question": "Is OCR Copy free? What does Pro add?",
+        "answer": "It is free to download and read up to 5 times a day; copying, saving, and CSV export never count, and the count resets at midnight. OCR Copy Pro, an auto-renewing yearly (with a 1-week free trial) or monthly subscription, removes the daily limit in the app, the share sheet, and Shortcuts, allows up to 100 images per batch, and unlimited groups. If you used OCR Copy before version 1.5, reading stays unlimited. Check the App Store listing for current prices."
       },
       {
         "question": "Are my photos or text uploaded anywhere?",
-        "answer": "No. Text recognition runs on your iPhone with Apple Vision, and photos and text are never sent to a server. There is no account, no ads, and no tracking."
-      },
-      {
-        "question": "Can I read many images at once?",
-        "answer": "Yes. Select up to 20 photos or screenshots and OCR Copy reads them in the order you picked them and combines the text into one result."
-      },
-      {
-        "question": "What languages can it read?",
-        "answer": "Auto reads your device's language first. You can also choose Japanese, English, Korean, Chinese, European languages, Russian, Ukrainian, Thai, or Vietnamese. The app itself is available in 25 languages."
-      },
-      {
-        "question": "What if the OCR result has mistakes?",
-        "answer": "You can fix or delete individual lines before copying. Lines with low confidence are flagged for review when detail display is enabled."
-      },
-      {
-        "question": "Can I save text and come back to it later?",
-        "answer": "Yes. Saved text is stored locally on your device and appears on the Home screen, where you can reopen and copy it again anytime."
-      },
-      {
-        "question": "Does it read handwriting or vertical Japanese text?",
-        "answer": "The app targets printed text in photos and camera shots. Vertical Japanese text and complex layouts may not be read correctly."
-      },
-      {
-        "question": "Do I need camera access?",
-        "answer": "Camera access is needed for live scan and camera capture, but you can also pick existing images from your photo library or share them to OCR Copy."
+        "answer": "No. Text recognition runs on your iPhone with Apple Vision, AI suggestions use on-device Apple Intelligence, and images and text are processed and stored on your device. There is no account, no ads, and no tracking."
       }
     ],
     "locales": {
@@ -3550,40 +3586,44 @@
         "privacy": "文字の読み取りはApple Visionを使ってすべて iPhone の中で実行され、オフラインで使えます。写真やテキストを外部サーバーへ送信することはありません。1.8 からは、作業中の画像（まっすぐに整えた書類の画像を含む）を端末内に一時的に置き、読み取りの失敗や読み直しで不要になったとき、結果を閉じたとき、履歴を削除したときに消します。残ったものは次にアプリを開いたときに消します。読み間違いの直し案は、対応する iPhone で Apple の端末内 AI が作り、写真もテキストも端末の外へは出ません。保存した履歴には、認識テキスト、行の修正内容、信頼度、サムネイルだけがアプリ内に残ります。アカウント登録・広告・トラッキングもなく、テキストの共有はiOSの共有シートから自分で操作したときだけ行われます。購読のお支払いはApp StoreとApple アカウントで処理されます。",
         "faq": [
           {
-            "question": "OCRコピーは無料ですか？",
-            "answer": "ダウンロードは無料で、1日5回まで読み取れます。OCRコピー Pro（自動更新の年額・1週間の無料体験つき、または月額）で、1日の回数制限がなくなります。1.5より前からお使いの方は、これまでどおり制限なしです。最新の価格はApp Storeでご確認ください。"
+            "question": "画像や写真の文字をテキスト化してコピーするには？",
+            "answer": "OCRタブの「写真」で画像を選ぶか、「撮って読む」でその場で撮影します。文字は端末内で認識され、1枚だけ読んだときは自動でコピーされます。もう一度コピーするなら「コピー」、残しておくなら「保管庫に保存」をタップしてください。読み取った文字の中のリンク・メール・電話番号はタップで開けます。"
           },
           {
-            "question": "OCRコピー Pro では何ができますか？",
-            "answer": "アプリ・共有シート・ショートカットのすべてで、1日5回の読み取り制限がなくなります。コピー・保存・CSVの書き出しは回数に数えず、回数は0時に戻ります。"
+            "question": "スクショの文字をコピーするには？",
+            "answer": "スクリーンショットを撮った直後や写真アプリで「共有」を開き、「OCRコピー」を選ぶと、アプリを開かずにその場で文字にしてコピーします。「OCRコピーで文字を読み取る」を選ぶと、結果をアプリの保管庫にも残せます。"
+          },
+          {
+            "question": "書類をカメラでスキャンして文字起こしするには？",
+            "answer": "「書類スキャン」をタップします。カメラをかざすと枠を見つけて自動で撮影し、続けて何ページも撮れます。撮影後は四隅を直して「補正して読み直す」こともできます。看板やラベルの文字なら「ライブ」でカメラをかざして、見えている文字をそのままコピーできます。"
+          },
+          {
+            "question": "写真をまとめて一括で文字起こしするには？",
+            "answer": "「写真」で複数の画像を選び、「1つにまとめる」か「1枚ずつ分ける」を選びます。選んだ順に読み取ります。OCRコピー Proなら本体で一度に100枚まで、無料ではその日の残り回数まで選べます。ほかのアプリの共有メニューとショートカットは20枚までです。"
+          },
+          {
+            "question": "PDFの文字を読み取る・検索できるPDFにするには？",
+            "answer": "どちらもできます。「ファイル」からPDFを選ぶと、文字入りのページは文字を直接取り出し、スキャンされたページは文字認識で読み取ります（1回の読み込みは先頭50ページまで）。結果画面の「書き出す」から「検索できるPDFで共有」または「ファイルに保存」を選ぶと、文字を選択・検索できるPDFになります。"
+          },
+          {
+            "question": "画像の表をExcelやCSVにするには？",
+            "answer": "表が写った画像を読むと（iOS 26以降）、結果画面の「書き出す」に「表として書き出す（CSV）」が出ます。行と列のまま書き出すので、Numbers や Excel で開けます。"
+          },
+          {
+            "question": "読み取った文字を保存して、あとから検索するには？",
+            "answer": "「保管庫に保存」をタップします。「保管庫」タブに結果と原画像が端末内で残り、グループ（無料で3つ、Proは無制限）に分けて、「保管庫を検索」やiPhoneの検索から探せます。設定でFace IDロックをオンにでき、「すべて書き出す」でテキスト・検索できるPDF・ZIPに無料でまとめて書き出せます。"
+          },
+          {
+            "question": "読み取りに間違いがあるときは？手書き・縦書き・翻訳はできますか？",
+            "answer": "「詳細を表示」から行をタップして「行を修正」「この行を削除」ができます。Apple Intelligenceが使える端末では「AIの直し案」が修正案を出し、1つずつ適用できます。「OCR言語」は「自動」が端末の言語を優先し、日本語・英語・韓国語・中国語・ヨーロッパの言語・ロシア語・タイ語・ベトナム語を選べます。対象は印刷された文字で、手書きや縦書きは正しく読めない場合があり、翻訳機能はありません。"
+          },
+          {
+            "question": "OCRコピーは無料ですか？Proでは何ができますか？",
+            "answer": "ダウンロードは無料で、1日5回まで読み取れます。コピー・保管庫への保存・CSVの書き出しは回数に数えず、回数は0時に戻ります。OCRコピー Pro（自動更新の年額・1週間の無料体験つき、または月額）では、アプリ・共有メニュー・ショートカットの回数制限がなくなり、一括は100枚まで、グループは無制限になります。1.5より前からお使いの方は、これまでどおり回数制限なしです。最新の価格はApp Storeでご確認ください。"
           },
           {
             "question": "写真や読み取ったテキストはアップロードされますか？",
-            "answer": "いいえ。文字認識は iPhone の中のApple Visionで実行され、写真やテキストを外部サーバーへ送信することはありません。アカウント登録・広告・トラッキングもありません。"
-          },
-          {
-            "question": "複数の画像をまとめて読み取れますか？",
-            "answer": "はい。写真やスクショを最大20枚まで選ぶと、選んだ順に読み取って1つのテキストにまとめます。"
-          },
-          {
-            "question": "どの言語を読み取れますか？",
-            "answer": "「自動」は端末の言語を優先して読み取ります。日本語・英語・韓国語・中国語・ヨーロッパの言語・ロシア語・ウクライナ語・タイ語・ベトナム語も選べます。アプリの表示は25言語に対応しています。"
-          },
-          {
-            "question": "認識結果に間違いがあったらどうなりますか？",
-            "answer": "コピーする前に行単位で修正・削除できます。詳細表示を有効にすると、信頼度が低い行が確認対象として示されます。"
-          },
-          {
-            "question": "読み取ったテキストを保存して、あとから使えますか？",
-            "answer": "はい。保存したテキストは端末内に残り、ホーム画面からいつでも開いてもう一度コピーできます。"
-          },
-          {
-            "question": "手書きや縦書きの日本語も読めますか？",
-            "answer": "印刷された文字が主な対象です。縦書きの日本語や複雑なレイアウトは、正しく読み取れない場合があります。"
-          },
-          {
-            "question": "カメラへのアクセスは必要ですか？",
-            "answer": "ライブスキャンとカメラ撮影にはカメラへのアクセスが必要ですが、写真ライブラリの画像を選んだり、共有からOCRコピーに送ったりして使うこともできます。"
+            "answer": "いいえ。文字認識は iPhone の中のApple Visionで行い、AIの直し案も端末内のApple Intelligenceを使います。画像と文字は端末の中で処理・保存し、外部のサーバーには送りません。アカウント登録・広告・トラッキングもありません。"
           }
         ]
       }
@@ -3795,48 +3835,44 @@
     "privacy": "Everything runs on your device: no account, no upload, no server processing, no ads, and no tracking. Photos access is used only to select videos and save the silent copies. As a bonus, the exported silent copy carries no location or camera metadata from the original video.",
     "faq": [
       {
-        "question": "Is Mute Video Before Share free?",
-        "answer": "Yes. The app is free with no ads, and removing audio, Part, beep, and the share sheet are free. Free copies get a small watermark in the bottom right; Mute Video Pro, an optional subscription, removes it. App Store pricing can change, so check the listing for current details."
+        "question": "How do I mute a video on iPhone before sharing it?",
+        "answer": "Open Mute Video Before Share, tap Choose Video, then tap Remove Audio. You get a silent copy you can Save to Photos or Share right away; the original stays as it is. From the Photos share sheet you can also choose Mute & Share without opening the app."
       },
       {
-        "question": "Why is there a watermark on my copy?",
-        "answer": "In the free version, copies you make get a small watermark (the app's icon and name) in the bottom right. Your original video never gets one. With Mute Video Pro, copies have no watermark. If you used the app before version 1.5, no watermark is added."
+        "question": "How do I remove the sound from only part of a video, or bleep out a word?",
+        "answer": "Switch from Whole Video to Part, tap Add Part Here on the timeline, and choose Remove, Lower, or Beep for that part. Play the preview to hear it the way the copy will sound, then Save or Share."
       },
       {
-        "question": "Are my videos uploaded anywhere?",
-        "answer": "No. Audio removal happens entirely on your device. There is no account, no upload, no server processing, and no tracking."
+        "question": "How do I lower the volume of a video instead of muting it?",
+        "answer": "Choose Part, add a part over the loud section, and pick Lower. The Volume slider goes from 1% to 100% of the original, and the preview plays at that level."
+      },
+      {
+        "question": "Can it remove just the music, voices, or background noise?",
+        "answer": "No. The app removes, lowers, or beeps the whole audio for the time you pick; it cannot separate music, voices, or noise from each other. To silence someone talking, use Part and remove only those seconds."
+      },
+      {
+        "question": "How do I find where a child's name is said in a video?",
+        "answer": "In Part, tap Find Spoken Names. The video is transcribed on your device, and spots that sound like a name or place are marked on the timeline. Nothing is removed automatically: listen, then tap Remove This Part. The transcript is not saved."
+      },
+      {
+        "question": "How do I mute multiple videos at once?",
+        "answer": "Choose up to 20 videos, then tap Remove Audio from All Videos. They are muted in the order you picked them, and you can Save All to Photos or Share them together. Videos longer than 1 minute are skipped; mute those one at a time, which has no length limit."
+      },
+      {
+        "question": "Can I mute a screen recording, and can the copy be an MP4?",
+        "answer": "Yes. Any video in your Photos library, including screen recordings, can be chosen. In Settings, File Format lets you pick Same as Original or MP4 for the silent copy."
+      },
+      {
+        "question": "Is Mute Video Before Share free? Why is there a watermark?",
+        "answer": "Yes. Removing audio, Part, Beep, the waveform, and the share sheet are free, with no ads. Free copies get a small watermark (the app's icon and name) in the bottom right; Mute Video Pro, an optional subscription, removes it. If you used the app before version 1.5, no watermark is added. Check the App Store listing for current prices."
+      },
+      {
+        "question": "Is my video uploaded? Does it keep location data or change the original?",
+        "answer": "No. Everything runs on your device with no account or upload. The app makes a new copy and leaves the original untouched, and the copy carries no location, shot date, or device info from the original."
       },
       {
         "question": "Does removing the audio reduce video quality?",
-        "answer": "Copies without the watermark (Mute Video Pro) copy the video track as-is without re-encoding, so the picture quality is identical to the original and even long videos finish fast."
-      },
-      {
-        "question": "Is there a video length limit?",
-        "answer": "There is no length limit when you mute one video at a time. Batch mute supports videos up to 60 seconds each; longer videos are skipped and the rest continue."
-      },
-      {
-        "question": "Can I mute several videos at once?",
-        "answer": "Yes. Choose up to 20 videos. They are muted one at a time in the order you selected them, and you can save or share them all together."
-      },
-      {
-        "question": "Can I mute only part of a video?",
-        "answer": "Yes. Choose Part to remove, lower, or beep out just the parts you pick. The waveform helps you spot where people are talking."
-      },
-      {
-        "question": "Can I hear it before making the copy?",
-        "answer": "Yes. With Part, play the preview: removed parts go silent, lowered parts get quieter, and beeps play, just as in the copy. After the copy is made, tap Edit Again to change it with the same settings."
-      },
-      {
-        "question": "Can I use it from the share sheet?",
-        "answer": "Yes. Choose Mute & Share from the share sheet to make a silent copy without opening the app."
-      },
-      {
-        "question": "Does it change my original video?",
-        "answer": "No. The app creates a new silent copy and leaves your original video untouched in your library."
-      },
-      {
-        "question": "Does the silent copy include location data?",
-        "answer": "No. The silent copy contains no location or camera metadata from the original, which makes it safer to share publicly."
+        "answer": "Copies without a watermark (Mute Video Pro, or people who used the app before 1.5) copy the video track as-is without re-encoding, so the picture is identical to the original and even long videos finish fast. Free copies are re-encoded to add the watermark."
       }
     ],
     "locales": {
@@ -3878,48 +3914,44 @@
         "privacy": "処理はすべて端末内で行われ、アカウント登録・アップロード・サーバー処理・広告・トラッキングはありません。写真へのアクセスは、動画の選択と無音コピーの保存にのみ使われます。作成された無音コピーには、元動画の位置情報や撮影情報も含まれません。",
         "faq": [
           {
-            "question": "「動画の音消し」は無料ですか？",
-            "answer": "はい。広告はなく、音の削除・区間の編集・ピー音・共有メニューからの利用は無料です。無料版のコピーには右下に小さな透かしが入り、任意のサブスクリプション「動画の音消し Pro」で透かしなしになります。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。"
+            "question": "iPhoneで動画の音を消すには？",
+            "answer": "「動画の音消し」を開き、「動画を選ぶ」→「音を消す」をタップするだけです。無音のコピーができるので、そのまま「保存」か「共有」を選びます。元の動画はそのまま残ります。写真アプリの共有メニューから「音を消して共有」を選べば、アプリを開かずに作れます。"
           },
           {
-            "question": "コピーに透かしが入るのはなぜですか？",
-            "answer": "無料版で作ったコピーには、右下に小さな透かし（アプリのアイコンと名前）が入ります。元の動画には入りません。動画の音消し Proでは透かしなしになります。バージョン1.5より前から使っている方のコピーには、透かしは入りません。"
+            "question": "動画の一部だけ音を消す・ピー音を入れるには？",
+            "answer": "「全体」から「一部」に切り替え、タイムラインで「ここに区間を追加」をタップし、その区間に「消す」「小さく」「ピー音」のどれかを選びます。プレビューを再生すると書き出しと同じ聞こえ方で確かめられ、そのまま保存・共有できます。"
           },
           {
-            "question": "動画はどこかにアップロードされますか？",
-            "answer": "いいえ。音声の削除はすべて端末内で行われます。アカウントもアップロードもサーバー処理もトラッキングもありません。"
+            "question": "動画の音量を下げるには？",
+            "answer": "「一部」で大きい音の区間を追加し、「小さく」を選びます。「音量」のスライダーで元の1〜100%に調整でき、プレビューもその大きさで再生されます。"
+          },
+          {
+            "question": "動画のBGMや声、雑音だけを消せますか？",
+            "answer": "できません。このアプリは選んだ時間の音をまとめて消す・小さくする・ピー音にするもので、音楽・声・雑音を分けて取り出すことはできません。話し声を消したいときは「一部」でその数秒だけ消してください。"
+          },
+          {
+            "question": "動画で子どもの名前が聞こえるところを消すには？",
+            "answer": "「一部」で「名前が聞こえるところを探す」をタップします。端末内で文字起こしし、人名や地名らしい言葉の前後をタイムラインに印で示します。自動では消さないので、聞いて確かめてから「この区間を消す」を押してください。文字起こしは保存しません。"
+          },
+          {
+            "question": "複数の動画をまとめて消音するには？",
+            "answer": "動画を最大20本まで選び、「すべての動画の音を消す」をタップします。選んだ順に消音し、「写真に全部保存」またはまとめて共有できます。1分を超える動画は飛ばされるので、1本ずつ消してください（1本ずつなら長さの制限はありません）。"
+          },
+          {
+            "question": "画面収録の音も消せますか？MP4にできますか？",
+            "answer": "はい。写真アプリにある動画なら、画面収録も同じように選べます。設定の「ファイル形式」で、無音コピーを「元の動画と同じ」か「MP4」にするか選べます。"
+          },
+          {
+            "question": "「動画の音消し」は無料ですか？透かしが入るのはなぜ？",
+            "answer": "はい。音を消す・一部・ピー音・波形・共有メニューはすべて無料で、広告もありません。無料版のコピーには右下に小さな透かし（アプリのアイコンと名前）が入り、任意のサブスクリプション「動画の音消し Pro」で透かしなしになります。1.5より前からお使いの方には透かしは入りません。最新の価格はApp Storeでご確認ください。"
+          },
+          {
+            "question": "動画はアップロードされますか？位置情報や元の動画はどうなりますか？",
+            "answer": "アップロードされません。処理はすべて端末内で、アカウントも不要です。アプリは新しいコピーを作るだけで元の動画は変わらず、コピーには元動画の位置情報・撮影日時・機種の情報は入りません。"
           },
           {
             "question": "音を消すと画質は落ちますか？",
-            "answer": "透かしなしのコピー（動画の音消し Pro）は、映像を再エンコードせずそのままコピーするため、画質は元の動画とまったく同じで、長い動画でも高速に処理できます。"
-          },
-          {
-            "question": "動画の長さに制限はありますか？",
-            "answer": "1本ずつなら長さ制限はありません。まとめて消音は1本60秒までで、それより長い動画は飛ばして残りを続けます。"
-          },
-          {
-            "question": "何本かまとめて音を消せますか？",
-            "answer": "はい。最大20本を選べます。選んだ順に1本ずつ消音し、全部まとめて保存・共有できます。"
-          },
-          {
-            "question": "動画の一部だけ音を消せますか？",
-            "answer": "はい。選んだ区間だけ、音を消す・小さくする・ピー音に置き換えることができます。波形を見ながら、話し声が入っている位置を探せます。"
-          },
-          {
-            "question": "書き出す前に聞いて確かめられますか？",
-            "answer": "はい。編集中のプレビューでは、消した区間は無音に、「小さく」は書き出しと同じ大きさに、ピー音もそのまま聞こえます。できあがったあとも「やり直す」で、同じ設定のまま直せます。"
-          },
-          {
-            "question": "共有メニューから使えますか？",
-            "answer": "はい。共有メニューから「音を消して共有」を選ぶと、アプリを開かずに無音コピーを作れます。"
-          },
-          {
-            "question": "元の動画は変更されますか？",
-            "answer": "変更されません。アプリは新しい無音コピーを作成するだけで、ライブラリ内の元の動画はそのまま残ります。"
-          },
-          {
-            "question": "無音コピーに位置情報は含まれますか？",
-            "answer": "含まれません。無音コピーには元動画の位置情報や撮影情報が引き継がれないため、公開の場で共有しても安心です。"
+            "answer": "透かしなしのコピー（動画の音消し Pro、または1.5より前からお使いの方）は、映像を再エンコードせずそのままコピーするため、画質は元の動画とまったく同じで、長い動画でも速く終わります。無料版のコピーは透かしを入れるために再エンコードします。"
           }
         ]
       }
@@ -4249,36 +4281,44 @@
     "privacy": "No account and no banner ads. Photos and records stay on your device. iCloud sync is optional: records and outlines are saved to your own iCloud, and annotated measurement photos stay on the device. The developer cannot read your data. Links in \"Find shoes\" include advertising (affiliate links). For the authoritative summary, see the privacy label on the app's App Store page.",
     "faq": [
       {
-        "question": "Is Foot Size Check free?",
-        "answer": "Yes. The app is free to download, with no banner ads and no subscription. Foot Size Check Pro is an optional one-time purchase for extras, while measuring, records, the growth chart, foot outlines, reminders, and birthday messages are free. App Store pricing can change, so check the listing for current details."
+        "question": "How do I measure my foot size at home with an iPhone?",
+        "answer": "Put a sheet of Letter or A4 paper on the floor, trace around the foot with a pen, lift the foot, and photograph the paper from straight above. Tap Start Measurement, then Take Photo: the app reads the outline and gives foot length and foot width, and you can drag the points if they are off. Results are a guide, so try shoes on before buying."
+      },
+      {
+        "question": "How do I find my shoe size from my foot length?",
+        "answer": "Each saved measurement shows a suggested size: foot length plus 0.5 to 1.0 cm, the usual room for a label size. Choose JP (cm), EU, US, or UK under Settings > Shoe size system, and open the Shoe size chart in the Shoes tab, with Children, Men, and Women tables, to see conversions."
+      },
+      {
+        "question": "How do I track my child's foot growth over time?",
+        "answer": "Every measurement you Save goes to the Records tab as a growth chart, with left and right feet tracked separately. Tap Share growth card to send name, age, foot length, suggested size, and the chart as one image to family. Foot Size Check Pro adds the whole-span All view and a comparison with children the same age."
+      },
+      {
+        "question": "How do I measure foot width for wide feet?",
+        "answer": "Foot width is read from the same traced outline as foot length and shown with every record. The app also estimates a width grade (E, 2E, and so on) from the JIS table, and if you have a tape measure you can enter the foot girth for a closer estimate."
+      },
+      {
+        "question": "Can I keep a true-size outline of the foot?",
+        "answer": "Yes. Measuring with a tracing saves the Foot outline at its actual dimensions for free. All outlines use the same scale so you can browse them from oldest to newest, lay two records of the same foot over each other, and tap Share foot outline card to send one right after saving."
+      },
+      {
+        "question": "How do I check whether my child's current shoes still fit?",
+        "answer": "Add the shoe in the Shoes tab, then tap Measure insole: trace the removed insole on paper and photograph it. The app shows the difference between the insole and the foot, so you can see the toe room now; about 10 mm of room is the guide from the Japanese Society for Foot Care and Podiatric Medicine. Pro also shows the expected room in 3 months and a Shoe replacement estimate."
+      },
+      {
+        "question": "When should I measure my child's feet again?",
+        "answer": "Turn on Reminder in Settings. With a birth date registered, the interval follows the society's guidance by age; without one, choose every 1, 2, 3, or 6 months. One notification arrives when it is time to measure again."
+      },
+      {
+        "question": "Do I need a ruler, a measuring mat, or an account?",
+        "answer": "No. You need a sheet of Letter or A4 paper, a pen, and your iPhone, and there is no sign-up. If you only have numbers from elsewhere, Add manually lets you type foot length and width into the records."
+      },
+      {
+        "question": "Is Foot Size Check free? What does Pro add?",
+        "answer": "Yes. Measuring, records, the growth chart, foot outlines, one name, one shoe note, reminders, growth cards, and iCloud sync are free, with no banner ads and no subscription. Foot Size Check Pro is a one-time purchase that adds the same-age comparison band, the Shoe replacement estimate, names for siblings, unlimited shoe notes, the All growth span, and Show in store. Check the App Store listing for current prices."
       },
       {
         "question": "Are my photos uploaded anywhere?",
-        "answer": "No. Photos and records stay on your device, and the developer cannot read your data. If you turn on iCloud sync, records and outlines are saved to your own iCloud (annotated measurement photos stay on the device)."
-      },
-      {
-        "question": "What do I need to measure a foot?",
-        "answer": "A sheet of Letter or A4 paper, a pen, and your iPhone. Place the foot on the paper, trace around it, and photograph the sheet. There is no measuring mat to order and no sign-up."
-      },
-      {
-        "question": "How accurate are the results?",
-        "answer": "Results are estimates. The app places the measurement points automatically and you can fine-tune them by hand, but shoe fit varies by brand, model, and foot shape, so an in-person fitting is recommended before buying shoes."
-      },
-      {
-        "question": "Can I track my child's foot growth over time?",
-        "answer": "Yes. Saved measurements build a growth history, left and right feet are tracked separately, and foot outlines are kept at true size so you can compare records. You can also share a growth card with family."
-      },
-      {
-        "question": "How is the suggested shoe size worked out?",
-        "answer": "It is a label-size guide: foot length plus 0.5-1.0 cm. You can see EU, US, and UK conversion and choose your own notation (JP, EU, US, or UK) in Settings. It is separate from the inside length you can measure with an insole."
-      },
-      {
-        "question": "Do I need an account?",
-        "answer": "No. There is no account or sign-up. iCloud sync is optional and uses your own iCloud."
-      },
-      {
-        "question": "Are there ads?",
-        "answer": "There are no banner ads. Links in \"Find shoes\" (Japan) include advertising (affiliate links)."
+        "answer": "No. Photo analysis and measurement happen on your device, and the developer cannot see your data. Only if you turn on Save records to iCloud are records and outlines saved to your own iCloud so another device with the same Apple Account can show them; the measurement photo with the drawn lines stays on the device. Links under Find shoes (Japan) include advertising, marked PR."
       }
     ],
     "locales": {
@@ -4320,36 +4360,44 @@
         "privacy": "アカウント不要、バナー広告なし。写真も記録も端末内に保存されます。iCloud同期は任意で、記録と足型があなたのiCloudに保存されます（線を入れた計測写真は端末内のみ）。開発者はデータを読めません。「靴を探す」のリンクには広告（アフィリエイト）を含みます。正式な内容は、App Storeページのプライバシーラベルをご確認ください。",
         "faq": [
           {
-            "question": "足はかるは無料ですか？",
-            "answer": "はい。ダウンロードは無料で、バナー広告もサブスクリプションもありません。買い切りの任意課金「足はかる Pro」で追加機能が使えますが、計測・記録・成長グラフ・足型・リマインダー・たんじょうびのメッセージは無料です。価格は変わる可能性があるため、最新の情報はApp Storeでご確認ください。"
+            "question": "iPhoneで足のサイズを測るには？",
+            "answer": "A4用紙（レター用紙も可）を床に置き、足の輪郭をペンでなぞって、足をどけてから紙だけを真上から撮ります。「測定をはじめる」→「写真を撮る」で、なぞった線から足長と足幅を自動で読み取り、ずれていたら点を動かして直せます。結果は目安なので、購入前は試し履きをおすすめします。"
+          },
+          {
+            "question": "足のサイズから靴のサイズを知るには？",
+            "answer": "保存した記録ごとに、足長に0.5〜1.0cmを足した靴の表示サイズのめやすを表示します。設定の「靴のサイズ表記」でJP（cm）・EU・US・UKを選べ、靴タブの「サイズ換算表」では子ども・男性・女性を切り替えて換算を確認できます。合うサイズはブランドや形で変わるため、めやすとしてお使いください。"
+          },
+          {
+            "question": "子どもの足の成長を記録して成長曲線で見るには？",
+            "answer": "測定を「保存」するたびに、きろくタブの成長グラフに時系列で残り、左足・右足を分けて記録できます。「成長カードを共有」で、なまえ・年齢・足長・靴サイズのめやす・グラフを1枚の画像にして家族に送れます。足はかる Proでは「ぜんぶ」の期間のグラフと、同じ年齢の子どもたちの分布との比較が使えます。"
+          },
+          {
+            "question": "足幅やワイズ（幅広・甲高）を調べるには？",
+            "answer": "足幅は足長と同じなぞった線から読み取り、記録ごとに表示します。足長と足幅をJISの表に照らしてワイズ（E・2Eなど）も推定し、巻き尺で測った足囲を入力すると、足幅の代わりに足囲でより詳しく調べられます。"
+          },
+          {
+            "question": "足型を実寸で残すには？",
+            "answer": "なぞり書きで測ると、「足型」が実寸の形で無料で残ります。足型はすべて同じ縮尺で、古い記録から順に見比べたり、同じ足の2つの記録をかかとをそろえて重ねたりできます。保存したその場で「足型カードを送る」から家族に送れます。"
+          },
+          {
+            "question": "今の靴がきつくないか（中敷き・インソールで）確かめるには？",
+            "answer": "靴タブで靴を登録し、「中敷きを測る」をタップします。取り出した中敷きを紙になぞって撮ると、中敷きと足長の差から今のつま先のゆとりがわかります。10mm程度のゆとりは日本フットケア・足病医学会の目安です。Proでは「3か月後のゆとり」と「買い替えのめやす」も表示します。"
+          },
+          {
+            "question": "次に足を測る時期を教えてもらえますか？",
+            "answer": "設定の「リマインダー」をオンにしてください。生年月日を登録していれば学会の案内をもとに年齢に合った間隔で、なければ1・2・3・6ヶ月ごとから選んで、測り時に1回だけ通知します。"
+          },
+          {
+            "question": "測ったサイズで上履きやスニーカーを探すには？",
+            "answer": "「靴を探す」から、年齢と性別や用途に合わせて、測ったサイズで靴を探せます（日本。リンクは「PR」の広告を含みます）。家族の靴サイズは「マイサイズ帳」にまとまり、Siriやショートカットの「家族の靴サイズ」からも開けます。"
+          },
+          {
+            "question": "足はかるは無料ですか？Proでは何ができますか？",
+            "answer": "はい。計測・記録・成長グラフ・足型・なまえ1人分・くつメモ1足・リマインダー・成長カード・iCloud同期は無料で、バナー広告もサブスクリプションもありません。足はかる Proは1回だけの買い切りで、同年齢の分布とのくらべ・買い替えのめやす・2人目以降のなまえ・くつメモ何足でも・「ぜんぶ」の成長グラフ・お店で見せる表示が追加されます。価格はApp Storeでご確認ください。"
           },
           {
             "question": "写真はどこかにアップロードされますか？",
-            "answer": "いいえ。写真も記録も端末内に保存され、開発者はデータを読めません。iCloud同期をオンにしたときは、記録と足型があなたのiCloudに保存されます（線を入れた計測写真は端末内のみ）。"
-          },
-          {
-            "question": "測定には何が必要ですか？",
-            "answer": "A4用紙（またはレターサイズ）1枚、ペン、iPhoneです。用紙の上に足を置いてなぞり、紙を撮影します。計測マットの取り寄せも会員登録も要りません。"
-          },
-          {
-            "question": "測定結果はどのくらい正確ですか？",
-            "answer": "結果はあくまで目安です。測定点は自動で置かれ、手で微調整することもできますが、靴の合い方はブランド・モデル・足の形によって変わります。靴の購入前には店頭での試し履きをおすすめします。"
-          },
-          {
-            "question": "子どもの足の成長を記録できますか？",
-            "answer": "はい。測定結果を保存していくと時系列の成長記録になり、左右の足を区別して残せます。足型は実寸で残るので、記録どうしを見比べられます。成長カードで家族に共有することもできます。"
-          },
-          {
-            "question": "靴サイズのめやすはどうやって出していますか？",
-            "answer": "足長に0.5〜1.0cmを足した、靴の表示サイズのめやすです。EU・US・UKへの換算も見られ、設定でJP・EU・US・UKからお好みの表記を選べます。中敷きの実測による内寸とは別のものです。"
-          },
-          {
-            "question": "アカウント登録は必要ですか？",
-            "answer": "いいえ。アカウントも登録も不要です。iCloud同期は任意で、あなた自身のiCloudを使います。"
-          },
-          {
-            "question": "広告は表示されますか？",
-            "answer": "バナー広告はありません。「靴を探す」（日本）のリンクには、広告（アフィリエイト）を含みます。"
+            "answer": "いいえ。写真の解析と計測は端末内で行い、開発者はデータを見られません。設定の「記録をiCloudに保存」をオンにしたときだけ、記録と足型を自分のiCloudにも保存し、同じApple Accountの別の端末でも見られます（線を入れた計測写真は端末内のみ）。「靴を探す」（日本）のリンクには「PR」の広告を含みます。"
           }
         ]
       }
