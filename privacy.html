@@ -51,8 +51,8 @@
       <p class="en">Data stored on your device is deleted when you delete the app. It may be included in your iPhone backup (iCloud Backup or a computer backup), which follows your device settings and Apple's policies. Some apps store data so that it cannot be opened while the device is locked.</p>
 
       <h2>iCloud を使う機能</h2>
-      <p>一部のアプリには、記録の同期・バックアップや、招待した相手との共有のために、Apple の iCloud（CloudKit）を使う機能があります。利用者がオンにした場合、データは利用者自身の iCloud アカウント（共有の場合は共有を作成した利用者の iCloud）に保存されます。当社のサーバーには送信されず、当社がその内容を閲覧することはできません。iCloud でのデータの取り扱いには、Apple のプライバシーポリシーが適用されます。体調や健康に関わる記録は、アプリが iCloud に保存することはありません。</p>
-      <p class="en">Some apps can use Apple's iCloud (CloudKit) to sync, back up, or share records with people you invite. When you turn this on, data is stored in your own iCloud account (for sharing, in the account of the person who created the share). It is not sent to our servers and we cannot view it. Apple's privacy policy applies. Records about your health or condition are never stored in iCloud by our apps.</p>
+      <p>一部のアプリには、記録の同期・バックアップや、招待した相手との共有のために、Apple の iCloud（CloudKit）を使う機能があります。利用者がオンにした場合、データは利用者自身の iCloud アカウント（共有の場合は共有を作成した利用者の iCloud）に保存されます。当社のサーバーには送信されず、当社がその内容を閲覧することはできません。ただし、参加コードで相手とつながる機能（Study Buddy のスタディペア）は例外で、下の「アプリごとの補足」に書いたデータをアプリ用の公開領域に保存するため、当社も閲覧できます。iCloud でのデータの取り扱いには、Apple のプライバシーポリシーが適用されます。体調や健康に関わる記録は、アプリが iCloud に保存することはありません。</p>
+      <p class="en">Some apps can use Apple's iCloud (CloudKit) to sync, back up, or share records with people you invite. When you turn this on, data is stored in your own iCloud account (for sharing, in the account of the person who created the share). It is not sent to our servers and we cannot view it. The exception is features that connect you with a partner by join code (Study Buddy's Study Pair): the data listed under the app notes below is stored in the app's public CloudKit area, so we can view it. Apple's privacy policy applies. Records about your health or condition are never stored in iCloud by our apps.</p>
 
       <h2>ヘルスケア（Apple Health）を使う機能</h2>
       <p>一部のアプリは Apple のヘルスケアと連携できます。初期状態ではオフで、利用者がオンにし、iPhone の画面で許可した種類のデータだけを読み書きします。読んだデータは端末の中で表示や記録の修正に使うだけで、当社のサーバーには送信せず、iCloud にも保存せず、広告や第三者への提供には使いません。許可は iPhone の「設定」→「ヘルスケア」→「データアクセスとデバイス」からいつでも取り消せます。</p>
@@ -82,6 +82,12 @@
         <summary>Access Lens（拡大鏡）</summary>
         <p>拡大鏡のカメラ映像と、止めて読むための画像は、写真に保存せず、外部にも送りません。止めた画像は、閉じたりアプリを離れたりすると破棄します。「見え方を比べる」で利用者が保存・共有を選んだ場合だけ、比較した画像を写真に保存・共有します。</p>
         <p class="en">The magnifier's camera view and frozen images are never saved to Photos or sent anywhere; a frozen image is discarded when you close it or leave the app. Only when you choose Save or Share in Compare Views is the compared image saved or shared.</p>
+      </details>
+
+      <details class="app">
+        <summary>Study Buddy（スタディペア・参加コード方式）</summary>
+        <p>参加コードでペアを作ったり参加したりした場合に限り、表示名（本名でなくてかまいません）、役割、バディの名前とレベル、勉強中かどうか、今日・今週の勉強時間、直近14日分の日ごとの勉強時間と応援の回数、相手に送る「勉強を始めた」「応援した」の知らせを、Apple の CloudKit のアプリ用公開領域に保存します。この領域は当社（開発者）が閲覧でき、部屋の ID を知る利用者も読み取れます。参加コードは平文では保存せず、24時間・1回限りで使えなくなります。「始めた」「応援した」の知らせは、1日たったあと、送った人のアプリが次につながったときに削除します。ペアを抜けると自分の共有データを削除し、解散すると部屋とコードと自分のデータを削除します（相手の分は相手のアプリが次につながったときに削除します）。個人の勉強記録そのものは端末と利用者自身の iCloud に保存し、この領域には送りません。以前からあるリンク方式の共有は、これまでどおり共有を作成した利用者の iCloud に保存されます。</p>
+        <p class="en">Only if you create or join a pair by join code, your display name (need not be your real name), role, buddy name and level, whether you are studying, today's and this week's study time, the last 14 days of daily study time and cheers, and the "started studying" / "cheered" notices sent to your partner are stored in the app's public CloudKit area. We (the developer) can view this area, and anyone who knows the room ID can read it. Join codes are not stored in plain text and expire after 24 hours or one use. Start/cheer notices are deleted the next time the sender's app connects after a day has passed. Leaving deletes your shared data; dissolving the pair deletes the room, the code and your data (your partner's data is deleted the next time their app connects). Your personal study records stay on your device and in your own iCloud. Existing link-based pairs keep their data in the iCloud account of the person who created the share.</p>
       </details>
 
       <details class="app">
@@ -129,7 +135,7 @@
       <p>2026年7月（最終改定: 2026年11月）</p>
       <details class="history">
         <summary>改定の履歴</summary>
-        <p>2026年11月: 構成を「共通の方針」と「アプリごとの補足」に整理。「端末への保存とバックアップ」を追記。OCR Copy の保管庫・iPhone の検索・ロック、ペタスタンプのスタンプ帳、Access Lens の拡大鏡の扱いを追記。</p>
+        <p>2026年11月: Study Buddy のスタディペア（参加コード方式）で、当社が閲覧できる領域に保存するデータを追記。構成を「共通の方針」と「アプリごとの補足」に整理。「端末への保存とバックアップ」を追記。OCR Copy の保管庫・iPhone の検索・ロック、ペタスタンプのスタンプ帳、Access Lens の拡大鏡の扱いを追記。</p>
         <p>2026年10月: 「記録を見てもらう共有（ごはんスナップ）」「写真・動画を加工する機能」「リンクの行き先を確かめる機能」「端末内の AI と作業用の画像」を追記。体調・健康に関わる記録を iCloud に保存しないことを明記。Body Rhythm Log のヘルスケアの読み書き・オフ時の扱い・全削除の扱いを追記。ヘルスケア連携の対象に WaterDone を追加。「ヘルスケア（Apple Health）を使う機能」、アプリ内の「ご意見・お問い合わせ」の扱いを追記。</p>
         <p>2026年9月: 「iCloud を使う機能」を追記。</p>
       </details>
