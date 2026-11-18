@@ -312,6 +312,7 @@
     ],
     "features": [
       "Check items from the Home Screen widget, and mark a whole group packed in one tap",
+      "Two-pane layout for iPhone Duo, with lists and their items visible together on the larger display",
       "Ready lists to start from: commute, school, gym, overnight trip, business trip, doctor's visit, and emergency bag (the items are common examples you can change freely)",
       "Reminders by group, on the days and time you choose (for example weekdays for work, Mon/Wed/Fri for the gym)",
       "Reorder items, add counts (×2), and short notes",
@@ -380,6 +381,7 @@
         ],
         "features": [
           "ウィジェットから持ち物をチェック。「すべて準備」もワンタップ",
+          "iPhone Duoの大きな画面では、持ち物リストと各項目を2ペインで同時に表示",
           "テンプレートからすぐ始められる（通勤・通学・ジム・旅行（1泊）・出張・通院・防災。持ち物は一般的な例で、自由に変えられます）",
           "グループごとに曜日と時刻を決めて通知（平日は通勤、月水金はジムなど）",
           "持ち物の並べ替え、数量（×2など）、ひとことメモ",
@@ -612,7 +614,7 @@
     "overview": [
       "PillTap helps you avoid missed doses with simple daily medication reminders. Set your medication times once, and PillTap will remind you every day at the times you choose — morning, noon, night, and bedtime. It is built for medicines and supplements you take at the same times every day.",
       "Marking a dose as taken is optional and used only for your own record. You can tap Taken right from the notification without opening the app. Reminders continue to repeat unless you turn off a scheduled time or delete the medication. An optional follow-up reminder can sound 15 minutes later.",
-      "A Lock Screen widget shows your next dose, and a Live Activity appears shortly before it is time. PillTap does not provide medical advice, assess conditions, or recommend how to take medication; always follow instructions from your doctor, pharmacist, or healthcare provider."
+      "On iOS 26, an optional medication alarm can ring even in Silent or Focus, and Taken can be tapped from the alarm or notification. A Lock Screen widget shows your next dose, and a Live Activity appears shortly before it is time. PillTap does not provide medical advice, assess conditions, or recommend how to take medication; always follow professional instructions."
     ],
     "target_users": [
       "People who tend to forget daily medicines or supplements",
@@ -628,6 +630,7 @@
       "Lock Screen widget showing your next dose",
       "Live Activity shortly before it is time (choose 5, 15, or 30 minutes before)",
       "Time Sensitive reminders that can appear during Sleep or other Focus modes, based on your iOS settings",
+      "Optional medication alarm on iOS 26 that can ring in Silent or Focus, with Taken available from the alarm",
       "Recent history: today, yesterday, and the last 7 days",
       "Daily schedule only: no weekday or every-few-days schedules, medication calendar, remaining-supply tracking, or family sharing",
       "No account and no cloud; your medications and records stay on your device"
@@ -660,7 +663,7 @@
       },
       {
         "question": "Can reminders appear during Sleep or Focus modes?",
-        "answer": "They can appear as Time Sensitive notifications, depending on your iOS settings."
+        "answer": "Time Sensitive notifications depend on your iOS settings. On iOS 26, PillTap can also use an optional medication alarm that rings even in Silent or Focus."
       },
       {
         "question": "Where is my data stored?",
@@ -679,7 +682,7 @@
         "overview": [
           "おくすりタップ（PillTap）は、薬やサプリの飲み忘れを減らす手助けをする、毎日鳴るリマインダーです。薬ごとに朝・昼・夜・就寝前の時刻を決めるだけで、毎日同じ時刻に通知が届きます。",
           "「飲んだ」を押すのは記録のためで、押さなくても翌日また鳴ります。通知のボタンから、アプリを開かずに記録できます。止めたいときは、その時間帯をオフにするか薬を削除します。15分後にもう一度通知する設定（オフにもできます）もあります。",
-          "ロック画面ウィジェットで次の服用を確認でき、服用時刻の少し前にはライブアクティビティでも表示されます。おくすりタップは医療アドバイスや病状の判断、薬の服用指導を行うものではありません。薬の服用は、医師や薬剤師の指示に従ってください。"
+          "iOS 26では、消音モードや集中モード中でも鳴る任意のおくすりアラームを使え、アラームや通知から「飲んだ」を押せます。ロック画面ウィジェットと服用時刻前のライブアクティビティにも対応します。医療アドバイスや服用指導は行わないため、医師や薬剤師の指示に従ってください。"
         ],
         "target_users": [
           "毎日の薬やサプリをつい飲み忘れてしまう方",
@@ -695,6 +698,7 @@
           "ロック画面ウィジェットで次の服用を確認",
           "服用時刻の少し前にライブアクティビティで表示（5・15・30分前を選択）",
           "集中モードや睡眠中でも、iOSの設定で許可していれば通知を表示（時間の指定が重要な通知）",
+          "iOS 26では、消音モード・集中モード中でも鳴る任意のおくすりアラームと、アラームからの「飲んだ」記録",
           "今日・昨日・過去7日の履歴",
           "スケジュールは毎日固定のみ。曜日指定、数日おき、服薬カレンダー、残薬管理、家族との共有はありません",
           "アカウント登録なし・クラウド送信なし。データは端末の中だけに保存"
@@ -727,7 +731,7 @@
           },
           {
             "question": "睡眠中や集中モードでも通知は届きますか？",
-            "answer": "iOSの設定で許可していれば、時間の指定が重要な通知として表示されます。"
+            "answer": "時間の指定が重要な通知はiOSの設定に従います。iOS 26では、消音モード・集中モード中でも鳴る任意のおくすりアラームも使えます。"
           },
           {
             "question": "データはどこに保存されますか？",
@@ -901,6 +905,7 @@
     ],
     "features": [
       "One note shown in large, easy-to-read text",
+      "Choose Standard, Rounded, Serif, or Bold from the Aa button, with a live preview in the note",
       "Show mode with Normal, Large, and Huge sizes, fine size adjustment, and text and background colors including high-contrast pairs",
       "Flip the note upside down for the person across the table, or turn the iPhone sideways for one long line; the screen stays on in Show mode",
       "Read Aloud with the voices built into your iPhone or iPad; the language is detected from the text and nothing is sent to a server",
@@ -978,6 +983,7 @@
         ],
         "features": [
           "ひとつのメモを大きく読みやすい文字で表示",
+          "右下の「Aa」から標準・丸ゴシック・明朝・太字を選択。メモで実際の見た目を確認しながら切り替え",
           "表示モード：標準・大・特大の文字サイズと細かな調整、高コントラストの組み合わせを含む文字色・背景色",
           "向かいの相手のための上下反転、iPhoneを横向きにして1行を長く表示。表示モード中は画面が消えません",
           "iPhoneやiPadに内蔵された音声での読み上げ。言語はメモの文字から自動で判定し、外部には送りません",
@@ -1480,6 +1486,7 @@
     ],
     "features": [
       "Log events with a single tap",
+      "Two-pane layout for iPhone Duo, with the private calendar and quick logging visible on the larger display",
       "View your history in a clean calendar",
       "Optional local reminder notifications with discreet wording",
       "Privacy lock overlay using local authentication",
@@ -1540,6 +1547,7 @@
         ],
         "features": [
           "出来事をワンタップで記録",
+          "iPhone Duoの大きな画面では、プライベートなカレンダーとクイック記録を2ペインで表示",
           "すっきりしたカレンダーで履歴を振り返り",
           "内容が分からない控えめな文言の、任意のローカルリマインダー通知",
           "ローカル認証によるプライバシーロック",
@@ -1595,8 +1603,8 @@
     ],
     "overview": [
       "WaterDone is the lightest way to keep sipping before you get thirsty. Had a sip? Tap once. There are no amounts to type and no daily target — the goal is a rhythm: another sip within the interval you choose. A little drop dries out as time passes and fills up when you drink, and a gentle word tells you how you are doing, like \"Hydrated\" or \"Time for a sip\".",
-      "The home screen shows when your next sip is due, with a ring around the drop, and today's sips appear on a single timeline. You can log with one tap from a Lock Screen or Home Screen widget without opening the app, and undo a mistaken tap in one tap. A streak and a simple calendar keep every sip on record.",
-      "A gentle nudge arrives before you dry out. You pick the interval (2–4 hours) and the hours it can reach you, with quiet hours and a daily reminder cap, and the app works fine with notifications off too. Optionally, WaterDone can log each sip to Apple Health. No account is required and your logs stay on your device. WaterDone is not medical advice and does not calculate how much water you need."
+      "The home screen shows when your next sip is due. You can log from a Lock Screen or Home Screen widget, postpone the next nudge with I just ate without counting a sip, optionally get one cue after a workout, or run the After my bath Shortcut. A streak and calendar keep your history, and the larger iPhone Duo display is supported.",
+      "A gentle nudge arrives before you dry out, at the interval and hours you choose. Logging, reminders, I just ate, widgets, and optional Apple Health writing are free. WaterDone Pro adds Apple Watch logging and complications, plus an optional Hot Days setting that uses the forecast to make reminders arrive a little earlier. WaterDone is not medical advice and does not calculate how much water you need."
     ],
     "target_users": [
       "People who want a simple water log without typing amounts or chasing a daily target",
@@ -1608,12 +1616,14 @@
     "features": [
       "One-tap logging, including from a Lock Screen or Home Screen widget without opening the app",
       "A drop that dries out over time and fills when you drink, with a gentle status word",
-      "Next sip due time and a ring on the home screen, plus today's sips on a single timeline",
-      "A gentle reminder before you dry out: choose the interval (2–4 hours) and the hours it can reach you, with quiet hours and a daily reminder cap",
+      "Next sip due time on the home screen, plus a streak and calendar history",
+      "A gentle reminder before you dry out: choose the interval (2–4 hours) and the hours it can reach you",
+      "I just ate postpones the next reminder without counting a sip; optional post-workout cue and After my bath Shortcut",
       "Undo a mistaken tap in one tap",
       "A streak and a simple calendar of every sip",
-      "Optional logging to Apple Health",
-      "No amounts to type and no daily target; no account, everything stays on your device"
+      "Optional writing to Apple Health; logging, reminders, I just ate, and widgets stay free",
+      "WaterDone Pro subscription: log from Apple Watch with count and next-time complications, and optionally bring reminders forward on hot days",
+      "No amounts to type and no daily target; no account, with records stored on your device; supports iPhone Duo"
     ],
     "how_to_use": [
       "Open WaterDone, or use the Lock Screen or Home Screen widget, and tap once when you have a sip.",
@@ -1623,12 +1633,12 @@
       "Choose your reminder interval (2–4 hours), the hours it can reach you, and the daily cap in settings, or leave notifications off.",
       "Optionally turn on logging to Apple Health."
     ],
-    "pricing": "WaterDone is free to download, and the live store listing mentions no in-app purchases. App Store pricing and availability can change, so check the store listing for current details.",
-    "privacy": "Water logs, reminder preferences, and widget state are stored locally on your device. No account is required, and no analytics, ads, tracking, or external server storage are used. When you use the widget, the latest log state is shared between the app and widget through a local App Group container on the device. Notifications are optional and used only for the reminders you configure. Apple Health logging is optional and off by default; when you turn it on, WaterDone only writes your sips to Water and never reads Health data.",
+    "pricing": "WaterDone is free to download. Logging, rhythm reminders, I just ate, widgets, and writing to Apple Health are free. WaterDone Pro is an optional monthly or yearly auto-renewing subscription for Apple Watch logging and complications and the Hot Days reminder adjustment. An eligible free trial may be shown by the App Store. Existing records remain visible if Pro ends. Check the App Store for current terms.",
+    "privacy": "Water records and settings are stored on your device with no account. If you enable Hot Days, your approximate location is sent to a weather service for the forecast; otherwise the core log does not need that service. Notifications and Apple Health writing are optional. The app does not claim to calculate your required water intake.",
     "faq": [
       {
         "question": "Is WaterDone free?",
-        "answer": "Yes. It is free to download, and the store listing mentions no in-app purchases. App Store pricing can change, so check the listing for current details."
+        "answer": "It is free to download, and logging, rhythm reminders, I just ate, widgets, and Apple Health writing are free. The optional WaterDone Pro subscription adds Apple Watch features and Hot Days reminder adjustment. Check the App Store for current terms."
       },
       {
         "question": "Where are my water logs stored?",
@@ -1666,8 +1676,8 @@
         "meta_description": "「水飲んだ？」（WaterDone）は、飲んだらワンタップで記録する水分補給アプリ。ロック画面やホーム画面のウィジェットから記録でき、乾く前にそっとリマインダーでお知らせします。",
         "overview": [
           "「水飲んだ？」（WaterDone）は、のどが乾く前に飲む習慣をいちばん軽く続けるためのアプリです。飲んだら「飲んだよ」をタップするだけ。量は入力しません。目標は「何ml」でも「何回」でもなく、「最後に飲んでから、決めた時間以内にまた飲む」というリズム。しずくの水位が時間とともに乾いていき、飲むとまた満ちます。「そろそろ飲もう」のひとことで、いまのうるおいがわかります。",
-          "ホームでは、しずくの周りのリングと「次に飲むまでの時間」が確認でき、今日の記録は1本の流れ（タイムライン）で見られます。ロック画面・ホーム画面のウィジェットから、アプリを開かずに1タップで記録でき、間違えて押してもすぐ取り消せます。続いた日数と、毎日の記録を残すカレンダーもあります。",
-          "乾く前にそっとお知らせします。間隔（2〜4時間）とお知らせする時間帯はあなたが決められ、おやすみ時間や1日の通知回数の上限も設定できます。通知なしでも使えます。任意で、飲んだ記録をAppleヘルスケアにも残せます。アカウント不要で、記録は端末の中に保存されます。このアプリは医療上の助言を行うものではなく、必要な水分量を計算するものでもありません。"
+          "ホームでは「次に飲むまでの時間」を確認できます。ロック画面・ホーム画面のウィジェットから記録でき、「ご飯を食べた」で回数を増やさず次のお知らせを後ろへ送れます。運動後の通知やショートカット「お風呂を出た」も任意で使え、続いた日数とカレンダーで履歴を見返せます。iPhone Duoの大きな画面にも対応します。",
+          "記録・リズムのお知らせ・「ご飯を食べた」・ウィジェット・ヘルスケアへの書き込みは無料です。任意のProサブスクリプションでは、Apple Watchからの記録と文字盤での確認、暑い日に天気予報に合わせて通知を少し早める機能を使えます。このアプリは医療上の助言を行わず、必要な水分量を計算しません。"
         ],
         "target_users": [
           "量を入力したり、毎日の目標を追いかけたりせず、気軽に水分補給を記録したい方",
@@ -1679,12 +1689,14 @@
         "features": [
           "ワンタップで記録。ロック画面・ホーム画面のウィジェットからアプリを開かずに記録できる",
           "時間とともに乾き、飲むと満ちるしずくと、いまの状態を伝えるひとこと",
-          "ホームに次に飲むまでの時間とリングを表示。今日の記録は1本のタイムラインで確認",
-          "乾く前のお知らせ：間隔（2〜4時間）と時間帯を選べ、おやすみ時間や1日の通知回数の上限も設定可能",
+          "ホームに次に飲むまでの時間を表示。続いた日数とカレンダーで履歴を確認",
+          "乾く前のお知らせ：間隔（2〜4時間）と時間帯を選択",
+          "「ご飯を食べた」で回数を増やさず次のお知らせを延期。運動後の通知と「お風呂を出た」ショートカットも任意",
           "間違えて押してもワンタップで取り消し",
           "続いた日数と、毎日の記録を残すカレンダー",
-          "Appleヘルスケアへの記録（任意）",
-          "量の入力も1日の目標もなし。アカウント不要で、記録はすべて端末の中に保存"
+          "Appleヘルスケアへの書き込みは任意。記録・お知らせ・ウィジェットは無料",
+          "Pro（任意のサブスクリプション）：Apple Watchからの記録と文字盤表示、暑い日の通知調整",
+          "量の入力も1日の目標もなし。アカウント不要で記録は端末内。iPhone Duoにも対応"
         ],
         "how_to_use": [
           "「水飲んだ？」を開くか、ロック画面・ホーム画面のウィジェットから、飲んだらワンタップで記録します。",
@@ -1694,12 +1706,12 @@
           "設定でお知らせの間隔（2〜4時間）、時間帯、1日の通知回数の上限を決めます。通知なしでも使えます。",
           "必要なら、Appleヘルスケアへの記録をオンにします。"
         ],
-        "pricing": "無料でダウンロードでき、ストアの説明にアプリ内課金の記載はありません。最新の価格・提供状況はApp Storeでご確認ください。",
-        "privacy": "水分の記録、リマインダー設定、ウィジェットの状態はすべて端末内に保存されます。アカウント不要で、解析・広告・トラッキング・外部サーバーへの保存はありません。ウィジェットとのデータ共有は端末内のApp Groupで行われ、通知は設定したお知らせにのみ使われます。Appleヘルスケアへの記録は任意で、初期設定はオフです。オンにした場合も、飲んだ記録を「水分」へ書き込むだけで、ヘルスケアのデータを読み取ることはありません。",
+        "pricing": "無料でダウンロードでき、記録・リズムのお知らせ・「ご飯を食べた」・ウィジェット・ヘルスケアへの書き込みは無料です。任意のProは月額または年額の自動更新サブスクリプションで、Apple Watch機能と暑い日の通知調整を追加します。対象者にはApp Storeが無料体験を表示する場合があります。Pro終了後も既存の記録は表示できます。最新条件はApp Storeでご確認ください。",
+        "privacy": "水の記録と設定は端末内に保存され、アカウントは不要です。「暑い日」をオンにした場合だけ、おおよその位置を天気サービスへ送信します。通知とAppleヘルスケアへの書き込みは任意です。必要な水分量を計算・断定する機能ではありません。",
         "faq": [
           {
             "question": "「水飲んだ？」は無料ですか？",
-            "answer": "はい。無料でダウンロードでき、ストアの説明にアプリ内課金の記載はありません。最新の情報はApp Storeでご確認ください。"
+            "answer": "無料でダウンロードでき、記録・お知らせ・「ご飯を食べた」・ウィジェット・ヘルスケアへの書き込みは無料です。任意のProサブスクリプションでApple Watch機能と暑い日の通知調整が加わります。最新条件はApp Storeでご確認ください。"
           },
           {
             "question": "記録はどこに保存されますか？",
@@ -2076,6 +2088,7 @@
     ],
     "features": [
       "Sheep counted aloud for you — just listen, no need to watch the screen",
+      "Larger iPhone Duo layout for the sheep and bedtime checklist",
       "Voice keeps going when the screen is locked and ends quietly after 100 sheep or your timer",
       "Sleep timer in the Sheep tab that stops the counting automatically",
       "Gentle breathing guide with Inhale / Hold / Exhale phases to settle down before bed",
@@ -2142,6 +2155,7 @@
         ],
         "features": [
           "ひつじを声で数え上げ。画面を見ずに、聞くだけで数えられます",
+          "iPhone Duoの大きな画面で、ひつじと寝る前のチェックリストを表示",
           "画面をロックしても読み上げは続き、100匹かタイマーで静かに終了",
           "羊タブのおやすみタイマーで、読み上げを自動停止",
           "吸う・止める・吐くを目で追える、寝る前の呼吸ガイド",
@@ -2212,6 +2226,7 @@
     ],
     "features": [
       "Three sound groups — Pop, Tap, and Click — each with its own sentence pattern and exclamation",
+      "Larger iPhone Duo layout for the three word cards and generated lines",
       "Pick three word cards (Base word, Word A, Word B) to build a nonsense combo",
       "Eight-line script preview generated from your picks",
       "Text-to-speech reading at Normal or Slow speed, one line at a time with pauses and current-line highlighting",
@@ -2273,6 +2288,7 @@
         ],
         "features": [
           "Pop・Tap・Clickの3つの音グループ。それぞれに文のパターンとかけ声つき",
+          "iPhone Duoの大きな画面で、3枚の単語カードとできた文を表示",
           "ベース単語+単語A+単語Bの3まいのカードでヘンテコ合成語を作成",
           "選んだカードから自動生成される8行の台本プレビュー",
           "「ふつう」「ゆっくり」の速さで、1行ずつ間をあけて読み上げ。読んでいる行をハイライト表示",
@@ -2479,9 +2495,11 @@
     ],
     "features": [
       "Today's outfit, layer, and umbrella answer, conclusion first",
+      "Outerwear and the clothes underneath shown side by side, with distinct clothing colors; sunscreen on high-UV days and a raincoat on wet, windy days",
       "One morning notification",
       "Runs-cold and runs-hot adjustment",
       "Home Screen and Lock Screen widgets",
+      "Built for the larger iPhone Duo display",
       "No account, ads, or tracking",
       "Pro: get your umbrella and outfit when you leave home, using a one-time Shortcuts automation (home Wi-Fi disconnects, charger comes off, or alarm stops)",
       "Pro: add family members with their own name, icon and runs-cold or runs-hot setting, and see everyone's outfit on the home screen and in notifications",
@@ -2549,9 +2567,11 @@
         ],
         "features": [
           "今日の服装・羽織りもの・傘を、結論ファーストで表示",
+          "上着とその下に着る服を並べ、服の種類ごとに色分け。UVが強い日は日焼け止め、雨で風が強い日はレインコートを案内",
           "朝の通知1回",
           "寒がり・暑がりの調整",
           "ホーム画面とロック画面のウィジェット",
+          "iPhone Duoの大きな画面に対応",
           "アカウント不要・広告なし・追跡なし",
           "Pro：ショートカットのオートメーションを1回設定すると、家を出るとき（家のWi-Fiが切れたら・充電器を外したら・アラームを止めたら）に傘と服を通知",
           "Pro：人ごとに名前・アイコン・寒がり／暑がりを登録して、みんなの服装をホームと通知に表示",
@@ -2605,42 +2625,42 @@
   },
   "6767727517": {
     "slug": "accesslens",
-    "short_description": "A color blindness simulator that compares an original image with simplified color-vision and visual-filter approximations, side by side.",
-    "meta_description": "Color blindness simulator: compare an original image with Type 1, 2, 3 and grayscale approximations, plus blur and low contrast, side by side. Free.",
+    "short_description": "A private camera magnifier for small print, with zoom, light, freeze, and high-contrast reading modes. Color-view comparison remains available.",
+    "meta_description": "Access Lens is a free camera magnifier with 2×, 4× and 8× zoom, light, freeze, invert and high-contrast modes. It saves nothing and works offline.",
     "categories": [
       "tap-tools",
       "photo-memory"
     ],
     "overview": [
-      "Access Lens lets you compare an original image with simplified color and visual approximations, side by side. Use the live camera, choose a photo, or start with one of five built-in samples, then drag the vertical divider to reveal more of the original or the filtered side.",
-      "The color approximations cover Type 1 (P), Type 2 (D), and Type 3 (T), plus grayscale, using a published research method (Machado 2009). Visual filters include blur and cloudy view, narrow field and center spot, and low contrast, with adjustable strength where supported.",
-      "The app is built for awareness and accessibility discussions. The results are approximations: they do not exactly reproduce any individual experience, and Access Lens is not a medical tool. Saving and sharing happen only when you choose them, and every feature is free."
+      "Access Lens opens straight into a camera magnifier for small print such as medicine leaflets, receipts, ingredient labels, menus, and signs. Magnify with 2×, 4×, or 8× buttons where supported, a slider, or pinch, and turn on the light in dim places.",
+      "Freeze the view to read at your own pace, then pinch and drag the frozen image. Invert, black-on-yellow, high-contrast, and grayscale modes can make text easier to separate from its background. The magnifier never saves an image, and a frozen view is discarded when you close it or leave the app.",
+      "The earlier Compare Views tool remains one tap away. It compares a camera view or photo side by side with color-vision, grayscale, blur, narrow-field, or low-contrast approximations, and lets you save or share the comparison when you choose. It is an awareness tool, not a medical device. The app is available in 25 languages."
     ],
     "target_users": [
-      "Designers and developers doing quick accessibility and readability checks",
-      "Teachers and students exploring visual accessibility topics",
-      "Accessibility advocates preparing awareness demonstrations",
-      "Anyone curious how colors, signs, text, and layouts may look with color vision differences or reduced vision"
+      "People who want to enlarge small print on labels, receipts, menus, or signs",
+      "People who find high-contrast or inverted text easier to read",
+      "Anyone who wants a magnifier that does not save camera images",
+      "Designers, teachers, and accessibility advocates using the optional Compare Views tool"
     ],
     "features": [
-      "Side-by-side comparison with a draggable vertical divider",
-      "Live camera, photo selection, or five built-in samples (no camera needed)",
-      "Color approximations: Type 1 (P), Type 2 (D), Type 3 (T), and grayscale (Machado 2009 method)",
-      "Visual filters: blur and cloudy view, narrow field and center spot, low contrast",
-      "Adjustable strength where supported",
-      "Original-only and filter-only buttons",
-      "VoiceOver can adjust the divider in 10% steps; layouts adapt to the largest Dynamic Type sizes",
-      "Save or share a result, only when you choose"
+      "Camera magnifier opens immediately, with 2×, 4× and 8× buttons where supported, a slider, and pinch zoom",
+      "Light for dim places",
+      "Freeze the view, then pinch and drag the frozen image",
+      "Reading modes: invert, black on yellow, high contrast, and grayscale",
+      "The magnifier saves nothing; frozen views are discarded when you close or leave the app",
+      "Compare Views: side-by-side color-vision, grayscale, blur, narrow-field, and low-contrast approximations for camera views or photos",
+      "Compared images can be saved or shared only when you choose",
+      "No account, ads, or network; available in 25 languages on iPhone and iPad, portrait and landscape"
     ],
     "how_to_use": [
-      "Open Access Lens and choose the live camera, a photo, or one of the five built-in samples.",
-      "Select a color approximation (Type 1, Type 2, Type 3, or grayscale) or a visual filter (blur, narrow field, low contrast).",
-      "Drag the vertical divider to reveal more of the original or the filtered side, or use the original-only and filter-only buttons.",
-      "Where supported, adjust the strength of the effect.",
-      "Optionally save or share the result."
+      "Open Access Lens; the camera magnifier starts immediately.",
+      "Choose 2×, 4×, or 8× where supported, use the slider, or pinch to set the magnification.",
+      "Turn on the light if needed, or choose invert, black on yellow, high contrast, or gray.",
+      "Tap Freeze to stop the view, then pinch and drag while you read. Closing or leaving discards it.",
+      "For accessibility comparison, open Compare Views at the top and choose a camera view or photo."
     ],
     "pricing": "Access Lens is free on the App Store and every feature is free; there are no ads and no account is needed. App Store pricing and availability can change, so check the store listing for current details.",
-    "privacy": "Camera frames and selected photos are processed on your device. Access Lens has no account, no analytics, no ads, and no server. Saving and sharing happen only when you choose them.",
+    "privacy": "The magnifier saves no images to Photos, and a frozen view is discarded when you close it or leave the app. Camera frames and photos used in Compare Views are processed on your device; only a comparison you explicitly save or share leaves the screen. Access Lens has no account, ads, analytics, or network connection.",
     "faq": [
       {
         "question": "Is Access Lens free?",
@@ -2669,13 +2689,13 @@
     ],
     "locales": {
       "ja": {
-        "name": "Access Lens - 色覚・見え方",
-        "short_description": "元の画像と、色覚・見え方を簡略化した近似を左右で見比べるアプリ。ライブカメラ・写真・内蔵見本で色覚シミュレーションができます。",
-        "meta_description": "元の画像と色覚の近似を左右で見比べる、色覚シミュレーションアプリ。1型・2型・3型・グレイスケール、ぼかし、低コントラストに対応。カメラ・写真・見本で使えて無料。",
+        "name": "Access Lens - 安心拡大鏡",
+        "short_description": "小さな文字をすぐ大きくする、保存しないカメラ拡大鏡。ズーム・ライト・画面停止と、反転や高コントラストの見やすい表示に対応。",
+        "meta_description": "Access Lensは、2×・4×・8×ズーム、ライト、画面停止、白黒反転や高コントラスト表示に対応した無料の拡大鏡。画像を保存せず、通信もしません。",
         "overview": [
-          "Access Lensは、元の画像と、色覚や見え方を簡略化した近似を左右で見比べるアプリです。ライブカメラ、選んだ写真、または5枚の内蔵見本を使い、縦の境目を動かして元の画像とフィルタ側の表示範囲を変えられます。",
-          "色覚の近似は1型（P型）、2型（D型）、3型（T型）とグレイスケールで、論文で公開された変換方法（Machado 2009）を使っています。見え方のフィルタには、ぼかし・かすみ、視野を狭める・中央のスポット、低コントラストがあり、対応するものは強さを調整できます。",
-          "気づきやアクセシビリティの話し合いに使うためのアプリです。表示は近似であり、個人の見え方を正確に再現するものではなく、Access Lensは医療用ではありません。保存・共有は選んだときだけ行われ、すべての機能が無料です。"
+          "Access Lensは、薬の説明書、レシート、商品の成分表示、メニュー、掲示などの小さな文字を、開いた瞬間から大きくするカメラ拡大鏡です。端末が対応する範囲の2×・4×・8×ボタン、スライダー、ピンチで拡大でき、暗い場所ではライトも使えます。",
+          "「止める」で画面を止め、ピンチとドラッグでゆっくり読めます。白黒反転、黄地に黒、高コントラスト、グレーにも切り替えられます。拡大鏡の画像は写真に保存されず、止めた画像も閉じたりアプリを離れたりすると消えます。",
+          "従来の「見え方を比べる」も左上から使えます。カメラや写真を、色覚・グレー・ぼかし・視野の狭さ・低コントラストの近似と左右で比較し、選んだときだけ保存・共有できます。医療用ではなく、配色やデザインの気づきのための機能です。25言語に対応しています。"
         ],
         "target_users": [
           "アクセシビリティや読みやすさを手早く確認したいデザイナー・開発者",
@@ -2684,24 +2704,24 @@
           "色覚の違いや見えにくさがあると、色・文字・看板・デザインがどう見え得るのか知りたい方"
         ],
         "features": [
-          "縦の境目をドラッグして動かす、左右の見比べ表示",
-          "ライブカメラ・写真の選択・5枚の内蔵見本（カメラなしでも試せる）",
-          "色覚の近似: 1型（P型）、2型（D型）、3型（T型）、グレイスケール（Machado 2009の変換方法）",
-          "見え方のフィルタ: ぼかし・かすみ、視野を狭める・中央のスポット、低コントラスト",
-          "対応するフィルタは強さを調整可能",
-          "「元だけ」「フィルタだけ」のボタン",
-          "VoiceOverで境目を10%ずつ調整でき、Dynamic Typeの最大サイズにも対応するレイアウト",
-          "結果の保存・共有は、選んだときだけ"
+          "開くとすぐカメラで拡大。端末が対応する範囲の2×・4×・8×ボタン、スライダー、ピンチに対応",
+          "暗い場所で使えるライト",
+          "画面を止めて、止めた画像をピンチ・ドラッグしながら読む",
+          "白黒反転・黄地に黒・高コントラスト・グレーの見やすい表示",
+          "拡大鏡は画像を保存せず、止めた画像も閉じたりアプリを離れたりすると破棄",
+          "「見え方を比べる」で、カメラや写真を色覚・グレー・ぼかし・視野の狭さ・低コントラストの近似と左右比較",
+          "比較画像は自分で選んだときだけ保存・共有",
+          "アカウント・広告・通信なし。25言語、iPhone・iPadの縦向き・横向きに対応"
         ],
         "how_to_use": [
-          "Access Lensを開き、ライブカメラ、写真、5枚の内蔵見本のいずれかを選びます。",
-          "色覚の近似（1型・2型・3型・グレイスケール）か、見え方のフィルタ（ぼかし・視野を狭める・低コントラスト）を選びます。",
-          "縦の境目をドラッグして元の画像とフィルタ側の表示範囲を変えるか、「元だけ」「フィルタだけ」のボタンで切り替えます。",
-          "対応するフィルタでは、効果の強さを調整します。",
-          "必要に応じて、結果を保存したり共有したりします。"
+          "Access Lensを開くと、カメラ拡大鏡がすぐ始まります。",
+          "2×・4×・8×、スライダー、またはピンチで倍率を決めます。",
+          "必要ならライトや、白黒反転・黄地に黒・高コントラスト・グレーを選びます。",
+          "「止める」で画面を止め、ピンチとドラッグでゆっくり読みます。閉じると画像は消えます。",
+          "見え方の比較には、左上の「見え方を比べる」からカメラや写真を選びます。"
         ],
         "pricing": "Access Lensは無料で、すべての機能を無料で使えます。広告はなく、アカウント登録も不要です。最新の価格・提供状況はApp Storeでご確認ください。",
-        "privacy": "カメラ映像と選んだ写真は端末の中で処理されます。Access Lensには、アカウント、分析、広告、サーバーがありません。保存・共有は、選んだときだけ行われます。",
+        "privacy": "拡大鏡の画像は写真に保存されず、止めた画像も閉じたりアプリを離れたりすると消えます。「見え方を比べる」のカメラ映像と写真も端末内で処理され、明示的に保存・共有した比較画像だけが画面の外へ出ます。アカウント、広告、分析、通信はありません。",
         "faq": [
           {
             "question": "Access Lensは無料ですか？",
@@ -2895,6 +2915,7 @@
     ],
     "features": [
       "Future Value mode: estimate a future asset amount from starting amount, monthly contribution, expected annual return, and years",
+      "Side-by-side chart and plan comparison on the larger iPhone Duo display",
       "Withdrawal mode: see roughly how long your assets could last with a monthly withdrawal",
       "Goal Backsolve mode: work back from a target to the monthly contribution, number of years, or annual return required",
       "Balance chart and a year-by-year table of contributions and estimated growth",
@@ -2958,6 +2979,7 @@
         ],
         "features": [
           "将来の資産モード：最初の金額・毎月の積立額・想定年利・年数から将来額の目安を試算",
+          "iPhone Duoの大きな画面で、資産推移グラフと2つのプランを並べて比較",
           "取り崩しモード：毎月の引き出し額で、資産がもつ期間の目安を試算",
           "目標から逆算モード：目標額に届くための毎月の積立額・必要な年数・必要な年利を計算",
           "資産の推移グラフと、積立総額・増えた分がわかる年ごとの表",
@@ -3029,8 +3051,8 @@
       "Half cup, one and a half cups, or two cups; set the time you drank it; edit or undo an entry",
       "Today's total and how much is left before your daily guide",
       "7-day and 30-day averages, days above your guide, most logged drinks, and a calendar of daily entries",
-      "Home Screen and Lock Screen widgets (the small Home Screen widget logs your top preset; Lock Screen widgets are for viewing)",
-      "Siri and Shortcuts to log caffeine and check your day",
+      "Ring-style Home Screen widget showing progress toward today's guide; the small widget also logs your top preset, while Lock Screen widgets are view-only",
+      "Siri and Shortcuts to log caffeine and ask how much you have had or how much remains; quick logging from Control Center, the Action button, or Back Tap",
       "Log 1 cup from Apple Watch on watchOS 26 or later, with no Watch app needed",
       "Optional Apple Health: saves the caffeine you log (mg); sleep is read only to show two averages side by side, with no judgment of how caffeine affects sleep",
       "No account, no ads, and your data stays on your device"
@@ -3096,8 +3118,8 @@
           "½・1½・2杯、飲んだ時刻の指定、記録の修正・取り消し",
           "今日の合計と、1日の目安までの残り",
           "7日・30日の平均、目安を超えた日、よく飲んだもの、日々の記録を見返せるカレンダー",
-          "ホーム画面・ロック画面のウィジェット（ホーム画面の小さいウィジェットは先頭のプリセットを記録、ロック画面は確認用）",
-          "Siri・ショートカットで記録と確認",
+          "今日の目安までをリングで示すホーム画面ウィジェット。小サイズは先頭のプリセットを記録し、ロック画面は確認用",
+          "Siriで今日の量や残りを確認し、ショートカット、コントロールセンター、アクションボタン、背面タップから記録",
           "watchOS 26以降のApple Watchから1杯を記録（Watchアプリは不要）",
           "任意のヘルスケア連携。記録したカフェイン（mg）を保存し、睡眠は2つの平均を並べて表示するためだけに読み取ります（カフェインの影響は判定しません）",
           "アカウントなし・広告なし。データは端末の中だけに保存"
@@ -3338,6 +3360,7 @@
     ],
     "features": [
       "160 travel phrases across 15 categories, all available offline",
+      "Large iPhone Duo layout that shows Cantonese phrase cards even bigger",
       "Search in Japanese, English, or Cantonese/Traditional Chinese",
       "Show mode: large Traditional Chinese text with English shown together; the screen stays on while a card is shown",
       "Turn your iPhone sideways to show the phrase even larger",
@@ -3406,6 +3429,7 @@
         ],
         "features": [
           "15カテゴリ・160フレーズをすべてオフライン収録",
+          "iPhone Duoの大きな画面で、広東語のフレーズをさらに大きく表示",
           "日本語・英語・広東語（繁体字）で検索",
           "相手に見せるための大きな繁体字表示（英語も併記）。表示中は画面が消えません",
           "横向きにすると広東語の文をさらに大きく表示",
@@ -3459,16 +3483,16 @@
   },
   "6780724192": {
     "slug": "ocr-copy",
-    "short_description": "Image to text: batch-scan up to 20 photos or screenshots, or use the camera, and copy the text on your iPhone.",
-    "meta_description": "OCR Copy turns text in photos, screenshots and the camera into text you can copy. Batch up to 20 images, with on-device recognition and offline support.",
+    "short_description": "Copy text from photos, screenshots, documents, and PDFs. Read many images, preserve tables, search a private on-device library, and export searchable PDFs.",
+    "meta_description": "OCR Copy reads photos, screenshots, documents and PDFs on device, preserves tables for CSV, joins broken lines, and keeps a searchable private library.",
     "categories": [
       "productivity",
       "tap-tools"
     ],
     "overview": [
-      "OCR Copy is a local-first OCR utility for quickly copying text from images and the real world. Select up to 20 photos or screenshots at once and the app reads them in order, combining the text into one result. You can also use Scan Live, take a photo, or tap Share from Photos or right after a screenshot, and the text is copied to your clipboard as soon as it is read — receipts, books, packages, screenshots, signs, and other everyday text.",
-      "Instead of a heavy document manager or a cloud OCR service, OCR Copy keeps the job small and private: read text, copy it, done. Recognition runs on your iPhone with Apple Vision, and photos and text are never sent to a server. When recognition isn't perfect, you can fix or delete individual lines before copying, and confidence values and text positions are available as optional detail information. If an image contains a table, you can export it as a CSV file, row by row (iOS 26 or later), and the Shortcuts action \"Read Text in Image\" gives you the text of images.",
-      "Saved text stays on your device so you can come back and copy it again later. Auto detection reads your device's language first, and you can also choose the OCR language: Japanese, English, Korean, Chinese, European languages, Russian, Ukrainian, Thai, and Vietnamese. OCR Copy is free to read up to 5 times a day, and OCR Copy Pro removes that daily limit."
+      "OCR Copy turns photos, screenshots, paper documents, and PDFs into text you can use immediately. Read multiple images at once as one combined result or separate results, keep tables as rows and columns for CSV, join broken book or handout lines into paragraphs, or point the camera with Scan Live.",
+      "The document camera captures and straightens pages into searchable PDFs. Text PDFs are extracted directly, while scanned PDFs are read page by page, up to 50 pages at a time. Uncertain lines are highlighted, and supported iPhones can suggest corrections with on-device AI for you to review.",
+      "Results stay in an on-device Library with titles, groups, full-text search, optional iPhone Search integration, Face ID lock, and whole-library export as text, searchable PDF, or ZIP. Free users receive 5 reads a day and up to 3 groups; Pro removes the read limit and group limit and allows up to 100 selected images. Sharing accepts up to 20 images."
     ],
     "target_users": [
       "People who frequently retype text from receipts, packages, books, or paper documents",
@@ -3478,17 +3502,16 @@
       "Privacy-conscious users who don't want their photos or text sent to a server"
     ],
     "features": [
-      "Batch: select up to 20 photos or screenshots and get one combined text, in the order you picked them",
-      "Share to OCR Copy: in Photos or right after a screenshot, tap Share and get the text on the spot",
-      "Tables to CSV: export a table in an image as a CSV file, row by row (iOS 26 or later)",
-      "Shortcuts: the \"Read Text in Image\" action gives you the text of images",
-      "Scan Live: point the camera and copy the text you see, or take a photo and copy its text",
-      "On-device text recognition with Apple Vision — works offline, no server involved",
-      "Fix or delete individual lines before copying",
-      "Save recognized text locally and copy it again later",
-      "OCR language: Auto reads your device's language first, or choose Japanese, English, Korean, Chinese, European languages, Russian, Ukrainian, Thai, or Vietnamese",
-      "Optional detail view with confidence values and text-position overlays",
-      "Free: 5 reads a day. OCR Copy Pro (yearly with a 1-week free trial, or monthly) removes the daily limit",
+      "Read multiple photos or screenshots as one combined result or one result per image; Pro selects up to 100, sharing up to 20, and free use up to the remaining daily reads",
+      "Document camera with automatic capture and skew correction, saved as a searchable PDF",
+      "Read text PDFs directly and scanned PDFs page by page, up to 50 pages at a time",
+      "Preserve table rows and columns for CSV, and optionally join broken lines into paragraphs",
+      "Highlight uncertain lines and, on supported iPhones, review corrections suggested by on-device AI",
+      "Scan Live and direct reading from the share sheet and Shortcuts",
+      "On-device Library with titles, groups, normalized full-text search, and optional iPhone Search",
+      "Export the whole Library as text, searchable PDF, or ZIP; lock it with Face ID",
+      "Images and text are processed and stored on device, with no account, ads, or tracking",
+      "Free: 5 reads a day and 3 groups. OCR Copy Pro removes both limits; earlier users who had unlimited reading keep it",
       "App available in 25 languages"
     ],
     "how_to_use": [
@@ -3499,7 +3522,7 @@
       "Save the text to review and copy again later from the Home screen, or export a table as CSV.",
       "If text isn't reading well, change the OCR language or accuracy in Settings."
     ],
-    "pricing": "OCR Copy is free to download and read up to 5 times a day. OCR Copy Pro, an auto-renewing subscription (yearly with a 1-week free trial, or monthly), removes the daily limit in the app, the share sheet, and Shortcuts. Copying, saving, and CSV export never count toward the limit, and if you used OCR Copy before version 1.5, reading stays unlimited. See the App Store listing for current prices and details.",
+    "pricing": "OCR Copy is free to download with 5 reads a day and up to 3 Library groups. Text PDFs, copying, the Library, and exports do not count as reads. OCR Copy Pro is an optional monthly or yearly auto-renewing subscription that removes the read limit in the app, share sheet, and Shortcuts, allows up to 100 selected images, and removes the group limit; eligible yearly subscribers may receive a one-week trial. People who used OCR Copy before version 1.5 keep unlimited reading. See the App Store for current terms.",
     "privacy": "OCR runs entirely on your iPhone with Apple Vision, works offline, and photos and text are never sent to a server. From version 1.8, images you are working on (including straightened document images) are kept temporarily on your device and deleted when they are no longer needed: when a read fails or is redone, when you close the result, or when you delete it from history; anything left over is removed the next time the app starts. Suggested fixes for misread text are made by Apple's on-device AI on supported iPhones, and neither photos nor text leave your device. Saved history keeps recognized text, line corrections, confidence values, and thumbnails locally in the app. There is no account, no ads, and no tracking. Sharing text is always user-initiated through the iOS share sheet. Subscription purchases are handled by the App Store and your Apple Account.",
     "faq": [
       {
@@ -3528,7 +3551,7 @@
       },
       {
         "question": "Is OCR Copy free, and how much is unlimited OCR?",
-        "answer": "Five reads a day are free and reset at midnight. Copying, saving and export do not count. As of 18 November 2026, US Pro pricing is $1.99 per month or $9.99 per year; the annual plan offers a one-week trial for eligible users. Current terms appear in the App Store."
+        "answer": "Five reads a day are free and reset at midnight, with up to three Library groups. Text PDFs, copying, the Library and exports do not count. Pro removes the read and group limits and allows up to 100 selected images; eligible annual subscribers may receive a trial. Current terms appear in the App Store."
       }
     ],
     "locales": {
@@ -3549,17 +3572,16 @@
           "写真やテキストをサーバーに送りたくない、プライバシー重視の方"
         ],
         "features": [
-          "まとめて文字起こし: 写真やスクショを最大20枚選んで、選んだ順に1つのテキストに",
-          "共有からすぐ文字に: 写真アプリや撮ったスクショの「共有」からOCRコピーを選ぶと、その場で文字にしてコピー",
-          "表をCSVに: 表が写った画像を、行と列のままCSVファイルに書き出し（iOS 26以降）",
-          "ショートカット: 「画像の文字を読む」アクションで、画像の文字をテキストとして受け取れる",
-          "ライブスキャン: カメラをかざして文字をコピー。カメラで撮影して文字をコピーすることも",
-          "Apple Visionによる端末内の文字認識。オフラインで使え、サーバーは使いません",
-          "コピーする前に、必要な行だけ修正・削除",
-          "認識したテキストを端末内に保存し、後からもう一度コピー",
-          "読み取り言語: 「自動」は端末の言語を優先。日本語・英語・韓国語・中国語・ヨーロッパの言語・ロシア語・ウクライナ語・タイ語・ベトナム語も選べる",
-          "信頼度・文字位置の詳細表示（任意）",
-          "無料は1日5回まで。OCRコピー Pro（年額は1週間の無料体験つき、月額もあり）で回数制限なし",
+          "複数の写真・スクショを1つにまとめるか1枚ずつ分けて読み取り。Proは選択100枚まで、共有は20枚まで、無料はその日の残り回数まで",
+          "書類カメラで自動撮影・傾き補正し、検索できるPDFとして保存",
+          "文字入りPDFはそのまま抽出し、スキャンPDFは1回50ページまでページごとに読み取り",
+          "表は行と列のままCSVにし、崩れた改行は段落につなげてコピー可能",
+          "不安定な行を色で表示し、対応iPhoneでは端末内AIの直し案を確認して反映",
+          "ライブスキャン、共有メニュー、ショートカットから直接読み取り",
+          "タイトル・グループ・表記揺れに強い全文検索と、任意のiPhone検索に対応した端末内保管庫",
+          "保管庫全体をテキスト・検索できるPDF・ZIPで書き出し、Face IDでロック",
+          "画像と文字は端末内で処理・保存。アカウント・広告・トラッキングなし",
+          "無料は1日5回・グループ3件まで。Proで両方の上限なし。以前から無制限だった利用者は継続",
           "アプリの表示は25言語に対応"
         ],
         "how_to_use": [
@@ -3570,7 +3592,7 @@
           "テキストを保存しておくと、ホーム画面から後で開いて再コピーできます。表はCSVとして書き出せます。",
           "うまく読み取れないときは、設定で読み取り言語や認識精度を変更します。"
         ],
-        "pricing": "ダウンロードは無料で、1日5回まで読み取れます。OCRコピー Pro（自動更新の購読。年額は1週間の無料体験つき、月額もあり）にすると、アプリ・共有シート・ショートカットのすべてで1日の回数制限がなくなります。コピー・保存・CSVの書き出しは回数に数えません。1.5より前からお使いの方は、これまでどおり制限なしで読み取れます。最新の価格・詳細はApp Storeでご確認ください。",
+        "pricing": "無料で1日5回の読み取りと保管庫のグループ3件まで使えます。文字入りPDF・コピー・保管庫・書き出しは回数に数えません。任意のOCRコピー Proは月額・年額の自動更新サブスクリプションで、アプリ・共有・ショートカットの回数制限、選択画像100枚、グループ制限を解除します。対象者には年額の1週間無料体験があります。1.5より前から無制限の方はそのままです。最新条件はApp Storeでご確認ください。",
         "privacy": "文字の読み取りはApple Visionを使ってすべて iPhone の中で実行され、オフラインで使えます。写真やテキストを外部サーバーへ送信することはありません。1.8 からは、作業中の画像（まっすぐに整えた書類の画像を含む）を端末内に一時的に置き、読み取りの失敗や読み直しで不要になったとき、結果を閉じたとき、履歴を削除したときに消します。残ったものは次にアプリを開いたときに消します。読み間違いの直し案は、対応する iPhone で Apple の端末内 AI が作り、写真もテキストも端末の外へは出ません。保存した履歴には、認識テキスト、行の修正内容、信頼度、サムネイルだけがアプリ内に残ります。アカウント登録・広告・トラッキングもなく、テキストの共有はiOSの共有シートから自分で操作したときだけ行われます。購読のお支払いはApp StoreとApple アカウントで処理されます。",
         "faq": [
           {
@@ -3599,7 +3621,7 @@
           },
           {
             "question": "OCRコピーは無料で何回使えますか？Proの料金は？",
-            "answer": "読み取りは1日5回まで無料で、0時にリセットされます。コピー・保存・書き出しは回数に含みません。2026年11月18日時点の日本のProは月額200円・年額1,200円で、対象者には年額の1週間無料体験があります。現在の条件はApp Storeに表示されます。"
+            "answer": "読み取りは1日5回まで無料で0時に戻り、グループは3件までです。文字入りPDF・コピー・保管庫・書き出しは回数に含みません。Proは回数とグループの上限を外し、選択画像を100枚までにします。対象者には年額の無料体験があります。現在の条件はApp Storeに表示されます。"
           }
         ],
         "why": [
@@ -3691,7 +3713,7 @@
           "In Notizen oder Nachrichten einfügen, in der Bibliothek speichern oder eine erkannte Tabelle als CSV exportieren.",
           "Bei Problemen die Erkennungssprache oder die Genauigkeit in den Einstellungen anpassen."
         ],
-        "pricing": "Fünf Lesevorgänge pro Tag sind kostenlos; der Zähler wird um Mitternacht zurückgesetzt. Kopieren, Speichern und Exportieren zählen nicht mit. OCR Copy Pro kostet in Deutschland am 18. November 2026 monatlich 1,99 € oder jährlich 9,99 €. Das Jahresabo bietet berechtigten Nutzern eine kostenlose Probewoche. Die Abos verlängern sich automatisch. Pro hebt das Leselimit auf und erlaubt unbegrenzt viele Gruppen. Wer die App vor Version 1.5 genutzt hat, behält unbegrenzte Lesevorgänge. Aktuelle Preise und Bedingungen stehen im App Store.",
+        "pricing": "Fünf Lesevorgänge pro Tag und drei Gruppen sind kostenlos. Text-PDFs, Kopieren, Bibliothek und Exporte zählen nicht mit. OCR Copy Pro ist ein optionales Monats- oder Jahresabo, hebt beide Grenzen auf und erlaubt bis zu 100 ausgewählte Bilder; berechtigte Nutzer können beim Jahresabo eine kostenlose Probewoche erhalten. Wer die App vor Version 1.5 genutzt hat, behält unbegrenzte Lesevorgänge. Aktuelle Bedingungen stehen im App Store.",
         "privacy": "Die Texterkennung mit Apple Vision und die Speicherung erfolgen auf dem iPhone. Fotos und Texte werden nicht an externe Server gesendet. Auch KI-Korrekturvorschläge entstehen auf unterstützten Geräten lokal. Vorübergehend benötigte Arbeitsbilder werden gelöscht, wenn sie nicht mehr gebraucht werden; verbliebene temporäre Bilder werden beim nächsten Start entfernt. Gespeicherte Ergebnisse und Korrekturen bleiben lokal. Es gibt kein Konto, keine Werbung und kein Tracking. Du entscheidest selbst, ob du Text über das Teilen-Menü weitergibst. Abonnements werden über den App Store und deinen Apple Account abgewickelt.",
         "why": [
           "OCR Copy ist für alle, die den gesamten Text aus Fotos oder Screenshots auf einmal kopieren möchten, ohne ihn mit dem Finger zu markieren. Mehrere Bilder lassen sich der Reihe nach einlesen und als gemeinsamer Text oder als einzelne Seiten übernehmen.",
@@ -3773,7 +3795,7 @@
           },
           {
             "question": "Was kostet OCR Copy in Deutschland?",
-            "answer": "Fünf Lesevorgänge täglich sind kostenlos. Am 18. November 2026 kostet Pro 1,99 € im Monat oder 9,99 € im Jahr. Für berechtigte Nutzer gibt es beim Jahresabo eine kostenlose Probewoche. Die aktuellen Bedingungen stehen im App Store."
+            "answer": "Fünf Lesevorgänge und drei Gruppen sind kostenlos. Pro hebt beide Grenzen auf und erlaubt bis zu 100 ausgewählte Bilder. Berechtigte Nutzer können beim Jahresabo eine kostenlose Probewoche erhalten; die aktuellen Bedingungen stehen im App Store."
           }
         ]
       },
@@ -3812,7 +3834,7 @@
           "Collez le texte dans vos notes ou messages, gardez-le dans la bibliothèque ou exportez un tableau en CSV.",
           "Si la lecture pose problème, ajustez la langue ou la précision de reconnaissance dans les réglages."
         ],
-        "pricing": "Cinq lectures par jour sont gratuites, avec une remise à zéro à minuit. La copie, l’enregistrement et l’export ne sont pas décomptés. En France, au 18 novembre 2026, OCR Copy Pro coûte 1,99 € par mois ou 9,99 € par an. L’abonnement annuel propose une semaine d’essai gratuit aux personnes éligibles. Les abonnements se renouvellent automatiquement. Pro supprime la limite de lecture et permet un nombre illimité de groupes. Les personnes qui utilisaient l’application avant la version 1.5 conservent les lectures illimitées. Les tarifs et conditions en vigueur sont affichés dans l’App Store.",
+        "pricing": "Cinq lectures par jour et trois groupes sont gratuits. Les PDF texte, la copie, la bibliothèque et les exports ne sont pas décomptés. OCR Copy Pro est un abonnement mensuel ou annuel facultatif qui supprime ces limites et permet de sélectionner jusqu’à 100 images; les personnes éligibles peuvent obtenir une semaine d’essai sur l’offre annuelle. Les utilisateurs antérieurs à la version 1.5 conservent les lectures illimitées. Les conditions en vigueur figurent dans l’App Store.",
         "privacy": "La reconnaissance Apple Vision et le stockage restent sur l’iPhone. Les photos et les textes ne sont pas envoyés à un serveur externe. Les suggestions de correction par IA sont également calculées sur les appareils compatibles. Les images de travail temporaires sont supprimées lorsqu’elles ne sont plus nécessaires ; les éventuels fichiers temporaires restants sont effacés au prochain lancement. Les résultats enregistrés et leurs corrections restent en local. Aucun compte, aucune publicité et aucun suivi publicitaire. Vous choisissez de partager le texte via le menu iOS. Les abonnements sont gérés par l’App Store et votre compte Apple.",
         "why": [
           "OCR Copy s’adresse aux personnes qui veulent copier tout le texte de photos ou de captures d’écran sans le sélectionner au doigt. Plusieurs images peuvent être lues dans l’ordre, avec un texte regroupé ou un résultat par page.",
@@ -3894,7 +3916,7 @@
           },
           {
             "question": "Combien coûte OCR Copy en France ?",
-            "answer": "Cinq lectures par jour sont gratuites. Au 18 novembre 2026, Pro coûte 1,99 € par mois ou 9,99 € par an, avec une semaine d’essai sur l’offre annuelle pour les personnes éligibles. Les conditions actuelles figurent dans l’App Store."
+            "answer": "Cinq lectures et trois groupes sont gratuits. Pro supprime ces limites et permet de sélectionner jusqu’à 100 images. Les personnes éligibles peuvent obtenir une semaine d’essai annuel; les conditions actuelles figurent dans l’App Store."
           }
         ]
       }
@@ -4020,7 +4042,7 @@
       },
       {
         "question": "Is there a free app to blur faces in photos and videos on iPhone?",
-        "answer": "Every tool in Blur Before Share is free, with up to three saves or shares a day. As of 18 November 2026, US Pro pricing is $1.99 per month or $9.99 per year, with a one-week trial on the annual plan. Current conditions appear in the App Store."
+        "answer": "Every tool is free, with up to three saves or shares a day. The optional monthly or yearly Pro subscription removes that limit, and eligible annual subscribers may receive a one-week trial. Current conditions appear in the App Store."
       }
     ],
     "locales": {
@@ -4180,7 +4202,7 @@
           "Para un video, elige uno de hasta tres minutos, coloca una cobertura en una cara y activa el seguimiento.",
           "Revisa toda la foto o reproduce el video para comprobar las coberturas antes de guardar o compartir la copia."
         ],
-        "pricing": "Todas las herramientas son gratuitas y no hay anuncios. Puedes guardar o compartir hasta tres fotos o videos al día, con reinicio del contador a medianoche. En España, a 18 de noviembre de 2026, Pro cuesta 1,99 € al mes o 9,99 € al año; el plan anual ofrece una semana de prueba gratuita. Pro elimina el límite diario. En México, el precio se muestra en el App Store. Quienes usaban la app antes de la versión 1.4 mantienen los guardados y el uso de compartir sin límite. Consulta los precios y las condiciones vigentes en el App Store de tu país.",
+        "pricing": "Todas las herramientas son gratuitas y no hay anuncios. Puedes guardar o compartir hasta tres fotos o videos al día. Pro es una suscripción mensual o anual opcional que elimina el límite diario; las personas elegibles pueden recibir una semana de prueba anual. Quienes usaban la app antes de la versión 1.4 mantienen los guardados y el uso de compartir sin límite. Consulta las condiciones vigentes en el App Store.",
         "privacy": "Todo se procesa en el dispositivo, incluida la detección de caras. No hay cuenta, subidas ni anuncios. Las fotos se vuelven a generar como copias sin los metadatos originales de GPS o cámara; la foto original no se modifica. Los videos se exportan sin ubicación y conservan el sonido. Revisa también los datos que se puedan ver en la imagen antes de compartir.",
         "why": [
           "Blur Before Share sirve para ocultar caras y datos personales en fotos y videos cortos desde el iPhone antes de compartirlos. Reúne desenfoque, mosaico y cobertura negra, con procesamiento en el propio dispositivo.",
@@ -4267,7 +4289,7 @@
           },
           {
             "question": "¿Cuánto cuesta una app para difuminar caras en fotos y videos?",
-            "answer": "Blur Before Share ofrece todas las herramientas y tres guardados o usos de compartir diarios gratis. En España, a 18 de noviembre de 2026, Pro cuesta 1,99 € al mes o 9,99 € al año, con una semana de prueba en el plan anual. En México, el precio se muestra en el App Store. Consulta las condiciones vigentes de tu país."
+            "answer": "Todas las herramientas y tres guardados o usos de compartir diarios son gratuitos. La suscripción Pro opcional elimina el límite, y las personas elegibles pueden recibir una semana de prueba anual. Consulta las condiciones vigentes en el App Store."
           }
         ]
       }
@@ -4512,12 +4534,14 @@
       "Privacy-conscious users who don't want photos uploaded to a server for editing"
     ],
     "features": [
-      "Faces turn into animals automatically: cat, bear, bunny, squirrel, dog, panda, and chick, plus a \"Mix\" option",
+      "Faces turn into 15 free animals automatically, including cat, bear and bunny; Mix gives each face a different animal",
       "Tap a face to remove its stamp; place stamps by hand if no faces are found",
       "Headwear: cat ears, bunny ears, bear ears, and a knit hat, with faces kept frosted underneath",
       "Subtle covers: blend into the background, frosted glass, soft circle, and a patch for name tags and addresses",
       "Move, resize, and turn stamps with your fingers",
       "Undo one step or clear everything",
+      "Hide faces in videos up to 3 minutes on device; audio, length and orientation are kept, while location and capture metadata are removed",
+      "Animal Face Hide Pro subscription: 8 more animals, a puffy sticker finish for photos and videos, no small app mark, and all 23 animals in Mix",
       "The original photo stays unchanged; the covered photo is saved as a new image with no location data from the original",
       "On-device processing, no account, no ads"
     ],
@@ -4528,12 +4552,12 @@
       "Move, resize, and turn stamps with your fingers; undo one step or clear everything if you change your mind.",
       "Check the whole photo, then save it as a new image or share it. Your original photo is untouched."
     ],
-    "pricing": "Animal Face Hide is free on the App Store, with no ads. App Store pricing and availability can change, so check the store listing for current details.",
+    "pricing": "Animal Face Hide is free with no ads. All 15 existing animals, headwear, subtle covers, and unlimited photo and video exports are free; free exports carry a small app mark. Animal Face Hide Pro is an optional monthly or yearly subscription that adds 8 animals, a puffy sticker finish, removes the mark, and lets Mix use all 23 animals. Eligible yearly subscribers may receive a one-week trial. People who used the app before version 1.6 keep mark-free photos without Pro. Check the App Store for current terms.",
     "privacy": "Everything happens on your device and nothing is uploaded. There is no account and no ads. Your original photo is never modified; the covered photo is saved as a new image, and saved images contain no location data from the original. For the authoritative summary of data practices, see the privacy label on the app's App Store page.",
     "faq": [
       {
         "question": "Is Animal Face Hide free?",
-        "answer": "Yes. The app is free on the App Store with no ads. Pricing can change, so check the store listing for current details."
+        "answer": "The app is free with 15 animals, headwear, subtle covers, and unlimited exports. Free exports include a small app mark. The optional Pro subscription adds 8 animals and a puffy finish and removes the mark. Check the App Store for current terms."
       },
       {
         "question": "Are my photos uploaded anywhere?",
@@ -4560,6 +4584,10 @@
         "answer": "Not always. Face detection can miss faces in profile or very small faces, so check the whole photo before you save or share it."
       },
       {
+        "question": "Can it hide faces in videos?",
+        "answer": "Yes. Videos up to 3 minutes are processed on your device. Audio, length and orientation are kept, while location and capture metadata are removed. Check the tracking before sharing."
+      },
+      {
         "question": "Do I need an account?",
         "answer": "No. There is no account and no sign-up."
       }
@@ -4582,12 +4610,14 @@
           "写真を編集のためにサーバーへ送りたくない、プライバシー重視の方"
         ],
         "features": [
-          "顔を自動でどうぶつに: ねこ・くま・うさぎ・りす・いぬ・パンダ・ひよこ、顔ごとに違うどうぶつにする「おまかせ」も",
+          "顔を自動でどうぶつに。ねこ・くま・うさぎなど従来の15種は無料で、「おまかせ」は顔ごとに違うどうぶつを選択",
           "出したい顔はタップして外せます。顔が見つからない写真も、手でペタッと貼れます",
           "かぶりもの: ねこ耳・うさ耳・くま耳・ニット帽。顔はすりガラスでぼかしたまま",
           "さりげなく隠す: まわりの色になじむ・すりガラス・うすい丸。名札や宛名にはパッチ",
           "スタンプは指で動かして、大きさや向きを調整",
           "ひとつ戻す・ぜんぶ消すもかんたん",
+          "3分までの動画も端末内で処理。音声・長さ・向きを保ち、位置情報と撮影メタデータを削除",
+          "どうぶつかくし Pro（任意のサブスクリプション）：8種追加、写真・動画のぷっくりシール仕上げ、保存時の小さなマークなし、「おまかせ」は全23種",
           "元の写真はそのまま。隠した写真は新しい画像として保存され、元の写真の位置情報は含まれません",
           "処理は端末内で完結・アカウント不要・広告なし"
         ],
@@ -4598,12 +4628,12 @@
           "スタンプは指で動かして、大きさや向きを調整します。ひとつ戻す・ぜんぶ消すもできます。",
           "写真全体を確かめてから、新しい画像として保存するか、共有します。元の写真は変更されません。"
         ],
-        "pricing": "App Storeで無料で提供されており、広告はありません。最新の価格・提供状況はApp Storeでご確認ください。",
+        "pricing": "広告なしで無料です。従来のどうぶつ15種、かぶりもの、さりげなく隠す機能、写真・動画の書き出しは無料で、無料版の書き出しには小さなアプリのマークが入ります。任意の「どうぶつかくし Pro」は月額・年額のサブスクリプションで、どうぶつ8種、ぷっくりシール仕上げ、マークなし、全23種のおまかせを追加します。対象者は年額を1週間無料で試せます。バージョン1.6より前からの利用者は、Proなしでも写真のマークなしを維持します。最新条件はApp Storeでご確認ください。",
         "privacy": "写真の加工はすべて端末の中で行い、アップロードはしません。アカウント不要・広告なしです。元の写真は変更されず、隠した写真は新しい画像として保存されます。保存した画像には、元の写真の位置情報は含まれません。データの取り扱いの正式な内容は、App Storeページのプライバシーラベルをご確認ください。",
         "faq": [
           {
             "question": "どうぶつかくしは無料ですか？",
-            "answer": "はい。広告なしで無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。"
+            "answer": "従来の15種、かぶりもの、さりげなく隠す機能、書き出しは無料です。無料版の書き出しには小さなマークが入り、任意のProで追加8種・ぷっくり仕上げ・マークなしを使えます。最新条件はApp Storeでご確認ください。"
           },
           {
             "question": "写真はどこかにアップロードされますか？",
@@ -4628,6 +4658,10 @@
           {
             "question": "すべての顔を見つけてくれますか？",
             "answer": "いつもとは限りません。顔の自動検出は、横顔や小さく写った顔を見落とすことがあります。保存や共有の前に、写真全体を見て確かめてください。"
+          },
+          {
+            "question": "動画の顔も隠せますか？",
+            "answer": "はい。3分までの動画を端末内で処理します。音声・長さ・向きを保ち、位置情報と撮影メタデータを削除します。共有前に追従結果を確認してください。"
           },
           {
             "question": "アカウント登録は必要ですか？",
@@ -4840,7 +4874,7 @@
       },
       {
         "question": "Is Foot Size Check free, or does it need a subscription?",
-        "answer": "Measurement, records, growth graphs, outlines and reminders are free. Pro is an optional one-time purchase, listed at $3.99 in the US on 18 November 2026, for extras such as additional children and same-age reference bands. There is no subscription; current pricing appears in the App Store."
+        "answer": "Measurement, records, growth graphs, outlines and reminders are free. Pro is an optional one-time purchase, not a subscription, for extras such as additional children and same-age reference bands. Current terms appear in the App Store."
       },
       {
         "question": "Does a foot-measuring app upload my photos or need an account?",
@@ -4911,7 +4945,7 @@
           },
           {
             "question": "足はかるは無料ですか？月額料金はかかりますか？",
-            "answer": "計測・記録・成長グラフ・足型・リマインダーは無料です。Proは任意の買い切りで、2026年11月18日時点の日本の価格は600円です。複数のお子さんの登録や同年齢のめやす帯などが追加されます。サブスクはなく、現在の価格はApp Storeに表示されます。"
+            "answer": "計測・記録・成長グラフ・足型・リマインダーは無料です。Proはサブスクではない任意の買い切りで、複数のお子さんの登録や同年齢のめやす帯などが追加されます。現在の条件はApp Storeに表示されます。"
           },
           {
             "question": "足の写真はアップロードされますか？アカウントは必要ですか？",
@@ -5049,8 +5083,8 @@
     ],
     "overview": [
       "GohanSnap is a food photo diary that turns your meal photos into a calendar of everyday memories. Just take a photo with the camera or pick one from your library - the entry takes its time from the photo, and breakfast, lunch, dinner, or snack is chosen from that time (you can change it later). Dish names and calorie notes are optional: add them only when you want to.",
-      "It is a record, not a diet coach. The daily calorie total adds up only the values you entered, you set your own daily calorie goal (the app does not recommend one), and it does not judge meals as good or bad. Add from Photos finds meal photos on your device so you can record several at once, and you can still record a dish name or note without a photo. Entries can be tagged Home cooking, Eating out, or Takeout, saved as My Items to record the same meal again, searched, and exported as CSV.",
-      "Look back with a monthly calendar and daily list, this month's summary and your recording streak, a Home Screen widget, and optional breakfast, lunch, and dinner reminders (off by default). You can share your month in meals as one image, and export entries and photos together as a backup file. Your entries are stored on your device, with no ads and no account. This app does not provide medical or nutritional advice."
+      "It is a record, not a diet coach. Add from Photos finds meal photos on your device, optional on-device suggestions fill only empty dish names, and no calories are estimated. You can edit the dish, notes, time, place, calories, and optional Home cooking, Eating out, or Takeout tags; My Items, search, CSV, backup, and optional Health writing remain available.",
+      "Free iCloud sync keeps photos, notes, and My Items in your private iCloud and across devices, and free read-only sharing can show invited people selected meal details without calorie, mood, Health, location, or My Items data. One evening reminder opens the day's photos for batch logging. The free monthly summary stays simple; optional Pro adds monthly look-backs, photo PDF reports, extra month-card templates, and the dining map. This app does not provide medical or nutritional advice."
     ],
     "target_users": [
       "People who gave up on strict calorie-counting apps but still want to remember what they ate",
@@ -5063,12 +5097,14 @@
       "Record a meal from the camera or photo library; the time comes from the photo and the meal type (breakfast, lunch, dinner, snack) is picked automatically",
       "Add from Photos: find meal photos on your device and record several at once; or record a dish name or note without a photo",
       "Optional dish name, calories, notes, date and time, edited later; the daily total adds up only what you entered, with your own daily calorie goal",
-      "My Items keep photos, calories, and notes so you can record the same meal again with a tap; tags for Home cooking, Eating out, and Takeout; search and CSV export",
-      "On iPhones with Apple Intelligence, a short on-device caption for each photo - it never estimates calories and can be turned off",
+      "My Items, optional Home cooking, Eating out, and Takeout tags, place records, search, and CSV export",
+      "On supported devices, on-device dish-name suggestions fill only empty names; no calories are estimated and suggestions can be turned off",
       "Optional Apple Health integration: writes only the calories you enter, never reads Health data, off by default",
       "Choose what to ask an AI, then hand the question and photos to the external AI app you use - the app never sends anything to an AI service on its own",
-      "Monthly calendar, daily list, monthly summary, recording streak, shareable month image, Home Screen widget, and optional reminders (off by default)",
-      "Backup of entries and photos in one file via Files or AirDrop; entries are stored on your device, with no ads and no account"
+      "Free private iCloud sync for photos, notes, and My Items, plus free read-only meal sharing with invited viewers and clearly limited shared fields",
+      "Monthly calendar, free monthly summary, shareable month image, latest-photo widget, and one optional evening reminder that opens the day's photos for batch logging",
+      "Backup of entries and photos in one file via Files or AirDrop; no ads and no account",
+      "Optional Pro subscription: monthly look-backs, photo PDF reports with each day's calorie total, extra month-card templates, and a dining map"
     ],
     "how_to_use": [
       "Open the app when you eat and take a photo, or pick one from your library (or use Add from Photos to record several at once).",
@@ -5077,12 +5113,12 @@
       "Look back over the monthly calendar and daily list, and check this month's summary and your recording streak.",
       "Optionally turn on reminders, Apple Health, or photo saving in Settings (all off by default), or export a backup file."
     ],
-    "pricing": "GohanSnap is free on the App Store, with no ads and no account required. App Store pricing and availability can change, so check the store listing for current details.",
-    "privacy": "Your entries are stored on your device. Writing calories to Apple Health happens only when you turn it on, and the app never reads Health data. There is no account and no ads. The app never sends anything to an AI service on its own - if you choose to ask an AI, you hand the question and photos to an external AI app yourself. Photo captions are made on your iPhone with Apple Intelligence. See the App Store privacy label for the current details.",
+    "pricing": "GohanSnap is free with photo logging, calendar, search, CSV, backup, iCloud sync, invited read-only sharing, Health writing, and restaurant/place records. Food Snap Quest Pro is an optional monthly or yearly auto-renewing subscription adding monthly look-backs, photo PDF reports, extra month-card templates, and the dining map; eligible first-time yearly subscribers may receive a one-month trial. Check the App Store for current terms.",
+    "privacy": "Core records are local. Free iCloud sync stores photos, notes, and My Items in your private iCloud; calorie fields, post-meal mood, and Health integration data remain on the device. Invited meal sharing creates separate copies in your iCloud and excludes calories, mood, Health data, locations, My Items data, item IDs, and takeout tags. Current location is sent to Apple Maps only when you choose Pick from nearby places. On-device dish suggestions do not estimate calories, and the app sends nothing to an AI service by itself.",
     "faq": [
       {
         "question": "Is GohanSnap free?",
-        "answer": "Yes. The app is free with no ads and no account required. App Store pricing can change, so check the listing for current details."
+        "answer": "Core logging, calendar, search, CSV, backup, iCloud sync, invited sharing, Health writing, and place records are free. The optional Pro subscription adds look-backs, photo PDF reports, extra card templates, and the dining map. Check the App Store for current terms."
       },
       {
         "question": "Does it count calories or analyze nutrition?",
@@ -5120,8 +5156,8 @@
         "meta_description": "ごはんスナップは、食べたものを写真で残すiPhoneの食事記録アプリ。写真を撮るだけでカレンダーに積み上がり、メニューやカロリーメモは入れたいときだけ。広告・アカウントなし。",
         "overview": [
           "ごはんスナップは、食べたものを写真で残す食事記録アプリです。カメラか写真ライブラリから写真を選ぶだけ。時刻は写真の撮影時刻で入り、朝・昼・夜・間食も時刻から自動で選ばれます（あとから変えられます）。メニューやカロリーは、入れたいときだけ。写真を撮るだけで、カレンダーが自分のごはんで埋まっていきます。",
-          "ダイエットのコーチではなく「記録」のためのアプリです。その日の合計カロリーは入れた分だけの合計で、1日の目標も自分で決めた値を入れるだけ（アプリが目標値を決めることはありません）。食事を良い・悪いで判定することもありません。「写真から追加」で、写真アプリのごはん写真を端末内で探してまとめて記録でき、撮り忘れた日は写真なしでメニューやメモだけ残せます。自炊・外食・テイクアウトのタグ、MYアイテムへの保存（同じ食事をタップでまた記録）、検索、CSV書き出しにも対応しています。",
-          "月カレンダーと日ごとの一覧、今月のまとめ、連続記録、ホーム画面ウィジェット、朝・昼・夜のリマインダー（初期設定はオフ）で、ふりかえりも気軽にできます。今月のごはんを1枚の画像にして共有したり、記録と写真を1つのファイルにバックアップしたりも可能。記録は端末の中だけに保存され、広告なし、アカウント不要です。本アプリは医療・栄養に関する助言を行いません。"
+          "ダイエットのコーチではなく「記録」のためのアプリです。「写真から追加」でごはん写真をまとめて選べ、対応端末では端末内のメニュー候補が空欄だけを補います。カロリーは推定しません。メニュー・メモ・時刻・場所・カロリーや、自炊・外食・テイクアウトのタグを編集でき、MYアイテム、検索、CSV、バックアップ、任意のヘルスケア書き込みも使えます。",
+          "無料のiCloud同期で写真・メモ・MYアイテムを自分のiCloudに保存し、招待した人には共有対象を限定した読み取り専用の食事共有も無料で使えます。夜1回のお知らせからその日の写真をまとめて記録でき、無料の月のまとめは写真と記録をすっきり表示。任意のProでは、ふりかえり、1日ごとの合計カロリー入り写真PDF、月カードの追加テンプレート、外食マップを使えます。本アプリは医療・栄養に関する助言を行いません。"
         ],
         "target_users": [
           "厳密なカロリー計算アプリが続かなかったけれど、食べたものは残しておきたい方",
@@ -5134,12 +5170,14 @@
           "カメラか写真ライブラリから記録。時刻は写真の撮影時刻で入り、朝・昼・夜・間食は時刻から自動で選ばれます",
           "「写真から追加」で、写真アプリのごはん写真を端末内で探してまとめて記録。撮り忘れた日は写真なしでメニューやメモだけ残せます",
           "メニュー・カロリー・メモ・日時はあとから書き足せます。合計カロリーは入れた分だけ。1日の目標も自分で決めた値を入れるだけ",
-          "MYアイテムに写真・カロリー・メモを保存して、タップするだけで同じ食事をまた記録。自炊・外食・テイクアウトのタグ、検索、CSV書き出し",
-          "Apple Intelligence対応のiPhoneでは、写真に端末内で作る短いひとこと。カロリーは推定せず、設定でオフにできます",
+          "MYアイテム、自炊・外食・テイクアウトのタグ、場所の記録、検索、CSV書き出し",
+          "対応端末では、端末内のメニュー候補が空欄だけを補完。カロリーは推定せず、候補はオフにできます",
           "ヘルスケア連携（任意）：入力したカロリーだけを書き込み、ヘルスケアのデータは読み取りません。初期設定はオフ",
           "AIに相談する内容を選び、写真と相談文をお使いのAIアプリに渡せます。アプリ自体がAIに送ることはありません",
-          "月カレンダーと日ごとの一覧、今月のまとめ、連続記録、月のごはんの画像共有、ホーム画面ウィジェット、朝・昼・夜のリマインダー（初期設定はオフ）",
-          "記録と写真を1つのファイルにバックアップ（ファイルアプリやAirDrop）。記録は端末の中だけ、広告なし、アカウント不要"
+          "無料のiCloud同期と、招待した人への読み取り専用の食事共有（カロリー・気分・ヘルスケア・場所・MYアイテム等は共有しません）",
+          "月カレンダー、無料の月まとめ、月の画像共有、最新写真のウィジェット、夜1回のお知らせから当日の写真をまとめて記録",
+          "記録と写真を1ファイルにバックアップ。広告なし・アカウント不要",
+          "任意のProサブスクリプション：ふりかえり、1日ごとの合計カロリー入り写真PDF、月カードの追加テンプレート、外食マップ"
         ],
         "how_to_use": [
           "食事のときにアプリを開き、写真を撮るか、ライブラリから選びます（「写真から追加」ならまとめて記録できます）。",
@@ -5148,12 +5186,12 @@
           "月カレンダーと日ごとの一覧、今月のまとめ、連続記録でふりかえります。",
           "必要に応じて、設定でリマインダー、ヘルスケア連携、写真アプリへの保存をオンにしたり（すべて初期設定はオフ）、バックアップを書き出したりできます。"
         ],
-        "pricing": "App Storeで無料で提供されており、広告もアカウント登録もありません。最新の価格・提供状況はApp Storeでご確認ください。",
-        "privacy": "記録は端末の中に保存されます。ヘルスケアへの書き込みは、オンにしたときだけで、ヘルスケアのデータを読み取ることはありません。アカウントも広告もありません。アプリ自体がAIサービスに送信することはなく、AIに相談する場合は、ご自身で写真と相談文をお使いのAIアプリに渡します。写真のひとことは、Apple Intelligence対応のiPhoneの中だけで作成されます。最新の情報はApp Storeのプライバシー表示をご確認ください。",
+        "pricing": "写真記録、カレンダー、検索、CSV、バックアップ、iCloud同期、招待共有、ヘルスケア書き込み、お店と場所の記録は無料です。任意の「ごはんスナップ Pro」は月額・年額の自動更新サブスクリプションで、ふりかえり、写真PDF、月カード追加テンプレート、外食マップを追加します。対象の初回年額登録者には1か月の無料体験があります。最新条件はApp Storeでご確認ください。",
+        "privacy": "基本の記録は端末内です。無料のiCloud同期は写真・メモ・MYアイテムを自分のiCloudに保存し、カロリー欄・食後の気分・ヘルスケア連携は端末だけに残します。招待共有は別コピーを自分のiCloudへ保存し、カロリー・気分・ヘルスケア・場所・MYアイテム・品目ID・テイクアウトは共有しません。「近くのお店から選ぶ」を使うときだけ現在地をAppleマップへ問い合わせます。メニュー候補は端末内で作り、アプリ自体はAIサービスへ送信しません。",
         "faq": [
           {
             "question": "ごはんスナップは無料ですか？",
-            "answer": "はい。広告もアカウントもなく無料でお使いいただけます。価格は変更される場合があるため、最新の情報はApp Storeでご確認ください。"
+            "answer": "写真記録、カレンダー、検索、CSV、バックアップ、iCloud同期、招待共有、ヘルスケア書き込み、場所の記録は無料です。任意のProでふりかえり、写真PDF、追加テンプレート、外食マップが加わります。最新条件はApp Storeでご確認ください。"
           },
           {
             "question": "カロリー計算や栄養の分析はできますか？",
@@ -5208,6 +5246,7 @@
     ],
     "features": [
       "106 offline travel phrases across 13 categories, bundled in the app",
+      "Two-pane iPhone Duo layout: choose a phrase or My Card on the left and show large Korean text with its reading and meaning on the right",
       "Search in Japanese, English, and Korean (plus katakana readings)",
       "Large Show mode for presenting the Korean phrase to a local person, with even larger text when you turn your iPhone sideways",
       "My Cards: save, reorder, and delete your own Korean text on your device",
@@ -5274,6 +5313,7 @@
         ],
         "features": [
           "13カテゴリ・106の旅行フレーズをアプリ内にオフライン収録",
+          "iPhone Duoでは、左でフレーズや自分のカードを選び、右に大きなハングル・読み方・日本語訳を表示。画面を切り替えても選択を保持",
           "日本語・英語・韓国語（カタカナ読みを含む）での検索",
           "現地の方に見せるための大きな韓国語表示モード（横向きにするとさらに大きく表示）",
           "自分で用意した韓国語を「自分のカード」として端末内に保存・並べ替え・削除",
@@ -5346,6 +5386,7 @@
     ],
     "features": [
       "Convert any web page to Markdown by pasting its URL",
+      "Two-pane reading layout for iPhone Duo's larger display",
       "Clip directly from Safari or other apps via the share sheet",
       "Convert copied text to Markdown in one tap",
       "Clean extraction focused on the article body, with headings, lists, and links preserved",
@@ -5353,7 +5394,8 @@
       "Save .md files to a chosen folder or Obsidian vault",
       "Copy an AI-ready version with clear summary and body sections",
       "Convert URLs or clipboard text from Apple Shortcuts",
-      "All clips stored locally on your device; network used only to fetch pages you request"
+      "All clips stored locally on your device; network used only to fetch pages you request",
+      "App interface available in 25 languages"
     ],
     "how_to_use": [
       "Find a page worth keeping - in Safari, tap Share and choose ClipMD, or copy the URL.",
@@ -5417,6 +5459,7 @@
         ],
         "features": [
           "URLを貼り付けるだけでWebページをMarkdownに変換",
+          "iPhone Duoの大きな画面で、保存したMarkdownを2ペインでゆったり閲覧",
           "Safariなどの共有シートから直接クリップ",
           "コピーしたテキストのワンタップ変換",
           "記事本文にフォーカスした抽出。見出し・箇条書き・リンクを保持",
@@ -5424,7 +5467,8 @@
           "選んだフォルダやObsidianの保管庫へ.mdファイルで保存",
           "要約と本文をまとめた「AI用」でコピー",
           "ショートカットからURLやクリップボードをMarkdown化",
-          "クリップはすべて端末内に保存。通信は指定したページの取得のみ"
+          "クリップはすべて端末内に保存。通信は指定したページの取得のみ",
+          "アプリの表示は25言語に対応"
         ],
         "how_to_use": [
           "残しておきたいページを見つけたら、Safariの共有シートでClipMDを選ぶか、URLをコピーします。",
@@ -5494,6 +5538,7 @@
     ],
     "features": [
       "One new puzzle every day - the same puzzle for every player worldwide",
+      "Larger iPhone Duo layout for today's puzzle and results",
       "Forge mechanic: pick two tiles and an operation (+ - x /) to combine them, with undo and reset",
       "Par shows the minimum possible operations - match it if you can",
       "Daily Forge leaderboard on Game Center: scores start at 2,000, minus 200 per move over par and 1 per second (time stops counting at 20 minutes); sign-in is optional",
@@ -5577,6 +5622,7 @@
         ],
         "features": [
           "毎日1問の新しい問題。世界中のプレイヤーが同じ問題に挑戦",
+          "iPhone Duoの大きな画面で、今日の問題と結果を表示",
           "数字を2つ選んで+−×÷で合成する「フォージ」操作。やり直し・リセットにも対応",
           "理論上の最少手数「パー」を表示。同じ手数でのクリアに挑戦できる",
           "Game Centerの「今日のフォージ」ランキング。2000点満点で、パー超過は1手ごとに−200点、時間は1秒ごとに−1点（20分で打ち切り）。サインインは任意",
@@ -5640,6 +5686,205 @@
             "answer": "任意の1日1回リマインダーをオンにした場合のみ届きます。通知なしでも全機能を使えます。"
           }
         ]
+      }
+    }
+  },
+  "6824323047": {
+    "slug": "photo-stamp-cutout-stickers",
+    "short_description": "Cut a subject from a photo and turn it into a transparent PNG sticker, postage stamp, rubber stamp, badge, speech bubble, or tag with your own short text.",
+    "meta_description": "Photo Stamp Cutout makes transparent PNG stickers from photos in six styles, with custom text, colors, dates, and an on-device Sticker Book.",
+    "categories": ["photo-memory", "tap-tools"],
+    "overview": [
+      "Photo Stamp Cutout cuts the subject out of one photo and finishes it as a transparent PNG in six styles: sticker, postage, rubber stamp, badge, speech bubble, or tag. Add a short label such as OK, LOVE, or SOLD, enter your own text, and choose a color.",
+      "Stickers you save, copy, or share collect in a Sticker Book. Sort them into groups and save or share a whole group at once. You can add the photo's date, choose one subject when several are found, change the size, omit text, select among three fonts and top or bottom placement, and copy the finished sticker for pasting elsewhere.",
+      "The original photo is never changed. Cutout and finishing happen on your device, with no account, ads, or tracking. The app interface is available in 25 languages."
+    ],
+    "target_users": [
+      "Marketplace sellers adding SOLD or a short note to a listing photo",
+      "Journal and message users making reusable stickers",
+      "Pet owners making postage-style keepsakes",
+      "Anyone who wants transparent PNG cutouts without uploading a photo"
+    ],
+    "features": [
+      "Automatic subject cutout, with a tap to choose one subject when several are found",
+      "Six templates: sticker, postage, rubber stamp, badge, speech bubble, and tag",
+      "Custom short text, ready-made labels, four colors, three fonts, top or bottom placement, size slider, and no-text option",
+      "Photo date treatment, using today's date when the photo has no capture date",
+      "Sticker Book with groups and whole-group save or share",
+      "Transparent PNG export to Photos, Files, sharing, or Copy",
+      "Original remains unchanged; all processing stays on device",
+      "No account, ads, or tracking; interface available in 25 languages"
+    ],
+    "how_to_use": [
+      "Choose a photo and, if needed, tap the subject you want.",
+      "Pick one of the six templates.",
+      "Set the label, custom text, color, font, placement, size, and optional date.",
+      "Save, copy, or share the transparent PNG; it is also kept in the Sticker Book."
+    ],
+    "pricing": "Photo Stamp Cutout is free, with no ads. The public description lists the Sticker Book, templates, text and date options, PNG save, copy, and sharing without describing a paid tier. Check the App Store for current availability.",
+    "privacy": "The original photo is not changed. Cutout and finishing happen on the device, with no account, ads, tracking, or media upload.",
+    "faq": [
+      {"question": "Does it change my original photo?", "answer": "No. It creates a new transparent PNG and leaves the original unchanged."},
+      {"question": "What styles are available?", "answer": "Sticker, postage, rubber stamp, badge, speech bubble, and tag."},
+      {"question": "Can I reuse stickers?", "answer": "Yes. Saved, copied, and shared stickers collect in the Sticker Book and can be sorted into groups."},
+      {"question": "Are photos uploaded?", "answer": "No. Processing happens on your device, with no account or tracking."}
+    ],
+    "locales": {
+      "ja": {
+        "name": "ペタスタンプ - 切り抜きステッカー作成",
+        "short_description": "写真の被写体を切り抜き、切手・はんこ・バッジ・吹き出し・タグ・ステッカーの6種類にして、透過PNGで保存・共有。",
+        "meta_description": "ペタスタンプは写真を切り抜いて透過PNGのシールを作るアプリ。6テンプレート、文字・色・日付、スタンプ帳に対応し、端末内で処理します。",
+        "overview": [
+          "写真を1枚選ぶと被写体を切り抜き、切手・はんこ・バッジ・吹き出し・タグ・ステッカーの6種類に仕上げます。短い文字、4色、3つのフォント、文字の上下、サイズ、日付を選べ、透過PNGで保存・コピー・共有できます。",
+          "保存・コピー・共有したシールはスタンプ帳に残り、グループ分けしてまとめて保存・共有できます。被写体が複数なら使いたいものをタップでき、文字なしも選べます。元の写真は変更せず、処理は端末内です。"
+        ],
+        "target_users": ["フリマ写真にSOLDなどを付けたい方", "手帳やメッセージ用のシールを作りたい方", "ペット写真を切手やバッジにしたい方"],
+        "features": ["被写体の自動切り抜きと複数被写体からの選択", "6種類のテンプレート", "文字・4色・3フォント・上下・サイズ・文字なし・撮影日", "グループ対応のスタンプ帳", "透過PNGの保存・コピー・共有", "元写真はそのまま、端末内処理、広告・アカウント・追跡なし", "アプリ表示は25言語に対応"],
+        "how_to_use": ["写真と被写体を選びます。", "テンプレートと文字・色・日付などを整えます。", "透過PNGを保存・コピー・共有します。"],
+        "pricing": "無料で、広告はありません。公開説明ではスタンプ帳、テンプレート、文字・日付、PNG保存・コピー・共有に有料区分は記載されていません。最新情報はApp Storeでご確認ください。",
+        "privacy": "元の写真は変更せず、切り抜きと加工は端末内で行います。アカウント・広告・トラッキング・写真のアップロードはありません。",
+        "faq": [
+          {"question": "元の写真は変わりますか？", "answer": "変わりません。新しい透過PNGを作ります。"},
+          {"question": "作ったシールは残りますか？", "answer": "はい。スタンプ帳に残り、グループ分けできます。"},
+          {"question": "写真はアップロードされますか？", "answer": "いいえ。端末内で処理します。"}
+        ]
+      }
+    }
+  },
+  "6824323331": {
+    "slug": "help-screen-sos",
+    "short_description": "Show a clear full-screen help message to people nearby when you cannot speak, with optional alarm, vibration, and screen flash started only by you.",
+    "meta_description": "Help Screen SOS displays large silent SOS and travel-help messages in five languages, with optional alarm, vibration, flash, widgets, and Shortcuts.",
+    "categories": ["tap-tools", "travel"],
+    "overview": [
+      "Help Screen SOS is a support app for asking nearby people for help by showing your phone screen when you cannot speak, have difficulty speaking, or do not speak the local language. Choose the situation and show a high-contrast full-screen message.",
+      "Messages are available in Japanese, English, Korean, Simplified Chinese, and Traditional Chinese. Optional alarm sound, vibration, and screen flash begin only after you press the in-app start button. Widgets, Control Center, Shortcuts, and Action Button actions open a safe path into the app rather than starting an alarm immediately.",
+      "The app records no audio, takes no photos or videos, sends no location, and does not automatically contact emergency services. It is a communication aid, not a replacement for police, emergency services, station staff, security, or direct help."
+    ],
+    "target_users": ["People who cannot safely or easily speak in a difficult situation", "Travelers who need to show a help message in a local language", "People preparing a silent SOS message in advance"],
+    "features": ["Full-screen Silent SOS and situation-specific messages", "Manual choice among five display languages", "Optional explanation that you cannot speak or do not speak the local language", "Optional English shown together", "Alarm, vibration, and screen flash controlled from inside the app", "Home and Lock Screen widgets, Control Center, Shortcuts, and Action Button routes", "Fully on-device; ready for iPhone Duo"],
+    "how_to_use": ["Choose the situation and display language.", "Add an optional introductory or English line.", "Show the full-screen message to someone nearby.", "Only if appropriate, press the in-app button to start alarm, vibration, or flash."],
+    "pricing": "Help Screen SOS is free on the App Store. The public description does not list ads, subscriptions, or in-app purchases. Check the App Store for current availability.",
+    "privacy": "Everything runs on the device. The app does not record audio, take photos or videos, send location data, or automatically contact emergency services.",
+    "faq": [
+      {"question": "Does it contact emergency services?", "answer": "No. It only shows messages and optional effects you start. Contact emergency services or nearby authorities directly when needed."},
+      {"question": "Does a widget start the alarm?", "answer": "No. Widgets and actions open the app; the alarm starts only after you press the in-app button."},
+      {"question": "Which languages are included?", "answer": "Japanese, English, Korean, Simplified Chinese, and Traditional Chinese."}
+    ],
+    "locales": {
+      "ja": {
+        "name": "たすけて画面",
+        "short_description": "声を出せない状況で、周囲へ大きなSOS文面を見せる補助アプリ。任意のアラーム・バイブ・画面点滅はアプリ内操作でだけ開始します。",
+        "meta_description": "たすけて画面は、痴漢・迷惑行為・電車内トラブル・気分不良などで声を出せないとき、大きなSOS文面を5言語で見せる補助アプリです。",
+        "overview": ["声を出せない、うまく話せない、言葉が通じないときに、状況に合う大きなSOS文面を全画面で見せます。日本語・英語・韓国語・中国語簡体字・繁体字に対応します。", "アラーム・バイブ・画面点滅は、アプリ内のボタンを押したときだけ始まります。録音・撮影・位置情報送信・自動通報は行わず、警察・駅員・救急などへの連絡を代替しません。"],
+        "target_users": ["声を出して助けを求めにくい場面に備えたい方", "現地語で助けを求めたい旅行者"],
+        "features": ["状況別の大きなSOS文面", "5言語の手動選択", "声を出せない・現地語を話せない導入文と英語併記", "任意のアラーム・バイブ・画面点滅", "ウィジェット・コントロールセンター・ショートカット・アクションボタン", "端末内で動作し、iPhone Duoにも対応"],
+        "how_to_use": ["状況と表示言語を選びます。", "全画面の文面を周囲の人に見せます。", "必要な場合だけ、アプリ内ボタンでアラーム等を始めます。"],
+        "pricing": "無料です。公開説明に広告・サブスクリプション・アプリ内課金の記載はありません。最新情報はApp Storeでご確認ください。",
+        "privacy": "録音・撮影・位置情報送信・自動通報は行わず、すべて端末内で動作します。",
+        "faq": [{"question": "自動で警察や救急へ連絡しますか？", "answer": "いいえ。画面表示の補助アプリです。必要な連絡は直接行ってください。"}, {"question": "ウィジェットからアラームが鳴りますか？", "answer": "いいえ。アプリ内でボタンを押したときだけ始まります。"}]
+      }
+    }
+  },
+  "6824323540": {
+    "slug": "plant-tap-watering-reminder",
+    "short_description": "See which houseplants need water today, log watering in one tap, and keep dated growth photos with optional reminders and widgets.",
+    "meta_description": "Plant Tap calculates watering dates, keeps local watering history and growth photos, and lets you log from widgets, Siri, or Shortcuts.",
+    "categories": ["productivity", "widgets"],
+    "overview": ["Add each plant with a name, optional photo, watering cycle, and last-watered date. Plant Tap calculates the next date and keeps a simple local history, while dated photos build a growth album.", "Optional reminders and Home or Lock Screen widgets show what is due. You can mark a plant watered from a widget, Siri, or Shortcuts without opening the app. Records and photos stay on your device with no account, ads, analytics, or tracking."],
+    "target_users": ["Houseplant owners who want a simple watering schedule", "People who want dated growth photos without an account", "Widget and Siri users who want one-tap logging"],
+    "features": ["Per-plant watering cycle and calculated next date", "One-tap local watering history", "Dated growth-photo album", "Optional reminders and Home and Lock Screen widgets", "Log from a widget, Siri, or Shortcuts", "No account, ads, analytics, or tracking"],
+    "how_to_use": ["Add a plant with its watering cycle and last-watered date.", "Check what is due today and tap when you water it.", "Optionally add dated growth photos and reminders or widgets."],
+    "pricing": "Up to 3 plants and viewing their current photos are free. Plant Tap Pro is an optional monthly or yearly auto-renewing subscription for unlimited plants and continued additions to each growth album; eligible new subscribers may receive a one-week trial. Saved plants, photos, and records remain viewable if Pro ends. Check the App Store for current terms.",
+    "privacy": "Plant records and photos stay on the device. The app requires no account and has no ads, analytics, or tracking.",
+    "faq": [{"question": "What is free?", "answer": "You can track up to 3 plants and view their current photos. Pro adds unlimited plants and continued growth-album additions."}, {"question": "What happens if Pro ends?", "answer": "Saved plants, photos, and records stay on the device and remain viewable."}, {"question": "Where is my data stored?", "answer": "On your device, with no account, ads, analytics, or tracking."}],
+    "locales": {
+      "ja": {
+        "name": "水やりメモ - Plant Tap",
+        "short_description": "今日水やりする観葉植物がひと目でわかり、1タップで記録。成長写真、通知、ウィジェット、Siri・ショートカットにも対応。",
+        "meta_description": "水やりメモは、植物ごとの水やり間隔から次の日を計算し、履歴と日付つき成長写真を端末内に残す観葉植物アプリです。",
+        "overview": ["植物ごとに名前、写真、水やり間隔、前回の日を登録すると、次の日付を自動計算します。日付つき写真は成長アルバムで見返せます。", "通知やホーム・ロック画面のウィジェットは任意です。ウィジェット、Siri、ショートカットからも記録でき、データは端末内に保存されます。"],
+        "target_users": ["観葉植物の水やり予定を簡単に管理したい方", "成長写真を日付つきで残したい方"],
+        "features": ["水やり間隔と次の日付の自動計算", "1タップの水やり履歴", "日付つき成長アルバム", "任意の通知とホーム・ロック画面ウィジェット", "Siri・ショートカットから記録", "アカウント・広告・分析・追跡なし"],
+        "how_to_use": ["植物と水やり間隔、前回の日を登録します。", "今日必要な植物を確認して、水やり後にタップします。", "必要なら成長写真、通知、ウィジェットを追加します。"],
+        "pricing": "3鉢までと現在の写真の表示は無料です。任意のPlant Tap Proは月額・年額の自動更新サブスクリプションで、植物を無制限に登録し、成長アルバムへ写真を追加できます。対象の新規登録者には1週間の無料体験があります。Pro終了後も保存済みデータは表示できます。最新条件はApp Storeでご確認ください。",
+        "privacy": "植物の記録と写真は端末内に保存されます。アカウント・広告・分析・トラッキングはありません。",
+        "faq": [{"question": "無料で何鉢まで使えますか？", "answer": "3鉢まで無料で、現在の写真も表示できます。"}, {"question": "Proが終わるとデータは消えますか？", "answer": "消えません。保存済みの植物・写真・記録は引き続き表示できます。"}]
+      }
+    }
+  },
+  "6824399488": {
+    "slug": "japanese-phrase-cards",
+    "short_description": "Show polite, native-written Japanese phrase cards to staff, let them point to a prepared answer, and flip the answer into your language.",
+    "meta_description": "Japanese Phrase Cards offers 137 offline travel phrases, staff-answer cards, allergy and health cards, number entry, speech, and a one-time full unlock.",
+    "categories": ["travel"],
+    "overview": [
+      "Japanese Phrase Cards is built for showing, not typing under pressure. Pick a polite Japanese phrase written and checked by a native speaker, show it in large type, and let restaurant, station, hotel, pharmacy, or shop staff point to a prepared Japanese answer. Tap the answer and the card turns around to show it in your language.",
+      "A keypad handles prices, minutes, platforms, and exits. Fixed, checked sentences build allergy cards from Japan's food-labeling allergens and dietary needs, health cards with conditions, medicines, drug allergies, and an emergency contact, and hotel cards with a Japanese address. Personal cards stay on your phone.",
+      "The app contains 137 phrases across 10 scenes and works offline. Full-screen cards keep the screen awake, landscape makes text larger, Japanese speech can play normally or slowly, and supported devices can translate spoken replies on device after any needed language download."
+    ],
+    "target_users": ["Travelers in Japan who want checked phrases instead of live text entry", "People who need to communicate allergies or dietary needs", "Travelers showing taxi, hotel, pharmacy, station, restaurant, or emergency information"],
+    "features": ["137 offline phrases in 10 travel scenes", "Staff-facing prepared answers that flip into the traveler's language", "Number keypad for prices, time, platforms, and exits", "Native-written polite Japanese with short context where needed", "Allergy, health, and hotel personal cards stored on device", "Large landscape cards, Japanese speech and slow speech", "Optional on-device spoken-reply translation on supported devices", "No account or data collection"],
+    "how_to_use": ["Pick a phrase for the situation.", "Show the Japanese card and let staff point to an answer or provide a number.", "Tap the answer or enter the number to see it in your language.", "Create allergy, health, or hotel cards in advance when useful."],
+    "pricing": "Allergy, health, and emergency phrases, the first phrases in every scene, and one card of each kind are free. An optional one-time purchase, not a subscription, unlocks every phrase and unlimited cards. Check the App Store for current terms.",
+    "privacy": "Phrase cards work offline. Personal allergy, health, and hotel cards stay on the phone. The app requires no account and states that it collects no data. Spoken-reply translation is on-device on supported devices, after any language download required by iOS.",
+    "faq": [
+      {"question": "Does it work offline?", "answer": "Yes. The 137 fixed phrase cards work offline. Optional spoken-reply translation may require downloading a language first."},
+      {"question": "Is the full app a subscription?", "answer": "No. The full unlock is an optional one-time purchase."},
+      {"question": "Does an allergy card guarantee a food is safe?", "answer": "No. It helps you ask clearly but cannot guarantee ingredients or preparation. For severe allergies, follow professional medical advice."},
+      {"question": "Where are my personal cards stored?", "answer": "On your phone. The app requires no account and states that it collects no data."}
+    ]
+  },
+  "6829073082": {
+    "slug": "resize-photo-to-kb-jpg",
+    "short_description": "Prepare JPG photos for forms and uploads by setting a file-size limit, pixel dimensions, and crop, then verify the actual finished size before saving.",
+    "meta_description": "Photo Resize converts HEIC, PNG, or JPG to a new JPG with a chosen KB/MB limit, dimensions, crop, presets, batch Pro, and on-device processing.",
+    "categories": ["photo-memory", "tap-tools"],
+    "overview": ["Photo Resize prepares a photo for forms and uploads by adjusting its file-size limit, pixel dimensions, and crop. Choose HEIC, PNG, or JPG, then verify the finished JPG's actual file size and dimensions before saving; the original remains unchanged.", "Choose a preset or custom size limit, keep dimensions, set the long edge, or enter width and height. Crop freely or use common ratios, then save to Photos or Files, share, or drag the JPG into another app. Location is removed and capture date is kept unless you turn that off.", "One photo at a time and one named preset are free. Photo Resize Pro adds batch processing with the same settings and more than one preset. The interface is available in 25 languages and photos can open from the share sheet or an action."],
+    "target_users": ["People uploading photos to forms with file-size limits", "Users converting HEIC or PNG to JPG", "Anyone who needs exact pixel dimensions or a crop ratio", "People processing several photos with the same settings (Pro)"],
+    "features": ["Preset or custom file-size limit with actual result size shown", "Keep dimensions, set long edge, or specify width and height", "Free crop and 1:1, 3:4, 4:3, 16:9, or specified-dimension ratio", "JPG export to Photos, Files, sharing, or drag and drop", "Original unchanged; location removed and optional capture-date removal", "One photo and one preset free", "Pro subscription for batch processing and multiple presets", "On-device processing, no ads; interface available in 25 languages"],
+    "how_to_use": ["Choose a HEIC, PNG, or JPG photo.", "Set the size limit, pixel dimensions, and crop.", "Check the actual finished file size and dimensions.", "Save or share the new JPG."],
+    "pricing": "All size, dimension, crop, JPG export, save, and share tools are free for one photo at a time, with one named preset and no ads. Photo Resize Pro is an optional monthly or yearly auto-renewing subscription for batch processing and multiple presets. Any trial terms appear on the purchase screen. Check the App Store for current terms.",
+    "privacy": "Photos are processed on the device and are not sent to a server. Originals remain unchanged. Export removes location information and keeps capture date unless you choose to remove it in Settings.",
+    "faq": [{"question": "Can it guarantee an upload will be accepted?", "answer": "No. It shows the finished size and pixels, but you must compare them with the receiving service's requirements."}, {"question": "Does it check passport-photo rules?", "answer": "No. It does not assess requirements such as face size."}, {"question": "What is free?", "answer": "All tools for one photo at a time and one named preset are free. Pro adds batch processing and multiple presets."}],
+    "locales": {
+      "ja": {
+        "name": "写真サイズ変換 - 容量を小さくJPGに",
+        "short_description": "写真の容量上限、ピクセル、切り抜きを整え、実際の仕上がりを確認して提出用JPGを保存。HEIC・PNGにも対応。",
+        "meta_description": "写真サイズ変換は、KB/MBの上限、長辺や幅×高さ、縦横比を指定し、HEIC・PNG・JPGから新しいJPGを端末内で作るアプリです。",
+        "overview": ["提出用の写真を、容量上限・ピクセル・切り抜きで整えます。仕上がりの実容量とピクセルを保存前に確認でき、元写真は変更しません。", "1枚ずつとプリセット1件は無料です。Proでは複数枚を同じ設定で処理し、プリセットを複数保存できます。位置情報は削除し、撮影日は設定で削除できます。"],
+        "target_users": ["フォームの容量・ピクセル条件に写真を合わせたい方", "HEIC・PNGをJPGにしたい方", "同じ設定で複数枚を処理したい方（Pro）"],
+        "features": ["容量上限と仕上がり実容量の確認", "長辺または幅×高さの指定", "自由切り抜きと複数の縦横比", "JPGで写真・ファイルへ保存、共有、ドラッグ", "位置情報を削除し、撮影日は任意で削除", "1枚とプリセット1件は無料", "Proで複数枚処理・複数プリセット", "端末内処理・広告なし・25言語対応"],
+        "how_to_use": ["写真を選びます。", "容量上限・ピクセル・切り抜きを設定します。", "実容量とピクセルを確認し、新しいJPGを保存・共有します。"],
+        "pricing": "1枚ずつの全機能とプリセット1件は無料で、広告はありません。任意のPhoto Resize Proは月額・年額の自動更新サブスクリプションで、複数枚処理と複数プリセットを追加します。無料体験がある場合の条件は購入画面に表示されます。最新条件はApp Storeでご確認ください。",
+        "privacy": "写真は端末内で処理し、サーバーへ送りません。元写真は変更せず、書き出しでは位置情報を削除し、撮影日は設定に応じて保持または削除します。",
+        "faq": [{"question": "提出条件を自動判定しますか？", "answer": "いいえ。仕上がりの容量とピクセルを確認し、提出先の条件と比べてください。"}, {"question": "無料の範囲は？", "answer": "1枚ずつの全機能とプリセット1件です。Proで複数枚と複数プリセットを使えます。"}]
+      }
+    }
+  },
+  "6829111009": {
+    "slug": "slow-motion-speed-up-video",
+    "short_description": "Slow down or speed up an existing video, keep or change its audio pitch, and export constant speeds free without a watermark or build section-by-section speed curves.",
+    "meta_description": "Slow Motion & Speed Up Video changes video speed from 0.25× to 4× free, adds speed curves, preserves supported HDR, and processes everything on device.",
+    "categories": ["photo-memory", "tap-tools"],
+    "overview": ["Change an existing video's speed, preview the timing, and save to Photos or share it. Constant-speed exports from 0.25× to 4× are free and carry no watermark, with no app-imposed duration limit.", "Keep audio pitch, mute audio, or let pitch follow the speed. Source dimensions, frame rate, orientation, and supported HDR are kept. Speed Curves set different speeds for individual sections with smooth transitions; free curve exports carry a small watermark.", "Pro removes the curve watermark and expands the range to 0.1× through 16×. Slow motion repeats frames rather than creating interpolated frames, and export re-encodes the video. Everything is processed on device with no account, ads, tracking, or upload. The app opens videos from the share sheet and actions and is available in 25 languages."],
+    "target_users": ["People making a whole clip slower or faster", "Creators changing speed in different sections", "Users who want pitch-preserving audio or mute", "Privacy-conscious users who want on-device video processing"],
+    "features": ["Free constant speeds from 0.25× to 4× with no watermark", "Keep pitch, mute audio, or let pitch follow speed", "No app-imposed duration limit", "Preserve dimensions, frame rate, orientation, and supported HDR", "Section-by-section speed curves with smooth transitions", "Pro subscription removes the curve watermark and unlocks 0.1× to 16×", "Open from share sheet and actions", "On-device processing, no account, ads, tracking, or upload; interface available in 25 languages"],
+    "how_to_use": ["Choose or share a video into the app.", "Pick a constant speed, or create a speed curve by section.", "Choose how audio pitch should behave and preview the result.", "Export to Photos or share the new video."],
+    "pricing": "Constant speeds from 0.25× to 4×, audio options, and watermark-free constant-speed exports are free. Free Speed Curve exports include a small watermark. Pro is an optional monthly or yearly auto-renewing subscription that removes the curve watermark and unlocks 0.1× to 16×. Check the App Store for current terms.",
+    "privacy": "Video processing stays on the device. The app requires no account and has no ads, tracking, or media upload. Export re-encodes the new video while leaving the source unchanged.",
+    "faq": [{"question": "Does the free version add a watermark?", "answer": "Not to constant-speed exports. Free Speed Curve exports include a small watermark, which Pro removes."}, {"question": "Does slow motion create new interpolated frames?", "answer": "No. It repeats frames when needed."}, {"question": "Are videos uploaded?", "answer": "No. Processing stays on your device."}],
+    "locales": {
+      "ja": {
+        "name": "動画のスロー・倍速",
+        "short_description": "動画を0.25〜4倍の一律速度に無料で変更。音程の維持・ミュート、区間ごとの速度カーブ、端末内処理に対応。",
+        "meta_description": "動画のスロー・倍速は、0.25〜4倍の無料一律速度、音程設定、速度カーブ、HDR維持に対応し、動画をアップロードせず端末内で処理します。",
+        "overview": ["既存動画の速度を変え、プレビューして写真へ保存・共有できます。0.25〜4倍の一律速度は無料で透かしがなく、アプリ独自の長さ制限もありません。", "区間ごとの速度カーブは無料書き出しに小さな透かしが入り、Proで透かしを外して0.1〜16倍を使えます。スローは補間フレームを作らず必要に応じてフレームを複製し、書き出し時は再エンコードします。"],
+        "target_users": ["動画全体をスロー・倍速にしたい方", "区間ごとに速度を変えたい方", "動画をアップロードせず処理したい方"],
+        "features": ["無料の一律速度0.25〜4倍、透かしなし", "音程を保つ・ミュート・速度に合わせる", "アプリ独自の長さ制限なし", "解像度・フレームレート・向き・対応HDRを維持", "区間ごとの速度カーブ", "Proでカーブの透かしなし・0.1〜16倍", "共有シートとアクションから開く", "端末内処理・広告・アカウント・追跡・アップロードなし、25言語対応"],
+        "how_to_use": ["動画を選ぶか共有から開きます。", "一律速度または速度カーブと音声設定を選びます。", "プレビューして保存・共有します。"],
+        "pricing": "0.25〜4倍の一律速度、音声設定、透かしなしの一律速度書き出しは無料です。無料の速度カーブ書き出しには小さな透かしが入ります。任意のProは月額・年額の自動更新サブスクリプションで、カーブの透かしを外し、0.1〜16倍を使えます。最新条件はApp Storeでご確認ください。",
+        "privacy": "動画は端末内で処理し、アップロードしません。アカウント・広告・追跡はなく、元動画は変更しません。"
       }
     }
   }

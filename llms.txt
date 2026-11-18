@@ -6,7 +6,7 @@ Canonical app index: https://zec-inc.jp/apps/
 
 ## Apps
 - Foot Size Check: Measure kids' feet with just a sheet of Letter or A4 paper and a photo. Get foot length, width, a... Foot Size Check is for parents who want to measure a child’s feet at home with paper and an iPhone, then... https://zec-inc.jp/apps/foot-size-check/
-- Image to Text: OCR Copy: Image to text: batch-scan up to 20 photos or screenshots, or use the camera, and copy the text on your iPhone. OCR Copy is for people who want all the text in photos or screenshots copied at once, without selecting... https://zec-inc.jp/apps/ocr-copy/
+- Image to Text: OCR Copy: Copy text from photos, screenshots, documents, and PDFs. Read many images, preserve tables, search a... OCR Copy is for people who want all the text in photos or screenshots copied at once, without selecting... https://zec-inc.jp/apps/ocr-copy/
 - Big Text Note: Show one note in large, easy-to-read text to the person in front of you, and let your iPhone read it... https://zec-inc.jp/apps/big-text-note/
 - Laundry Tap: Washer Timer: A wash and dry timer with a Lock Screen countdown and reminders, plus a one-tap log of when you last did... https://zec-inc.jp/apps/laundrytap/
 - DailyAlbum: One Photo a Day: Keep one photo a day as a simple photo diary and memory calendar, then hang it in a frame: a spare... https://zec-inc.jp/apps/photo-day/
@@ -35,15 +35,15 @@ Canonical app index: https://zec-inc.jp/apps/
 - Silly Word Beat - Word Play: Pick three word cards and a serious textbook voice reads the silly nonsense combos aloud. Save your favorites. https://zec-inc.jp/apps/sillycombovoice/
 - 年齢プロフィール - 家族と推しの記念日: A profile book for Japan that keeps family, oshi, and friends in one place: birthdays, anniversaries... https://zec-inc.jp/apps/warekiyakudoshichecker/
 - Number Forge - Daily Puzzle: A daily number puzzle and quick brain game: forge six numbers with + - x / into the target and keep your... https://zec-inc.jp/apps/number-forge-daily-puzzle/
-- Access Lens: Magnifier: A color blindness simulator that compares an original image with simplified color-vision and... https://zec-inc.jp/apps/accesslens/
+- Access Lens: Magnifier: A private camera magnifier for small print, with zoom, light, freeze, and high-contrast reading modes.... https://zec-inc.jp/apps/accesslens/
 - Face Blur Video: Before Share: Hide faces, names, addresses, and license plates with blur, mosaic, or black before you share a photo.... Blur Before Share is for people who want to cover faces and personal information in photos or short... https://zec-inc.jp/apps/blur-before-share/
-- Slow Motion & Speed Up Video: Change the speed of an existing video and save the result. https://zec-inc.jp/apps/slow-motion-speed-up-video/
-- Help Screen SOS: Help Screen SOS is a support app for asking people nearby for help by showing your phone screen when you... https://zec-inc.jp/apps/help-screen-sos/
-- Photo Stamp Cutout - Stickers: Mark a resale listing photo SOLD. https://zec-inc.jp/apps/photo-stamp-cutout-stickers/
-- Resize Photo to KB & JPG: Prepare photos for forms and uploads by adjusting their file size, pixel dimensions, and crop. https://zec-inc.jp/apps/resize-photo-to-kb-jpg/
+- Slow Motion & Speed Up Video: Slow down or speed up an existing video, keep or change its audio pitch, and export constant speeds free... https://zec-inc.jp/apps/slow-motion-speed-up-video/
+- Help Screen SOS: Show a clear full-screen help message to people nearby when you cannot speak, with optional alarm... https://zec-inc.jp/apps/help-screen-sos/
+- Photo Stamp Cutout - Stickers: Cut a subject from a photo and turn it into a transparent PNG sticker, postage stamp, rubber stamp... https://zec-inc.jp/apps/photo-stamp-cutout-stickers/
+- Resize Photo to KB & JPG: Prepare JPG photos for forms and uploads by setting a file-size limit, pixel dimensions, and crop, then... https://zec-inc.jp/apps/resize-photo-to-kb-jpg/
 - Korean Travel Phrase Card: Offline Korean phrase cards for travelers: search in Japanese, show big Korean (Hangul) text, play speech. https://zec-inc.jp/apps/korean-travel-phrase-card/
-- Plant Tap: Watering Reminder: Know which houseplants need water today and record it with one tap. https://zec-inc.jp/apps/plant-tap-watering-reminder/
-- Japanese Phrase Cards: Show polite, natural Japanese to the person in front of you. https://zec-inc.jp/apps/japanese-phrase-cards/
+- Plant Tap: Watering Reminder: See which houseplants need water today, log watering in one tap, and keep dated growth photos with... https://zec-inc.jp/apps/plant-tap-watering-reminder/
+- Japanese Phrase Cards: Show polite, native-written Japanese phrase cards to staff, let them point to a prepared answer, and flip... https://zec-inc.jp/apps/japanese-phrase-cards/
 
 ## Category Pages
 - Photo and Memory Apps: https://zec-inc.jp/apps/photo-memory/
