@@ -55,7 +55,7 @@ macOS / Linux:
 python3 scripts/update_apps_page.py
 ```
 
-## Localization (ja)
+## Localization
 
 English is the canonical language. Japanese pages are generated from
 `locales.ja` blocks in `data/app-details-overrides.json`:
@@ -73,6 +73,43 @@ overrides plus a `UI_STRINGS` entry (and a `CATEGORY_DEFINITIONS` translation);
 everything else is derived automatically. ja copy should be natural Japanese
 written from each app's fastlane ja metadata and docs — not literal
 translation of the English text.
+
+Spanish (`es`), German (`de`), and French (`fr`) use the same hand-written
+`locales.<code>` structure. Add translated copy to an app's locale block to
+generate `/apps/<slug>/<code>/`. Empty blocks, blank copy, and screenshot or
+site URL metadata alone do not create pages. Localized indexes and category
+pages list only apps with content in that language; empty categories are not
+generated. Detail, index, and category pages include language links and
+`hreflang` alternates, and their URLs are included in `sitemap.xml`. App Store
+links use the `/es/`, `/de/`, and `/fr/` storefronts respectively. The existing
+`LIGHT_LOCALES` generation for zh-hans, zh-hant, and ko is unchanged.
+
+Optional detail fields can be added at the app's top level (English) or inside
+any hand-written locale block:
+
+- `why`: an array of paragraphs explaining the problem and why the app is
+  useful. Put the direct answer in the first sentence. When supplied, this
+  section takes the overview's position after screenshots and before features.
+  Apps without `why` retain their existing overview.
+- `comparison`: an object with string `intro`, `checked_on` (`YYYY-MM-DD`),
+  and `summary` fields, plus a `rows` array. Each row has string `option`,
+  `good_at`, and `trade_off` fields, and `kind` set to `built-in`, `app`,
+  `web`, or `manual`. It appears after usage as a table, with one card per
+  option on narrow screens and a localized date below it.
+- `best_for` and `not_for`: arrays of strings describing suitable users and
+  unsuitable use cases with alternative methods. They appear after the
+  comparison and before pricing.
+
+These fields are optional and are not inherited from English into localized
+pages. When absent, the existing detail HTML stays unchanged. The generator
+reports invalid types and invalid comparison dates through its warnings;
+`--strict` treats those warnings as failures. `llms.txt` appends the first
+sentence of English `why` after the existing summary, using the same
+110-character truncation rule for the added sentence.
+
+Examples live only in `tests/fixtures/app-details-why-compare.json`; production
+copy in `data/app-details-overrides.json` is maintained separately. Run the
+offline fixture tests with `python3 -m unittest discover -s tests -v`.
 
 ## Sitemap and llms.txt
 

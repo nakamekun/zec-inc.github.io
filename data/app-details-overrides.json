@@ -3503,44 +3503,32 @@
     "privacy": "OCR runs entirely on your iPhone with Apple Vision, works offline, and photos and text are never sent to a server. From version 1.8, images you are working on (including straightened document images) are kept temporarily on your device and deleted when they are no longer needed: when a read fails or is redone, when you close the result, or when you delete it from history; anything left over is removed the next time the app starts. Suggested fixes for misread text are made by Apple's on-device AI on supported iPhones, and neither photos nor text leave your device. Saved history keeps recognized text, line corrections, confidence values, and thumbnails locally in the app. There is no account, no ads, and no tracking. Sharing text is always user-initiated through the iOS share sheet. Subscription purchases are handled by the App Store and your Apple Account.",
     "faq": [
       {
-        "question": "How do I copy text from an image or photo on iPhone?",
-        "answer": "Open the OCR tab and tap Photos to pick the image, or Snap & Read to take one. The text is recognized on your device and copied automatically when you read one image; tap Copy to copy it again, or Keep in Library to save it. Links, emails, and phone numbers in the text can be tapped to open."
+        "question": "How do I copy all the text from a screenshot on iPhone without selecting it?",
+        "answer": "Share the screenshot to OCR Copy to recognise and copy its text. You can also open the image in the app. Review the result before using it."
       },
       {
-        "question": "How do I turn a screenshot into text?",
-        "answer": "Right after taking a screenshot, or from the Photos app, tap Share and choose OCR Copy: the text is read and copied on the spot, without opening the app. Choose Read Text with OCR Copy instead to also keep the result in the app's Library."
+        "question": "How can I extract text from multiple images at once on iPhone?",
+        "answer": "Select several images and choose to combine them or keep each page separate. The share sheet and Shortcuts accept up to 20 images per run; free reading is subject to the daily limit."
       },
       {
-        "question": "How do I scan a document to text with the camera?",
-        "answer": "Tap Scan Documents. The camera finds the page and shoots automatically, you can keep going for several pages, and you can fix the four corners afterward with Apply and Read Again. To grab text off a sign or label, tap Live, point the camera, and copy what you see."
+        "question": "How do I turn a photo of a table into a CSV or spreadsheet on iPhone?",
+        "answer": "When a table is recognised, use Export Table as CSV. Rows and columns are preserved for opening in Numbers or Excel. This feature requires iOS 26 or later."
       },
       {
-        "question": "Can I convert many photos to text at once?",
-        "answer": "Yes. Pick several images under Photos and choose Combine into One or Separate Each Page; results come out in the order you picked. OCR Copy Pro lets you select up to 100 at a time in the app, free use up to the day's remaining reads. The share sheet and Shortcuts accept up to 20 images."
+        "question": "Is there an OCR app for iPhone that works offline without uploading my photos?",
+        "answer": "OCR Copy recognises text on your iPhone and stores images and text locally. It has no account, ads or tracking. Suggested corrections also run on-device on supported iPhones."
       },
       {
-        "question": "Can it read a PDF, or make a PDF I can search?",
-        "answer": "Both. Tap Files to open a PDF: pages with a text layer are extracted directly and scanned pages are read with OCR, up to the first 50 pages per import. From any result, tap Export and choose Share Searchable PDF or Save to Files to get a PDF with selectable, searchable text."
+        "question": "How do I remove unwanted line breaks when copying text from a book page?",
+        "answer": "Turn on the option to join broken lines in OCR Copy; it is off by default. It joins wrapped lines into a paragraph. Check the result, especially with complex layouts or vertical text."
       },
       {
-        "question": "How do I get a table from an image into Excel or Numbers?",
-        "answer": "When a table is found in the image (iOS 26 or later), Export Table as CSV appears under Export on the result screen. Rows and columns are kept as they are, so the CSV opens in Numbers or Excel."
+        "question": "How do I make a scanned PDF searchable on iPhone?",
+        "answer": "Import the PDF in OCR Copy. Existing text is extracted directly and scanned pages are read with OCR, up to 50 pages per import. Export a searchable PDF from the result."
       },
       {
-        "question": "How do I save recognized text and find it again later?",
-        "answer": "Tap Keep in Library. The Saved Text tab keeps results with their original images on your device, sorted into groups (3 groups free, unlimited with Pro) and searchable with Search Library or from iPhone search. You can turn on a Face ID lock in Settings, and Export All gives you text, a searchable PDF, or a ZIP of the whole library for free."
-      },
-      {
-        "question": "What if some text is read wrong, and can it read handwriting or translate?",
-        "answer": "Tap Show details, then tap a line to use Edit Line or Delete This Line before copying. On devices with Apple Intelligence, AI Suggestions proposes fixes you can apply one by one. Auto puts your device's language first, and OCR Language lets you choose Japanese, English, Korean, Chinese, European languages, Russian, Thai, or Vietnamese. Printed text is the target: handwriting and vertical text may not be read correctly, and there is no translation feature."
-      },
-      {
-        "question": "Is OCR Copy free? What does Pro add?",
-        "answer": "It is free to download and read up to 5 times a day; copying, saving, and CSV export never count, and the count resets at midnight. OCR Copy Pro, an auto-renewing yearly (with a 1-week free trial) or monthly subscription, removes the daily limit in the app, the share sheet, and Shortcuts, allows up to 100 images per batch, and unlimited groups. If you used OCR Copy before version 1.5, reading stays unlimited. Check the App Store listing for current prices."
-      },
-      {
-        "question": "Are my photos or text uploaded anywhere?",
-        "answer": "No. Text recognition runs on your iPhone with Apple Vision, AI suggestions use on-device Apple Intelligence, and images and text are processed and stored on your device. There is no account, no ads, and no tracking."
+        "question": "Is OCR Copy free, and how much is unlimited OCR?",
+        "answer": "Five reads a day are free and reset at midnight. Copying, saving and export do not count. As of 18 November 2026, US Pro pricing is $1.99 per month or $9.99 per year; the annual plan offers a one-week trial for eligible users. Current terms appear in the App Store."
       }
     ],
     "locales": {
@@ -3586,48 +3574,384 @@
         "privacy": "文字の読み取りはApple Visionを使ってすべて iPhone の中で実行され、オフラインで使えます。写真やテキストを外部サーバーへ送信することはありません。1.8 からは、作業中の画像（まっすぐに整えた書類の画像を含む）を端末内に一時的に置き、読み取りの失敗や読み直しで不要になったとき、結果を閉じたとき、履歴を削除したときに消します。残ったものは次にアプリを開いたときに消します。読み間違いの直し案は、対応する iPhone で Apple の端末内 AI が作り、写真もテキストも端末の外へは出ません。保存した履歴には、認識テキスト、行の修正内容、信頼度、サムネイルだけがアプリ内に残ります。アカウント登録・広告・トラッキングもなく、テキストの共有はiOSの共有シートから自分で操作したときだけ行われます。購読のお支払いはApp StoreとApple アカウントで処理されます。",
         "faq": [
           {
-            "question": "画像や写真の文字をテキスト化してコピーするには？",
-            "answer": "OCRタブの「写真」で画像を選ぶか、「撮って読む」でその場で撮影します。文字は端末内で認識され、1枚だけ読んだときは自動でコピーされます。もう一度コピーするなら「コピー」、残しておくなら「保管庫に保存」をタップしてください。読み取った文字の中のリンク・メール・電話番号はタップで開けます。"
+            "question": "iPhoneでスクショの文字を選ばず全部コピーするには？",
+            "answer": "スクショの共有からOCRコピーに送ると、文字を読み取ってコピーできます。アプリで画像を開く方法もあります。使う前に読み取り結果を確認してください。"
           },
           {
-            "question": "スクショの文字をコピーするには？",
-            "answer": "スクリーンショットを撮った直後や写真アプリで「共有」を開き、「OCRコピー」を選ぶと、アプリを開かずにその場で文字にしてコピーします。「OCRコピーで文字を読み取る」を選ぶと、結果をアプリの保管庫にも残せます。"
+            "question": "複数の画像をiPhoneでまとめて文字起こしするには？",
+            "answer": "写真を複数選び、1つにまとめるか1枚ずつ分けるかを選びます。共有シートとショートカットは1回20枚までで、無料利用は1日の読み取り回数の範囲です。"
           },
           {
-            "question": "書類をカメラでスキャンして文字起こしするには？",
-            "answer": "「書類スキャン」をタップします。カメラをかざすと枠を見つけて自動で撮影し、続けて何ページも撮れます。撮影後は四隅を直して「補正して読み直す」こともできます。看板やラベルの文字なら「ライブ」でカメラをかざして、見えている文字をそのままコピーできます。"
+            "question": "写真の表をExcelやNumbersで使えるCSVにするには？",
+            "answer": "表が認識されると、結果の書き出しからCSVを選べます。行と列を保って出力する機能で、iOS 26以降が必要です。"
           },
           {
-            "question": "写真をまとめて一括で文字起こしするには？",
-            "answer": "「写真」で複数の画像を選び、「1つにまとめる」か「1枚ずつ分ける」を選びます。選んだ順に読み取ります。OCRコピー Proなら本体で一度に100枚まで、無料ではその日の残り回数まで選べます。ほかのアプリの共有メニューとショートカットは20枚までです。"
+            "question": "写真をアップロードせずオフラインで文字起こしできるアプリは？",
+            "answer": "OCRコピーは端末内で文字を認識し、画像と文字を保存します。アカウント・広告・トラッキングはなく、対応機種でのAI修正案も端末内で処理します。"
           },
           {
-            "question": "PDFの文字を読み取る・検索できるPDFにするには？",
-            "answer": "どちらもできます。「ファイル」からPDFを選ぶと、文字入りのページは文字を直接取り出し、スキャンされたページは文字認識で読み取ります（1回の読み込みは先頭50ページまで）。結果画面の「書き出す」から「検索できるPDFで共有」または「ファイルに保存」を選ぶと、文字を選択・検索できるPDFになります。"
+            "question": "本の写真をコピーしたときの余分な改行をつなぐには？",
+            "answer": "OCRコピーの改行をつなぐ設定をオンにします。初期状態ではオフです。折り返された行を段落につなげられますが、縦書きや複雑な紙面では結果を確認してください。"
           },
           {
-            "question": "画像の表をExcelやCSVにするには？",
-            "answer": "表が写った画像を読むと（iOS 26以降）、結果画面の「書き出す」に「表として書き出す（CSV）」が出ます。行と列のまま書き出すので、Numbers や Excel で開けます。"
+            "question": "スキャンしたPDFをiPhoneで文字検索できるようにするには？",
+            "answer": "PDFを読み込むと、文字付きのページはそのまま抽出し、スキャンしたページはOCRで読み取ります。1回の読み込みは50ページまでで、結果から検索できるPDFを書き出せます。"
           },
           {
-            "question": "読み取った文字を保存して、あとから検索するには？",
-            "answer": "「保管庫に保存」をタップします。「保管庫」タブに結果と原画像が端末内で残り、グループ（無料で3つ、Proは無制限）に分けて、「保管庫を検索」やiPhoneの検索から探せます。設定でFace IDロックをオンにでき、「すべて書き出す」でテキスト・検索できるPDF・ZIPに無料でまとめて書き出せます。"
+            "question": "OCRコピーは無料で何回使えますか？Proの料金は？",
+            "answer": "読み取りは1日5回まで無料で、0時にリセットされます。コピー・保存・書き出しは回数に含みません。2026年11月18日時点の日本のProは月額200円・年額1,200円で、対象者には年額の1週間無料体験があります。現在の条件はApp Storeに表示されます。"
+          }
+        ],
+        "why": [
+          "OCRコピーは、写真やスクショの文字を指で選ばず、まとめて全部コピーしたい人のためのアプリです。複数枚を順に読み取り、1つの文章にまとめるか、1枚ずつ分けるかを選べます。",
+          "写真の短い一節なら、iPhone標準のテキスト認識表示で足ります。何枚もの資料をまとめる、表をCSVにする、本の途中で切れた改行をつなぐ、あとで保管庫から検索する、といった文字の再利用を続けて行いたいときにOCRコピーが役立ちます。",
+          "画像と文字の処理・保存は端末内で、アカウント・広告・トラッキングはありません。読み取りは1日5回まで無料で、Proでは回数制限がなくなります。"
+        ],
+        "comparison": {
+          "intro": "一部の文字を写したいのか、資料をまとめて使いたいのか、書類をPDFで管理したいのかで選べます。",
+          "checked_on": "2026-11-18",
+          "rows": [
+            {
+              "option": "iPhoneのテキスト認識表示（Live Text）",
+              "kind": "built-in",
+              "good_at": "写真や一時停止した動画の文字を選んでコピー・翻訳・検索できます。追加インストールは不要です。",
+              "trade_off": "Appleの案内は写真を開いてつまみで範囲を選ぶ手順です。利用できる言語・地域には制限があります。"
+            },
+            {
+              "option": "QuickScan",
+              "kind": "app",
+              "good_at": "書類や既存PDFのOCR、検索できるPDF、署名、クラウドへの自動書き出しに対応します。",
+              "trade_off": "説明文では端末内処理・広告なし・データ収集なしと明記されています。機能は無料で、課金は寄付です。"
+            },
+            {
+              "option": "Adobe Scan",
+              "kind": "app",
+              "good_at": "書類を検索できるPDFにし、ページの曲がり補正や名刺の連絡先取り込みもできます。",
+              "trade_off": "スキャンはAdobe Document Cloudに自動保存されます。Premium・Plusのサブスクリプションがあります。"
+            },
+            {
+              "option": "Copy Text On Screen / AI Scanner（Appzys）",
+              "kind": "app",
+              "good_at": "スクショの文字コピーに加え、翻訳・読み上げができます。AI ScannerはPDFやAI要約にも対応します。",
+              "trade_off": "有料プランや読み取り回数の追加課金があります。App Storeのプライバシー欄にトラッキングに使用するデータの見出しがあります。"
+            },
+            {
+              "option": "OnlineOCR.net",
+              "kind": "web",
+              "good_at": "パソコンのブラウザで画像・PDFをWord・Excel・テキストに変換できます。",
+              "trade_off": "ファイルをサイトにアップロードします。登録なしでは1時間5ファイル・15MBまでで、ゲストのファイルは変換後に削除されます。"
+            }
+          ],
+          "summary": "1枚の短い文ならテキスト認識表示、署名や書類整理ならQuickScan、翻訳なら翻訳機能のあるアプリが合います。複数枚の文字や表をまとめて使い、端末内で保存・検索したい人にはOCRコピーが向いています。"
+        },
+        "best_for": [
+          "長いスクショや写真の文字を、なぞらず全部コピーしたい人。",
+          "複数枚を1つの文章にしたり、表をCSVで取り出したりしたい人。",
+          "画像を外部サーバーに送らず、保存した文字を検索したい人。"
+        ],
+        "not_for": [
+          "1枚の写真から1行だけ写すなら、iPhoneのテキスト認識表示で足ります。",
+          "翻訳が中心ならGoogle Lens、読み上げが中心ならCopy Text On Screenなどが合います。",
+          "署名やクラウドへの自動保存が中心なら、QuickScanやAdobe Scanを検討してください。",
+          "縦書きや複雑な紙面は正しく読めないことがあるため、縦書きに対応した専用OCRと読み取り結果の確認が向いています。"
+        ]
+      },
+      "de": {
+        "name": "OCR Copy: Image to Text",
+        "short_description": "Text aus Fotos und Screenshots auf dem iPhone kopieren: mehrere Bilder einlesen, Tabellen als CSV exportieren und Texte offline speichern.",
+        "meta_description": "OCR Copy erkennt Text in Bildern und PDFs direkt auf dem iPhone. Mehrere Screenshots verarbeiten, Tabellen als CSV speichern und Texte ohne Upload durchsuchen.",
+        "overview": [
+          "OCR Copy macht Text aus Fotos, Screenshots und der Kamera kopierbar. Du kannst mehrere Bilder in der gewählten Reihenfolge einlesen und die Ergebnisse zusammenführen oder je Seite behalten. Über das Teilen-Menü lässt sich ein Screenshot direkt an OCR Copy senden.",
+          "Die Texterkennung läuft mit Apple Vision auf deinem iPhone und funktioniert offline. Fehlerhafte Zeilen kannst du vor dem Kopieren korrigieren oder löschen. Tabellen lassen sich ab iOS 26 als CSV exportieren; auf Wunsch werden umgebrochene Zeilen zu einem Absatz verbunden.",
+          "Erkannte Texte bleiben in der lokalen Bibliothek und lassen sich später wiederfinden. Die automatische Sprachauswahl bevorzugt deine Gerätesprache; alternativ wählst du die Erkennungssprache selbst. Fünf Lesevorgänge pro Tag sind kostenlos, Pro hebt diese Grenze auf."
+        ],
+        "target_users": [
+          "Menschen, die Text aus Screenshots, Belegen oder Buchseiten übernehmen möchten.",
+          "Wer mehrere Bilder auf einmal auslesen oder Tabellen in einer Tabellenkalkulation verwenden möchte.",
+          "Wer Texte in verschiedenen Sprachen erkennt und Bilder nicht an einen Server senden möchte."
+        ],
+        "features": [
+          "Mehrere Fotos oder Screenshots einlesen und Ergebnisse zusammenführen oder getrennt behalten.",
+          "Bis zu 20 Bilder pro Aufruf über das Teilen-Menü oder Kurzbefehle.",
+          "Tabellen als CSV exportieren, ab iOS 26.",
+          "Text mit der Live-Kamera erfassen oder ein Foto aufnehmen.",
+          "Dokumente scannen und PDFs importieren: bis zu 50 Seiten je PDF-Import.",
+          "Suchbare PDFs exportieren und störende Zeilenumbrüche auf Wunsch zusammenführen.",
+          "Text offline mit Apple Vision erkennen; einzelne Zeilen bearbeiten oder löschen.",
+          "Texte lokal speichern, gruppieren und über die Bibliothek oder die iPhone-Suche wiederfinden.",
+          "Erkennungssprache automatisch bestimmen oder selbst auswählen, etwa Deutsch, Französisch, Englisch oder weitere unterstützte Sprachen.",
+          "Optionale Detailansicht mit Erkennungssicherheit und Textpositionen; Korrekturvorschläge durch lokale KI auf unterstützten iPhones.",
+          "Fünf kostenlose Lesevorgänge täglich; Pro ohne Tageslimit. Die App ist in 25 Sprachen verfügbar."
+        ],
+        "how_to_use": [
+          "Fotos oder Screenshots auswählen, die Live-Kamera nutzen oder ein Bild aufnehmen. Alternativ im Teilen-Menü OCR Copy wählen.",
+          "Den Text auf dem iPhone erkennen lassen. Bei einem einzelnen Bild wird er automatisch kopiert.",
+          "Bei mehreren Bildern ein gemeinsames Ergebnis oder einzelne Seiten wählen.",
+          "Den erkannten Text prüfen und fehlerhafte Zeilen bei Bedarf bearbeiten oder löschen.",
+          "In Notizen oder Nachrichten einfügen, in der Bibliothek speichern oder eine erkannte Tabelle als CSV exportieren.",
+          "Bei Problemen die Erkennungssprache oder die Genauigkeit in den Einstellungen anpassen."
+        ],
+        "pricing": "Fünf Lesevorgänge pro Tag sind kostenlos; der Zähler wird um Mitternacht zurückgesetzt. Kopieren, Speichern und Exportieren zählen nicht mit. OCR Copy Pro kostet in Deutschland am 18. November 2026 monatlich 1,99 € oder jährlich 9,99 €. Das Jahresabo bietet berechtigten Nutzern eine kostenlose Probewoche. Die Abos verlängern sich automatisch. Pro hebt das Leselimit auf und erlaubt unbegrenzt viele Gruppen. Wer die App vor Version 1.5 genutzt hat, behält unbegrenzte Lesevorgänge. Aktuelle Preise und Bedingungen stehen im App Store.",
+        "privacy": "Die Texterkennung mit Apple Vision und die Speicherung erfolgen auf dem iPhone. Fotos und Texte werden nicht an externe Server gesendet. Auch KI-Korrekturvorschläge entstehen auf unterstützten Geräten lokal. Vorübergehend benötigte Arbeitsbilder werden gelöscht, wenn sie nicht mehr gebraucht werden; verbliebene temporäre Bilder werden beim nächsten Start entfernt. Gespeicherte Ergebnisse und Korrekturen bleiben lokal. Es gibt kein Konto, keine Werbung und kein Tracking. Du entscheidest selbst, ob du Text über das Teilen-Menü weitergibst. Abonnements werden über den App Store und deinen Apple Account abgewickelt.",
+        "why": [
+          "OCR Copy ist für alle, die den gesamten Text aus Fotos oder Screenshots auf einmal kopieren möchten, ohne ihn mit dem Finger zu markieren. Mehrere Bilder lassen sich der Reihe nach einlesen und als gemeinsamer Text oder als einzelne Seiten übernehmen.",
+          "Für einen kurzen Ausschnitt genügt oft Live Text auf dem iPhone. Wenn du mehrere Seiten weiterverwenden, eine Tabelle als CSV exportieren oder störende Zeilenumbrüche verbinden möchtest, bündelt OCR Copy diese Schritte mit einer durchsuchbaren Bibliothek.",
+          "Bilder und Texte bleiben auf deinem Gerät. Du brauchst kein Konto, siehst keine Werbung und kannst täglich fünf Lesevorgänge kostenlos nutzen."
+        ],
+        "comparison": {
+          "intro": "Entscheidend ist, ob du einzelne Wörter kopieren, ganze Seiten weiterverarbeiten oder Dokumente als PDF ablegen möchtest.",
+          "checked_on": "2026-11-18",
+          "rows": [
+            {
+              "option": "Live Text auf dem iPhone",
+              "kind": "built-in",
+              "good_at": "Text in Fotos und angehaltenen Videos kopieren, übersetzen oder nachschlagen, ohne zusätzliche App.",
+              "trade_off": "Apple beschreibt die Auswahl in einem geöffneten Foto mit Auswahlgriffen. Die Verfügbarkeit hängt von Sprache und Region ab."
+            },
+            {
+              "option": "QuickScan",
+              "kind": "app",
+              "good_at": "Dokumente und vorhandene PDFs erkennen, durchsuchbare PDFs erstellen, unterschreiben und automatisch in die Cloud exportieren.",
+              "trade_off": "Laut Beschreibung läuft die Verarbeitung lokal, ohne Werbung oder Datenerfassung. Alle Funktionen sind kostenlos; Käufe dienen als Spenden."
+            },
+            {
+              "option": "Adobe Scan",
+              "kind": "app",
+              "good_at": "Dokumente als durchsuchbare PDFs scannen, gewölbte Seiten korrigieren und Kontaktdaten aus Visitenkarten übernehmen.",
+              "trade_off": "Scans werden automatisch in der Adobe Document Cloud gespeichert. Premium- und Plus-Abonnements werden angeboten."
+            },
+            {
+              "option": "Copy Text On Screen / AI Scanner (Appzys)",
+              "kind": "app",
+              "good_at": "Text aus Screenshots kopieren, übersetzen und vorlesen lassen; AI Scanner bietet außerdem PDF-Funktionen und KI-Zusammenfassungen.",
+              "trade_off": "Es gibt kostenpflichtige Angebote und zusätzliche Scan-Käufe. Die Datenschutzhinweise im App Store nennen Daten, die zum Tracking verwendet werden."
+            },
+            {
+              "option": "OnlineOCR.net",
+              "kind": "web",
+              "good_at": "Bilder und PDFs im Desktop-Browser in Word, Excel oder Text umwandeln.",
+              "trade_off": "Dateien werden auf die Website hochgeladen. Ohne Registrierung gelten fünf Dateien pro Stunde und höchstens 15 MB; Gastdateien werden nach der Umwandlung gelöscht."
+            }
+          ],
+          "summary": "Für einen kurzen Textausschnitt reicht Live Text, für Dokumentenscans und Unterschriften eignet sich QuickScan. Wer mehrere Bilder kopieren, Tabellen weiterverarbeiten und Texte lokal wiederfinden möchte, kann OCR Copy nutzen."
+        },
+        "best_for": [
+          "Wer lange Screenshots ohne manuelles Markieren kopieren möchte.",
+          "Wer Text aus mehreren Bildern zusammenführen oder Tabellen als CSV übernehmen möchte.",
+          "Wer erkannte Texte lokal speichern und durchsuchen möchte."
+        ],
+        "not_for": [
+          "Für eine einzelne Zeile im Foto genügt Live Text.",
+          "Zum Übersetzen eignet sich Google Lens; zum Vorlesen bietet sich etwa Copy Text On Screen an.",
+          "Für Unterschriften und automatische Cloud-Exporte kommen QuickScan oder Adobe Scan infrage.",
+          "Bei vertikalem Text oder komplexen Layouts kann OCR Copy Fehler machen; dafür ist eine spezialisierte OCR-Lösung mit anschließender Kontrolle sinnvoll."
+        ],
+        "faq": [
+          {
+            "question": "Wie kann ich den ganzen Text aus einem Screenshot auf dem iPhone kopieren?",
+            "answer": "Öffne das Teilen-Menü des Screenshots und wähle OCR Copy. Die App erkennt und kopiert den Text, ohne dass du ihn vorher markieren musst. Prüfe das Ergebnis vor der Weiterverwendung."
           },
           {
-            "question": "読み取りに間違いがあるときは？手書き・縦書き・翻訳はできますか？",
-            "answer": "「詳細を表示」から行をタップして「行を修正」「この行を削除」ができます。Apple Intelligenceが使える端末では「AIの直し案」が修正案を出し、1つずつ適用できます。「OCR言語」は「自動」が端末の言語を優先し、日本語・英語・韓国語・中国語・ヨーロッパの言語・ロシア語・タイ語・ベトナム語を選べます。対象は印刷された文字で、手書きや縦書きは正しく読めない場合があり、翻訳機能はありません。"
+            "question": "Wie kann ich Text aus mehreren Bildern gleichzeitig auf dem iPhone erkennen?",
+            "answer": "Wähle mehrere Bilder und entscheide, ob du ein gemeinsames Ergebnis oder einzelne Seiten möchtest. Über das Teilen-Menü und Kurzbefehle sind bis zu 20 Bilder je Aufruf möglich; kostenlos gilt das tägliche Leselimit."
           },
           {
-            "question": "OCRコピーは無料ですか？Proでは何ができますか？",
-            "answer": "ダウンロードは無料で、1日5回まで読み取れます。コピー・保管庫への保存・CSVの書き出しは回数に数えず、回数は0時に戻ります。OCRコピー Pro（自動更新の年額・1週間の無料体験つき、または月額）では、アプリ・共有メニュー・ショートカットの回数制限がなくなり、一括は100枚まで、グループは無制限になります。1.5より前からお使いの方は、これまでどおり回数制限なしです。最新の価格はApp Storeでご確認ください。"
+            "question": "Welche OCR-App fürs iPhone funktioniert offline ohne Upload und ohne Konto?",
+            "answer": "OCR Copy verarbeitet und speichert Bilder und Texte auf dem Gerät. Es gibt kein Konto, keine Werbung und kein Tracking. Auch KI-Korrekturvorschläge laufen auf unterstützten iPhones lokal."
           },
           {
-            "question": "写真や読み取ったテキストはアップロードされますか？",
-            "answer": "いいえ。文字認識は iPhone の中のApple Visionで行い、AIの直し案も端末内のApple Intelligenceを使います。画像と文字は端末の中で処理・保存し、外部のサーバーには送りません。アカウント登録・広告・トラッキングもありません。"
+            "question": "Wie mache ich aus einem Foto einer Tabelle eine CSV-Datei auf dem iPhone?",
+            "answer": "Wenn eine Tabelle erkannt wird, kannst du sie im Ergebnis als CSV exportieren und in Numbers oder Excel öffnen. Zeilen und Spalten bleiben erhalten. Dafür ist iOS 26 oder neuer nötig."
+          },
+          {
+            "question": "Wie kann ich gescannte PDFs auf dem iPhone durchsuchbar machen?",
+            "answer": "Importiere das PDF in OCR Copy. Vorhandener Text wird direkt ausgelesen, gescannte Seiten werden per OCR erkannt. Pro Import sind bis zu 50 Seiten möglich. Exportiere anschließend ein durchsuchbares PDF."
+          },
+          {
+            "question": "Wie entferne ich störende Zeilenumbrüche aus gescannten Buchseiten?",
+            "answer": "Aktiviere die Option zum Verbinden umgebrochener Zeilen; sie ist standardmäßig aus. Kontrolliere den zusammengeführten Absatz, besonders bei komplexem Layout."
+          },
+          {
+            "question": "Was kostet OCR Copy in Deutschland?",
+            "answer": "Fünf Lesevorgänge täglich sind kostenlos. Am 18. November 2026 kostet Pro 1,99 € im Monat oder 9,99 € im Jahr. Für berechtigte Nutzer gibt es beim Jahresabo eine kostenlose Probewoche. Die aktuellen Bedingungen stehen im App Store."
+          }
+        ]
+      },
+      "fr": {
+        "name": "OCR Copy: Image to Text",
+        "short_description": "Copiez le texte de photos et de captures d’écran sur iPhone, traitez plusieurs images et exportez vos tableaux en CSV, sans envoi sur un serveur.",
+        "meta_description": "OCR Copy extrait le texte des images et des PDF sur iPhone, hors ligne. Traitez plusieurs captures, exportez les tableaux en CSV et retrouvez vos textes enregistrés.",
+        "overview": [
+          "OCR Copy permet de récupérer le texte de photos, de captures d’écran ou de la caméra. Sélectionnez plusieurs images pour les lire dans l’ordre choisi, puis regroupez le texte ou gardez un résultat par page. Vous pouvez aussi envoyer une capture directement depuis le menu de partage.",
+          "La reconnaissance utilise Apple Vision sur votre iPhone et fonctionne hors ligne. Corrigez ou supprimez les lignes mal reconnues avant de copier le texte. À partir d’iOS 26, les tableaux peuvent être exportés en CSV. Une option permet de réunir les lignes coupées en un paragraphe.",
+          "Les textes enregistrés restent dans une bibliothèque locale où vous pouvez les retrouver. La sélection automatique privilégie la langue de votre appareil ; vous pouvez aussi choisir la langue de reconnaissance. Cinq lectures par jour sont gratuites, et Pro supprime cette limite."
+        ],
+        "target_users": [
+          "Les personnes qui récupèrent du texte dans des captures d’écran, des reçus ou des pages de livre.",
+          "Les utilisateurs qui souhaitent traiter plusieurs images ou reprendre un tableau dans un tableur.",
+          "Les personnes qui travaillent dans plusieurs langues et souhaitent garder leurs images sur leur appareil."
+        ],
+        "features": [
+          "Lecture de plusieurs photos ou captures, avec un résultat commun ou une page par image.",
+          "Jusqu’à 20 images par envoi depuis le menu de partage ou Raccourcis.",
+          "Export de tableaux en CSV à partir d’iOS 26.",
+          "Lecture en direct avec la caméra ou à partir d’une nouvelle photo.",
+          "Numérisation de documents et import de PDF, jusqu’à 50 pages par import.",
+          "Export en PDF avec recherche de texte et option pour réunir les lignes coupées.",
+          "Reconnaissance hors ligne avec Apple Vision ; correction ou suppression de chaque ligne.",
+          "Bibliothèque locale avec groupes et recherche, également accessible depuis la recherche de l’iPhone.",
+          "Choix automatique ou manuel de la langue, dont le français, l’anglais, l’allemand et d’autres langues prises en charge.",
+          "Vue détaillée facultative avec indices de confiance et positions du texte ; suggestions de correction par IA locale sur les iPhone compatibles.",
+          "Cinq lectures gratuites par jour ; Pro sans limite quotidienne. Application disponible en 25 langues."
+        ],
+        "how_to_use": [
+          "Choisissez des photos ou des captures, utilisez la caméra en direct ou prenez une photo. Vous pouvez aussi sélectionner OCR Copy dans le menu de partage.",
+          "Laissez l’iPhone reconnaître le texte. Pour une seule image, le texte est copié automatiquement.",
+          "Pour plusieurs images, choisissez un résultat regroupé ou une page par image.",
+          "Vérifiez le résultat et corrigez ou supprimez les lignes si nécessaire.",
+          "Collez le texte dans vos notes ou messages, gardez-le dans la bibliothèque ou exportez un tableau en CSV.",
+          "Si la lecture pose problème, ajustez la langue ou la précision de reconnaissance dans les réglages."
+        ],
+        "pricing": "Cinq lectures par jour sont gratuites, avec une remise à zéro à minuit. La copie, l’enregistrement et l’export ne sont pas décomptés. En France, au 18 novembre 2026, OCR Copy Pro coûte 1,99 € par mois ou 9,99 € par an. L’abonnement annuel propose une semaine d’essai gratuit aux personnes éligibles. Les abonnements se renouvellent automatiquement. Pro supprime la limite de lecture et permet un nombre illimité de groupes. Les personnes qui utilisaient l’application avant la version 1.5 conservent les lectures illimitées. Les tarifs et conditions en vigueur sont affichés dans l’App Store.",
+        "privacy": "La reconnaissance Apple Vision et le stockage restent sur l’iPhone. Les photos et les textes ne sont pas envoyés à un serveur externe. Les suggestions de correction par IA sont également calculées sur les appareils compatibles. Les images de travail temporaires sont supprimées lorsqu’elles ne sont plus nécessaires ; les éventuels fichiers temporaires restants sont effacés au prochain lancement. Les résultats enregistrés et leurs corrections restent en local. Aucun compte, aucune publicité et aucun suivi publicitaire. Vous choisissez de partager le texte via le menu iOS. Les abonnements sont gérés par l’App Store et votre compte Apple.",
+        "why": [
+          "OCR Copy s’adresse aux personnes qui veulent copier tout le texte de photos ou de captures d’écran sans le sélectionner au doigt. Plusieurs images peuvent être lues dans l’ordre, avec un texte regroupé ou un résultat par page.",
+          "Pour quelques mots dans une photo, Texte en direct sur iPhone peut suffire. OCR Copy rassemble la lecture de plusieurs images, l’export des tableaux en CSV, la suppression facultative des coupures de ligne et une bibliothèque avec recherche pour réutiliser des textes plus longs.",
+          "Les images et les textes sont traités et conservés sur votre appareil, sans compte, publicité ni suivi publicitaire. Cinq lectures quotidiennes sont gratuites ; Pro supprime la limite."
+        ],
+        "comparison": {
+          "intro": "Le choix dépend du résultat recherché : quelques mots à copier, plusieurs pages à réutiliser ou des documents à classer en PDF.",
+          "checked_on": "2026-11-18",
+          "rows": [
+            {
+              "option": "Texte en direct sur iPhone",
+              "kind": "built-in",
+              "good_at": "Copier, traduire ou rechercher le texte de photos et de vidéos en pause, sans installer une autre application.",
+              "trade_off": "La procédure Apple consiste à ouvrir une photo et à ajuster les poignées de sélection. La disponibilité varie selon la langue et la région."
+            },
+            {
+              "option": "QuickScan",
+              "kind": "app",
+              "good_at": "Numériser des documents, reconnaître le texte des images et PDF, signer et automatiser les exports vers le cloud.",
+              "trade_off": "La fiche annonce un traitement local, sans publicité ni collecte de données. Toutes les fonctions sont gratuites ; les achats sont des dons."
+            },
+            {
+              "option": "Adobe Scan",
+              "kind": "app",
+              "good_at": "Créer des PDF avec recherche de texte, corriger la courbure des pages et récupérer les coordonnées de cartes de visite.",
+              "trade_off": "Les numérisations sont enregistrées automatiquement dans Adobe Document Cloud. Des abonnements Premium et Plus sont proposés."
+            },
+            {
+              "option": "Copy Text On Screen / AI Scanner (Appzys)",
+              "kind": "app",
+              "good_at": "Copier le texte des captures, le traduire et le faire lire à voix haute ; AI Scanner propose aussi des fonctions PDF et des résumés par IA.",
+              "trade_off": "Des offres payantes et des achats de lectures supplémentaires sont proposés. Les fiches de confidentialité App Store mentionnent des données utilisées pour le suivi."
+            },
+            {
+              "option": "OnlineOCR.net",
+              "kind": "web",
+              "good_at": "Convertir images et PDF en Word, Excel ou texte depuis un navigateur sur ordinateur.",
+              "trade_off": "Les fichiers sont envoyés au site. Sans inscription, la limite est de cinq fichiers par heure et de 15 Mo ; ces fichiers sont supprimés après conversion."
+            }
+          ],
+          "summary": "Texte en direct convient pour un court extrait, QuickScan pour numériser et signer des documents. OCR Copy convient pour récupérer plusieurs images, réutiliser des tableaux et retrouver ses textes sur l’iPhone."
+        },
+        "best_for": [
+          "Les personnes qui veulent copier une longue capture sans sélectionner le texte à la main.",
+          "Les personnes qui regroupent plusieurs pages ou récupèrent un tableau en CSV.",
+          "Les personnes qui souhaitent rechercher leurs textes enregistrés sans envoyer les images à un serveur."
+        ],
+        "not_for": [
+          "Pour une seule ligne dans une photo, utilisez Texte en direct.",
+          "Pour traduire, Google Lens peut convenir ; pour la lecture à voix haute, regardez Copy Text On Screen.",
+          "Pour les signatures et les exports automatiques vers le cloud, envisagez QuickScan ou Adobe Scan.",
+          "Pour les textes verticaux ou les mises en page complexes, qu’OCR Copy peut mal reconnaître, privilégiez un outil OCR spécialisé et vérifiez le résultat."
+        ],
+        "faq": [
+          {
+            "question": "Comment copier tout le texte d’une capture d’écran sur iPhone ?",
+            "answer": "Depuis le menu de partage de la capture, choisissez OCR Copy. Le texte est reconnu puis copié sans sélection manuelle. Vérifiez le résultat avant de le réutiliser."
+          },
+          {
+            "question": "Comment extraire le texte de plusieurs images en même temps sur iPhone ?",
+            "answer": "Sélectionnez plusieurs images, puis choisissez de regrouper le texte ou de garder chaque page séparément. Le menu de partage et Raccourcis acceptent jusqu’à 20 images par envoi ; la limite quotidienne s’applique à la version gratuite."
+          },
+          {
+            "question": "Quelle application OCR pour iPhone fonctionne hors ligne, sans envoyer mes photos ?",
+            "answer": "OCR Copy traite et conserve les photos et les textes sur l’appareil. Aucun compte, publicité ou suivi publicitaire n’est nécessaire. Les suggestions par IA restent aussi sur les iPhone compatibles."
+          },
+          {
+            "question": "Comment convertir une photo de tableau en fichier CSV sur iPhone ?",
+            "answer": "Lorsqu’un tableau est reconnu, exportez-le en CSV depuis le résultat. Les lignes et colonnes sont conservées pour Numbers ou Excel. Cette fonction nécessite iOS 26 ou une version ultérieure."
+          },
+          {
+            "question": "Comment rendre un PDF scanné consultable par recherche de texte sur iPhone ?",
+            "answer": "Importez-le dans OCR Copy. Le texte existant est extrait directement et les pages numérisées sont lues par OCR, jusqu’à 50 pages par import. Exportez ensuite un PDF avec texte sélectionnable et recherchable."
+          },
+          {
+            "question": "Comment supprimer les retours à la ligne après avoir copié une page de livre ?",
+            "answer": "Activez l’option qui réunit les lignes coupées ; elle est désactivée par défaut. Relisez le paragraphe obtenu, surtout si la mise en page est complexe."
+          },
+          {
+            "question": "Combien coûte OCR Copy en France ?",
+            "answer": "Cinq lectures par jour sont gratuites. Au 18 novembre 2026, Pro coûte 1,99 € par mois ou 9,99 € par an, avec une semaine d’essai sur l’offre annuelle pour les personnes éligibles. Les conditions actuelles figurent dans l’App Store."
           }
         ]
       }
-    }
+    },
+    "why": [
+      "OCR Copy is for people who want all the text in photos or screenshots copied at once, without selecting it by hand. It reads several images in order and lets you combine the results or keep each page separate.",
+      "For a short passage in one photo, iPhone Live Text can be enough. OCR Copy brings together batch reading, table export to CSV, optional joining of broken lines, and a searchable library when you want to reuse more than a snippet.",
+      "Images and text are processed and stored on your device, with no account, ads or tracking. Five reads a day are free; Pro removes the reading limit."
+    ],
+    "comparison": {
+      "intro": "Choose by what you want to do with the text: copy a snippet, reuse several pages, or organise scanned documents.",
+      "checked_on": "2026-11-18",
+      "rows": [
+        {
+          "option": "iPhone Live Text",
+          "kind": "built-in",
+          "good_at": "Select, copy, translate or look up text in photos and paused videos without installing an app.",
+          "trade_off": "Apple describes opening a photo and adjusting selection handles. Availability varies by language and region."
+        },
+        {
+          "option": "QuickScan",
+          "kind": "app",
+          "good_at": "Scan documents, recognise text in images and PDFs, add signatures and automate cloud exports.",
+          "trade_off": "Its listing states that processing is local, with no ads or data collection. All features are free; purchases are donations."
+        },
+        {
+          "option": "Adobe Scan",
+          "kind": "app",
+          "good_at": "Scan documents into searchable PDFs, correct page curvature and capture contact details from business cards.",
+          "trade_off": "Scans are automatically saved to Adobe Document Cloud. Premium and Plus subscriptions are offered."
+        },
+        {
+          "option": "Copy Text On Screen / AI Scanner (Appzys)",
+          "kind": "app",
+          "good_at": "Copy screenshot text, translate and read it aloud; AI Scanner also offers PDF support and AI summaries.",
+          "trade_off": "Paid plans and additional scan purchases are listed. The App Store privacy labels include Data Used to Track You."
+        },
+        {
+          "option": "OnlineOCR.net",
+          "kind": "web",
+          "good_at": "Convert images and PDFs to Word, Excel or text in a desktop browser.",
+          "trade_off": "Files are uploaded to the website. Guest use is limited to 5 files per hour and 15 MB; guest files are deleted after conversion."
+        }
+      ],
+      "summary": "Use Live Text for a short selection, QuickScan for document scanning and signatures, or a translation app for language help. Choose OCR Copy to copy several images, reuse tables and keep recognised text searchable on your iPhone."
+    },
+    "best_for": [
+      "People copying whole screenshots or long passages without dragging selection handles.",
+      "People combining text from several photos or exporting a table as CSV.",
+      "People who want to search saved text without uploading images to a server."
+    ],
+    "not_for": [
+      "If you only need one line from a photo, use iPhone Live Text.",
+      "If translation or reading aloud is the goal, use Google Lens for translation or Copy Text On Screen for read-aloud tools.",
+      "If signatures and automatic cloud export matter most, consider QuickScan or Adobe Scan.",
+      "For vertical text or complex layouts that OCR Copy may misread, use a specialist OCR tool and check the result."
+    ]
   },
   "6789844137": {
     "slug": "blur-before-share",
@@ -3671,44 +3995,32 @@
     "privacy": "Everything runs on your device: no account, no upload, no ads. The copy you save or share is re-rendered from scratch, so it carries no location (GPS) or camera metadata from the original, and your original photo is never modified. Faces are found on your device.",
     "faq": [
       {
-        "question": "How do I blur a face in a video so the blur follows it?",
-        "answer": "Tap the film button and pick a video up to 3 minutes. Put an oval or box cover on the face, tap Follow Face, and the cover moves with the face through the clip (found on your device with Apple's Vision). Check it by stepping through, then tap Make Video. The sound is kept."
+        "question": "How do I blur a face in a video on iPhone?",
+        "answer": "Choose a video up to three minutes long in Blur Before Share, place an oval or rectangular cover on the face and tap Follow Face. Play through the result and check the coverage before exporting. The audio is retained."
       },
       {
-        "question": "How do I blur or pixelate faces in a photo?",
-        "answer": "Open the photo and faces are found and covered automatically. Choose blur, mosaic (pixelate) or black, and tap × on any face you want to leave visible. Draw with your finger over anything else you want to hide."
+        "question": "How can I pixelate or black out personal information in a screenshot before sharing it?",
+        "answer": "Open the screenshot, draw over the information with your finger and choose mosaic or solid black. Use an opaque black cover for names, addresses and other sensitive text. Check the full image before saving a copy."
       },
       {
-        "question": "How do I black out names, addresses or text in a screenshot?",
-        "answer": "Tap Find Text. Text the app recognizes appears as suggestions; choose the ones to hide and confirm, and only those become black boxes. Recognition can miss text, so look over the whole picture and draw over anything that was missed."
+        "question": "Is there a face blur app that works offline without uploading my photos?",
+        "answer": "Blur Before Share processes photos and videos on your device, without an account, upload or ads. Faces detected in photos are covered automatically; review the photo and cover anything else by hand."
       },
       {
-        "question": "How do I blur a license plate in a photo or video?",
-        "answer": "In a photo, draw over the plate. In a video, put a box cover on the plate and tap Track Area: it follows that area to the end of the clip and stops where it loses it, so you can move the cover and continue."
+        "question": "Can pixelated or blurred text be recovered, and how should I hide text in an image?",
+        "answer": "Do not treat blur or mosaic as a guarantee that text cannot be inferred. For sensitive text, use a solid black cover over the entire area and inspect the saved copy before sharing."
       },
       {
-        "question": "Blur, mosaic or black: which should I use?",
-        "answer": "Black is the surest choice for text. Blur softly hides faces, and mosaic uses large pixel blocks that keep the photo looking natural. You can mix all three in one photo."
+        "question": "How do I remove location data from a photo or video before posting it?",
+        "answer": "Blur Before Share creates a new photo copy without the original GPS or camera metadata and exports video without location data. The original photo is unchanged. Check for visible clues such as addresses as well."
       },
       {
-        "question": "Is Blur Before Share free?",
-        "answer": "Yes. Every tool is free, with no ads, and you can save or share up to 3 covered photos or videos a day for free. An optional Pro subscription removes the daily limit. Check the App Store listing for current details."
+        "question": "How do I pixelate a child’s face in a photo before sharing it?",
+        "answer": "Open the photo and review the automatic face covers. Choose mosaic, remove any unwanted cover with ×, and draw over any missed area before saving or sharing."
       },
       {
-        "question": "Are my photos and videos uploaded anywhere?",
-        "answer": "No. Everything runs on your device. There is no account and no upload."
-      },
-      {
-        "question": "Does the shared copy include location data?",
-        "answer": "No. Photos are re-rendered from scratch and videos are written without location metadata, so the copy you share does not carry where it was taken."
-      },
-      {
-        "question": "Does it change my original photo?",
-        "answer": "No. Your original photo is never modified; the app saves or shares a new copy."
-      },
-      {
-        "question": "What does Pro do?",
-        "answer": "Blur Before Share Pro removes the daily limit of 3 saved or shared photos or videos. It is a yearly subscription with a 1-week free trial, or a monthly one. People who used the app before version 1.4 keep unlimited saving and sharing without Pro."
+        "question": "Is there a free app to blur faces in photos and videos on iPhone?",
+        "answer": "Every tool in Blur Before Share is free, with up to three saves or shares a day. As of 18 November 2026, US Pro pricing is $1.99 per month or $9.99 per year, with a one-week trial on the annual plan. Current conditions appear in the App Store."
       }
     ],
     "locales": {
@@ -3750,48 +4062,270 @@
         "privacy": "処理はすべて端末内で行い、アカウント登録・アップロード・広告はありません。保存・共有するコピーは一から描き直すため、元の写真の位置情報（GPS）や撮影情報は含まれず、元の写真も変更されません。顔の検出も端末の中で行います。",
         "faq": [
           {
-            "question": "動画の顔にモザイクをかけて、動いても追いかけるには？",
-            "answer": "フィルムのボタンから3分までの動画を選び、顔に楕円か四角のカバーを置いて「顔を追いかける」をタップすると、カバーが顔に合わせて動きます（顔の検出は端末の中で行います）。コマ送りで確かめてから「動画を作る」で書き出します。音声はそのまま残ります。"
+            "question": "iPhoneで動画の顔にモザイクをかけて追跡するには？",
+            "answer": "3分までの動画を選び、顔に楕円か四角のカバーを置いて「顔を追いかける」を使います。再生して隠れているか確かめてから書き出してください。音声は残ります。"
           },
           {
-            "question": "写真の顔をぼかす・モザイクをかけるには？",
-            "answer": "写真を開くと顔が自動で見つかり、隠されます。ぼかし・モザイク・黒塗りから選び、隠さなくていい顔は×で外せます。ほかの部分は指でなぞって隠せます。"
+            "question": "スクショの名前や住所を共有前に黒塗りするには？",
+            "answer": "画像を開いて、隠す部分を指でなぞり、黒塗りを選びます。文字全体を不透明な黒で覆い、全体を見直してからコピーを保存・共有してください。"
           },
           {
-            "question": "スクショの名前や住所を黒塗りするには？",
-            "answer": "「文字を見つける」をタップすると、読み取った文字が候補として出ます。隠すものを選んで確定すると、その部分だけが黒塗りになります。読み取りには漏れがあるので、全体を見て、残っている部分は指でなぞって隠してください。"
+            "question": "写真をアップロードせずオフラインで顔をぼかせるアプリは？",
+            "answer": "Blur Before Shareは写真も動画も端末内で処理し、登録・アップロード・広告はありません。写真で見つかった顔は自動で覆われるので、漏れがないか確認し、残った部分は手で隠してください。"
           },
           {
-            "question": "車のナンバープレートをぼかすには？",
-            "answer": "写真ならナンバーの上を指でなぞります。動画ならナンバーに四角のカバーを置いて「範囲を追う」をタップすると、動画の最後まで追いかけます。見失ったところで止まるので、カバーを合わせ直して続けられます。"
+            "question": "モザイクやぼかしの文字は復元されますか？どう隠せばいいですか？",
+            "answer": "モザイクやぼかしなら文字を推定できない、とは言い切れません。名前や番号などの重要な文字は全体を黒塗りし、保存したコピーを共有前に確認してください。"
           },
           {
-            "question": "ぼかし・モザイク・黒塗りはどう使い分けますか？",
-            "answer": "文字を隠すなら黒塗りがいちばん確実です。ぼかしは顔をやわらかく、モザイクは大きな四角で写真の雰囲気を残して隠します。1枚の中で混ぜて使えます。"
+            "question": "投稿する写真や動画から位置情報を消すには？",
+            "answer": "Blur Before Shareは写真を新しく描き直し、元のGPSや撮影情報を含まないコピーを作ります。動画も位置情報を付けずに書き出し、元の写真は変更しません。画像に写った住所なども確認してください。"
           },
           {
-            "question": "Blur Before Shareは無料ですか？",
-            "answer": "はい。道具はすべて無料で広告もなく、隠した写真・動画の保存・共有は1日3件まで無料です。制限をなくすProは任意のサブスクリプションです。最新の内容はApp Storeでご確認ください。"
+            "question": "子どもの写真をSNSに載せる前に顔をモザイクにするには？",
+            "answer": "写真を開き、自動で付いた顔のカバーを確認してモザイクを選びます。隠さなくてよい顔は×で外し、隠れていない部分は指でなぞってから保存・共有します。"
           },
           {
-            "question": "写真や動画はどこかにアップロードされますか？",
-            "answer": "いいえ。処理はすべて端末内で行われます。アカウント登録もアップロードもありません。"
+            "question": "写真と動画に無料でモザイクをかけられますか？",
+            "answer": "Blur Before Shareの道具はすべて無料で、保存・共有は1日3件まで無料です。任意のProは月額または年額で、年額には1週間の無料体験があります。価格と現在の条件はApp Storeに表示されます。"
+          }
+        ],
+        "why": [
+          "Blur Before Shareは、写真や短い動画の顔・個人情報をiPhoneの中で隠してから共有したい人のためのアプリです。ぼかし・モザイク・黒塗りを1本で使えます。",
+          "写真の一部を不透明な色で塗るだけなら、iPhoneのマークアップでも足ります。Blur Before Shareでは写真で見つかった顔を自動で覆い、動画では顔にカバーを置いて追跡し、再生して確かめてから書き出せます。動画は3分まで対応しています。",
+          "アカウント・アップロード・広告はありません。写真のコピーには元の位置情報や撮影情報を含めず、動画も位置情報を付けずに書き出します。道具はすべて無料、保存・共有は1日3件まで無料で、Proでは制限がなくなります。名前や番号などの文字には黒塗りを使い、共有前に全体を確認してください。"
+        ],
+        "comparison": {
+          "intro": "写真を少し塗るのか、動画の動く顔を隠すのか、複数の写真をまとめて加工するのかで選べます。",
+          "checked_on": "2026-11-18",
+          "rows": [
+            {
+              "option": "iPhoneの写真アプリのマークアップ",
+              "kind": "built-in",
+              "good_at": "写真やスクショに描き込め、ペンの色・太さ・不透明度を変えられます。追加アプリは不要です。",
+              "trade_off": "Appleの案内は描画用の道具で、ぼかし・モザイクは記載されていません。不透明な色で文字を覆えますが、引用元の案内に動画の手順はありません。"
+            },
+            {
+              "option": "Blur Photo Editor & Mosaic / 動画モザイク（GIGABUBBLE）",
+              "kind": "app",
+              "good_at": "ぼかし・モザイクの調整、顔やナンバーの自動ぼかし、コラージュ、文字入れなどに対応します。",
+              "trade_off": "動画は別アプリです。写真版には有料プランと広告非表示の課金があり、プライバシー欄にトラッキングに使用するデータの見出しがあります。"
+            },
+            {
+              "option": "Video Blur / Blur-Video（Honk Honk Punch）",
+              "kind": "app",
+              "good_at": "動画の顔・ロゴ・物をぼかし、自動追跡できます。",
+              "trade_off": "追跡の全機能、ぼかしの縁をなじませる機能、広告なしはPROの機能です。写真のぼかしは別アプリです。"
+            },
+            {
+              "option": "TrackBlur",
+              "kind": "app",
+              "good_at": "端末内で動画の顔を追い、タイムラインで確認できます。声の変更、自動字幕、言葉の消音にも対応します。",
+              "trade_off": "無料の書き出しは1日3回、1080pまで、小さな透かし付きです。Proでこれらの制限がなくなり、写真は別アプリで扱います。"
+            },
+            {
+              "option": "Facepixelizer",
+              "kind": "web",
+              "good_at": "ブラウザで画像をぼかし・ピクセル化でき、顔検出にも対応します。公式サイトでは画像を送信しないと説明されています。",
+              "trade_off": "対応形式としてJPG・PNGが記載されています。傾いた顔や横向きの顔を見逃す場合があるとサイトに明記されています。"
+            }
+          ],
+          "summary": "写真を一度だけ塗るならマークアップ、声や字幕も加工するならTrackBlur、パソコンならFacepixelizerが合います。iPhoneで写真と3分までの動画をまとめて扱い、登録・アップロード・広告なしで共有前に隠したい人にはBlur Before Shareが向いています。"
+        },
+        "best_for": [
+          "家族の写真や短い動画を共有する前に、顔を隠したい人。",
+          "スクショの名前・住所・番号を黒塗りしたい人。",
+          "端末内で加工し、位置情報を含まないコピーを共有したい人。"
+        ],
+        "not_for": [
+          "写真の一部を不透明な色で塗るだけなら、iPhoneのマークアップが合います。",
+          "3分を超える動画には、その長さに対応する動画編集アプリを使ってください。声の加工や自動字幕にはTrackBlurなどが合います。",
+          "大量の写真を一括でぼかしたいなら、複数枚処理に対応したWatermarklyなどが合います。",
+          "パソコンで加工するなら、Facepixelizerなどのブラウザツールが合います。",
+          "位置情報だけ消したいなら、位置情報削除アプリや写真の共有オプションを使えます。"
+        ]
+      },
+      "es": {
+        "name": "Blur Before Share",
+        "short_description": "Difumina caras y tapa datos personales en fotos y videos antes de compartirlos. Desenfoque, mosaico y cobertura negra, sin subir archivos.",
+        "meta_description": "Oculta caras, nombres y direcciones en fotos y videos desde el iPhone. Blur Before Share procesa todo en el dispositivo y exporta copias sin ubicación.",
+        "overview": [
+          "Blur Before Share permite ocultar caras, nombres, direcciones, matrículas o placas de vehículos y otros datos antes de compartir una foto. Pasa el dedo por la zona, elige el efecto y guarda o comparte una copia. La foto original no se modifica.",
+          "Puedes combinar desenfoque, mosaico y cobertura negra en una misma foto. Para datos escritos, usa una cobertura negra opaca. Al abrir una foto, la app detecta caras en el dispositivo y las cubre automáticamente; toca × para quitar las coberturas que no necesites.",
+          "También puedes cubrir caras en videos de hasta tres minutos y hacer que la cobertura siga el movimiento. Revisa la reproducción antes de exportar; se conserva el sonido y se elimina la ubicación. Las copias de fotos se crean de nuevo y no conservan los metadatos originales de ubicación o cámara. No hay cuenta, subidas ni anuncios. Todas las herramientas son gratuitas y puedes guardar o compartir hasta tres archivos al día; Pro elimina ese límite. La app está disponible en 25 idiomas."
+        ],
+        "target_users": [
+          "Personas que comparten capturas con nombres, conversaciones o datos de cuentas.",
+          "Familias que quieren ocultar caras antes de publicar fotos o videos.",
+          "Personas que envían entradas, recibos o documentos con datos personales.",
+          "Personas que publican anuncios de venta o contenido en redes y quieren tapar direcciones, placas o personas que aparecen de fondo."
+        ],
+        "features": [
+          "Desenfoque, mosaico y cobertura negra que se pueden combinar en una foto.",
+          "Oculta cualquier zona de una foto pasando el dedo por encima.",
+          "Detección y cobertura automática de caras en fotos, dentro del dispositivo; toca × para quitar una cobertura.",
+          "Videos de hasta tres minutos: coloca una cobertura ovalada o rectangular y activa el seguimiento de la cara.",
+          "Revisa el video antes de exportar; el sonido se conserva y la ubicación se elimina.",
+          "Deshacer y restablecer; también puedes deshacer un restablecimiento.",
+          "Mantén pulsado para comparar la foto con el original.",
+          "Copias de fotos sin los metadatos originales de ubicación o cámara; la foto original no cambia.",
+          "Sin cuenta, subidas ni anuncios; procesamiento en el dispositivo.",
+          "Tres guardados o usos de compartir al día gratis; suscripción Pro opcional sin límite diario.",
+          "Disponible en 25 idiomas."
+        ],
+        "how_to_use": [
+          "Abre una foto. Las caras detectadas se cubren automáticamente; toca × en las que quieras dejar visibles.",
+          "Pasa el dedo por los datos que quieras ocultar y elige desenfoque, mosaico o negro. Para texto sensible, usa negro opaco.",
+          "Combina efectos, deshaz cambios o restablece la edición. Mantén pulsado para comparar con la foto original.",
+          "Para un video, elige uno de hasta tres minutos, coloca una cobertura en una cara y activa el seguimiento.",
+          "Revisa toda la foto o reproduce el video para comprobar las coberturas antes de guardar o compartir la copia."
+        ],
+        "pricing": "Todas las herramientas son gratuitas y no hay anuncios. Puedes guardar o compartir hasta tres fotos o videos al día, con reinicio del contador a medianoche. En España, a 18 de noviembre de 2026, Pro cuesta 1,99 € al mes o 9,99 € al año; el plan anual ofrece una semana de prueba gratuita. Pro elimina el límite diario. En México, el precio se muestra en el App Store. Quienes usaban la app antes de la versión 1.4 mantienen los guardados y el uso de compartir sin límite. Consulta los precios y las condiciones vigentes en el App Store de tu país.",
+        "privacy": "Todo se procesa en el dispositivo, incluida la detección de caras. No hay cuenta, subidas ni anuncios. Las fotos se vuelven a generar como copias sin los metadatos originales de GPS o cámara; la foto original no se modifica. Los videos se exportan sin ubicación y conservan el sonido. Revisa también los datos que se puedan ver en la imagen antes de compartir.",
+        "why": [
+          "Blur Before Share sirve para ocultar caras y datos personales en fotos y videos cortos desde el iPhone antes de compartirlos. Reúne desenfoque, mosaico y cobertura negra, con procesamiento en el propio dispositivo.",
+          "Si solo necesitas tapar una zona de una foto con un color opaco, Marcación del iPhone puede bastar. Blur Before Share cubre las caras detectadas al abrir una foto y permite seguir una cara en un video de hasta tres minutos. Puedes revisar el resultado antes de exportarlo.",
+          "No necesitas una cuenta y no se suben archivos ni se muestran anuncios. Las copias de fotos no conservan la ubicación ni los datos originales de cámara, y los videos se exportan sin ubicación. Todas las herramientas son gratuitas, con tres guardados o usos de compartir al día; Pro elimina ese límite. Para nombres o números, usa negro opaco y comprueba que todo quede cubierto."
+        ],
+        "comparison": {
+          "intro": "Elige según lo que quieras hacer: tapar una zona, seguir una cara en movimiento, editar muchas fotos o trabajar desde una computadora.",
+          "checked_on": "2026-11-18",
+          "rows": [
+            {
+              "option": "Marcación en Fotos del iPhone",
+              "kind": "built-in",
+              "good_at": "Dibujar sobre fotos y capturas con controles de color, grosor y opacidad, sin instalar otra app.",
+              "trade_off": "La guía de Apple describe herramientas de dibujo, no de desenfoque o mosaico. Un color opaco permite tapar texto; la guía citada no explica un flujo para videos."
+            },
+            {
+              "option": "Blur Photo Editor & Mosaic / Video Mosaic (GIGABUBBLE)",
+              "kind": "app",
+              "good_at": "Desenfoque y mosaico ajustables, detección de caras y placas en fotos, collages y texto.",
+              "trade_off": "La edición de video se ofrece en otra app. La app de fotos incluye planes de pago y una compra para quitar anuncios; su ficha de privacidad indica datos usados para rastreo."
+            },
+            {
+              "option": "Video Blur / Blur-Video (Honk Honk Punch)",
+              "kind": "app",
+              "good_at": "Difuminar caras, logotipos y objetos en videos con seguimiento automático.",
+              "trade_off": "El seguimiento completo, los bordes suavizados y el uso sin anuncios son funciones PRO. Las fotos se trabajan en otra app."
+            },
+            {
+              "option": "TrackBlur",
+              "kind": "app",
+              "good_at": "Seguir caras en videos dentro del dispositivo, revisar una línea de tiempo, modificar voces, generar subtítulos y silenciar palabras.",
+              "trade_off": "La versión gratuita permite tres exportaciones al día, hasta 1080p y con una pequeña marca de agua. Pro elimina esas restricciones; las fotos se trabajan en otra app."
+            },
+            {
+              "option": "Facepixelizer",
+              "kind": "web",
+              "good_at": "Difuminar o pixelar imágenes en el navegador, con detección de caras y sin subir las imágenes según su web.",
+              "trade_off": "Los formatos indicados son JPG y PNG. El sitio advierte que la detección puede omitir caras inclinadas o de perfil."
+            }
+          ],
+          "summary": "Marcación sirve para una cobertura opaca ocasional; TrackBlur ofrece herramientas de voz y subtítulos; Facepixelizer permite editar en el navegador. Blur Before Share encaja si quieres cubrir fotos y videos de hasta tres minutos en el iPhone sin cuenta, subidas ni anuncios."
+        },
+        "best_for": [
+          "Personas que quieren ocultar caras en fotos familiares o videos cortos antes de compartirlos.",
+          "Personas que necesitan tapar nombres, direcciones o números en capturas.",
+          "Personas que prefieren editar en el dispositivo y compartir copias sin ubicación."
+        ],
+        "not_for": [
+          "Si solo necesitas pintar una zona de una foto, usa Marcación con un color totalmente opaco.",
+          "Para videos de más de tres minutos, elige un editor compatible con su duración. Para modificar voces o añadir subtítulos automáticos, considera TrackBlur.",
+          "Para difuminar caras en muchas fotos a la vez, considera las funciones por lotes de Watermarkly.",
+          "Para trabajar desde una computadora, puedes usar Facepixelizer en el navegador.",
+          "Si solo quieres quitar la ubicación, utiliza una app de eliminación de metadatos o las opciones de ubicación al compartir fotos."
+        ],
+        "faq": [
+          {
+            "question": "¿Cómo difuminar una cara en un video desde el iPhone?",
+            "answer": "Elige un video de hasta tres minutos en Blur Before Share, coloca una cobertura ovalada o rectangular sobre la cara y activa el seguimiento de la cara. Reproduce el resultado para comprobarlo antes de exportar. El sonido se conserva."
           },
           {
-            "question": "共有する写真や動画に位置情報は残りますか？",
-            "answer": "いいえ。写真は一から描き直し、動画は位置情報を入れずに書き出すため、撮影場所は共有先に伝わりません。"
+            "question": "¿Cómo pixelar la cara de un niño en una foto antes de subirla a redes sociales?",
+            "answer": "Abre la foto y revisa las coberturas automáticas de caras. Elige mosaico, quita con × las coberturas que no necesites y pasa el dedo por cualquier zona que falte antes de guardar o compartir."
           },
           {
-            "question": "元の写真は変更されますか？",
-            "answer": "いいえ。元の写真は変更されません。アプリは新しいコピーを保存・共有します。"
+            "question": "¿Qué app sirve para tapar datos personales en una captura de pantalla?",
+            "answer": "En Blur Before Share puedes pasar el dedo por nombres, direcciones o números y aplicar una cobertura negra opaca. Cubre todo el texto y revisa la copia antes de enviarla."
           },
           {
-            "question": "Proでは何ができますか？",
-            "answer": "Blur Before Share Proでは、保存・共有の1日3件の制限がなくなります。年額（1週間の無料体験つき）または月額から選べます。1.4より前からお使いの方は、Proなしでも制限なく保存・共有できます。"
+            "question": "¿Hay alguna app para difuminar caras que no suba las fotos a internet?",
+            "answer": "Blur Before Share procesa fotos y videos en el dispositivo, sin cuenta, subidas ni anuncios. La detección de caras también es local. Revisa las coberturas antes de compartir."
+          },
+          {
+            "question": "¿Cómo censurar la matrícula o placa de un coche en una foto?",
+            "answer": "Abre la foto, pasa el dedo sobre toda la matrícula o placa y elige el efecto. Para ocultar letras y números, usa negro opaco. Revisa que no queden caracteres visibles en la copia."
+          },
+          {
+            "question": "¿Se puede recuperar un texto pixelado o desenfocado?",
+            "answer": "No conviene asumir que el mosaico o el desenfoque impiden deducir el texto. Para datos sensibles, cubre toda la zona con negro opaco y revisa el archivo guardado antes de compartirlo."
+          },
+          {
+            "question": "¿Cómo quitar la ubicación de una foto o un video antes de publicarlo?",
+            "answer": "Blur Before Share crea una copia de la foto sin los metadatos originales de GPS o cámara y exporta los videos sin ubicación. La foto original no cambia. Comprueba también si hay direcciones visibles en la imagen."
+          },
+          {
+            "question": "¿Cuánto cuesta una app para difuminar caras en fotos y videos?",
+            "answer": "Blur Before Share ofrece todas las herramientas y tres guardados o usos de compartir diarios gratis. En España, a 18 de noviembre de 2026, Pro cuesta 1,99 € al mes o 9,99 € al año, con una semana de prueba en el plan anual. En México, el precio se muestra en el App Store. Consulta las condiciones vigentes de tu país."
           }
         ]
       }
-    }
+    },
+    "why": [
+      "Blur Before Share is for people who want to cover faces and personal information in photos or short videos on their iPhone before sharing them. It combines blur, mosaic and solid black covers in one app, with processing on your device.",
+      "For a single opaque patch on a photo, iPhone Markup can be enough. Blur Before Share automatically covers detected faces in photos and lets you place a cover on a moving face in a video, then use Follow Face and review the result before export. Videos can be up to three minutes long.",
+      "There is no account, upload or advertising. Shared photos contain no original location or camera metadata, and exported videos omit location data. All tools are free, with three saves or shares per day; Pro removes that limit. Use solid black for sensitive text and check the whole result before sharing."
+    ],
+    "comparison": {
+      "intro": "Choose according to whether you need a simple photo edit, moving-face coverage, batch photo processing or desktop editing.",
+      "checked_on": "2026-11-18",
+      "rows": [
+        {
+          "option": "iPhone Photos Markup",
+          "kind": "built-in",
+          "good_at": "Draw on photos and screenshots with adjustable pen colour, thickness and opacity, without an extra app.",
+          "trade_off": "Apple documents drawing tools rather than blur or mosaic tools. An opaque colour can cover text; the cited guide does not give a video workflow."
+        },
+        {
+          "option": "Blur Photo Editor & Mosaic / Video Mosaic (GIGABUBBLE)",
+          "kind": "app",
+          "good_at": "Offers adjustable blur and mosaic, automatic face and licence-plate blur, collages and text on photos.",
+          "trade_off": "Video editing is provided in a separate app. The photo app lists paid plans and an ad-removal purchase; its privacy label includes Data Used to Track You."
+        },
+        {
+          "option": "Video Blur / Blur-Video (Honk Honk Punch)",
+          "kind": "app",
+          "good_at": "Blur faces, logos and objects in videos with automatic tracking.",
+          "trade_off": "Full tracking, feathered edges and ad-free use are PRO features. Photo blur is offered in a separate app."
+        },
+        {
+          "option": "TrackBlur",
+          "kind": "app",
+          "good_at": "Track video faces on-device, review a timeline, change voices, add automatic subtitles and mute words.",
+          "trade_off": "Free exports are limited to three per day, up to 1080p with a small watermark. Pro removes those limits; photos use a separate app."
+        },
+        {
+          "option": "Facepixelizer",
+          "kind": "web",
+          "good_at": "Blur or pixelate images in a browser, with face detection and no image upload according to its website.",
+          "trade_off": "The documented formats are JPG and PNG. The site warns that face detection can miss tilted or sideways faces."
+        }
+      ],
+      "summary": "Use Markup for an occasional opaque cover, TrackBlur for voice and subtitle tools, or Facepixelizer for browser editing. Choose Blur Before Share to cover photos and videos up to three minutes on your iPhone with no account, upload or ads."
+    },
+    "best_for": [
+      "People covering faces before sharing family photos or short videos.",
+      "People blacking out names, addresses or numbers in screenshots.",
+      "People who want on-device editing and shared copies without location data."
+    ],
+    "not_for": [
+      "For one opaque patch in a photo, use iPhone Markup with a fully opaque colour.",
+      "For clips longer than three minutes, use a video editor that supports the clip length. For voice changes or automatic subtitles, consider TrackBlur.",
+      "For batch face blurring across many photos, consider Watermarkly’s batch photo tools.",
+      "For editing on a computer, use a browser tool such as Facepixelizer.",
+      "If you only want to remove location data, use a metadata-removal app or the photo-sharing location options."
+    ]
   },
   "6789844158": {
     "slug": "mute-video-before-share",
@@ -4281,44 +4815,36 @@
     "privacy": "No account and no banner ads. Photos and records stay on your device. iCloud sync is optional: records and outlines are saved to your own iCloud, and annotated measurement photos stay on the device. The developer cannot read your data. Links in \"Find shoes\" include advertising (affiliate links). For the authoritative summary, see the privacy label on the app's App Store page.",
     "faq": [
       {
-        "question": "How do I measure my foot size at home with an iPhone?",
-        "answer": "Put a sheet of Letter or A4 paper on the floor, trace around the foot with a pen, lift the foot, and photograph the paper from straight above. Tap Start Measurement, then Take Photo: the app reads the outline and gives foot length and foot width, and you can drag the points if they are off. Results are a guide, so try shoes on before buying."
+        "question": "How do I measure my child’s foot size at home without a ruler or foot gauge?",
+        "answer": "You need Letter or A4 paper, a pen and your iPhone. Trace the foot, lift it off the paper and photograph the sheet from above. Foot Size Check reads the outline and estimates length and width; check the points and adjust them if needed."
       },
       {
-        "question": "How do I find my shoe size from my foot length?",
-        "answer": "Each saved measurement shows a suggested size: foot length plus 0.5 to 1.0 cm, the usual room for a label size. Choose JP (cm), EU, US, or UK under Settings > Shoe size system, and open the Shoe size chart in the Shoes tab, with Children, Men, and Women tables, to see conversions."
+        "question": "How can I measure foot length with paper and my iPhone camera?",
+        "answer": "Choose the paper size in Foot Size Check, place the paper on a flat floor and trace the foot. Photograph the whole sheet so the app can detect its corners. Save each foot separately to keep a history."
       },
       {
-        "question": "How do I track my child's foot growth over time?",
-        "answer": "Every measurement you Save goes to the Records tab as a growth chart, with left and right feet tracked separately. Tap Share growth card to send name, age, foot length, suggested size, and the chart as one image to family. Foot Size Check Pro adds the whole-span All view and a comparison with children the same age."
+        "question": "What shoe size should my toddler wear for a 14 cm foot length?",
+        "answer": "Foot Size Check uses foot length plus 0.5–1.0 cm as a label-size guide and provides EU, US and UK conversions. There is no single size that fits every brand or foot shape. Use the guide as a starting point and try the shoes on."
       },
       {
-        "question": "How do I measure foot width for wide feet?",
-        "answer": "Foot width is read from the same traced outline as foot length and shown with every record. The app also estimates a width grade (E, 2E, and so on) from the JIS table, and if you have a tape measure you can enter the foot girth for a closer estimate."
+        "question": "How often should I measure my kid’s feet, and how fast do children’s feet grow?",
+        "answer": "Growth varies, so compare your child’s saved measurements rather than assuming a fixed growth rate. Turn on measurement reminders; with a birth date entered, the app uses age-based intervals. Without one, you can choose every 1, 2, 3 or 6 months."
       },
       {
-        "question": "Can I keep a true-size outline of the foot?",
-        "answer": "Yes. Measuring with a tracing saves the Foot outline at its actual dimensions for free. All outlines use the same scale so you can browse them from oldest to newest, lay two records of the same foot over each other, and tap Share foot outline card to send one right after saving."
+        "question": "How can I check how much toe room my child’s shoes have?",
+        "answer": "Trace the removable insole on paper and photograph it using the insole measurement feature. The app compares insole length with the saved foot length to show estimated toe room. Check the actual fit as well; the result is a guide."
       },
       {
-        "question": "How do I check whether my child's current shoes still fit?",
-        "answer": "Add the shoe in the Shoes tab, then tap Measure insole: trace the removed insole on paper and photograph it. The app shows the difference between the insole and the foot, so you can see the toe room now; about 10 mm of room is the guide from the Japanese Society for Foot Care and Podiatric Medicine. Pro also shows the expected room in 3 months and a Shoe replacement estimate."
+        "question": "How do I track my child’s foot growth on iPhone?",
+        "answer": "Save measurements for the left and right foot separately. The growth graph and saved outlines let you compare records over time, and a growth card can be shared with family."
       },
       {
-        "question": "When should I measure my child's feet again?",
-        "answer": "Turn on Reminder in Settings. With a birth date registered, the interval follows the society's guidance by age; without one, choose every 1, 2, 3, or 6 months. One notification arrives when it is time to measure again."
+        "question": "Is Foot Size Check free, or does it need a subscription?",
+        "answer": "Measurement, records, growth graphs, outlines and reminders are free. Pro is an optional one-time purchase, listed at $3.99 in the US on 18 November 2026, for extras such as additional children and same-age reference bands. There is no subscription; current pricing appears in the App Store."
       },
       {
-        "question": "Do I need a ruler, a measuring mat, or an account?",
-        "answer": "No. You need a sheet of Letter or A4 paper, a pen, and your iPhone, and there is no sign-up. If you only have numbers from elsewhere, Add manually lets you type foot length and width into the records."
-      },
-      {
-        "question": "Is Foot Size Check free? What does Pro add?",
-        "answer": "Yes. Measuring, records, the growth chart, foot outlines, one name, one shoe note, reminders, growth cards, and iCloud sync are free, with no banner ads and no subscription. Foot Size Check Pro is a one-time purchase that adds the same-age comparison band, the Shoe replacement estimate, names for siblings, unlimited shoe notes, the All growth span, and Show in store. Check the App Store listing for current prices."
-      },
-      {
-        "question": "Are my photos uploaded anywhere?",
-        "answer": "No. Photo analysis and measurement happen on your device, and the developer cannot see your data. Only if you turn on Save records to iCloud are records and outlines saved to your own iCloud so another device with the same Apple Account can show them; the measurement photo with the drawn lines stays on the device. Links under Find shoes (Japan) include advertising, marked PR."
+        "question": "Does a foot-measuring app upload my photos or need an account?",
+        "answer": "Foot Size Check needs no app account and analyses measurement photos on your device. Optional iCloud sync saves records and outlines to your own private iCloud storage; annotated measurement photos remain on the device."
       }
     ],
     "locales": {
@@ -4360,48 +4886,158 @@
         "privacy": "アカウント不要、バナー広告なし。写真も記録も端末内に保存されます。iCloud同期は任意で、記録と足型があなたのiCloudに保存されます（線を入れた計測写真は端末内のみ）。開発者はデータを読めません。「靴を探す」のリンクには広告（アフィリエイト）を含みます。正式な内容は、App Storeページのプライバシーラベルをご確認ください。",
         "faq": [
           {
-            "question": "iPhoneで足のサイズを測るには？",
-            "answer": "A4用紙（レター用紙も可）を床に置き、足の輪郭をペンでなぞって、足をどけてから紙だけを真上から撮ります。「測定をはじめる」→「写真を撮る」で、なぞった線から足長と足幅を自動で読み取り、ずれていたら点を動かして直せます。結果は目安なので、購入前は試し履きをおすすめします。"
+            "question": "定規や専用の道具なしで子どもの足を家で測るには？",
+            "answer": "A4用紙かレターサイズの紙、ペン、iPhoneを用意します。足をなぞってから足をどけ、紙を真上から撮ると、足はかるが輪郭から足長・足幅を読み取ります。点がずれていたら手で直してください。"
           },
           {
-            "question": "足のサイズから靴のサイズを知るには？",
-            "answer": "保存した記録ごとに、足長に0.5〜1.0cmを足した靴の表示サイズのめやすを表示します。設定の「靴のサイズ表記」でJP（cm）・EU・US・UKを選べ、靴タブの「サイズ換算表」では子ども・男性・女性を切り替えて換算を確認できます。合うサイズはブランドや形で変わるため、めやすとしてお使いください。"
+            "question": "紙とiPhoneのカメラで足長を測るには？",
+            "answer": "アプリで用紙サイズを選び、平らな床に紙を置いて足をなぞります。紙の四隅が入るように撮影し、左右を分けて保存します。測定結果は目安です。"
           },
           {
-            "question": "子どもの足の成長を記録して成長曲線で見るには？",
-            "answer": "測定を「保存」するたびに、きろくタブの成長グラフに時系列で残り、左足・右足を分けて記録できます。「成長カードを共有」で、なまえ・年齢・足長・靴サイズのめやす・グラフを1枚の画像にして家族に送れます。足はかる Proでは「ぜんぶ」の期間のグラフと、同じ年齢の子どもたちの分布との比較が使えます。"
+            "question": "足長14cmの子どもには何cmの靴を選べばいいですか？",
+            "answer": "足はかるでは、足長に0.5〜1.0cmを足した表示サイズを目安として示します。ただしブランド・モデル・足の形で合い方が変わるので、一律には決められません。目安をもとに試し履きで確認してください。"
           },
           {
-            "question": "足幅やワイズ（幅広・甲高）を調べるには？",
-            "answer": "足幅は足長と同じなぞった線から読み取り、記録ごとに表示します。足長と足幅をJISの表に照らしてワイズ（E・2Eなど）も推定し、巻き尺で測った足囲を入力すると、足幅の代わりに足囲でより詳しく調べられます。"
+            "question": "子どもの足はどのくらいで大きくなりますか？測る頻度は？",
+            "answer": "成長には個人差があるため、一定の伸び方と決めずに記録を見比べてください。リマインダーは生年月日を登録すると年齢に応じた間隔になり、登録しない場合は1・2・3・6か月ごとから選べます。"
           },
           {
-            "question": "足型を実寸で残すには？",
-            "answer": "なぞり書きで測ると、「足型」が実寸の形で無料で残ります。足型はすべて同じ縮尺で、古い記録から順に見比べたり、同じ足の2つの記録をかかとをそろえて重ねたりできます。保存したその場で「足型カードを送る」から家族に送れます。"
+            "question": "子どもの靴のつま先にどのくらい余裕があるか調べるには？",
+            "answer": "取り出した中敷きを紙になぞって撮ると、保存した足長との差から今のつま先のゆとりを確認できます。結果は目安なので、実際の履き心地も確かめてください。"
           },
           {
-            "question": "今の靴がきつくないか（中敷き・インソールで）確かめるには？",
-            "answer": "靴タブで靴を登録し、「中敷きを測る」をタップします。取り出した中敷きを紙になぞって撮ると、中敷きと足長の差から今のつま先のゆとりがわかります。10mm程度のゆとりは日本フットケア・足病医学会の目安です。Proでは「3か月後のゆとり」と「買い替えのめやす」も表示します。"
+            "question": "子どもの足の成長をiPhoneで記録するには？",
+            "answer": "左右別に測定を保存すると、成長グラフと足型で過去の記録を比べられます。成長カードを家族に共有することもできます。"
           },
           {
-            "question": "次に足を測る時期を教えてもらえますか？",
-            "answer": "設定の「リマインダー」をオンにしてください。生年月日を登録していれば学会の案内をもとに年齢に合った間隔で、なければ1・2・3・6ヶ月ごとから選んで、測り時に1回だけ通知します。"
+            "question": "足はかるは無料ですか？月額料金はかかりますか？",
+            "answer": "計測・記録・成長グラフ・足型・リマインダーは無料です。Proは任意の買い切りで、2026年11月18日時点の日本の価格は600円です。複数のお子さんの登録や同年齢のめやす帯などが追加されます。サブスクはなく、現在の価格はApp Storeに表示されます。"
           },
           {
-            "question": "測ったサイズで上履きやスニーカーを探すには？",
-            "answer": "「靴を探す」から、年齢と性別や用途に合わせて、測ったサイズで靴を探せます（日本。リンクは「PR」の広告を含みます）。家族の靴サイズは「マイサイズ帳」にまとまり、Siriやショートカットの「家族の靴サイズ」からも開けます。"
-          },
-          {
-            "question": "足はかるは無料ですか？Proでは何ができますか？",
-            "answer": "はい。計測・記録・成長グラフ・足型・なまえ1人分・くつメモ1足・リマインダー・成長カード・iCloud同期は無料で、バナー広告もサブスクリプションもありません。足はかる Proは1回だけの買い切りで、同年齢の分布とのくらべ・買い替えのめやす・2人目以降のなまえ・くつメモ何足でも・「ぜんぶ」の成長グラフ・お店で見せる表示が追加されます。価格はApp Storeでご確認ください。"
-          },
-          {
-            "question": "写真はどこかにアップロードされますか？",
-            "answer": "いいえ。写真の解析と計測は端末内で行い、開発者はデータを見られません。設定の「記録をiCloudに保存」をオンにしたときだけ、記録と足型を自分のiCloudにも保存し、同じApple Accountの別の端末でも見られます（線を入れた計測写真は端末内のみ）。「靴を探す」（日本）のリンクには「PR」の広告を含みます。"
+            "question": "足の写真はアップロードされますか？アカウントは必要ですか？",
+            "answer": "アカウント登録は不要で、写真の解析・計測は端末内です。iCloud同期をオンにした場合だけ、記録と足型を自分のiCloudの非公開領域にも保存します。線を入れた計測写真は端末内に残ります。「靴を探す」のリンクにはアフィリエイト広告を含みます。"
           }
+        ],
+        "why": [
+          "足はかるは、家にある紙とiPhoneで子どもの足を測り、成長の記録を残したい保護者のためのアプリです。A4かレターサイズの紙に足をなぞって撮ると、足長・足幅の点が自動で置かれ、必要なら手で直せます。",
+          "一度だけ測るなら定規や印刷した計測用紙も使えます。足はかるでは左右別の記録、実寸の形で残る足型、成長グラフ、測る時期のリマインダーがまとまり、前回との比較を続けやすくなります。",
+          "計測と記録は無料で、アカウントやバナー広告はありません。写真の解析は端末内で行い、自分のiCloudへの同期は任意です。靴サイズは目安なので、購入時には試し履きで合い方を確かめてください。"
+        ],
+        "comparison": {
+          "intro": "必要な道具、記録の残し方、測れる項目で比べられます。靴サイズの目安と実際の履き心地は、分けて確認しましょう。",
+          "checked_on": "2026-11-18",
+          "rows": [
+            {
+              "option": "iPhoneの「計測」",
+              "kind": "built-in",
+              "good_at": "カメラで身近な物の寸法を測り、四角形や2点間の距離を確認できます。",
+              "trade_off": "Appleは測定値を概算とし、0.5〜3m離れた輪郭のはっきりした物を推奨しています。足のサイズ換算や成長記録のための道具ではありません。"
+            },
+            {
+              "option": "紙と定規・メーカーの計測用紙",
+              "kind": "manual",
+              "good_at": "IFMEなどの印刷スケールや定規で、専用アプリなしでも家で測れます。",
+              "trade_off": "印刷の縮尺確認、数値の読み取り、記録は自分で行います。グラフやサイズ換算は別に用意します。"
+            },
+            {
+              "option": "ZOZOMAT / ZOZOMAT for Kids",
+              "kind": "app",
+              "good_at": "専用マットとスマホで、足長・足幅に加えて足囲などを3D計測し、対応する靴のサイズ選びに使えます。",
+              "trade_off": "マットの取り寄せが必要です。2024年8月の公式発表ではKids版のおすすめサイズ表示は4歳以上が対象で、結果はZOZOTOWNでの靴選びにつながります。"
+            },
+            {
+              "option": "Start-rite 3D Measure App",
+              "kind": "app",
+              "good_at": "印刷したグリッドを撮影して子どもの靴サイズを調べ、成長記録や靴選びに使えます。",
+              "trade_off": "グリッドを印刷する必要があり、メーカーの靴を購入するサービスと一体になっています。"
+            },
+            {
+              "option": "FitFoot / Feet Meter",
+              "kind": "app",
+              "good_at": "FitFootは紙で足長を測ってサイズ換算ができ、端末内処理・広告なし・ログインなしと記載されています。Feet Meterは足長・足幅と換算表に対応します。",
+              "trade_off": "FitFootには週額・年額・買い切りなどの有料プランがあります。Feet Meterは測定点を手で合わせる方式です。"
+            },
+            {
+              "option": "靴店での計測・フィッティング",
+              "kind": "manual",
+              "good_at": "測ってもらい、その場で試し履きして靴の合い方を確かめられます。",
+              "trade_off": "お店へ行く必要があります。足はかるでも購入前の試着をすすめています。"
+            }
+          ],
+          "summary": "たまに測るだけなら紙と定規、足囲まで調べたいなら3D計測、履き心地で決めるなら靴店が合います。家で測った足長・足幅を左右別に残し、グラフやリマインダーで続けたい人には足はかるが向いています。"
+        },
+        "best_for": [
+          "買い替えの前に、家で子どもの足長を確かめたい人。",
+          "左右の測定値や足型を残し、前回からの変化を見たい人。",
+          "測る時期を忘れがちで、アカウント登録なしで使いたい人。"
+        ],
+        "not_for": [
+          "足囲や甲の高さまで測りたいなら、巻き尺での手測りや店頭の足型計測が合います。",
+          "医療や競技用の靴のための精密な計測は、医療機関や専門店に相談してください。",
+          "試し履きしてその場で決めたいなら、靴店での計測とフィッティングが合います。",
+          "紙になぞる手順を省きたいなら、店頭の計測器を利用してください。"
         ]
       }
-    }
+    },
+    "why": [
+      "Foot Size Check is for parents who want to measure a child’s feet at home with paper and an iPhone, then keep a record as they grow. Trace each foot on Letter or A4 paper, photograph the sheet, and the app places the length and width points automatically; you can adjust them if needed.",
+      "A ruler or printed measuring guide can help with a single measurement. Foot Size Check adds separate left and right records, saved foot outlines, growth graphs and reminders, so you can compare with earlier measurements without making your own chart.",
+      "Measuring and recording are free, with no account or banner ads. Photo analysis happens on your device; syncing records to your own iCloud is optional. Shoe sizes are estimates, so check the fit by trying shoes on before buying."
+    ],
+    "comparison": {
+      "intro": "Compare the equipment, recording steps and type of measurement each method offers. Shoe-size estimates still need a fit check.",
+      "checked_on": "2026-11-18",
+      "rows": [
+        {
+          "option": "iPhone Measure",
+          "kind": "built-in",
+          "good_at": "Measure everyday objects with the camera, including rectangles and distances between two points.",
+          "trade_off": "Apple describes the results as approximate and recommends well-defined objects 0.5–3 metres away. It is not a foot-size or growth-record tool."
+        },
+        {
+          "option": "Paper and ruler / printed measuring guide",
+          "kind": "manual",
+          "good_at": "Measure at home using a printed scale or a ruler, without a dedicated app.",
+          "trade_off": "You check the print scale, read the measurement and record it yourself; charts and size conversions are separate steps."
+        },
+        {
+          "option": "Start-rite 3D Measure App",
+          "kind": "app",
+          "good_at": "Photograph a printed grid to get a child’s shoe size, track growth and shop for shoes.",
+          "trade_off": "The workflow requires printing the grid and is integrated with the manufacturer’s shoe shopping service."
+        },
+        {
+          "option": "FitFoot",
+          "kind": "app",
+          "good_at": "Measure foot length with paper and a phone, then convert sizes. Its listing states offline use with no ads, login or tracking.",
+          "trade_off": "The listing offers paid plans, including weekly and annual subscriptions and a lifetime purchase."
+        },
+        {
+          "option": "Feet Meter",
+          "kind": "app",
+          "good_at": "Use A4 or Letter paper and a wall to measure length and width, with children’s and adult size charts.",
+          "trade_off": "The measurement workflow requires manually aligning control points."
+        },
+        {
+          "option": "In-store measuring and fitting",
+          "kind": "manual",
+          "good_at": "Have feet measured and try shoes on during the same visit.",
+          "trade_off": "Requires a visit to a shoe shop; Foot Size Check also recommends trying shoes on before buying."
+        }
+      ],
+      "summary": "A ruler or printed guide is useful for an occasional measurement, and a shoe shop lets you check the fit in person. Choose Foot Size Check when you want paper-based measurement plus left and right records, growth graphs and reminders at home."
+    },
+    "best_for": [
+      "Parents checking foot length before choosing a child’s next pair of shoes.",
+      "Families keeping separate left and right measurements and comparing growth over time.",
+      "People who want measurement reminders and no app account."
+    ],
+    "not_for": [
+      "For foot girth or instep measurements, use a tape measure or an in-store measuring service.",
+      "For medical or specialist sports footwear measurements, consult a qualified clinician or specialist fitter.",
+      "To decide by trying shoes on immediately, use an in-store fitting service.",
+      "If you do not want to trace on paper, use a shop’s measuring equipment instead."
+    ]
   },
   "6789844298": {
     "slug": "foodsnapquest",

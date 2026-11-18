@@ -86,7 +86,8 @@ LIGHT_LOCALES = {
     "ko": {"country": "kr", "lang": "ko_kr", "html": "ko", "store_lang": "KO"},
 }
 HTML_LANG = {code: value["html"] for code, value in LIGHT_LOCALES.items()}
-LANGUAGE_NAMES = {"en": "English", "ja": "日本語", "zh-hans": "简体中文", "zh-hant": "繁體中文", "ko": "한국어"}
+MANUAL_LOCALES = {"es", "de", "fr"}
+LANGUAGE_NAMES = {"en": "English", "ja": "日本語", "es": "Español", "de": "Deutsch", "fr": "Français", "zh-hans": "简体中文", "zh-hant": "繁體中文", "ko": "한국어"}
 
 CATEGORY_DEFINITIONS = {
     "photo-memory": {
@@ -276,6 +277,237 @@ UI_STRINGS.update({
 for _code, _extra in {'en': {'chip_free': 'Free download', 'chip_iphone': 'iPhone', 'chip_both': 'iPhone & iPad', 'chip_languages': '{n} languages', 'related': 'More apps in this category', 'breadcrumb': 'Breadcrumb', 'highlights': 'At a glance'}, 'ja': {'chip_free': 'ダウンロード無料', 'chip_iphone': 'iPhone', 'chip_both': 'iPhone・iPad', 'chip_languages': '{n}言語に対応', 'related': '同じカテゴリのアプリ', 'breadcrumb': 'パンくずリスト', 'highlights': 'ひと目でわかるポイント'}, 'zh-hans': {'chip_free': '免费下载', 'chip_iphone': 'iPhone', 'chip_both': 'iPhone 和 iPad', 'chip_languages': '支持 {n} 种语言', 'related': '同类应用', 'breadcrumb': '导航路径', 'highlights': '要点'}, 'zh-hant': {'chip_free': '免費下載', 'chip_iphone': 'iPhone', 'chip_both': 'iPhone 與 iPad', 'chip_languages': '支援 {n} 種語言', 'related': '同類 App', 'breadcrumb': '導覽路徑', 'highlights': '重點'}, 'ko': {'chip_free': '무료 다운로드', 'chip_iphone': 'iPhone', 'chip_both': 'iPhone·iPad', 'chip_languages': '{n}개 언어 지원', 'related': '같은 카테고리의 앱', 'breadcrumb': '이동 경로', 'highlights': '한눈에 보기'}}.items():
     UI_STRINGS[_code].update(_extra)
 
+# Hand-written locales use the full detail-page template.
+UI_STRINGS.update({'es': {'official_site': 'Sitio oficial',
+        'overview': 'Descripción general',
+        'audience': 'Para quién es',
+        'features': 'Funciones principales',
+        'usage': 'Cómo usarla',
+        'pricing': 'Precio',
+        'pricing_note': 'El precio y la disponibilidad pueden variar según el país y cambiar en el App Store.',
+        'privacy': 'Privacidad',
+        'screenshots': 'Capturas de pantalla',
+        'faq': 'Preguntas frecuentes',
+        'app_store': 'App Store',
+        'view_on_app_store': 'Ver en el App Store',
+        'open_on_app_store': 'Abrir {name} en el App Store',
+        'all_apps': 'Todas las apps de ZEC',
+        'last_updated': 'Última actualización',
+        'details': 'Detalles',
+        'app_store_link': 'App Store →',
+        'apps_nav': 'Apps',
+        'apps_heading': 'Apps',
+        'home_nav': 'Inicio',
+        'apps_index_title': 'Apps de ZEC',
+        'apps_index_description': 'Apps para iPhone de ZEC Inc. con contenido en español: herramientas sencillas '
+                                  'para el día a día.',
+        'icon_alt': 'Icono de {name}',
+        'screenshot_alt': 'Captura de pantalla de {name}',
+        'chip_free': 'Descarga gratuita',
+        'chip_iphone': 'iPhone',
+        'chip_both': 'iPhone y iPad',
+        'chip_languages': '{n} idiomas',
+        'related': 'Más apps de esta categoría',
+        'breadcrumb': 'Ruta de navegación',
+        'highlights': 'De un vistazo'},
+ 'de': {'official_site': 'Offizielle Website',
+        'overview': 'Überblick',
+        'audience': 'Für wen die App geeignet ist',
+        'features': 'Hauptfunktionen',
+        'usage': 'So funktioniert es',
+        'pricing': 'Preis',
+        'pricing_note': 'Preis und Verfügbarkeit können je nach Land variieren und sich im App Store ändern.',
+        'privacy': 'Datenschutz',
+        'screenshots': 'Screenshots',
+        'faq': 'Häufige Fragen',
+        'app_store': 'App Store',
+        'view_on_app_store': 'Im App Store ansehen',
+        'open_on_app_store': '{name} im App Store öffnen',
+        'all_apps': 'Alle ZEC-Apps',
+        'last_updated': 'Zuletzt aktualisiert',
+        'details': 'Details',
+        'app_store_link': 'App Store →',
+        'apps_nav': 'Apps',
+        'apps_heading': 'Apps',
+        'home_nav': 'Startseite',
+        'apps_index_title': 'ZEC-Apps',
+        'apps_index_description': 'iPhone-Apps von ZEC Inc. mit deutschen Inhalten: einfache Werkzeuge für den '
+                                  'Alltag.',
+        'icon_alt': 'App-Symbol von {name}',
+        'screenshot_alt': 'Screenshot von {name}',
+        'chip_free': 'Kostenloser Download',
+        'chip_iphone': 'iPhone',
+        'chip_both': 'iPhone und iPad',
+        'chip_languages': '{n} Sprachen',
+        'related': 'Weitere Apps in dieser Kategorie',
+        'breadcrumb': 'Brotkrumennavigation',
+        'highlights': 'Auf einen Blick'},
+ 'fr': {'official_site': 'Site officiel',
+        'overview': 'Vue d’ensemble',
+        'audience': 'À qui s’adresse cette app',
+        'features': 'Fonctionnalités principales',
+        'usage': 'Mode d’emploi',
+        'pricing': 'Tarif',
+        'pricing_note': 'Le prix et la disponibilité peuvent varier selon le pays et changer sur l’App Store.',
+        'privacy': 'Confidentialité',
+        'screenshots': 'Captures d’écran',
+        'faq': 'Questions fréquentes',
+        'app_store': 'App Store',
+        'view_on_app_store': 'Voir sur l’App Store',
+        'open_on_app_store': 'Ouvrir {name} sur l’App Store',
+        'all_apps': 'Toutes les apps ZEC',
+        'last_updated': 'Dernière mise à jour',
+        'details': 'Détails',
+        'app_store_link': 'App Store →',
+        'apps_nav': 'Apps',
+        'apps_heading': 'Apps',
+        'home_nav': 'Accueil',
+        'apps_index_title': 'Apps ZEC',
+        'apps_index_description': 'Apps iPhone de ZEC Inc. avec du contenu en français : des outils simples pour '
+                                  'le quotidien.',
+        'icon_alt': 'Icône de l’app {name}',
+        'screenshot_alt': 'Capture d’écran de {name}',
+        'chip_free': 'Téléchargement gratuit',
+        'chip_iphone': 'iPhone',
+        'chip_both': 'iPhone et iPad',
+        'chip_languages': '{n} langues',
+        'related': 'Autres apps de cette catégorie',
+        'breadcrumb': 'Fil d’Ariane',
+        'highlights': 'En un coup d’œil'}})
+for _code in MANUAL_LOCALES:
+    UI_STRINGS[_code]["language_names"] = LANGUAGE_NAMES
+
+for _code, _labels in {'en': {'why': 'Why This App',
+        'comparison': 'Comparison',
+        'suitability': 'Who It Suits',
+        'best_for': 'Best for',
+        'not_for': 'Not for',
+        'option': 'Option',
+        'good_at': 'Good at',
+        'trade_off': 'Trade-off',
+        'checked_on': 'Information as of {year}-{month:02d}-{day:02d}'},
+ 'ja': {'why': 'なぜ要るか',
+        'comparison': 'ほかの手段との比較',
+        'suitability': '向いている人／向いていない人',
+        'best_for': '向いている人',
+        'not_for': '向いていない人',
+        'option': '手段',
+        'good_at': '得意なこと',
+        'trade_off': '注意点',
+        'checked_on': '{year}年{month}月{day}日時点の情報'},
+ 'es': {'why': 'Por qué esta app',
+        'comparison': 'Comparación',
+        'suitability': 'Para quién es adecuada',
+        'best_for': 'Ideal para',
+        'not_for': 'No es adecuada para',
+        'option': 'Opción',
+        'good_at': 'Puntos fuertes',
+        'trade_off': 'Limitaciones',
+        'checked_on': 'Información a fecha de {day:02d}/{month:02d}/{year}'},
+ 'de': {'why': 'Warum diese App',
+        'comparison': 'Vergleich',
+        'suitability': 'Für wen sie geeignet ist',
+        'best_for': 'Geeignet für',
+        'not_for': 'Nicht geeignet für',
+        'option': 'Option',
+        'good_at': 'Stärken',
+        'trade_off': 'Einschränkungen',
+        'checked_on': 'Stand: {day:02d}.{month:02d}.{year}'},
+ 'fr': {'why': 'Pourquoi cette app',
+        'comparison': 'Comparaison',
+        'suitability': 'À qui elle convient',
+        'best_for': 'Idéale pour',
+        'not_for': 'Ne convient pas à',
+        'option': 'Option',
+        'good_at': 'Points forts',
+        'trade_off': 'Limites',
+        'checked_on': 'Informations au {day:02d}/{month:02d}/{year}'},
+ 'zh-hans': {'why': '为什么需要这款应用',
+             'comparison': '比较',
+             'suitability': '适合与不适合的人群',
+             'best_for': '适合人群',
+             'not_for': '不适合人群',
+             'option': '方式',
+             'good_at': '优势',
+             'trade_off': '局限',
+             'checked_on': '信息截至{year}年{month}月{day}日'},
+ 'zh-hant': {'why': '為什麼需要這款 App',
+             'comparison': '比較',
+             'suitability': '適合與不適合的人群',
+             'best_for': '適合對象',
+             'not_for': '不適合對象',
+             'option': '方式',
+             'good_at': '優勢',
+             'trade_off': '限制',
+             'checked_on': '資訊截至{year}年{month}月{day}日'},
+ 'ko': {'why': '이 앱이 필요한 이유',
+        'comparison': '비교',
+        'suitability': '적합한 사용자와 적합하지 않은 사용자',
+        'best_for': '추천 대상',
+        'not_for': '추천하지 않는 대상',
+        'option': '방법',
+        'good_at': '장점',
+        'trade_off': '제약',
+        'checked_on': '{year}년 {month}월 {day}일 기준 정보'}}.items():
+    UI_STRINGS[_code].update(_labels)
+
+for _slug, _translations in {'photo-memory': {'es': {'title': 'Apps de fotos y recuerdos',
+                         'description': 'Apps sencillas para iPhone que facilitan guardar fotos, recuerdos y '
+                                        'registros visuales del día a día.'},
+                  'de': {'title': 'Foto- und Erinnerungs-Apps',
+                         'description': 'Einfache iPhone-Apps zum Festhalten alltäglicher Fotos, Erinnerungen und '
+                                        'visueller Aufzeichnungen.'},
+                  'fr': {'title': 'Apps photo et souvenirs',
+                         'description': 'Des apps iPhone simples pour conserver les photos, les souvenirs et les '
+                                        'traces visuelles du quotidien.'}},
+ 'travel': {'es': {'title': 'Apps de viaje',
+                   'description': 'Pequeñas herramientas para preparar el equipaje, consultar frases y horarios y '
+                                  'hacer comprobaciones durante un viaje.'},
+            'de': {'title': 'Reise-Apps',
+                   'description': 'Kleine iPhone-Werkzeuge für Gepäck, Redewendungen, Zeitpläne und schnelle '
+                                  'Abfragen unterwegs.'},
+            'fr': {'title': 'Apps de voyage',
+                   'description': 'De petits outils pour les bagages, les expressions, les horaires et les '
+                                  'vérifications en voyage.'}},
+ 'tap-tools': {'es': {'title': 'Herramientas de un toque',
+                      'description': 'Apps centradas en registros rápidos y pequeñas acciones cotidianas con unos '
+                                     'pocos toques.'},
+               'de': {'title': 'Tools zum Antippen',
+                      'description': 'Apps für schnelle Einträge und kleine, wiederkehrende Aufgaben mit wenigen '
+                                     'Fingertipps.'},
+               'fr': {'title': 'Outils en un geste',
+                      'description': 'Des apps pour les enregistrements rapides et les petites actions répétées '
+                                     'au quotidien.'}},
+ 'widgets': {'es': {'title': 'Apps con widgets',
+                    'description': 'Apps de ZEC para consultar información y continuar tareas desde la pantalla '
+                                   'de inicio.'},
+             'de': {'title': 'Apps mit Widgets',
+                    'description': 'ZEC-Apps zum schnellen Nachsehen und Fortsetzen von Aufgaben auf dem '
+                                   'Home-Bildschirm.'},
+             'fr': {'title': 'Apps avec widgets',
+                    'description': 'Des apps ZEC pour consulter des informations et poursuivre des tâches depuis '
+                                   'l’écran d’accueil.'}},
+ 'family': {'es': {'title': 'Apps para la familia',
+                   'description': 'Apps para las rutinas del hogar, los registros familiares y los preparativos '
+                                  'compartidos.'},
+            'de': {'title': 'Familien-Apps',
+                   'description': 'Apps für Haushaltsroutinen, Familienaufzeichnungen und gemeinsame '
+                                  'Vorbereitungen.'},
+            'fr': {'title': 'Apps pour la famille',
+                   'description': 'Des apps pour les routines du foyer, les souvenirs familiaux et les '
+                                  'préparatifs partagés.'}},
+ 'productivity': {'es': {'title': 'Apps de productividad',
+                         'description': 'Apps para notas, planificación, limpieza de enlaces, seguimiento y '
+                                        'pequeñas tareas.'},
+                  'de': {'title': 'Produktivitäts-Apps',
+                         'description': 'iPhone-Apps für Notizen, Planung, bereinigte Links, Protokolle und '
+                                        'kleine Aufgaben.'},
+                  'fr': {'title': 'Apps de productivité',
+                         'description': 'Des apps iPhone pour les notes, la planification, le nettoyage de liens, '
+                                        'le suivi et les petites tâches.'}}}.items():
+    CATEGORY_DEFINITIONS[_slug].update(_translations)
+
+
 APP_OVERRIDE_FIELDS = {
     "slug",
     "site_url",  # optional: the app's own site (adds a button next to the App Store link)
@@ -295,8 +527,13 @@ APP_OVERRIDE_FIELDS = {
     "screenshots",
     "categories",
     "locales",
+    "why",
+    "comparison",
+    "best_for",
+    "not_for",
 }
 LOCALE_OVERRIDE_FIELDS = APP_OVERRIDE_FIELDS - {"slug", "categories", "locales"}
+OPTIONAL_DETAIL_FIELDS = {"why", "comparison", "best_for", "not_for"}
 
 
 CHANGED_PAGES: set[Path] = set()
@@ -510,9 +747,11 @@ def validate_override_object(label: str, value: dict[str, Any], allowed: set[str
         if field_name in {"slug", "name", "tagline", "short_description", "meta_description", "pricing", "privacy"}:
             if not isinstance(field_value, str):
                 ctx.warn(f"{label}.{field_name} must be a string.")
-        elif field_name in {"overview", "audience", "target_users", "features", "usage", "how_to_use", "screenshots", "categories"}:
+        elif field_name in {"overview", "audience", "target_users", "features", "usage", "how_to_use", "screenshots", "categories", "why", "best_for", "not_for"}:
             if not isinstance(field_value, list) or not all(isinstance(item, str) for item in field_value):
                 ctx.warn(f"{label}.{field_name} must be a list of strings.")
+        elif field_name == "comparison":
+            validate_comparison(f"{label}.comparison", field_value, ctx)
         elif field_name == "faq":
             if not isinstance(field_value, list):
                 ctx.warn(f"{label}.faq must be a list of question/answer objects.")
@@ -520,6 +759,39 @@ def validate_override_object(label: str, value: dict[str, Any], allowed: set[str
                 for index, item in enumerate(field_value):
                     if not isinstance(item, dict) or not isinstance(item.get("question"), str) or not isinstance(item.get("answer"), str):
                         ctx.warn(f"{label}.faq[{index}] must contain string question and answer fields.")
+
+
+def validate_comparison(label: str, value: Any, ctx: BuildContext) -> bool:
+    before = len(ctx.warnings)
+    if not isinstance(value, dict):
+        ctx.warn(f"{label} must be an object.")
+        return False
+    for key in ("intro", "checked_on", "summary"):
+        if not isinstance(value.get(key), str):
+            ctx.warn(f"{label}.{key} must be a string.")
+    checked_on = value.get("checked_on")
+    if isinstance(checked_on, str):
+        try:
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", checked_on):
+                raise ValueError
+            datetime.strptime(checked_on, "%Y-%m-%d")
+        except ValueError:
+            ctx.warn(f"{label}.checked_on must be a valid YYYY-MM-DD date.")
+    rows = value.get("rows")
+    if not isinstance(rows, list):
+        ctx.warn(f"{label}.rows must be a list of objects.")
+    else:
+        for index, row in enumerate(rows):
+            row_label = f"{label}.rows[{index}]"
+            if not isinstance(row, dict):
+                ctx.warn(f"{row_label} must be an object.")
+                continue
+            for key in ("option", "good_at", "trade_off"):
+                if not isinstance(row.get(key), str):
+                    ctx.warn(f"{row_label}.{key} must be a string.")
+            if row.get("kind") not in ("built-in", "app", "web", "manual"):
+                ctx.warn(f"{row_label}.kind must be built-in, app, web, or manual.")
+    return len(ctx.warnings) == before
 
 
 def app_override_for(app: dict[str, Any], overrides: dict[str, Any]) -> dict[str, Any]:
@@ -538,10 +810,27 @@ def localized_override(app: dict[str, Any], overrides: dict[str, Any], locale: s
     app_override = app_override_for(app, overrides)
     locales = app_override.get("locales")
     if isinstance(locales, dict) and isinstance(locales.get(locale), dict):
-        merged = {key: value for key, value in app_override.items() if key != "locales"}
+        merged = {key: value for key, value in app_override.items() if key != "locales" and key not in OPTIONAL_DETAIL_FIELDS}
         merged.update(locales[locale])
         return merged
     return app_override
+
+
+def has_manual_content(value: Any) -> bool:
+    """Empty locale blocks and metadata alone must not create translated pages."""
+    if not isinstance(value, dict):
+        return False
+    copy_fields = LOCALE_OVERRIDE_FIELDS - {"site_url", "screenshots"}
+    return any(
+        (isinstance(item, str) and bool(item.strip()))
+        or (isinstance(item, list) and any(
+            (isinstance(entry, str) and bool(entry.strip()))
+            or (isinstance(entry, dict) and bool(entry.get("question")) and bool(entry.get("answer")))
+            for entry in item
+        ))
+        or (key == "comparison" and isinstance(item, dict) and bool(item.get("rows")))
+        for key, item in value.items() if key in copy_fields
+    )
 
 
 def app_locales(app: dict[str, Any], overrides: dict[str, Any]) -> list[str]:
@@ -553,6 +842,7 @@ def app_locales(app: dict[str, Any], overrides: dict[str, Any]) -> list[str]:
             locale
             for locale, value in locales.items()
             if locale != DEFAULT_LOCALE and isinstance(value, dict) and locale in UI_STRINGS
+            and (locale not in MANUAL_LOCALES or has_manual_content(value))
         )
     light = [code for code in LIGHT_LOCALES if code in app.get("l10n", {})]
     return [DEFAULT_LOCALE] + extra + light
@@ -566,6 +856,7 @@ def site_locales(overrides: dict[str, Any]) -> list[str]:
                 locale
                 for locale, locale_value in value["locales"].items()
                 if locale != DEFAULT_LOCALE and isinstance(locale_value, dict) and locale in UI_STRINGS
+                and (locale not in MANUAL_LOCALES or has_manual_content(locale_value))
             )
     return sorted(found)
 
@@ -883,6 +1174,10 @@ def detail_content(app: dict[str, Any], overrides: dict[str, Any], ctx: BuildCon
         "faq": faq,
         "screenshots": screenshots,
         "meta_description": meta_description,
+        "why": override_list(override.get("why"), []),
+        "comparison": override.get("comparison") if validate_comparison("comparison", override.get("comparison"), BuildContext()) else None,
+        "best_for": override_list(override.get("best_for"), []),
+        "not_for": override_list(override.get("not_for"), []),
     }
 
 
@@ -912,7 +1207,7 @@ def html_paragraphs(items: list[str]) -> str:
     return "\n".join(f"          <p>{html.escape(item)}</p>" for item in items)
 
 
-APP_STORE_STOREFRONTS = {"ja": "jp", **{code: spec["country"] for code, spec in LIGHT_LOCALES.items()}}
+APP_STORE_STOREFRONTS = {"ja": "jp", **{code: code for code in MANUAL_LOCALES}, **{code: spec["country"] for code, spec in LIGHT_LOCALES.items()}}
 
 
 def app_store_url(app: dict[str, Any], locale: str = DEFAULT_LOCALE) -> str:
@@ -1283,6 +1578,66 @@ def render_related(app: dict[str, Any], overrides: dict[str, Any], locale: str, 
 """
 
 
+def render_why(content: dict[str, Any], strings: dict[str, Any]) -> str:
+    if not content["why"]:
+        return ""
+    return f'''    <section class="block prose" aria-labelledby="why-heading">
+      <h2 id="why-heading">{html.escape(strings['why'])}</h2>
+{html_paragraphs(content['why'])}
+    </section>
+'''
+
+
+def render_comparison(content: dict[str, Any], strings: dict[str, Any]) -> str:
+    comparison = content["comparison"]
+    if not comparison or not comparison["rows"]:
+        return ""
+    rows = []
+    for row in comparison["rows"]:
+        cells = [f'          <th scope="row" role="rowheader">{html.escape(row["option"])}</th>']
+        for key in ("good_at", "trade_off"):
+            cells.append(
+                f'          <td role="cell"><span class="comparison-label" aria-hidden="true">'
+                f'{html.escape(strings[key])}</span>{html.escape(row[key])}</td>'
+            )
+        rows.append('        <tr role="row">\n' + '\n'.join(cells) + '\n        </tr>')
+    date = datetime.strptime(comparison["checked_on"], "%Y-%m-%d")
+    date_label = strings["checked_on"].format(year=date.year, month=date.month, day=date.day)
+    headings = ''.join(f'<th scope="col" role="columnheader">{html.escape(strings[key])}</th>' for key in ("option", "good_at", "trade_off"))
+    return f'''
+    <section class="block comparison" aria-labelledby="comparison-heading">
+      <h2 id="comparison-heading">{html.escape(strings['comparison'])}</h2>
+      <p>{html.escape(comparison['intro'])}</p>
+      <table class="comparison-table" role="table" aria-labelledby="comparison-heading">
+        <thead role="rowgroup"><tr role="row">{headings}</tr></thead>
+        <tbody role="rowgroup">
+{chr(10).join(rows)}
+        </tbody>
+      </table>
+      <p>{html.escape(comparison['summary'])}</p>
+      <p class="meta"><time datetime="{comparison['checked_on']}">{html.escape(date_label)}</time></p>
+    </section>
+'''
+
+
+def render_suitability(content: dict[str, Any], strings: dict[str, Any]) -> str:
+    groups = []
+    for key in ("best_for", "not_for"):
+        if content[key]:
+            groups.append(f'''      <h3>{html.escape(strings[key])}</h3>
+      <ul class="audience-grid">
+{html_list(content[key])}
+      </ul>''')
+    if not groups:
+        return ""
+    return f'''
+    <section class="block suitability" aria-labelledby="suitability-heading">
+      <h2 id="suitability-heading">{html.escape(strings['suitability'])}</h2>
+{chr(10).join(groups)}
+    </section>
+'''
+
+
 def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: BuildContext, locale: str = "en") -> str:
     content = detail_content(app, overrides, ctx, locale)
     strings = ui_strings(locale)
@@ -1311,8 +1666,22 @@ def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: Buil
         overview_html = f'      <p class="lead-para">{html.escape(overview[0])}</p>\n' + "\n".join(
             f"      <p>{html.escape(item)}</p>" for item in overview[1:]
         )
+    intro_section = render_why(content, strings) if content["why"] else f'''    <section class="block prose">
+      <h2>{html.escape(str(strings['overview']))}</h2>
+{overview_html}
+    </section>
+'''
     features_html = "\n".join(f'        <li>{CHECK_SVG}<span>{emphasize_lead(item)}</span></li>' for item in content["features"])
     audience_html = "\n".join(f"        <li>{html.escape(item)}</li>" for item in content["audience"])
+    audience_section = f'''    <section class="block">
+      <h2>{html.escape(str(strings['audience']))}</h2>
+      <ul class="audience-grid">
+{audience_html}
+      </ul>
+    </section>
+'''
+    new_sections = any(content[key] for key in OPTIONAL_DETAIL_FIELDS)
+    suitability_section = render_suitability(content, strings)
     usage_html = "\n".join(f"        <li><span>{html.escape(item)}</span></li>" for item in content["usage"])
     faq_html = "\n".join(
         f"""        <details>
@@ -1339,11 +1708,7 @@ def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: Buil
       </div>
     </section>
 {render_screenshot_strip(content['screenshots'], screenshot_alt, str(strings['screenshots']))}
-    <section class="block prose">
-      <h2>{html.escape(str(strings['overview']))}</h2>
-{overview_html}
-    </section>
-
+{intro_section}
     <section class="block">
       <h2>{html.escape(str(strings['features']))}</h2>
       <ul class="feature-grid">
@@ -1351,20 +1716,14 @@ def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: Buil
       </ul>
     </section>
 
-    <section class="block">
-      <h2>{html.escape(str(strings['audience']))}</h2>
-      <ul class="audience-grid">
-{audience_html}
-      </ul>
-    </section>
-
+{'' if new_sections else audience_section}
     <section class="block">
       <h2>{html.escape(str(strings['usage']))}</h2>
       <ol class="steps">
 {usage_html}
       </ol>
     </section>
-
+{render_comparison(content, strings)}{(suitability_section or audience_section) if new_sections else ''}
     <div class="info-pair">
       <section class="info-card">
         <h2>{html.escape(str(strings['pricing']))}</h2>
@@ -1486,7 +1845,9 @@ def render_app_mini_card(app: dict[str, Any], overrides: dict[str, Any], locale:
     icon_alt = str(strings["icon_alt"]).format(name=localized_name)
     img = icon_url(app)
     icon = f'<img class="mini-icon" src="{html.escape(img, quote=True)}" alt="{html.escape(icon_alt, quote=True)}" loading="lazy">' if img else ""
-    detail_href = html.escape(page_href(app, locale), quote=True)
+    # An app without a page in this language (e.g. a new app before its ja text is written) links to the English page.
+    link_locale = locale if locale in app_locales(app, overrides) else DEFAULT_LOCALE
+    detail_href = html.escape(page_href(app, link_locale), quote=True)
     return f"""        <article class="app-mini-card">
           {icon}
           <h2><a href="{detail_href}">{html.escape(localized_name)}</a></h2>
@@ -1670,19 +2031,23 @@ def write_category_pages(
         category_dir = APPS_DIR / slug
         category_dir.mkdir(parents=True, exist_ok=True)
         (category_dir / CATEGORY_MARKER).write_text("Generated by scripts/update_apps_page.py\n", encoding="utf-8")
-        page_locales = [DEFAULT_LOCALE] + extra_locales
+        page_locales = [DEFAULT_LOCALE] + [
+            locale for locale in extra_locales
+            if locale not in MANUAL_LOCALES or any(locale in app_locales(app, overrides) for app in apps_for_category)
+        ]
         write_page(
             category_dir / "index.html",
             render_category_page(slug, apps_for_category, overrides, DEFAULT_LOCALE, page_locales),
         )
         generated_urls.append(category_url(slug))
-        remove_stale_locale_dirs(category_dir, set(extra_locales))
-        for locale in extra_locales:
+        remove_stale_locale_dirs(category_dir, set(page_locales[1:]))
+        for locale in page_locales[1:]:
+            locale_apps = [app for app in apps_for_category if locale in app_locales(app, overrides)] if locale in MANUAL_LOCALES else apps_for_category
             locale_dir = category_dir / locale
             locale_dir.mkdir(parents=True, exist_ok=True)
             write_page(
                 locale_dir / "index.html",
-                render_category_page(slug, apps_for_category, overrides, locale, page_locales),
+                render_category_page(slug, locale_apps, overrides, locale, page_locales),
             )
             generated_urls.append(category_url(slug, locale))
     return generated_urls
@@ -1693,12 +2058,20 @@ def light_index_locales(apps: list[dict[str, Any]]) -> list[str]:
 
 
 def write_locale_indexes(apps: list[dict[str, Any]], overrides: dict[str, Any], locales: list[str]) -> list[str]:
-    extra_locales = [locale for locale in locales if locale != DEFAULT_LOCALE] + light_index_locales(apps)
+    extra_locales = [
+        locale for locale in locales if locale != DEFAULT_LOCALE
+        and (locale not in MANUAL_LOCALES or any(locale in app_locales(app, overrides) for app in apps))
+    ] + light_index_locales(apps)
     remove_generated_dirs(set(extra_locales), LOCALE_INDEX_MARKER)
     generated_urls: list[str] = []
     page_locales = [DEFAULT_LOCALE] + extra_locales
     for locale in extra_locales:
-        locale_apps = [app for app in apps if locale in app.get("l10n", {})] if locale in LIGHT_LOCALES else apps
+        if locale in LIGHT_LOCALES:
+            locale_apps = [app for app in apps if locale in app.get("l10n", {})]
+        elif locale in MANUAL_LOCALES:
+            locale_apps = [app for app in apps if locale in app_locales(app, overrides)]
+        else:
+            locale_apps = apps
         locale_dir = APPS_DIR / locale
         locale_dir.mkdir(parents=True, exist_ok=True)
         (locale_dir / LOCALE_INDEX_MARKER).write_text("Generated by scripts/update_apps_page.py\n", encoding="utf-8")
@@ -1718,6 +2091,19 @@ def update_apps_index(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> 
     if not marker_pattern.search(html_text):
         raise RuntimeError("Apps page markers were not found. Refusing to overwrite the page.")
     updated = marker_pattern.sub(render_cards(apps, overrides), html_text, count=1)
+    # Keep the hand-written shell, updating only the new locale links we own.
+    updated = re.sub(r'^.* data-app-manual-locale="(?:es|de|fr)"[^\n]*\n', '', updated, flags=re.MULTILINE)
+    manual_locales = [code for code in sorted(MANUAL_LOCALES) if any(code in app_locales(app, overrides) for app in apps)]
+    alternate_links = ''.join(
+        f'  <link rel="alternate" hreflang="{code}" href="{apps_index_url(code)}" data-app-manual-locale="{code}">\n'
+        for code in manual_locales
+    )
+    nav_links = ''.join(
+        f'        <a href="{apps_index_href(code)}" lang="{code}" data-app-manual-locale="{code}">{LANGUAGE_NAMES[code]}</a>\n'
+        for code in manual_locales
+    )
+    updated = updated.replace('</head>', alternate_links + '</head>', 1)
+    updated = updated.replace('      </nav>', nav_links + '      </nav>', 1)
     if updated != html_text:
         CHANGED_PAGES.add(APPS_PAGE)
         APPS_PAGE.write_text(updated, encoding="utf-8", newline="\n")
@@ -1834,7 +2220,12 @@ def write_llms(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> None:
         "## Apps",
     ]
     for app in apps:
-        lines.append(f"- {app_name(app)}: {short_description(app, overrides)} https://zec-inc.jp/apps/{app['slug']}/")
+        summary = short_description(app, overrides)
+        why = override_list(app_override_for(app, overrides).get("why"), [])
+        if why:
+            first_sentence = re.split(r"(?<=[.!?。！？])\s*", clean_text(why[0]), maxsplit=1)[0]
+            summary += " " + truncate_text(first_sentence, 110)
+        lines.append(f"- {app_name(app)}: {summary} https://zec-inc.jp/apps/{app['slug']}/")
     lines.extend(
         [
             "",
@@ -1845,7 +2236,8 @@ def write_llms(apps: list[dict[str, Any]], overrides: dict[str, Any]) -> None:
         definition = category_definition(slug, DEFAULT_LOCALE)
         lines.append(f"- {definition['title']}: https://zec-inc.jp/apps/{slug}/")
     lines.extend(["", "## Localized App Indexes"])
-    for locale in ["ja"] + light_index_locales(apps):
+    manual_locales = [code for code in sorted(MANUAL_LOCALES) if any(code in app_locales(app, overrides) for app in apps)]
+    for locale in ["ja"] + manual_locales + light_index_locales(apps):
         lines.append(f"- {LANGUAGE_NAMES[locale]}: {apps_index_url(locale)}")
     lines.extend(
         [

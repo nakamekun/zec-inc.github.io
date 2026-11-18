@@ -1,0 +1,71 @@
+[
+  {
+    "trackId": "6780724192",
+    "slug": "ocr-copy",
+    "trackName": "OCR Copy",
+    "description": "A simple tool for a focused task. Choose an item to get started.",
+    "trackViewUrl": "https://apps.apple.com/us/app/id6780724192",
+    "screenshotUrls": [
+      "https://example.invalid/screenshot.png"
+    ],
+    "screenshotUrlsJa": [
+      "https://example.invalid/screenshot-ja.png"
+    ],
+    "languages": [
+      "EN",
+      "JA"
+    ],
+    "price": 0,
+    "currency": "USD",
+    "formattedPrice": "Free",
+    "version": "1.0",
+    "currentVersionReleaseDate": "2026-11-18T00:00:00Z",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "trackId": "6789844290",
+    "slug": "foot-size-check",
+    "trackName": "Foot Size Check",
+    "description": "A simple tool for a focused task. Choose an item to get started.",
+    "trackViewUrl": "https://apps.apple.com/us/app/id6789844290",
+    "screenshotUrls": [
+      "https://example.invalid/screenshot.png"
+    ],
+    "screenshotUrlsJa": [
+      "https://example.invalid/screenshot-ja.png"
+    ],
+    "languages": [
+      "EN",
+      "JA"
+    ],
+    "price": 0,
+    "currency": "USD",
+    "formattedPrice": "Free",
+    "version": "1.0",
+    "currentVersionReleaseDate": "2026-11-18T00:00:00Z",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "trackId": "6789844137",
+    "slug": "blur-before-share",
+    "trackName": "Blur Before Share",
+    "description": "A simple tool for a focused task. Choose an item to get started.",
+    "trackViewUrl": "https://apps.apple.com/us/app/id6789844137",
+    "screenshotUrls": [
+      "https://example.invalid/screenshot.png"
+    ],
+    "screenshotUrlsJa": [
+      "https://example.invalid/screenshot-ja.png"
+    ],
+    "languages": [
+      "EN",
+      "JA"
+    ],
+    "price": 0,
+    "currency": "USD",
+    "formattedPrice": "Free",
+    "version": "1.0",
+    "currentVersionReleaseDate": "2026-11-18T00:00:00Z",
+    "minimumOsVersion": "17.0"
+  }
+]

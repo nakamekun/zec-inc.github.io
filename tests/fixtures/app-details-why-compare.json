@@ -1,0 +1,338 @@
+{
+  "6780724192": {
+    "slug": "ocr-copy",
+    "name": "OCR Copy",
+    "short_description": "Copy text from a photo.",
+    "overview": [
+      "Fixture overview."
+    ],
+    "features": [
+      "Copy: Select text."
+    ],
+    "usage": [
+      "Choose a photo."
+    ],
+    "pricing": "See App Store.",
+    "privacy": "See privacy labels.",
+    "faq": [
+      {
+        "question": "How do I start?",
+        "answer": "Choose a photo."
+      }
+    ],
+    "categories": [
+      "productivity"
+    ],
+    "why": [
+      "Copy printed text without retyping it. This second sentence must stay out of llms.txt.",
+      "A focused tool helps with repeated copying."
+    ],
+    "comparison": {
+      "intro": "Choose a method for your task.",
+      "checked_on": "2026-11-18",
+      "rows": [
+        {
+          "option": "Built-in text selection",
+          "kind": "built-in",
+          "good_at": "Quick selection",
+          "trade_off": "Review the selection"
+        },
+        {
+          "option": "This app",
+          "kind": "app",
+          "good_at": "Repeated copying",
+          "trade_off": "Requires installation"
+        },
+        {
+          "option": "Web tool",
+          "kind": "web",
+          "good_at": "Browser access",
+          "trade_off": "Check upload requirements"
+        },
+        {
+          "option": "Type by hand",
+          "kind": "manual",
+          "good_at": "Short snippets",
+          "trade_off": "Takes time"
+        }
+      ],
+      "summary": "Choose according to the amount of text."
+    },
+    "best_for": [
+      "People copying printed notes."
+    ],
+    "not_for": [
+      "For a short word, type it manually."
+    ],
+    "locales": {
+      "ja": {
+        "name": "OCR Copy",
+        "short_description": "Copy text from a photo.",
+        "overview": [
+          "Fixture overview."
+        ],
+        "features": [
+          "Copy: Select text."
+        ],
+        "usage": [
+          "Choose a photo."
+        ],
+        "pricing": "See App Store.",
+        "privacy": "See privacy labels.",
+        "faq": [
+          {
+            "question": "How do I start?",
+            "answer": "Choose a photo."
+          }
+        ],
+        "why": [
+          "文字を打ち直さずにコピーできます。2文目は要約に含めません。"
+        ],
+        "comparison": {
+          "intro": "Choose a method for your task.",
+          "checked_on": "2026-11-18",
+          "rows": [
+            {
+              "option": "Built-in text selection",
+              "kind": "built-in",
+              "good_at": "Quick selection",
+              "trade_off": "Review the selection"
+            },
+            {
+              "option": "This app",
+              "kind": "app",
+              "good_at": "Repeated copying",
+              "trade_off": "Requires installation"
+            },
+            {
+              "option": "Web tool",
+              "kind": "web",
+              "good_at": "Browser access",
+              "trade_off": "Check upload requirements"
+            },
+            {
+              "option": "Type by hand",
+              "kind": "manual",
+              "good_at": "Short snippets",
+              "trade_off": "Takes time"
+            }
+          ],
+          "summary": "Choose according to the amount of text."
+        },
+        "best_for": [
+          "印刷したメモをコピーする人。"
+        ],
+        "not_for": [
+          "短い単語なら手入力を使ってください。"
+        ]
+      },
+      "es": {
+        "name": "OCR Copy",
+        "short_description": "Copy text from a photo.",
+        "overview": [
+          "Fixture overview."
+        ],
+        "features": [
+          "Copy: Select text."
+        ],
+        "usage": [
+          "Choose a photo."
+        ],
+        "pricing": "See App Store.",
+        "privacy": "See privacy labels.",
+        "faq": [
+          {
+            "question": "How do I start?",
+            "answer": "Choose a photo."
+          }
+        ],
+        "why": [
+          "Copia texto sin volver a escribirlo. Otra frase."
+        ],
+        "comparison": {
+          "intro": "Choose a method for your task.",
+          "checked_on": "2026-11-18",
+          "rows": [
+            {
+              "option": "Built-in text selection",
+              "kind": "built-in",
+              "good_at": "Quick selection",
+              "trade_off": "Review the selection"
+            },
+            {
+              "option": "This app",
+              "kind": "app",
+              "good_at": "Repeated copying",
+              "trade_off": "Requires installation"
+            },
+            {
+              "option": "Web tool",
+              "kind": "web",
+              "good_at": "Browser access",
+              "trade_off": "Check upload requirements"
+            },
+            {
+              "option": "Type by hand",
+              "kind": "manual",
+              "good_at": "Short snippets",
+              "trade_off": "Takes time"
+            }
+          ],
+          "summary": "Choose according to the amount of text."
+        },
+        "best_for": [
+          "Personas que copian notas impresas."
+        ],
+        "not_for": [
+          "Para una palabra corta, escribe a mano."
+        ]
+      },
+      "de": {
+        "name": "OCR Copy",
+        "short_description": "Copy text from a photo.",
+        "overview": [
+          "Fixture overview."
+        ],
+        "features": [
+          "Copy: Select text."
+        ],
+        "usage": [
+          "Choose a photo."
+        ],
+        "pricing": "See App Store.",
+        "privacy": "See privacy labels.",
+        "faq": [
+          {
+            "question": "How do I start?",
+            "answer": "Choose a photo."
+          }
+        ],
+        "why": [
+          "Copy printed text without retyping it. This second sentence must stay out of llms.txt.",
+          "A focused tool helps with repeated copying."
+        ],
+        "comparison": {
+          "intro": "Choose a method for your task.",
+          "checked_on": "2026-11-18",
+          "rows": [
+            {
+              "option": "Built-in text selection",
+              "kind": "built-in",
+              "good_at": "Quick selection",
+              "trade_off": "Review the selection"
+            },
+            {
+              "option": "This app",
+              "kind": "app",
+              "good_at": "Repeated copying",
+              "trade_off": "Requires installation"
+            },
+            {
+              "option": "Web tool",
+              "kind": "web",
+              "good_at": "Browser access",
+              "trade_off": "Check upload requirements"
+            },
+            {
+              "option": "Type by hand",
+              "kind": "manual",
+              "good_at": "Short snippets",
+              "trade_off": "Takes time"
+            }
+          ],
+          "summary": "Choose according to the amount of text."
+        },
+        "best_for": [
+          "People copying printed notes."
+        ],
+        "not_for": [
+          "For a short word, type it manually."
+        ]
+      },
+      "fr": {
+        "name": "OCR Copy",
+        "short_description": "Copy text from a photo.",
+        "overview": [
+          "Fixture overview."
+        ],
+        "features": [
+          "Copy: Select text."
+        ],
+        "usage": [
+          "Choose a photo."
+        ],
+        "pricing": "See App Store.",
+        "privacy": "See privacy labels.",
+        "faq": [
+          {
+            "question": "How do I start?",
+            "answer": "Choose a photo."
+          }
+        ],
+        "why": [
+          "Copy printed text without retyping it. This second sentence must stay out of llms.txt.",
+          "A focused tool helps with repeated copying."
+        ],
+        "comparison": {
+          "intro": "Choose a method for your task.",
+          "checked_on": "2026-11-18",
+          "rows": [
+            {
+              "option": "Built-in text selection",
+              "kind": "built-in",
+              "good_at": "Quick selection",
+              "trade_off": "Review the selection"
+            },
+            {
+              "option": "This app",
+              "kind": "app",
+              "good_at": "Repeated copying",
+              "trade_off": "Requires installation"
+            },
+            {
+              "option": "Web tool",
+              "kind": "web",
+              "good_at": "Browser access",
+              "trade_off": "Check upload requirements"
+            },
+            {
+              "option": "Type by hand",
+              "kind": "manual",
+              "good_at": "Short snippets",
+              "trade_off": "Takes time"
+            }
+          ],
+          "summary": "Choose according to the amount of text."
+        },
+        "best_for": [
+          "People copying printed notes."
+        ],
+        "not_for": [
+          "For a short word, type it manually."
+        ]
+      }
+    }
+  },
+  "6789844290": {
+    "slug": "foot-size-check",
+    "categories": [
+      "productivity",
+      "family"
+    ],
+    "locales": {
+      "es": {},
+      "de": {
+        "why": []
+      },
+      "fr": {
+        "short_description": "  "
+      }
+    }
+  },
+  "6789844137": {
+    "slug": "blur-before-share",
+    "categories": [
+      "photo-memory"
+    ]
+  }
+}
