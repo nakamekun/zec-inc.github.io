@@ -6,41 +6,41 @@ Canonical app index: https://zec-inc.jp/apps/
 
 ## Apps
 - Foot Size Check: Measure kids' feet with just a sheet of Letter or A4 paper and a photo. Get foot length, width, a... Foot Size Check is for parents who want to measure a child’s feet at home with paper and an iPhone, then... https://zec-inc.jp/apps/foot-size-check/
-- Image to Text: OCR Copy: Copy text from photos, screenshots, documents, and PDFs. Read many images, preserve tables, search a... OCR Copy is for people who want all the text in photos or screenshots copied at once, without selecting... https://zec-inc.jp/apps/ocr-copy/
 - Big Text Note: Show one note in large, easy-to-read text to the person in front of you, and let your iPhone read it... https://zec-inc.jp/apps/big-text-note/
 - Laundry Tap: Washer Timer: A wash and dry timer with a Lock Screen countdown and reminders, plus a one-tap log of when you last did... https://zec-inc.jp/apps/laundrytap/
+- Image to Text: OCR Copy: Copy text from photos, screenshots, documents, and PDFs. Read many images, preserve tables, search a... OCR Copy is for people who want all the text in photos or screenshots copied at once, without selecting... https://zec-inc.jp/apps/ocr-copy/
 - DailyAlbum: One Photo a Day: Keep one photo a day as a simple photo diary and memory calendar, then hang it in a frame: a spare... https://zec-inc.jp/apps/photo-day/
-- PoopTap: Poop Tracker & Log: A one-tap poop tracker and bowel movement log with no ads and no account. Pick shape and color on the... https://zec-inc.jp/apps/pooptap-daily-tracker/
-- Food Photo Diary: GohanSnap: A meal photo diary that turns your food photos into a calendar of everyday memories. Just take a photo... https://zec-inc.jp/apps/foodsnapquest/
-- One Daily Habit: DoneToday: Mark your one daily habit done with a single tap - from the Home Screen, Lock Screen, Control Center, or... https://zec-inc.jp/apps/donetoday-daily-log/
-- Study Timer & Log: Study Buddy: A study timer with a chill buddy that grows with every minute you study and talks when you tap it.... https://zec-inc.jp/apps/study-buddy-timer/
-- Reverse Video Maker: UndoCam: Reverse video maker for iPhone: play any clip backwards, sound included. Pick the part you want, then... https://zec-inc.jp/apps/undocam/
-- What to Wear - Today Ready: Don't read the forecast, get the answer: what to wear, whether to bring a layer, and whether you need an... https://zec-inc.jp/apps/today-ready/
-- Mute Video Before Share: Remove sound from a video in one tap, mute up to 20 videos at once, or beep out or lower just the parts... https://zec-inc.jp/apps/mute-video-before-share/
-- CleanURL Tap: Remove Tracking: Remove tracking parameters from links before you send, save, or post them. Cleans every link in a block... https://zec-inc.jp/apps/cleanurl-tap/
+- Slow Motion & Speed Up Video: Slow down or speed up an existing video, keep or change its audio pitch, and export constant speeds free... https://zec-inc.jp/apps/slow-motion-speed-up-video/
+- Resize Photo & Video to KB/MB: Prepare JPG photos for forms and uploads by setting a file-size limit, pixel dimensions, and crop, then... https://zec-inc.jp/apps/resize-photo-to-kb-jpg/
 - Barometer: Air Pressure Log: Check current air pressure and its trend on your iPhone, then log how you feel — all stored on device. https://zec-inc.jp/apps/baronote/
+- Mute Video Before Share: Remove sound from a video in one tap, mute up to 20 videos at once, or beep out or lower just the parts... https://zec-inc.jp/apps/mute-video-before-share/
 - Water Reminder - WaterDone: The lightest water tracker: tap once after a sip, from the Lock Screen or Home Screen widget, and get a... https://zec-inc.jp/apps/waterdone/
-- Remove Photo Location: ExifOff: Remove photo location and other EXIF metadata. See where a photo was taken on a map, check what it... https://zec-inc.jp/apps/exifoff/
-- ClipMD: Turn web pages and copied text into clean Markdown clips - saved on your device, ready to paste anywhere. https://zec-inc.jp/apps/clipmd/
+- One Daily Habit: DoneToday: Mark your one daily habit done with a single tap - from the Home Screen, Lock Screen, Control Center, or... https://zec-inc.jp/apps/donetoday-daily-log/
+- Reverse Video Maker: UndoCam: Reverse video maker for iPhone: play any clip backwards, sound included. Pick the part you want, then... https://zec-inc.jp/apps/undocam/
+- Study Timer & Log: Study Buddy: A study timer with a chill buddy that grows with every minute you study and talks when you tap it.... https://zec-inc.jp/apps/study-buddy-timer/
+- PoopTap: Poop Tracker & Log: A one-tap poop tracker and bowel movement log with no ads and no account. Pick shape and color on the... https://zec-inc.jp/apps/pooptap-daily-tracker/
 - Pregnancy Caffeine Tracker: A pregnancy and breastfeeding caffeine tracker: log a drink in one tap and see today's total and how much... https://zec-inc.jp/apps/caffeinetap/
+- Remove Photo Location: ExifOff: Remove photo location and other EXIF metadata. See where a photo was taken on a map, check what it... https://zec-inc.jp/apps/exifoff/
+- Food Photo Diary: GohanSnap: A meal photo diary that turns your food photos into a calendar of everyday memories. Just take a photo... https://zec-inc.jp/apps/foodsnapquest/
+- What to Wear - Today Ready: Don't read the forecast, get the answer: what to wear, whether to bring a layer, and whether you need an... https://zec-inc.jp/apps/today-ready/
+- CleanURL Tap: Remove Tracking: Remove tracking parameters from links before you send, save, or post them. Cleans every link in a block... https://zec-inc.jp/apps/cleanurl-tap/
 - Pill Reminder Alarm - PillTap: A daily medication reminder with one-tap logging from the notification, a Lock Screen widget, and Live... https://zec-inc.jp/apps/pilltap/
 - PinLog Text Notes: Save text, links, and photos as pins from the share sheet or clipboard, and let them come back through... https://zec-inc.jp/apps/pinlog-text-notes/
+- ClipMD: Turn web pages and copied text into clean Markdown clips - saved on your device, ready to paste anywhere. https://zec-inc.jp/apps/clipmd/
 - Packed - Daily Packing List: A daily packing list and forgotten-items check for the door: check keys, wallet, and bags from the widget... https://zec-inc.jp/apps/packed/
-- Animal Face Hide: Photo Mask: Cover faces in your photos with cute animal stamps - cat, bear, bunny and more - before you post. Detects... https://zec-inc.jp/apps/cute-privacy-stamp/
-- Body Rhythm Log: A private event tracker: log with one tap, review on a simple calendar, with optional reminders and a... https://zec-inc.jp/apps/body-rhythm-log/
-- Moodwash – Feelings in Color: Moodwash is a mood diary that turns mixed feelings into a watercolor of your day: pick several feeling... https://zec-inc.jp/apps/taplog-mood-tracker/
 - Compound Interest - AssetCurve: A private compound interest calculator: estimate savings growth, how long withdrawals could last, or what... https://zec-inc.jp/apps/asset-curve/
 - Sheep to Sleep: Count sheep aloud and wind down at bedtime: a breathing guide, sleep timer, and your past seven nights of... https://zec-inc.jp/apps/sheep-to-sleep/
+- Body Rhythm Log: A private event tracker: log with one tap, review on a simple calendar, with optional reminders and a... https://zec-inc.jp/apps/body-rhythm-log/
+- Moodwash – Feelings in Color: Moodwash is a mood diary that turns mixed feelings into a watercolor of your day: pick several feeling... https://zec-inc.jp/apps/taplog-mood-tracker/
 - Hong Kong Phrase Card: 160 offline Cantonese travel phrase cards for Hong Kong — show large Traditional Chinese text or play speech. https://zec-inc.jp/apps/hong-kong-phrase-card/
 - Silly Word Beat - Word Play: Pick three word cards and a serious textbook voice reads the silly nonsense combos aloud. Save your favorites. https://zec-inc.jp/apps/sillycombovoice/
-- 年齢プロフィール - 家族と推しの記念日: A profile book for Japan that keeps family, oshi, and friends in one place: birthdays, anniversaries... https://zec-inc.jp/apps/warekiyakudoshichecker/
-- Number Forge - Daily Puzzle: A daily number puzzle and quick brain game: forge six numbers with + - x / into the target and keep your... https://zec-inc.jp/apps/number-forge-daily-puzzle/
-- Access Lens: Magnifier: A private camera magnifier for small print, with zoom, light, freeze, and high-contrast reading modes.... https://zec-inc.jp/apps/accesslens/
-- Face Blur Video: Before Share: Hide faces, names, addresses, and license plates with blur, mosaic, or black before you share a photo.... Blur Before Share is for people who want to cover faces and personal information in photos or short... https://zec-inc.jp/apps/blur-before-share/
-- Slow Motion & Speed Up Video: Slow down or speed up an existing video, keep or change its audio pitch, and export constant speeds free... https://zec-inc.jp/apps/slow-motion-speed-up-video/
-- Help Screen SOS: Show a clear full-screen help message to people nearby when you cannot speak, with optional alarm... https://zec-inc.jp/apps/help-screen-sos/
 - Photo Stamp Cutout - Stickers: Cut a subject from a photo and turn it into a transparent PNG sticker, postage stamp, rubber stamp... https://zec-inc.jp/apps/photo-stamp-cutout-stickers/
-- Resize Photo to KB & JPG: Prepare JPG photos for forms and uploads by setting a file-size limit, pixel dimensions, and crop, then... https://zec-inc.jp/apps/resize-photo-to-kb-jpg/
+- 年齢プロフィール - 家族と推しの記念日: A profile book for Japan that keeps family, oshi, and friends in one place: birthdays, anniversaries... https://zec-inc.jp/apps/warekiyakudoshichecker/
+- Access Lens: Magnifier: A private camera magnifier for small print, with zoom, light, freeze, and high-contrast reading modes.... https://zec-inc.jp/apps/accesslens/
+- Number Forge - Daily Puzzle: A daily number puzzle and quick brain game: forge six numbers with + - x / into the target and keep your... https://zec-inc.jp/apps/number-forge-daily-puzzle/
+- Animal Face Hide: Photo Mask: Cover faces in your photos with cute animal stamps - cat, bear, bunny and more - before you post. Detects... https://zec-inc.jp/apps/cute-privacy-stamp/
+- Face Blur Video: Before Share: Hide faces, names, addresses, and license plates with blur, mosaic, or black before you share a photo.... Blur Before Share is for people who want to cover faces and personal information in photos or short... https://zec-inc.jp/apps/blur-before-share/
+- Help Screen SOS: Show a clear full-screen help message to people nearby when you cannot speak, with optional alarm... https://zec-inc.jp/apps/help-screen-sos/
 - Korean Travel Phrase Card: Offline Korean phrase cards for travelers: search in Japanese, show big Korean (Hangul) text, play speech. https://zec-inc.jp/apps/korean-travel-phrase-card/
 - Plant Tap: Watering Reminder: See which houseplants need water today, log watering in one tap, and keep dated growth photos with... https://zec-inc.jp/apps/plant-tap-watering-reminder/
 - Japanese Phrase Cards: Show polite, native-written Japanese phrase cards to staff, let them point to a prepared answer, and flip... https://zec-inc.jp/apps/japanese-phrase-cards/
