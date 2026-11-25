@@ -531,6 +531,8 @@ APP_OVERRIDE_FIELDS = {
     "comparison",
     "best_for",
     "not_for",
+    "guide_url",
+    "guide_title",
 }
 LOCALE_OVERRIDE_FIELDS = APP_OVERRIDE_FIELDS - {"slug", "categories", "locales"}
 OPTIONAL_DETAIL_FIELDS = {"why", "comparison", "best_for", "not_for"}
@@ -1647,6 +1649,15 @@ def render_detail_page(app: dict[str, Any], overrides: dict[str, Any], ctx: Buil
         f'<a class="button" href="{html.escape(str(_site_url), quote=True)}">'
         f'{html.escape(str(strings.get("official_site", "Official site")))}</a>\n          '
     ) if _site_url else ''
+    # 任意: 会社HPのガイド(/guides/...)への導線。overrides の guide_url と guide_title(ロケール別)。
+    # 英語(基本)は overrides 直下、ほかの言語は locales[locale] にあるときだけ出す(英語のガイドを他言語ページに混ぜない)。
+    _base = app_override_for(app, overrides)
+    _guide = _base if locale == "en" else ((_base.get("locales") or {}).get(locale) or {})
+    if _guide.get('guide_url') and _guide.get('guide_title'):
+        site_button += (
+            f'<a class="button" href="{html.escape(str(_guide["guide_url"]), quote=True)}">'
+            f'{html.escape(str(_guide["guide_title"]))}</a>\n          '
+        )
     locales = app_locales(app, overrides)
     alternates = hreflang_alternates(locales, lambda loc: page_url(app, loc))
     lang_links = language_links(locales, locale, lambda loc: page_href(app, loc))
@@ -2279,7 +2290,11 @@ def run_build(strict: bool = False) -> tuple[list[dict[str, Any]], list[str]]:
     locale_index_urls = write_locale_indexes(apps, overrides, locales)
     category_urls = write_category_pages(apps, overrides, ctx, locales)
     write_manifest(apps, category_urls)
-    write_sitemap(detail_urls + locale_index_urls + category_urls)
+    guide_urls = sorted(
+        SITE_ORIGIN + "/" + str(page.parent.relative_to(ROOT_DIR)).replace("\\", "/") + "/"
+        for page in (ROOT_DIR / "guides").glob("**/index.html")
+    ) if (ROOT_DIR / "guides").exists() else []
+    write_sitemap(detail_urls + locale_index_urls + category_urls + guide_urls)
     write_robots()
     write_llms(apps, overrides)
 

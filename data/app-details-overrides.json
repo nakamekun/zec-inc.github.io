@@ -4809,6 +4809,8 @@
   },
   "6789844290": {
     "slug": "foot-size-check",
+    "guide_url": "/guides/child-foot-size/",
+    "guide_title": "How to measure your child's foot size",
     "short_description": "Measure kids' feet with just a sheet of Letter or A4 paper and a photo. Get foot length, width, a suggested shoe size, true-size foot outlines, and a growth record.",
     "meta_description": "Foot Size Check measures kids' feet with Letter or A4 paper and a photo: foot length, width, shoe size guide, true-size outline and growth history.",
     "categories": [
@@ -4883,6 +4885,8 @@
     ],
     "locales": {
       "ja": {
+        "guide_url": "/guides/child-foot-size/ja/",
+        "guide_title": "子どもの足のサイズの測り方",
         "name": "足はかる",
         "short_description": "A4用紙と写真だけで、子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安、実寸の足型、成長記録まで。専用の道具は要りません。",
         "meta_description": "足はかるは、A4用紙と写真だけで子どもの足のサイズを測るアプリ。足長・足幅と靴サイズの目安を自動で出し、実寸の足型と成長記録も残せます。結果はあくまで目安です。",
