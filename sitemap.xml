@@ -158,7 +158,7 @@
   </url>
   <url>
     <loc>https://zec-inc.jp/apps/ocr-copy/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-26</lastmod>
   </url>
   <url>
     <loc>https://zec-inc.jp/apps/ocr-copy/de/</loc>
@@ -170,7 +170,7 @@
   </url>
   <url>
     <loc>https://zec-inc.jp/apps/ocr-copy/ja/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-26</lastmod>
   </url>
   <url>
     <loc>https://zec-inc.jp/apps/ocr-copy/zh-hans/</loc>
@@ -186,11 +186,11 @@
   </url>
   <url>
     <loc>https://zec-inc.jp/apps/study-buddy-timer/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-26</lastmod>
   </url>
   <url>
     <loc>https://zec-inc.jp/apps/study-buddy-timer/ja/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-26</lastmod>
   </url>
   <url>
     <loc>https://zec-inc.jp/apps/study-buddy-timer/zh-hans/</loc>
@@ -755,5 +755,21 @@
   <url>
     <loc>https://zec-inc.jp/guides/child-foot-size/ja/</loc>
     <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://zec-inc.jp/guides/copy-text-from-image/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://zec-inc.jp/guides/copy-text-from-image/ja/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://zec-inc.jp/guides/study-tips/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://zec-inc.jp/guides/study-tips/ja/</loc>
+    <lastmod>2026-11-26</lastmod>
   </url>
 </urlset>

@@ -1910,6 +1910,8 @@
   },
   "6764601072": {
     "slug": "study-buddy-timer",
+    "guide_url": "/guides/study-tips/",
+    "guide_title": "12 study tips backed by research",
     "short_description": "A study timer with a chill buddy that grows with every minute you study and talks when you tap it. One-tap start and stop, plans, Pomodoro, widgets, and a Study Pair with no rankings.",
     "meta_description": "Study Buddy Timer: a one-tap study timer with a buddy that grows and talks. Lock Screen, widgets, Pomodoro, plans, charts, Study Pair and free iCloud sync.",
     "categories": [
@@ -1989,6 +1991,8 @@
     ],
     "locales": {
       "ja": {
+        "guide_url": "/guides/study-tips/ja/",
+        "guide_title": "研究で分かっている勉強のコツ12",
         "name": "Study Buddy：勉強タイマー",
         "short_description": "勉強した時間で、ゆるいバディが育つ勉強タイマー。さわるとしゃべります。ワンタップで開始・停止、予定、ポモドーロ、ウィジェット、ランキングなしのスタディペアにも対応。",
         "meta_description": "Study Buddy：勉強タイマーは、勉強した時間でバディが育ち、さわるとしゃべる勉強タイマー。ロック画面・ウィジェット・ポモドーロ・予定・スタディペア・無料のiCloud同期に対応。",
@@ -3483,6 +3487,8 @@
   },
   "6780724192": {
     "slug": "ocr-copy",
+    "guide_url": "/guides/copy-text-from-image/",
+    "guide_title": "How to copy text from an image on iPhone",
     "short_description": "Copy text from photos, screenshots, documents, and PDFs. Read many images, preserve tables, search a private on-device library, and export searchable PDFs.",
     "meta_description": "OCR Copy reads photos, screenshots, documents and PDFs on device, preserves tables for CSV, joins broken lines, and keeps a searchable private library.",
     "categories": [
@@ -3556,6 +3562,8 @@
     ],
     "locales": {
       "ja": {
+        "guide_url": "/guides/copy-text-from-image/ja/",
+        "guide_title": "画像やスクショの文字をコピーする方法",
         "name": "OCRコピー - 画像を文字起こし",
         "short_description": "写真・スクショ・カメラの文字を読み取ってコピー。最大20枚まとめて文字起こしでき、認識はiPhone内で行います。",
         "meta_description": "OCRコピーは、写真・スクリーンショット・カメラの文字をコピーできるテキストにするアプリ。最大20枚まで一括で文字起こし、端末内で処理、オフライン対応です。",
